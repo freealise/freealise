@@ -14,3 +14,6 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
+I am a web programmer and fan of open-source software, having long ago switched to Linux (Android and Chromebook included).
+The brand Freealise is an altered version of its early name (which was Freax), and refers to the sponsorship business model.
