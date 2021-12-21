@@ -9,7 +9,6 @@ sg editor bot (site search) ?
 can find data on its own by googling and spidering ?
 can filter general stupidity linguistically ?
 train multiple times on same data and use average to reduce stochasticity (also moving average ?)
-TP lyrics + Buried Treasure -> closest approximation to a new album
 
 Style transfer datasets for urban environment
 http://mi.eng.cam.ac.uk/research/projects/VideoRec/CamVid/
