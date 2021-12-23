@@ -17,24 +17,3 @@ Here are some ideas to get you started:
 
 I am a web programmer and fan of open-source software, having long ago switched to Linux (Android and Chromebook included).
 The brand Freealise is an altered version of its early name (which was Freax), and refers to the sponsorship business model.
-
-<pre>
-                  .--.
-                  :[]:
- __________________||
-/    __  _\_____  /||
-|~| /o/ /  \   /___||___
-|_|/0/ /_   ' /|  _||   |
-  /O/  \/____/ | / --/\ |
-     _____    /| \ == / |
-\   / -- /   //| / == \ |
- \ /    //  // / \___:/ /
-  (====(/  // /    ___ /\
-__________// /____/.'// |
-_________|/   /  /_\/\  |
-        |||   | ^_^__|  /
-        |||   |>@.@<}|)/
-        |||   |}_ _{"|/
-        |||
-        ||/
-</pre>
