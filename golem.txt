@@ -5,7 +5,7 @@ train AI on Sefaria (fuzzy search) -> blog [sefaria, opensiddur]
 can be secular and assist a writer (language teaching and storytelling), suggest books by summary (gutenberg), legislation based on precedent (or be a consultant), 
 detect propaganda or falsified election results or corruption (if has enough data https://smlouvy.gov.cz/), trade stocks, block ads.
 find melodrama in lyrics and scripts
-stc quote (+ site search) / links to related books
+stc quote (+ site search) / link to mckee story
 can find data on its own by googling and spidering ?
 can filter general stupidity linguistically ?
 train multiple times on same data and use average to reduce stochasticity (also moving average ?)
