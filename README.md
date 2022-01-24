@@ -15,5 +15,5 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-I am a web programmer and fan of open-source software, having long ago switched to Linux (Android and Chromebook included).
-The brand Freealise is an altered version of its early name (which was Freax), and refers to the sponsorship business model.
+English is not my native language, but I started to learn it before school - and music has later been an important part of this.
+The brand Freealise is an altered version of an early name of Linux (which was Freax), referring to the sponsorship business model.
