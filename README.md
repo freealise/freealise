@@ -15,5 +15,5 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-English is not my native language, but I started to learn it before school - and music has later become an important part of that.  
+English is not my native language, but I started to learn it before school - and music has later become an important part of education.  
 The brand Freealise refers to the sponsorship pricing model, it is an altered version of an early name of Linux (which was Freax).
