@@ -5,26 +5,29 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<link type="text/css" rel="stylesheet" href="main.css">
-		    <script type="importmap">
-			{
-			    "imports": {
-				"three": "./three.module.js",
-				"three/examples/jsm/effects/AsciiEffect":"https://cdn.skypack.dev/three@0.138.0/examples/jsm/effects/AsciiEffect.js",
-				"three/examples/jsm/controls/TrackballControls":"https://cdn.skypack.dev/three@0.138.0/examples/jsm/controls/TrackballControls.js",
-			    }
-			}
-		    </script>
 	</head>
 
 	<body>
 		<div id="info"><a href="https://threejs.org" target="_blank" rel="noopener">three.js</a> - effects - ascii</div>
 
+		<!-- Import maps polyfill -->
+		<!-- Remove this when import maps will be widely supported -->
+		<script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+
+		<script type="importmap">
+			{
+				"imports": {
+					"three": "./three.module.js"
+				}
+			}
+		</script>
+
 		<script type="module">
 
 			import * as THREE from 'three';
 
-			import { AsciiEffect } from 'three/examples/jsm/effects/AsciiEffect';
-			import { TrackballControls } from 'three/examples/jsm/controls/TrackballControls';
+			import { AsciiEffect } from 'https://cdn.skypack.dev/three@0.138.0/examples/jsm/effects/AsciiEffect.js';
+			import { TrackballControls } from 'https://cdn.skypack.dev/three@0.138.0/examples/jsm/controls/TrackballControls.js';
 
 			let camera, controls, scene, renderer, effect;
 
