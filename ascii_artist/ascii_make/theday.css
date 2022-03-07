@@ -1,0 +1,1540 @@
+@charset "UTF-8";
+/* line 17, ../../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: mona;
+  src: url("/web/20160602103645im_/http://www.haku-music.net/cam/theday/fonts/ipag-mona.woff") format("woff"), url("/web/20160602103645im_/http://www.haku-music.net/cam/theday/fonts/ipag-mona.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: mona-p;
+  src: url("/web/20160602103645im_/http://www.haku-music.net/cam/theday/fonts/ipagp-mona.woff") format("woff"), url("/web/20160602103645im_/http://www.haku-music.net/cam/theday/fonts/ipagp-mona.ttf") format("truetype");
+}
+
+/* line 1, ../src/sass/components/_wrapper.scss */
+.wrapper {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* line 1, ../src/sass/components/_content.scss */
+.content {
+  text-align: center;
+  overflow: hidden;
+}
+
+/* line 4, ../src/sass/components/_menu.scss */
+.menu {
+  position: absolute;
+  top: 65px;
+  left: 25%;
+  text-align: left;
+  margin-left: -195px;
+}
+
+/* line 12, ../src/sass/components/_menu.scss */
+.menu__ttl {
+  background-image: url('/web/20160602103645im_/http://www.haku-music.net/cam/theday/img/ttl_menu.png');
+  background-repeat: no-repeat;
+  width: 172px;
+  height: 65px;
+  margin-bottom: 50px;
+}
+/* line 16, ../src/sass/components/_menu.scss */
+.menu__ttl span {
+  display: none;
+}
+
+/* line 8, ../src/sass/lib/_bem-element.scss */
+.menu__btn, .menu__btn--top, .menu__btn--profile, .menu__btn--movie, .menu__btn--special, .menu__btn--link {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  display: block;
+  height: 25px;
+  line-height: 25px;
+  font-size: 25px;
+  background-image: url('/web/20160602103645im_/http://www.haku-music.net/cam/theday/img/btn_menu.png');
+  background-repeat: no-repeat;
+  margin-bottom: 45px;
+}
+/* line 35, ../src/sass/components/_menu.scss */
+.menu__btn:hover, .menu__btn--top:hover, .menu__btn--profile:hover, .menu__btn--movie:hover, .menu__btn--special:hover, .menu__btn--link:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+}
+/* line 39, ../src/sass/components/_menu.scss */
+.menu__btn span, .menu__btn--top span, .menu__btn--profile span, .menu__btn--movie span, .menu__btn--special span, .menu__btn--link span {
+  display: none;
+}
+
+/* line 44, ../src/sass/components/_menu.scss */
+.menu__btn--top {
+  background-position: 0px 0px;
+}
+
+/* line 45, ../src/sass/components/_menu.scss */
+.menu__btn--profile {
+  background-position: 0px -70px;
+}
+
+/* line 46, ../src/sass/components/_menu.scss */
+.menu__btn--movie {
+  background-position: 0px -140px;
+}
+
+/* line 47, ../src/sass/components/_menu.scss */
+.menu__btn--special {
+  background-position: 0px -210px;
+}
+
+/* line 48, ../src/sass/components/_menu.scss */
+.menu__btn--link {
+  background-position: 0px -280px;
+}
+
+@media (max-width: 800px) {
+  /* line 51, ../src/sass/components/_menu.scss */
+  .menu {
+    display: none;
+  }
+}
+/* line 1, ../src/sass/components/_title.scss */
+.title {
+  background-image: url('/web/20160602103645im_/http://www.haku-music.net/cam/theday/img/img_title.png');
+  background-repeat: no-repeat;
+  width: 550px;
+  height: 37px;
+  margin: 0px auto 10px auto;
+}
+/* line 5, ../src/sass/components/_title.scss */
+.title h1, .title h2 {
+  display: none;
+}
+
+/* line 1, ../src/sass/components/_sns.scss */
+.sns {
+  text-align: right;
+  max-width: 560px;
+  margin: auto;
+}
+
+/* line 8, ../src/sass/lib/_bem-element.scss */
+.sns__btn, .sns__btn--facebook, .sns__btn--twitter, .sns__btn--line {
+  display: inline-block;
+  width: 100px;
+}
+
+/* line 12, ../src/sass/components/_sns.scss */
+.sns__btn--facebook {
+  width: 120px;
+  position: relative;
+  top: -3px;
+}
+
+/* line 18, ../src/sass/components/_sns.scss */
+.sns.sp {
+  max-width: 640px;
+  text-align: center;
+}
+/* line 8, ../src/sass/lib/_bem-element.scss */
+.sns.sp .sns__btn, .sns.sp .sns__btn--facebook, .sns.sp .sns__btn--twitter, .sns.sp .sns__btn--line {
+  -webkit-transform: scale(2, 2);
+  -moz-transform: scale(2, 2);
+  -ms-transform: scale(2, 2);
+  -o-transform: scale(2, 2);
+  transform: scale(2, 2);
+  margin: 40px 45px 0px 45px;
+}
+
+/* line 4, ../src/sass/components/_jacket.scss */
+.jacket {
+  width: 440px;
+  height: 440px;
+  margin: auto;
+  margin-top: 65px;
+  border: solid 1px black;
+  -webkit-box-shadow: 4px 4px 0px black;
+  -moz-box-shadow: 4px 4px 0px black;
+  box-shadow: 4px 4px 0px black;
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 16, ../src/sass/components/_jacket.scss */
+.jacket__inner {
+  position: relative;
+  height: 440px;
+  width: 4000px;
+  margin-left: -1780px;
+}
+
+/* line 24, ../src/sass/components/_jacket.scss */
+.jacket__aa {
+  font-family: mona-p;
+  font-size: 14px;
+  line-height: 1;
+  margin-top: -53px;
+  position: relative;
+  top: 50%;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-transform: scale(0.80586) translate(0%, -50%);
+  -moz-transform: scale(0.80586) translate(0%, -50%);
+  -ms-transform: scale(0.80586) translate(0%, -50%);
+  -o-transform: scale(0.80586) translate(0%, -50%);
+  transform: scale(0.80586) translate(0%, -50%);
+}
+
+/* line 38, ../src/sass/components/_jacket.scss */
+.jacket__link {
+  position: absolute;
+  background-color: white;
+  color: inherit;
+  font-weight: bold;
+}
+
+/* line 45, ../src/sass/components/_jacket.scss */
+.jacket__cover {
+  width: 440px;
+  height: 440px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  cursor: pointer;
+}
+
+/* line 56, ../src/sass/components/_jacket.scss */
+.jacket__done {
+  display: none;
+  width: 440px;
+  height: 440px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: white;
+  text-align: left;
+}
+
+/* line 69, ../src/sass/components/_jacket.scss */
+.jacket__done__jacket {
+  position: absolute;
+  left: 40px;
+  top: 40px;
+}
+
+/* line 75, ../src/sass/components/_jacket.scss */
+.jacket__done__title {
+  background-image: url('/web/20160602103645im_/http://www.haku-music.net/cam/theday/img/ttl_done_theday.gif');
+  background-repeat: no-repeat;
+  width: 127px;
+  height: 40px;
+  margin-top: 40px;
+  margin-left: 270px;
+  margin-bottom: 30px;
+}
+/* line 81, ../src/sass/components/_jacket.scss */
+.jacket__done__title span {
+  display: none;
+}
+
+/* line 8, ../src/sass/lib/_bem-element.scss */
+.jacket__done__link, .jacket__done__link--itunes, .jacket__done__link--youtube {
+  display: block;
+  margin-left: 270px;
+  margin-bottom: 20px;
+}
+/* line 91, ../src/sass/components/_jacket.scss */
+.jacket__done__link:hover, .jacket__done__link--itunes:hover, .jacket__done__link--youtube:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+}
+/* line 95, ../src/sass/components/_jacket.scss */
+.jacket__done__link span, .jacket__done__link--itunes span, .jacket__done__link--youtube span {
+  display: none;
+}
+
+/* line 100, ../src/sass/components/_jacket.scss */
+.jacket__done__link--itunes {
+  background-image: url('/web/20160602103645im_/http://www.haku-music.net/cam/theday/img/btn_done_itunes.gif');
+  background-repeat: no-repeat;
+  width: 130px;
+  height: 50px;
+}
+
+/* line 104, ../src/sass/components/_jacket.scss */
+.jacket__done__link--youtube {
+  background-image: url('/web/20160602103645im_/http://www.haku-music.net/cam/theday/img/btn_done_youtube.gif');
+  background-repeat: no-repeat;
+  width: 130px;
+  height: 41px;
+}
+
+/* line 108, ../src/sass/components/_jacket.scss */
+.jacket__done__replay {
+  display: block;
+  background-image: url('/web/20160602103645im_/http://www.haku-music.net/cam/theday/img/btn_done_replay.gif');
+  background-repeat: no-repeat;
+  width: 225px;
+  height: 47px;
+  position: absolute;
+  top: 300px;
+  left: 105px;
+}
+/* line 116, ../src/sass/components/_jacket.scss */
+.jacket__done__replay:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+}
+/* line 120, ../src/sass/components/_jacket.scss */
+.jacket__done__replay span {
+  display: none;
+}
+
+/* line 125, ../src/sass/components/_jacket.scss */
+.jacket__done__tool {
+  width: 440px;
+  position: absolute;
+  bottom: 60px;
+  left: 0px;
+  text-align: center;
+  font-size: 13px;
+}
+
+/* line 1, ../src/sass/components/_song.scss */
+.song {
+  position: relative;
+  overflow: hidden;
+  height: 80px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+/* line 9, ../src/sass/components/_song.scss */
+.song__start-btn {
+  display: block;
+  color: white;
+  background-color: black;
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  left: -50%;
+  margin-left: 125px;
+  background-image: url('/web/20160602103645im_/http://www.haku-music.net/cam/theday/img/btn_controller_start.png');
+  background-repeat: no-repeat;
+  background-position: right 0px;
+  border-right: solid 1px black;
+}
+/* line 27, ../src/sass/components/_song.scss */
+.song__start-btn.active {
+  background-image: none;
+  cursor: default;
+}
+/* line 31, ../src/sass/components/_song.scss */
+.song__start-btn.active:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+/* line 36, ../src/sass/components/_song.scss */
+.song__start-btn:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+}
+/* line 40, ../src/sass/components/_song.scss */
+.song__start-btn:before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 0px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+  border-width: 80px 30px 0px 0px;
+  position: absolute;
+  right: -50px;
+}
+/* line 44, ../src/sass/components/_song.scss */
+.song__start-btn span {
+  display: none;
+}
+
+/* line 49, ../src/sass/components/_song.scss */
+.song__download {
+  background-image: url('/web/20160602103645im_/http://www.haku-music.net/cam/theday/img/btn_download.png');
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 43px;
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  margin-left: 185px;
+}
+/* line 57, ../src/sass/components/_song.scss */
+.song__download:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+}
+/* line 61, ../src/sass/components/_song.scss */
+.song__download span {
+  display: none;
+}
+
+/* line 3, ../src/sass/components/_player.scss */
+.player {
+  position: relative;
+  height: 80px;
+  -webkit-transform: translate(-100%, 0%);
+  -moz-transform: translate(-100%, 0%);
+  -ms-transform: translate(-100%, 0%);
+  -o-transform: translate(-100%, 0%);
+  transform: translate(-100%, 0%);
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+/* line 12, ../src/sass/components/_player.scss */
+.player.active {
+  -webkit-transform: translate(0%, 0%);
+  -moz-transform: translate(0%, 0%);
+  -ms-transform: translate(0%, 0%);
+  -o-transform: translate(0%, 0%);
+  transform: translate(0%, 0%);
+}
+
+/* line 17, ../src/sass/components/_player.scss */
+.player__seekbar {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  margin-left: -250px;
+  height: 0px;
+  border-top: solid 1px #666666;
+  border-bottom: solid 1px #666666;
+  width: 310px;
+  margin-top: 10px;
+}
+/* line 30, ../src/sass/components/_player.scss */
+.player__seekbar:before {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  background-color: white;
+  position: absolute;
+  top: -4px;
+  left: 0%;
+}
+/* line 44, ../src/sass/components/_player.scss */
+.player__seekbar:after {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  background-color: #666666;
+  position: absolute;
+  top: -4px;
+  left: 100%;
+}
+
+/* line 59, ../src/sass/components/_player.scss */
+.player__knob {
+  height: 0px;
+  border-top: solid 1px white;
+  border-bottom: solid 1px white;
+  margin-top: -1px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+/* line 69, ../src/sass/components/_player.scss */
+.player__knob:after {
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  margin-top: -8px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+  border-radius: 16px;
+  position: absolute;
+  right: 0px;
+  margin-right: -8px;
+  z-index: 1;
+}
+
+/* line 90, ../src/sass/components/_player.scss */
+.player__controll {
+  border: solid 2px white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -20px;
+  margin-left: 90px;
+  width: 38px;
+  height: 38px;
+  background-color: white;
+  background-image: url('/web/20160602103645im_/http://www.haku-music.net/cam/theday/img/ico_play.png');
+  background-repeat: no-repeat;
+  background-position: 50% 0px;
+  cursor: pointer;
+  -webkit-border-radius: 38px;
+  -moz-border-radius: 38px;
+  -ms-border-radius: 38px;
+  -o-border-radius: 38px;
+  border-radius: 38px;
+}
+/* line 112, ../src/sass/components/_player.scss */
+.player__controll:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+}
+/* line 118, ../src/sass/components/_player.scss */
+.player__controll span {
+  display: none;
+}
+/* line 122, ../src/sass/components/_player.scss */
+.player__controll.active {
+  background-image: url('/web/20160602103645im_/http://www.haku-music.net/cam/theday/img/ico_pause.png');
+}
+
+/* line 127, ../src/sass/components/_player.scss */
+.player__mute {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -295px;
+  margin-top: -9px;
+  width: 21px;
+  height: 18px;
+  background-image: url('/web/20160602103645im_/http://www.haku-music.net/cam/theday/img/ico_speaker.png');
+}
+/* line 142, ../src/sass/components/_player.scss */
+.player__mute.disactive {
+  background-position: 0px -18px;
+}
+/* line 146, ../src/sass/components/_player.scss */
+.player__mute span {
+  display: none;
+}
+
+/* line 1, ../src/sass/components/_profile.scss */
+.profile {
+  margin-top: 20px;
+  padding-top: 30px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+/* line 8, ../src/sass/components/_profile.scss */
+.profile__ttl {
+  height: 114px;
+  margin: auto;
+  margin-bottom: 35px;
+}
+/* line 14, ../src/sass/components/_profile.scss */
+.profile__ttl span {
+  display: none;
+}
+
+/* line 19, ../src/sass/components/_profile.scss */
+.profile__text {
+  background-image: url('/web/20160602103645im_/http://www.haku-music.net/cam/theday/img/txt_profile.png');
+  background-repeat: no-repeat;
+  width: 511px;
+  height: 227px;
+  margin: auto;
+}
+/* line 22, ../src/sass/components/_profile.scss */
+.profile__text span {
+  display: none;
+}
+
+/* line 27, ../src/sass/components/_profile.scss */
+.profile__aa {
+  text-align: left;
+  font-family: mona-p;
+  font-size: 19px;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  margin-left: -276px;
+}
+
+/* line 1, ../src/sass/components/_movie.scss */
+.movie {
+  background-image: url('/web/20160602103645im_/http://www.haku-music.net/cam/theday/img/bg_aa_calc.png');
+  background-repeat: repeat-x;
+  background-position: center bottom;
+  padding-top: 50px;
+  padding-bottom: 125px;
+  position: relative;
+  height: 360px;
+}
+
+/* line 14, ../src/sass/components/_movie.scss */
+.movie__aa {
+  font-family: mona-p;
+  position: absolute;
+  text-align: left;
+  left: 50%;
+  top: 20px;
+  font-size: 10px;
+  margin-left: -10px;
+}
+
+/* line 24, ../src/sass/components/_movie.scss */
+.movie__cover {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  margin-left: -320px;
+  width: 640px;
+  height: 360px;
+  cursor: pointer;
+}
+/* line 34, ../src/sass/components/_movie.scss */
+.movie__cover:after {
+  content: '';
+  display: block;
+  width: 78px;
+  height: 78px;
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -39px;
+  margin-top: -39px;
+  background-image: url('/web/20160602103645im_/http://www.haku-music.net/cam/theday/img/ico_movie_play.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-border-radius: 39px;
+  -moz-border-radius: 39px;
+  -ms-border-radius: 39px;
+  -o-border-radius: 39px;
+  border-radius: 39px;
+}
+/* line 56, ../src/sass/components/_movie.scss */
+.movie__cover:hover:after {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+}
+
+/* line 61, ../src/sass/components/_movie.scss */
+.movie__dot {
+  position: absolute;
+  left: 50%;
+  bottom: 0px;
+  background-color: black;
+  background-image: url('/web/20160602103645im_/http://www.haku-music.net/cam/theday/img/bg_aa_wave.png');
+}
+
+/* line 1, ../src/sass/components/_special.scss */
+.special {
+  background-color: black;
+  background-image: url('/web/20160602103645im_/http://www.haku-music.net/cam/theday/img/bg_aa_wave.png');
+  background-repeat: repeat-x;
+  background-position: center -140px;
+  position: relative;
+  padding-bottom: 180px;
+  overflow: hidden;
+}
+
+/* line 12, ../src/sass/components/_special.scss */
+.special__ttl {
+  background-image: url('/web/20160602103645im_/http://www.haku-music.net/cam/theday/img/ttl_special.png');
+  background-repeat: no-repeat;
+  width: 405px;
+  height: 123px;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  width: 590px;
+}
+/* line 20, ../src/sass/components/_special.scss */
+.special__ttl h1, .special__ttl h2 {
+  display: none;
+}
+
+/* line 25, ../src/sass/components/_special.scss */
+.special__text {
+  background-image: url('/web/20160602103645im_/http://www.haku-music.net/cam/theday/img/txt_special.png');
+  background-repeat: no-repeat;
+  width: 461px;
+  height: 54px;
+  margin: auto;
+  width: 600px;
+}
+/* line 31, ../src/sass/components/_special.scss */
+.special__text span {
+  display: none;
+}
+
+/* line 36, ../src/sass/components/_special.scss */
+.special__start-btn {
+  display: block;
+  background-color: white;
+  position: absolute;
+  bottom: 60px;
+  left: -50%;
+  width: 100%;
+  height: 80px;
+  margin-left: 140px;
+  background-image: url('/web/20160602103645im_/http://www.haku-music.net/cam/theday/img/btn_special_start.png');
+  background-position: right 0px;
+  background-repeat: no-repeat;
+  border-right: solid 1px white;
+}
+/* line 55, ../src/sass/components/_special.scss */
+.special__start-btn:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+}
+/* line 58, ../src/sass/components/_special.scss */
+.special__start-btn:hover .special__start-btn__decoration {
+  -webkit-transform: translate(0%, 0%);
+  -moz-transform: translate(0%, 0%);
+  -ms-transform: translate(0%, 0%);
+  -o-transform: translate(0%, 0%);
+  transform: translate(0%, 0%);
+}
+/* line 63, ../src/sass/components/_special.scss */
+.special__start-btn:before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 0px;
+  border-style: solid;
+  border-color: white transparent transparent transparent;
+  border-width: 80px 30px 0px 0px;
+  position: absolute;
+  right: -50px;
+}
+/* line 67, ../src/sass/components/_special.scss */
+.special__start-btn span {
+  display: none;
+}
+
+/* line 72, ../src/sass/components/_special.scss */
+.special__start-btn__decoration {
+  pointer-events: none;
+  -webkit-pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 19px;
+  top: 30px;
+  left: -290px;
+  background-image: url('/web/20160602103645im_/http://www.haku-music.net/cam/theday/img/ico_decoration_arrow_body.png');
+  background-position: right center;
+  background-repeat: repeat-x;
+  -webkit-transform: translate(-100%, 0%);
+  -moz-transform: translate(-100%, 0%);
+  -ms-transform: translate(-100%, 0%);
+  -o-transform: translate(-100%, 0%);
+  transform: translate(-100%, 0%);
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+/* line 90, ../src/sass/components/_special.scss */
+.special__start-btn__decoration:after {
+  content: '';
+  display: block;
+  background-image: url('/web/20160602103645im_/http://www.haku-music.net/cam/theday/img/ico_decoration_arrow_head.png');
+  background-repeat: no-repeat;
+  width: 13px;
+  height: 19px;
+  position: absolute;
+  top: 0px;
+  left: 100%;
+}
+
+/* line 100, ../src/sass/components/_special.scss */
+.special__upload-btn {
+  display: block;
+  background-color: white;
+  position: absolute;
+  bottom: 60px;
+  left: -50%;
+  width: 100%;
+  height: 80px;
+  margin-left: 80px;
+  background-image: url('/web/20160602103645im_/http://www.haku-music.net/cam/theday/img/btn_special_upload.png');
+  background-position: right 0px;
+  background-repeat: no-repeat;
+  border-right: solid 1px white;
+}
+/* line 120, ../src/sass/components/_special.scss */
+.special__upload-btn:hover, .special__upload-btn.hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+}
+/* line 124, ../src/sass/components/_special.scss */
+.special__upload-btn:before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 0px;
+  border-style: solid;
+  border-color: white transparent transparent transparent;
+  border-width: 80px 30px 0px 0px;
+  position: absolute;
+  right: -50px;
+}
+/* line 128, ../src/sass/components/_special.scss */
+.special__upload-btn span {
+  display: none;
+}
+
+/* line 133, ../src/sass/components/_special.scss */
+.special__back-btn {
+  display: block;
+  color: white;
+  background-color: white;
+  width: 100px;
+  height: 80px;
+  position: absolute;
+  left: 50%;
+  bottom: 60px;
+  margin-left: 180px;
+  background-image: url('/web/20160602103645im_/http://www.haku-music.net/cam/theday/img/btn_back.png');
+  background-repeat: no-repeat;
+  background-position: center 0px;
+  border-right: solid 1px white;
+  border-left: solid 1px white;
+}
+/* line 153, ../src/sass/components/_special.scss */
+.special__back-btn:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+}
+/* line 157, ../src/sass/components/_special.scss */
+.special__back-btn:before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 0px;
+  border-style: solid;
+  border-color: transparent transparent white transparent;
+  border-width: 0px 0px 80px 30px;
+  position: absolute;
+  left: -50px;
+}
+/* line 161, ../src/sass/components/_special.scss */
+.special__back-btn:after {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 0px;
+  border-style: solid;
+  border-color: white transparent transparent transparent;
+  border-width: 80px 30px 0px 0px;
+  position: absolute;
+  right: -50px;
+}
+/* line 165, ../src/sass/components/_special.scss */
+.special__back-btn span {
+  display: none;
+}
+
+/* line 173, ../src/sass/components/_special.scss */
+.special__file-input {
+  position: absolute;
+  bottom: 90px;
+  z-index: 2;
+  right: 50%;
+  margin-right: -80px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+
+/* line 182, ../src/sass/components/_special.scss */
+.special__description {
+  background-image: url('/web/20160602103645im_/http://www.haku-music.net/cam/theday/img/txt_upload.png');
+  background-repeat: no-repeat;
+  width: 593px;
+  height: 52px;
+  margin: auto;
+  margin-top: 40px;
+}
+/* line 186, ../src/sass/components/_special.scss */
+.special__description span {
+  display: none;
+}
+
+/* line 1, ../src/sass/components/_howto-ascii.scss */
+.howto-ascii {
+  margin: auto;
+  margin-top: 40px;
+  width: 680px;
+  position: relative;
+  left: 50%;
+  margin-left: -340px;
+}
+
+/* line 8, ../src/sass/lib/_bem-element.scss */
+.howto-ascii__step, .howto-ascii__step--upload, .howto-ascii__step--preview, .howto-ascii__step--share {
+  display: inline-block;
+  background-repeat: no-repeat;
+  vertical-align: top;
+  margin: 0px 30px;
+  position: relative;
+}
+/* line 21, ../src/sass/components/_howto-ascii.scss */
+.howto-ascii__step h1, .howto-ascii__step h2, .howto-ascii__step p, .howto-ascii__step--upload h1, .howto-ascii__step--upload h2, .howto-ascii__step--upload p, .howto-ascii__step--preview h1, .howto-ascii__step--preview h2, .howto-ascii__step--preview p, .howto-ascii__step--share h1, .howto-ascii__step--share h2, .howto-ascii__step--share p {
+  display: none;
+}
+
+/* line 26, ../src/sass/components/_howto-ascii.scss */
+.howto-ascii__step--upload {
+  background-image: url('/web/20160602103645im_/http://www.haku-music.net/cam/theday/img/img_howto-ascii_upload.png');
+  background-repeat: no-repeat;
+  width: 129px;
+  height: 166px;
+}
+/* line 29, ../src/sass/components/_howto-ascii.scss */
+.howto-ascii__step--upload:after {
+  content: '';
+  display: block;
+  background-image: url('/web/20160602103645im_/http://www.haku-music.net/cam/theday/img/ico_howto-ascii_arrow.png');
+  background-repeat: no-repeat;
+  width: 14px;
+  height: 19px;
+  position: absolute;
+  left: 160px;
+  top: 20px;
+}
+
+/* line 39, ../src/sass/components/_howto-ascii.scss */
+.howto-ascii__step--preview {
+  background-image: url('/web/20160602103645im_/http://www.haku-music.net/cam/theday/img/img_howto-ascii_preview.png');
+  background-repeat: no-repeat;
+  width: 181px;
+  height: 148px;
+  position: relative;
+  left: -10px;
+}
+/* line 45, ../src/sass/components/_howto-ascii.scss */
+.howto-ascii__step--preview:after {
+  content: '';
+  display: block;
+  background-image: url('/web/20160602103645im_/http://www.haku-music.net/cam/theday/img/ico_howto-ascii_arrow.png');
+  background-repeat: no-repeat;
+  width: 14px;
+  height: 19px;
+  position: absolute;
+  left: 205px;
+  top: 20px;
+}
+
+/* line 55, ../src/sass/components/_howto-ascii.scss */
+.howto-ascii__step--share {
+  position: relative;
+  left: -15px;
+  background-image: url('/web/20160602103645im_/http://www.haku-music.net/cam/theday/img/img_howto-ascii_share.png');
+  background-repeat: no-repeat;
+  width: 147px;
+  height: 167px;
+}
+
+/* line 1, ../src/sass/components/_result.scss */
+.result {
+  display: none;
+  background-color: white;
+  padding: 50px 0px;
+  padding-bottom: 80px;
+  background-image: url('/web/20160602103645im_/http://www.haku-music.net/cam/theday/img/bg_aa_wave.png');
+  background-repeat: repeat-x;
+  background-position: center -140px;
+}
+
+/* line 13, ../src/sass/components/_result.scss */
+.result__inner {
+  width: 640px;
+  overflow: hidden;
+  margin: auto;
+}
+
+/* line 19, ../src/sass/components/_result.scss */
+.result__credit {
+  margin-bottom: 40px;
+  margin-left: 20px;
+  font-family: mona-p;
+  text-align: left;
+}
+/* line 26, ../src/sass/components/_result.scss */
+.result__credit h1 {
+  font-size: 23px;
+  margin-bottom: 6px;
+}
+/* line 31, ../src/sass/components/_result.scss */
+.result__credit h2 {
+  font-size: 12px;
+}
+
+/* line 36, ../src/sass/components/_result.scss */
+.result__lyric {
+  position: absolute;
+  text-align: left;
+  z-index: 1;
+  text-shadow: 0px 0px 5px white;
+}
+
+/* line 8, ../src/sass/lib/_bem-element.scss */
+.result__aa, .result__aa--silent {
+  display: inline-block;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+/* line 50, ../src/sass/components/_result.scss */
+.result__aa span {
+  display: inline-block;
+}
+/* line 54, ../src/sass/components/_result.scss */
+.result__aa.animate span {
+  -webkit-transition-duration: 3s;
+  -moz-transition-duration: 3s;
+  -o-transition-duration: 3s;
+  transition-duration: 3s;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  transition-property: transform;
+}
+
+/* line 61, ../src/sass/components/_result.scss */
+.result__aa--silent span {
+  color: white;
+}
+
+/* line 66, ../src/sass/components/_result.scss */
+.result__top-btn {
+  display: block;
+  color: white;
+  background-color: black;
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  left: -50%;
+  margin-left: 140px;
+  background-image: url('/web/20160602103645im_/http://www.haku-music.net/cam/theday/img/btn_top.png');
+  background-repeat: no-repeat;
+  background-position: right 0px;
+  border-right: solid 1px black;
+}
+/* line 84, ../src/sass/components/_result.scss */
+.result__top-btn:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+}
+/* line 88, ../src/sass/components/_result.scss */
+.result__top-btn:before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 0px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+  border-width: 80px 30px 0px 0px;
+  position: absolute;
+  right: -50px;
+}
+/* line 92, ../src/sass/components/_result.scss */
+.result__top-btn span {
+  display: none;
+}
+
+/* line 1, ../src/sass/components/_aa-share.scss */
+.aa-share {
+  width: 640px;
+  margin: 40px auto;
+  margin-left: -14px;
+}
+/* line 6, ../src/sass/components/_aa-share.scss */
+.aa-share ul, .aa-share li {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* line 12, ../src/sass/components/_aa-share.scss */
+.aa-share__ttl {
+  display: inline-block;
+  background-image: url('/web/20160602103645im_/http://www.haku-music.net/cam/theday/img/txt_share.png');
+  background-repeat: no-repeat;
+  width: 96px;
+  height: 23px;
+  margin-right: 15px;
+  height: 72px;
+  background-position: center center;
+}
+/* line 20, ../src/sass/components/_aa-share.scss */
+.aa-share__ttl span {
+  display: none;
+}
+
+/* line 8, ../src/sass/lib/_bem-element.scss */
+.aa-share__btn, .aa-share__btn--facebook, .aa-share__btn--twitter, .aa-share__btn--line {
+  display: block;
+  width: 72px;
+  height: 72px;
+  cursor: pointer;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 0px 15px;
+}
+/* line 39, ../src/sass/components/_aa-share.scss */
+.aa-share__btn:hover, .aa-share__btn--facebook:hover, .aa-share__btn--twitter:hover, .aa-share__btn--line:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+}
+/* line 43, ../src/sass/components/_aa-share.scss */
+.aa-share__btn span, .aa-share__btn--facebook span, .aa-share__btn--twitter span, .aa-share__btn--line span {
+  display: none;
+}
+
+/* line 49, ../src/sass/components/_aa-share.scss */
+.aa-share__btn--facebook {
+  background-image: url('/web/20160602103645im_/http://www.haku-music.net/cam/theday/img/ico_share_facebook.png');
+}
+
+/* line 49, ../src/sass/components/_aa-share.scss */
+.aa-share__btn--twitter {
+  background-image: url('/web/20160602103645im_/http://www.haku-music.net/cam/theday/img/ico_share_twitter.png');
+}
+
+/* line 49, ../src/sass/components/_aa-share.scss */
+.aa-share__btn--line {
+  background-image: url('/web/20160602103645im_/http://www.haku-music.net/cam/theday/img/ico_share_line.png');
+}
+
+/* line 1, ../src/sass/components/_links.scss */
+.links {
+  margin-top: 40px;
+  min-width: 640px;
+}
+/* line 5, ../src/sass/components/_links.scss */
+.links li {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* line 8, ../src/sass/lib/_bem-element.scss */
+.links__btn, .links__btn--official, .links__btn--facebook, .links__btn--twitter, .links__btn--youtube {
+  display: block;
+  background-color: black;
+  width: 120px;
+  height: 120px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 0px 15px;
+}
+/* line 26, ../src/sass/components/_links.scss */
+.links__btn:hover, .links__btn--official:hover, .links__btn--facebook:hover, .links__btn--twitter:hover, .links__btn--youtube:hover {
+  background-color: #333;
+}
+/* line 30, ../src/sass/components/_links.scss */
+.links__btn span, .links__btn--official span, .links__btn--facebook span, .links__btn--twitter span, .links__btn--youtube span {
+  display: none;
+}
+
+/* line 36, ../src/sass/components/_links.scss */
+.links__btn--official {
+  background-image: url('/web/20160602103645im_/http://www.haku-music.net/cam/theday/img/ico_link_official.png');
+}
+
+/* line 36, ../src/sass/components/_links.scss */
+.links__btn--facebook {
+  background-image: url('/web/20160602103645im_/http://www.haku-music.net/cam/theday/img/ico_link_facebook.png');
+}
+
+/* line 36, ../src/sass/components/_links.scss */
+.links__btn--twitter {
+  background-image: url('/web/20160602103645im_/http://www.haku-music.net/cam/theday/img/ico_link_twitter.png');
+}
+
+/* line 36, ../src/sass/components/_links.scss */
+.links__btn--youtube {
+  background-image: url('/web/20160602103645im_/http://www.haku-music.net/cam/theday/img/ico_link_youtube.png');
+}
+
+/* line 1, ../src/sass/components/_footer.scss */
+.footer {
+  overflow: hidden;
+}
+
+/* line 5, ../src/sass/components/_footer.scss */
+.footer__copyright {
+  display: block;
+  margin: 40px 0px;
+  font-size: 13px;
+}
+
+/* line 8, ../src/sass/lib/_bem-element.scss */
+.pagetop, .pagetop--black, .pagetop--white {
+  width: 76px;
+  height: 50px;
+  display: block;
+  position: fixed;
+  bottom: 0px;
+  right: 25%;
+  margin-right: -76px;
+  background-image: url('/web/20160602103645im_/http://www.haku-music.net/cam/theday/img/ico_pagetop.png');
+  background-position: 50% 0px;
+  background-repeat: no-repeat;
+  -webkit-transform: translate(0px, 100%);
+  -moz-transform: translate(0px, 100%);
+  -ms-transform: translate(0px, 100%);
+  -o-transform: translate(0px, 100%);
+  transform: translate(0px, 100%);
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+/* line 22, ../src/sass/components/_pagetop.scss */
+.pagetop.active, .pagetop--black.active, .pagetop--white.active {
+  -webkit-transform: translate(0px, 0px);
+  -moz-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  -o-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+}
+/* line 26, ../src/sass/components/_pagetop.scss */
+.pagetop.sp, .pagetop--black.sp, .pagetop--white.sp {
+  width: 152px;
+  height: 100px;
+  -webkit-background-size: 62px 200px;
+  -moz-background-size: 62px 200px;
+  -o-background-size: 62px 200px;
+  background-size: 62px 200px;
+  right: 0px;
+  margin-right: 0px;
+}
+/* line 35, ../src/sass/components/_pagetop.scss */
+.pagetop span, .pagetop--black span, .pagetop--white span {
+  display: none;
+}
+
+/* line 40, ../src/sass/components/_pagetop.scss */
+.pagetop--black {
+  color: white;
+  background-color: black;
+  background-position: 50% 0px;
+}
+
+/* line 46, ../src/sass/components/_pagetop.scss */
+.pagetop--white {
+  color: black;
+  background-color: white;
+  background-position: 50% -50px;
+}
+/* line 50, ../src/sass/components/_pagetop.scss */
+.pagetop--white.sp {
+  background-position: 50% -100px;
+}
+
+/* line 1, ../src/sass/components/_notfound.scss */
+.notfound {
+  background-image: url('/web/20160602103645im_/http://www.haku-music.net/cam/theday/img/bg_aa_wave.png');
+  background-repeat: repeat-x;
+  background-position: center -140px;
+  font-size: 17px;
+  line-height: 2.5;
+  position: relative;
+}
+
+/* line 12, ../src/sass/components/_notfound.scss */
+.notfound__inner {
+  width: 600px;
+  height: 405px;
+  margin: auto;
+  text-align: left;
+  padding-top: 50px;
+  padding-bottom: 190px;
+}
+
+/* line 21, ../src/sass/components/_notfound.scss */
+.notfound__title {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 1;
+  margin-bottom: 50px;
+  font-family: mona-p;
+}
+
+/* line 29, ../src/sass/components/_notfound.scss */
+.notfound__aa {
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+/* line 32, ../src/sass/components/_notfound.scss */
+.notfound__aa span {
+  display: inline-block;
+  -webkit-transition-duration: 3s;
+  -moz-transition-duration: 3s;
+  -o-transition-duration: 3s;
+  transition-duration: 3s;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  transition-property: transform;
+}
+
+/* line 39, ../src/sass/components/_notfound.scss */
+.notfound__lyric {
+  position: absolute;
+}
+
+/* line 43, ../src/sass/components/_notfound.scss */
+.notfound__top-btn {
+  display: block;
+  color: white;
+  background-color: black;
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  left: -50%;
+  bottom: 40px;
+  margin-left: 135px;
+  background-image: url('/web/20160602103645im_/http://www.haku-music.net/cam/theday/img/btn_top.png');
+  background-repeat: no-repeat;
+  background-position: right 0px;
+  border-right: solid 1px black;
+}
+/* line 62, ../src/sass/components/_notfound.scss */
+.notfound__top-btn:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+}
+/* line 66, ../src/sass/components/_notfound.scss */
+.notfound__top-btn:before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 0px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+  border-width: 80px 30px 0px 0px;
+  position: absolute;
+  right: -50px;
+}
+/* line 70, ../src/sass/components/_notfound.scss */
+.notfound__top-btn span {
+  display: none;
+}
+
+/* line 1, ../src/sass/components/_download.scss */
+.download {
+  background-image: url('/web/20160602103645im_/http://www.haku-music.net/cam/theday/img/bg_aa_wave.png');
+  background-repeat: repeat-x;
+  background-position: center -140px;
+  font-size: 17px;
+  line-height: 1.7;
+  position: relative;
+}
+
+/* line 12, ../src/sass/components/_download.scss */
+.download__inner {
+  width: 520px;
+  margin: auto;
+  text-align: left;
+  padding-top: 50px;
+  padding-bottom: 170px;
+}
+/* line 19, ../src/sass/components/_download.scss */
+.download__inner .download__btn {
+  display: block;
+  color: inherit;
+}
+/* line 24, ../src/sass/components/_download.scss */
+.download__inner p, .download__inner ul {
+  margin: 20px 0px;
+}
+/* line 28, ../src/sass/components/_download.scss */
+.download__inner li {
+  font-size: 75%;
+  margin-left: 1em;
+}
+/* line 31, ../src/sass/components/_download.scss */
+.download__inner li:before {
+  content: '※';
+  display: inline-block;
+  margin-left: -1em;
+}
+
+/* line 39, ../src/sass/components/_download.scss */
+.download__title {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 1;
+  margin-bottom: 12px;
+  font-family: mona-p;
+}
+
+/* line 47, ../src/sass/components/_download.scss */
+.download__top-btn {
+  display: block;
+  color: white;
+  background-color: black;
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  left: -50%;
+  bottom: 40px;
+  margin-left: 135px;
+  background-image: url('/web/20160602103645im_/http://www.haku-music.net/cam/theday/img/btn_top.png');
+  background-repeat: no-repeat;
+  background-position: right 0px;
+  border-right: solid 1px black;
+}
+/* line 66, ../src/sass/components/_download.scss */
+.download__top-btn:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+}
+/* line 70, ../src/sass/components/_download.scss */
+.download__top-btn:before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 0px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+  border-width: 80px 30px 0px 0px;
+  position: absolute;
+  right: -50px;
+}
+/* line 74, ../src/sass/components/_download.scss */
+.download__top-btn span {
+  display: none;
+}
+
+/*
+     FILE ARCHIVED ON 10:36:45 Jun 02, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 22:12:27 Feb 28, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 117.37
+  exclusion.robots: 0.206
+  exclusion.robots.policy: 0.198
+  RedisCDXSource: 0.699
+  esindex: 0.009
+  LoadShardBlock: 96.656 (3)
+  PetaboxLoader3.datanode: 86.723 (4)
+  CDXLines.iter: 17.633 (3)
+  load_resource: 123.042
+  PetaboxLoader3.resolve: 42.883
+*/
