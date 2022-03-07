@@ -1,0 +1,304 @@
+
+<!-- Main UI.
+
+     Copyright (C) 2012.
+
+     This file is part of ASCII Artist.
+
+     ASCII Artist is free software: you can redistribute it and/or modify
+     it under the terms of the GNU General Public License as published by
+     the Free Software Foundation, either version 3 of the License, or
+     (at your option) any later version.
+
+     ASCII Artist is distributed in the hope that it will be useful,
+     but WITHOUT ANY WARRANTY; without even the implied warranty of
+     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+     GNU General Public License for more details.
+
+     You should have received a copy of the GNU General Public License
+     along with ASCII Artist.  If not, see <http://www.gnu.org/licenses/>.
+
+     From Cyril Feng. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+    <script src="./js/main.js" type="text/javascript"></script>
+    <script src="./js/sketch.js" type="text/javascript"></script>
+
+    <title>ASCII Artist - Audio Waveform ASCII Drawing</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'/>
+  </head>
+
+  <body oncontextmenu="return false;">
+    <header>
+      <nav id="menubar">
+        <ul>
+          <input type="radio" name="menu" id="menu0" checked />
+          <li>
+            <input type="radio" name="menu" id="menu1" />
+            <label for="menu1">File</label>
+          </li>
+          <li>
+            <input type="radio" name="menu" id="menu2" />
+            <label for="menu2">Edit</label>
+          </li>
+          <li>
+            <input type="radio" name="menu" id="menu3" />
+            <label for="menu3">View</label>
+          </li>
+          <li>
+            <input type="radio" name="menu" id="menu4" />
+            <label for="menu4">Help</label>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <article id="editor" style="margin-top:15px;margin-left:200px;">
+      <header draggable="true">ASCII Artist</header>
+      <nav>
+        <ul id="tab-list">
+        </ul>
+      </nav>
+
+      <textarea id="sketch-text" wrap="off"
+                spellcheck="false"></textarea>
+      <div>
+        ?
+      </div>
+    </article>
+
+    <aside id="toolbox" style="margin-top:70px;margin-left:10px;">
+      <header draggable="true">Toolbox</header>
+      <details open>
+        <summary>Mode</summary>
+        <div class="avail">
+          <!-- Selector -->
+          <canvas id="canvas-select" class="canvas-mode"
+                  width="30px" height="20px" title="Selector">
+          </canvas>
+          <!-- Text -->
+          <canvas id="canvas-text" class="canvas-mode"
+                  width="30px" height="20px" title="Text">
+          </canvas>
+          <!-- Pen -->
+          <canvas id="canvas-pen" class="canvas-mode"
+                  width="30px" height="20px" title="Pen">
+          </canvas>
+          <!-- Line -->
+          <canvas id="canvas-line" class="canvas-mode"
+                  width="30px" height="20px" title="Line">
+          </canvas>
+          <!-- Rectangle -->
+          <canvas id="canvas-rect" class="canvas-mode"
+                  width="30px" height="20px" title="Rectangle">
+          </canvas>
+          <!-- Polygonal line -->
+          <canvas id="canvas-poly" class="canvas-mode"
+                  width="30px" height="20px" title="Polygonal line">
+          </canvas>
+          <!-- Circle -->
+          <canvas id="canvas-circle" class="canvas-mode"
+                  width="30px" height="20px" title="Circle">
+          </canvas>
+          <!-- Bezier curve -->
+          <canvas id="canvas-bezier" class="canvas-mode"
+                  width="30px" height="20px" title="Bezier">
+          </canvas>
+          <!-- Fill -->
+          <canvas id="canvas-fill" class="canvas-mode"
+                  width="30px" height="20px" title="Fill">
+          </canvas>
+          <!-- Eraser -->
+          <canvas id="canvas-erase" class="canvas-mode"
+                  width="30px" height="20px" title="Eraser">
+          </canvas>
+          <!-- Prune -->
+          <canvas id="canvas-prune" class="canvas-mode"
+                  width="30px" height="20px" title="Prune">
+          </canvas>
+          <!-- <span style="float:left">Status</span> -->
+          <span><input type="range" id="zoom-level" min="1" max="100" /></span>
+        </div>
+      </details>
+
+      <details open>
+        <summary>FG/BG</summary>
+        <div class="avail">
+          <label>Background:</label>
+          <input id="bg" value="　" maxlength="1" style="width: 2em" />
+          <label>Foreground:</label>
+          <input id="fg" value="講" maxlength="1" style="width: 2em" />
+        </div>
+      </details>
+
+      <details id="mode-option" open>
+        <summary>Options</summary>
+        <div class="avail">
+          <div id="text-option">
+            <h5>Insert/Replace</h5>
+            <input type="radio" name="text-mode" id="text-mode-op1" checked />
+            <label for="text-mode-op1">Replace</label><br />
+            <input type="radio" name="text-mode" id="text-mode-op2" />
+            <label for="text-mode-op2">Insert</label>
+          </div>
+
+          <div id="fill-option">
+            <h5>Filler</h5>
+            <input id="filler" value="*" maxlength="1" />
+          </div>
+
+          <div id="prune-option">
+            <h5>Style</h5>
+            <input type="radio" name="prune-mode" id="prune-mode-op1"
+                   checked />
+            <label for="prune-mode-op1">To End</label><br />
+            <input type="radio" name="prune-mode" id="prune-mode-op2" />
+            <label for="prune-mode-op2">Connected</label>
+          </div>
+        </div>
+      </details>
+    </aside>
+
+    <div id="menu1-content" class="menu">
+      <ul>
+        <li><a href="#popup-file-new">New&#8230;</a></li>
+        <li><a href="#popup-file-open">Open&#8230;</a></li>
+        <hr />
+        <li class="avail">
+          <a id="file-save_as-name" href="#popup-file-saveAs">Save as&#8230;</a>
+        </li>
+        <hr class="avail" />
+        <li class="avail"><a href="#popup-file-page">Page setup&#8230;</a></li>
+        <hr class="avail" />
+        <li id="close_sketch" class="avail">Close</li>
+        <li id="close_all_sketch" class="avail">Close all</li>
+      </ul>
+    </div>
+
+    <div id="menu2-content" class="menu">
+      <ul>
+        <li id="history-undo" class="avail menu-history">Undo</li>
+        <li id="history-redo" class="avail menu-history">Redo</li>
+        <hr class="avail" />
+        <li id="handle_text-cut" class="avail menu-handle_text">Cut</li>
+        <li id="handle_text-copy" class="avail menu-handle_text">Copy</li>
+        <li id="handle_text-paste" class="avail menu-handle_text">Paste</li>
+        <hr class="avail" />
+        <li id="menu-clear" class="avail">Clear</li>
+        <!-- <hr class="avail" /> -->
+        <!-- <li>Options&#8230;</li> -->
+      </ul>
+    </div>
+
+    <div id="menu3-content" class="menu">
+      <ul>
+        <li class="avail"><input type="checkbox" id="zoom-auto" />
+          <label for="zoom-auto">Auto Fit</label></li>
+        <li id="zoom-fit" class="avail">Fit window</li>
+        <li id="zoom-in" class="avail">Zoom in</li>
+        <li id="zoom-out" class="avail">Zoom out</li>
+        <li id="zoom-in_x10" class="avail">Zoom in &times;10</li>
+        <li id="zoom-out_x10" class="avail">Zoom out &times;10</li>
+        <hr class="avail" />
+        <li id="toggle-fullscreen">Toggle fullscreen</li>
+        <!-- Not supported -->
+        <!-- <hr /> -->
+        <!-- <li>Set background color</li> -->
+        <!-- <li>Set font color</li> -->
+        <!-- <hr /> -->
+      </ul>
+    </div>
+
+    <div id="menu4-content" class="menu">
+      <ul>
+        <li>
+          <a target="_blank"
+             href="https://chrome.google.com/webstore/detail/gbfofmodbpmaemeeapmfcikckcegdkfb/reviews">
+            Feedback</a></li>
+        <hr />
+        <li><a href="#popup-help-about">About&#8230;</a></li>
+      </ul>
+    </div>
+
+    <div id="popup-file-new" class="popup">
+      Name:<input value="Untitled" id="popup-file-new-name" autofocus />
+      <div class="action">
+        <input type="submit" id="file-new-name" value="OK" />
+        <input type="button" value="Cancel" />
+      </div>
+    </div>
+
+    <div id="popup-file-open" class="popup">
+      <input type="file" id="file-open" autofocus />
+      <div class="action">
+        <input type="button" value="Cancel" />
+      </div>
+    </div>
+
+    <div id="popup-file-saveAs" class="popup">
+      (File will be saved in your "Download" directory)<br />
+      Name:<input id="popup-file-saveAs-name" autofocus />
+      <div class="action">
+        <input type="submit" id="file-save" value="OK" />
+        <input type="button" value="Cancel" />
+      </div>
+    </div>
+
+    <div id="popup-file-page" class="popup">
+      <input type="number" min="1" max="300" id="size-cols" autofocus />
+      &times;
+      <input type="number" min="1" max="90" id="size-rows" />
+      <div class="action">
+        <input type="submit" id="file-set_size" value="OK" />
+        <input type="button" value="Cancel" />
+      </div>
+    </div>
+
+    <div id="popup-help-about" class="popup">
+      <!--<iframe id="iframe" sandbox="allow-scripts"></iframe>-->
+      <pre id="logo">
+                          ++
+                         ++++
+                        ++--++
+                       ++----++
+                      ++------++
+                     ++--------++
+                    ++----------++
+                   ++------------++
+                  ++---------++---++
+                 ++---------+-++----+
+                ++---------+   ++----+
+               ++---------+     ++----+
+              ++---------+       ++----+
+             ++---------+         ++----+
+            ++---------+           ++----+
+           ++---------+             ++----+
+          ++---------++++++++++++++++++----+
+         ++---------++++++++++++++++++++----+
+        ++---------+                   ++----+
+       ++---------+                     ++----+
+      ++---------+                       ++----+
+     ++---------+                         ++----+
+    ++---------+                           ++----+
+   ++---------+                             ++----+
+  ++---------+                               ++----+
+ ++---------+                                 ++----+
+++---------+                                   ++----+
+      </pre>
+      ASCII Artist <span id="version"></span> <br />
+      &copy;2012<br />
+      Cyril Feng
+      <div class="action">
+        <input type="submit" value="OK" />
+      </div>
+    </div>
+
+    <div id="overlay"></div>
+  </body>
+</html>
