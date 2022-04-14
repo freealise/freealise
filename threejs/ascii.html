@@ -65,34 +65,8 @@
 
 				renderer = new THREE.WebGLRenderer();
 				renderer.setSize( window.innerWidth, window.innerHeight );
-				
-				var dots = (
-				"⠀⢀⠠⢠⠐⢐⠰⢰⠈⢈⠨⢨⠘⢘⠸⢸" +
-				"⡀⣀⡠⣠⡐⣐⡰⣰⡈⣈⡨⣨⡘⣘⡸⣸" +
-				"⠄⢄⠤⢤⠔⢔⠴⢴⠌⢌⠬⢬⠜⢜⠼⢼" +
-				"⡄⣄⡤⣤⡔⣔⡴⣴⡌⣌⡬⣬⡜⣜⡼⣼" +
-				"⠂⢂⠢⢢⠒⢒⠲⢲⠊⢊⠪⢪⠚⢚⠺⢺" +
-				"⡂⣂⡢⣢⡒⣒⡲⣲⡊⣊⡪⣪⡚⣚⡺⣺" +
-				"⠆⢆⠦⢦⠖⢖⠶⢶⠎⢎⠮⢮⠞⢞⠾⢾" +
-				"⡆⣆⡦⣦⡖⣖⡶⣶⡎⣎⡮⣮⡞⣞⡾⣾" +
-				"⠁⢁⠡⢡⠑⢑⠱⢱⠉⢉⠩⢩⠙⢙⠹⢹" +
-				"⡁⣁⡡⣡⡑⣑⡱⣱⡉⣉⡩⣩⡙⣙⡹⣹" +
-				"⠅⢅⠥⢥⠕⢕⠵⢵⠍⢍⠭⢭⠝⢝⠽⢽" +
-				"⡅⣅⡥⣥⡕⣕⡵⣵⡍⣍⡭⣭⡝⣝⡽⣽" +
-				"⠃⢃⠣⢣⠓⢓⠳⢳⠋⢋⠫⢫⠛⢛⠻⢻" +
-				"⡃⣃⡣⣣⡓⣓⡳⣳⡋⣋⡫⣫⡛⣛⡻⣻" +
-				"⠇⢇⠧⢧⠗⢗⠷⢷⠏⢏⠯⢯⠟⢟⠿⢿" +
-				"⡇⣇⡧⣧⡗⣗⡷⣷⡏⣏⡯⣯⡟⣟⡿⣿"
-				).split("");
 
-				//sort by number of dots
-				var bn = {};
-				for (var i = 0; i<256; i++) {
-				  bn[dots[i]] = i.toString(2).replace(/0/g, "").length;
-				}
-				dots.sort(function(a, b){return bn[a] - bn[b]});
-
-				effect = new AsciiEffect( renderer, dots.join(""), { invert: true } );
+				effect = new AsciiEffect( renderer, ' ░▒▓█', { invert: true } );
 				effect.setSize( window.innerWidth, window.innerHeight );
 				effect.domElement.style.color = 'white';
 				effect.domElement.style.backgroundColor = 'black';
