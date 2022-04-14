@@ -90,7 +90,7 @@
 				for (var i = 0; i<256; i++) {
 				  bn[dots[i]] = i.toString(2).replace(/0/g, "").length;
 				}
-				dots.sort(function(a, b){return bn[a] - bn[b]});
+				dots.sort(function(a, b){return bn[b] - bn[a]});
 
 				effect = new AsciiEffect( renderer, dots.join(""), { invert: true } );
 				effect.setSize( window.innerWidth, window.innerHeight );
