@@ -92,7 +92,7 @@
 				}
 				dots.sort(function(a, b){return bn[a] - bn[b]});
 
-				effect = new AsciiEffect( renderer, dots.join(""), { invert: false } );
+				effect = new AsciiEffect( renderer, dots.join(""), { invert: true } );
 				effect.setSize( window.innerWidth, window.innerHeight );
 				effect.domElement.style.color = 'white';
 				effect.domElement.style.backgroundColor = 'black';
