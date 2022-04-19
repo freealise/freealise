@@ -10,6 +10,7 @@ stc quote (+ site search) / link to mckee story
 can find data on its own by googling and spidering ?
 can filter general stupidity linguistically ?
 train multiple times on same data and use average to reduce stochasticity (also moving average ?)
+noise from random.org
 
 can be the government
 
