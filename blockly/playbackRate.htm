@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>createMediaStreamDestination() demo</title>
+  </head>
+  <body>
+    <h1 onclick="setPitch(event.pageX);">createMediaStreamDestination() demo</h1>
+
+    <p>Encoding a pure sine wave to an Opus file </p>
+    <p><button>Start</button></p>
+
+    <audio id="myAudio" controls></audio>
+    <script>
+     var b = document.querySelector("button");
+     var myAudio = document.getElementById("myAudio");
+     var clicked = false;
+     var chunks = [];
+     var ac;
+     var source, gainNode;
+     var dest;
+     var mediaRecorder;
+
+     function init() {
+       ac = new AudioContext();
+       
+       // Create an empty stereo buffer at the sample rate of the AudioContext
+       var myArrayBuffer = ac.createBuffer(2, ac.sampleRate * 300, ac.sampleRate);
+        
+       // Fill the buffer with white noise;
+       //just random values between -1.0 and 1.0
+       for (var channel = 0; channel < myArrayBuffer.numberOfChannels; channel++) {
+         // This gives us the actual ArrayBuffer that contains the data
+         var nowBuffering = myArrayBuffer.getChannelData(channel);
+         for (var i = 0; i < myArrayBuffer.length; i++) {
+           // Math.random() is in [0; 1.0]
+           // audio needs to be in [-1.0; 1.0]
+           //nowBuffering[i] = Math.random() * 2 - 1;
+           nowBuffering[i] = Math.sin(i*Math.PI/ac.sampleRate*128)*Math.sin(i*Math.PI/ac.sampleRate/8);
+         }
+       }
+        
+       // Get an AudioBufferSourceNode.
+       // This is the AudioNode to use when we want to play an AudioBuffer
+       source = ac.createBufferSource();
+       // set the buffer in the AudioBufferSourceNode
+       source.buffer = myArrayBuffer;
+       // connect the AudioBufferSourceNode to the
+       // destination so we can hear the sound
+       source.playbackRate.value = 1.0;                             //pitch
+       source.loop = false;
+       
+       gainNode = ac.createGain();
+       gainNode.gain.value = 1.0;
+       source.connect(gainNode);
+       
+       dest = ac.createMediaStreamDestination();
+       gainNode.connect(dest);
+       myAudio.srcObject = dest.stream;
+       myAudio.playbackRate = 1.0;        //not possible to set playback rate of a stream
+       //myAudio.preservesPitch = true;   //default, experimental
+       
+       mediaRecorder = new MediaRecorder(dest.stream);
+
+       mediaRecorder.ondataavailable = function(evt) {
+         // push each chunk (blobs) in an array
+         chunks.push(evt.data);
+       };
+
+       mediaRecorder.onstop = function(evt) {
+         // Make blob out of our blobs, and open it.
+         myAudio.srcObject = null;
+         let blob = new Blob(chunks, { 'type' : 'audio/ogg; codecs=opus' });
+         myAudio.src = URL.createObjectURL(blob);
+         myAudio.playbackRate = 1.0;                              //duration
+       };
+       
+       source.start(0);
+       mediaRecorder.start();
+       myAudio.play();
+     }
+     
+     function setPitch(x) {
+       source.playbackRate.value = x / 128;
+       var pb = 1 / x * 128;
+       myAudio.playbackRate = pb.toFixed(2);
+       console.log(pb.toFixed(2) + ' ' + myAudio.playbackRate);
+     }
+
+     b.addEventListener("click", function(e) {
+       if(!ac) {
+           init();
+       }
+
+       if (!clicked) {
+           //mediaRecorder.resume();
+           source.loopStart = 0;
+           source.loopEnd = 60;
+           e.target.innerHTML = "Stop";
+           clicked = true;
+         } else {
+           //mediaRecorder.pause();
+           mediaRecorder.requestData();
+           mediaRecorder.stop();
+           source.loopStart = 0;
+           source.loopEnd = 0;
+           e.target.innerHTML = "Start";
+           clicked = false;
+         }
+     });
+    </script>
+  </body>
+</html>
