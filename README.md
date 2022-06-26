@@ -1,4 +1,4 @@
-### Hi there,
+### 
 
 <!--
 **freealise/freealise** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
@@ -15,5 +15,4 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-English is not my native language, but I started to learn it before school - and music has later become an important part of education.  
-The brand Freealise refers to the sponsorship pricing model, it is an altered version of an early name of Linux (which was Freax).
+<a href="https://me.freealise.com">~</a>
