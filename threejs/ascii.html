@@ -68,11 +68,11 @@
 				
 				var br = ("iɪɔtɹɛʌvsljeəafʃzouʒɑnʊkwŋbpdɡðhæθʧmʤ").split("");
 				
-				effect = new AsciiEffect( renderer, br.join(''), { invert: true } );
+				effect = new AsciiEffect( renderer, br.join(''), { invert: false } );
 				effect.setSize( window.innerWidth, window.innerHeight );
 				effect.domElement.style.color = 'white';
 				effect.domElement.style.backgroundColor = 'black';
-				effect.domElement.style.filter = 'blur(0.25em)';
+				effect.domElement.style.filter = 'blur(0.2em)';
 
 				// Special case: append effect.domElement, instead of renderer.domElement.
 				// AsciiEffect creates a custom domElement (a div container) where the ASCII elements are placed.
