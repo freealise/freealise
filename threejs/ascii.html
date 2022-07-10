@@ -66,9 +66,9 @@
 				renderer = new THREE.WebGLRenderer();
 				renderer.setSize( window.innerWidth, window.innerHeight );
 				
-				var br = ("iɪɔtɹɛʌvsljeəafʃzouʒɑnʊkwŋbpdɡðhæθʧmʤ").split("");
+				var br = " ░▒▓█";
 				
-				effect = new AsciiEffect( renderer, br.join(''), { invert: true } );
+				effect = new AsciiEffect( renderer, br, { invert: true } );
 				effect.setSize( window.innerWidth, window.innerHeight );
 				effect.domElement.style.color = 'white';
 				effect.domElement.style.backgroundColor = 'black';
