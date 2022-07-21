@@ -15,4 +15,4 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-<a href="https://me.freealise.com">~</a>
+<a href="https://me.freeali.se">~</a>
