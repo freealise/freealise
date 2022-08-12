@@ -25,6 +25,7 @@ scrap collector corporations,
 forbid to throw away usable items and track with cameras
 
 radioactive waste -> Antarctica?
+global wind / solar power plant in Antarctica instead of nuclear power anywhere else
 
 floating pool ?
 drone delivery
