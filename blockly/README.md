@@ -1,9 +1,6 @@
-modular code for story structure (json)  
-http://droplet-editor.github.io/  
-https://savethecat.com/save-the-cat-software  
-https://store.finaldraft.com/all-final-draft-products.html  
-https://www.literatureandlatte.com/scrivener/features?os=macOS  
+modular code for neural networks ?  
 
+collaboration:  
 https://github.com/google/blockly-samples/tree/master/examples/blockly-rtc  
 
 https://developers.google.com/blockly/guides/overview  
