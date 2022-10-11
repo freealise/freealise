@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html><head>
-<title>Marina Goritskaia</title>
-</head>
-<body background="constable.png">
-<h4>Applied linguistics and software development</h4>
+#### Applied linguistics and software development
 
 <!--
 **freealise/freealise** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
@@ -21,12 +16,6 @@ Here are some ideas to get you started:
 -->
 
 <!--[research, law, nonprofit, investments - infographics]
-<pre>
 https://linkedin.com
 https://independent.academia.edu/MarinaGoritskaia
-</pre>
 -->
-
-
-</body>
-</html>
