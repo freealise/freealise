@@ -13,7 +13,10 @@ train multiple times on same data and use average to reduce stochasticity (also 
 noise from random.org
 can be the government ?
 
-Katz bot (blog and twitter) ?
+Konigsberg joining Belarus and the EU (architecture -> AI)
+https://pastvu.com?g=54.709564,20.494307&z=12&s=osm&t=mapnik&type=1
+https://en.wikipedia.org/wiki/Old_Prussian_language, Yiddish, English
+
 Style transfer datasets for urban environment
 http://mi.eng.cam.ac.uk/research/projects/VideoRec/CamVid/
 https://download.visinf.tu-darmstadt.de/data/from_games/
