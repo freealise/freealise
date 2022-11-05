@@ -19,3 +19,5 @@ Here are some ideas to get you started:
 https://linkedin.com
 https://independent.academia.edu/MarinaGoritskaia
 -->
+
+<a href="https://stackoverflow.com/users/9165398/freealise"><img src="https://stackoverflow.com/users/flair/9165398.png?theme=clean" width="208" height="58" alt="profile for freealise at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for freealise at Stack Overflow, Q&amp;A for professional and enthusiast programmers"></a>
