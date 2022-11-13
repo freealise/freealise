@@ -15,7 +15,7 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-<!--[research, law, nonprofit, investments - infographics]
+<!--
 https://linkedin.com
 https://independent.academia.edu/MarinaGoritskaia
 -->
