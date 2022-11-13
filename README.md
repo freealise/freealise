@@ -18,4 +18,6 @@ Here are some ideas to get you started:
 <!--
 https://linkedin.com
 https://independent.academia.edu/MarinaGoritskaia
+
+Bipolar, paranoid, obsessive-compulsive, almost aphantasiac, Judaizing introvert.
 -->
