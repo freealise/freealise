@@ -6,7 +6,7 @@ can be an editor or language teacher, suggest books by summary (gutenberg), legi
 detect propaganda or falsified election results or corruption (if has enough data https://smlouvy.gov.cz/), trade stocks, block ads.
 find melodrama in lyrics and scripts
 stc quote (+ site search) / link to mckee story
-higher level language for screenwriting ?  
+higher level language for screenwriting (data from flickr kml / georss)
 can find data on its own by googling and spidering ?
 can filter general stupidity linguistically ?
 train multiple times on same data and use average to reduce stochasticity (also moving average ?)
