@@ -27,4 +27,4 @@ have to keep parts of image unchanged with layers
 
 aid for the blind with annotated google streets from pedestrian pov and earplug / tactile display if also deaf
     
-<img src="https://maps.googleapis.com/maps/api/streetview?size=400x400&location=47.5763831,-122.4211769&fov=80&heading=70&pitch=0&key=[KEY]&signature=s-5sISYtuQtZdLZN6Cfn55JpL1g=" />
+<img src="https://maps.googleapis.com/maps/api/streetview?size=400x400&location=47.5763831,-122.4211769&fov=80&heading=70&pitch=0&key=[KEY]&signature=[SIG]" />
