@@ -5,7 +5,7 @@ train AI on Sefaria (fuzzy search) -> blog [sefaria, opensiddur] (https://corpus
 can be an editor (storygrid/_) or language teacher, suggest books by summary (gutenberg), legislation (~copilot, or be a consultant), 
 detect propaganda or falsified election results or corruption (if has enough data https://smlouvy.gov.cz/), trade stocks, block ads.
 find melodrama in lyrics and scripts
-stc quote (+ site search) / link to mckee story
+
 higher level language for screenwriting (data from flickr kml / georss)
 can find data on its own by googling and spidering ?
 can filter general stupidity linguistically ?
@@ -25,10 +25,6 @@ https://download.visinf.tu-darmstadt.de/data/from_games/
 https://www.cityscapes-dataset.com/
 have to keep parts of image unchanged with layers
 
-<p>(Genesis 1:1) </p>
-    <script type="text/javascript" charset="utf-8" src="https://www.sefaria.org/linker.js"></script>
-    <script>
-        sefaria.link({dynamic: false, contentLang: "english", mode: "popup-click", parenthesesOnly: true});
-    </script>
+aid for the blind with annotated google streets from pedestrian pov and earplug / tactile display if also deaf
     
 <img src="https://maps.googleapis.com/maps/api/streetview?size=400x400&location=47.5763831,-122.4211769&fov=80&heading=70&pitch=0&key=AIzaSyDONbj1HFMLs7UI3yBortL4qwLm-0C7mYM&signature=s-5sISYtuQtZdLZN6Cfn55JpL1g=" />
