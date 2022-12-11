@@ -5,6 +5,7 @@ train AI on Sefaria (fuzzy search) -> blog [sefaria, opensiddur] (https://corpus
 can be an editor (storygrid/_) or language teacher, suggest books by summary (gutenberg), legislation (~copilot, or be a consultant), 
 detect propaganda or falsified election results or corruption (if has enough data https://smlouvy.gov.cz/), trade stocks, block ads.
 find melodrama in lyrics and scripts
+matchmaker
 
 higher level language for screenwriting (data from flickr kml / georss)
 can find data on its own by googling and spidering ?
