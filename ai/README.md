@@ -2,3 +2,4 @@ https://codelabs.developers.google.com/codelabs/tensorflowjs-convert-python-save
 
 https://github.com/lagodiuk/earley-parser-js  
 https://github.com/lagodiuk/decision-tree-js
+deterministic natural language parser ?
