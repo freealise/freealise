@@ -14,15 +14,13 @@ train multiple times on same data and use average to reduce stochasticity (also 
 noise from random.org
 can be the government ?
 
-Konigsberg joining Belarus and the EU (𝔎𝔬𝔫𝔦𝔤𝔰𝔟𝔢𝔯𝔤 𝕶𝖔𝖓𝖎𝖌𝖘𝖇𝖊𝖗𝖌)
-https://pastvu.com?g=54.709564,20.494307&z=12&s=osm&t=mapnik&type=1
-
 Style transfer datasets for urban environment
 http://mi.eng.cam.ac.uk/research/projects/VideoRec/CamVid/
 https://download.visinf.tu-darmstadt.de/data/from_games/
 https://www.cityscapes-dataset.com/
+https://pastvu.com?g=54.709564,20.494307&z=12&s=osm&t=mapnik&type=1
 have to keep parts of image unchanged with layers
 
-aid for the blind with annotated google streets from pedestrian pov and earplug / tactile display if also deaf
+aid for the blind with annotated google streets from pedestrian pov and earbud / tactile display if also deaf
     
 <img src="https://maps.googleapis.com/maps/api/streetview?size=400x400&location=47.5763831,-122.4211769&fov=80&heading=70&pitch=0&key=[KEY]&signature=[SIG]" />
