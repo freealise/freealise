@@ -20,3 +20,5 @@ https://linkedin.com
 
 Bipolar, paranoid, obsessive-compulsive, almost aphantasiac, Judaizing introvert.
 -->
+
+🎞️
