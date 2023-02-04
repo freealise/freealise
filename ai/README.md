@@ -9,4 +9,5 @@ https://superuser.com/questions/137007/how-to-convert-stardict-dictionary-file-f
 find synonyms / more general or specific terms by similarity of description ?  
 thisworddoesnotexist.com
 
+deterministic frequency parameter instead of 'temperature'
 https://en.wiktionary.org/wiki/Wiktionary:Frequency_lists
