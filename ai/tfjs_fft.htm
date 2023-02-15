@@ -1,0 +1,25 @@
+<html>
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.15.1/dist/tf.min.js"></script>
+  <script type='text/javascript'>
+    //https://www.lewuathe.com/webgl-implementation-of-fast-fourier-transform.html
+    
+    tf.setBackend('webgl');
+
+    const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    const results = nums.map(n => {
+      const tensors = [];
+      const start = performance.now();
+      for (let i = 0; i < 100; i++) {
+        const real = tf.ones([10, n * 10]);
+        const imag = tf.ones([10, n * 10]);
+        const input = tf.complex(real, imag);
+        const res = tf.spectral.fft(input);
+        res.dataSync();
+      }
+      return performance.now() - start;
+    });
+    console.log(results);
+  </script>
+</head>
+</html>
