@@ -15,7 +15,7 @@ p .sefaria-text {
   content: "the ";
 }
 .header .title a::after {
-  content: " mission";
+  content: " story";
 }
 .header .title a h1 {
   font-family: "Hero";
