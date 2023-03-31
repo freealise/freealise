@@ -1,4 +1,4 @@
-#### Applied linguistics and software development
+#### Applied linguistics and multimedia
 
 <!--
 **freealise/freealise** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
