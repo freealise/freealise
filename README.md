@@ -16,6 +16,11 @@ Here are some ideas to get you started:
 -->
 
 <!--
+[language from 1992, product idea from 2002, brand story from 2011, current business]
+(British influence) English is not my native language, but I started to learn it before school - and music has later become an important part of education.  
+The brand Freealise refers to the sponsorship pricing model, it is an altered version of an early name of Linux (which was Freax),
+influenced by the Occupy Wall Street movement (antonym of 'occupy').
+             
 https://linkedin.com
 
     <a href="https://fb.me/freealise" target="_blank" title="Facebook"><i class="material-icons notranslate">facebook</i></a>
