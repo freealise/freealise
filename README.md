@@ -15,6 +15,8 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
+Speaking English since 1992 (IELTS >7.0), coding since ~2000.
+
 <!--
 [language from 1992, product idea from 2002, brand story from 2011, current business]
 (British influence) English is not my native language, but I started to learn it before school - and music has later become an important part of education.  
