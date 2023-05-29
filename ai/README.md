@@ -11,3 +11,6 @@ thisworddoesnotexist.com
 
 deterministic frequency parameter instead of 'temperature'  
 https://en.wiktionary.org/wiki/Wiktionary:Frequency_lists
+
+hand detection for multitouch drawing  
+https://github.com/tensorflow/tfjs-models/tree/master/hand-pose-detection/
