@@ -15,7 +15,8 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-Speaking English since 1992 (IELTS >7.0), coding since ~2000.
+Speaking English since 1992 (IELTS >7.0), coding since ~2000.  
+Concerned with international relations and global issues.
 
 <!--
 [language from 1992, product idea from 2002, brand story from 2011, current business]
