@@ -10,6 +10,7 @@
   <body>
     <h1>TensorFlow.js example</h1>
     <h2>Open the console to see the results.</h2>
+    <pre id="log"></pre>
     <script>
     // Define a model for linear regression. The script tag makes `tf` available
     // as a global variable.
@@ -25,7 +26,7 @@
     // Train the model using the data.
     model.fit(xs, ys, {epochs: 10}).then(() => {
       // Use the model to do inference on a data point the model hasn't seen before:
-      model.predict(tf.tensor2d([5], [1, 1])).print();
+      document.getElementById('log').innerText = model.predict(tf.tensor2d([5], [1, 1])).toString();
       // Open the browser devtools to see the output
     });
     </script>
