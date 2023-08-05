@@ -14,3 +14,8 @@ https://en.wiktionary.org/wiki/Wiktionary:Frequency_lists
 
 hand detection for multitouch drawing  
 https://github.com/tensorflow/tfjs-models/tree/master/hand-pose-detection/
+
+https://www.wikiwand.com/en/Morphology_(folkloristics)  
+https://www.wikiwand.com/en/Historic-geographic_method  
+https://www.wikiwand.com/en/Roud_Folk_Song_Index  
+https://www.wikiwand.com/en/Aarne%E2%80%93Thompson%E2%80%93Uther_Index  
