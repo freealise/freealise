@@ -1,4 +1,5 @@
 https://developers.google.com/machine-learning  
+https://codelabs.developers.google.com/codelabs/tfjs-training-regression/index.html  
 https://codelabs.developers.google.com/codelabs/tensorflowjs-convert-python-savedmodel  
 
 https://github.com/lagodiuk/earley-parser-js  
