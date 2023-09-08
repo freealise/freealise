@@ -1,26 +1,3 @@
-p #sefaria-popup {
-    width: 320px;
-}
-p .sefaria-text {
-    max-height: 200px;
-}
-@font-face {
-  font-family: "Hero";
-  src: url("https://freeali.se/assets/fonts/Hero.otf") format("opentype");
-}
-.header .title a {
-  color: #ffffff;
-}
-.header .title a::before {
-  content: "the ";
-}
-.header .title a::after {
-  content: " mission";
-}
-.header .title a h1 {
-  font-family: "Hero";
-  font-style: normal;
-}
 * {
   font-family: Andika;
   font-style: italic;
