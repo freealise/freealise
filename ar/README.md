@@ -6,5 +6,5 @@
 ([AR.js](https://github.com/AR-js-org/AR.js))  
 [jsartoolkit5](https://github.com/artoolkitx/jsartoolkit5)  
 lightgl (sculpting/painting) - virtual graffiti (may draw in ar - opencv)  
-  csg voxels -> earcut of cube positions from 6 projections in layers, skeleton aligned by raycaster
+  csg voxels -> earcut of cube positions from 6 projections in layers, skeleton aligned by raycaster  
   or set of depth map layers on compound bounding box
