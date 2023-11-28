@@ -6,4 +6,4 @@
 ([AR.js](https://github.com/AR-js-org/AR.js))  
 [jsartoolkit5](https://github.com/artoolkitx/jsartoolkit5)  
 lightgl (3d painting) - virtual graffiti (+ in ar with opencv)  
-  svg outlines with stroke-dasharray as depth and text along path as color (paper.js + earcut)  
+  normal map of cube with color displayed in grayscale, only 3d result visible  
