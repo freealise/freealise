@@ -6,4 +6,4 @@
 ([AR.js](https://github.com/AR-js-org/AR.js))  
 [jsartoolkit5](https://github.com/artoolkitx/jsartoolkit5)  
 lightgl - virtual graffiti (csg for 3d drawing with sphere, cylinders and earcut + in ar with opencv)  
-  delaunate depth map layers from given projection axis and load data as one object  
+  delaunate depth map (layers / normal map) from given projection axis and load data as one object  
