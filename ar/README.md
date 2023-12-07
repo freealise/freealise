@@ -6,4 +6,5 @@
 ([AR.js](https://github.com/AR-js-org/AR.js))  
 [jsartoolkit5](https://github.com/artoolkitx/jsartoolkit5)  
 lightgl - virtual graffiti (csg for 3d drawing with sphere, cylinders and earcut + in ar with opencv)  
-  delaunate depth map layers with alphaTest from given projection axis and load data as one object  
+  delaunate depth map with alphaTest from given projection axis and load data as one object  
+  layers or rotary displacement vector? cube or sphere of equal triangles?
