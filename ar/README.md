@@ -10,5 +10,5 @@ altered with code to modify the original video content
 lightgl csg for 3d drawing in ar with opencv; spheres, cylinders and earcut  
   two sides of sphere (~skybox) with displacement vectors,  
   points at 0 depth are the same as on the other side,  
-  layers are separate objects
-  (morph the color, normal / depth map by uv)
+  layers are separate objects  
+  (spline interpolate the color, normal / depth map by uv in time)  
