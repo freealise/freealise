@@ -8,6 +8,6 @@ altered with code to modify the original video content
 ([AR.js](https://github.com/AR-js-org/AR.js))  
 [jsartoolkit5](https://github.com/artoolkitx/jsartoolkit5)  
 lightgl csg for 3d drawing in ar with opencv; spheres, cylinders and earcut  
-  two sides of sphere of equal triangles (?) with displacement vectors,  
+  two sides of sphere (~skybox) with displacement vectors,  
   points at 0 depth are the same as on the other side,  
   layers are separate objects
