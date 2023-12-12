@@ -12,3 +12,5 @@ lightgl csg for 3d drawing in ar with opencv; spheres, cylinders and earcut
   points at 0 depth are the same as on the other side,  
   layers are separate objects  
   (spline interpolate the color, normal / depth map by uv in time)  
+  
+for drawn cloud of points, find three points closest to each (that are not the same as already connected) and make a tetrahedron, then cull repeating triangles  
