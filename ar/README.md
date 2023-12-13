@@ -8,4 +8,5 @@ altered with code to modify the original video content
 ([AR.js](https://github.com/AR-js-org/AR.js))  
 [jsartoolkit5](https://github.com/artoolkitx/jsartoolkit5)  
 lightgl for 3d drawing in ar (& with opencv)  
-add points in the raycasted surface of the moving sphere that can displace or invert, their normals look against that surface to the side of camera  
+add points in the raycasted surface of the moving sphere that can displace or invert,  
+their normals look against that surface to the side of camera  
