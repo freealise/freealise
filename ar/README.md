@@ -7,10 +7,5 @@ altered with code to modify the original video content
 ([MindAR.js](https://github.com/hiukim/mind-ar-js))  
 ([AR.js](https://github.com/AR-js-org/AR.js))  
 [jsartoolkit5](https://github.com/artoolkitx/jsartoolkit5)  
-lightgl csg for 3d drawing in ar with opencv; spheres, cylinders and earcut  
-  two sides of sphere (~skybox) with displacement vectors,  
-  points at 0 depth are the same as on the other side,  
-  layers are separate objects  
-  (spline interpolate the color, normal / depth map by uv in time)  
-  
-for drawn cloud of points, find three points closest to each (that are not the same as already connected) and make a tetrahedron, then cull repeating triangles  
+lightgl for 3d drawing in ar (& with opencv)  
+add points in the raycasted surface of the moving sphere that can displace or invert, their normals look towards the camera  
