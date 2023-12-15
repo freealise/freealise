@@ -9,5 +9,7 @@ alter with code to modify the original video content
 ([AR.js](https://github.com/AR-js-org/AR.js))  
 [jsartoolkit5](https://github.com/artoolkitx/jsartoolkit5)  
 lightgl for 3d drawing in ar (& with opencv), csg tetrahedra for skeleton  
-add points in surface of screen (stroke goes forward and back, depth is distance between each two points of first and second part),  
+add points in surface of screen  
+(stroke goes forward and back, switch is when acceleration changes sign to positive;  
+depth is distance between each two points of first and second part),  
 their normals look against the screen to the side of camera  
