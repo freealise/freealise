@@ -8,5 +8,5 @@ alter with code to modify the original video content
 ([MindAR.js](https://github.com/hiukim/mind-ar-js))  
 ([AR.js](https://github.com/AR-js-org/AR.js))  
 [jsartoolkit5](https://github.com/artoolkitx/jsartoolkit5)  
-lightgl for 3d drawing in ar (~sketchup; +with opencv: pencil is point and normal / color)  
-load stl and subdivide / average, csg tetrahedra for skeleton  
+lightgl for 3d drawing in ar (+with opencv: pencil is point and normal / color)  
+load stl from sketchup and subdivide / average, csg tetrahedra for skeleton  
