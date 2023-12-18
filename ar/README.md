@@ -8,5 +8,5 @@ alter with code to modify the original video content
 ([AR.js](https://github.com/AR-js-org/AR.js))  
 [jsartoolkit5](https://github.com/artoolkitx/jsartoolkit5)  
 lightgl for 3d drawing in ar (+with opencv: pencil is point and normal / color)  
-load stl tetrahedra from sketchup and subdivide / average, or foil figure depth maps  
+load foil figure depth maps, or stl tetrahedra from sketchup and subdivide / average  
 csg cylinders for skeleton  
