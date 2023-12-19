@@ -7,5 +7,5 @@ alter with code to modify the original video content
 ([MindAR.js](https://github.com/hiukim/mind-ar-js))  
 ([AR.js](https://github.com/AR-js-org/AR.js))  
 [jsartoolkit5](https://github.com/artoolkitx/jsartoolkit5)  
-lightgl for 3d smooth surface drawing (subdivided / averaged tetrahedra; +in ar with opencv: pencil is point and normal / color)  
-load and color stl tetrahedra from sketchup; csg cylinders for skeleton  
+lightgl for 3d smooth surface drawing, delaunator on 2 spheres in perpendicular coords (+in ar with opencv: pencil is point and normal / color)  
+load and color stl tetrahedra from sketchup, subdivide / average; csg cylinders for skeleton  
