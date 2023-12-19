@@ -8,5 +8,4 @@ alter with code to modify the original video content
 ([AR.js](https://github.com/AR-js-org/AR.js))  
 [jsartoolkit5](https://github.com/artoolkitx/jsartoolkit5)  
 lightgl for 3d smooth surface drawing (subdivided / averaged tetrahedra; +in ar with opencv: pencil is point and normal / color)  
-load foil figure depth maps, or stl tetrahedra from sketchup  
-csg cylinders for skeleton  
+load and color stl tetrahedra from sketchup; csg cylinders for skeleton  
