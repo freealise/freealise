@@ -7,7 +7,7 @@ alter with code to modify the original video content ([warp ?](https://github.co
 ([MindAR.js](https://github.com/hiukim/mind-ar-js))  
 ([AR.js](https://github.com/AR-js-org/AR.js))  
 [jsartoolkit5](https://github.com/artoolkitx/jsartoolkit5)  
-lightgl for display of antarctic panoramas with depth map / parallax and doodling on skybox (+in ar with opencv: pencil is point and normal / color)  
+lightgl for antarctic panoramas with depth map / parallax and doodling on skybox (+in ar (opencv): pencil is point and normal / color)  
 combine spheres by csg and load several panoramas with depth map, show pixels from them in space as points  
 similarly, several photos / video frames of tinfoil with estimated depth combined to show in 3d    
 load skeleton from svg with translate / rotate / skew  
