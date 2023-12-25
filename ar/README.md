@@ -9,7 +9,7 @@ alter with code to modify the original video content ([warp ?](https://github.co
 [jsartoolkit5](https://github.com/artoolkitx/jsartoolkit5)  
 lightgl for antarctic panoramas with depth map / parallax and doodling on skybox (+in ar (opencv): pencil is point and normal / color)  
 combine spheres by csg and load several panoramas with depth map, show pixels from them in space as points  
-similarly, several photos / video frames of tinfoil with estimated depth combined to show in 3d    
-load skeleton from svg with translate / rotate / skew  
+similarly, several photos / video frames of tinfoil (or ar doodles) with depth combined to show in 3d (~averia)  
+load skeleton from svg -> csg with translate / rotate / skew  
   
 load and color stl tetrahedra from sketchup, subdivide / average  
