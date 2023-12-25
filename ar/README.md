@@ -12,4 +12,4 @@ combine spheres by csg and load several panoramas with depth map, show pixels fr
 similarly, several photos / video frames of tinfoil with estimated depth combined to show in 3d    
 load skeleton from svg with translate / rotate / skew  
   
-load and color stl tetrahedra from sketchup or voxels from goxel, subdivide / average  
+load and color stl tetrahedra from sketchup, subdivide / average  
