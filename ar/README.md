@@ -2,7 +2,7 @@
 [face-landmarks-detection](https://github.com/freealise/tfjs-models/tree/master/face-landmarks-detection)  
 [hand-pose-detection](https://github.com/freealise/tfjs-models/tree/master/hand-pose-detection)  
 [opencv](https://docs.opencv.org/4.x/d1/d0d/tutorial_js_pose_estimation.html)  
-load skeleton from mocap points and alter with code to modify the original video content ([warp ?](https://github.com/cxcxcxcx/imgwarp-js/))  
+load skeleton from mocap points (boundaries with csg) and alter with code to modify video ([warp ?](https://github.com/cxcxcxcx/imgwarp-js/))  
   
 ([MindAR.js](https://github.com/hiukim/mind-ar-js))  
 ([AR.js](https://github.com/AR-js-org/AR.js))  
