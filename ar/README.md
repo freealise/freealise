@@ -11,3 +11,9 @@ lightgl for antarctic panoramas with depth map / parallax and doodling on skybox
 +in ar (dense optical flow or hand detector for index finger): pencil is point and normal / color, csg voxels of variable size on server  
 load several panoramas with depth map, show pixels from them in space as points  
 similarly, several photos / video frames of tinfoil (or ar doodles) with depth combined to show in 3d (~averia)   
+  
+--  
+  
+scene manipulation by right mouse button instead of parallax  
+load animated gif as texture instead of pano morph by fov  
+draw on separate sphere with depth map or download / upload cube image, present difference as points  
