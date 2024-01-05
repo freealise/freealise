@@ -2,7 +2,7 @@
 [face-landmarks-detection](https://github.com/freealise/tfjs-models/tree/master/face-landmarks-detection)  
 [hand-pose-detection](https://github.com/freealise/tfjs-models/tree/master/hand-pose-detection)  
 [opencv](https://docs.opencv.org/4.x/d1/d0d/tutorial_js_pose_estimation.html)  
-load skeleton from mocap points to estimate depth (boundaries with edge detection)  
+load skeleton from mocap points to estimate depth (boundaries with edge detection) - animate with warp ?  
   
 ([MindAR.js](https://github.com/hiukim/mind-ar-js))  
 ([AR.js](https://github.com/AR-js-org/AR.js))  
