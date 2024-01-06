@@ -8,6 +8,6 @@ hand detection on video for chord transcription
 ([MindAR.js](https://github.com/hiukim/mind-ar-js))  
 ([AR.js](https://github.com/AR-js-org/AR.js))  
 [jsartoolkit5](https://github.com/artoolkitx/jsartoolkit5)  
-lightgl for antarctic panoramas  
-load several panoramas with depth map and csg, show pixels in space as points with shadows (for navigating with scene manipulation)  
-similarly, several photos / video frames of tinfoil (or ar doodles) with depth combined to show in 3d (~averia)   
+lightgl for drawn panoramas as background for filmed tinfoil  
+load several panoramas with depth map and csg, show pixels in space as points with self-shadowing (navigate with scene manipulation)  
+similarly, several photos / video frames of tinfoil with depth combined to show in 3d (~averia)   
