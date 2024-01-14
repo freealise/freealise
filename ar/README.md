@@ -7,5 +7,4 @@ hand detection on video for chord transcription
   
 ([MindAR.js](https://github.com/hiukim/mind-ar-js))  
 ([AR.js](https://github.com/AR-js-org/AR.js))  
-[jsartoolkit5](https://github.com/artoolkitx/jsartoolkit5)  
-lightgl: csg with self-shadowing (navigate with scene manipulation) for fonts / symbols (earcut with holes) in speech bubbles and info boxes and vector / raster images from canvas  
+[jsartoolkit5](https://github.com/artoolkitx/jsartoolkit5)   
