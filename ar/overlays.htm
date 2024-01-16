@@ -42,7 +42,9 @@
     <script type="module">
       let panorama;
       
-      function initMap() {
+      async function initMap() {
+        const { Map } = await google.maps.importLibrary("maps");
+        const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
         const astorPlace = { lat: 40.729884, lng: -73.990988 };
         // Set up the map
         const map = new google.maps.Map(document.getElementById("map"), {
@@ -52,6 +54,11 @@
         });
       
         document.getElementById("toggle").addEventListener("click", toggleStreetView);
+
+        const marker = new AdvancedMarkerElement({
+          map,
+          position: { lat: 40.730031, lng: -73.991428, altitude: 2 },
+        });
       
         // Set up the markers on the map
         const cafeMarker = new google.maps.Marker({
