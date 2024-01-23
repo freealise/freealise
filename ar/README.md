@@ -8,6 +8,5 @@ hand detection on video for chord transcription
 ([MindAR.js](https://github.com/hiukim/mind-ar-js))  
 ([AR.js](https://github.com/AR-js-org/AR.js))  
 [jsartoolkit5](https://github.com/artoolkitx/jsartoolkit5)   
-  
-load sound sources from folder as set of street view overlay points with transforms and filenames  
+   
 reverb for pano with semantic segmentation (convolver / delays)  
