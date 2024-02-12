@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Google for Developers</title>
+    <meta name="robots" content="noindex,indexifembedded">
+    <meta charset="utf-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+  </head>
+  
+<body style="height: auto; overflow: hidden; padding: 16px;">
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<div id="stringFilter_dashboard_div" style="border: 1px solid #ccc">
+  <div id="stringFilter_control_div" style="padding-left: 2em"></div>
+  <div id="stringFilter_chart_div"></div>
+</div>
+
+<script type="text/javascript">
+    google.charts.load('current', {packages:['corechart', 'table', 'controls']});
+    google.charts.setOnLoadCallback(drawStringFilter);
+
+  function drawStringFilter() {
+    var dashboard = new google.visualization.Dashboard(
+        document.getElementById('stringFilter_dashboard_div'));
+    var control = new google.visualization.ControlWrapper({
+      'controlType': 'StringFilter',
+      'containerId': 'stringFilter_control_div',
+      'options': {
+        'filterColumnIndex': 0
+      }
+    });
+    var chart = new google.visualization.ChartWrapper({
+      'chartType': 'Table',
+      'containerId': 'stringFilter_chart_div',
+      'options': {'height': '100%', 'width': '100%'}
+    });
+    var data = google.visualization.arrayToDataTable([
+      ['Name', 'Age'],
+      ['Michael' , 12],
+      ['Elisa', 20],
+      ['Robert', 7],
+      ['John', 54],
+      ['Jessica', 22],
+      ['Aaron', 3],
+      ['Margareth', 42],
+      ['Miranda', 33]
+    ]);
+    dashboard.bind(control, chart);
+    dashboard.draw(data);
+  }
+</script>
+  </body>
+</html>
