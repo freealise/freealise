@@ -8,6 +8,7 @@ evaluation of personal data for border control
 find melodrama in lyrics and scripts  
 [bookmaker](https://www.google.com/search?q=bookmaker)  
 matchmaker  
+IF educational game parser / character  
   
 higher level language for screenwriting (data from flickr kml / georss)  
 can find data on its own by googling and spidering ?  
