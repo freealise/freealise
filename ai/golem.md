@@ -1,4 +1,4 @@
-The golem reads all the Jewish religious books and becomes a rabbi's assistant.  
+The golem reads all the Jewish religious books and becomes a rabbi's assistant or priest.  
 (ai machine-learning neural-network tensorflow artificial-intelligence)  
   
 train AI on Sefaria (fuzzy search) -> blog [sefaria, opensiddur] (https://corpus.quran.com/)  
