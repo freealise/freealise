@@ -9,4 +9,5 @@ hand detection on video for chord transcription
 ([AR.js](https://github.com/AR-js-org/AR.js))  
 [jsartoolkit5](https://github.com/artoolkitx/jsartoolkit5)   
    
+move audio sources in google pano, displace vertically and rotate with 3d css  
 reverb for pano with semantic segmentation (convolver / delays)  
