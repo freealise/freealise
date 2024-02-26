@@ -171,16 +171,14 @@ startButton.addEventListener(
     navigator.mediaDevices
       .getUserMedia({
         video: true,
-        audio: true,
+        audio: false,
       })
       .then((stream) => {
         preview.srcObject = stream;
-        downloadButton.href = stream;
-        preview.captureStream =
-          preview.captureStream || preview.mozCaptureStream;
+        downloadButton.href = URL.createObjectURL(stream);
         return new Promise((resolve) => (preview.onplaying = resolve));
       })
-      .then(() => startRecording(preview.captureStream(), recordingTimeMS))
+      .then((stream) => startRecording(stream, recordingTimeMS))
       .then((recordedChunks) => {
         let recordedBlob = new Blob(recordedChunks, { type: "video/webm" });
         recording.src = URL.createObjectURL(recordedBlob);
