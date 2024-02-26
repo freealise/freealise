@@ -70,7 +70,7 @@ let downloadButton = document.getElementById("downloadButton");
 let logElement = document.getElementById("log");
 
 let recorder = null;
-let recordingTimeMS = 60*60*1000;
+let recordingTimeMS = 1000;
 
 function log(msg) {
   logElement.innerHTML += `${msg}\n`;
@@ -94,7 +94,16 @@ function startRecording(stream, lengthInMS) {
   });
 
   let recorded = wait(lengthInMS).then(() => {
-    stop(preview.srcObject);
+    stopButton.addEventListener(
+      "click",
+      () => {
+        if (recorder.state === "recording") {
+          recorder.stop();
+        }
+        stop(preview.srcObject);
+      },
+      false,
+    );
   });
 
   return Promise.all([stopped, recorded]).then(() => data);
@@ -136,17 +145,6 @@ startButton.addEventListener(
   },
   false,
 );
-
-stopButton.addEventListener(
-  "click",
-  () => {
-    if (recorder && recorder.state === "recording") {
-      recorder.stop();
-    }
-  },
-  false,
-);
-
             </script>
     </body>
 </html>
