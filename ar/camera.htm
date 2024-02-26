@@ -74,9 +74,6 @@
   var photo = null;
   var startbutton = null;
 
-  var recordedChunks = [];
-  var mediaRecorder = null;
-
   function startup() {
     video = document.getElementById('video');
     canvas = document.getElementById('canvas');
@@ -85,7 +82,8 @@
 
     navigator.mediaDevices.getUserMedia({video: true, audio: false})
     .then(function(stream) {
-      mediaRecorder = new MediaRecorder(stream, {
+      var recordedChunks = [];
+      var mediaRecorder = new MediaRecorder(stream, {
         mimeType: 'video/webm'
       });
       mediaRecorder.start(0); //time offset
