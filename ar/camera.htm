@@ -186,8 +186,8 @@ startButton.addEventListener(
         );
       })
       .then((url) => {
-	lrecording.src = url;
-	downloadButton.href = recording.src;
+	    recording.src = url;
+	    downloadButton.href = recording.src;
         downloadButton.download = "RecordedVideo.webm";
       })
       .catch((error) => {
