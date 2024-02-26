@@ -149,7 +149,7 @@
     video.stop();
     document.getElementById("download").href = URL.createObjectURL(video.srcObject);
     document.getElementById("download").filename = 'hands.webm';
-    document.getElementById("download").click();
+    document.getElementById("download").innerText = 'Download';
   }
 
   // Set up our event listener to run the startup process
