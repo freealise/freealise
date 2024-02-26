@@ -122,7 +122,7 @@ h2 {
         
         
             <script>
-                let preview = document.getElementById("preview");
+let preview = document.getElementById("preview");
 let recording = document.getElementById("recording");
 let startButton = document.getElementById("startButton");
 let stopButton = document.getElementById("stopButton");
@@ -184,10 +184,8 @@ startButton.addEventListener(
         log(
           `Successfully recorded ${recordedBlob.size} bytes of ${recordedBlob.type} media.`,
         );
-      })
-      .then((url) => {
-	    recording.src = url;
-	    downloadButton.href = recording.src;
+	    downloadButton.href = url;
+        downloadButton.onclick = function(e){ recording.src = e.target.href; }
         downloadButton.download = "RecordedVideo.webm";
       })
       .catch((error) => {
