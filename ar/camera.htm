@@ -140,7 +140,7 @@ startButton.addEventListener(
 stopButton.addEventListener(
   "click",
   () => {
-    if (recorder.state === "recording") {
+    if (recorder && recorder.state === "recording") {
       recorder.stop();
     }
   },
