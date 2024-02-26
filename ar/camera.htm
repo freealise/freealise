@@ -180,9 +180,34 @@ startButton.addEventListener(
       .then(() => startRecording(preview.srcObject, recordingTimeMS))
       .then((recordedChunks) => {
         let recordedBlob = new Blob(recordedChunks, { type: "video/webm" });
-        recording.src = URL.createObjectURL(recordedBlob);
-        downloadButton.href = recording.src;
-        downloadButton.download = "RecordedVideo.webm";
+        var url = URL.createObjectURL(blob);
+        var xhr = new XMLHttpRequest;
+        xhr.responseType = 'blob';
+        xhr.onload = function() {
+            var recoveredBlob = xhr.response;
+            var reader = new FileReader;
+            reader.onload = function() {
+                recording.src = reader.result;
+                downloadButton.href = recording.src;
+                downloadButton.download = "RecordedVideo.webm";
+                recording.addEventListener("loadedmetadata", () => {
+				    console.log("duration:", recording.duration);
+					// Handle chrome's bug
+					if recording.duration === Infinity) {
+						// Set it to bigger than the actual duration
+						recording.currentTime = 1e101;
+						recording.addEventListener("timeupdate", () => {
+							console.log("after workaround:", recording.duration);
+							recording.currentTime = 0;
+						}, { once: true });
+					}
+				});
+                recordedChunks = [];
+            };
+            reader.readAsDataURL(recoveredBlob);
+        };
+        xhr.open('GET', url);
+        xhr.send();
 
         log(
           `Successfully recorded ${recordedBlob.size} bytes of ${recordedBlob.type} media.`,
