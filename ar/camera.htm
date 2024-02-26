@@ -175,10 +175,9 @@ startButton.addEventListener(
       })
       .then((stream) => {
         preview.srcObject = stream;
-        downloadButton.href = URL.createObjectURL(stream);
         return new Promise((resolve) => (preview.onplaying = resolve));
       })
-      .then((stream) => startRecording(stream, recordingTimeMS))
+      .then(() => startRecording(preview.srcObject, recordingTimeMS))
       .then((recordedChunks) => {
         let recordedBlob = new Blob(recordedChunks, { type: "video/webm" });
         recording.src = URL.createObjectURL(recordedBlob);
