@@ -69,7 +69,7 @@ let stopButton = document.getElementById("stopButton");
 let downloadButton = document.getElementById("downloadButton");
 let logElement = document.getElementById("log");
 
-let recordingTimeMS = 5000;
+let recordingTimeMS = 60*60*1000;
 
 function log(msg) {
   logElement.innerHTML += `${msg}\n`;
@@ -93,9 +93,7 @@ function startRecording(stream, lengthInMS) {
   });
 
   let recorded = wait(lengthInMS).then(() => {
-    if (recorder.state === "recording") {
-      recorder.stop();
-    }
+    stop(preview.srcObject);
   });
 
   return Promise.all([stopped, recorded]).then(() => data);
@@ -141,7 +139,9 @@ startButton.addEventListener(
 stopButton.addEventListener(
   "click",
   () => {
-    stop(preview.srcObject);
+    if (recorder.state === "recording") {
+      recorder.stop();
+    }
   },
   false,
 );
