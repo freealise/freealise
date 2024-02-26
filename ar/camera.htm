@@ -69,6 +69,7 @@ let stopButton = document.getElementById("stopButton");
 let downloadButton = document.getElementById("downloadButton");
 let logElement = document.getElementById("log");
 
+let recorder = null;
 let recordingTimeMS = 60*60*1000;
 
 function log(msg) {
@@ -80,7 +81,7 @@ function wait(delayInMS) {
 }
 
 function startRecording(stream, lengthInMS) {
-  let recorder = new MediaRecorder(stream);
+  recorder = new MediaRecorder(stream);
   let data = [];
 
   recorder.ondataavailable = (event) => data.push(event.data);
