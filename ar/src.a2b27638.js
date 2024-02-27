@@ -94112,7 +94112,6 @@ const fingerLookupIndices = {
 }; // for rendering each finger as a polyline
 
 var logs = "";
-var frame = 0;
 
 class Context {
   constructor() {
@@ -94123,6 +94122,7 @@ class Context {
     const stream = this.canvas.captureStream(25);
     this.mediaRecorder = new MediaRecorder(stream);
     this.mediaRecorder.ondataavailable = this.handleDataAvailable;
+    this.frame = 0;
   }
 
   drawCtx() {
@@ -94234,7 +94234,7 @@ class Context {
       a.click();
       window.URL.revokeObjectURL(url);
       logs = "";
-      frame = 0;
+      this.frame = 0;
     }
   }
 
@@ -94820,7 +94820,7 @@ async function runFrame() {
     return;
   }
   await renderResult();
-  frame++;
+  camera.frame++;
   rafId = requestAnimationFrame(runFrame);
 }
 
