@@ -62,6 +62,8 @@ video {
 </div>
         
 <script>
+//https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia
+
 let preview = document.getElementById("preview");
 let recording = document.getElementById("recording");
 let startButton = document.getElementById("startButton");
@@ -137,7 +139,7 @@ startButton.addEventListener(
         log(
           `Successfully recorded ${recordedBlob.size} bytes of ${recordedBlob.type} media.`,
         );
-	    downloadButton.href = url;
+	downloadButton.href = url;
         downloadButton.download = "RecordedVideo.mp4";
       })
       .catch((error) => {
