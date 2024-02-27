@@ -94786,14 +94786,13 @@ async function checkUpdate() {
 async function updateVideo(event) {
   // Clear reference to any previous uploaded video.
   URL.revokeObjectURL(camera.video.currentSrc);
-  if (document.getElementById('downloadButton').href == "") {
+  if (event.target.files) {
     const file = event.target.files[0];
     camera.source.src = URL.createObjectURL(file); // Wait for video to be loaded.
   } else {
-    camera.source.src = document.getElementById('downloadButton').href;
+    camera.source.src = event.target.href;
   }
   camera.video.load();
-  document.getElementById('downloadButton').href = "";
   await new Promise(resolve => {
     camera.video.onloadeddata = () => {
       resolve(video);
@@ -94866,6 +94865,7 @@ async function app() {
   const runButton = document.getElementById('submit');
   runButton.addEventListener('click', run);
   const uploadButton = document.getElementById('videofile');
+  const downloadButton = document.getElementById('downloadButton');
   uploadButton.addEventListener('change', updateVideo);
   downloadButton.addEventListener('click', updateVideo);
   checkUpdate();
