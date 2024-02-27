@@ -94122,7 +94122,6 @@ class Context {
     const stream = this.canvas.captureStream(25);
     this.mediaRecorder = new MediaRecorder(stream);
     this.mediaRecorder.ondataavailable = this.handleDataAvailable;
-    this.frame = 0;
   }
 
   drawCtx() {
@@ -94155,7 +94154,7 @@ class Context {
       for (var i=0; i<Object.keys(hand.keypoints3D).length; i++) {
         hand.keypoints3D[i].id = i;
       }
-      logs += '{ frame: ' + this.frame + ', hand: ' + hand.handedness + ', keypoints3D: ' + 
+      logs += '{ t: ' + video.currentTime + ', hand: ' + hand.handedness + ', keypoints3D: ' + 
         JSON.stringify(hand.keypoints3D) + ' },\n';
       //this.drawKeypoints(hand.keypoints, hand.handedness);
     }
@@ -94234,7 +94233,6 @@ class Context {
       a.click();
       window.URL.revokeObjectURL(url);
       logs = "";
-      this.frame = 0;
     }
   }
 
@@ -94820,7 +94818,6 @@ async function runFrame() {
     return;
   }
   await renderResult();
-  camera.frame++;
   rafId = requestAnimationFrame(runFrame);
 }
 
