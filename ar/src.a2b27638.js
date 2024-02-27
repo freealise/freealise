@@ -94786,7 +94786,7 @@ async function checkUpdate() {
 async function updateVideo(event) {
   // Clear reference to any previous uploaded video.
   URL.revokeObjectURL(camera.video.currentSrc);
-  if (document.getElementById('downloadButton').href != "") {
+  if (document.getElementById('downloadButton').href == "") {
     const file = event.target.files[0];
     camera.source.src = URL.createObjectURL(file); // Wait for video to be loaded.
   } else {
