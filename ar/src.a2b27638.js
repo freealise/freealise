@@ -94786,12 +94786,13 @@ async function checkUpdate() {
 async function updateVideo(event) {
   // Clear reference to any previous uploaded video.
   URL.revokeObjectURL(camera.video.currentSrc);
-  if (event.target.files) {
+  if (event.target.tagName != "A") {
     const file = event.target.files[0];
     camera.source.src = URL.createObjectURL(file); // Wait for video to be loaded.
   } else {
     camera.source.src = event.target.href;
   }
+  statusElement.innerHTML = 'Loading video';
   camera.video.load();
   await new Promise(resolve => {
     camera.video.onloadeddata = () => {
