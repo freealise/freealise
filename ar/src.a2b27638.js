@@ -94112,6 +94112,7 @@ const fingerLookupIndices = {
 }; // for rendering each finger as a polyline
 
 var logs = "";
+var frame = 0;
 
 class Context {
   constructor() {
@@ -94154,7 +94155,7 @@ class Context {
       for (var i=0; i<Object.keys(hand.keypoints3D).length; i++) {
         hand.keypoints3D[i].id = i;
       }
-      logs += '{ hand: ' + hand.handedness + ', keypoints3D: ' + 
+      logs += '{ frame: ' + frame + ', hand: ' + hand.handedness + ', keypoints3D: ' + 
         JSON.stringify(hand.keypoints3D) + ' },\n';
       //this.drawKeypoints(hand.keypoints, hand.handedness);
     }
@@ -94233,6 +94234,7 @@ class Context {
       a.click();
       window.URL.revokeObjectURL(url);
       logs = "";
+      frame = 0;
     }
   }
 
@@ -94817,8 +94819,8 @@ async function runFrame() {
     camera.video.style.visibility = 'visible';
     return;
   }
-
   await renderResult();
+  frame++;
   rafId = requestAnimationFrame(runFrame);
 }
 
