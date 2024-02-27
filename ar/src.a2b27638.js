@@ -94786,13 +94786,14 @@ async function checkUpdate() {
 async function updateVideo(event) {
   // Clear reference to any previous uploaded video.
   URL.revokeObjectURL(camera.video.currentSrc);
-  if (event.target.files) {
+  if (event) {
     const file = event.target.files[0];
     camera.source.src = URL.createObjectURL(file); // Wait for video to be loaded.
   } else {
-    camera.source.src = event.target.href;
+    camera.source.src = document.getElementById('downloadButton').href;
   }
   camera.video.load();
+  document.getElementById('downloadButton').href = "";
   await new Promise(resolve => {
     camera.video.onloadeddata = () => {
       resolve(video);
@@ -94822,6 +94823,9 @@ async function runFrame() {
 }
 
 async function run() {
+  if (document.getElementById('downloadButton').href != "") {
+    updateVideo();
+  }
   statusElement.innerHTML = 'Warming up model.'; // Warming up pipeline.
 
   const [runtime, $backend] = _params.STATE.backend.split('-');
