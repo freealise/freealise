@@ -119,11 +119,11 @@ startButton.addEventListener(
     navigator.mediaDevices
       .getUserMedia({
         video: {
-	  facingMode: "user",
-	  width: { ideal: 160 },
-	  height: { ideal: 120 },
-	  frameRate: { ideal: 25 }
-	},
+	        facingMode: "user",
+	        width: { ideal: 160 },
+	        height: { ideal: 120 },
+	        frameRate: { ideal: 25 }
+	      },
         audio: false,
       })
       .then((stream) => {
@@ -132,7 +132,7 @@ startButton.addEventListener(
       })
       .then(() => startRecording(preview.srcObject, recordingTimeMS))
       .then((recordedChunks) => {
-        let recordedBlob = new Blob(recordedChunks, { type: "video/webm" });
+        let recordedBlob = new Blob(recordedChunks, { type: "video/mp4" });
         var url = URL.createObjectURL(recordedBlob);
         log(
           `Successfully recorded ${recordedBlob.size} bytes of ${recordedBlob.type} media.`,
