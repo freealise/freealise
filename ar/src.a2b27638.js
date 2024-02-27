@@ -94786,14 +94786,14 @@ async function checkUpdate() {
 async function updateVideo(event) {
   // Clear reference to any previous uploaded video.
   URL.revokeObjectURL(camera.video.currentSrc);
-  if (event.target.tagName != "A") {
+  if (event.target.tagName != "VIDEO") {
     const file = event.target.files[0];
     camera.source.src = URL.createObjectURL(file); // Wait for video to be loaded.
   } else {
-    camera.source.src = event.target.href;
+    camera.source.src = event.target.src;
   }
   statusElement.innerHTML = 'Loading video';
-   try { camera.video.load();
+  camera.video.load();
   await new Promise(resolve => {
     camera.video.onloadeddata = () => {
       resolve(video);
@@ -94807,7 +94807,6 @@ async function updateVideo(event) {
   camera.canvas.width = videoWidth;
   camera.canvas.height = videoHeight;
   statusElement.innerHTML = 'Video is loaded.';
-   } catch(e) { alert(e); }
 }
 
 async function runFrame() {
@@ -94869,7 +94868,7 @@ async function app() {
   const uploadButton = document.getElementById('videofile');
   const downloadButton = document.getElementById('downloadButton');
   uploadButton.addEventListener('change', updateVideo);
-  downloadButton.addEventListener('click', updateVideo);
+  document.getElementById('preview').addEventListener('loadeddata', updateVideo);
   checkUpdate();
 }
 
