@@ -185,8 +185,10 @@ startButton.addEventListener(
         log(
           `Successfully recorded ${recordedBlob.size} bytes of ${recordedBlob.type} media.`,
         );
-	      downloadButton.href = url;
+	downloadButton.href = url;
         downloadButton.download = "RecordedVideo.mp4";
+	preview.srcObject = null;
+	preview.src = url;
       })
       .catch((error) => {
         if (error.name === "NotFoundError") {
