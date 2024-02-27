@@ -94793,7 +94793,7 @@ async function updateVideo(event) {
     camera.source.src = event.target.href;
   }
   statusElement.innerHTML = 'Loading video';
-  camera.video.load();
+   try { camera.video.load();
   await new Promise(resolve => {
     camera.video.onloadeddata = () => {
       resolve(video);
@@ -94807,6 +94807,7 @@ async function updateVideo(event) {
   camera.canvas.width = videoWidth;
   camera.canvas.height = videoHeight;
   statusElement.innerHTML = 'Video is loaded.';
+   } catch(e) { alert(e); }
 }
 
 async function runFrame() {
