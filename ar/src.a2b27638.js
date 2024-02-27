@@ -94155,7 +94155,7 @@ class Context {
       for (var i=0; i<Object.keys(hand.keypoints3D).length; i++) {
         hand.keypoints3D[i].id = i;
       }
-      logs += '{ frame: ' + frame + ', hand: ' + hand.handedness + ', keypoints3D: ' + 
+      logs += '{ frame: ' + this.frame + ', hand: ' + hand.handedness + ', keypoints3D: ' + 
         JSON.stringify(hand.keypoints3D) + ' },\n';
       //this.drawKeypoints(hand.keypoints, hand.handedness);
     }
