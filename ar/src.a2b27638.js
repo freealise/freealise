@@ -94154,7 +94154,7 @@ class Context {
       for (var i=0; i<Object.keys(hand.keypoints3D).length; i++) {
         hand.keypoints3D[i].id = i;
       }
-      logs += '{ t: ' + video.currentTime + ', hand: ' + hand.handedness + ', keypoints3D: ' + 
+      logs += '{ "t": ' + video.currentTime + ', "hand": "' + hand.handedness + '", "keypoints3D": ' + 
         JSON.stringify(hand.keypoints3D) + ' },\n';
       //this.drawKeypoints(hand.keypoints, hand.handedness);
     }
@@ -94224,7 +94224,7 @@ class Context {
       const blob = new Blob(recordedChunks, {
         'type': 'video/webm'
       });
-      const url = 'data:text/plain,' + encodeURIComponent('[\n'+logs+']'); //URL.createObjectURL(blob);
+      const url = 'data:text/plain,' + encodeURIComponent('[\n'+logs.slice(0,-2)+']'); //URL.createObjectURL(blob);
       const a = document.createElement('a');
       document.body.appendChild(a);
       a.style = 'display: none';
