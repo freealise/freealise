@@ -94224,7 +94224,10 @@ class Context {
       const blob = new Blob(recordedChunks, {
         'type': 'video/webm'
       });
-      const url = 'data:text/plain,' + encodeURIComponent('[\n'+logs.slice(0,-2)+']'); //URL.createObjectURL(blob);
+      logs = '{ "t": 0.0' + logs.slice(logs.indexOf(', "hand":'), logs.indexOf('\n')) + '\n' + logs;
+      logs += '{ "t": ' + video.duration + logs.slice(logs.lastIndexOf(', "hand":'), -2);
+        
+      const url = 'data:text/plain,' + encodeURIComponent('[\n'+logs+']'); //URL.createObjectURL(blob);
       const a = document.createElement('a');
       document.body.appendChild(a);
       a.style = 'display: none';
