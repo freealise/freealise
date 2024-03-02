@@ -9,5 +9,4 @@ hand detection on video for chord transcription
 ([AR.js](https://github.com/AR-js-org/AR.js))  
 [jsartoolkit5](https://github.com/artoolkitx/jsartoolkit5)   
     
-reverb for pano with semantic segmentation (convolver / delays, +csg as models)  
 csg characters for mocap (hair and clothes with markers and opencv)  
