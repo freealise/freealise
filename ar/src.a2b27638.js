@@ -94152,6 +94152,8 @@ class Context {
   drawResult(hand) {
     if (hand.keypoints != null) {
       for (var i=0; i<Object.keys(hand.keypoints3D).length; i++) {
+        hand.keypoints[i].x -= camera.video.width / 2;
+        hand.keypoints[i].y -= camera.video.height / 2;
         hand.keypoints[i].id = i;
         hand.keypoints3D[i].id = i;
       }
