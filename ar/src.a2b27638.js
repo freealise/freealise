@@ -94156,7 +94156,7 @@ class Context {
         hand.keypoints3D[i].id = i;
       }
       logs += '{ "t": ' + video.currentTime + ', "hand": "' + hand.handedness + '", "keypoints": ' + 
-        JSON.stringify(hand.keypoints), "keypoints3D": ' + 
+        JSON.stringify(hand.keypoints) + ', "keypoints3D": ' + 
         JSON.stringify(hand.keypoints3D) + ' },\n';
       //this.drawKeypoints(hand.keypoints, hand.handedness);
     }
