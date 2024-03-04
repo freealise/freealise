@@ -10,4 +10,4 @@ hand detection on video for chord transcription
 [jsartoolkit5](https://github.com/artoolkitx/jsartoolkit5)   
     
 csg characters for mocap (hair and clothes with markers and opencv)  
-phi / theta / volume for panoramic audio  
+3d automation paths for 5.1 sound in multitracker (svg with mouse velocity / wheel / pressure)  
