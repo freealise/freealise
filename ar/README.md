@@ -8,4 +8,4 @@ hand detection on video for chord transcription
 ([AR.js](https://github.com/AR-js-org/AR.js))  
 [jsartoolkit5](https://github.com/artoolkitx/jsartoolkit5)   
     
-sketchup (qlone + foil ?) -> models for mocap (hair and clothes with csg, markers and opencv)  
+cubemap with csg layers (or qlone + foil ?) -> models for mocap (hair and clothes with csg, markers and opencv)  
