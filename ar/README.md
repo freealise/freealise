@@ -8,5 +8,4 @@ hand detection on video for chord transcription
 ([AR.js](https://github.com/AR-js-org/AR.js))  
 [jsartoolkit5](https://github.com/artoolkitx/jsartoolkit5)   
     
-sketchup (goxel, qlone ?) -> models for mocap (hair and clothes with csg, markers and opencv)  
-3d automation paths for 5.1 sound in multitracker (svg with mouse velocity / wheel / pressure)  
+sketchup (qlone + foil ?) -> models for mocap (hair and clothes with csg, markers and opencv)  
