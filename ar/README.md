@@ -7,5 +7,3 @@ hand detection on video for chord transcription
 ([MindAR.js](https://github.com/hiukim/mind-ar-js))  
 ([AR.js](https://github.com/AR-js-org/AR.js))  
 [jsartoolkit5](https://github.com/artoolkitx/jsartoolkit5)   
-    
-photo or outline cubemap (front/back only) with depth and csg layers -> models for mocap (hair and clothes with csg, markers and opencv)  
