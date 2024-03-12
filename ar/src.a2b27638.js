@@ -94151,14 +94151,10 @@ class Context {
 
   drawResult(hand) {
     if (hand.keypoints != null) {
-      for (var i=0; i<Object.keys(hand.keypoints3D).length; i++) {
-        /*hand.keypoints[i].x -= video.width / 2;
-        hand.keypoints[i].y -= video.height / 2;
-        hand.keypoints[i].id = i;*/
-        hand.keypoints3D[i].id = i;
-      }
+      hand.keypoints[0].x -= video.width / 2;
+      hand.keypoints[0].y -= video.height / 2;
       logs += '{ "t": ' + video.currentTime + ', "hand": "' + hand.handedness + '", "keypoints3D": ' + 
-        JSON.stringify(hand.keypoints3D) + ' },\n';
+        JSON.stringify(hand.keypoints3D) + ', "origin": { x: ' + hand.keypoints[0].x + ', y: ' + hand.keypoints[0].y + ', z: 0 } },\n';
       //this.drawKeypoints(hand.keypoints, hand.handedness);
     }
   }
