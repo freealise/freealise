@@ -9,4 +9,4 @@ common midi / web audio controls
 ([AR.js](https://github.com/AR-js-org/AR.js))  
 [jsartoolkit5](https://github.com/artoolkitx/jsartoolkit5)   
 
-csg + blockly for animation ?
+foil -> mocap + csg ?
