@@ -9,5 +9,5 @@ common midi / web audio controls
 ([AR.js](https://github.com/AR-js-org/AR.js))  
 [jsartoolkit5](https://github.com/artoolkitx/jsartoolkit5)   
 
-code movement with blockly (csg cubemap + json tree + angles in radians + weight)
+code movement with blockly (csg cubemap + json tree + angles in radians + weight)  
 model and shadow (cubemap + csg) -> aq landscape / interior (people as outlines)
