@@ -26,3 +26,5 @@ https://pastvu.com?g=54.709564,20.494307&z=12&s=osm&t=mapnik&type=1
 have to keep parts of image unchanged with layers  
   
 aid for the blind with annotated google streets from pedestrian pov and earbud / tactile display if also deaf  
+
+smart home security instead of many sensors (for gmk)
