@@ -18,6 +18,8 @@ Here are some ideas to get you started:
 Speaking English since 1992 (IELTS >7.0), coding since ~2000.  
 Concerned with international relations and global issues.
 
+![StackOverflow](https://stackoverflow.com/users/flair/9165398.png)
+
 <!--
 [language from 1992, product idea from 2002, brand story from 2011, current business]
 (British influence) English is not my native language, but I started to learn it before school - and music has later become an important part of education.  
