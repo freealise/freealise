@@ -18,7 +18,7 @@ Here are some ideas to get you started:
 Speaking English since 1992 (IELTS >7.0), coding since ~2000.  
 Concerned with international relations and global issues.
 
-![StackOverflow](https://stackoverflow.com/users/flair/9165398.png)
+[![Marina's Stack Overflow Reputation](https://img.shields.io/stackexchange/stackoverflow/r/9165398?color=orange&label=reputation&logo=stackoverflow&style=for-the-badge)](https://stackoverflow.com/users/9165398 "Marina's Stack Overflow Reputation")
 
 <!--
 [language from 1992, product idea from 2002, brand story from 2011, current business]
