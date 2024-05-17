@@ -2,12 +2,12 @@
 [face-landmarks-detection](https://github.com/freealise/tfjs-models/tree/master/face-landmarks-detection)  
 [hand-pose-detection](https://github.com/freealise/tfjs-models/tree/master/hand-pose-detection)  
 [opencv](https://docs.opencv.org/4.x/d1/d0d/tutorial_js_pose_estimation.html)  
-hand detection on video for chord transcription  
+hand detection on video for chord transcription, pose detection for remote acting  
 common midi / web audio controls  
   
 ([MindAR.js](https://github.com/hiukim/mind-ar-js))  
 ([AR.js](https://github.com/AR-js-org/AR.js))  
 [jsartoolkit5](https://github.com/artoolkitx/jsartoolkit5)   
 
-code movement with blockly + havok physics (csg cubemap + json tree + angles in radians + weight)  
-model and shadow (cubemap + csg) -> aq landscape / interior (people as outlines)
+face movement with mocap
+model and shadow (cubemap + csg) -> 3d video
