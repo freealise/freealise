@@ -2,7 +2,7 @@
 [face-landmarks-detection](https://github.com/freealise/tfjs-models/tree/master/face-landmarks-detection)  
 [hand-pose-detection](https://github.com/freealise/tfjs-models/tree/master/hand-pose-detection)  
 [opencv](https://docs.opencv.org/4.x/d1/d0d/tutorial_js_pose_estimation.html)  
-hand detection on video for chord transcription, pose detection for remote acting  
+hand detection on video for chord transcription; pose detection for music, remote acting or rtc  
 common midi / web audio controls  
   
 ([MindAR.js](https://github.com/hiukim/mind-ar-js))  
