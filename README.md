@@ -18,7 +18,8 @@ Here are some ideas to get you started:
 Speaking English since 1992 (IELTS >7.0), coding since ~2000.  
 Concerned with international relations and global issues.
 
-[![Marina's Stack Overflow Reputation](https://img.shields.io/stackexchange/stackoverflow/r/9165398?color=orange&label=reputation&logo=stackoverflow&style=for-the-badge)](https://stackoverflow.com/users/9165398 "Marina's Stack Overflow Reputation")
+[![Marina's Stack Overflow Reputation](https://img.shields.io/stackexchange/stackoverflow/r/9165398?color=orange&label=reputation&logo=stackoverflow&style=for-the-badge)](https://stackoverflow.com/users/9165398 "Marina's Stack Overflow Reputation") 
+[![Follow me on HuggingFace](https://huggingface.co/datasets/huggingface/badges/resolve/main/follow-me-on-HF-md-dark.svg)](https://huggingface.co/freealise)
 
 <!--
 [language from 1992, product idea from 2002, brand story from 2011, current business]
