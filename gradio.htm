@@ -49,23 +49,22 @@ try {
 const response = await fetch(
 	"https://audio-samples.github.io/samples/wav/ted_speakers/SalmanKhan/sample-1.wav"
 );
+const audio_file = await response.blob();
 } catch (error){
-                 alert("fetch:",error.message);         
+                 alert("fetch:"+error);         
             }
 
     generate.addEventListener("click", async () =>{
         try {
 
-const audio_file = await response.blob();
-
-const app = await Client.connect("https://abidlabs-whisper.hf.space/");
+const app = await Client.connect("abidlabs/whisper");
 const transcription = await app.predict("/predict", [audio_file]);
 
 prompt_holder.textContent = transcription.data;
        
 
             } catch (error){
-                 alert("Error:",error.message);         
+                 alert("Error:"+error);         
             }
     
         }
