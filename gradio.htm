@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt Generator</title>
+    <style>
+        body {
+            text-align: center;
+            background-color:whitesmoke;
+          }
+
+        #phrase {
+            padding: 15px;
+            width: 20%;
+            border: 5px solid rgb(49, 47, 68);
+            text-align: center;
+        }
+
+        #prompt-holder {
+            width: 50%;
+            height: 50%;
+            margin: 0 auto;
+            border: 5px solid rgb(50, 31, 221);
+            padding: 20px;
+            text-align: center;
+            background-color:rgb(246, 247, 248)
+    }
+    </style>
+</head>
+<body>
+    <h3><strong>AI Text-To-Image Prompt Generator</strong></h3>
+    <br><br>
+    <div id="text-input"><input type="text" title="Starting Phrase" id="phrase" placeholder="Enter phrase here"></div>
+    <br><br><br><br>
+    <button id="run"><strong>Generate Prompt</strong></button>
+    <br><br><br><br><br>
+    <div id="prompt-holder"></div>
+</body>
+
+<script type="module">
+    import { Client } from "https://cdn.jsdelivr.net/npm/@gradio/client@0.19.4/dist/index.min.js";
+    const inputText = document.getElementById("phrase");
+    const generate = document.getElementById("run");
+    const prompt_holder = document.getElementById("prompt-holder");
+
+try {
+const response = await fetch(
+	"https://github.com/audio-samples/audio-samples.github.io/raw/master/samples/wav/ted_speakers/SalmanKhan/sample-1.wav"
+);
+} catch (error){
+                 alert("fetch:",error.message);         
+            }
+
+    generate.addEventListener("click", async () =>{
+        try {
+
+const audio_file = await response.blob();
+
+const app = await Client.connect("https://abidlabs-whisper.hf.space/");
+const transcription = await app.predict("/predict", [audio_file]);
+
+prompt_holder.textContent = transcription.data;
+       
+
+            } catch (error){
+                 alert("Error:",error.message);         
+            }
+    
+        }
+
+        
+);
+</script>
+</html>
