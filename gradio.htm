@@ -54,7 +54,11 @@ const response = await fetch("https://huggingface.co/spaces/freealise/Depth-Anyt
 const exampleVideo = await response.blob({ 'type': 'video/mp4' });
 const app = await Client.connect("freealise/Depth-Anything-Video");
 const result = await app.predict("/on_submit", [
-				exampleVideo, 	// blob in 'Input Video' Video component		
+				{
+                  "type": 'video/mp4',
+                  "video": exampleVideo,
+                  "subtitles": null
+                }, 	// blob in 'Input Video' Video component		
 				"vits", // string  in 'Model Type' Dropdown component
 	]);
 
