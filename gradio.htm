@@ -46,21 +46,21 @@
     const generate = document.getElementById("run");
     const prompt_holder = document.getElementById("prompt-holder");
     const output = document.getElementById("output");
-
+    const myReader = new FileReader();
 
     generate.addEventListener("click", async () =>{
         try {
-var myReader = new FileReader();
 const response = await fetch("https://huggingface.co/spaces/freealise/Depth-Anything-Video/resolve/main/examples/streetview.mp4?download=true");
 const file_blob = await response.blob();
-const ourl = await URL.createObjectURL(file_blob);
-
-const app = await Client.connect("freealise/Depth-Anything-Video");
-const result = await app.predict("/on_submit", [		
-				ourl, // string  in 'URL' Textbox component		
+myReader.readAsDataURL(file_blob);
+myReader.addEventListener("loadend", function(e) {
+    const durl = e.srcElement.result;
+    const app = await Client.connect("freealise/Depth-Anything-Video");
+    const result = await app.predict("/on_submit", [		
+				durl, // string  in 'URL' Textbox component		
 				"vits", // string  in 'Model Type' Dropdown component
 	]);
-
+});
 output.src = result.data;
 
             } catch (error){
