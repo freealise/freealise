@@ -53,7 +53,7 @@
 //const response = await fetch("https://huggingface.co/spaces/freealise/Depth-Anything-Video/resolve/main/examples/streetview.mp4?download=true");
 const app = await Client.connect("freealise/Depth-Anything-Video");
 const result = await app.predict("/on_submit", [		
-				"https://huggingface.co/spaces/freealise/Depth-Anything-Video/resolve/main/examples/streetview.mp4?download=true", // string  in 'URL' Textbox component		
+				"https://huggingface.co/spaces/freealise/Depth-Anything-Video/resolve/main/examples/streetview.mp4", // string  in 'URL' Textbox component		
 				"vits", // string  in 'Model Type' Dropdown component
 	]);
 
