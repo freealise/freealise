@@ -37,6 +37,7 @@
     <button id="run"><strong>Generate Prompt</strong></button>
     <br><br><br><br><br>
     <div id="prompt-holder"></div>
+    <img src="" id="output"/>
 </body>
 
 <script type="module">
@@ -44,18 +45,19 @@
     const inputText = document.getElementById("phrase");
     const generate = document.getElementById("run");
     const prompt_holder = document.getElementById("prompt-holder");
+    const output = document.getElementById("output");
 
 
     generate.addEventListener("click", async () =>{
         try {
 const response = await fetch(
-	"https://audio-samples.github.io/samples/wav/ted_speakers/SalmanKhan/sample-1.wav"
+	"https://freeali.se/assets/images/coffee.jpg"
 );
-const audio_file = await response.blob();
-const app = await Client.connect("abidlabs/whisper");
-const transcription = await app.predict("/predict", [audio_file]);
+const input_file = await response.blob();
+const app = await Client.connect("freealise/Depth-Anything");
+const transcription = await app.predict("/predict", [input_file]);
 
-prompt_holder.textContent = transcription.data;
+output.src = transcription.data;
 
             } catch (error){
                  alert("Error:"+error);         
