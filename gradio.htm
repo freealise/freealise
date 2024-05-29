@@ -61,7 +61,7 @@ const result = await app.predict("/on_submit", [
                 }, 	// blob in 'Input Video' Video component		
 				"vits", // string  in 'Model Type' Dropdown component
 	]);
-
+prompt_holder.innerText = JSON.stringify(result);
 output.src = result.data;
 
             } catch (error){
