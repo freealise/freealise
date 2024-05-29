@@ -50,7 +50,7 @@
 
     generate.addEventListener("click", async () =>{
         try {
-const response = await fetch("https://huggingface.co/spaces/freealise/Depth-Anything-Video/resolve/main/examples/streetview.mp4?download=true");
+const response = await fetch("https://huggingface.co/spaces/freealise/Depth-Anything-Video/resolve/main/examples/streetview.mp4");
 const exampleVideo = await response.blob({ 'type': 'video/mp4' });
 const app = await Client.connect("freealise/Depth-Anything-Video");
 const result = await app.predict("/on_submit", [
