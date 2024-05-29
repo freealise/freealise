@@ -58,7 +58,7 @@ const result = await app.predict("/on_submit", [input_file]);
 output.src = result.data;
 
             } catch (error){
-                 alert("Error:"+error);         
+                 alert("Error:"+JSON.stringify(error));         
             }
         }
 );
