@@ -37,7 +37,7 @@
     <button id="run"><strong>Generate Prompt</strong></button>
     <br><br><br><br><br>
     <div id="prompt-holder"></div>
-    <video src="" id="output"/>
+    <video src="" controls mute id="output"/>
 </body>
 
 <script type="module">
@@ -51,12 +51,10 @@
     generate.addEventListener("click", async () =>{
         try {
 const response = await fetch("https://huggingface.co/spaces/freealise/Depth-Anything-Video/resolve/main/examples/streetview.mp4?download=true");
-const file_blob = await response.blob();
-const durl = await myReader.readAsDataURL(file_blob);
-
-    const app = await Client.connect("freealise/Depth-Anything-Video");
-    const result = await app.predict("/on_submit", [		
-				durl, // string  in 'URL' Textbox component		
+const exampleVideo = await response.blob();
+const app = await Client.connect("freealise/Depth-Anything-Video");
+const result = await app.predict("/on_submit", [
+				exampleVideo, 	// blob in 'Input Video' Video component		
 				"vits", // string  in 'Model Type' Dropdown component
 	]);
 
