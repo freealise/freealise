@@ -10,5 +10,5 @@ common midi / web audio controls
 [jsartoolkit5](https://github.com/artoolkitx/jsartoolkit5)   
 
 face movement with mocap  
-scene with color and shadows (cubemap + layers) -> 3d video
+scene with color and shadows (cubemap + layers) -> 3d video  
 foil -> mocap for auto quality feedback ?
