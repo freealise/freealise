@@ -11,3 +11,4 @@ common midi / web audio controls
 
 face movement with mocap  
 scene with color and shadows (cubemap + layers) -> 3d video
+foil -> mocap for auto quality feedback ?
