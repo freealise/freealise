@@ -12,3 +12,10 @@ common midi / web audio controls
 face movement with mocap  
 scene with color and shadows (cubemap + layers) -> 3d video  
 foil -> mocap for auto quality feedback ?
+
+//https://www.google.com/streetview/how-it-works/  
+//upload video/subs to archive.org for transcoding (https://archive.org/details/download_20240209_0047)  
+  
+//scene frames with depth for focus by pov and depth map; option to crossfade+blur instead of cut / interpolate between panos  
+//depth map from camera in alpha; another layer of pano with transparency whose depth is 0 -> aq InF (comics)  
+//normals from depth map in opencv (https://answers.opencv.org/question/82453/calculate-surface-normals-from-depth-image-using-neighboring-pixels-cross-product/)  
