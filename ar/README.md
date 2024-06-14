@@ -17,4 +17,4 @@ foil -> mocap for auto quality feedback ?
 //https://www.google.com/streetview/how-it-works/  
 //upload video/subs to archive.org for transcoding (https://archive.org/details/download_20240209_0047)  
   
-//scene frames with depth for focus by pov and depth map; depth map from camera in alpha  
+//scene frames with depth for focus by pov and depth map; depth map in alpha (geometrize along with color)  
