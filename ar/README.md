@@ -20,4 +20,5 @@ foil -> mocap for auto quality feedback ?
 //depth map in alpha - edit manually ? (geometrize along with color, gradient)  
   
 //scene frames with depth for focus by pov and depth map (opencv):  
-//divide image into 256 layers by depth color mask and blur each with its kernel size
+//divide image into 256 layers by depth color mask and blur each with its kernel size  
+//transfer color to filmed video by -> hsl, lightness from video, h and s from image (or cmyk ?)
