@@ -19,5 +19,5 @@ foil -> mocap for auto quality feedback ?
   
 //correct depth map by algorithm  
 //geometrize depth map along with color, gradient  
-//focus by distance  
+//focus by distance with chart drawn with mouse (unicode)  
 //transfer color to filmed video by -> hsl, lightness from video, h and s from image (or cmyk ?)
