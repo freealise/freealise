@@ -17,8 +17,8 @@ foil -> mocap for auto quality feedback ?
 //https://www.google.com/streetview/how-it-works/  
 //upload video/subs to archive.org for transcoding (https://archive.org/details/download_20240209_0047)  
   
-//depth map in alpha - edit manually ? (geometrize along with color, gradient)  
+//correct depth map by algorithm (geometrize along with color, gradient)  
+//alpha edit ?  
   
-//scene frames with depth for focus by pov and depth map (opencv):  
-//divide image into 256 layers by depth color mask and blur each with its kernel size  
+//scene frames with depth for focus by distance and depth map (opencv)  
 //transfer color to filmed video by -> hsl, lightness from video, h and s from image (or cmyk ?)
