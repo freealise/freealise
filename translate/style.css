@@ -1,0 +1,26 @@
+#test {
+  color: gray;
+}
+
+.google-translate-place {
+    width: 480px;
+    height: 200px;
+    margin-left:-188px;
+    position:relative;
+    left:188px;
+}
+.google-translate-crop {
+    width: 480px;
+    height: 200px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+}
+.google-translate {
+    transform: scale(0.75);
+    transform-origin: 180px 180px;
+    position: relative;
+    left: -180px; top: -180px;
+    width: 2560px; height: 5120px;
+    position: absolute;
+}
