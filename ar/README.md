@@ -19,6 +19,4 @@ foil -> mocap for auto quality feedback ?
   
 //correct depth map by algorithm  
 //geometrize depth map along with color, gradient  
-  
-//transfer color to filmed video by overlap and hsl, lightness from video, h and s from image  
-//(or cmyk / segmentation / brush ?)
+//transfer color to filmed video by overlap and hsl, lightness from video, h and s from image (or cmyk / segmentation / brush ?)
