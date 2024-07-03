@@ -18,5 +18,5 @@ foil -> mocap for auto quality feedback ?
 //upload video/subs to archive.org for transcoding (https://archive.org/details/download_20240209_0047)  
   
 //correct depth map by algorithm  
-//geometrize depth map along with color, gradient  
+//combine several timepoints in 3d for inpainting  
 //transfer color to filmed video by overlap and hsl, lightness from video, h and s from image (or cmyk / segmentation / brush ?)
