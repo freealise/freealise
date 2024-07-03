@@ -19,5 +19,5 @@ foil -> mocap for auto quality feedback ?
   
 //correct depth map by algorithm  
 //combine several timepoints in 3d for inpainting / animation (delete objects that changed position - or by segmentation? - and add them from video)  
-//use hs(l) color from combined changed objects for grayscale filmed video and remove background, keeping shadows  
-//color by hand and use upscaler for closeups  
+//color foil by hand and use hs(l) color from combined changed objects for paper in grayscale filmed video and remove background, keeping shadows  
+  
