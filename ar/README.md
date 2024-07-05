@@ -17,7 +17,7 @@ foil -> mocap for auto quality feedback ?
 //https://www.google.com/streetview/how-it-works/  
 //upload video/subs to archive.org for transcoding (https://archive.org/details/download_20240209_0047)  
   
-//correct depth map by algorithm  
+//correct depth map by algorithm (non-zero depth from sphere to cylinder without roof, bottom 1/4 of image to ground)  
 //morph timepoints in 2d with control points selected algorithmically (sine / square) for inpainting / animation  
 //(use precise latlng from gsv url for offset proportion (?), delete objects that changed position - or by segmentation? - and add them from video)  
 //color foil by hand and use hs(l) color from combined changed objects for paper in grayscale filmed video and remove background, keeping shadows  
