@@ -18,7 +18,7 @@ foil -> mocap for auto quality feedback ?
 //upload video/subs to archive.org for transcoding (https://archive.org/details/download_20240209_0047)  
   
 //correct depth map by algorithm (non-zero depth from sphere to cylinder without roof, bottom 1/4 of image to ground) for paper model  
-//morph timepoints in 2d with control points selected by segmentation + sparse angles, for inpainting / animation  
+//morph timepoints in 2d with control points selected on depth map or segmentation by sparse angles, for inpainting / animation  
 //or load 2 panos and use precise latlng from gsv url for offset direction  
 //delete objects that changed position / by segmentation, and add them from video  
 //color foil by hand and use hs(l) color from combined changed objects for paper in grayscale filmed video and remove background, keeping shadows  
