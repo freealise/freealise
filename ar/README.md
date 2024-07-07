@@ -9,7 +9,7 @@ common midi / web audio controls
 ([AR.js](https://github.com/AR-js-org/AR.js))  
 [jsartoolkit5](https://github.com/artoolkitx/jsartoolkit5)   
 
-face movement with mocap  
+face movement with mocap + morph by points  
 scene with color and shadows (filmed or drawn cubemap + layers / transparency) -> 3d video  
 normals from depth map in opencv (https://answers.opencv.org/question/82453/calculate-surface-normals-from-depth-image-using-neighboring-pixels-cross-product/)  
 foil -> mocap for auto quality feedback ?
