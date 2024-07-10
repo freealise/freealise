@@ -19,7 +19,7 @@ foil -> mocap for auto quality feedback ?
   
 //correct depth map by algorithm (non-zero depth from sphere to cylinder without roof, bottom 1/4 of image to ground) for paper model  
 //load several panos and move / rotate with svg to match (1/frames opacity) for inpainting / animation  
-//use precise latlng from gsv url for offset direction (~aspect ratio lock) and metadata pitch + heading for rotation  
+//use precise latlng from gsv url for offset direction (multiply values for all meshes by negative radius of svg circle displacement) and metadata pitch + heading for rotation  
 //delete points that changed position more than by given distance / by segmentation, and add them from video  
 //color foil by hand and use hs(l) color from combined changed objects for paper in grayscale filmed video and remove background, keeping shadows  
   
