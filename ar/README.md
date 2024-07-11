@@ -4,6 +4,7 @@
 [opencv](https://docs.opencv.org/4.x/d1/d0d/tutorial_js_pose_estimation.html)  
 hand detection on video for chord transcription; pose detection for music, remote acting or rtc  
 common midi / web audio controls  
+sparse optical flow to track hair and clothes  
   
 ([MindAR.js](https://github.com/hiukim/mind-ar-js))  
 ([AR.js](https://github.com/AR-js-org/AR.js))  
