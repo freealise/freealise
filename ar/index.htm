@@ -68,8 +68,9 @@ try {
  cv.cvtColor(oldFrame, oldGray, cv.COLOR_RGB2GRAY);
  let p0 = new cv.Mat();
  let none = new cv.Mat();
- cv.cornerHarris(oldGray,p0,blockSize,minDistance,qualityLevel)
- //cv.goodFeaturesToTrack(oldGray, p0, maxCorners, qualityLevel, minDistance, none, blockSize);
+
+ //cv.cornerHarris(oldGray,p0,blockSize,minDistance,qualityLevel)
+ cv.goodFeaturesToTrack(oldGray, p0, maxCorners, qualityLevel, minDistance, none, blockSize);
 
  // Create a mask image for drawing purposes
  let zeroEle = new cv.Scalar(0, 0, 0, 255);
@@ -102,8 +103,16 @@ try {
             cv.circle(frame, goodOld[i], 5, color[i], -1);
         }
         cv.add(frame, mask, frame);
-
         cv.imshow('canvasOutput', frame);
+        
+        
+let src = cv.imread(imgElement);
+let dst = new cv.Mat();
+cv.cvtColor(src, src, cv.COLOR_RGB2GRAY, 0);
+// You can try more different parameters
+cv.Canny(src, dst, 50, 100, 3, false);
+cv.imshow('canvasOutput', dst);
+src.delete(); dst.delete();
 } catch (err) {
     alert(err);
 }
