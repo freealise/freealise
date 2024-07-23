@@ -20,7 +20,7 @@ foil -> mocap for auto quality feedback ?
 //use precise latlng from gsv url for offset direction (multiply values for all meshes by negative radius of displacement) and metadata pitch + heading for rotation  
 //delete objects by intelligent scissors (emulate input event, switch off progress bar) and add them from video  
 • points from around object moving towards center; greatest 1st or 2nd derivative on their way is edge  
-• sobel / canny / fft from different angles ?
+• sobel / canny / fft from different angles ?  
 //color foil by hand and use hs(l) color from combined changed objects for paper in grayscale filmed video and remove background, keeping shadows  
   
 //draw objects on pano and find depth map  
