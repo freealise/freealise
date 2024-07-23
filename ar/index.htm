@@ -17,6 +17,7 @@ n<!DOCTYPE html>
  <button onclick="findCorners();">corners</button>
  <div class="inputoutput">
  <canvas id="canvasOutput" ></canvas>
+ <canvas id="canvasOutput_" ></canvas>
  <div class="caption">canvasOutput</div>
  </div>
 </div>
@@ -74,7 +75,7 @@ let dst = new cv.Mat();
 cv.cvtColor(src, src, cv.COLOR_RGB2GRAY, 0);
 // You can try more different parameters
 cv.Canny(src, oldGray, 33, 99, 3, false);
-cv.imshow('canvasOutput', oldGray);
+cv.imshow('canvasOutput_', oldGray);
 src.delete(); dst.delete();
 
  //cv.cornerHarris(oldGray,p0,blockSize,minDistance,qualityLevel)
