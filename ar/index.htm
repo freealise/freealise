@@ -82,6 +82,7 @@ src.delete(); dst.delete();*/
 let src = cv.imread(imgElement);
 let dstx = new cv.Mat();
 let dsty = new cv.Mat();
+let dstz = new cv.Mat();
 let dst = new cv.Mat();
 cv.cvtColor(src, src, cv.COLOR_RGB2GRAY, 0);
 // You can try more different parameters
