@@ -91,7 +91,7 @@ cv.Sobel(src, dstz, cv.CV_8U, 2, 2, 3, 1, 0, cv.BORDER_DEFAULT);
 //cv.Scharr(src, dstx, cv.CV_8U, 2, 0, 1, 0, cv.BORDER_DEFAULT);
 //cv.Scharr(src, dsty, cv.CV_8U, 0, 2, 1, 0, cv.BORDER_DEFAULT);
 cv.addWeighted(dstx, 0.999, dsty, 0.001, 0, src);
-cv.addWeighted(src, 0.5, dstz, 0.5, 0, src);
+cv.addWeighted(src, 0.001, dstz, 0.999, 0, src);
 cv.threshold(src, dst, 1, 255, cv.THRESH_BINARY);
 cv.imshow('canvasOutput_', dst);
 src.delete(); dstx.delete(); dsty.delete(); dst.delete();
