@@ -96,7 +96,7 @@ cv.Laplacian(src, dst, cv.CV_64F, 3, 1, 0, cv.BORDER_DEFAULT);
 cv.convertScaleAbs(dst, dst, 1, 0);
 //cv.addWeighted(dstx, 0.999, dsty, 0.001, 0, src);
 //cv.addWeighted(src, 0.001, dstz, 0.999, 0, src);
-cv.threshold(src, dst, 1, 255, cv.THRESH_BINARY);
+cv.threshold(src, dst, 127, 255, cv.THRESH_BINARY);
 cv.imshow('canvasOutput_', dst);
 src.delete(); dstx.delete(); dsty.delete(); dst.delete();
 
