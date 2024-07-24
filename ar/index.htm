@@ -84,8 +84,8 @@ let dstx = new cv.Mat();
 let dsty = new cv.Mat();
 cv.cvtColor(src, src, cv.COLOR_RGB2GRAY, 0);
 // You can try more different parameters
-cv.Sobel(src, dstx, cv.CV_8U, 2, 0, 5, 1, 0, cv.BORDER_DEFAULT);
-cv.Sobel(src, dsty, cv.CV_8U, 0, 2, 5, 1, 0, cv.BORDER_DEFAULT);
+cv.Sobel(src, dstx, cv.CV_8U, 2, 0, 7, 1, 0, cv.BORDER_DEFAULT);
+cv.Sobel(src, dsty, cv.CV_8U, 0, 2, 7, 1, 0, cv.BORDER_DEFAULT);
 // cv.Scharr(src, dstx, cv.CV_8U, 1, 0, 1, 0, cv.BORDER_DEFAULT);
 // cv.Scharr(src, dsty, cv.CV_8U, 0, 1, 1, 0, cv.BORDER_DEFAULT);
 cv.addWeighted(dstx, 0.5, dsty, 0.5, 0, src);
