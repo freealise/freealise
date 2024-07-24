@@ -74,7 +74,7 @@ try {
 let src = cv.imread(imgElement);
 let dst = new cv.Mat();
 cv.cvtColor(src, src, cv.COLOR_RGB2GRAY, 0);
-cv.Canny(src, oldGray, 60, 180, 5, true);
+cv.Canny(src, oldGray, 60, 180, 7, true);
 cv.imshow('canvasOutput_', oldGray);
 src.delete(); dst.delete();
 
