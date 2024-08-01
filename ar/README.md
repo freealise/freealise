@@ -16,7 +16,7 @@ foil -> mocap for auto quality feedback ?
 //https://www.google.com/streetview/how-it-works/  
 //upload video/subs to archive.org for transcoding (https://archive.org/details/download_20240209_0047)  
   
-//correct depth map by algorithm (non-zero depth from sphere to cylinder without roof, all closer than 192 or 224 equals it) for paper model  
+//correct depth map (subtract ground with range to find beginning of data from below (remove 224): n > depth > 0 from sphere to cylinder), show depth in 3d for paper model  
 //use precise latlng from gsv url for offset direction (multiply values for all meshes by negative radius of displacement) and metadata pitch + heading for rotation  
 //use gradio api, add scene from video (<- local webgl file)  
 //color foil by hand and use hs(l) color from combined changed objects for paper in grayscale filmed video and remove background, keeping shadows  
