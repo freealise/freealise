@@ -16,7 +16,7 @@ Here are some ideas to get you started:
 -->
 
 Speaking English since 1992 (IELTS >7.0), coding since ~2000.  
-Concerned with international relations and global issues.
+Concerned with international relations and global issues. 🏴
 
 [![Marina's Stack Overflow Reputation](https://img.shields.io/stackexchange/stackoverflow/r/9165398?color=orange&label=stackoverflow&logo=stackoverflow&style=for-the-badge)](https://stackoverflow.com/users/9165398 "Marina's Stack Overflow Reputation") 
 [![Follow me on HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97-Hugging%20Face-yellow?style=for-the-badge)](https://huggingface.co/freealise)
