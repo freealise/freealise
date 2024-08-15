@@ -17,7 +17,7 @@ foil -> mocap for auto quality feedback ?
 //upload video/subs to archive.org for transcoding (https://archive.org/details/download_20240209_0047)  
   
 //use metadata for adjustment, remove gizmo  
-//use gradio embed (not api), add scene from video (<- local webgl file)  
+//load scene from embed in main window (same b.js instance), add scene from video (<- local webgl file)  
 //color foil by hand and use hs(l) color from combined changed objects for paper in grayscale filmed video and remove background, keeping shadows  
   
 //draw objects on pano and find depth map  
