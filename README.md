@@ -20,6 +20,7 @@ Concerned with international relations and global issues.
 
 [![Marina's Stack Overflow Reputation](https://img.shields.io/stackexchange/stackoverflow/r/9165398?color=orange&label=stackoverflow&logo=stackoverflow&style=for-the-badge)](https://stackoverflow.com/users/9165398 "Marina's Stack Overflow Reputation") 
 [![Follow me on HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97-Hugging%20Face-yellow?style=for-the-badge)](https://huggingface.co/freealise)
+[![GPU nonexistent](https://img.shields.io/badge/GPU-nonexistent-green?style=for-the-badge)](https://en.wikipedia.org/wiki/Aphantasia)
 
 <!--
 [language from 1992, product idea from 2002, brand story from 2011, current business]
