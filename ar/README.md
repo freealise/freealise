@@ -16,7 +16,7 @@ foil -> mocap for auto quality feedback ?
 //https://www.google.com/streetview/how-it-works/  
 //upload video/subs to archive.org for transcoding (https://archive.org/details/download_20240209_0047)  
   
-//opencv stereo depth estimator on timepoints ?
+//opencv stereo depth estimator on timepoints ?  
 //blur selection edges; select everything closer than point on edge of object ?  
 //select to remove with efficientsam point prompt ?  
 //remove gizmo; remove duplicate frames with getimagedata or opencv  
