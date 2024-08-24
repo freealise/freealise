@@ -10,6 +10,7 @@ common midi / web audio controls
 [jsartoolkit5](https://github.com/artoolkitx/jsartoolkit5)   
 
 scene with color and shadows (filmed or drawn cubemap + layers / transparency) -> 3d video  
+opencv stereo depth estimator for realtime ?  
 normals from depth map in opencv (https://answers.opencv.org/question/82453/calculate-surface-normals-from-depth-image-using-neighboring-pixels-cross-product/)  
 foil -> mocap for auto quality feedback ?
 
@@ -17,7 +18,6 @@ foil -> mocap for auto quality feedback ?
 //upload video/subs to archive.org for transcoding (https://archive.org/details/download_20240209_0047)  
   
 //posterize to 48 colors to use horizontal lines ?  
-//opencv stereo depth estimator on timepoints ?  
 //blur selection edges; select everything closer than point on edge of object ?  
 //select to remove with efficientsam point prompt ?  
 //remove gizmo; remove duplicate frames with getimagedata or opencv  
