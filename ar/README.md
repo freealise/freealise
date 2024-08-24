@@ -17,8 +17,7 @@ foil -> mocap for auto quality feedback ?
 //https://www.google.com/streetview/how-it-works/  
 //upload video/subs to archive.org for transcoding (https://archive.org/details/download_20240209_0047)  
   
-//posterize to 48 colors to use horizontal lines ?  
-//blur selection edges; select everything closer than point on edge of object ?  
+//posterize to 48 colors to use horizontal lines ? blur selection edges  
 //select to remove with efficientsam point prompt ?  
 //remove gizmo; remove duplicate frames with getimagedata or opencv  
 //add scene from video (<- local webgl file)  
