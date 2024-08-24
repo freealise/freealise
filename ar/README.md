@@ -18,6 +18,7 @@ foil -> mocap for auto quality feedback ?
 //upload video/subs to archive.org for transcoding (https://archive.org/details/download_20240209_0047)  
   
 //on posterized image find dominant color and remove points of it, set as clearcolor  
+//or remove all points not on inner and outer edges and connect the rest with spiral line  
 //blur selection edges  
 //select to remove with efficientsam point prompt ?  
 //remove gizmo; remove duplicate frames with getimagedata or opencv  
