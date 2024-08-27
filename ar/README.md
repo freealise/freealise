@@ -17,7 +17,7 @@ foil -> mocap for auto quality feedback ?
 //https://www.google.com/streetview/how-it-works/  
 //upload video/subs to archive.org for transcoding (https://archive.org/details/download_20240209_0047)  
   
-//on posterized image keep only points on inner and outer edges and connect them with spiral line  
+//remove points and use photodome for sky and circle on ground  
 //blur selection edges  
 //select to remove with efficientsam point prompt ?  
 //remove gizmo; remove duplicate frames with getimagedata or opencv  
