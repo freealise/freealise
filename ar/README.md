@@ -17,7 +17,7 @@ foil -> mocap for auto quality feedback ?
 //https://www.google.com/streetview/how-it-works/  
 //upload video/subs to archive.org for transcoding (https://archive.org/details/download_20240209_0047)  
   
-//add several pointclouds by color, clearcolor is prevailing color of sky (+similar)  
+//several pointclouds by color (use dithering for edges), clearcolor = color of sky (+similar)  
 //blur selection edges; select to remove with efficientsam point prompt ?  
 //remove gizmo; remove duplicate frames with getimagedata or opencv  
 //add scene from video (<- local webgl file)  
