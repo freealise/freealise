@@ -28,3 +28,7 @@ foil -> mocap for auto quality feedback ?
 https://docs.opencv.org/4.x/dc/d0d/tutorial_py_features_harris.html,  
 https://docs.opencv.org/4.x/d4/d8c/tutorial_py_shi_tomasi.html)  
 //face movement with mocap + morph by points  
+  
+https://cyos.babylonjs.com/  
+https://sandbox.babylonjs.com/  
+https://playground.babylonjs.com/  
