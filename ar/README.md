@@ -18,7 +18,6 @@ foil -> mocap for auto quality feedback ?
 //https://www.google.com/streetview/how-it-works/  
 //upload video/subs to archive.org for transcoding (https://archive.org/details/download_20240209_0047)  
   
-//optimize skydome  
 //blur selection edges by opacity; select to remove with efficientsam point prompt ?  
 //remove gizmo; remove duplicate frames with getimagedata or opencv  
 //add scene from video (<- local webgl file)  
@@ -33,3 +32,4 @@ https://docs.opencv.org/4.x/d4/d8c/tutorial_py_shi_tomasi.html)
 https://cyos.babylonjs.com/  
 https://sandbox.babylonjs.com/  
 https://playground.babylonjs.com/  
+https://doc.babylonjs.com/features/featuresDeepDive/scene/optimize_your_scene  
