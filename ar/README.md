@@ -19,7 +19,7 @@ foil -> mocap for auto quality feedback ?
 //upload video/subs to archive.org for transcoding (https://archive.org/details/download_20240209_0047)  
   
 //adjust shades of gray on map with pipette and gamma correction ?; fix pano curvature ?  
-//fix floodfill range; select to remove with efficientsam point prompt ?  
+//select to remove with efficientsam point prompt ?  
 //remove gizmo; remove duplicate frames with getimagedata or opencv  
 //add scene from video (<- local webgl file)  
 //color foil by hand and use hs(l) color from combined changed objects for paper in grayscale filmed video and remove background, keeping shadows  
