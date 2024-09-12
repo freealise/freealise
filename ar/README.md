@@ -18,7 +18,7 @@ foil -> mocap for auto quality feedback ?
 //https://www.google.com/streetview/how-it-works/  
 //upload video/subs to archive.org for transcoding (https://archive.org/details/download_20240209_0047)  
   
-//fix pano curvature by subtracting gradient higher and lower than horizon down to 0 and 64 or 96  
+//depth anything 2 ?   
 //select to remove with efficientsam point prompt ?  
 //remove gizmo; remove duplicate frames with getimagedata or opencv  
 //add scene from video (<- local webgl file)  
