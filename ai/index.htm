@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width" />
+  <title>www</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<h1>www</h1>
+<div id="test"></div>
+
+<script type="text/javascript">
+//build a polynomial or fourier set with monte carlo method
+//through all data points at once instead of two at a time
+
+var y1_old = 0;
+var y2_old = 0;
+var rnd = 0;
+function rndi(y1, y2, mu) {
+  if (y1 != y1_old || y2 != y2_old) {
+    y1_old = y1;
+    y2_old = y2;
+    rnd = ((Math.random()*(y2-y1)+y1) + y1) / 2;
+  } else {
+    rnd = ((Math.random()*(y2-rnd)+rnd) + rnd) / 2;
+  }
+  return rnd;
+}
+
+</script>
+</body>
+</html>
