@@ -18,8 +18,8 @@ foil -> mocap for auto quality feedback ?
 //https://www.google.com/streetview/how-it-works/  
 //upload video/subs to archive.org for transcoding (https://archive.org/details/download_20240209_0047)  
   
-//remove gizmo; add scene from video (<- local webgl file)  
-//depth anything 2 (try on cubemaps ?)  
+//remove gizmo; add scene from video, soundtrack and subs (<- local webgl file)  
+//depth anything 2 (try on cubemaps - equi2cube ?)  
 //select to remove with efficientsam point prompt ? (or https://github.com/tensorflow/tfjs-models/tree/master/deeplab/demo in python)  
 //color foil by hand and use hs(l) color from combined changed objects for paper in grayscale filmed video and remove background, keeping shadows  
   
