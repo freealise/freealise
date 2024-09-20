@@ -12,7 +12,6 @@ common midi / web audio controls
 
 scene with color and shadows (filmed or drawn cubemap + layers / transparency; https://github.com/ssatguru/BabylonJS-MeshEditor) -> 3d video  
 opencv stereo depth estimator for realtime ?  
-normals from depth map in opencv (https://answers.opencv.org/question/82453/calculate-surface-normals-from-depth-image-using-neighboring-pixels-cross-product/)  
 foil -> mocap for auto quality feedback ?
 
 //https://www.google.com/streetview/how-it-works/  
