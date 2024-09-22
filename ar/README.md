@@ -17,7 +17,8 @@ foil -> mocap for auto quality feedback ?
 //https://www.google.com/streetview/how-it-works/  
 //upload video/subs to archive.org for transcoding (https://archive.org/details/download_20240209_0047)  
   
-//use canvas and fft for blur interface (keep in gradio for grayscale reference)  
+//average points and offset then for lerp by difference, then average the offset version  
+//or use fft; canvas for blur interface (keep in gradio for grayscale reference)  
   https://stackoverflow.com/questions/67191566/fft-calculation-in-javascript-of-vibration-data   
 //remove gizmo; add scene from video, soundtrack and subs (<- local webgl file)  
 //depth anything 2 (try on cubemaps - equi2cube ?); gr custom component ?  
