@@ -21,6 +21,7 @@ foil -> mocap for auto quality feedback ?
 //or use fft; canvas for blur interface (keep in gradio for grayscale reference)  
   https://stackoverflow.com/questions/67191566/fft-calculation-in-javascript-of-vibration-data   
 //remove gizmo; add scene from video, soundtrack and subs (<- local webgl file)  
+  (MP4 DOES support a transparency (alpha) option. Most people think MP4 uses the H264 codec, however, you can export the video in the H265 codec that supports an Alpha layer (HEVC))  
 //depth anything 2 (try on cubemaps - equi2cube ?); gr custom component ?  
 //select to remove with efficientsam point prompt ? (or https://github.com/tensorflow/tfjs-models/tree/master/deeplab/demo in python)  
 //color foil by hand and use hs(l) color from combined changed objects for paper in grayscale filmed video and remove background, keeping shadows  
