@@ -10,7 +10,10 @@ common midi / web audio controls
 ([AR.js](https://github.com/AR-js-org/AR.js))  
 [jsartoolkit5](https://github.com/artoolkitx/jsartoolkit5)   
 
-scene with color and shadows (filmed or drawn cubemap + layers / transparency; https://github.com/ssatguru/BabylonJS-MeshEditor, https://doc.babylonjs.com/toolsAndResources/assetLibraries/postProcessLibrary/asciiArtPP for depth) -> 3d video  
+scene with color and shadows (filmed or drawn cubemap + layers / transparency; 
+https://github.com/ssatguru/BabylonJS-MeshEditor, 
+https://doc.babylonjs.com/toolsAndResources/assetLibraries/postProcessLibrary/asciiArtPP for depth, 
+https://doc.babylonjs.com/features/featuresDeepDive/materials/using/parallaxMapping for display ?) -> 3d video  
 opencv stereo depth estimator for realtime ?  
 foil -> mocap for auto quality feedback ?
 
