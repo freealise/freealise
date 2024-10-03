@@ -2,7 +2,7 @@
 [face-landmarks-detection](https://github.com/freealise/tfjs-models/tree/master/face-landmarks-detection)  
 [hand-pose-detection](https://github.com/freealise/tfjs-models/tree/master/hand-pose-detection)  
 [opencv](https://docs.opencv.org/4.x/d1/d0d/tutorial_js_pose_estimation.html)  
-hand detection on video for chord transcription; pose detection for music, remote acting or rtc  
+hand detection on video for chord transcription; pose and face detection for music, remote acting or rtc  
 common midi / web audio controls  
 [opencv nodejs/java](https://docs.opencv.org/4.x/dc/de6/tutorial_js_nodejs.html)  
   
@@ -20,7 +20,7 @@ foil -> mocap for auto quality feedback ?
 //https://www.google.com/streetview/how-it-works/  
 //upload video/subs to archive.org for transcoding (https://archive.org/details/download_20240209_0047)  
   
-//remove gizmo; audio upload, face mocap  
+//remove gizmo; audio upload  
 //canvas for blur interface (keep in gradio for grayscale reference)  
 //average points and offset then for lerp by difference, then average the offset version  
 //or fft (https://doc.babylonjs.com/typedoc/classes/BABYLON.Analyser for curve smoothing)  
@@ -29,12 +29,13 @@ foil -> mocap for auto quality feedback ?
 //depth anything 2 (try on cubemaps - equi2cube ?); gr custom component ?  
 //select to remove with efficientsam point prompt ? (or https://github.com/tensorflow/tfjs-models/tree/master/deeplab/demo in python)  
 //color foil by hand and use hs(l) color from combined changed objects for paper in grayscale filmed video and remove background, keeping shadows  
+//foil is covered by food-grade wax from cheese  
   
 //draw objects on pano and find depth map  
 //scanned foil (photogrammetry) / depth estimator + mocap (sparse optical flow to track hair and clothes -  
 https://docs.opencv.org/4.x/dc/d0d/tutorial_py_features_harris.html,  
 https://docs.opencv.org/4.x/d4/d8c/tutorial_py_shi_tomasi.html)  
-//face movement with mocap + morph by points  
+//morph by points ?  
   
 https://cyos.babylonjs.com/  
 https://sandbox.babylonjs.com/  
