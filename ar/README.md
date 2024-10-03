@@ -21,7 +21,7 @@ foil -> mocap for auto quality feedback ?
 //upload video/subs to archive.org for transcoding (https://archive.org/details/download_20240209_0047)  
   
 //remove gizmo; audio upload  
-//canvas for blur interface (keep in gradio for grayscale reference)  
+//canvas or set of hrs for blur interface (keep in gradio for grayscale reference)  
 //average points and offset then for lerp by difference, then average the offset version  
 //or fft (https://doc.babylonjs.com/typedoc/classes/BABYLON.Analyser for curve smoothing)  
   https://stackoverflow.com/questions/67191566/fft-calculation-in-javascript-of-vibration-data  
