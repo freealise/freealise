@@ -20,9 +20,8 @@ foil -> mocap for auto quality feedback ?
 //https://www.google.com/streetview/how-it-works/  
 //upload video/subs to archive.org for transcoding (https://archive.org/details/download_20240209_0047)  
   
-//remove gizmo; audio upload  
-//canvas or set of hrs for blur interface (keep in gradio for grayscale reference)  
-//average points and offset then for lerp by difference, then average the offset version  
+//remove blur, gizmo, kbrd; audio upload  
+//average points and offset them for lerp by difference, then average the offset version  
 //or fft (https://doc.babylonjs.com/typedoc/classes/BABYLON.Analyser for curve smoothing)  
   https://stackoverflow.com/questions/67191566/fft-calculation-in-javascript-of-vibration-data  
   (MP4 DOES support a transparency (alpha) option. Most people think MP4 uses the H264 codec, however, you can export the video in the H265 codec that supports an Alpha layer (HEVC))  
