@@ -2,7 +2,10 @@
 [face-landmarks-detection](https://github.com/freealise/tfjs-models/tree/master/face-landmarks-detection)  
 [hand-pose-detection](https://github.com/freealise/tfjs-models/tree/master/hand-pose-detection)  
 [opencv](https://docs.opencv.org/4.x/d1/d0d/tutorial_js_pose_estimation.html)  
-hand detection on video for chord transcription; pose and face detection for music, remote acting or rtc  
+mocap: hand detection on video for chord transcription; pose and face detection for music, remote acting or rtc  
+(sparse optical flow to track hair and clothes -  
+https://docs.opencv.org/4.x/dc/d0d/tutorial_py_features_harris.html,  
+https://docs.opencv.org/4.x/d4/d8c/tutorial_py_shi_tomasi.html)  
 common midi / web audio controls  
 [opencv nodejs/java](https://docs.opencv.org/4.x/dc/de6/tutorial_js_nodejs.html)  
   
@@ -28,10 +31,7 @@ foil -> mocap for auto quality feedback ?
 //foil is covered by food-grade wax from cheese  
   
 //draw objects on pano and find depth map  
-//scanned foil (photogrammetry) / depth estimator + mocap (sparse optical flow to track hair and clothes -  
-https://docs.opencv.org/4.x/dc/d0d/tutorial_py_features_harris.html,  
-https://docs.opencv.org/4.x/d4/d8c/tutorial_py_shi_tomasi.html)  
-//morph by points ?  
+//scanned foil (photogrammetry) / depth estimator  
   
 https://cyos.babylonjs.com/  
 https://sandbox.babylonjs.com/  
