@@ -25,7 +25,7 @@ foil -> mocap for auto quality feedback ?
   
 //remove blur, gizmo, kbrd; audio upload  
   (MP4 DOES support a transparency (alpha) option. Most people think MP4 uses the H264 codec, however, you can export the video in the H265 codec that supports an Alpha layer (HEVC))  
-//depth anything 2 (try on cubemaps - equi2cube ?); gr custom component ?  
+//depth anything 2; gr custom component ?  
 //select to remove with efficientsam point prompt ? (or https://github.com/tensorflow/tfjs-models/tree/master/deeplab/demo in python)  
 //color foil by hand and use hs(l) color from combined changed objects for paper in grayscale filmed video and remove background, keeping shadows  
 //foil is covered by food-grade wax from cheese  
