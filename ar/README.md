@@ -24,6 +24,7 @@ foil -> mocap for auto quality feedback ?
 //upload video/subs to archive.org for transcoding (https://archive.org/details/download_20240209_0047)  
   
 //remove blur, gizmo, kbrd; audio upload  
+//find dense optical flow of video, >0 is foreground (+subtract background from complete scene for stationery objects)  
   (MP4 DOES support a transparency (alpha) option. Most people think MP4 uses the H264 codec, however, you can export the video in the H265 codec that supports an Alpha layer (HEVC))  
 //depth anything 2; gr custom component ?  
 //select to remove with efficientsam point prompt ? (or https://github.com/tensorflow/tfjs-models/tree/master/deeplab/demo in python)  
