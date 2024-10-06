@@ -23,7 +23,6 @@ foil -> mocap for auto quality feedback ?
 //https://www.google.com/streetview/how-it-works/  
 //upload video/subs to archive.org for transcoding (https://archive.org/details/download_20240209_0047)  
   
-//find distances of averages from original points, make them positive, average with same window, multiply by 2 and add to results  
 //remove blur, gizmo, kbrd; audio upload  
   (MP4 DOES support a transparency (alpha) option. Most people think MP4 uses the H264 codec, however, you can export the video in the H265 codec that supports an Alpha layer (HEVC))  
 //depth anything 2 (try on cubemaps - equi2cube ?); gr custom component ?  
