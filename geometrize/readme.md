@@ -1,2 +1,2 @@
-add lines of varying width and gradient ?  
+polygons (<- triangles) of varying number of points and opacity  
 morph by closest shape and color ?
