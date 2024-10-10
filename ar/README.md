@@ -32,11 +32,6 @@ foil -> mocap for auto quality feedback ?
   
 //draw objects on pano and find depth map  
 //scanned foil (photogrammetry) / depth estimator  
-
-transparent video: original mp4 with white replaced with transparency  
-(https://www.ffmpeg.org/ffmpeg-filters.html#colorkey)  
-8*3 opacity levels are shades of white  
-encode to transparent (https://stackoverflow.com/questions/36467594/ffmpeg-add-alpha-channel-to-a-video-using-a-png-mask)  
   
 https://cyos.babylonjs.com/  
 https://sandbox.babylonjs.com/  
