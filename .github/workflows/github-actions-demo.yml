@@ -20,7 +20,7 @@ jobs:
       - run: brew install ffmpeg
       #- run: brew update && brew upgrade ffmpeg
       - run: ffmpeg -i movie.mp4 -f apng -vf chromakey=0xffffff:0.01:0.2 output.png
-      - run: ffmpeg -pix_fmt rgba -i output.png -c:v hevc_videotoolbox -alpha_quality 1.0 -vtag hvc1 output.mov
+      - run: ffmpeg -i output.png -c:v hevc_videotoolbox -alpha_quality 1.0 -vtag hvc1 output.mov
       - name: Upload result
         uses: actions/upload-artifact@v4
         with:
