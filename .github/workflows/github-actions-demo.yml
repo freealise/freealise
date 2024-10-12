@@ -19,9 +19,10 @@ jobs:
       - run: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
       - run: brew install ffmpeg
       #- run: brew update && brew upgrade ffmpeg
-      - run: ffmpeg -i movie.mp4 -c:v hevc_videotoolbox -allow_sw 1 -alpha_quality 1.0 -tag:v hvc1 -vf "chromakey=0xffffff:0.01:0.2" output.mov
+      - run: ffmpeg -i movie.mp4 -f apng -vf "chromakey=0xffffff:0.01:0.2" output.png
+      - run: ffmpeg -i output.png -c:v hevc_videotoolbox -allow_sw 1 -alpha_quality 1.0 -tag:v hvc1 output.mp4
       - name: Upload result
         uses: actions/upload-artifact@v4
         with:
-          name: mov_result
-          path: output.mov
+          name: mp4_result
+          path: output.mp4
