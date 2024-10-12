@@ -71,7 +71,12 @@ function main() {
   void main(void) {
     highp vec4 texelColor = texture2D(uSampler, vTextureCoord);
 
-    gl_FragColor = vec4(texelColor.rgb * vLighting, texelColor.a);
+    if (texelColor.r == 1.0 && texelColor.g == 1.0 && texelColor.b == 1.0 && texelColor.a == 1.0) {
+      discard;
+    } else {
+      varying float vAlpha = (texelColor.r + texelColor.g + texelColor.b) / 3.0;
+      gl_FragColor = vec4(texelColor.rgb * vLighting, vAlpha);
+    }
   }
 `;
 
