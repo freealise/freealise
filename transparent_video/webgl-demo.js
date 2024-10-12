@@ -24,8 +24,8 @@ function main() {
     return;
   }
 
-  // Set clear color to white, fully opaque
-  gl.clearColor(1.0, 1.0, 1.0, 1.0);
+  // Set clear color to transparent
+  gl.clearColor(0.0, 0.0, 0.0, 0.0);
   // Clear the color buffer with specified clear color
   gl.clear(gl.COLOR_BUFFER_BIT);
 
