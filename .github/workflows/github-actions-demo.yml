@@ -20,4 +20,8 @@ jobs:
       - run: brew install ffmpeg
       #- run: brew update && brew upgrade ffmpeg
       - run: ffmpeg -i movie.mp4 output.gif
-      
+      - name: Upload gif result
+        uses: actions/upload-artifact@v4
+        with:
+          name: gif_result
+          path: output.gif
