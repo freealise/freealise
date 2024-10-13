@@ -4,17 +4,15 @@
       <script src="https://cdn.jsdelivr.net/pyodide/v0.26.2/full/pyodide.js"></script>
   </head>
   <body>
-    Pyodide test page <br>
-    Open your browser console to see Pyodide output
     <script type="text/javascript">
       async function main(){
         let pyodide = await loadPyodide();
-        console.log(pyodide.runPython(`
+        document.write(pyodide.runPython(`
             import sys
             import numpy as np
             sys.version
+            print(np.pi)
         `));
-        pyodide.runPython("print(np.pi)");
       }
       main();
     </script>
