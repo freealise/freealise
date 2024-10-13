@@ -26,5 +26,3 @@ jobs:
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Changed files
-      - run: dig -4 TXT +short o-o.myaddr.l.google.com @ns1.google.com
-      - run: node node/server.mjs
