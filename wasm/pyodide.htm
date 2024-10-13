@@ -10,8 +10,8 @@
       click the button.
     </p>
     <textarea id="code">
-      import numpy as np
-      print(np.pi)
+import numpy as np
+print(np.pi)
     </textarea>
     <button onclick="evaluatePython()">Run</button>
     <br />
@@ -31,6 +31,9 @@
       // init Pyodide
       async function main() {
         let pyodide = await loadPyodide();
+        await pyodide.loadPackage("micropip");
+        const micropip = pyodide.pyimport("micropip");
+        await micropip.install(["numpy"]);
         output.value += "Ready!\n";
         return pyodide;
       }
