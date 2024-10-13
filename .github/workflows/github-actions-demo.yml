@@ -21,10 +21,6 @@ jobs:
       #- run: brew update && brew upgrade ffmpeg
       #- run: ffmpeg -i movie.mp4 -f apng -vf "chromakey=0xffffff:0.01:0.2" output.png
       - run: emcc -o wasm/hello.html wasm/hello.c -O3 --shell-file wasm/shell_minimal.html
-      - run: git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add .
-          git commit -m "<commit message>"
-          git remote set-url origin https://<username>:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
-          git fetch origin main
-          git push origin main
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Changed files
