@@ -9,10 +9,7 @@
       You can execute any Python code. Just enter something in the box below and
       click the button.
     </p>
-    <textarea id="code">
-import numpy as np
-print(np.pi)
-    </textarea>
+    <textarea id="code"></textarea>
     <button onclick="evaluatePython()">Run</button>
     <br />
     <br />
@@ -22,6 +19,11 @@ print(np.pi)
     <script>
       const output = document.getElementById("output");
       const code = document.getElementById("code");
+
+code.value = `
+import numpy as np
+print(np.pi)
+`;
 
       function addToOutput(s) {
         output.value += ">>>" + code.value + "\n" + s + "\n";
