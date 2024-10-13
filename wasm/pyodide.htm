@@ -31,9 +31,7 @@ print(np.pi)
       // init Pyodide
       async function main() {
         let pyodide = await loadPyodide();
-        await pyodide.loadPackage("micropip");
-        const micropip = pyodide.pyimport("micropip");
-        await micropip.install(["numpy"]);
+        await pyodide.loadPackage(["numpy"]);
         output.value += "Ready!\n";
         return pyodide;
       }
