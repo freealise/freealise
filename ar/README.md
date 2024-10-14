@@ -24,9 +24,8 @@ foil -> mocap for auto quality feedback ?
 //upload video/subs to archive.org for transcoding (https://archive.org/details/download_20240209_0047)  
   
 //remove blur, gizmo, kbrd; audio upload  
-//find dense optical flow of video, >0 is foreground (+subtract background from complete scene for stationery objects)  
-  background video out of odd frames, scene out of even (upload separately to reduce mp4 size)  
-  load mp4 with white as transparent color replaced in scene by 254s so it only fills the background  
+//background video out of odd frames, scene video out of even (upload separately to reduce mp4 size), replace white in scene by 254s  
+  find depth map of videos, replace with white in scene what is close to background depth && close to white color to keep shadows  
 //depth anything 2; gr custom component ? instance/panoptic segmentation for inpainting ?  
 //color foil by hand and use hs(l) color from combined changed objects for paper in grayscale filmed video and remove background, keeping shadows  
 //foil is covered by food-grade wax from cheese  
