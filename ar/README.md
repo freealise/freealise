@@ -25,6 +25,7 @@ foil -> mocap for auto quality feedback ?
   
 //remove blur, gizmo, kbrd; audio upload; stereo depth estimator ?  
 //upload background video out of odd frames, scene video out of even (stack separately to reduce mp4 size), transparent shadows  
+  posterize depth with palette or kmeans (slow? https://docs.opencv.org/4.x/d1/d5c/tutorial_py_kmeans_opencv.html)  
 //blend edges of inpainting (shader or https://docs.opencv.org/4.x/dc/dff/tutorial_py_pyramids.html)  
 //depth anything 2 (average results ?); gr custom component ? instance/panoptic segmentation for inpainting ?  
 //color foil by hand and use hs(l) color from combined changed objects for paper in grayscale filmed video and remove background, keeping shadows  
