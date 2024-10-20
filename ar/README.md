@@ -24,7 +24,6 @@ foil -> mocap for auto quality feedback ?
 //upload video/subs to archive.org for transcoding (https://archive.org/details/download_20240209_0047)  
   
 //remove blur, gizmo, kbrd; audio upload  
-//improve bg subtraction (https://docs.opencv.org/4.x/d1/dc5/tutorial_background_subtraction.html)  
 //upload background video out of odd frames, scene video out of even (stack separately to reduce mp4 size), transparent shadows  
   posterize depth with palette or kmeans (slow? https://docs.opencv.org/4.x/d1/d5c/tutorial_py_kmeans_opencv.html)  
 //blend edges of inpainting (shader or https://docs.opencv.org/4.x/dc/dff/tutorial_py_pyramids.html)  
