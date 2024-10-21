@@ -23,9 +23,13 @@ foil -> mocap for auto quality feedback ?
 //https://www.google.com/streetview/how-it-works/  
 //upload video/subs to archive.org for transcoding (https://archive.org/details/download_20240209_0047)  
   
+interface: keyboard for row of braille dots with absolute or relative value change, arrows for navigation  
+  
 //remove blur, gizmo, kbrd; audio upload  
 //upload background video out of odd frames, scene video out of even (stack separately to reduce mp4 size), transparent shadows  
-//stereo depth estimator (https://docs.opencv.org/4.x/dd/d53/tutorial_py_depthmap.html) or depth anything 2 for foreground; gr custom component ? instance/panoptic segmentation for inpainting ?  
+//stereo depth estimator (https://docs.opencv.org/4.x/dd/d53/tutorial_py_depthmap.html)  
+  test on google streets as cubemap  
+  or depth anything 2 for foreground; gr custom component ? instance/panoptic segmentation for inpainting ?  
 //color foil by hand and use hs(l) color from combined changed objects for paper in grayscale filmed video and remove background, keeping shadows  
 //foil is covered by food-grade wax from cheese  
   
