@@ -29,7 +29,7 @@ interface: keyboard for row of braille dots with absolute or relative value chan
 //upload background video out of odd frames, scene video out of even (stack separately to reduce mp4 size), transparent shadows  
 //stereo depth estimator for foreground (https://docs.opencv.org/4.x/dd/d53/tutorial_py_depthmap.html)  
   gr custom component ? instance/panoptic segmentation for inpainting ?  
-//fetch thumbnails and outsourced street imagery (https://www.google.com/maps/@41.7182126,44.8004768,3a,75y,70.57h,85.39t/data=!3m8!1e1!3m6!1sAF1QipOw6VPdy-X4lxdPr7Pn-xOhy_D4HXyEkrTLm9u4!2e10!3e12!5s20240810T000000!7i7680!8i3840?coh=205409&entry=ttu&g_ep=EgoyMDI0MTAxNi4wIKXMDSoASAFQAw%3D%3D)  
+//fetch thumbnails and latlng metadata for photospheres  
 //color foil by hand and use hs(l) color from combined changed objects for paper in grayscale filmed video and remove background, keeping shadows  
 //foil is covered by food-grade wax from cheese  
   
