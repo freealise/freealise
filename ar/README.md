@@ -25,7 +25,7 @@ foil -> mocap for auto quality feedback ?
   
 interface: keyboard for row of braille dots with absolute or relative value change, arrows for navigation  
   
-//remove blur, gizmo, kbrd; audio upload  
+//remove gizmo, kbrd from hf  
 //stereo depth estimator for foreground (https://docs.opencv.org/4.x/dd/d53/tutorial_py_depthmap.html)  
   gr custom component ? instance/panoptic segmentation for inpainting ?  
 //color foil by hand and use hs(l) color from combined changed objects for paper in grayscale filmed video and remove background, keeping shadows  
