@@ -26,7 +26,7 @@ foil -> mocap for auto quality feedback ?
 interface: keyboard for row of braille dots with absolute or relative value change, arrows for navigation  
   
 //remove gizmo, kbrd from hf  
-  rotate, zoom and cut on location change in pano viewer instead of transition (load standard pano as custom), output to video  
+  rotate, zoom and cut on location change in pano viewer instead of transition (load standard pano as custom: example from sd card), output to video  
   (report link as fallback: https://developers.google.com/maps/documentation/tile/streetview)  
 //stereo depth estimator for foreground (https://docs.opencv.org/4.x/dd/d53/tutorial_py_depthmap.html)  
   gr custom component ? instance/panoptic segmentation for inpainting ?  
