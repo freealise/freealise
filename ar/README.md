@@ -27,6 +27,7 @@ interface: keyboard for row of braille dots with absolute or relative value chan
   
 //remove gizmo, kbrd from hf  
   zoom and cut on location change in pano viewer instead of transition, output to video  
+  2.5 meters (height of camera) == half horizon (divided in half further for same distance)  
 //stereo depth estimator for foreground (https://docs.opencv.org/4.x/dd/d53/tutorial_py_depthmap.html)  
   gr custom component ? instance/panoptic segmentation for inpainting ?  
 //color foil by hand and use hs(l) color from combined changed objects for paper in grayscale filmed video and remove background, keeping shadows  
