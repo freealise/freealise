@@ -26,9 +26,11 @@ foil -> mocap for auto quality feedback ?
 interface: keyboard for row of braille dots with absolute or relative value change, arrows for navigation  
   
 //remove gizmo, kbrd from hf  
-  rotate, zoom and cut on location change in pano viewer instead of transition (load standard pano as custom: example from sd card), output to video  
-  (report link as fallback: https://developers.google.com/maps/documentation/tile/streetview)  
-//stereo depth estimator for foreground (https://docs.opencv.org/4.x/dd/d53/tutorial_py_depthmap.html)  
+  find features and morph by them in pano viewer for transition (load standard pano as custom: example from sd card), output to video  
+    (https://docs.opencv.org/4.x/db/d27/tutorial_py_table_of_contents_feature2d.html)  
+  report link as fallback (https://developers.google.com/maps/documentation/tile/streetview)  
+  3d tiles (https://developers.google.com/maps/documentation/tile/3d-tiles-overview)  
+//panos next to each other -> stereo depth estimator ? also for foreground (https://docs.opencv.org/4.x/dd/d53/tutorial_py_depthmap.html)  
   gr custom component ? instance/panoptic segmentation for inpainting ?  
 //color foil by hand and use hs(l) color from combined changed objects for paper in grayscale filmed video and remove background, keeping shadows  
 //foil is covered by food-grade wax from cheese  
