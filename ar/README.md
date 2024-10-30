@@ -26,7 +26,7 @@ foil -> mocap for auto quality feedback ?
 interface: keyboard for row of braille dots with absolute or relative value change, arrows for navigation  
   
 //remove gizmo, kbrd from hf  
-  find features and morph by them in pano viewer for transition (load standard pano as custom: example from sd card), output to video  
+  find features on posterized depth map and morph by them in pano viewer for transition (load standard pano as custom: example from sd card), output to video  
     (https://docs.opencv.org/4.x/db/d27/tutorial_py_table_of_contents_feature2d.html)  
   report link as fallback (https://developers.google.com/maps/documentation/tile/streetview)  
   3d tiles (https://developers.google.com/maps/documentation/tile/3d-tiles-overview)  
