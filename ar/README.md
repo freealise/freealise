@@ -26,8 +26,7 @@ foil -> mocap for auto quality feedback ?
 interface: keyboard for row of braille dots with absolute or relative value change, arrows for navigation  
   
 //remove gizmo, kbrd from hf  
-  find features on posterized depth map and morph by them in pano viewer for transition (load standard pano as custom: example from sd card), output to video  
-    (https://docs.opencv.org/4.x/db/d27/tutorial_py_table_of_contents_feature2d.html)  
+  find precise locations of timepoints and morph closest versions of nearby panos (weather, time of day and season can vary anyway)  
   report link as fallback (https://developers.google.com/maps/documentation/tile/streetview)  
   3d tiles (https://developers.google.com/maps/documentation/tile/3d-tiles-overview)  
 //panos next to each other -> stereo depth estimator ? also for foreground (https://docs.opencv.org/4.x/dd/d53/tutorial_py_depthmap.html)  
