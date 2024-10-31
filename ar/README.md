@@ -27,7 +27,6 @@ interface: keyboard for row of braille dots with absolute or relative value chan
   
 //remove gizmo, kbrd from hf  
   find precise locations of timepoints and morph closest versions of nearby panos (weather, time of day and season can vary anyway)  
-  report link as fallback (https://developers.google.com/maps/documentation/tile/streetview)  
   3d tiles (https://developers.google.com/maps/documentation/tile/3d-tiles-overview)  
 //panos next to each other -> stereo depth estimator ? also for foreground (https://docs.opencv.org/4.x/dd/d53/tutorial_py_depthmap.html)  
   gr custom component ? instance/panoptic segmentation for inpainting ?  
