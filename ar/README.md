@@ -28,6 +28,7 @@ interface: keyboard for row of braille dots with absolute or relative value chan
   
 //remove gizmo, kbrd from hf  
   find precise locations of timepoints and morph closest versions of nearby panos relit with hsl, or make paper models with texture embossed with foil and painted  
+  add points to bilinear morpher with mouse strokes: number of points the same for corresponding strokes, point frequency changed by velocity  
 //stereo depth estimator for foreground (https://docs.opencv.org/4.x/dd/d53/tutorial_py_depthmap.html)  
 //color foil by hand and use hs(l) color from combined changed objects for paper in grayscale filmed video and remove background, keeping shadows  
 //foil is covered by food-grade wax from cheese  
