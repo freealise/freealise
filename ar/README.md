@@ -18,7 +18,7 @@ https://github.com/ssatguru/BabylonJS-MeshEditor,
 https://doc.babylonjs.com/toolsAndResources/assetLibraries/postProcessLibrary/asciiArtPP for depth, 
 https://doc.babylonjs.com/features/featuresDeepDive/materials/using/parallaxMapping for display ?) -> 3d video  
 opencv stereo depth estimator for realtime ?  
-foil -> mocap for auto quality feedback ?
+foil -> mocap for auto quality feedback ?  
 3d tiles (https://developers.google.com/maps/documentation/tile/3d-tiles-overview)  
 
 //https://www.google.com/streetview/how-it-works/  
