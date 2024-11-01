@@ -29,7 +29,7 @@ interface: keyboard for row of braille dots with absolute or relative value chan
 //remove gizmo, kbrd from hf  
   find precise locations of timepoints and morph closest versions of nearby panos (weather, time of day and season can vary anyway)  
 //stereo depth estimator for foreground (https://docs.opencv.org/4.x/dd/d53/tutorial_py_depthmap.html)  
-  gr custom component ? instance/panoptic segmentation for inpainting ?  
+  instance/panoptic segmentation with cityscapes for inpainting ?  
 //color foil by hand and use hs(l) color from combined changed objects for paper in grayscale filmed video and remove background, keeping shadows  
 //foil is covered by food-grade wax from cheese  
   
