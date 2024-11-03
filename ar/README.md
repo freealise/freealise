@@ -26,12 +26,11 @@ foil -> mocap for auto quality feedback ?
   
 interface: keyboard for row of braille dots with absolute or relative value change, arrows for navigation  
   
-//remove gizmo, kbrd from hf  
-  find precise locations of timepoints and morph closest versions of nearby panos relit with hsl, or make paper models with texture embossed with foil and painted  
+//remove gizmo, kbrd from hf    
   add points to bilinear morpher with mouse strokes: number of points the same for corresponding strokes, point frequency changed by velocity  
 //stereo depth estimator for foreground (https://docs.opencv.org/4.x/dd/d53/tutorial_py_depthmap.html)  
 //color foil by hand and use hs(l) color from combined changed objects for paper in grayscale filmed video and remove background, keeping shadows  
-//foil is covered by food-grade wax from cheese  
+//foil is covered by food-grade wax from cheese; make paper models with texture embossed with foil and painted  
   
 //draw objects on pano and find depth map  
 //scanned foil (photogrammetry) / depth estimator  
