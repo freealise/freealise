@@ -24,8 +24,6 @@ foil -> mocap for auto quality feedback ?
 //https://www.google.com/streetview/how-it-works/  
 //upload video/subs to archive.org for transcoding (https://archive.org/details/download_20240209_0047)  
   
-interface: keyboard for row of braille dots with absolute or relative value change, arrows for navigation  
-  
 //remove gizmo, kbrd from hf    
   add points to bilinear morpher with mouse strokes: number of points the same for corresponding strokes, point frequency changed by velocity  
 //stereo depth estimator for foreground (https://docs.opencv.org/4.x/dd/d53/tutorial_py_depthmap.html)  
