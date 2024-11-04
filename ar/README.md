@@ -27,7 +27,7 @@ foil -> mocap for auto quality feedback ?
 //remove gizmo, kbrd from hf    
   add points to bilinear morpher with mouse strokes: number of points the same for corresponding strokes, point frequency changed by velocity  
 //stereo depth estimator for foreground (https://docs.opencv.org/4.x/dd/d53/tutorial_py_depthmap.html)  
-//foil is covered by food-grade wax from cheese; make paper models with texture embossed with foil and painted in CMYK  
+//foil is covered by food-grade wax from cheese; make wet paper models with texture embossed with foil and painted in CMYK  
   
 //draw objects on pano and find depth map  
 //scanned foil (photogrammetry) / depth estimator  
