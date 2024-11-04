@@ -25,7 +25,7 @@ foil -> mocap for auto quality feedback ?
 //upload video/subs to archive.org for transcoding (https://archive.org/details/download_20240209_0047)  
   
 //remove gizmo, kbrd from hf    
-  add points to bilinear morpher with mouse strokes: number of points the same for corresponding strokes, point frequency changed by velocity  
+  splice points in the middle if array (bilinear morpher)  
 //stereo depth estimator for foreground (https://docs.opencv.org/4.x/dd/d53/tutorial_py_depthmap.html)  
 //foil is covered by food-grade wax from cheese; make wet paper models with texture embossed with foil and painted in CMYK  
   
