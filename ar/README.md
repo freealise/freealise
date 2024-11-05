@@ -7,6 +7,7 @@ mocap: hand detection on video for chord transcription; pose and face detection 
 https://docs.opencv.org/4.x/dc/d0d/tutorial_py_features_harris.html,  
 https://docs.opencv.org/4.x/d4/d8c/tutorial_py_shi_tomasi.html)  
 common midi / web audio controls  
+track nail polish as guitar feedback ? (https://docs.opencv.org/4.x/df/d9d/tutorial_py_colorspaces.html)  
 [opencv nodejs/java](https://docs.opencv.org/4.x/dc/de6/tutorial_js_nodejs.html)  
   
 ([MindAR.js](https://github.com/hiukim/mind-ar-js))  
