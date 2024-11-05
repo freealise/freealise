@@ -26,8 +26,8 @@ foil -> mocap for auto quality feedback ?
 //upload video/subs to archive.org for transcoding (https://archive.org/details/download_20240209_0047)  
   
 //remove gizmo, kbrd from hf    
-  splice points in the middle if array (bilinear morpher)  
-//optical flow depth estimator for foreground  
+  splice points in the middle of array (bilinear morpher)  
+//optical flow depth estimator: average results from several timepoints, convert equi to cube for linear movement  
   stack several blurry images and deblur (smartdeblur.net/gallery.html)  
 //foil is covered by food-grade wax from cheese; make wet paper models with texture embossed with foil and painted in CMYK  
   
