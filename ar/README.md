@@ -27,8 +27,8 @@ foil -> mocap for auto quality feedback ?
   
 //remove gizmo, kbrd from hf    
   splice points in the middle if array (bilinear morpher)  
-//stereo depth estimator for foreground (https://docs.opencv.org/4.x/dd/d53/tutorial_py_depthmap.html)  
-  reduce timepoints to hue or outline and find stereo map  
+//optical flow depth estimator for foreground  
+  stack several blurry images and deblur (smartdeblur.net/gallery.html)  
 //foil is covered by food-grade wax from cheese; make wet paper models with texture embossed with foil and painted in CMYK  
   
 //draw objects on pano and find depth map  
