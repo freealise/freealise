@@ -27,7 +27,6 @@ foil -> mocap for auto quality feedback ?
 //remove gizmo, kbrd from hf  
   splice points in the middle of array (bilinear morpher)  
 //optical flow depth estimator for foreground video (+in realtime) to remove bg  
-  record video instead of photo and pick the least blurry frame  
 //foil is covered by food-grade wax from cheese; make wet paper models with texture embossed with foil and painted in CMYK  
   
 //draw objects on pano and find depth map  
