@@ -18,7 +18,6 @@ scene with color and shadows (filmed or drawn cubemap + layers / transparency;
 https://github.com/ssatguru/BabylonJS-MeshEditor, 
 https://doc.babylonjs.com/toolsAndResources/assetLibraries/postProcessLibrary/asciiArtPP for depth, 
 https://doc.babylonjs.com/features/featuresDeepDive/materials/using/parallaxMapping for display ?) -> 3d video  
-opencv stereo depth estimator for realtime ?  
 foil -> mocap for auto quality feedback ?  
 3d tiles (https://developers.google.com/maps/documentation/tile/3d-tiles-overview)  
 
@@ -27,9 +26,8 @@ foil -> mocap for auto quality feedback ?
   
 //remove gizmo, kbrd from hf  
   splice points in the middle of array (bilinear morpher)  
-//optical flow depth estimator for foreground video to remove bg  
-  record video instead of photo and add weighted for average to unblur  
-  (https://docs.opencv.org/3.4/d5/dc4/tutorial_adding_images.html)  
+//optical flow depth estimator for foreground video (+in realtime) to remove bg  
+  record video instead of photo and pick the least blurry frame  
 //foil is covered by food-grade wax from cheese; make wet paper models with texture embossed with foil and painted in CMYK  
   
 //draw objects on pano and find depth map  
