@@ -26,6 +26,7 @@ foil -> mocap for auto quality feedback ?
   
 //remove gizmo, kbrd from hf  
 //optical flow depth estimator for foreground video (+in realtime) to remove bg  
+  if kernel 5x5 is both gray (color diff < +-8) and dull (=blurry; laplacian 3x3) then is background  
 //foil is covered by food-grade wax from cheese; make wet paper models with texture embossed with foil and painted in CMYK  
   
 //draw objects on pano and find depth map  
