@@ -25,12 +25,11 @@ foil -> mocap for auto quality feedback ?
 //upload video/subs to archive.org for transcoding (https://archive.org/details/download_20240209_0047)  
   
 //remove gizmo, kbrd from hf  
-//optical flow depth estimator for foreground video (+in realtime) to remove bg  
-  if kernel 5x5 is both gray (color diff < +-8) and dull (=blurry; laplacian 3x3) then is background  
+//if kernel 5x5 is both gray (color diff < +-8) and dull (=blurry; laplacian 3x3) then is background  
 //foil is covered by food-grade wax from cheese; make wet paper models with texture embossed with foil and painted in CMYK  
   
 //draw objects on pano and find depth map  
-//scanned foil (photogrammetry) / depth estimator  
+//scanned foil (photogrammetry) / optical flow depth estimator (+in realtime)  
   
 https://cyos.babylonjs.com/  
 https://sandbox.babylonjs.com/  
