@@ -25,7 +25,7 @@ foil -> mocap for auto quality feedback ?
 //upload video/subs to archive.org for transcoding (https://archive.org/details/download_20240209_0047)  
   
 //remove gizmo, kbrd from hf  
-//bg removal: objects of different blurriness from bg (5x5 corners or frame) are fg  
+//bg removal: median blur / dilate+erode then subtract from original (keep gray pixels)  
 //foil is covered by food-grade wax from cheese; make wet paper models with texture embossed with foil and painted in CMYK  
   
 //draw objects on pano and find depth map  
