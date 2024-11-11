@@ -32,7 +32,8 @@ foil -> mocap for auto quality feedback ?
 //draw objects on pano and find depth map  
 //scanned foil (photogrammetry) / optical flow or stereo depth estimator (+in realtime)  
   (https://docs.opencv.org/4.x/d9/db7/tutorial_py_table_of_contents_calib3d.html, 
-   https://docs.opencv.org/4.x/d4/dee/tutorial_optical_flow.html)  
+   https://docs.opencv.org/4.x/d4/dee/tutorial_optical_flow.html,
+   https://docs.opencv.org/3.4/d5/dc4/tutorial_adding_images.html)  
 //detect spectrograms (https://docs.opencv.org/4.x/d2/d64/tutorial_table_of_content_objdetect.html)  
   
 https://cyos.babylonjs.com/  
