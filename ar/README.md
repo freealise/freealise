@@ -13,7 +13,8 @@ track nail polish as guitar feedback ? (https://docs.opencv.org/4.x/df/d9d/tutor
 ([MindAR.js](https://github.com/hiukim/mind-ar-js))  
 ([AR.js](https://github.com/AR-js-org/AR.js))  
 [jsartoolkit5](https://github.com/artoolkitx/jsartoolkit5)   
-
+  
+projector with 3d prism instead of screen (screens are small and not bright enough)  
 scene with color and shadows (filmed or drawn cubemap + layers / transparency; 
 https://github.com/ssatguru/BabylonJS-MeshEditor, 
 https://doc.babylonjs.com/toolsAndResources/assetLibraries/postProcessLibrary/asciiArtPP for depth, 
