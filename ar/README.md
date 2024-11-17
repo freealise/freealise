@@ -26,11 +26,7 @@ foil -> mocap for auto quality feedback ?
 //upload video/subs to archive.org for transcoding (https://archive.org/details/download_20240209_0047)  
   
 //remove gizmo, kbrd from hf  
-//bg removal: move scene against bg to detect it  
-  (https://docs.opencv.org/4.x/d1/dc5/tutorial_background_subtraction.html)  
-  or use imperfect results as mask for grabcut  
-  (https://docs.opencv.org/3.4/d8/d83/tutorial_py_grabcut.html)  
-  or posterize colors of diffs to match exactly  
+//bg removal: shadows are gray and blurry (measure laplacian variance)  
 //foil is covered by food-grade wax from cheese; make wet paper models with texture embossed with foil and painted in CMYK  
   
 //draw objects on pano and find depth map  
