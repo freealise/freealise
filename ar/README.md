@@ -26,7 +26,7 @@ foil -> mocap for auto quality feedback ?
 //upload video/subs to archive.org for transcoding (https://archive.org/details/download_20240209_0047)  
   
 //remove gizmo, kbrd from hf  
-//bg removal: find optical flow with background of checkered paper (has a pattern)  
+//bg removal: shadows are grayish, dark and blurry (find low variance of laplacian, dilate edges)  
 //foil is covered by food-grade wax from cheese; make wet paper models with texture embossed with foil and painted in CMYK  
   
 //draw objects on pano and find depth map  
