@@ -25,8 +25,8 @@ foil -> mocap for auto quality feedback ?
 //https://www.google.com/streetview/how-it-works/  
 //upload video/subs to archive.org for transcoding (https://archive.org/details/download_20240209_0047)  
   
-//remove gizmo, kbrd from hf  
-//bg removal: dilate shadow edges; color variance ?  
+//remove gizmo, kbrd, bg filter from hf  
+//bg removal: filter output frame; dilate shadow edges; color variance ?  
 //foil is covered by food-grade wax from cheese; make wet paper models with texture embossed with foil and painted in CMYK  
   
 //draw objects on pano and find depth map  
