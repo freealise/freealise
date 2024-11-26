@@ -6,7 +6,7 @@ https://github.com/lagodiuk/earley-parser-js
 https://github.com/lagodiuk/decision-tree-js  
 deterministic natural language parser ?
 
-http://download.huzheng.org/dict.org/, http://download.huzheng.org/bigdict/  
+https://web.archive.org/web/20230602022440/http://download.huzheng.org/dict.org/, https://web.archive.org/web/20230602022440/http://download.huzheng.org/bigdict/  
 https://superuser.com/questions/137007/how-to-convert-stardict-dictionary-file-format-to-any-readable-format  
 find synonyms / more general or specific terms by similarity of description ?  
 thisworddoesnotexist.com
