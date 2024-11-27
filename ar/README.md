@@ -26,7 +26,8 @@ foil -> mocap for auto quality feedback ?
 //upload video/subs to archive.org for transcoding (https://archive.org/details/download_20240209_0047)  
   
 //remove gizmo, kbrd, bg filter from hf  
-//remove bottom of bg with 2nd laplacian of depth map (constant for flat surface) and flood fill from bottom center  
+//use photo with flash for mask without shadow, photo with no flash for mask with shadow and scene  
+  both against 255 medianblur bg in interpolator with color/shadow limits  
 //foil is covered by food-grade wax from cheese; make wet paper models with texture embossed with foil and painted in CMYK  
   
 //draw objects on pano and find depth map  
