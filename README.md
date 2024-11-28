@@ -16,6 +16,7 @@ Here are some ideas to get you started:
 -->
 
 Speaking English since 1992 (IELTS >7.0), coding since ~2000.  
+Person of non-traditional spacial and temporal orientation.  
 Concerned with international relations and global issues.  
 
 [![Quora Profile](https://img.shields.io/badge/⁉️-Quora-red?style=for-the-badge)](https://www.quora.com/profile/Marina-From-Freealise) 
