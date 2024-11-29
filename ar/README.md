@@ -32,7 +32,7 @@ pixel emoji input from keyboard (7x7 - 12x12 with Shift / Caps) ?
   both against 255 medianblur bg in interpolator with color/shadow limits  
 //foil is covered by food-grade wax from cheese; make wet paper models with texture embossed with foil and painted in CMYK  
   
-//draw objects on pano and find depth map  
+//draw cross-contour for storyboards; draw objects on pano and find depth map  
 //scanned foil (photogrammetry) / optical flow or stereo depth estimator (+in realtime)  
   (https://docs.opencv.org/4.x/d9/db7/tutorial_py_table_of_contents_calib3d.html, 
    https://docs.opencv.org/4.x/d4/dee/tutorial_optical_flow.html,
