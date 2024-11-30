@@ -22,3 +22,6 @@ https://www.wikiwand.com/en/Morphology_(folkloristics)
 https://www.wikiwand.com/en/Historic-geographic_method  
 https://www.wikiwand.com/en/Roud_Folk_Song_Index  
 https://www.wikiwand.com/en/Aarne%E2%80%93Thompson%E2%80%93Uther_Index  
+  
+commandments ?  
+https://en.wikipedia.org/wiki/The_Thirty-Six_Dramatic_Situations  
