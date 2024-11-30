@@ -25,7 +25,8 @@ foil -> mocap for auto quality feedback ?
 //https://www.google.com/streetview/how-it-works/  
 //upload video/subs to archive.org for transcoding (https://archive.org/details/download_20240209_0047)  
   
-pixel emoji input from keyboard (7x7 - 12x12 with Shift / Caps) ?  
+pixel emoji input from keyboard (7x7 - 12x12 with Shift / Caps / Num) ?  
+display as inline pictogram in rtf / html, on sn with combining symbols  
   
 //remove gizmo, kbrd, bg filter from hf  
 //use photo with flash for mask without shadow, photo with no flash for mask with shadow and scene  
