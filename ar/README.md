@@ -27,7 +27,7 @@ foil -> mocap for auto quality feedback ?
   
 pixel emoji input from keyboard (7x7 - 12x12 with Shift / Caps / Num) ?  
 display as inline pictogram in rtf / html, on sn with combining symbols  
-use for image dithering / tabs (https://en.wikipedia.org/wiki/Combining_Diacritical_Marks)  
+use for image dithering / notation / tabs with vowel letters (https://en.wikipedia.org/wiki/Combining_Diacritical_Marks)  
   
 //remove gizmo, kbrd, bg filter from hf  
 //use photo with flash for mask without shadow, photo with no flash for mask with shadow and scene  
