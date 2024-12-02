@@ -30,7 +30,6 @@ display as inline pictogram in rtf / html, on sn with combining symbols
 use for image dithering / notation / tabs with vowel letters (https://en.wikipedia.org/wiki/Combining_Diacritical_Marks)  
   
 //remove gizmo, kbrd, bg filter from hf  
-//remove bg: add color/shadow limits to prevent color blending  
 //foil is covered by food-grade wax from cheese; make wet paper models with texture embossed with foil and painted in CMYK  
   
 //draw cross-contour for storyboards; draw objects on pano and find depth map  
