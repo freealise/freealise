@@ -16,7 +16,7 @@ track nail polish as guitar feedback ? (https://docs.opencv.org/4.x/df/d9d/tutor
   
 projector with 3d prism instead of screen (screens are small and not bright enough)  
 or plastic glasses (can be L/R ? https://commons.wikimedia.org/wiki/File:Bild-OpenKMQKit1.jpg)  
-or view stereograms on e-ink display  
+or view stereograms on e-ink display, or very slow L/R sinusoidal movement for parallax  
   
 scene with color and shadows (filmed or drawn cubemap + layers / transparency; 
 https://github.com/ssatguru/BabylonJS-MeshEditor, 
