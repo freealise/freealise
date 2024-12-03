@@ -15,6 +15,9 @@ track nail polish as guitar feedback ? (https://docs.opencv.org/4.x/df/d9d/tutor
 [jsartoolkit5](https://github.com/artoolkitx/jsartoolkit5)   
   
 projector with 3d prism instead of screen (screens are small and not bright enough)  
+or plastic glasses (can be L/R ? https://commons.wikimedia.org/wiki/File:Bild-OpenKMQKit1.jpg)  
+or view stereograms on e-ink display  
+  
 scene with color and shadows (filmed or drawn cubemap + layers / transparency; 
 https://github.com/ssatguru/BabylonJS-MeshEditor, 
 https://doc.babylonjs.com/toolsAndResources/assetLibraries/postProcessLibrary/asciiArtPP for depth, 
