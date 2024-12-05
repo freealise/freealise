@@ -32,7 +32,7 @@ pixel emoji input from keyboard (7x7 - 12x12 with Shift / Caps / Num) ?
 display as inline pictogram in rtf / html, on sn with combining symbols  
 use for image dithering / notation / tabs with vowel letters (https://en.wikipedia.org/wiki/Combining_Diacritical_Marks)  
   
-object removal: grabcut on posterized depth map with previous laplacian border and mask init (watershed ? no rect)  
+object removal: grabcut on posterized depth map with previous laplacian border and mask init (no rect)  
   
 //foil is covered by food-grade wax from cheese; make wet paper models with texture embossed with foil and painted in CMYK  
   
