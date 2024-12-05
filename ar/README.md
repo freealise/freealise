@@ -33,6 +33,7 @@ display as inline pictogram in rtf / html, on sn with combining symbols
 use for image dithering / notation / tabs with vowel letters (https://en.wikipedia.org/wiki/Combining_Diacritical_Marks)  
   
 object removal: grabcut on posterized depth map with previous laplacian border and mask init (no rect)  
+or positive / negative extremums and watershed for overall segmentation  
   
 //foil is covered by food-grade wax from cheese; make wet paper models with texture embossed with foil and painted in CMYK  
   
