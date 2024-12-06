@@ -34,8 +34,7 @@ use for image dithering / notation / tabs with vowel letters (https://en.wikiped
   
 improve scene mask in bad lighting conditions with threshold (https://docs.opencv.org/4.x/d7/d4d/tutorial_py_thresholding.html)  
 when eroding \ dilating the scene mask to remove noise, exclude the region around scene by dilation to keep edge detail  
-or cv.alphamat.infoFlow (req. opencv-contrib-python instead of opencv-python) ?  
-(https://docs.opencv.org/4.x/dd/d0e/tutorial_alphamat.html, https://docs.opencv.org/4.x/d4/d40/group__alphamat.html)  
+or alphamatting ? (https://pymatting.github.io/)  
   
 //foil is covered by food-grade wax from cheese; make wet paper models with texture embossed with foil and painted in CMYK  
   
