@@ -34,9 +34,9 @@ use for image dithering / notation / tabs with vowel letters (https://en.wikiped
   
 when eroding \ dilating the scene mask to remove noise, exclude the region around scene by dilation to keep edge detail  
 or cv.alphamat.infoFlow (req. opencv-contrib-python instead of opencv-python) ?  
+(https://docs.opencv.org/4.x/dd/d0e/tutorial_alphamat.html, https://docs.opencv.org/4.x/d4/d40/group__alphamat.html)  
 
-object removal: grabcut on posterized depth map with previous laplacian border and mask init (no rect)  
-or positive / negative extremums and watershed for overall segmentation  
+object removal: watershed for overall segmentation  
   
 //foil is covered by food-grade wax from cheese; make wet paper models with texture embossed with foil and painted in CMYK  
   
