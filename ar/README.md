@@ -33,6 +33,8 @@ display as inline pictogram in rtf / html, on sn with combining symbols
 use for image dithering / notation / tabs with vowel letters (https://en.wikipedia.org/wiki/Combining_Diacritical_Marks)  
   
 when eroding \ dilating the scene mask to remove noise, exclude the region around scene by dilation to keep edge detail  
+or cv.alphamat.infoFlow (req. opencv-contrib-python instead of opencv-python) ?  
+
 object removal: grabcut on posterized depth map with previous laplacian border and mask init (no rect)  
 or positive / negative extremums and watershed for overall segmentation  
   
