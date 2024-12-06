@@ -36,8 +36,6 @@ improve scene mask in bad lighting conditions with threshold (https://docs.openc
 when eroding \ dilating the scene mask to remove noise, exclude the region around scene by dilation to keep edge detail  
 or cv.alphamat.infoFlow (req. opencv-contrib-python instead of opencv-python) ?  
 (https://docs.opencv.org/4.x/dd/d0e/tutorial_alphamat.html, https://docs.opencv.org/4.x/d4/d40/group__alphamat.html)  
-
-object removal: watershed for overall segmentation  
   
 //foil is covered by food-grade wax from cheese; make wet paper models with texture embossed with foil and painted in CMYK  
   
