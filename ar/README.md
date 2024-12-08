@@ -28,6 +28,9 @@ foil -> mocap for auto quality feedback ?
 //https://www.google.com/streetview/how-it-works/  
 //upload video/subs to archive.org for transcoding (https://archive.org/details/download_20240209_0047)  
   
+english syllabary: cluster consonants with schwa (filter down to 1-2 phoneme syllables - no more than 15*24*2+15+24*2, ~512)  
+https://web.archive.org/web/20160923005626/http://semarch.linguistics.fas.nyu.edu:80/barker/Syllables/index.txt  
+  
 pixel emoji input from keyboard (7x7 - 12x12 with Shift / Caps / Num) ?  
 display as inline pictogram in rtf / html, on sn with combining symbols  
 use for image dithering / notation / tabs with vowel letters (https://en.wikipedia.org/wiki/Combining_Diacritical_Marks)  
