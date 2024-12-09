@@ -70,6 +70,7 @@ function speak() {
         break;
       }
     }
+    synth.cancel(); //!
     synth.speak(utterThis);
   }
 }
