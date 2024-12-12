@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width" />
+  <title>Notation / tab / spectrogram editor</title>
+  <style>
+#txt {
+  font-size: 16px;
+  font-family: serif;
+  white-space: pre;
+  width: 100%;
+  height: 12em;
+}
+
+div {
+  line-height:1em;
+}
+  </style>
+</head>
+<body>
+  <textarea id="txt"></textarea>
+  <h1> &#781;&#829;</h1>
+
+  <script>
+
+var txt = document.getElementById("txt");
+var keys = ' !QAZ1qaz¹٩ᵃᶻ @WSX2wsx²ʷˢˣ #EDC3edc³ᵉᵈᶜ $RFV4rfv⁴ʳᶠᵛ %TGB5tgb⁵ᵗᵍᵇ ^YHN6yhn⁶ʸʰⁿ &UJM7ujm⁷ᵘʲᵐ *IK<8ik,⁸ⁱᵏ⁺ (OL>9ol.⁹ᵒˡ⁻ )P:?0p;/⁰ᵖ⁼~';
+
+/*
+ ¹٩ᵃᶻ ²ʷˢˣ ³ᵉᵈᶜ ⁴ʳᶠᵛ ⁵ᵗᵍᵇ ⁶ʸʰⁿ ⁷ᵘʲᵐ ⁸ⁱᵏ⁺ ⁹ᵒˡ⁻ ⁰ᵖ⁼~
+
+ᴀʙᴄᴅᴇꜰɢʜɪᴊᴋʟᴍɴᴏᴘꞯʀꜱᴛᴜᴠᴡ~ʏᴢ
+ᵃᵇᶜᵈᵉᶠᵍʰⁱʲᵏˡᵐⁿᵒᵖ𐞥ʳˢᵗᵘᵛʷˣʸᶻ
+*/
+
+var o = "&#809;";
+var l = "&#851;";
+var offset = 0;
+var init = "";
+var capsKey = false;
+var t;
+
+for (var i=0; i<10; i++) {
+  init += " ";
+  for (var j=0; j<12; j++) {
+    init += "&#809;";
+  }
+}
+txt.innerHTML = init;
+
+txt.onkeyup = function(e) {
+  e.preventDefault();
+  if (e.key.length == 1 && e.key != " ") {
+    txt.innerHTML = t.replace(/_/g, "\n\n ");
+  }
+  txt.setSelectionRange(offset,offset);
+}
+
+txt.onkeydown = function(e) {
+  e.preventDefault();
+  document.getElementsByTagName("h1")[0].innerText = e.key;
+
+  if (e.key.length == 1 && e.key != " ") {
+    t = txt.innerHTML.replace(/\n\n\s/g, "_");
+    var indx = keys.indexOf(e.key);
+    var c;
+
+    if (e.ctrlKey || e.altKey || e.metaKey || e.shiftKey) {
+      if (!capsKey && !e.shiftKey) {
+        indx += 4;
+      } else {
+        indx += 8;
+      }
+    }
+    if (t.charAt(offset+indx) == String.fromCharCode(0x0329)) {
+      c = l;
+    } else {
+      c = o;
+    }
+    t = t.substr(0, offset+indx) + c + t.substr(offset+indx+1, t.length);
+
+  } else if (e.key == "ArrowRight" || e.key == " ") {
+    offset += 13 * 10;
+
+    if (offset >= txt.innerHTML.length) {
+      if (txt.innerHTML.length < 13 * 10 * 12) {
+        txt.innerHTML += init;
+      } else {
+        offset -= 13 * 10;
+      }
+    }
+
+  } else if (e.key == "ArrowLeft" || e.key == "Backspace") {
+    offset -= 13 * 10;
+
+    if (offset < 0) {
+      if (txt.innerHTML.length < 13 * 10 * 12) {
+        txt.innerHTML = init + txt.innerHTML;
+      }
+      offset += 13 * 10;
+    }
+
+  } else if (e.key == "CapsLock") {
+    capsKey = !capsKey;
+
+  } else if (e.key == "Enter") {
+    t = txt.innerHTML;
+    var indx = keys.indexOf(e.key);
+
+    var pos = t.substr(0, offset+indx+13).lastIndexOf(" ");
+    t = t.substr(0, pos) + "\n\n" + t.substr(pos, t.length);
+    txt.innerHTML = t;
+  }
+}
+
+
+//console.log(String.fromCharCode(0x0329));
+//console.log(String.fromCodePoint(0x0329));
+
+  </script>
+
+</body>
+</html>
