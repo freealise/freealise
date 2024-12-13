@@ -31,8 +31,7 @@ foil -> mocap for auto quality feedback ?
 english syllabary: cluster consonants with schwa (filter down to 1-2 phoneme syllables - no more than 15*24*2+15+24*2, ~512)  
 https://web.archive.org/web/20160923005626/http://semarch.linguistics.fas.nyu.edu:80/barker/Syllables/index.txt  
   
-notation: add pointer input, svg polylines in order of typing / drawing (have google function chart go back in time to vectorize,  
-or http://paperjs.org/examples/path-simplification/, http://paperjs.org/examples/hit-testing/), show as is or png / svg / zdog ?  
+notation: svg splines in order of typing / drawing (have google function chart go back in time to vectorize), show as is or png / svg  
 for emoji / notation / tabs with vowel symbols (https://en.wikipedia.org/wiki/Combining_Diacritical_Marks)  
   
 improve scene mask in bad lighting conditions with threshold (https://docs.opencv.org/4.x/d7/d4d/tutorial_py_thresholding.html)  
