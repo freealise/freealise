@@ -31,6 +31,10 @@ foil -> mocap for auto quality feedback ?
 english syllabary: cluster consonants with schwa (filter down to 1-2 phoneme syllables - no more than 15*24*2+15+24*2, ~512)  
 https://web.archive.org/web/20160923005626/http://semarch.linguistics.fas.nyu.edu:80/barker/Syllables/index.txt  
   
+word tree / net from dict: first word in description of same pos is parent, synonyms if parents of each other (or similar descriptions)  
+  
+transcribe storyboard frames for indexing and visually impaired people, publish as newsletter for marketing  
+  
 notation: points in order of typing / drawing (have google function chart go back in time or interpolate with spline and polylines to vectorize),  
 show as is or png / svg for emoji / notation / tabs with vowel symbols (https://en.wikipedia.org/wiki/Combining_Diacritical_Marks)  
   
