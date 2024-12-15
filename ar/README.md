@@ -42,6 +42,8 @@ improve scene mask in bad lighting conditions with threshold (https://docs.openc
 when eroding \ dilating the scene mask to remove noise, exclude the region around scene by dilation to keep edge detail  
 or alphamatting ? (https://pymatting.github.io/)  
   
+vincenty (coords to metric distance) -> 3d display  
+  
 //foil is covered by food-grade wax from cheese; make wet paper models with texture embossed with foil and painted in CMYK  
   
 //draw cross-contour for storyboards; draw objects on pano and find depth map  
