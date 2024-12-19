@@ -38,10 +38,7 @@ transcribe storyboard frames for indexing and visually impaired people, publish 
 notation: points in order of typing / drawing (have google function chart go back in time or interpolate with spline and polylines to vectorize),  
 show as is or png / svg for emoji / notation / tabs with vowel symbols (https://en.wikipedia.org/wiki/Combining_Diacritical_Marks)  
   
-improve scene mask in bad lighting conditions with threshold (https://docs.opencv.org/4.x/d7/d4d/tutorial_py_thresholding.html)  
-when eroding \ dilating the scene mask to remove noise, exclude the region around scene by dilation to keep edge detail  
-or alphamatting ? (https://pymatting.github.io/)  
-  
+alphamatting ? (https://pymatting.github.io/)  
 vincenty (coords to metric distance) -> 3d display  
   
 //foil is covered by food-grade wax from cheese; make wet paper models with texture embossed with foil and painted in CMYK  
