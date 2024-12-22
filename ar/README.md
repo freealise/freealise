@@ -14,7 +14,7 @@ track nail polish as guitar feedback ? (https://docs.opencv.org/4.x/df/d9d/tutor
 ([AR.js](https://github.com/AR-js-org/AR.js))  
 [jsartoolkit5](https://github.com/artoolkitx/jsartoolkit5)   
   
-projector with 3d prism instead of screen (screens are small and not bright enough)  
+projector with 3d prism instead of screen as screens are small and not bright enough (https://upload.wikimedia.org/wikipedia/commons/e/e2/Pyramid_holographic_3D_holographic_projection_phone_projector_3D_holographic_projection_3D_mobile_phone_naked_eye_3D_pyramid.jpg)  
 or plastic glasses (can be L/R ? https://commons.wikimedia.org/wiki/File:Bild-OpenKMQKit1.jpg)  
 or view stereograms on e-ink display, or very slow L/R sinusoidal movement for parallax  
   
