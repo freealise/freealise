@@ -28,9 +28,7 @@ foil -> mocap for auto quality feedback ?
 //https://www.google.com/streetview/how-it-works/  
 //upload video/subs to archive.org for transcoding (https://archive.org/details/download_20240209_0047)  
   
-english syllabary: cluster consonants with schwa (filter down to 1-2 phoneme syllables - no more than 15*24*2+15+24*2, ~512)  
-https://web.archive.org/web/20160923005626/http://semarch.linguistics.fas.nyu.edu:80/barker/Syllables/index.txt  
-  
+cluster consonants by SSP over vowels 2nd formant and base pitch (stress)  
 word tree / net from dict: first word in description of same pos is parent, synonyms if parents of each other (or similar descriptions)  
   
 transcribe storyboard frames for indexing and visually impaired people, publish as newsletter for marketing  
