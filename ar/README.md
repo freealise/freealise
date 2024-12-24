@@ -34,7 +34,7 @@ word tree / net from dict: first word in description of same pos is parent, syno
 transcribe storyboard frames for indexing and visually impaired people, publish as newsletter for marketing  
   
 notation: points in order of typing / drawing (have google function chart go back in time or interpolate with spline and polylines to vectorize),  
-show as is or png / svg for emoji / notation / tabs with vowel symbols (https://en.wikipedia.org/wiki/Combining_Diacritical_Marks)  
+show as is or png / svg for emoji / notation / tabs with vowel symbols (https://en.wikipedia.org/wiki/Combining_Diacritical_Marks)    
   
 vincenty (coords to metric distance) -> 3d display  
   
