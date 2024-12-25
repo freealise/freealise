@@ -28,6 +28,7 @@ foil -> mocap for auto quality feedback ?
 //https://www.google.com/streetview/how-it-works/  
 //upload video/subs to archive.org for transcoding (https://archive.org/details/download_20240209_0047)  
   
+gemini: prompt to give example sentences or story with words removed (~mad libs, low temperature)  
 cluster consonants by SSP over vowels 2nd formant and base pitch (stress)  
 word tree / net from dict: first word in description of same pos is parent, synonyms if parents of each other (or similar descriptions)  
   
