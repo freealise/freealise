@@ -38,6 +38,9 @@ emoji: vectorize raster to function chart with opencv contour or same in js
   
 vincenty (coords to metric distance) -> 3d display  
   
+docs: get commentary (preferably written first) out of code  
+in order of not succession but execution, to wiki with toc and markdown  
+  
 //foil is covered by food-grade wax from cheese; make wet paper models with texture embossed with foil and painted in CMYK  
   
 //draw cross-contour for storyboards; draw objects on pano and find depth map  
