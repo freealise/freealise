@@ -35,6 +35,7 @@ word tree / net from dict: first word in description of same pos is parent, syno
 transcribe storyboard frames for indexing and visually impaired people, publish as newsletter for marketing  
   
 notation: rotate keyboard 90deg; show as is or png for spectrograms / tabs with vowel symbols (https://en.wikipedia.org/wiki/Combining_Diacritical_Marks)  
+vectorizer: displace points out or in according to color difference from original (dithering) or merge with depth estimator and blur according to average depth  
   
 vincenty (coords to metric distance) -> 3d display  
   
