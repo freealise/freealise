@@ -38,7 +38,7 @@ transcribe storyboard frames for indexing and visually impaired people, publish 
 notation: rotate keyboard 90deg; show as is or png for spectrograms / tabs with vowel symbols (https://en.wikipedia.org/wiki/Combining_Diacritical_Marks)  
 vectorizer: add color; displace points out or in according to color difference from original (dithering) or merge with depth estimator and blur according to average depth  
   
-vincenty (coords to metric distance) -> 3d display  
+morpher: use to match panoramas with transparent holes  
   
 docs: get commentary (preferably written first) out of code  
 in order of not succession but execution, to wiki with toc and markdown  
