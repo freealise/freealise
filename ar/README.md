@@ -39,6 +39,7 @@ notation: rotate keyboard 90deg; show as is or png for spectrograms / tabs with 
 vectorizer: add color; displace points out or in according to color difference from original (dithering) or merge with depth estimator and blur according to average depth  
   
 morpher: use to match panoramas with transparent holes  
+pano: add parallax controls and useful features from index.htm, move the rest to morpher  
   
 docs: get commentary (preferably written first) out of code  
 in order of not succession but execution, to wiki with toc and markdown  
