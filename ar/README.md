@@ -19,6 +19,7 @@ or plastic glasses (can be L/R ? https://commons.wikimedia.org/wiki/File:Bild-Op
 or view stereograms on e-ink display, or very slow L/R sinusoidal movement for parallax  
   
 scene with color and shadows (filmed or drawn cubemap + layers / transparency; 
+https://github.com/ssatguru/BabylonJS-EditControl, 
 https://github.com/ssatguru/BabylonJS-MeshEditor, 
 https://doc.babylonjs.com/toolsAndResources/assetLibraries/postProcessLibrary/asciiArtPP for depth, 
 https://doc.babylonjs.com/features/featuresDeepDive/materials/using/parallaxMapping for display ?) -> 3d video  
