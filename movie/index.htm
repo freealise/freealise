@@ -75,8 +75,44 @@ line3
                 }
             });
         }
+        
+                        music.onEndedObservable.add(function() {
+                            setTime(j-1);
+                            avg_all /= j;
+                        });
+        
+        	            var analyser = new BABYLON.Analyser(scene);
+        	            BABYLON.Engine.audioEngine.connectToAnalyser(analyser);
+                        analyser.FFT_SIZE = 1024;
+        	            analyser.SMOOTHING = 0.0;
+                        analyser.DEBUGCANVASSIZE.width = 512;
+                        analyser.DEBUGCANVASSIZE.height = 100;
+                        analyser.DEBUGCANVASPOS.x = 0;
+                        analyser.DEBUGCANVASPOS.y = 0;
+                        analyser.drawDebugCanvas();
 
-         function setTime(j) {
+                        var j = 0;
+                        start = Date.now();
+                        scene.registerBeforeRender(function () {
+        	                var workingArray = analyser.getByteFrequencyData();
+                            avg[j] = 0;
+
+                            for (var i = 0; i < analyser.getFrequencyBinCount(); i++) {
+                                avg[j] += workingArray[i];
+        	                 }
+                            avg[j] = parseInt(avg[j] / analyser.getFrequencyBinCount());
+                            avg_all += avg[j];
+             
+                            if (j>0 && avg[j] / avg[j-1] >= 2 && avg_old != j-1) {
+                                setTime(j);
+                                times.scrollBy(0, 32);
+                                subs.scrollTo(0, times.scrollTop);
+                            }
+                            j++;
+                    	 });
+                        
+
+        function setTime(j) {
                  t = Date.now() - start;
                  d = new Date(t + o);
                  let h = addZeros(d.getHours(), 1);
