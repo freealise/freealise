@@ -18,6 +18,16 @@
 <input type='text' id='soundtrack' value='https://freeali.se/assets/mp3/nightingale_bird.mp3'/>
 <input type="file" id="fileElemAudio" accept="audio/aac, audio/mpeg, audio/ogg, audio/wav, audio/webm" style="display:none" /><button id="fileSelect">Upload soundtrack</button>
 <br/>
+<div id='subs_c'><textarea id="times" onscroll="scrollSubs(true);"></textarea><textarea id="subs" onscroll="scrollSubs(false);">line0
+
+line1
+
+line2
+
+line3
+</textarea></div>
+<button id="add_times" onclick="addTimes();">add</button><a id="subs_link" href=""></a>
+</div>
       <script>
 
          function setTime(j) {
