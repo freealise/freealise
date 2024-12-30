@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Movie editor</title>
+        <style>
+            html,
+            body {
+                overflow: hidden;
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+        </style>
+    </head>
+    <body>
+      <script>
+
+         function setTime(j) {
+                 t = Date.now() - start;
+                 d = new Date(t + o);
+                 let h = addZeros(d.getHours(), 1);
+                 let m = addZeros(d.getMinutes(), 1);
+                 let s = addZeros(d.getSeconds(), 1);
+                 let ms = addZeros(d.getMilliseconds(), 2);
+                 let time = h + ":" + m + ":" + s + "." + ms;
+
+                 times.value += time_old + ' --> ' + time + ' ' + ((t-t_old)/1000).toFixed(3) + ' ' + avg[j-1] + ' ' + avg[j] + '\n\n';
+                 t_old = t;
+                 time_old = time;
+                 avg_old = j;
+         }
+
+
+         function addZeros(q, n) {
+             var k = 0;
+             while (k < n) {
+                 if (q < Math.pow(10,n)) {
+                     q = "0" + q;
+                 }
+                 k++;
+             }
+             return q;
+         }
+        
+        
+        //https://stackoverflow.com/questions/39610163/whats-the-benefit-of-webvtt-vtt-over-subreal-srt
+         function addTimes() {
+             var times_a = times.value.split('\n\n');
+             var subs_a = subs.value.split('\n\n');
+             for (var i=0; i<subs_a.length; i++) {
+                 subs_a[i] = times_a[i] + '\n' + subs_a[i];
+             }
+             const v = subs_a.join('\n\n');
+             subs_link.href = "data:text/vtt;base64," + btoa( v.slice(v.indexOf('WEBVTT\n\n')) );
+             subs_link.download = 'subtitles.vtt';
+             subs_link.click();
+         }
+        
+        function scrollSubs(s) {
+            if (s === true) {
+                subs.scrollTo(0, times.scrollTop);
+            } else {
+                times.scrollTo(0, subs.scrollTop);
+            }
+        }
+            
+</script>
+</body>
+</html>
