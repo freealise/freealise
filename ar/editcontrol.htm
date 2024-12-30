@@ -126,6 +126,35 @@
                     window.addEventListener("resize", function () {
                         engine.resize();
                     });
+                    
+function control_mode(m) {
+  if (m == 'move') {
+    editControl.show();
+    editControl.enableTranslation();
+    
+    editControl.disableRotation();
+    editControl.disableScaling();
+  } else if (m == 'rotate') {
+    editControl.show();
+    editControl.enableRotation();
+    editControl.setRotGuideFull(false) //This makes the rotation guides 360 degree(true) or 90 degree(false) .90 degree  looks less cluttered.
+    editControl.returnEuler(true); // Optional. This will return rotation in euler instead of quaternion. Quaternion is the default.
+
+    editControl.disableTranslation();
+    editControl.disableScaling();
+  } else if (m == 'scale') {
+    editControl.show();
+    editControl.enableScaling();
+    
+    editControl.disableTranslation();
+    editControl.disableRotation();
+  } else {
+    editControl.disableTranslation();
+    editControl.disableRotation();
+    editControl.disableScaling();
+    editControl.hide();
+  }
+}
         </script>
     </body>
 </html>
