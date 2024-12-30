@@ -59,6 +59,22 @@ line3
         var t_old = 0;
         var time_old = '00:00:00.000';
         subs.value = 'WEBVTT\n\n' + subs.value;
+        
+        var then = new Date().getTime();
+        var now, delta;
+        const interval = 1000 / 25;
+        const tolerance = 0.1;
+
+        var startRenderLoop = function (engine, canvas) {
+            engine.runRenderLoop(function () {
+                now = new Date().getTime();
+                delta = now - then;
+                then = now - (delta % interval);
+                if (delta >= interval - tolerance && sceneToRender && sceneToRender.activeCamera) {
+                    sceneToRender.render();
+                }
+            });
+        }
 
          function setTime(j) {
                  t = Date.now() - start;
