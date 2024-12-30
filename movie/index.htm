@@ -76,6 +76,23 @@ line3
             });
         }
         
+                      document.getElementById('play').addEventListener('click', function() {
+                        try {
+                        music = new BABYLON.Sound("Soundtrack", document.getElementById("soundtrack").value, scene, function(){
+                            if (!BABYLON.Engine.audioEngine.unlocked) {
+                                BABYLON.Engine.audioEngine.unlock();
+                            }
+                            ac = BABYLON.Engine.audioEngine.audioContext;
+                            mediaStreamDestination = ac.createMediaStreamDestination();
+                            //music.connectToSoundTrackAudioNode(mediaStreamDestination);
+                            BABYLON.Engine.audioEngine.masterGain.connect(mediaStreamDestination);
+        
+                            music.play();
+                        }, {
+                          loop: true,
+                          autoplay: false,
+                        });
+                        
                         music.onEndedObservable.add(function() {
                             setTime(j-1);
                             avg_all /= j;
@@ -110,6 +127,9 @@ line3
                             }
                             j++;
                     	 });
+                        
+                        } catch(e) {alert(e);}
+                    }, { once: true });
                         
 
         function setTime(j) {
