@@ -76,6 +76,8 @@ line3
             });
         }
         
+        var ac, mediaStreamDestination, music;
+        
                       document.getElementById('play').addEventListener('click', function() {
                         try {
                         music = new BABYLON.Sound("Soundtrack", document.getElementById("soundtrack").value, scene, function(){
