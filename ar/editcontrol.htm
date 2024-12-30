@@ -51,6 +51,12 @@
     </head>
     <body>
         <div id="canvasZone"><canvas id="renderCanvas"></canvas></div>
+        <select id='c_mode' oninput='control_mode(this.value);' onselect='control_mode(this.value);'>
+          <option selected value='move'>move</option>
+          <option value='rotate'>rotate</option>
+          <option value='scale'>scale</option>
+          <option value='-'>-</option>
+        </select>
         <script>
                     var canvas = document.getElementById("renderCanvas");
 
@@ -62,7 +68,7 @@
                         });
                     }
 
-                    var engine = null;
+        var engine = null;
         var scene = null;
         var sceneToRender = null;
         var createDefaultEngine = function() { return new BABYLON.Engine(canvas, true, { preserveDrawingBuffer: true, stencil: true,  disableWebGL2Support: false}); };
