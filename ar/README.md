@@ -41,6 +41,7 @@ textbox with dot symbols x2 for input by stroke (0-65535, 16 colors with random 
   
 morpher: use to match panoramas with transparent holes  
 pano: add parallax controls and useful features from index.htm, move the rest to morpher  
+add 3d model in page includer  
   
 docs: get commentary (preferably written first) out of code  
 in order of not succession but execution, to wiki with toc and markdown  
