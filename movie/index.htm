@@ -16,7 +16,8 @@
     </head>
     <body>
 <input type='text' id='soundtrack' value='https://freeali.se/assets/mp3/nightingale_bird.mp3'/>
-<input type="file" id="fileElemAudio" accept="audio/aac, audio/mpeg, audio/ogg, audio/wav, audio/webm" style="display:none" /><button id="fileSelect">Upload soundtrack</button>
+<input type="file" id="fileElemAudio" accept="audio/aac, audio/mpeg, audio/ogg, audio/wav, audio/webm" style="display:none" />
+<button id="fileSelect">Upload soundtrack</button>
 <br/>
 <div id='subs_c'><textarea id="times" onscroll="scrollSubs(true);"></textarea><textarea id="subs" onscroll="scrollSubs(false);">line0
 
@@ -29,6 +30,35 @@ line3
 <button id="add_times" onclick="addTimes();">add</button><a id="subs_link" href=""></a>
 </div>
       <script>
+        var times = document.getElementById("times");
+        var subs = document.getElementById("subs");
+        var subs_link = document.getElementById("subs_link");
+        
+        const fileSelect = document.getElementById("fileSelect"),
+        fileElemAudio = document.getElementById("fileElemAudio");
+
+        fileSelect.addEventListener("click", (e) => {
+          fileElemAudio.click();
+        }, false);
+        fileElemAudio.addEventListener("change", handleFiles);
+
+        function handleFiles(e) {
+          if (!e.target.files.length) {
+            document.getElementById("soundtrack").value = "No files selected!";
+          } else {
+            document.getElementById("soundtrack").value = URL.createObjectURL(e.target.files[0]);
+          }
+        }
+        
+        var avg = [];
+        var avg_all = 0;
+        var avg_old = 0;
+        var start = Date.now();
+        var d = new Date(start);
+        const o = d.getTimezoneOffset()*60*1000;
+        var t_old = 0;
+        var time_old = '00:00:00.000';
+        subs.value = 'WEBVTT\n\n' + subs.value;
 
          function setTime(j) {
                  t = Date.now() - start;
