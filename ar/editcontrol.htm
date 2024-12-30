@@ -56,6 +56,7 @@
           <option value='scale'>scale</option>
           <option value='-'>-</option>
         </select>
+        <input type='number' value='0' onchange='attach_control(this.value)'/>
         <a href='#' onclick='record_video();'>record</a>
         <a href='#' onclick='stop_recording();'>stop</a>
         <div id="canvasZone"><canvas id="renderCanvas"></canvas></div>
@@ -134,6 +135,12 @@
                     window.addEventListener("resize", function () {
                         engine.resize();
                     });
+                    
+function attach_control(n) {
+try {
+  editControl.switchTo(scene.meshes[n], true);
+} catch(e) {alert(e);}
+}
                     
 function control_mode(m) {
   if (m == 'move') {
