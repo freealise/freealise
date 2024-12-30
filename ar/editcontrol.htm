@@ -160,6 +160,26 @@ function control_mode(m) {
     editControl.hide();
   }
 }
+
+function record_video() {
+  try {
+  if (BABYLON.VideoRecorder.IsSupported(engine) && (recorder == null || !recorder.isRecording) ) {
+    if (recorder == null) {
+        recorder = new BABYLON.VideoRecorder(engine, { mimeType:'video/mp4', fps:25, audioTracks: mediaStreamDestination.stream.getAudioTracks() });
+    }
+    recorder.startRecording('video.mp4', 60*60);
+  }
+  } catch(e) {alert(e);}
+}
+
+
+function stop_recording() {
+  if (recorder.isRecording) {
+    recorder.stopRecording();
+  }
+}
+
+
         </script>
     </body>
 </html>
