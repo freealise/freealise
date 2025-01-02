@@ -57,8 +57,6 @@
           <option value='-'>-</option>
         </select>
         <input type='number' value='0' onchange='attach_control(this.value)'/>
-        <a href='#' onclick='record_video();'>record</a>
-        <a href='#' onclick='stop_recording();'>stop</a>
         <div id="canvasZone"><canvas id="renderCanvas"></canvas></div>
         <script>
                     var canvas = document.getElementById("renderCanvas");
@@ -75,7 +73,6 @@
         var scene = null;
         var sceneToRender = null;
         var editControl = null;
-        var recorder;
         
         var createDefaultEngine = function() { return new BABYLON.Engine(canvas, true, { preserveDrawingBuffer: true, stencil: true,  disableWebGL2Support: false}); };
         var createScene = function () {
@@ -170,25 +167,6 @@ function control_mode(m) {
     editControl.hide();
   }
 }
-
-function record_video() {
-  try {
-  if (BABYLON.VideoRecorder.IsSupported(engine) && (recorder == null || !recorder.isRecording) ) {
-    if (recorder == null) {
-        recorder = new BABYLON.VideoRecorder(engine, { mimeType:'video/mp4', fps:25, /*audioTracks: mediaStreamDestination.stream.getAudioTracks()*/ });
-    }
-    recorder.startRecording('video.mp4', 60*60);
-  }
-  } catch(e) {alert(e);}
-}
-
-
-function stop_recording() {
-  if (recorder.isRecording) {
-    recorder.stopRecording();
-  }
-}
-
 
         </script>
     </body>
