@@ -40,7 +40,7 @@ vectorizer: add color; displace points out or in according to color difference f
 textbox with dot symbols x2 for input by stroke (0-65535, 16 colors with random dithering)  
   
 morpher: use to match panoramas with transparent holes  
-pano: align locations; stop video and switch by button; add in page embedder for 3d model  
+pano: align locations; switch by arrows; add in page embedder for 3d model  
   
 docs: get commentary (preferably written first) out of code  
 in order of not succession but execution, to wiki with toc and markdown  
