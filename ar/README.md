@@ -12,7 +12,9 @@ track nail polish as guitar feedback ? (https://docs.opencv.org/4.x/df/d9d/tutor
   
 ([MindAR.js](https://github.com/hiukim/mind-ar-js))  
 ([AR.js](https://github.com/AR-js-org/AR.js))  
-[jsartoolkit5](https://github.com/artoolkitx/jsartoolkit5)   
+[jsartoolkit5](https://github.com/artoolkitx/jsartoolkit5)  
+  
+fisheye lenses on phone cameras for 360 view ?
   
 projector with 3d prism instead of screen as screens are small and not bright enough (https://upload.wikimedia.org/wikipedia/commons/e/e2/Pyramid_holographic_3D_holographic_projection_phone_projector_3D_holographic_projection_3D_mobile_phone_naked_eye_3D_pyramid.jpg)  
 or plastic glasses (can be L/R ? https://commons.wikimedia.org/wiki/File:Bild-OpenKMQKit1.jpg)  
@@ -53,6 +55,8 @@ in order of not succession but execution, to wiki with toc and markdown
    https://docs.opencv.org/4.x/d4/dee/tutorial_optical_flow.html,
    https://docs.opencv.org/3.4/d5/dc4/tutorial_adding_images.html)  
 //detect spectrograms (https://docs.opencv.org/4.x/d2/d64/tutorial_table_of_content_objdetect.html)  
+  
+3d scanner: optical flow from phone camera (distance from subject with several cams) + gyroscope  
   
 https://cyos.babylonjs.com/  
 https://sandbox.babylonjs.com/  
