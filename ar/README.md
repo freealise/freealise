@@ -33,7 +33,7 @@ foil -> mocap for auto quality feedback ?
   
 gemini: prompt to give example sentences or story with words removed (~mad libs, low temperature)  
 cluster consonants by SSP over vowels 2nd formant and base pitch (stress)  
-shuffled flashcards combining into sentences (poetry set, solitaire / poker game ?)  
+shuffled flashcards combining into sentences (if facing up are a poetry set - practical, if down are solitaire / poker game - educational)  
 word tree / net from dict: first word in description of same pos is parent, synonyms if parents of each other (or similar descriptions)  
   
 transcribe storyboard frames for indexing and visually impaired people, publish as newsletter for marketing  
