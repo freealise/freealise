@@ -3,7 +3,7 @@ The golem reads all the Jewish religious books and becomes a rabbi's assistant o
   
 train AI on Sefaria (fuzzy search) -> blog [sefaria, opensiddur] (https://corpus.quran.com/)  
 can be an editor (storygrid/_) or language teacher, suggest books by summary (gutenberg), legislation (~copilot, or be a consultant),  
-detect propaganda, fake images or falsified election results or corruption (if has enough data https://smlouvy.gov.cz/), trade stocks, block ads.  
+detect propaganda, fake images or falsified election results or corruption (if has enough data: https://smlouvy.gov.cz/, sanctions list, propaganda source list), trade stocks, block ads.  
 evaluation of personal data for border control  
 find melodrama in lyrics and scripts  
 [bookmaker](https://www.google.com/search?q=bookmaker)  
