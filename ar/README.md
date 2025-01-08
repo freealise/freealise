@@ -42,13 +42,13 @@ notation: rotate keyboard 90deg; show as is or png for spectrograms / tabs with 
 vectorizer: textbox with dot symbols x2 for sparse input by stroke (0-65535, 16 colors with random dithering)  
 displace points out or in according to color difference from original (dithering) or merge with depth estimator and blur according to average depth  
   
-morpher: use to match panoramas with transparent holes  
+morpher: use to align neighboring panos and match timepoints with transparent holes  
 pano: camera movement timeline for presentation (clock emoji ?)  
   
 docs: get commentary (preferably written first) out of code  
 in order of not succession but execution, to wiki with toc and markdown  
   
-//foil is covered by food-grade wax from cheese; make wet paper models from depth maps with texture embossed with wire / foil / wax and painted in CMYK or printed from equi2cube  
+//foil is covered by food-grade wax from cheese; make wet paper models from depth maps with texture embossed with wire / foil / wax and sketched from morphed pano and painted in CMYK  
   
 //draw cross-contour for storyboards; draw objects on pano and find depth map  
 //scanned foil (photogrammetry) / optical flow or stereo depth estimator (+in realtime)  
