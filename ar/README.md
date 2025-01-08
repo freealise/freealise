@@ -43,7 +43,7 @@ vectorizer: textbox with dot symbols x2 for sparse input by stroke (0-65535, 16 
 displace points out or in according to color difference from original (dithering) or merge with depth estimator and blur according to average depth  
   
 morpher: use to match panoramas with transparent holes  
-pano: add in page embedder for 3d model (share current original html/js + 2 video files)  
+pano: camera movement timeline for presentation  
   
 docs: get commentary (preferably written first) out of code  
 in order of not succession but execution, to wiki with toc and markdown  
