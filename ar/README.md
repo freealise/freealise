@@ -20,7 +20,7 @@ projector with 3d prism instead of screen as screens are small and not bright en
 or plastic glasses (can be L/R ? https://commons.wikimedia.org/wiki/File:Bild-OpenKMQKit1.jpg)  
 or view stereograms on e-ink display, or very slow L/R sinusoidal movement for parallax  
   
-scene with color and shadows (filmed or drawn cubemap + layers / transparency; 
+scene with color and shadows (filmed or drawn cubemap + layers / transparency; apply displacementmap from ascii to cube
 https://github.com/ssatguru/BabylonJS-EditControl, 
 https://github.com/ssatguru/BabylonJS-MeshEditor, 
 https://doc.babylonjs.com/toolsAndResources/assetLibraries/postProcessLibrary/asciiArtPP for depth, 
@@ -43,7 +43,7 @@ vectorizer: textbox with dot symbols x2 for sparse input by stroke (0-65535, 16 
 displace points out or in according to color difference from original (dithering) or merge with depth estimator and blur according to average depth  
   
 morpher: use to match timepoints with transparent holes  
-pano: change webgl2 vertex buffers for displacement map parallax in google native 360 with depth and edited photos as custom tiles; remove videodome, apply displacementmap from ascii to cube  
+pano: change webgl2 vertex buffers for displacement map parallax in google native 360 with depth and edited photos as custom tiles; remove videodome  
   
 docs: get commentary (preferably written first) out of code  
 in order of not succession but execution, to wiki with toc and markdown  
