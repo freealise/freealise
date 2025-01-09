@@ -1,0 +1,383 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+        <title>Babylon.js sample code</title>
+
+        <!-- Babylon.js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.6.2/dat.gui.min.js"></script>
+        <script src="https://assets.babylonjs.com/generated/Assets.js"></script>
+        <script src="https://cdn.babylonjs.com/recast.js"></script>
+        <script src="https://cdn.babylonjs.com/ammo.js"></script>
+        <script src="https://cdn.babylonjs.com/havok/HavokPhysics_umd.js"></script>
+        <script src="https://cdn.babylonjs.com/cannon.js"></script>
+        <script src="https://cdn.babylonjs.com/Oimo.js"></script>
+        <script src="https://cdn.babylonjs.com/earcut.min.js"></script>
+        <script src="https://cdn.babylonjs.com/babylon.js"></script>
+        <script src="https://cdn.babylonjs.com/materialsLibrary/babylonjs.materials.min.js"></script>
+        <script src="https://cdn.babylonjs.com/proceduralTexturesLibrary/babylonjs.proceduralTextures.min.js"></script>
+        <script src="https://cdn.babylonjs.com/postProcessesLibrary/babylonjs.postProcess.min.js"></script>
+        <script src="https://cdn.babylonjs.com/loaders/babylonjs.loaders.js"></script>
+        <script src="https://cdn.babylonjs.com/serializers/babylonjs.serializers.min.js"></script>
+        <script src="https://cdn.babylonjs.com/gui/babylon.gui.min.js"></script>
+        <script src="https://cdn.babylonjs.com/addons/babylonjs.addons.min.js"></script>
+        <script src="https://cdn.babylonjs.com/inspector/babylon.inspector.bundle.js"></script>
+
+        <style>
+            html,
+            body {
+                overflow: hidden;
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+
+            #renderCanvas {
+                width: 100%;
+                height: 100%;
+                touch-action: none;
+            }
+
+            #canvasZone {
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="canvasZone"><canvas id="renderCanvas"></canvas></div>
+        <div style='position:fixed;top:0;right:0;text-align:right;'>
+            <a href='#' id='reset_cam' style='float:right;clear:none;color:white' onclick='
+              
+              BABYLON.Engine.LastCreatedScene.activeCamera.radius = 0;
+              BABYLON.Engine.LastCreatedScene.activeCamera.alpha = 0;
+              BABYLON.Engine.LastCreatedScene.activeCamera.beta = Math.PI / 2;
+    
+              pipeline.samples = 4; 
+              BABYLON.Engine.LastCreatedScene.activeCamera.fov = document.getElementById(\"zoom\").value;
+              pipeline.imageProcessing.contrast = document.getElementById(\"contrast\").value;
+              pipeline.imageProcessing.exposure = document.getElementById(\"exposure\").value;
+              
+            '>Reset camera</a><br/>
+            <span><label for='zoom' style='width:8em'>Zoom</label><input id='zoom' type='range' style='width:128px;height:1em;' value='0.8' min='0.157' max='1.57' step='0.001' oninput='
+              
+              BABYLON.Engine.LastCreatedScene.activeCamera.fov = this.value;
+              this.parentNode.childNodes[2].innerText = BABYLON.Engine.LastCreatedScene.activeCamera.fov;
+              
+            '/><span>0.8</span></span><br/>
+            <span><label for='pan' style='width:8em'>Pan</label><input id='pan' type='range' style='width:128px;height:1em;' value='0' min='-16' max='16' step='0.001' oninput='
+              
+              parallax = this.value;
+              rdir = BABYLON.Engine.LastCreatedScene.activeCamera.getDirection(xdir);
+              myGround.position.x = parallax * rdir.x;
+              myGround.position.z = parallax * rdir.z;
+              this.parentNode.childNodes[2].innerText = parallax;
+            '/><span>0.0</span></span><br/>
+            <span><label for='contrast' style='width:8em'>Contrast</label><input id='contrast' type='range' style='width:128px;height:1em;' value='1.0' min='0' max='2' step='0.001' oninput='
+              
+              pipeline.imageProcessing.contrast = this.value;
+              this.parentNode.childNodes[2].innerText = pipeline.imageProcessing.contrast;
+            '/><span>1.0</span></span><br/>
+            <span><label for='exposure' style='width:8em'>Exposure</label><input id='exposure' type='range' style='width:128px;height:1em;' value='1.0' min='0' max='2' step='0.001' oninput='
+              
+              pipeline.imageProcessing.exposure = this.value;
+              this.parentNode.childNodes[2].innerText = pipeline.imageProcessing.exposure;
+            '/><span>1.0</span></span><br/>
+              <a href='#' onclick='snapshot();'>Screenshot</a>
+              <a href='#' onclick='record_video();'>Record</a>
+              <a href='#' onclick='stop_recording();'>Stop rec.</a><br/>
+              <img src='' id='img_out' onload='var ctxt = document.getElementById("cnv_out").getContext("2d");ctxt.drawImage(this, 0, 0);'/><br/>
+              <canvas id='cnv_out'></canvas>
+            </div>
+        <script>
+                    var canvas = document.getElementById("renderCanvas");
+
+                    var then = new Date().getTime();
+                    var now, delta;
+                    const interval = 1000 / 25;
+                    const tolerance = 0.1;
+
+                    var startRenderLoop = function (engine, canvas) {
+                        engine.runRenderLoop(function () {
+                            now = new Date().getTime();
+                            delta = now - then;
+                            then = now - (delta % interval);
+                            if (sceneToRender && sceneToRender.activeCamera && delta >= interval - tolerance) {
+                              sceneToRender.render();
+                            }
+                        });
+                    }
+
+        window.buffer = null;
+        window.bufferCanvas = document.createElement("canvas");
+        window.ctx = bufferCanvas.getContext("2d", { willReadFrequently: true });
+
+        window.parallax = 0;
+        window.xdir = new BABYLON.Vector3(1, 0, 0);
+        window.rdir = new BABYLON.Vector3(0, 0, 0);
+        //rdir = camera.getDirection(xdir);
+        //myGround.position.x = parallax * rdir.x;
+        //myGround.position.z = parallax * rdir.z;
+
+        var myGround;
+        var pipeline = null;
+        var engine = null;
+        var scene = null;
+        var sceneToRender = null;
+        var createDefaultEngine = function() { return new BABYLON.Engine(canvas, true, { preserveDrawingBuffer: true, stencil: true,  disableWebGL2Support: false}); };
+        var createScene = function () {
+        
+            // This creates a basic Babylon Scene object (non-mesh)
+            var scene = new BABYLON.Scene(engine);
+
+            scene.getEngine().setHardwareScalingLevel(1.0);
+            scene.clearColor = new BABYLON.Color4(255,255,255,255);
+            scene.ambientColor = new BABYLON.Color4(255,255,255,255);
+            scene.getAnimationRatio();
+        
+            var camera = new BABYLON.ArcRotateCamera("Camera", 0, 0, 10, BABYLON.Vector3.Zero(), scene);
+            camera.radius = 0;
+            camera.alpha = 0;
+            camera.beta = Math.PI / 2;
+
+            camera.inertia = 0.0;
+            camera.sensibility = 1.0;
+            //pan
+            camera.panningInertia = 0.0;
+            camera.panningDistanceLimit = 16;
+            camera.panningSensibility = 16;
+            //zoom
+            camera.pinchDeltaPercentage = 1/16;
+            camera.wheelDeltaPercentage = 1/16;
+            camera.upperRadiusLimit = (1.57-0.157)*16;
+            camera.lowerRadiusLimit = 0.0;
+
+            camera.fov = 0.8; //0.157-1.57
+
+            pipeline = new BABYLON.DefaultRenderingPipeline("default", true, scene, [camera]);
+            pipeline.samples = 4;
+            pipeline.imageProcessing.contrast = 1.0;
+            pipeline.imageProcessing.exposure = 1.0;
+
+            //var light = new BABYLON.HemisphericLight("Omni0", new BABYLON.Vector3(0, 1, 0), scene);
+            var material = new BABYLON.CustomMaterial("kosh", scene);
+            //var sphere = BABYLON.Mesh.CreateSphere("Sphere", 32, 3, scene, true);
+            //var box = BABYLON.MeshBuilder.CreateBox("box", {size: 5}, scene, true);
+            myGround = BABYLON.MeshBuilder.CreateGround("myGround", {width: 12, height: 6, subdivisions: 50, updatable: true}, scene);
+            myGround.material = material;
+            
+            //myGround.scaling.z = -1;
+            myGround.alphaIndex = 1;
+            myGround.visibility = 0.9999;
+            //myGround.material.diffuseTexture.hasAlpha = true;
+            //myGround.material.useAlphaFromDiffuseTexture = true;
+            //myGround.material.emissiveTexture.hasAlpha = true;
+            //myGround.material.useAlphaFromEmissiveTexture = true;
+            
+            myGround.rotationQuaternion = null;
+            myGround.position.z = 0;
+            myGround.position.x = 0;
+            myGround.rotation.y = 90 / 180 * Math.PI;
+            myGround.rotation.x = -90 / 180 * Math.PI;
+        
+            camera.setPosition(new BABYLON.Vector3(-10, 10, 0));
+            camera.attachControl(canvas);
+            applyDisplacementMap(myGround, "https://freeali.se/panoramera/examples/basic/f0_dmap.jpg", -1, 1);
+
+            //applyDisplacementMapFromBuffer(videoDomeMesh, buffer, video.videoWidth, video.videoHeight, 0, -1, null, null, true);
+            //applyDisplacementMapFromBuffer(myGround, buffer, video.videoWidth, video.videoHeight, 0, 1, null, null, true);
+        
+            // Sphere material
+            material.emissiveTexture = new BABYLON.Texture("https://freeali.se/panoramera/examples/basic/f0.jpg", scene);
+            //material.wireframe = true;
+            
+            //var debugLayer = scene.debugLayer.show();
+            
+            return scene;
+        
+        };
+                window.initFunction = async function() {
+                    
+                    
+                    
+                    var asyncEngineCreation = async function() {
+                        try {
+                        return createDefaultEngine();
+                        } catch(e) {
+                        console.log("the available createEngine function failed. Creating the default engine instead");
+                        return createDefaultEngine();
+                        }
+                    }
+
+                    window.engine = await asyncEngineCreation();
+        if (!engine) throw 'engine should not be null.';
+        startRenderLoop(engine, canvas);
+        window.scene = createScene();};
+        initFunction().then(() => {sceneToRender = scene
+                    });
+
+                    // Resize
+                    window.addEventListener("resize", function () {
+                        engine.resize();
+                    });
+
+
+/**
+     * Modifies the mesh geometry according to a displacement map.
+     * A displacement map is a colored image. Each pixel color value (actually a gradient computed from red, green, blue values) will give the displacement to apply to each mesh vertex.
+     * The mesh must be set as updatable. Its internal geometry is directly modified, no new buffer are allocated.
+     * @param url is a string, the URL from the image file is to be downloaded.
+     * @param minHeight is the lower limit of the displacement.
+     * @param maxHeight is the upper limit of the displacement.
+     * @param onSuccess is an optional Javascript function to be called just after the mesh is modified. It is passed the modified mesh and must return nothing.
+     * @param uvOffset is an optional vector2 used to offset UV.
+     * @param uvScale is an optional vector2 used to scale UV.
+     * @param forceUpdate defines whether or not to force an update of the generated buffers. This is useful to apply on a deserialized model for instance.
+     * @param onError defines a callback called when an error occurs during the processing of the request.
+     * @returns the Mesh.
+     */
+    function applyDisplacementMap(
+        mesh,
+        url,
+        minHeight,
+        maxHeight,
+        uvOffset,
+        uvScale,
+        forceUpdate
+    ) {
+        const scene = BABYLON.Engine.LastCreatedScene;
+
+        const onload = (img) => {
+            // Getting height map data
+            const heightMapWidth = img.width;
+            const heightMapHeight = img.height;
+            const canvas = mesh.getEngine().createCanvas(heightMapWidth, heightMapHeight);
+            const context = canvas.getContext("2d");
+            context.translate(0, canvas.height);
+            context.scale(1,-1);
+
+            context.drawImage(img, 0, 0);
+
+            // Create VertexData from map data
+            const buffer = (context.getImageData(0, 0, heightMapWidth, heightMapHeight).data);
+
+            applyDisplacementMapFromBuffer(mesh, buffer, heightMapWidth, heightMapHeight, minHeight, maxHeight, uvOffset, uvScale, forceUpdate);
+        };
+
+        BABYLON.Tools.LoadImage(url, onload, null, scene.offlineProvider);
+        return mesh;
+    }
+
+
+function applyDisplacementMapFromBuffer(
+        mesh,
+        buffer,
+        heightMapWidth,
+        heightMapHeight,
+        minHeight,
+        maxHeight,
+        uvOffset,
+        uvScale,
+        forceUpdate
+    ) {
+      try {
+        if (!mesh.isVerticesDataPresent(BABYLON.VertexBuffer.NormalKind)) {
+            let positions = mesh.getVerticesData(BABYLON.VertexBuffer.PositionKind);
+            let normals = [];
+            BABYLON.VertexData.ComputeNormals(positions, mesh.getIndices(), normals, {useRightHandedSystem: true});
+            mesh.setVerticesData(BABYLON.VertexBuffer.NormalKind, normals);
+        }
+        const positions = mesh.getVerticesData(BABYLON.VertexBuffer.PositionKind, true, true);
+        const normals = mesh.getVerticesData(BABYLON.VertexBuffer.NormalKind);
+        const uvs = mesh.getVerticesData(BABYLON.VertexBuffer.UVKind);
+        let position = BABYLON.Vector3.Zero();
+        const normal = BABYLON.Vector3.Zero();
+        const uv = BABYLON.Vector2.Zero();
+        uvOffset = uvOffset || BABYLON.Vector2.Zero();
+        uvScale = uvScale || new BABYLON.Vector2(1, 1);
+        for (let index = 0; index < positions.length; index += 3) {
+            BABYLON.Vector3.FromArrayToRef(positions, index, position);
+            BABYLON.Vector3.FromArrayToRef(normals, index, normal);
+            BABYLON.Vector2.FromArrayToRef(uvs, (index / 3) * 2, uv);
+            // Compute height
+            const u = (Math.abs(uv.x * uvScale.x + (uvOffset.x % 1)) * (heightMapWidth - 1)) % heightMapWidth | 0;
+            const v = (Math.abs(uv.y * uvScale.y + (uvOffset.y % 1)) * (heightMapHeight - 1)) % heightMapHeight | 0;
+            const pos = (u + v * heightMapWidth) * 4;
+            const r = buffer[pos] / 255.0;
+            const g = buffer[pos + 1] / 255.0;
+            const b = buffer[pos + 2] / 255.0;
+            const a = buffer[pos + 3] / 255.0;
+            const gradient = r * 0.33 + g * 0.33 + b * 0.33;
+            //const gradient = a;
+            normal.normalize();
+            normal.scaleInPlace(minHeight + (maxHeight - minHeight) * gradient);
+            position = position.add(normal);
+            position.toArray(positions, index);
+        }
+        mesh.setVerticesData(BABYLON.VertexBuffer.PositionKind, positions);
+        return mesh;
+    } catch(e) {alert(e)}
+    }
+
+
+
+window.screenshot = false;
+
+function snapshot() {
+if (BABYLON) {
+  screenshot = true;
+  BABYLON.Engine.LastCreatedScene.getEngine().onEndFrameObservable.add(function() {
+    if (screenshot === true) {
+    screenshot = false;
+    try {
+    BABYLON.Tools.CreateScreenshotUsingRenderTarget(BABYLON.Engine.LastCreatedScene.getEngine(), BABYLON.Engine.LastCreatedScene.activeCamera, 
+        { precision: 1.0 }, (durl) => { 
+             var cnvs = canvas; //.getContext("webgl2");
+             var svgd = `<svg id="svg_out" viewBox="0 0 ` + cnvs.width + ` ` + cnvs.height + `" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <defs>
+                            <filter id="blur" x="0" y="0" xmlns="http://www.w3.org/2000/svg">
+                              <feGaussianBlur in="SourceGraphic" stdDeviation="1" />
+                            </filter>
+                          </defs>
+                          <image filter="url(#blur)" id="svg_img" x="0" y="0" width="` + cnvs.width + `" height="` + cnvs.height + `" xlink:href=\"` + durl + `\"/>
+                        </svg>`;
+                        document.getElementById("cnv_out").width = cnvs.width;
+                        document.getElementById("cnv_out").height = cnvs.height;
+                        document.getElementById("img_out").src = "data:image/svg+xml;base64," + btoa(svgd);        
+                      }
+                    );
+                  } catch(e) { alert(e); }
+                  // https://forum.babylonjs.com/t/best-way-to-save-to-jpeg-snapshots-of-scene/17663/11
+                }
+          });
+}
+}
+window.snapshot = snapshot;
+window.recorder = null;
+
+function record_video() {
+  try {
+  if (BABYLON.VideoRecorder.IsSupported(BABYLON.Engine.LastCreatedScene.getEngine()) && (recorder == null || !recorder.isRecording) ) {
+    if (recorder == null) {
+        recorder = new BABYLON.VideoRecorder(BABYLON.Engine.LastCreatedScene.getEngine(), { mimeType:'video/mp4', fps:25, /*audioTracks: mediaStreamDestination.stream.getAudioTracks()*/ });
+    }
+    recorder.startRecording('video.mp4', 60*60);
+  }
+  } catch(e) {alert(e);}
+}
+window.record_video = record_video;
+
+
+function stop_recording() {
+  if (recorder.isRecording) {
+    recorder.stopRecording();
+  }
+}
+window.stop_recording = stop_recording;
+
+
+        </script>
+    </body>
+</html>
