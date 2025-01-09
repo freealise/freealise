@@ -43,7 +43,7 @@ vectorizer: textbox with dot symbols x2 for sparse input by stroke (0-65535, 16 
 displace points out or in according to color difference from original (dithering) or merge with depth estimator and blur according to average depth  
   
 morpher: use to match timepoints with transparent holes  
-pano: change webgl2 vertex buffers in google native 360 with depth as custom tiles for displacement map parallax; remove videodome, apply displacementmap from ascii to cube  
+pano: change webgl2 vertex buffers for displacement map parallax in google native 360 with depth and edited photos as custom tiles; remove videodome, apply displacementmap from ascii to cube  
   
 docs: get commentary (preferably written first) out of code  
 in order of not succession but execution, to wiki with toc and markdown  
