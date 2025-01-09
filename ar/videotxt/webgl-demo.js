@@ -106,7 +106,7 @@ function main() {
   const buffers = initBuffers(gl);
 
   const texture = initTexture(gl);
-  const video = setupVideo("https://freeali.se/panoramera/examples/basic/orig_result.mp4");
+  const video = setupVideo("orig_result.mp4");
 
   // Flip image pixels into the bottom-to-top order that WebGL expects.
   gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL, true);
