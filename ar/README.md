@@ -42,6 +42,7 @@ notation: rotate keyboard 90deg; show as is or png for spectrograms / tabs with 
 vectorizer: textbox with dot symbols x2 for sparse input by stroke (0-65535, 16 colors with random dithering)  
 displace points out or in according to color difference from original (dithering) or merge with depth estimator and blur according to average depth  
   
+interpolator: use moviepy for transparent video ?  
 morpher: use to match timepoints with transparent holes  
 pano: change webgl2 vertex buffers for displacement map parallax in google native 360 with depth and edited photos as custom tiles; remove videodome  
   
