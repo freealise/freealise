@@ -3,13 +3,13 @@ var vertices = [],indices = [],uvs = [],normals = [];
 function initBuffers(gl) {
   initArrayBuffers(gl);
   
-  /*const positionBuffer = initPositionBuffer(gl);
+  const positionBuffer = initPositionBuffer(gl);
 
   const textureCoordBuffer = initTextureBuffer(gl);
 
   const indexBuffer = initIndexBuffer(gl);
 
-  const normalBuffer = initNormalBuffer(gl);*/
+  const normalBuffer = initNormalBuffer(gl);
 
   return {
     position: vertices, //positionBuffer,
@@ -27,7 +27,7 @@ function initPositionBuffer(gl) {
   // operations to from here out.
   gl.bindBuffer(gl.ARRAY_BUFFER, positionBuffer);
 
-  const positions = [
+  /*const positions = [
     // Front face
     -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0,
 
@@ -45,25 +45,25 @@ function initPositionBuffer(gl) {
 
     // Left face
     -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0,
-  ];
+  ];*/
 
   // Now pass the list of positions into WebGL to build the
   // shape. We do this by creating a Float32Array from the
   // JavaScript array, then use it to fill the current buffer.
-  gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(positions), gl.STATIC_DRAW);
+  gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(vertices), gl.STATIC_DRAW);
 
   return positionBuffer;
 }
 
 function initColorBuffer(gl) {
-  const faceColors = [
+  /*const faceColors = [
     [1.0, 1.0, 1.0, 1.0], // Front face: white
     [1.0, 0.0, 0.0, 1.0], // Back face: red
     [0.0, 1.0, 0.0, 1.0], // Top face: green
     [0.0, 0.0, 1.0, 1.0], // Bottom face: blue
     [1.0, 1.0, 0.0, 1.0], // Right face: yellow
     [1.0, 0.0, 1.0, 1.0], // Left face: purple
-  ];
+  ];*/
 
   // Convert the array of colors into a table for all the vertices.
 
@@ -90,7 +90,7 @@ function initIndexBuffer(gl) {
   // indices into the vertex array to specify each triangle's
   // position.
 
-  const indices = [
+  /*const indices = [
     0,
     1,
     2,
@@ -127,7 +127,7 @@ function initIndexBuffer(gl) {
     20,
     22,
     23, // left
-  ];
+  ];*/
 
   // Now send the element array to GL
 
@@ -144,7 +144,7 @@ function initTextureBuffer(gl) {
   const textureCoordBuffer = gl.createBuffer();
   gl.bindBuffer(gl.ARRAY_BUFFER, textureCoordBuffer);
 
-  const textureCoordinates = [
+  /*const textureCoordinates = [
     // Front
     0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0,
     // Back
@@ -157,11 +157,11 @@ function initTextureBuffer(gl) {
     0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0,
     // Left
     0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0,
-  ];
+  ];*/
 
   gl.bufferData(
     gl.ARRAY_BUFFER,
-    new Float32Array(textureCoordinates),
+    new Float32Array(uvs),
     gl.STATIC_DRAW
   );
 
@@ -172,7 +172,7 @@ function initNormalBuffer(gl) {
   const normalBuffer = gl.createBuffer();
   gl.bindBuffer(gl.ARRAY_BUFFER, normalBuffer);
 
-  const vertexNormals = [
+  /*const vertexNormals = [
     // Front
     0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0,
 
@@ -190,11 +190,11 @@ function initNormalBuffer(gl) {
 
     // Left
     -1.0, 0.0, 0.0, -1.0, 0.0, 0.0, -1.0, 0.0, 0.0, -1.0, 0.0, 0.0,
-  ];
+  ];*/
 
   gl.bufferData(
     gl.ARRAY_BUFFER,
-    new Float32Array(vertexNormals),
+    new Float32Array(vertices),
     gl.STATIC_DRAW
   );
 
