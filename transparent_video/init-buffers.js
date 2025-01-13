@@ -224,8 +224,8 @@ function initArrayBuffers(gl)
       vertices.push(cj);       // Y
       vertices.push(ci * sj);  // Z
 
-      uvs.push(v); //theta
-      uvs.push(u);  //phi
+      uvs.push(u); //theta
+      uvs.push(v);  //phi
     }
   }
 
