@@ -51,7 +51,6 @@ function initPositionBuffer(gl) {
   // shape. We do this by creating a Float32Array from the
   // JavaScript array, then use it to fill the current buffer.
   gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(vertices), gl.STATIC_DRAW);
-  alert(vertices.length / 3);
 
   return positionBuffer;
 }
