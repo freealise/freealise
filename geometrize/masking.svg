@@ -5,7 +5,7 @@
         <feFuncR type="table" tableValues="1 0"/>
         <feFuncG type="table" tableValues="1 0"/>
         <feFuncB type="table" tableValues="1 0"/>
-        <feFuncA type="table" tableValues="1 0"/>
+        <feFuncA type="table" tableValues="1 1"/>
       </feComponentTransfer>
     </filter>
     
