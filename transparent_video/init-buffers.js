@@ -17,6 +17,7 @@ function initBuffers(gl) {
     normal: normalBuffer,
     textureCoord: textureCoordBuffer,
     indices: indexBuffer,
+    vertexCount: vertexCount,
   };
 }
 
