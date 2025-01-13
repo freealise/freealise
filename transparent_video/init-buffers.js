@@ -1,17 +1,21 @@
+var vertices = [],indices = [],uvs = [],normals = [];
+
 function initBuffers(gl) {
-  const positionBuffer = initPositionBuffer(gl);
+  initArrayBuffers(gl);
+  
+  /*const positionBuffer = initPositionBuffer(gl);
 
   const textureCoordBuffer = initTextureBuffer(gl);
 
   const indexBuffer = initIndexBuffer(gl);
 
-  const normalBuffer = initNormalBuffer(gl);
+  const normalBuffer = initNormalBuffer(gl);*/
 
   return {
-    position: positionBuffer,
-    normal: normalBuffer,
-    textureCoord: textureCoordBuffer,
-    indices: indexBuffer,
+    position: vertices, //positionBuffer,
+    normal: vertices, //normalBuffer,
+    textureCoord: uvs, //textureCoordBuffer,
+    indices: indices, //indexBuffer,
   };
 }
 
@@ -195,6 +199,49 @@ function initNormalBuffer(gl) {
   );
 
   return normalBuffer;
+}
+
+function initArrayBuffers(gl)
+{
+  var SPHERE_DIV = 6;
+  var i, ai, si, ci;
+  var j, aj, sj, cj;
+  var p1, p2;
+  
+  for (j = 0; j <= SPHERE_DIV; j++) 
+  {
+    aj = j * Math.PI / SPHERE_DIV;
+    sj = Math.sin(aj);
+    cj = Math.cos(aj);
+    for (i = 0; i <= SPHERE_DIV; i++) 
+    {
+      ai = i * 2 * Math.PI / SPHERE_DIV;
+      si = Math.sin(ai);
+      ci = Math.cos(ai);
+      vertices.push(si * sj);  // X
+      vertices.push(cj);       // Y
+      vertices.push(ci * sj);  // Z
+
+      uvs.push(ai); //theta
+      uvs.push(aj);  //phi
+    }
+  }
+
+  for (j = 0; j < SPHERE_DIV; j++)
+  {
+    for (i = 0; i < SPHERE_DIV; i++)
+    {
+      p1 = j * (SPHERE_DIV+1) + i;
+      p2 = p1 + (SPHERE_DIV+1);
+      indices.push(p1);
+      indices.push(p2);
+      indices.push(p1 + 1);
+      indices.push(p1 + 1);
+      indices.push(p2);
+      indices.push(p2 + 1);
+    }
+  }
+  
 }
 
 export { initBuffers };
