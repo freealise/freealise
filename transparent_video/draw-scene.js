@@ -38,16 +38,11 @@ function drawScene(gl, programInfo, buffers, texture, cubeRotation) {
     modelViewMatrix, // matrix to translate
     [0.0, 0.0, 0.0]
   ); // amount to translate
-  mat4.scale(
-    modelViewMatrix, // destination matrix
-    modelViewMatrix, // matrix to scale
-    [0.0, -1.0, 0.0]
-  );
 
   mat4.rotate(
     modelViewMatrix, // destination matrix
     modelViewMatrix, // matrix to rotate
-    cubeRotation * 0.0, // amount to rotate in radians
+    Math.PI, // amount to rotate in radians
     [0, 0, 1]
   ); // axis to rotate around (Z)
   mat4.rotate(
@@ -110,12 +105,8 @@ function drawScene(gl, programInfo, buffers, texture, cubeRotation) {
   {
     const type = gl.UNSIGNED_SHORT;
     const offset = 0;
-    gl.drawElements(gl.TRIANGLES, vertexCount(12), type, offset);
+    gl.drawElements(gl.TRIANGLES, Math.pow(12, 2) * 6, type, offset);
   }
-}
-
-function vertexCount(div) {
-  return Math.pow(div, 2) * 6;
 }
 
 // Tell WebGL how to pull out the positions from the position
