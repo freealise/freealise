@@ -195,7 +195,7 @@ function initNormalBuffer(gl) {
 
   gl.bufferData(
     gl.ARRAY_BUFFER,
-    new Float32Array(vertices),
+    new Float32Array(normals),
     gl.STATIC_DRAW
   );
 
@@ -207,6 +207,7 @@ function initArrayBuffers(gl)
   var i, ai, si, ci;
   var j, aj, sj, cj;
   var p1, p2, u, v;
+  var x, y, z;
   
   for (j = 0; j <= SPHERE_DIV; j++) 
   {
@@ -220,9 +221,18 @@ function initArrayBuffers(gl)
       ai = u * 2 * Math.PI;
       si = Math.sin(ai);
       ci = Math.cos(ai);
-      vertices.push(si * sj);  // X
-      vertices.push(cj);       // Y
-      vertices.push(ci * sj);  // Z
+      
+      x = si * sj;
+      y = cj;
+      z = ci * sj;
+      
+      vertices.push(x);
+      vertices.push(y);
+      vertices.push(z);
+
+      normals.push(-x);
+      normals.push(-y);
+      normals.push(-z);
 
       uvs.push(u); //theta
       uvs.push(v);  //phi
