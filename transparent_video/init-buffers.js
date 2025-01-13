@@ -245,8 +245,4 @@ function initArrayBuffers(gl)
   }
 }
 
-function vertexCount() {
-  return Math.pow(SPHERE_DIV, 2) * 6;
-}
-
-export { initBuffers, vertexCount };
+export { initBuffers };
