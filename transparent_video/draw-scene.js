@@ -103,6 +103,7 @@ function drawScene(gl, programInfo, buffers, texture, cubeRotation) {
   gl.uniform1i(programInfo.uniformLocations.uSampler, 0);
 
   {
+    const vertexCount = 720;
     const type = gl.UNSIGNED_SHORT;
     const offset = 0;
     gl.drawElements(gl.TRIANGLES, vertexCount, type, offset);
