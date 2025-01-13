@@ -44,7 +44,9 @@ displace points out or in according to color difference from original (dithering
   
 interpolator: use moviepy for transparent video ?  
 morpher: use to match timepoints with transparent holes  
-pano: change webgl2 vertex buffers for displacement map parallax in google native 360 with depth and edited photos as custom tiles (or webgl overlay); remove videodome  
+pano: add max number of filters and change scale to 0, don't add and remove,  
+or make discrete parallax of variable scale (left/right eye);  
+change webgl2 vertex buffers for displacement map parallax in overlay, remove videodome  
   
 docs: get commentary (preferably written first) out of code  
 in order of not succession but execution, to wiki with toc and markdown  
