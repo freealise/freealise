@@ -12,10 +12,10 @@ function initBuffers(gl) {
   const normalBuffer = initNormalBuffer(gl);
 
   return {
-    position: vertices, //positionBuffer,
-    normal: vertices, //normalBuffer,
-    textureCoord: uvs, //textureCoordBuffer,
-    indices: indices, //indexBuffer,
+    position: positionBuffer,
+    normal: normalBuffer,
+    textureCoord: textureCoordBuffer,
+    indices: indexBuffer,
   };
 }
 
