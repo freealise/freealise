@@ -1,4 +1,5 @@
 var vertices = [],indices = [],uvs = [],normals = [];
+var SPHERE_DIV = 12;
 
 function initBuffers(gl) {
   initArrayBuffers(gl);
@@ -203,7 +204,6 @@ function initNormalBuffer(gl) {
 
 function initArrayBuffers(gl)
 {
-  var SPHERE_DIV = 12;
   var i, ai, si, ci;
   var j, aj, sj, cj;
   var p1, p2, u, v;
@@ -243,7 +243,10 @@ function initArrayBuffers(gl)
       indices.push(p2 + 1);
     }
   }
-  
 }
 
-export { initBuffers };
+function vertexCount() {
+  return Math.pow(SPHERE_DIV, 2) * 6;
+}
+
+export { initBuffers, vertexCount };
