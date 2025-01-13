@@ -1,5 +1,4 @@
 var vertices = [],indices = [],uvs = [],normals = [];
-var vertexCount;
 
 function initBuffers(gl) {
   initArrayBuffers(gl);
@@ -17,7 +16,6 @@ function initBuffers(gl) {
     normal: normalBuffer,
     textureCoord: textureCoordBuffer,
     indices: indexBuffer,
-    vertexCount: vertexCount,
   };
 }
 
@@ -53,7 +51,7 @@ function initPositionBuffer(gl) {
   // shape. We do this by creating a Float32Array from the
   // JavaScript array, then use it to fill the current buffer.
   gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(vertices), gl.STATIC_DRAW);
-  vertexCount = vertices.length / 3;
+  alert(vertices.length / 3);
 
   return positionBuffer;
 }
