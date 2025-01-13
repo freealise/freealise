@@ -24,6 +24,8 @@ Concerned with international relations and global issues.
 [![Follow me on HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97-Hugging%20Face-yellow?style=for-the-badge)](https://huggingface.co/freealise) 
 [![GPU nonexistent](https://img.shields.io/badge/GPU-no-green?style=for-the-badge)](https://en.wikipedia.org/wiki/Aphantasia)
 
+[My gists](https://gist.github.com/freealise/)
+
 <!--
 https://stackexchange.com/sites?view=grid
 
