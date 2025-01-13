@@ -203,7 +203,7 @@ function initNormalBuffer(gl) {
 
 function initArrayBuffers(gl)
 {
-  var SPHERE_DIV = 6;
+  var SPHERE_DIV = 12;
   var i, ai, si, ci;
   var j, aj, sj, cj;
   var p1, p2, u, v;
@@ -224,8 +224,8 @@ function initArrayBuffers(gl)
       vertices.push(cj);       // Y
       vertices.push(ci * sj);  // Z
 
-      uvs.push(u); //theta
-      uvs.push(v);  //phi
+      uvs.push(v); //theta
+      uvs.push(u);  //phi
     }
   }
 
