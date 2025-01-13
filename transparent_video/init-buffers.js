@@ -206,24 +206,26 @@ function initArrayBuffers(gl)
   var SPHERE_DIV = 6;
   var i, ai, si, ci;
   var j, aj, sj, cj;
-  var p1, p2;
+  var p1, p2, u, v;
   
   for (j = 0; j <= SPHERE_DIV; j++) 
   {
-    aj = j * Math.PI / SPHERE_DIV;
+    v = j / SPHERE_DIV;
+    aj = v * Math.PI;
     sj = Math.sin(aj);
     cj = Math.cos(aj);
     for (i = 0; i <= SPHERE_DIV; i++) 
     {
-      ai = i * 2 * Math.PI / SPHERE_DIV;
+      u = i / SPHERE_DIV;
+      ai = u * 2 * Math.PI;
       si = Math.sin(ai);
       ci = Math.cos(ai);
       vertices.push(si * sj);  // X
       vertices.push(cj);       // Y
       vertices.push(ci * sj);  // Z
 
-      uvs.push(ai); //theta
-      uvs.push(aj);  //phi
+      uvs.push(u); //theta
+      uvs.push(v);  //phi
     }
   }
 
