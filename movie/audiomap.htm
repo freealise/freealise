@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>3D audio map editor - Custom Street View Panorama Tiles</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <div id="street-view"></div>
+    <div id="floating-panel">
+      <input type="button" value="Audio map" id="toggle" />
+      <input type="button" value="webgl" id="ctx" />
+    </div>
+
+    <!-- 
+      The `defer` attribute causes the script to execute after the full HTML
+      document has been parsed. For non-blocking uses, avoiding race conditions,
+      and consistent behavior across browsers, consider loading using Promises. See
+      https://developers.google.com/maps/documentation/javascript/load-maps-js-api
+      for more information.
+      -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly&loading=async" defer></script>
+  </body>
+</html>
