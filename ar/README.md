@@ -44,7 +44,7 @@ displace points out or in according to color difference from original (dithering
   
 interpolator: use moviepy for transparent video ?  
 morpher: use to match timepoints with transparent holes  
-pano: use svg displacer for thumbnail depth (add to static image hf space);  
+pano: use svg displacer for large fov thumbnail depth from stereo image;  
 change webgl2 vertex buffers for displacement map parallax in overlay; replace videodome with gsv  
 use gsv custom tiles for svg sound mapping  
 (https://developers.google.com/maps/documentation/javascript/examples/streetview-events)  
