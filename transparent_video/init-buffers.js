@@ -1,5 +1,5 @@
 var vertices = [],indices = [],uvs = [],normals = [];
-var SPHERE_DIV = 12;
+var SPHERE_DIV = 144;
 
 function initBuffers(gl) {
   initArrayBuffers(gl);
