@@ -1,6 +1,7 @@
 import { initBuffers } from "./init-buffers.js";
 import { drawScene } from "./draw-scene.js";
 
+let seg = 144;
 let cubeRotation = 0.0;
 let deltaTime = 0;
 // will set to true when video can be copied to texture
