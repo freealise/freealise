@@ -41,16 +41,21 @@ function main() {
   uniform mat4 uModelViewMatrix;
   uniform mat4 uProjectionMatrix;
 
+  varying highp vec4 vVertexPosition;
   varying highp vec2 vTextureCoord;
   varying highp vec3 vLighting;
   
   uniform sampler2D uSampler;
 
   void main(void) {
-    vTextureCoord = aTextureCoord * 4;
+    vTextureCoord = aTextureCoord;
     highp vec4 texelColor = texture2D(uSampler, vTextureCoord);
     
-    gl_Position = uProjectionMatrix * uModelViewMatrix * aVertexPosition * (1.0 - texelColor.g);
+    vVertexPosition.x = aVertexPosition.x * (1.0 - texelColor.g);
+    vVertexPosition.y = aVertexPosition.y * (1.0 - texelColor.g);
+    vVertexPosition.z = aVertexPosition.z * (1.0 - texelColor.g);
+    
+    gl_Position = uProjectionMatrix * uModelViewMatrix * vVertexPosition;
 
     // Apply lighting effect
 
