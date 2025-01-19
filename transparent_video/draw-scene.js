@@ -1,4 +1,4 @@
-function drawScene(gl, programInfo, buffers, texture, cubeRotation) {
+function drawScene(gl, programInfo, buffers, texture, cubeRotation, seg) {
   gl.clearColor(0.0, 0.0, 0.0, 0.0); // Clear to transparent
   gl.clearDepth(1.0); // Clear everything
   gl.enable(gl.DEPTH_TEST); // Enable depth testing
@@ -105,7 +105,7 @@ function drawScene(gl, programInfo, buffers, texture, cubeRotation) {
   {
     const type = gl.UNSIGNED_SHORT;
     const offset = 0;
-    gl.drawElements(gl.TRIANGLES, Math.pow(144, 2) * 12, type, offset);
+    gl.drawElements(gl.TRIANGLES, Math.pow(seg, 2) * 6, type, offset);
   }
 }
 
