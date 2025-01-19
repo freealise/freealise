@@ -46,10 +46,10 @@ function main() {
   uniform sampler2D uSampler;
 
   void main(void) {
+    vTextureCoord = aTextureCoord;
     highp vec4 texelColor = texture2D(uSampler, vTextureCoord);
     
     gl_Position = uProjectionMatrix * uModelViewMatrix * aVertexPosition * texelColor.g;
-    vTextureCoord = aTextureCoord;
 
     // Apply lighting effect
 
