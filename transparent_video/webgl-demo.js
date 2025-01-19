@@ -51,9 +51,10 @@ function main() {
     vTextureCoord = aTextureCoord;
     highp vec4 texelColor = texture2D(uSampler, vTextureCoord);
     
-    vVertexPosition.x = aVertexPosition.x * (1.0 - texelColor.g);
-    vVertexPosition.y = aVertexPosition.y * (1.0 - texelColor.g);
-    vVertexPosition.z = aVertexPosition.z * (1.0 - texelColor.g);
+    vVertexPosition = aVertexPosition;
+    vVertexPosition.x = vVertexPosition.x * (1.0 - texelColor.g);
+    vVertexPosition.y = vVertexPosition.y * (1.0 - texelColor.g);
+    vVertexPosition.z = vVertexPosition.z * (1.0 - texelColor.g);
     
     gl_Position = uProjectionMatrix * uModelViewMatrix * vVertexPosition;
 
