@@ -252,6 +252,7 @@ function initArrayBuffers(gl)
       indices.push(p2 + 1);
     }
   }
+  vertexCount = indices.length;
 }
 
 export { initBuffers };
