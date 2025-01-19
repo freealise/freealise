@@ -1,5 +1,4 @@
 var vertices = [],indices = [],uvs = [],normals = [];
-var SPHERE_DIV = 144;
 
 function initBuffers(gl) {
   initArrayBuffers(gl);
@@ -209,15 +208,15 @@ function initArrayBuffers(gl)
   var p1, p2, u, v;
   var x, y, z;
   
-  for (j = 0; j <= SPHERE_DIV; j++) 
+  for (j = 0; j <= seg; j++) 
   {
-    v = j / SPHERE_DIV;
+    v = j / seg;
     aj = v * Math.PI;
     sj = Math.sin(aj);
     cj = Math.cos(aj);
-    for (i = 0; i <= SPHERE_DIV; i++) 
+    for (i = 0; i <= seg; i++) 
     {
-      u = i / SPHERE_DIV;
+      u = i / seg;
       ai = u * 2 * Math.PI;
       si = Math.sin(ai);
       ci = Math.cos(ai);
@@ -239,12 +238,12 @@ function initArrayBuffers(gl)
     }
   }
 
-  for (j = 0; j < SPHERE_DIV; j++)
+  for (j = 0; j < seg; j++)
   {
-    for (i = 0; i < SPHERE_DIV; i++)
+    for (i = 0; i < seg; i++)
     {
-      p1 = j * (SPHERE_DIV+1) + i;
-      p2 = p1 + (SPHERE_DIV+1);
+      p1 = j * (seg+1) + i;
+      p2 = p1 + (seg+1);
       indices.push(p1);
       indices.push(p2);
       indices.push(p1 + 1);
