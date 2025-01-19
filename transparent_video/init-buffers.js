@@ -1,8 +1,7 @@
 var vertices = [],indices = [],uvs = [],normals = [];
-var SPHERE_DIV = 144;
 
-function initBuffers(gl) {
-  initArrayBuffers(gl);
+function initBuffers(gl, SPHERE_DIV) {
+  initArrayBuffers(gl, SPHERE_DIV);
   
   const positionBuffer = initPositionBuffer(gl);
 
@@ -202,7 +201,7 @@ function initNormalBuffer(gl) {
   return normalBuffer;
 }
 
-function initArrayBuffers(gl)
+function initArrayBuffers(gl, SPHERE_DIV)
 {
   var i, ai, si, ci;
   var j, aj, sj, cj;
