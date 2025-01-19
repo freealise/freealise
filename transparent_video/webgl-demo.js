@@ -133,7 +133,7 @@ function main() {
       updateTexture(gl, texture, video);
     }
 
-    drawScene(gl, programInfo, buffers, texture, cubeRotation, Math.pow(seg, 2)*12);
+    drawScene(gl, programInfo, buffers, texture, cubeRotation, Math.pow(seg, 2)*6);
     cubeRotation += deltaTime;
 
     requestAnimationFrame(render);
