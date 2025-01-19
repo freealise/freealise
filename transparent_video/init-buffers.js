@@ -1,7 +1,7 @@
 var vertices = [],indices = [],uvs = [],normals = [];
 
-function initBuffers(gl) {
-  initArrayBuffers(gl);
+function initBuffers(gl, seg) {
+  initArrayBuffers(gl, seg);
   
   const positionBuffer = initPositionBuffer(gl);
 
@@ -252,7 +252,7 @@ function initArrayBuffers(gl)
       indices.push(p2 + 1);
     }
   }
-  vertexCount = indices.length;
+  return indices.length;
 }
 
 export { initBuffers };
