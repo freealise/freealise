@@ -49,7 +49,7 @@ function main() {
     vTextureCoord = aTextureCoord;
     highp vec4 texelColor = texture2D(uSampler, vTextureCoord);
     
-    gl_Position = uProjectionMatrix * uModelViewMatrix * aVertexPosition * (texelColor.r + texelColor.g + texelColor.b) / 3.0;
+    gl_Position = uProjectionMatrix * uModelViewMatrix * aVertexPosition * (1.0 - (texelColor.r + texelColor.g + texelColor.b) / 3.0);
 
     // Apply lighting effect
 
