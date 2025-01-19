@@ -33,7 +33,6 @@ function main() {
 
   const vsSource = `
   attribute vec4 aVertexPosition;
-  attribute vec4 aVertexColor;
   attribute vec3 aVertexNormal;
   attribute vec2 aTextureCoord;
 
@@ -43,9 +42,13 @@ function main() {
 
   varying highp vec2 vTextureCoord;
   varying highp vec3 vLighting;
+  
+  uniform sampler2D uSampler;
 
   void main(void) {
-    gl_Position = uProjectionMatrix * uModelViewMatrix * aVertexPosition * aVertexColor;
+    highp vec4 texelColor = texture2D(uSampler, vTextureCoord);
+    
+    gl_Position = uProjectionMatrix * uModelViewMatrix * aVertexPosition * texelColor.a;
     vTextureCoord = aTextureCoord;
 
     // Apply lighting effect
@@ -93,7 +96,6 @@ function main() {
     program: shaderProgram,
     attribLocations: {
       vertexPosition: gl.getAttribLocation(shaderProgram, "aVertexPosition"),
-      vertexColor: gl.getAttribLocation(shaderProgram, "aVertexColor"),
       vertexNormal: gl.getAttribLocation(shaderProgram, "aVertexNormal"),
       textureCoord: gl.getAttribLocation(shaderProgram, "aTextureCoord"),
     },
