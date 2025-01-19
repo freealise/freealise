@@ -33,7 +33,7 @@ function main() {
   // Vertex shader program
 
   const vsSource = `
-  attribute vec4 aVertexPosition;
+  attribute vec3 aVertexPosition;
   attribute vec3 aVertexNormal;
   attribute vec2 aTextureCoord;
 
@@ -50,7 +50,7 @@ function main() {
     vTextureCoord = aTextureCoord;
     highp vec4 texelColor = texture2D(uSampler, vTextureCoord);
     
-    highp vec4 pos = aVertexPosition * texelColor.g;
+    highp vec3 pos = aVertexPosition * texelColor.g;
     gl_Position = uProjectionMatrix * uModelViewMatrix * pos;
 
     // Apply lighting effect
