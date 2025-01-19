@@ -1,7 +1,6 @@
 import { initBuffers } from "./init-buffers.js";
 import { drawScene } from "./draw-scene.js";
 
-let seg = 144;
 let cubeRotation = 0.0;
 let deltaTime = 0;
 // will set to true when video can be copied to texture
@@ -113,7 +112,7 @@ function main() {
 
   // Here's where we call the routine that builds all the
   // objects we'll be drawing.
-  const buffers = initBuffers(gl, seg);
+  const buffers = initBuffers(gl);
 
   const texture = initTexture(gl);
   const video = setupVideo("depth_result.mp4");
@@ -133,7 +132,7 @@ function main() {
       updateTexture(gl, texture, video);
     }
 
-    drawScene(gl, programInfo, buffers, texture, cubeRotation, Math.pow(seg, 2)*6);
+    drawScene(gl, programInfo, buffers, texture, cubeRotation);
     cubeRotation += deltaTime;
 
     requestAnimationFrame(render);
