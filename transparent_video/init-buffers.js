@@ -1,7 +1,8 @@
 var vertices = [],indices = [],uvs = [],normals = [];
+var seg = 144;
 
-function initBuffers(gl, seg) {
-  initArrayBuffers(gl, seg);
+function initBuffers(gl) {
+  initArrayBuffers(gl);
   
   const positionBuffer = initPositionBuffer(gl);
 
@@ -252,7 +253,6 @@ function initArrayBuffers(gl)
       indices.push(p2 + 1);
     }
   }
-  return indices.length;
 }
 
 export { initBuffers };
