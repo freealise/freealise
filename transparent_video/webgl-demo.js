@@ -33,6 +33,7 @@ function main() {
 
   const vsSource = `
   attribute vec4 aVertexPosition;
+  attribute vec4 aVertexDisplace;
   attribute vec3 aVertexNormal;
   attribute vec2 aTextureCoord;
 
@@ -44,7 +45,7 @@ function main() {
   varying highp vec3 vLighting;
 
   void main(void) {
-    gl_Position = uProjectionMatrix * uModelViewMatrix * aVertexPosition;
+    gl_Position = uProjectionMatrix * uModelViewMatrix * aVertexPosition * aVertexDisplace;
     vTextureCoord = aTextureCoord;
 
     // Apply lighting effect
@@ -92,6 +93,7 @@ function main() {
     program: shaderProgram,
     attribLocations: {
       vertexPosition: gl.getAttribLocation(shaderProgram, "aVertexPosition"),
+      vertexDisplace: gl.getAttribLocation(shaderProgram, "aVertexDisplace"),
       vertexNormal: gl.getAttribLocation(shaderProgram, "aVertexNormal"),
       textureCoord: gl.getAttribLocation(shaderProgram, "aTextureCoord"),
     },
