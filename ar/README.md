@@ -44,7 +44,7 @@ displace points out or in according to color difference from original (dithering
   
 interpolator: use moviepy for transparent video ?  
 morpher: use to match timepoints with transparent holes  
-pano: change webgl2 vertex buffers for displacement map parallax in overlay; replace videodome with gsv  
+pano: depth -> video alpha channel in shader; replace videodome with gsv  
   
 docs: get commentary (preferably written first) out of code  
 in order of not succession but execution, to wiki with toc and markdown  
