@@ -51,7 +51,7 @@ function main() {
     highp vec2 vDepthCoord = aTextureCoord;
     
     vTextureCoord = aTextureCoord;
-    
+    vDepthCoord.y = vDepthCoord.y - 0.5;
     highp vec4 texelColor = texture2D(uSampler, vDepthCoord);
     
     vVertexPosition = aVertexPosition;
@@ -74,7 +74,7 @@ function main() {
     vLighting = ambientLight + (directionalLightColor * directional);
   }
 `;
-//vDepthCoord.y = vDepthCoord.y - 0.5;
+
   // Fragment shader program
 
   const fsSource = `
