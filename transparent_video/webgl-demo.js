@@ -53,7 +53,7 @@ function main() {
     highp vec4 texelColor = texture2D(uSampler, vTextureCoord);
     
     vVertexPosition = aVertexPosition;
-    highp vec3 avg = 1.0 - (texelColor.r + texelColor.g + texelColor.b) / 3.0;
+    highp float avg = 1.0 - (texelColor.r + texelColor.g + texelColor.b) / 3.0;
     vVertexPosition.x = vVertexPosition.x * avg;
     vVertexPosition.y = vVertexPosition.y * avg;
     vVertexPosition.z = vVertexPosition.z * avg;
