@@ -49,7 +49,6 @@ function main() {
 
   void main(void) {
     vTextureCoord = aTextureCoord;
-    vTextureCoord.y = vTextureCoord.y + 0.5;
     highp vec4 texelColor = texture2D(uSampler, vTextureCoord);
     
     vVertexPosition = aVertexPosition;
@@ -82,6 +81,7 @@ function main() {
   uniform sampler2D uSampler;
 
   void main(void) {
+    vTextureCoord.y = vTextureCoord.y - 0.5;
     highp vec4 texelColor = texture2D(uSampler, vTextureCoord);
 
     if (texelColor.r == 1.0 && texelColor.g == 1.0 && texelColor.b == 1.0 && texelColor.a == 1.0) {
