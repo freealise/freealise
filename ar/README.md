@@ -42,10 +42,9 @@ notation: rotate keyboard 90deg; show as is or png for spectrograms / tabs with 
 vectorizer: textbox with dot symbols x2 for sparse input by stroke (0-65535, 16 colors with random dithering)  
 displace points out or in according to color difference from original (dithering) or merge with depth estimator and blur according to average depth  
   
-interpolator: use moviepy for transparent video ?  
+interpolator: alternate frames and text or subtitles as odd/even  
 morpher: use to match timepoints with transparent holes  
-pano: set depth frames 40ms prior to color slides for 960ms, add color to gray pixels in video, in shader only gray texels update vertices  
-replace videodome with gsv  
+pano: add mouse control, replace videodome with gsv and webgl overlay  
   
 docs: get commentary (preferably written first) out of code  
 in order of not succession but execution, to wiki with toc and markdown  
