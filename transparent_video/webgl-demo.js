@@ -49,7 +49,7 @@ function main() {
 
   void main(void) {
     highp vec2 vDepthCoord = aTextureCoord;
-    vDepthCoord.y = vDepthCoord.y + 0.5;
+    vDepthCoord.y = vDepthCoord.y - 0.5;
     vTextureCoord = aTextureCoord;
     
     highp vec4 texelColor = texture2D(uSampler, vDepthCoord);
