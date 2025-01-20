@@ -49,6 +49,7 @@ function main() {
 
   void main(void) {
     vTextureCoord = aTextureCoord;
+    vTextureCoord.u = vTextureCoord.u + 0.5;
     highp vec4 texelColor = texture2D(uSampler, vTextureCoord);
     
     vVertexPosition = aVertexPosition;
