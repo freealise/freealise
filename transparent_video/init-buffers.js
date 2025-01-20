@@ -233,8 +233,8 @@ function initArrayBuffers(gl, SPHERE_DIV)
       normals.push(-y);
       normals.push(-z);
 
-      uvs.push(u/2); //theta
-      uvs.push(v);  //phi
+      uvs.push(u); //theta
+      uvs.push(v/2);  //phi
     }
   }
 
