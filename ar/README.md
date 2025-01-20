@@ -50,8 +50,9 @@ docs: get commentary (preferably written first) out of code
 in order of not succession but execution, to wiki with toc and markdown  
   
 //foil is covered by food-grade wax from cheese;  
-make wet paper models from depth maps with texture embossed with wire / foil / wax,  
-sketched from pano thumbnail with large fov and painted in CMYK  
+make wet paper models from depth maps with texture  
+drawn from pano thumbnails with large fov stitched together,  
+embossed with wire / foil / wax and painted in CMYK  
   
 //draw cross-contour for storyboards; draw objects on pano and find depth map  
 //scanned foil (photogrammetry) / optical flow or stereo depth estimator (+in realtime)  
