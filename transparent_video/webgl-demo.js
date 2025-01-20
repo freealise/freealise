@@ -49,7 +49,7 @@ function main() {
 
   void main(void) {
     vTextureCoord = aTextureCoord;
-    vTextureCoord.x = vTextureCoord.x + 0.5;
+    vTextureCoord.y = vTextureCoord.y + 0.5;
     highp vec4 texelColor = texture2D(uSampler, vTextureCoord);
     
     vVertexPosition = aVertexPosition;
@@ -123,7 +123,7 @@ function main() {
   const buffers = initBuffers(gl, seg);
 
   const texture = initTexture(gl);
-  const video = setupVideo("orig_result.mp4");
+  const video = setupVideo("comp_result.mp4");
 
   // Flip image pixels into the bottom-to-top order that WebGL expects.
   gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL, true);
