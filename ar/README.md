@@ -44,7 +44,8 @@ displace points out or in according to color difference from original (dithering
   
 interpolator: use moviepy for transparent video ?  
 morpher: use to match timepoints with transparent holes  
-pano: depth -> video alpha channel in shader; replace videodome with gsv  
+pano: set depth frames 40ms prior to color slides for 960ms, add color to gray pixels in video, in shader only gray texels update vertices  
+replace videodome with gsv  
   
 docs: get commentary (preferably written first) out of code  
 in order of not succession but execution, to wiki with toc and markdown  
