@@ -1,7 +1,7 @@
 import { initBuffers } from "./init-buffers.js";
 import { drawScene } from "./draw-scene.js";
 
-let seg = 12;
+let seg = 144;
 let cubeRotation = 0.0;
 let deltaTime = 0;
 // will set to true when video can be copied to texture
@@ -49,7 +49,7 @@ function main() {
 
   void main(void) {
     highp vec2 vDepthCoord = aTextureCoord;
-    vDepthCoord.y = vDepthCoord.y - 0.5;
+    
     vTextureCoord = aTextureCoord;
     
     highp vec4 texelColor = texture2D(uSampler, vDepthCoord);
@@ -74,7 +74,7 @@ function main() {
     vLighting = ambientLight + (directionalLightColor * directional);
   }
 `;
-
+//vDepthCoord.y = vDepthCoord.y - 0.5;
   // Fragment shader program
 
   const fsSource = `
