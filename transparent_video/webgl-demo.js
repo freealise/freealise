@@ -2,7 +2,7 @@ import { initBuffers } from "./init-buffers.js";
 import { drawScene } from "./draw-scene.js";
 
 let seg = 144;
-let cubeRotation = 0.0;
+let cubeRotation = {'x':0.0, 'y':0.0, 'z':0.0};
 let deltaTime = 0;
 // will set to true when video can be copied to texture
 let copyVideo = false;
@@ -144,7 +144,7 @@ function main() {
     }
 
     drawScene(gl, programInfo, buffers, texture, cubeRotation, seg);
-    cubeRotation += deltaTime;
+    cubeRotation.y += deltaTime;
 
     requestAnimationFrame(render);
   }
