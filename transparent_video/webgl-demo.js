@@ -2,7 +2,7 @@ import { initBuffers } from "./init-buffers.js";
 import { drawScene } from "./draw-scene.js";
 
 let seg = 144;
-let cubeRotation = {'x':0.0, 'y':0.0, 'z':0.0};
+let cubeRotation = {'x':0.0, 'y':0.0, 'z':0.0, 'pan':0.0, 'fov':45};
 let deltaTime = 0;
 // will set to true when video can be copied to texture
 let copyVideo = false;
@@ -304,10 +304,19 @@ function setupVideo(url) {
   return video;
 }
 
+document.querySelector("#pan").addEventListener('input', function(e){
+  cubeRotation.pan = e.target.value;
+});
+
+document.querySelector("#fov").addEventListener('input', function(e){
+  cubeRotation.fov = e.target.value;
+});
+
 var md = false;
 document.querySelector("#glcanvas").addEventListener('pointermove', function(e){
   if (md === true) {
     cubeRotation.y = e.clientX - e.target.getBoundingClientRect().x;
+    cubeRotation.x = e.clientY - e.target.getBoundingClientRect().y;
   }
 });
 
