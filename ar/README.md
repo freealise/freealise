@@ -44,7 +44,7 @@ displace points out or in according to color difference from original (dithering
   
 interpolator: alternate frames and text or subtitles as odd/even  
 morpher: use to match timepoints with transparent holes  
-pano: add mouse control, rotate according to heading/pitch, replace videodome with gsv and webgl overlay  
+pano: rotate according to heading/pitch, replace videodome with gsv and webgl overlay  
   
 docs: get commentary (preferably written first) out of code  
 in order of not succession but execution, to wiki with toc and markdown  
