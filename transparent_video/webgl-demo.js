@@ -144,7 +144,7 @@ function main() {
     }
 
     drawScene(gl, programInfo, buffers, texture, cubeRotation, seg);
-    cubeRotation.y += deltaTime;
+    //cubeRotation.y += deltaTime;
 
     requestAnimationFrame(render);
   }
@@ -303,3 +303,30 @@ function setupVideo(url) {
 
   return video;
 }
+
+var md = false;
+document.querySelector("#glcanvas").addEventListener('pointermove', function(e){
+  if (md === true) {
+    cubeRotation.y = e.clientX - e.target.getBoundingClientRect().x;
+  }
+});
+
+document.querySelector("#glcanvas").addEventListener('pointerdown', function(e){
+  md = true;
+});
+
+document.querySelector("#glcanvas").addEventListener('pointerup', function(e){
+  md = false;
+});
+
+document.querySelector("#glcanvas").addEventListener('pointerout', function(e){
+  md = false;
+});
+
+document.querySelector("#glcanvas").addEventListener('pointerleave', function(e){
+  md = false;
+});
+
+document.querySelector("#glcanvas").addEventListener('pointercancel', function(e){
+  md = false;
+});
