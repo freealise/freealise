@@ -313,15 +313,20 @@ document.querySelector("#fov").addEventListener('input', function(e){
 });
 
 var md = false;
+var xold, yold;
 document.querySelector("#glcanvas").addEventListener('pointermove', function(e){
   if (md === true) {
-    cubeRotation.y += e.movementX;
-    cubeRotation.x += e.movementY;
+    cubeRotation.y += e.clientX - xold;
+    cubeRotation.x += e.clientY - yold;
+    xold = e.clientX;
+    yold = e.clientY;
   }
 });
 
 document.querySelector("#glcanvas").addEventListener('pointerdown', function(e){
   md = true;
+  xold = e.clientX;
+  yold = e.clientY;
 });
 
 document.querySelector("#glcanvas").addEventListener('pointerup', function(e){
