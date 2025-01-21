@@ -314,6 +314,7 @@ document.querySelector("#fov").addEventListener('input', function(e){
 
 document.querySelector("#glcanvas").addEventListener('wheel', function(e){
   cubeRotation.fov += e.deltaY;
+  document.querySelector("#fov").value = cubeRotation.fov;
 });
 
 var md = false;
