@@ -17,7 +17,7 @@ function drawScene(gl, programInfo, buffers, texture, cubeRotation, seg) {
   // and we only want to see objects between 0.1 units
   // and 100 units away from the camera.
 
-  const fieldOfView = (45 * Math.PI) / 180; // in radians
+  const fieldOfView = (cubeRotation.fov * Math.PI) / 180; // in radians
   const aspect = gl.canvas.clientWidth / gl.canvas.clientHeight;
   const zNear = 0.1;
   const zFar = 100.0;
@@ -36,7 +36,7 @@ function drawScene(gl, programInfo, buffers, texture, cubeRotation, seg) {
   mat4.translate(
     modelViewMatrix, // destination matrix
     modelViewMatrix, // matrix to translate
-    [Math.sin(cubeRotation.y / Math.PI * 5.0) / 64.0, 0.0, 0.0]
+    [cubeRotation.pan, 0.0, 0.0]
   ); // amount to translate
 
   mat4.rotate(
@@ -48,13 +48,13 @@ function drawScene(gl, programInfo, buffers, texture, cubeRotation, seg) {
   mat4.rotate(
     modelViewMatrix, // destination matrix
     modelViewMatrix, // matrix to rotate
-    cubeRotation.y * 0.01, // amount to rotate in radians
+    cubeRotation.y * 0.001, // amount to rotate in radians
     [0, 1, 0]
   ); // axis to rotate around (Y)
   mat4.rotate(
     modelViewMatrix, // destination matrix
     modelViewMatrix, // matrix to rotate
-    cubeRotation.x * 0.0, // amount to rotate in radians
+    cubeRotation.x * 0.001, // amount to rotate in radians
     [1, 0, 0]
   ); // axis to rotate around (X)
 
