@@ -315,8 +315,8 @@ document.querySelector("#fov").addEventListener('input', function(e){
 var md = false;
 document.querySelector("#glcanvas").addEventListener('pointermove', function(e){
   if (md === true) {
-    cubeRotation.y = e.clientX - e.target.getBoundingClientRect().x;
-    cubeRotation.x = e.clientY - e.target.getBoundingClientRect().y;
+    cubeRotation.y += e.movementX;
+    cubeRotation.x += e.movementY;
   }
 });
 
