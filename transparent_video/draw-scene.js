@@ -36,25 +36,25 @@ function drawScene(gl, programInfo, buffers, texture, cubeRotation, seg) {
   mat4.translate(
     modelViewMatrix, // destination matrix
     modelViewMatrix, // matrix to translate
-    [Math.sin(cubeRotation / Math.PI * 5.0) / 64.0, 0.0, 0.0]
+    [Math.sin(cubeRotation.y / Math.PI * 5.0) / 64.0, 0.0, 0.0]
   ); // amount to translate
 
   mat4.rotate(
     modelViewMatrix, // destination matrix
     modelViewMatrix, // matrix to rotate
-    Math.PI, // amount to rotate in radians
+    Math.PI + cubeRotation.z, // amount to rotate in radians
     [0, 0, 1]
   ); // axis to rotate around (Z)
   mat4.rotate(
     modelViewMatrix, // destination matrix
     modelViewMatrix, // matrix to rotate
-    cubeRotation * 0.01, // amount to rotate in radians
+    cubeRotation.y * 0.01, // amount to rotate in radians
     [0, 1, 0]
   ); // axis to rotate around (Y)
   mat4.rotate(
     modelViewMatrix, // destination matrix
     modelViewMatrix, // matrix to rotate
-    cubeRotation * 0.0, // amount to rotate in radians
+    cubeRotation.x * 0.0, // amount to rotate in radians
     [1, 0, 0]
   ); // axis to rotate around (X)
 
