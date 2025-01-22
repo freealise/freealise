@@ -387,6 +387,16 @@ function recordCanvas(e) {
   } catch(e) {alert(e);}
 }
 
+document.querySelector("#glcanvas").addEventListener('click', function(e){
+  if (gl.canvas.width != window.innerWidth) {
+    gl.canvas.width = window.innerWidth;
+    gl.canvas.height = window.innerHeight;
+  } else {
+    gl.canvas.width = 640;
+    gl.canvas.height = 480;
+  }
+});
+
 document.querySelector("#record").addEventListener('click', function(e){
   recordCanvas(e);
 });
