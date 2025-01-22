@@ -387,7 +387,7 @@ function recordCanvas(e) {
   } catch(e) {alert(e);}
 }
 
-document.querySelector("#play").addEventListener('click', function(e){
+document.querySelector("#time").addEventListener('dblclick', function(e){
   video.play();
 });
 
