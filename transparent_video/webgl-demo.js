@@ -155,7 +155,9 @@ function main() {
     if (snapshot === true) {
       getSnapshot();
     }
-    
+    if (document.querySelector("#time").value != parseInt(video.currentTime)) {
+      document.querySelector("#time").value = parseInt(video.currentTime);
+    }
     requestAnimationFrame(render);
   }
 
@@ -384,6 +386,10 @@ function recordCanvas(e) {
   }
   } catch(e) {alert(e);}
 }
+
+document.querySelector("#play").addEventListener('click', function(e){
+  video.play();
+});
 
 document.querySelector("#record").addEventListener('click', function(e){
   recordCanvas(e);
