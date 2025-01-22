@@ -320,24 +320,16 @@ function seek(t) {
     video.currentTime = 0;
   }
 }
- 
-const saveBlob = (function() {
+
+document.querySelector("#snapshot").addEventListener('click', function(e){
+  var durl = document.querySelector("#glcanvas").toDataURL();
   const a = document.createElement('a');
   document.body.appendChild(a);
   a.style.display = 'none';
-  return function saveData(blob, fileName) {
-     const url = window.URL.createObjectURL(blob);
-     a.href = url;
-     a.download = fileName;
-     a.click();
-     document.body.removeChild(a);
-  };
-}());
-
-document.querySelector("#snapshot").addEventListener('click', function(e){
-  document.querySelector("#glcanvas").toBlob((blob) => {
-    saveBlob(blob, `screencapture-${canvas.width}x${canvas.height}.png`);
-  });
+  a.href = durl;
+  a.download = 'snapshot.png';
+  a.click();
+  document.body.removeChild(a);
 });
 
 document.querySelector("#pan").addEventListener('input', function(e){
