@@ -305,6 +305,7 @@ function setupVideo(url) {
   function checkReady() {
     if (playing && timeupdate) {
       copyVideo = true;
+      document.querySelector("#time").max = video.duration-1;
     }
   }
   return video;
@@ -329,7 +330,6 @@ document.querySelector("#fov").addEventListener('input', function(e){
 });
 
 document.querySelector("#time").addEventListener('input', function(e){
-  document.querySelector("#time").max = video.duration;
   seek(e.target.value);
 });
 
