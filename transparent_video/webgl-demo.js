@@ -327,6 +327,10 @@ document.querySelector("#fov").addEventListener('input', function(e){
   cubeRotation.fov = e.target.value;
 });
 
+document.querySelector("#time").addEventListener('input', function(e){
+  seek(e.target.value);
+});
+
 document.querySelector("#glcanvas").addEventListener('wheel', function(e){
   cubeRotation.fov += e.deltaY;
   document.querySelector("#fov").value = cubeRotation.fov;
