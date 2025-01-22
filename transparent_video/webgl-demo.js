@@ -388,12 +388,12 @@ function recordCanvas(e) {
 }
 
 document.querySelector("#glcanvas").addEventListener('click', function(e){
-  if (gl.canvas.width != window.innerWidth) {
-    gl.canvas.width = window.innerWidth;
-    gl.canvas.height = window.innerHeight;
+  if (gl.canvas.style.width != window.innerWidth) {
+    gl.canvas.style.width = window.innerWidth + 'px';
+    gl.canvas.style.height = window.innerHeight + 'px';
   } else {
-    gl.canvas.width = 640;
-    gl.canvas.height = 480;
+    gl.canvas.style.width = '320px';
+    gl.canvas.style.height = '240px';
   }
 });
 
