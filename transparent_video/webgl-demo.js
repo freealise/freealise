@@ -321,6 +321,24 @@ function seek(t) {
   }
 }
 
+function snapshot() {
+  const pixels = new Uint8Array(
+    gl.drawingBufferWidth * gl.drawingBufferHeight * 4,
+  );
+  gl.readPixels(
+  0,
+  0,
+  gl.drawingBufferWidth,
+  gl.drawingBufferHeight,
+  gl.RGBA,
+  gl.UNSIGNED_BYTE,
+  pixels,
+  );
+  document.querySelector("#c").width = gl.drawingBufferWidth;
+  document.querySelector("#c").height = gl.drawingBufferHeight;
+  document.querySelector("#c").getContext("2d").putImageData(pixels, 0, 0);
+}
+
 document.querySelector("#pan").addEventListener('input', function(e){
   cubeRotation.pan = e.target.value;
 });
