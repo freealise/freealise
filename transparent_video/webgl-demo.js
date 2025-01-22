@@ -310,6 +310,15 @@ function setupVideo(url) {
   return video;
 }
 
+function seek(t) {
+  video.currentTime = t;
+  if (video.currentTime > video.duration) {
+    video.currentTime = video.duration;
+  } else if (video.currentTime < 0) {
+    video.currentTime = 0;
+  }
+}
+
 document.querySelector("#pan").addEventListener('input', function(e){
   cubeRotation.pan = e.target.value;
 });
