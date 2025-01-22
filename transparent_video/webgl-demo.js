@@ -320,24 +320,25 @@ function seek(t) {
     video.currentTime = 0;
   }
 }
+ 
+const saveBlob = (function() {
+  const a = document.createElement('a');
+  document.body.appendChild(a);
+  a.style.display = 'none';
+  return function saveData(blob, fileName) {
+     const url = window.URL.createObjectURL(blob);
+     a.href = url;
+     a.download = fileName;
+     a.click();
+     document.body.removeChild(a);
+  };
+}());
 
-function snapshot() {
-  const pixels = new Uint8Array(
-    gl.drawingBufferWidth * gl.drawingBufferHeight * 4,
-  );
-  gl.readPixels(
-  0,
-  0,
-  gl.drawingBufferWidth,
-  gl.drawingBufferHeight,
-  gl.RGBA,
-  gl.UNSIGNED_BYTE,
-  pixels,
-  );
-  document.querySelector("#c").width = gl.drawingBufferWidth;
-  document.querySelector("#c").height = gl.drawingBufferHeight;
-  document.querySelector("#c").getContext("2d").putImageData(pixels, 0, 0);
-}
+document.querySelector("#snapshot").addEventListener('click', function(e){
+  document.querySelector("#glcanvas").toBlob((blob) => {
+    saveBlob(blob, `screencapture-${canvas.width}x${canvas.height}.png`);
+  });
+});
 
 document.querySelector("#pan").addEventListener('input', function(e){
   cubeRotation.pan = e.target.value;
