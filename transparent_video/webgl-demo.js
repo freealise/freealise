@@ -395,6 +395,8 @@ document.querySelector("#glcanvas").addEventListener('click', function(e){
     gl.canvas.style.width = '320px';
     gl.canvas.style.height = '240px';
   }
+  gl.canvas.scrollIntoView();
+  window.location.href = '#glcanvas';
 });
 
 document.querySelector("#record").addEventListener('click', function(e){
