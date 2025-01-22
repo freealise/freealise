@@ -369,7 +369,7 @@ function recordCanvas(e) {
               const a = document.createElement('a');
               document.body.appendChild(a);
               a.style.display = 'none';
-              a.href = reader.resul;
+              a.href = reader.result;
               a.download = 'video.mp4';
               a.click();
               document.body.removeChild(a);
