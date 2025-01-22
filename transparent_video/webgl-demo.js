@@ -388,7 +388,7 @@ function recordCanvas(e) {
 }
 
 document.querySelector("#glcanvas").addEventListener('click', function(e){
-  if (gl.canvas.style.width != window.innerWidth) {
+  if (gl.canvas.style.width == '320px') {
     gl.canvas.style.width = window.innerWidth + 'px';
     gl.canvas.style.height = window.innerHeight + 'px';
   } else {
