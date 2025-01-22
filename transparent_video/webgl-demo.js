@@ -335,6 +335,67 @@ function getSnapshot() {
   snapshot = false;
 }
 
+var mediaRecorder, stream, vid;
+var recordedChunks = [];
+
+function recordCanvas(e) {
+  if (mediaRecorder && mediaRecorder.state === 'recording') {
+    mediaRecorder.stop();
+    e.target.value = '●';
+  } else {
+    if (!stream) {
+			stream = gl.canvas.captureStream(25);
+			mediaRecorder = new MediaRecorder(stream);
+		}
+    mediaRecorder.start(0); //time offset
+
+    mediaRecorder.ondataavailable = function (event) {
+        recordedChunks.push(event.data);
+    }
+    mediaRecorder.onstop = function (event) {
+        var blob = new Blob(recordedChunks, {
+            'type': 'video/mp4'
+        });
+        var url = URL.createObjectURL(blob);
+        var xhr = new XMLHttpRequest;
+        xhr.responseType = 'blob';
+        
+        xhr.onload = function() {
+            var recoveredBlob = xhr.response;
+            var reader = new FileReader;
+            reader.onload = function() {
+                vid = document.createElement('video');
+                vid.src = reader.result;
+                vid.height = gl.canvas.height;
+                vid.width = gl.canvas.width;
+                vid.addEventListener("loadedmetadata", () => {
+									console.log("duration:", vid.duration);
+									// Handle chrome's bug
+									if (vid.duration === Infinity) {
+										// Set it to bigger than the actual duration
+										vid.currentTime = 86400;
+										vid.addEventListener("timeupdate", () => {
+											console.log("after workaround:", vid.duration);
+											vid.currentTime = 0;
+											console.log(gl.canvas.width + "x" + gl.canvas.height);
+										}, { once: true });
+									}
+								});
+                recordedChunks = [];
+            };
+            reader.readAsDataURL(recoveredBlob);
+        };
+        xhr.open('GET', url);
+        xhr.send();
+    }
+    e.target.value = '■';
+  }
+}
+
+document.querySelector("#record").addEventListener('click', function(e){
+  recordCanvas(e);
+});
+
 var snapshot = false;
 document.querySelector("#snapshot").addEventListener('click', function(e){
   snapshot = true;
