@@ -307,8 +307,6 @@ function setupVideo(url) {
       copyVideo = true;
     }
   }
-
-  document.querySelector("#time").max = video.duration;
   return video;
 }
 
@@ -330,7 +328,8 @@ document.querySelector("#fov").addEventListener('input', function(e){
   cubeRotation.fov = e.target.value;
 });
 
-document.querySelector("#time").addEventListener('change', function(e){
+document.querySelector("#time").addEventListener('input', function(e){
+  document.querySelector("#time").max = video.duration;
   seek(e.target.value);
 });
 
