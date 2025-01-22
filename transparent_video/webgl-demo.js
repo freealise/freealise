@@ -1,10 +1,11 @@
 import { initBuffers } from "./init-buffers.js";
 import { drawScene } from "./draw-scene.js";
 
+let gl;
 let seg = 144;
 let cubeRotation = {'x':0.0, 'y':0.0, 'z':0.0, 'pan':0.0, 'fov':45};
 let deltaTime = 0;
-var video;
+let video;
 // will set to true when video can be copied to texture
 let copyVideo = false;
 
@@ -16,7 +17,7 @@ main();
 function main() {
   const canvas = document.querySelector("#glcanvas");
   // Initialize the GL context
-  const gl = canvas.getContext("webgl");
+  gl = canvas.getContext("webgl");
 
   // Only continue if WebGL is available and working
   if (gl === null) {
