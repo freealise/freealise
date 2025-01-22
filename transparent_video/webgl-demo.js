@@ -4,6 +4,7 @@ import { drawScene } from "./draw-scene.js";
 let seg = 144;
 let cubeRotation = {'x':0.0, 'y':0.0, 'z':0.0, 'pan':0.0, 'fov':45};
 let deltaTime = 0;
+var video;
 // will set to true when video can be copied to texture
 let copyVideo = false;
 
@@ -268,7 +269,7 @@ function updateTexture(gl, texture, video) {
 }
 
 function setupVideo(url) {
-  const video = document.createElement("video");
+  video = document.createElement("video");
 
   let playing = false;
   let timeupdate = false;
