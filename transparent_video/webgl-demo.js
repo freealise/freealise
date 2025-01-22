@@ -339,6 +339,7 @@ var mediaRecorder, stream, vid;
 var recordedChunks = [];
 
 function recordCanvas(e) {
+  try {
   if (mediaRecorder && mediaRecorder.state === 'recording') {
     mediaRecorder.stop();
     e.target.value = '●';
@@ -390,6 +391,7 @@ function recordCanvas(e) {
     }
     e.target.value = '■';
   }
+  } catch(e) {alert(e);}
 }
 
 document.querySelector("#record").addEventListener('click', function(e){
