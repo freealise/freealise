@@ -151,8 +151,10 @@ function main() {
     }
 
     drawScene(gl, programInfo, buffers, texture, cubeRotation, seg);
-    //cubeRotation.y += deltaTime;
-
+    if (snapshot === true) {
+      getSnapshot();
+    }
+    
     requestAnimationFrame(render);
   }
 
@@ -321,7 +323,7 @@ function seek(t) {
   }
 }
 
-document.querySelector("#snapshot").addEventListener('click', function(e){
+function getSnapshot() {
   var durl = document.querySelector("#glcanvas").toDataURL();
   const a = document.createElement('a');
   document.body.appendChild(a);
@@ -330,6 +332,12 @@ document.querySelector("#snapshot").addEventListener('click', function(e){
   a.download = 'snapshot.png';
   a.click();
   document.body.removeChild(a);
+  snapshot = false;
+}
+
+var snapshot = false;
+document.querySelector("#snapshot").addEventListener('click', function(e){
+  snapshot = true;
 });
 
 document.querySelector("#pan").addEventListener('input', function(e){
