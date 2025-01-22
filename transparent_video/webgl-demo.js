@@ -329,12 +329,8 @@ document.querySelector("#fov").addEventListener('input', function(e){
   cubeRotation.fov = e.target.value;
 });
 
-document.querySelector("#time").addEventListener('input', function(e){
+document.querySelector("#time").addEventListener('change', function(e){
   seek(e.target.value);
-});
-
-document.querySelector("#time").addEventListener('dblclick', function(e){
-  video.play();
 });
 
 document.querySelector("#glcanvas").addEventListener('wheel', function(e){
