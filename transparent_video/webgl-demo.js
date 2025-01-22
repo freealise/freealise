@@ -366,24 +366,14 @@ function recordCanvas(e) {
             var recoveredBlob = xhr.response;
             var reader = new FileReader;
             reader.onload = function() {
-                vid = document.createElement('video');
-                vid.src = reader.result;
-                vid.height = gl.canvas.height;
-                vid.width = gl.canvas.width;
-                vid.addEventListener("loadedmetadata", () => {
-									console.log("duration:", vid.duration);
-									// Handle chrome's bug
-									if (vid.duration === Infinity) {
-										// Set it to bigger than the actual duration
-										vid.currentTime = 86400;
-										vid.addEventListener("timeupdate", () => {
-											console.log("after workaround:", vid.duration);
-											vid.currentTime = 0;
-											console.log(gl.canvas.width + "x" + gl.canvas.height);
-										}, { once: true });
-									}
-								});
-                recordedChunks = [];
+              const a = document.createElement('a');
+              document.body.appendChild(a);
+              a.style.display = 'none';
+              a.href = reader.resul;
+              a.download = 'video.mp4';
+              a.click();
+              document.body.removeChild(a);
+              recordedChunks = [];
             };
             reader.readAsDataURL(recoveredBlob);
         };
