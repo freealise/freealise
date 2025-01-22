@@ -391,10 +391,11 @@ document.querySelector("#glcanvas").addEventListener('click', function(e){
   if (gl.canvas.style.width == '320px') {
     gl.canvas.style.width = window.innerWidth + 'px';
     gl.canvas.style.height = window.innerHeight + 'px';
-    gl.canvas.requestFullScreen();
+    gl.canvas.requestFullscreen();
   } else {
     gl.canvas.style.width = '320px';
     gl.canvas.style.height = '240px';
+    gl.canvas.exitFullscreen();
   }
   gl.canvas.scrollIntoView();
   window.location.href = '#glcanvas';
