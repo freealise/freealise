@@ -124,9 +124,15 @@ function main() {
   // Here's where we call the routine that builds all the
   // objects we'll be drawing.
   const buffers = initBuffers(gl, seg);
-
   const texture = initTexture(gl);
-  const video = setupVideo("comp_result.mp4");
+  
+  var url;
+  if (document.querySelector('#videoUrl').value != '') {
+    url = document.querySelector('#videoUrl').value;
+  } else {
+    url = "./comp_result.mp4";
+  }
+  const video = setupVideo(url);
 
   // Flip image pixels into the bottom-to-top order that WebGL expects.
   gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL, true);
