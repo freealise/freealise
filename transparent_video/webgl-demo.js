@@ -308,6 +308,7 @@ function setupVideo(url) {
     }
   }
 
+  document.querySelector("#time").max = video.duration;
   return video;
 }
 
