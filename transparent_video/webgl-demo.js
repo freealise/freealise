@@ -391,14 +391,12 @@ document.querySelector("#glcanvas").addEventListener('click', function(e){
   if (gl.canvas.style.width == '320px') {
     gl.canvas.style.width = window.innerWidth + 'px';
     gl.canvas.style.height = window.innerHeight + 'px';
-    gl.canvas.requestFullscreen();
+    window.scrollTo(0, window.screenHeight - window.innerHeight);
   } else {
     gl.canvas.style.width = '320px';
     gl.canvas.style.height = '240px';
-    gl.canvas.exitFullscreen();
+    window.scrollTo(0, 0);
   }
-  gl.canvas.scrollIntoView();
-  window.location.href = '#glcanvas';
 });
 
 document.querySelector("#record").addEventListener('click', function(e){
