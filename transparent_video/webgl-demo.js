@@ -312,6 +312,7 @@ function setupVideo(url) {
 }
 
 function seek(t) {
+  video.pause();
   video.currentTime = t;
   if (video.currentTime > video.duration) {
     video.currentTime = video.duration;
@@ -330,6 +331,10 @@ document.querySelector("#fov").addEventListener('input', function(e){
 
 document.querySelector("#time").addEventListener('input', function(e){
   seek(e.target.value);
+});
+
+document.querySelector("#time").addEventListener('dblclick', function(e){
+  video.play();
 });
 
 document.querySelector("#glcanvas").addEventListener('wheel', function(e){
