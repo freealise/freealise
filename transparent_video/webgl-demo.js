@@ -147,12 +147,13 @@ function main() {
     now *= 0.001; // convert to seconds
     deltaTime = now - then;
     then = now;
-
+try {
     if (copyVideo) {
       updateTexture(gl, texture, video);
     }
 
     drawScene(gl, programInfo, buffers, texture, cubeRotation, seg);
+} catch(e) {alert(e);}
     if (snapshot === true) {
       getSnapshot();
     }
@@ -315,7 +316,6 @@ function setupVideo(url) {
   function checkReady() {
     if (playing && timeupdate) {
       copyVideo = true;
-      alert('ok');
     }
   }
   return video;
