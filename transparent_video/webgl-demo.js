@@ -230,7 +230,7 @@ function initTexture(gl) {
   const border = 0;
   const srcFormat = gl.RGBA;
   const srcType = gl.UNSIGNED_BYTE;
-  const pixel = new Uint8Array([0, 0, 255, 255]); // opaque blue
+  const pixel = new Uint8Array([0, 0, 0, 255]); // opaque black
   gl.texImage2D(
     gl.TEXTURE_2D,
     level,
@@ -391,8 +391,6 @@ function handleFiles(e) {
   } else {
     video.oncanplaythrough = function(e) {
       video.play();
-      alert('ok');
-      //URL.revokeObjectURL(video.src);
 		}
     video.pause();
     video.currentTime = 0;
@@ -404,11 +402,13 @@ document.querySelector("#files").addEventListener("change", handleFiles);
 
 document.querySelector("#glcanvas").addEventListener('click', function(e){
   if (gl.canvas.style.width == '320px') {
-    gl.canvas.style.width = window.innerWidth + 'px';
+    gl.canvas.style.width = (window.innerWidth-16) + 'px';
     gl.canvas.style.height = window.innerHeight + 'px';
+    gl.canvas.style.marginRight = '16px';
   } else {
     gl.canvas.style.width = '320px';
     gl.canvas.style.height = '240px';
+    gl.canvas.style.marginRight = '0px';
   }
 });
 
