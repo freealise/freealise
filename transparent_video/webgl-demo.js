@@ -300,6 +300,7 @@ function setupVideo(url) {
   video.addEventListener(
     "timeupdate",
     () => {
+      document.querySelector("#time").max = video.duration-1;
       timeupdate = true;
       checkReady();
     },
@@ -308,14 +309,13 @@ function setupVideo(url) {
 
   video.src = url;
   video.oncanplaythrough = function() {
-    alert('!');
-    document.querySelector("#time").max = video.duration-1;
     video.play();
   }
 
   function checkReady() {
     if (playing && timeupdate) {
       copyVideo = true;
+      alert('ok');
     }
   }
   return video;
