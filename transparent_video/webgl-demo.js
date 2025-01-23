@@ -307,12 +307,14 @@ function setupVideo(url) {
   );
 
   video.src = url;
-  video.play();
+  video.oncanplaythrough = function() {
+    document.querySelector("#time").max = video.duration-1;
+    video.play();
+  }
 
   function checkReady() {
     if (playing && timeupdate) {
       copyVideo = true;
-      document.querySelector("#time").max = video.duration-1;
     }
   }
   return video;
