@@ -131,7 +131,7 @@ function main() {
   var url;
   var param = window.location.href.replace('#','').split('&')[0].split('?url=');
   if (param.length > 1) {
-    url = param[1];
+    url = decodeURIComponent(param[1]);
   } else {
     url = "./comp_result.mp4";
   }
@@ -395,7 +395,7 @@ function recordCanvas(e) {
 
 document.querySelector("#glcanvas").addEventListener('click', function(e){
   if (gl.canvas.style.width == '320px') {
-    gl.canvas.style.width = (window.innerWidth-16) + 'px';
+    gl.canvas.style.width = window.innerWidth + 'px';
     gl.canvas.style.height = window.innerHeight + 'px';
   } else {
     gl.canvas.style.width = '320px';
