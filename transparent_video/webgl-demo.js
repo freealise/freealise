@@ -456,7 +456,3 @@ document.querySelector("#glcanvas").addEventListener('pointerleave', function(e)
 document.querySelector("#glcanvas").addEventListener('pointercancel', function(e){
   md = false;
 });
-
-document.querySelector("#videoUrl").addEventListener('change', function(e){
-  main();
-});
