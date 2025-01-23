@@ -128,14 +128,7 @@ function main() {
   const buffers = initBuffers(gl, seg);
   const texture = initTexture(gl);
   
-  var url;
-  var param = window.location.href.replace('#','').split('&')[0].split('?url=');
-  if (param.length > 1) {
-    url = decodeURIComponent(param[1]);
-  } else {
-    url = "./comp_result.mp4";
-  }
-  const video = setupVideo(url);
+  const video = setupVideo("./comp_result.mp4");
 
   // Flip image pixels into the bottom-to-top order that WebGL expects.
   gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL, true);
