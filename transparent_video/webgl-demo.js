@@ -132,7 +132,6 @@ function main() {
   var param = window.location.href.replace('#','').split('&')[0].split('?url=');
   if (param.length > 1) {
     url = param[1];
-    alert(url);
   } else {
     url = "./comp_result.mp4";
   }
@@ -309,6 +308,7 @@ function setupVideo(url) {
 
   video.src = url;
   video.oncanplaythrough = function() {
+    alert('!');
     document.querySelector("#time").max = video.duration-1;
     video.play();
   }
