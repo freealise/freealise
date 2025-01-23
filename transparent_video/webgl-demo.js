@@ -129,8 +129,8 @@ function main() {
   const texture = initTexture(gl);
   
   var url;
-  if (document.querySelector('#videoUrl').value != '') {
-    url = document.querySelector('#videoUrl').value;
+  if (window.location.href.split('#').length > 1) {
+    url = window.location.href.split('#')[1];
   } else {
     url = "./comp_result.mp4";
   }
