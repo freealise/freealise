@@ -129,7 +129,7 @@ function main() {
   const texture = initTexture(gl);
   
   var url;
-  var param = window.location.href.replace('#','').split('?url=');
+  var param = window.location.href.replace('#','').split('&')[0].split('?url=');
   if (param.length > 1) {
     url = param[1];
     alert(url);
@@ -277,6 +277,7 @@ function updateTexture(gl, texture, video) {
 
 function setupVideo(url) {
   video = document.createElement("video");
+  video.crossorigin = 'anonymous';
 
   let playing = false;
   let timeupdate = false;
