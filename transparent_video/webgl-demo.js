@@ -310,7 +310,6 @@ function setupVideo(url) {
 
   video.src = url;
   video.oncanplaythrough = function() {
-    alert(url);
     video.play();
   }
 
@@ -399,7 +398,8 @@ function handleFiles(e) {
   } else {
     video.oncanplaythrough = function(e) {
       video.play();
-      URL.revokeObjectURL(video.src);
+      alert('ok');
+      //URL.revokeObjectURL(video.src);
 		}
     video.pause();
     video.currentTime = 0;
