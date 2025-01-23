@@ -393,6 +393,22 @@ function recordCanvas(e) {
   } catch(e) {alert(e);}
 }
 
+function handleFiles(e) {
+  if (!e.target.files.length) {
+    alert("No files selected!");
+  } else {
+    video.oncanplaythrough = function(e) {
+      video.play();
+      URL.revokeObjectURL(video.src);
+		}
+    video.pause();
+    video.currentTime = 0;
+    video.src = URL.createObjectURL(e.target.files[0]);
+  }
+}
+
+document.querySelector("#files").addEventListener("change", handleFiles);
+
 document.querySelector("#glcanvas").addEventListener('click', function(e){
   if (gl.canvas.style.width == '320px') {
     gl.canvas.style.width = window.innerWidth + 'px';
