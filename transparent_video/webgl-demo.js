@@ -310,6 +310,7 @@ function setupVideo(url) {
 
   video.src = url;
   video.oncanplaythrough = function() {
+    alert(url);
     video.play();
   }
 
