@@ -398,7 +398,23 @@ function handleFiles(e) {
   }
 }
 
+function handleSubs(e) {
+  if (!e.target.files.length) {
+    alert("No subtitles selected!");
+  } else {
+    var reader = new FileReader();
+    reader.readAsText(e.target.files[0], "UTF-8");
+    reader.onload = function (evt) {
+        alert(evt.target.result);
+    }
+    reader.onerror = function (evt) {
+        alert("Error reading file");
+    }
+  }
+}
+
 document.querySelector("#files").addEventListener("change", handleFiles);
+document.querySelector("#subs").addEventListener("change", handleSubs);
 
 document.querySelector("#glcanvas").addEventListener('click', function(e){
   if (gl.canvas.style.width == '320px') {
