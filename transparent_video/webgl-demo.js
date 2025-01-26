@@ -293,6 +293,19 @@ function setupVideo(url) {
   track.src = url.replace('.mp4', '.vtt');
   video.textTracks[0].mode = 'showing';
 
+  const xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      timepoints = this.responseText.slice(8).split("\n\n");
+      for (var i=0; i<timepoints.length; i++) {
+        timepoints[i] = timepoints[i].split('\n')[2].split(' ')[1];
+        povs[i] = timepoints[i].split(',');
+      }
+    }
+  };
+  xhttp.open("GET", track.src);
+  xhttp.send(); 
+
   // Waiting for these 2 events ensures
   // there is data in the video
 
