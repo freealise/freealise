@@ -4,6 +4,7 @@ import { drawScene } from "./draw-scene.js";
 let gl;
 let seg = 144;
 let cubeRotation = {'x':0.0, 'y':0.0, 'z':0.0, 'pan':0.0, 'fov':45};
+let pov = {'heading':0.0, 'pitch':0.0};
 let deltaTime = 0;
 let video;
 // will set to true when video can be copied to texture
@@ -152,6 +153,8 @@ try {
     }
     if (document.querySelector("#time").value != parseInt(video.currentTime)) {
       document.querySelector("#time").value = parseInt(video.currentTime);
+      pov.heading = parseFloat(povs[document.querySelector("#time").value][0]);
+      pov.pitch = parseFloat(povs[document.querySelector("#time").value][1]);
     }
     requestAnimationFrame(render);
   }
@@ -398,14 +401,24 @@ function handleFiles(e) {
   }
 }
 
+var timepoints = [];
+var povs = [];
+
 function handleSubs(e) {
   if (!e.target.files.length) {
     alert("No subtitles selected!");
   } else {
+    povs = [];
+    timepoints = [];
     var reader = new FileReader();
     reader.readAsText(e.target.files[0], "UTF-8");
     reader.onload = function (evt) {
         alert(evt.target.result);
+        timepoints = evt.target.result.slice(8).split("\n\n");
+        for (var i=0; i<timepoints.length; i++) {
+          timepoints[i] = timepoints[i].split('\n')[2].split(' ')[1];
+          povs[i] = timepoints[i].split(',');
+        }
     }
     reader.onerror = function (evt) {
         alert("Error reading file");
