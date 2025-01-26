@@ -37,12 +37,6 @@ function drawScene(gl, programInfo, buffers, texture, cubeRotation, seg, pov) {
     pov.pitch, // amount to rotate in radians
     [1, 0, 0]
   ); // axis to rotate around (X)
-  mat4.rotate(
-    modelViewMatrix, // destination matrix
-    modelViewMatrix, // matrix to rotate
-    pov.heading, // amount to rotate in radians
-    [0, 1, 0]
-  ); // axis to rotate around (Y)
 
   // Now move the drawing position a bit to where we want to
   // start drawing the square.
@@ -68,6 +62,13 @@ function drawScene(gl, programInfo, buffers, texture, cubeRotation, seg, pov) {
     modelViewMatrix, // destination matrix
     modelViewMatrix, // matrix to rotate
     cubeRotation.y * 0.005, // amount to rotate in radians
+    [0, 1, 0]
+  ); // axis to rotate around (Y)
+
+  mat4.rotate(
+    modelViewMatrix, // destination matrix
+    modelViewMatrix, // matrix to rotate
+    pov.heading, // amount to rotate in radians
     [0, 1, 0]
   ); // axis to rotate around (Y)
 
