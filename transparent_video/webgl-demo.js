@@ -9,6 +9,7 @@ let deltaTime = 0;
 let video = document.createElement("video");
 let track = document.createElement("track");
 video.appendChild(track);
+document.body.appendChild(video);
 // will set to true when video can be copied to texture
 let copyVideo = false;
 
