@@ -42,6 +42,13 @@ function drawScene(gl, programInfo, buffers, texture, cubeRotation, seg, pov) {
   mat4.rotate(
     modelViewMatrix, // destination matrix
     modelViewMatrix, // matrix to rotate
+    cubeRotation.x * 0.005, // amount to rotate in radians
+    [1, 0, 0]
+  ); // axis to rotate around (X)
+
+  mat4.rotate(
+    modelViewMatrix, // destination matrix
+    modelViewMatrix, // matrix to rotate
     pov.pitch, // amount to rotate in radians
     [1, 0, 0]
   ); // axis to rotate around (X)
@@ -58,29 +65,10 @@ function drawScene(gl, programInfo, buffers, texture, cubeRotation, seg, pov) {
     Math.PI + cubeRotation.z, // amount to rotate in radians
     [0, 0, 1]
   ); // axis to rotate around (Z)
-
-  mat4.rotate(
-    modelViewMatrix, // destination matrix
-    modelViewMatrix, // matrix to rotate
-    -pov.heading, // amount to rotate in radians
-    [0, 1, 0]
-  ); // axis to rotate around (Y)
-  mat4.rotate(
-    modelViewMatrix, // destination matrix
-    modelViewMatrix, // matrix to rotate
-    cubeRotation.x * 0.005, // amount to rotate in radians
-    [1, 0, 0]
-  ); // axis to rotate around (X)
   mat4.rotate(
     modelViewMatrix, // destination matrix
     modelViewMatrix, // matrix to rotate
     cubeRotation.y * 0.005, // amount to rotate in radians
-    [0, 1, 0]
-  ); // axis to rotate around (Y)
-  mat4.rotate(
-    modelViewMatrix, // destination matrix
-    modelViewMatrix, // matrix to rotate
-    pov.heading, // amount to rotate in radians
     [0, 1, 0]
   ); // axis to rotate around (Y)
 
