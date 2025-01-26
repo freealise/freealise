@@ -31,6 +31,14 @@ function drawScene(gl, programInfo, buffers, texture, cubeRotation, seg, pov) {
   // the center of the scene.
   const modelViewMatrix = mat4.create();
   
+  // Now move the drawing position a bit to where we want to
+  // start drawing the square.
+  mat4.translate(
+    modelViewMatrix, // destination matrix
+    modelViewMatrix, // matrix to translate
+    [cubeRotation.pan, 0.0, 0.0]
+  ); // amount to translate
+  
   mat4.rotate(
     modelViewMatrix, // destination matrix
     modelViewMatrix, // matrix to rotate
@@ -43,14 +51,6 @@ function drawScene(gl, programInfo, buffers, texture, cubeRotation, seg, pov) {
     pov.heading, // amount to rotate in radians
     [0, 1, 0]
   ); // axis to rotate around (Y)
-
-  // Now move the drawing position a bit to where we want to
-  // start drawing the square.
-  mat4.translate(
-    modelViewMatrix, // destination matrix
-    modelViewMatrix, // matrix to translate
-    [cubeRotation.pan, 0.0, 0.0]
-  ); // amount to translate
 
   mat4.rotate(
     modelViewMatrix, // destination matrix
