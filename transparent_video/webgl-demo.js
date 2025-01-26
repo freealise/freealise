@@ -289,7 +289,7 @@ function setupVideo(url) {
   video.muted = true;
   video.loop = true;
   
-  track.kind = 'subtitles';
+  track.kind = 'metadata';
   track.default = true;
   track.src = url.replace('.mp4', '.vtt');
 
