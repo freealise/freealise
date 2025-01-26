@@ -34,7 +34,7 @@ function drawScene(gl, programInfo, buffers, texture, cubeRotation, seg, pov) {
   mat4.rotate(
     modelViewMatrix, // destination matrix
     modelViewMatrix, // matrix to rotate
-    pov.pitch * 5 // amount to rotate in radians
+    pov.pitch * 5, // amount to rotate in radians
     [1, 0, 0]
   ); // axis to rotate around (X)
   mat4.rotate(
