@@ -430,6 +430,7 @@ function handleSubs(e) {
           timepoints[i] = timepoints[i].split('\n')[2].split(' ')[1];
           povs[i] = timepoints[i].split(',');
         }
+        video.play();
     }
     reader.onerror = function (evt) {
         alert("Error reading file");
