@@ -292,8 +292,14 @@ function setupVideo(url) {
   track.kind = 'subtitles';
   track.default = true;
   track.src = url.replace('.mp4', '.vtt');
-  track.activeCues[0].line = 0;
-  video.textTracks[0].mode = 'showing';
+  track.onload = function() {
+    video.textTracks[0].mode = 'showing';
+    video.textTracks[0].activeCues[0].line = 0;
+  }
+  try {
+    video.textTracks[0].mode = 'showing';
+    video.textTracks[0].activeCues[0].line = 0;
+  } catch(e) {alert(e)}
 
   const xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
