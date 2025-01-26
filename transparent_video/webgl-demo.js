@@ -154,8 +154,6 @@ function main() {
       if (povs[document.querySelector("#time").value]) {
         pov.heading = parseFloat(povs[document.querySelector("#time").value][0]);
         pov.pitch = parseFloat(povs[document.querySelector("#time").value][1]);
-        
-        video.textTracks[0].activeCues[document.querySelector("#time").value].line = 0;
       } else {
         pov.heading = 0.0
         pov.pitch = 0.0;
@@ -334,6 +332,11 @@ function setupVideo(url) {
   video.oncanplaythrough = function() {
     video.play();
     video.textTracks[0].mode = 'showing';
+    try {
+    for (var i=0; i<video.textTracks[0].activeCues.length; i++) {
+      video.textTracks[0].activeCues[i].line = 0;
+    }
+    } catch(e) {alert(e)}
   }
 
   function checkReady() {
