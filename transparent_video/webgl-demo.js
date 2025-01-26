@@ -8,8 +8,8 @@ let pov = {'heading':0.0, 'pitch':0.0};
 let deltaTime = 0;
 let video = document.createElement("video");
 let track = document.createElement("track");
+// document.body.appendChild(video);
 video.appendChild(track);
-document.body.appendChild(video);
 // will set to true when video can be copied to texture
 let copyVideo = false;
 
