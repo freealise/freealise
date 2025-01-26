@@ -6,7 +6,9 @@ let seg = 144;
 let cubeRotation = {'x':0.0, 'y':0.0, 'z':0.0, 'pan':0.0, 'fov':45};
 let pov = {'heading':0.0, 'pitch':0.0};
 let deltaTime = 0;
-let video;
+let video = document.createElement("video");
+let track = document.createElement("track");
+video.appendChild(track);
 // will set to true when video can be copied to texture
 let copyVideo = false;
 
@@ -277,7 +279,6 @@ function updateTexture(gl, texture, video) {
 }
 
 function setupVideo(url) {
-  video = document.createElement("video");
   video.crossorigin = 'anonymous';
 
   let playing = false;
@@ -286,6 +287,9 @@ function setupVideo(url) {
   video.playsInline = true;
   video.muted = true;
   video.loop = true;
+  
+  track.kind = 'subtitles';
+  track.default = true;
 
   // Waiting for these 2 events ensures
   // there is data in the video
@@ -428,6 +432,8 @@ function handleSubs(e) {
     reader.onerror = function (evt) {
         alert("Error reading file");
     }
+    track.src = URL.createObjectURL(e.target.files[0]);
+    video.textTracks[0].mode = 'showing';
   }
 }
 
