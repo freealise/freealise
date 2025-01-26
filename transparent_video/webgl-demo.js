@@ -155,7 +155,7 @@ try {
       document.querySelector("#time").value = parseInt(video.currentTime);
       if (povs[document.querySelector("#time").value]) {
         pov.heading = parseFloat(povs[document.querySelector("#time").value][0]);
-        pov.pitch = -parseFloat(povs[document.querySelector("#time").value][1]);
+        pov.pitch = parseFloat(povs[document.querySelector("#time").value][1]);
       } else {
         pov.heading = 0.0
         pov.pitch = 0.0;
