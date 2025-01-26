@@ -330,13 +330,11 @@ function setupVideo(url) {
 
   video.src = url;
   video.oncanplaythrough = function() {
-    video.play();
     video.textTracks[0].mode = 'showing';
-    try {
-    for (var i=0; i<video.textTracks[0].activeCues.length; i++) {
-      video.textTracks[0].activeCues[i].line = 0;
+    for (var i=0; i<video.textTracks[0].cues.length; i++) {
+      video.textTracks[0].cues[i].line = 0;
     }
-    } catch(e) {alert(e)}
+    video.play();
   }
 
   function checkReady() {
