@@ -153,7 +153,7 @@ function main() {
       document.querySelector("#time").value = parseInt(video.currentTime);
       if (povs[document.querySelector("#time").value]) {
         pov.heading = parseFloat(povs[document.querySelector("#time").value][0]);
-        pov.pitch = parseFloat(povs[document.querySelector("#time").value][1]);m
+        pov.pitch = parseFloat(povs[document.querySelector("#time").value][1]);
         
         video.textTracks[0].activeCues[document.querySelector("#time").value].line = 0;
       } else {
