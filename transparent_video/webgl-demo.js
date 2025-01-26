@@ -146,7 +146,7 @@ try {
       updateTexture(gl, texture, video);
     }
 
-    drawScene(gl, programInfo, buffers, texture, cubeRotation, seg);
+    drawScene(gl, programInfo, buffers, texture, cubeRotation, seg, pov);
 } catch(e) {alert(e);}
     if (snapshot === true) {
       getSnapshot();
