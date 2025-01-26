@@ -62,7 +62,7 @@ function drawScene(gl, programInfo, buffers, texture, cubeRotation, seg, pov) {
     modelViewMatrix, // destination matrix
     modelViewMatrix, // matrix to rotate
     cubeRotation.x * 0.005, // amount to rotate in radians
-    [Math.sin(pov.heading), 0, Math.cos(pov.heading)]
+    [Math.cos(pov.heading), 0, Math.sin(pov.heading)]
   ); // axis to rotate around (X)
   mat4.rotate(
     modelViewMatrix, // destination matrix
