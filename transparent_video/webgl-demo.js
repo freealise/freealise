@@ -141,16 +141,11 @@ function main() {
     now *= 0.001; // convert to seconds
     deltaTime = now - then;
     then = now;
-try {
+
     if (copyVideo) {
       updateTexture(gl, texture, video);
     }
 
-    drawScene(gl, programInfo, buffers, texture, cubeRotation, seg, pov);
-} catch(e) {alert(e);}
-    if (snapshot === true) {
-      getSnapshot();
-    }
     if (document.querySelector("#time").value != parseInt(video.currentTime)) {
       document.querySelector("#time").value = parseInt(video.currentTime);
       if (povs[document.querySelector("#time").value]) {
@@ -160,6 +155,11 @@ try {
         pov.heading = 0.0
         pov.pitch = 0.0;
       }
+    }
+    drawScene(gl, programInfo, buffers, texture, cubeRotation, seg, pov);
+    
+    if (snapshot === true) {
+      getSnapshot();
     }
     requestAnimationFrame(render);
   }
