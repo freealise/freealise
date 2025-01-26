@@ -292,6 +292,7 @@ function setupVideo(url) {
   track.kind = 'subtitles';
   track.default = true;
   track.src = url.replace('.mp4', '.vtt');
+  track.activeCues[0].line = 0;
   video.textTracks[0].mode = 'showing';
 
   const xhttp = new XMLHttpRequest();
