@@ -30,6 +30,19 @@ function drawScene(gl, programInfo, buffers, texture, cubeRotation, seg, pov) {
   // Set the drawing position to the "identity" point, which is
   // the center of the scene.
   const modelViewMatrix = mat4.create();
+  
+  mat4.rotate(
+    modelViewMatrix, // destination matrix
+    modelViewMatrix, // matrix to rotate
+    pov.pitch * 5 // amount to rotate in radians
+    [1, 0, 0]
+  ); // axis to rotate around (X)
+  mat4.rotate(
+    modelViewMatrix, // destination matrix
+    modelViewMatrix, // matrix to rotate
+    pov.heading, // amount to rotate in radians
+    [0, 1, 0]
+  ); // axis to rotate around (Y)
 
   // Now move the drawing position a bit to where we want to
   // start drawing the square.
@@ -48,13 +61,13 @@ function drawScene(gl, programInfo, buffers, texture, cubeRotation, seg, pov) {
   mat4.rotate(
     modelViewMatrix, // destination matrix
     modelViewMatrix, // matrix to rotate
-    -pov.pitch * 5 + cubeRotation.x * 0.005, // amount to rotate in radians
+    cubeRotation.x * 0.005, // amount to rotate in radians
     [1, 0, 0]
   ); // axis to rotate around (X)
   mat4.rotate(
     modelViewMatrix, // destination matrix
     modelViewMatrix, // matrix to rotate
-    pov.heading + cubeRotation.y * 0.005, // amount to rotate in radians
+    cubeRotation.y * 0.005, // amount to rotate in radians
     [0, 1, 0]
   ); // axis to rotate around (Y)
 
