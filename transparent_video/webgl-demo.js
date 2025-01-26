@@ -418,7 +418,7 @@ function handleSubs(e) {
     var reader = new FileReader();
     reader.readAsText(e.target.files[0], "UTF-8");
     reader.onload = function (evt) {
-        alert(evt.target.result);
+        alert('!');//evt.target.result);
         timepoints = evt.target.result.slice(8).split("\n\n");
         for (var i=0; i<timepoints.length; i++) {
           timepoints[i] = timepoints[i].split('\n')[2].split(' ')[1];
