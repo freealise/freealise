@@ -153,7 +153,9 @@ function main() {
       document.querySelector("#time").value = parseInt(video.currentTime);
       if (povs[document.querySelector("#time").value]) {
         pov.heading = parseFloat(povs[document.querySelector("#time").value][0]);
-        pov.pitch = parseFloat(povs[document.querySelector("#time").value][1]);
+        pov.pitch = parseFloat(povs[document.querySelector("#time").value][1]);m
+        
+        video.textTracks[0].activeCues[document.querySelector("#time").value].line = 0;
       } else {
         pov.heading = 0.0
         pov.pitch = 0.0;
@@ -331,10 +333,7 @@ function setupVideo(url) {
   video.src = url;
   video.oncanplaythrough = function() {
     video.play();
-    try{
-      video.textTracks[0].mode = 'showing';
-      video.textTracks[0].activeCues[0].line = 0;
-    } catch(e) {alert(e)}
+    video.textTracks[0].mode = 'showing';
   }
 
   function checkReady() {
