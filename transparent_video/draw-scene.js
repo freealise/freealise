@@ -38,18 +38,17 @@ function drawScene(gl, programInfo, buffers, texture, cubeRotation, seg, pov) {
     modelViewMatrix, // matrix to translate
     [cubeRotation.pan, 0.0, 0.0]
   ); // amount to translate
-  
-  mat4.rotate(
-    modelViewMatrix, // destination matrix
-    modelViewMatrix, // matrix to rotate
-    cubeRotation.x * 0.005, // amount to rotate in radians
-    [1, 0, 0]
-  ); // axis to rotate around (X)
 
   mat4.rotate(
     modelViewMatrix, // destination matrix
     modelViewMatrix, // matrix to rotate
     pov.pitch, // amount to rotate in radians
+    [1, 0, 0]
+  ); // axis to rotate around (X)
+  mat4.rotate(
+    modelViewMatrix, // destination matrix
+    modelViewMatrix, // matrix to rotate
+    cubeRotation.x * 0.005, // amount to rotate in radians
     [1, 0, 0]
   ); // axis to rotate around (X)
   mat4.rotate(
