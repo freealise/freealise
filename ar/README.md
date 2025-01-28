@@ -43,7 +43,7 @@ vectorizer: textbox with dot symbols x2 for sparse input by stroke (0-65535, 16 
 displace points out or in according to color difference from original (dithering) or merge with depth estimator and blur according to average depth  
   
 audio / subtitles: gsv source map, vtt  
-morpher: add text / svg overlays to equi panos  
+morpher: (or feDisplacementMap) add text / svg overlays to equi panos  
 
 docs: get commentary (preferably written first) out of code  
 in order of not succession but execution, to wiki with toc and markdown  
