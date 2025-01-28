@@ -25,7 +25,7 @@ https://github.com/ssatguru/BabylonJS-EditControl,
 https://github.com/ssatguru/BabylonJS-MeshEditor, 
 https://doc.babylonjs.com/toolsAndResources/assetLibraries/postProcessLibrary/asciiArtPP for depth, 
 https://doc.babylonjs.com/features/featuresDeepDive/materials/using/parallaxMapping for display ?) -> 3d video  
-foil -> mocap for auto quality feedback ?  
+animation by trilinear interpolation, foil -> mocap (+for auto quality feedback ?)  
 3d tiles (https://developers.google.com/maps/documentation/tile/create-renderer)  
 
 //https://www.google.com/streetview/how-it-works/  
