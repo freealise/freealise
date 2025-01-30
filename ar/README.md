@@ -38,7 +38,7 @@ word tree / net from dict: first word in description of same pos is parent, syno
   
 transcribe storyboard frames for indexing and visually impaired people, publish as newsletter for marketing  
   
-notation: rotate keyboard 90deg; show as is or png for spectrograms / tabs with vowel symbols (https://en.wikipedia.org/wiki/Combining_Diacritical_Marks)  
+notation: rotate keyboard 90deg; show as is or png for spectrograms / tabs with vowel symbols (https://en.wikipedia.org/wiki/Combining_Diacritical_Marks) or dot symbols x2 (0-65535, 16 colors)  
 vectorizer: merge with notation for very small pixel initial drawings  
 
 docs: get commentary (preferably written first) out of code  
