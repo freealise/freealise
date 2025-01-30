@@ -40,7 +40,6 @@ transcribe storyboard frames for indexing and visually impaired people, publish 
   
 notation: rotate keyboard 90deg; show as is or png for spectrograms / tabs with vowel symbols (https://en.wikipedia.org/wiki/Combining_Diacritical_Marks)  
 vectorizer: merge with notation  
-displace points out or in according to color difference from original (dithering)  
 
 docs: get commentary (preferably written first) out of code  
 in order of not succession but execution, to wiki with toc and markdown  
