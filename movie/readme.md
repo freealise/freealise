@@ -5,4 +5,4 @@ https://developers.google.com/maps/documentation/javascript/examples/streetview-
 transcription with sentence / word level timepoints  
 (https://huggingface.co/openai/whisper-large-v3)  
 
-only recognizes beginning of phrase when stress is on the first syllable ?
+presently recognizes not the beginning of phrase but the first stressed syllable with rapid increase in volume  
