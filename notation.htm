@@ -28,11 +28,11 @@ textarea {
   <canvas id="myCanvas" width="144" height="12" style="border:1px solid grey"></canvas>
 
   <script>
-const c = document.getElementById("myCanvas");
+const canvas = document.getElementById("myCanvas");
 const ctx = c.getContext("2d");
 ​
 function copy(id, x) {
-  var imgData = ctx.getImageData(0, 0, c.width, c.height);
+  var imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
   if (x === false) {
     imgData.data[id*4] = 0;
     imgData.data[id*4+1] = 0;
