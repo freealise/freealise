@@ -19,17 +19,30 @@ textarea {
   height: 12em;
   padding: 0;
 }
+
+#box {
+  width:144px;
+  overflow:scroll;
+  border:1px solid grey;
+}
   </style>
 </head>
 <body>
   <textarea id="txt"></textarea>
   <input type="checkbox" id="erase"/>erase <input type="checkbox" id="focus"/>focus
+  <canvas id="canvas" width="13" height="4096" style="display:none"></canvas>
+  <div id="box">
+    <canvas id="newCanvas" width="4096" height="13"></canvas>
+  </div>
   <h1> &#781;&#829;</h1>
-  <canvas id="myCanvas" width="13" height="144" style="border:1px solid grey"></canvas>
 
   <script>
-const canvas = document.getElementById("myCanvas");
+const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
+const newCanvas = document.getElementById("newCanvas");
+const newCtx = newCanvas.getContext("2d");
+newCtx.rotate(90 * Math.PI / 180);
+newCtx.scale(1, -1);
 
 function copy(id, x) {
   var imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
@@ -45,6 +58,7 @@ function copy(id, x) {
     imgData.data[id*4+3] = 0;
   }
   ctx.putImageData(imgData, 0, 0);
+  newCtx.drawImage(canvas, 0, 0);
 }
 
 var txt = document.getElementById("txt");
