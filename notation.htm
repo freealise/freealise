@@ -25,12 +25,12 @@ textarea {
   <textarea id="txt"></textarea>
   <input type="checkbox" id="erase"/>erase <input type="checkbox" id="focus"/>focus
   <h1> &#781;&#829;</h1>
-  <canvas id="myCanvas" width="144" height="12" style="border:1px solid grey"></canvas>
+  <canvas id="myCanvas" width="13" height="144" style="border:1px solid grey"></canvas>
 
   <script>
 const canvas = document.getElementById("myCanvas");
-const ctx = c.getContext("2d");
-​
+const ctx = canvas.getContext("2d");
+
 function copy(id, x) {
   var imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
   if (x === false) {
