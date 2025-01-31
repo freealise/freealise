@@ -20,7 +20,7 @@ projector with 3d prism instead of screen as screens are small and not bright en
 or plastic glasses (can be L/R ? https://commons.wikimedia.org/wiki/File:Bild-OpenKMQKit1.jpg)  
 or view stereograms on e-ink display, or very slow L/R sinusoidal movement for parallax  
   
-scene with color and shadows (filmed or drawn cubemap + layers / transparency; apply displacementmap from ascii to cube
+scene with color and shadows (filmed or drawn cubemap + layers / transparency; apply displacementmap from ascii or dot symbols x2 (0-65535, 16 colors) to cube
 https://github.com/ssatguru/BabylonJS-EditControl, 
 https://github.com/ssatguru/BabylonJS-MeshEditor, 
 https://doc.babylonjs.com/toolsAndResources/assetLibraries/postProcessLibrary/asciiArtPP for depth, 
@@ -38,7 +38,7 @@ word tree / net from dict: first word in description of same pos is parent, syno
   
 transcribe storyboard frames for indexing and visually impaired people, publish as newsletter for marketing  
   
-notation: rotate keyboard 90deg; show as is or png for spectrograms / tabs with vowel symbols (https://en.wikipedia.org/wiki/Combining_Diacritical_Marks) or dot symbols x2 (0-65535, 16 colors)  
+notation: rotate keyboard 90deg; show as is or png for spectrograms / tabs with vowel symbols (https://en.wikipedia.org/wiki/Combining_Diacritical_Marks)  
 vectorizer: merge with notation for very small pixel initial drawings  
 
 docs: get commentary (preferably written first) out of code  
