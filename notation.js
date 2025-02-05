@@ -1,5 +1,6 @@
-document.onload = function() {
+var iv = setInterval(function() {
 
+if (document.getElementById("canvas").getContext("2d")) {
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 const newCanvas = document.getElementById("newCanvas");
@@ -177,7 +178,8 @@ txt.onpointermove = function(e) {
   }
 }
 
-
+clearInterval(iv);
+}
 //console.log(String.fromCharCode(0x0329));
 //console.log(String.fromCodePoint(0x0329));
-};
+}, 40);
