@@ -1,8 +1,6 @@
-alert("ok");
 var iv = setInterval(function() {
-alert("iv");
-
 if (document.getElementById("canvas").getContext("2d")) {
+
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 const newCanvas = document.getElementById("newCanvas");
