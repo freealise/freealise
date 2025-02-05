@@ -39,7 +39,7 @@ word tree / net from dict: first word in description of same pos is parent, syno
 transcribe storyboard frames for indexing and visually impaired people, publish as newsletter for marketing  
   
 notation: rotate keyboard 90deg; show as is or png for spectrograms / tabs with vowel symbols (https://en.wikipedia.org/wiki/Combining_Diacritical_Marks)  
-vectorizer: merge with notation for very small pixel initial drawings  
+vectorizer: use paperjs instead of google charts (https://w00dn.github.io/papergrapher/)  
 
 docs: get commentary (preferably written first) out of code  
 in order of not succession but execution, to wiki with toc and markdown  
