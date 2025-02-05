@@ -1,3 +1,5 @@
+document.onload = function() {
+
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 const newCanvas = document.getElementById("newCanvas");
@@ -178,3 +180,4 @@ txt.onpointermove = function(e) {
 
 //console.log(String.fromCharCode(0x0329));
 //console.log(String.fromCodePoint(0x0329));
+};
