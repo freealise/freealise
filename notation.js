@@ -37,7 +37,7 @@ var txt = document.getElementById("txt");
 var erase = document.getElementById("erase");
 var focus = document.getElementById("focus");
 
-var keys = (' 1234567890-= qwertyuiop[] asdfghjkl;\'\\ zxcvbnm,./`• !@#$%^&*()_+ QWERTYUIOP{} ASDFGHJKL:"| ZXCVBNM<>?~').split('');
+var keys = ('•1234567890-=•qwertyuiop[]•asdfghjkl;\'\\•zxcvbnm,./` •!@#$%^&*()_+•QWERTYUIOP{}•ASDFGHJKL:"|•ZXCVBNM<>?~').split('');
 
 var cs = "&#805;";
 var cr = "&#827;";
