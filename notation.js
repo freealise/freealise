@@ -48,7 +48,7 @@ var init = "";
 var capsKey = false;
 var t, c;
 var md = false;
-var cols = 8;
+var cols = 12;
 
 for (var i=0; i<cols; i++) {
   init += " ";
@@ -74,7 +74,8 @@ txt.onkeydown = function(e) {
     t = txt.innerHTML.replace(/\n\n\s/g, "_");
     var indx = keys.indexOf(e.key);
 
-    if (e.ctrlKey || e.altKey || e.metaKey || e.capsKey || e.shiftKey) {
+    if (e.ctrlKey || e.altKey || e.metaKey) {  // || e.capsKey || e.shiftKey) {
+      indx += 13 * 4;
     }
     if (t.charAt(offset+indx) == String.fromCharCode(0x0329)) {
       c = l;
