@@ -91,7 +91,6 @@ txt.onkeydown = function(e) {
     var indx = keys.indexOf(e.key);
 
     if (e.ctrlKey || e.altKey || e.metaKey || e.capsKey || e.shiftKey) {
-      indx += 52;
     }
     if (t.charAt(offset+indx) == String.fromCharCode(0x0329)) {
       c = l;
