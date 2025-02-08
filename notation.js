@@ -39,15 +39,7 @@ var focus = document.getElementById("focus");
 
 var keys = ' !QAZ1qaz¹٩ᵃᶻ @WSX2wsx²ʷˢˣ #EDC3edc³ᵉᵈᶜ $RFV4rfv⁴ʳᶠᵛ %TGB5tgb⁵ᵗᵍᵇ ^YHN6yhn⁶ʸʰⁿ &UJM7ujm⁷ᵘʲᵐ *IK<8ik,⁸ⁱᵏ⁺ (OL>9ol.⁹ᵒˡ⁻ )P:?0p;/⁰ᵖ⁼~';
 
-var keys = (`
-1234567890-=
-qwertyuiop[]
-asdfghjkl;'\
-zxcvbnm,./  
-!@#$%^&*()_+
-QWERTYUIOP{}
-ASDFGHJKL:"|
-ZXCVBNM<>?~`).split('');
+var keys = (' 1234567890-= qwertyuiop[] asdfghjkl;\'\ zxcvbnm,./`• !@#$%^&*()_+ QWERTYUIOP{} ASDFGHJKL:"| ZXCVBNM<>?~').split('');
 
 /*
  ¹٩ᵃᶻ ²ʷˢˣ ³ᵉᵈᶜ ⁴ʳᶠᵛ ⁵ᵗᵍᵇ ⁶ʸʰⁿ ⁷ᵘʲᵐ ⁸ⁱᵏ⁺ ⁹ᵒˡ⁻ ⁰ᵖ⁼~
