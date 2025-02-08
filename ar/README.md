@@ -27,6 +27,7 @@ https://doc.babylonjs.com/toolsAndResources/assetLibraries/postProcessLibrary/as
 https://doc.babylonjs.com/features/featuresDeepDive/materials/using/parallaxMapping for display ?) -> 3d video  
 animation by trilinear interpolation, foil -> mocap (+for auto quality feedback ?)  
 3d tiles (https://developers.google.com/maps/documentation/tile/create-renderer)  
+draw cross-contour in 3d on google function chart ?  
 
 //https://www.google.com/streetview/how-it-works/  
 //upload video/subs to archive.org for transcoding (https://archive.org/details/download_20240209_0047)  
@@ -36,8 +37,6 @@ cluster consonants by SSP over vowels 2nd formant and base pitch (stress)
 shuffled flashcards combining into sentences (for formants/phonemes as by keyboard rows and columns, according to frequency to arrange by SSP; for words if facing up are a poetry set - practical, if down are solitaire / poker game - educational)  
 word tree / net from dict: first word in description of same pos is parent, synonyms if parents of each other (or similar descriptions)  
   
-draw on google function chart ?  
-
 code is prose: replace brackets with sub / sup for sentence structure and stress pattern, type of brackets is pos  
   
 docs: get commentary (preferably written first) out of program  
