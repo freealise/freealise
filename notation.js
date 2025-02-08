@@ -43,12 +43,11 @@ var keys = (`
 !@#$%^&*()_+
 QWERTYUIOP{}
 ASDFGHJKL:"|
-~ZXCVBNM<>? 
+ZXCVBNM<>?~ 
 1234567890-=
 qwertyuiop[]
 asdfghjkl;'\
-•zxcvbnm,./
-`).replace('•', '`');
+zxcvbnm,./`);
 
 /*
  ¹٩ᵃᶻ ²ʷˢˣ ³ᵉᵈᶜ ⁴ʳᶠᵛ ⁵ᵗᵍᵇ ⁶ʸʰⁿ ⁷ᵘʲᵐ ⁸ⁱᵏ⁺ ⁹ᵒˡ⁻ ⁰ᵖ⁼~
