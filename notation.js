@@ -37,16 +37,7 @@ var txt = document.getElementById("txt");
 var erase = document.getElementById("erase");
 var focus = document.getElementById("focus");
 
-var keys = ' !QAZ1qaz¹٩ᵃᶻ @WSX2wsx²ʷˢˣ #EDC3edc³ᵉᵈᶜ $RFV4rfv⁴ʳᶠᵛ %TGB5tgb⁵ᵗᵍᵇ ^YHN6yhn⁶ʸʰⁿ &UJM7ujm⁷ᵘʲᵐ *IK<8ik,⁸ⁱᵏ⁺ (OL>9ol.⁹ᵒˡ⁻ )P:?0p;/⁰ᵖ⁼~';
-
 var keys = (' 1234567890-= qwertyuiop[] asdfghjkl;\'\\ zxcvbnm,./`• !@#$%^&*()_+ QWERTYUIOP{} ASDFGHJKL:"| ZXCVBNM<>?~').split('');
-
-/*
- ¹٩ᵃᶻ ²ʷˢˣ ³ᵉᵈᶜ ⁴ʳᶠᵛ ⁵ᵗᵍᵇ ⁶ʸʰⁿ ⁷ᵘʲᵐ ⁸ⁱᵏ⁺ ⁹ᵒˡ⁻ ⁰ᵖ⁼~
-
-ᴀʙᴄᴅᴇꜰɢʜɪᴊᴋʟᴍɴᴏᴘꞯʀꜱᴛᴜᴠᴡ~ʏᴢ
-ᵃᵇᶜᵈᵉᶠᵍʰⁱʲᵏˡᵐⁿᵒᵖ𐞥ʳˢᵗᵘᵛʷˣʸᶻ
-*/
 
 var cs = "&#805;";
 var cr = "&#827;";
@@ -57,8 +48,9 @@ var init = "";
 var capsKey = false;
 var t, c;
 var md = false;
+var cols = 8;
 
-for (var i=0; i<10; i++) {
+for (var i=0; i<cols; i++) {
   init += " ";
   for (var j=0; j<12; j++) {
     init += o;
@@ -93,24 +85,24 @@ txt.onkeydown = function(e) {
     copy(offset+indx);
 
   } else if (e.key == "ArrowRight" || e.key == " ") {
-    offset += 13 * 10;
+    offset += 13 * cols;
 
     if (offset >= txt.innerHTML.length) {
-      if (txt.innerHTML.length < 13 * 10 * 12) {
+      if (txt.innerHTML.length < 13 * cols * 12) {
         txt.innerHTML += init;
       } else {
-        offset -= 13 * 10;
+        offset -= 13 * cols;
       }
     }
 
   } else if (e.key == "ArrowLeft" || e.key == "Backspace") {
-    offset -= 13 * 10;
+    offset -= 13 * cols;
 
     if (offset < 0) {
-      if (txt.innerHTML.length < 13 * 10 * 12) {
+      if (txt.innerHTML.length < 13 * cols * 12) {
         txt.innerHTML = init + txt.innerHTML;
       }
-      offset += 13 * 10;
+      offset += 13 * cols;
     }
 
   } else if (e.key == "CapsLock") {
