@@ -38,6 +38,8 @@ word tree / net from dict: first word in description of same pos is parent, syno
   
 notation: rotate keyboard 90deg; show as is or png for spectrograms / tabs with vowel symbols (https://en.wikipedia.org/wiki/Combining_Diacritical_Marks)  
 draw on google function chart ?  
+
+code is prose: replace brackets with sub / sup for sentence structure and stress pattern, type of brackets is pos  
   
 docs: get commentary (preferably written first) out of program  
 in order of not succession but execution, to wiki with toc and markdown  
