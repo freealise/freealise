@@ -36,8 +36,6 @@ cluster consonants by SSP over vowels 2nd formant and base pitch (stress)
 shuffled flashcards combining into sentences (for formants/phonemes as by keyboard rows and columns, according to frequency to arrange by SSP; for words if facing up are a poetry set - practical, if down are solitaire / poker game - educational)  
 word tree / net from dict: first word in description of same pos is parent, synonyms if parents of each other (or similar descriptions)  
   
-code is prose (doesn't have to be IF, but readable code formatted into text)  
-  
 notation: rotate keyboard 90deg; show as is or png for spectrograms / tabs with vowel symbols (https://en.wikipedia.org/wiki/Combining_Diacritical_Marks)  
 draw on google function chart ?  
   
