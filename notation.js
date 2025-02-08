@@ -39,6 +39,7 @@ var focus = document.getElementById("focus");
 
 var keys = ('•1234567890-=•qwertyuiop[]•asdfghjkl;\'\\•zxcvbnm,./` •!@#$%^&*()_+•QWERTYUIOP{}•ASDFGHJKL:"|•ZXCVBNM<>?~').split('');
 
+// https://en.wikipedia.org/wiki/Combining_Diacritical_Marks
 var cs = "&#805;";
 var cr = "&#827;";
 var o = "&#809;";
