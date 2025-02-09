@@ -45,7 +45,7 @@ in order of not succession but execution, to wiki with toc and markdown
 //foil is covered by food-grade wax from cheese;  
 make (wet or papier mache with starch + water for natural beings) paper models from depth maps with texture  
 drawn from pano thumbnails with large fov stitched together,  
-embossed with wire / foil / wax and painted in CMYK  
+embossed with cardboard and stylus / wire / foil / wax and painted in CMYK  
 (https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=CCBWqYeljZnrtlJzJQaEGw&cb_client=maps_sv.tactile.gps&w=8192&h=4096&yaw=208.25&pitch=0&thumbfov=165)  
   
 //draw cross-contour for storyboards; draw objects on pano and find depth map  
