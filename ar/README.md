@@ -42,7 +42,7 @@ code is prose: tone letters for sentence structure and stress pattern, different
 docs: get commentary (preferably written first) out of program  
 in order of not succession but execution, to wiki with toc and markdown  
   
-//foil is covered by food-grade wax from cheese;  
+//foil is covered by food-grade white wax like the one from cheese;  
 make (wet or papier mache with starch + water for natural beings) paper models from depth maps with texture  
 drawn from pano thumbnails with large fov stitched together,  
 embossed with cardboard and stylus / wire / foil / wax and painted in CMYK  
