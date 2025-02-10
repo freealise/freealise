@@ -51,7 +51,7 @@ drawn or printed from pano thumbnails with large fov stitched together,
 embossed with cardboard and stylus / wire / foil / wax and painted in CMYK  
 (https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=CCBWqYeljZnrtlJzJQaEGw&cb_client=maps_sv.tactile.gps&w=8192&h=4096&yaw=208.25&pitch=0&thumbfov=165)  
   
-//draw cross-contour for storyboards; draw objects on pano and find depth map  
+//draw objects on pano and find depth map  
 //scanned foil (photogrammetry) / optical flow or stereo depth estimator (+in realtime)  
   (https://docs.opencv.org/4.x/d9/db7/tutorial_py_table_of_contents_calib3d.html, 
    https://docs.opencv.org/4.x/d4/dee/tutorial_optical_flow.html,
