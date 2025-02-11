@@ -1,8 +1,10 @@
 The golem reads all the Jewish religious books and becomes a rabbi's assistant or priest.  
-(ai machine-learning neural-network tensorflow artificial-intelligence)  
+(gemini ai machine-learning neural-network tensorflow artificial-intelligence)  
+
+zero temperature if generative  
   
 train AI on Sefaria (fuzzy search) -> blog [sefaria, opensiddur] (https://corpus.quran.com/)  
-can be an editor (storygrid/_) or language teacher, suggest books by summary (gutenberg), legislation (~copilot, or be a consultant),  
+can be an editor (storygrid/_) or language teacher (prompt to give example sentences or story with words removed ~mad libs), suggest books by summary (gutenberg), legislation (~copilot, or be a consultant),  
 detect propaganda, fake images or falsified election results or corruption (if has enough data: https://smlouvy.gov.cz/, sanctions list, propaganda source list), trade stocks, block ads.  
 evaluation of personal data for border control  
 find melodrama in lyrics and scripts  
