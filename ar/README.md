@@ -55,7 +55,7 @@ embossed with cardboard and stylus / wire / foil / wax and painted in CMYK
 (https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=CCBWqYeljZnrtlJzJQaEGw&cb_client=maps_sv.tactile.gps&w=8192&h=4096&yaw=208.25&pitch=0&thumbfov=165)  
   
 //storyboards are very small pictures enlarged and detailed gradually (~kanji / progressive jpeg), halftone points / lines / shapes in CMYK; draw objects on pano and find depth map  
-//detect spectrograms (https://docs.opencv.org/4.x/d2/d64/tutorial_table_of_content_objdetect.html)  
+//detect spectrograms (https://docs.opencv.org/4.x/d4/dc6/tutorial_py_template_matching.html)  
   
 https://cyos.babylonjs.com/  
 https://sandbox.babylonjs.com/  
