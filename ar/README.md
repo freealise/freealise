@@ -25,6 +25,11 @@ https://github.com/ssatguru/BabylonJS-EditControl,
 https://github.com/ssatguru/BabylonJS-MeshEditor, 
 https://doc.babylonjs.com/toolsAndResources/assetLibraries/postProcessLibrary/asciiArtPP for depth, 
 https://doc.babylonjs.com/features/featuresDeepDive/materials/using/parallaxMapping for display ?) -> 3d video  
+3d scanner: scanned foil (photogrammetry) / optical flow or stereo depth estimator (+in realtime)  
+  (https://docs.opencv.org/4.x/dd/d53/tutorial_py_depthmap.html,
+   https://docs.opencv.org/4.x/d4/dee/tutorial_optical_flow.html,
+   https://docs.opencv.org/3.4/d5/dc4/tutorial_adding_images.html)  
+from phone camera (distance from subject with several cams) + gyroscope  
 animation by trilinear interpolation, foil -> mocap (+for auto quality feedback ?)  
 3d tiles (https://developers.google.com/maps/documentation/tile/create-renderer)  
 draw cross-contour in 3d on google function chart ?  
@@ -50,13 +55,7 @@ embossed with cardboard and stylus / wire / foil / wax and painted in CMYK
 (https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=CCBWqYeljZnrtlJzJQaEGw&cb_client=maps_sv.tactile.gps&w=8192&h=4096&yaw=208.25&pitch=0&thumbfov=165)  
   
 //storyboards are very small pictures enlarged and detailed gradually (~kanji / progressive jpeg), halftone points / lines / shapes in CMYK; draw objects on pano and find depth map  
-//scanned foil (photogrammetry) / optical flow or stereo depth estimator (+in realtime)  
-  (https://docs.opencv.org/4.x/d9/db7/tutorial_py_table_of_contents_calib3d.html, 
-   https://docs.opencv.org/4.x/d4/dee/tutorial_optical_flow.html,
-   https://docs.opencv.org/3.4/d5/dc4/tutorial_adding_images.html)  
 //detect spectrograms (https://docs.opencv.org/4.x/d2/d64/tutorial_table_of_content_objdetect.html)  
-  
-3d scanner: optical flow from phone camera (distance from subject with several cams) + gyroscope  
   
 https://cyos.babylonjs.com/  
 https://sandbox.babylonjs.com/  
