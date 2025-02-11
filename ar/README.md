@@ -37,8 +37,6 @@ cluster consonants by SSP over vowels 2nd formant and base pitch (stress)
 shuffled flashcards combining into sentences (for formants/phonemes as by keyboard rows and columns, according to frequency to arrange by SSP; for words if facing up are a poetry set - practical, if down are solitaire / poker game - educational)  
 word tree / net from dict: first word in description of same pos is parent, synonyms if parents of each other (or similar descriptions)  
   
-code is prose: tone letters for sentence structure and stress pattern, different brackets for pos  
-  
 docs: get commentary (preferably written first) out of program  
 in order of not succession but execution, to wiki with toc and markdown  
 
