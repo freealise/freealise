@@ -44,9 +44,6 @@ word tree / net from dict: first word in description of same pos is parent, syno
 docs: get commentary (preferably written first) out of program  
 in order of not succession but execution, to wiki with toc and markdown  
 
-poly pitch detect by comb filtering (in webaudio add the same signal delayed by varying time starting from longest and find greatest output volumes excluding harmonics of already existing unless louder than base pitch)  
-or in spectrum analyser find lowest pitch above threshold then exclude its harmonics unless louder than itself then continue up the scale  
-  
 //foil is covered by food-grade white wax like the one from cheese;  
 make (wet or papier mache with starch + water for natural beings) paper models from depth maps with texture  
 drawn or printed from pano thumbnails with large fov stitched together,  
