@@ -37,7 +37,6 @@ draw cross-contour in 3d on google function chart ?
 //https://www.google.com/streetview/how-it-works/  
 //upload video/subs to archive.org for transcoding (https://archive.org/details/download_20240209_0047)  
   
-gemini: prompt to give example sentences or story with words removed (~mad libs, zero temperature)  
 cluster consonants by SSP over vowels 2nd formant and base pitch (stress)  
 shuffled flashcards combining into sentences (for formants/phonemes as by keyboard rows and columns, according to frequency to arrange by SSP; for words if facing up are a poetry set - practical, if down are solitaire / poker game - educational)  
 word tree / net from dict: first word in description of same pos is parent, synonyms if parents of each other (or similar descriptions)  
