@@ -41,8 +41,8 @@ cluster consonants by SSP over vowels 2nd formant and base pitch (stress)
 shuffled flashcards combining into sentences (for formants/phonemes as by keyboard rows and columns, according to frequency to arrange by SSP; for words if facing up are a poetry set - practical, if down are solitaire / poker game - educational)  
 word tree / net from dict: first word in description of same pos is parent, synonyms if parents of each other (or similar descriptions)  
   
-docs: get commentary (preferably written first) out of program  
-in order of not succession but execution, to wiki with toc and markdown  
+docs: get commentary out of program with liquid tags and markdown  
+in order of not succession but execution, to wiki with toc  
 
 //foil is covered by food-grade white wax like the one from cheese;  
 make (wet or papier mache with starch + water for natural beings) paper models from depth maps with texture  
