@@ -37,7 +37,6 @@ draw cross-contour in 3d on google function chart ?
 //https://www.google.com/streetview/how-it-works/  
 //upload video/subs to archive.org for transcoding (https://archive.org/details/download_20240209_0047)  
   
-cluster consonants by SSP over vowels 2nd formant and base pitch (stress)  
 shuffled flashcards combining into sentences (for formants/phonemes as by keyboard rows and columns, according to frequency to arrange by SSP; for words if facing up are a poetry set - practical, if down are solitaire / poker game - educational)  
 word tree / net from dict: first word in description of same pos is parent, synonyms if parents of each other (or similar descriptions)  
   
@@ -49,4 +48,6 @@ embossed with cardboard and stylus / wire / foil / wax and painted in CMYK
   
 //storyboards are very small pictures enlarged and detailed gradually (~kanji / progressive jpeg), halftone points / lines / shapes in CMYK  
 draw objects on pano and find depth map, apply median blur with small kernel  
+
 //detect spectrograms (https://docs.opencv.org/4.x/df/def/tutorial_js_meanshift.html, https://docs.opencv.org/4.x/d4/dc6/tutorial_py_template_matching.html, https://docs.opencv.org/4.x/d6/de2/tutorial_py_table_of_contents_ml.html)  
+cluster consonants by SSP over vowels 2nd formant and base pitch (stress)  
