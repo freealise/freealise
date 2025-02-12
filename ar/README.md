@@ -46,5 +46,5 @@ embossed with cardboard and stylus / wire / foil / wax and painted in CMYK
 //storyboards are very small pictures enlarged and detailed gradually (~kanji / progressive jpeg), halftone points / lines / shapes in CMYK  
 draw objects on pano and find depth map, apply median blur with small kernel  
 
-//detect spectrograms (https://docs.opencv.org/4.x/df/def/tutorial_js_meanshift.html, https://docs.opencv.org/4.x/d4/dc6/tutorial_py_template_matching.html, https://docs.opencv.org/4.x/d6/de2/tutorial_py_table_of_contents_ml.html)  
+//detect spectrograms (https://docs.opencv.org/4.x/df/def/tutorial_js_meanshift.html, https://docs.opencv.org/4.x/d4/dc6/tutorial_py_template_matching.html)  
 cluster consonants by SSP over vowels 2nd formant and base pitch (stress)  
