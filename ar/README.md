@@ -44,4 +44,3 @@ embossed with cardboard and stylus / wire / foil / wax and painted in CMYK
 (https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=CCBWqYeljZnrtlJzJQaEGw&cb_client=maps_sv.tactile.gps&w=8192&h=4096&yaw=208.25&pitch=0&thumbfov=165)  
   
 //storyboards are very small pictures enlarged and detailed gradually (~kanji / progressive jpeg), halftone points / lines / shapes in CMYK  
-apply median blur with small kernel  
