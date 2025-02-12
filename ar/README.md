@@ -16,7 +16,7 @@ track nail polish as guitar feedback ? (https://docs.opencv.org/4.x/df/d9d/tutor
   
 fisheye lenses on phone cameras for 360 view ?
   
-projector with 3d prism instead of screen as screens are small and not bright enough (https://upload.wikimedia.org/wikipedia/commons/e/e2/Pyramid_holographic_3D_holographic_projection_phone_projector_3D_holographic_projection_3D_mobile_phone_naked_eye_3D_pyramid.jpg)  
+projector with 3d prism instead of screen as screens are small and not bright enough (https://upload.wikimedia.org/wikipedia/commons/e/e2/Pyramid_holographic_3D_holographic_projection_phone_projector_3D_holographic_projection_3D_mobile_phone_naked_eye_3D_pyramid.jpg, https://commons.wikimedia.org/wiki/File:Anamorphose-miroir_01.JPG)  
 or plastic glasses with wireframe (transparent mat, black striped plastic, blue/yellow L/R, or prismatic top/bottom (why not L/R ?) https://en.wikipedia.org/wiki/KMQ_viewer)  
 or view stereograms on e-ink display, or very slow L/R sinusoidal movement for parallax  
   
