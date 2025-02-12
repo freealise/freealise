@@ -1,3 +1,6 @@
+/*
+hsv2rgb
+*/
 function hsvToRgb(h, s, v) {
             	var r, g, b;
             	var i;
