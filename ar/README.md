@@ -26,8 +26,8 @@ or view stereograms on e-ink display, or very slow L/R sinusoidal movement for p
    https://docs.opencv.org/3.4/d5/dc4/tutorial_adding_images.html)  
 from phone camera (distance from subject with several cams) + gyroscope  
 animation by trilinear interpolation, foil -> mocap (+for auto quality feedback ?)  
-3d tiles (https://developers.google.com/maps/documentation/tile/create-renderer)  
-
+  
+//3d tiles (https://www.google.com/intl/en_uk/earth/studio/)  
 //https://www.google.com/streetview/how-it-works/  
 //upload video/subs to archive.org for transcoding (https://archive.org/details/download_20240209_0047)  
   
