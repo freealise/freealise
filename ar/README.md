@@ -27,7 +27,6 @@ or view stereograms on e-ink display, or very slow L/R sinusoidal movement for p
 from phone camera (distance from subject with several cams) + gyroscope  
 animation by trilinear interpolation, foil -> mocap (+for auto quality feedback ?)  
 3d tiles (https://developers.google.com/maps/documentation/tile/create-renderer)  
-draw cross-contour in 3d on google function chart ?  
 
 //https://www.google.com/streetview/how-it-works/  
 //upload video/subs to archive.org for transcoding (https://archive.org/details/download_20240209_0047)  
