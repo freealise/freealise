@@ -1,3 +1,10 @@
+
+scene with color and shadows (filmed or drawn cubemap + layers / transparency; apply displacementmap from ascii or dot symbols x2 (0-65535, 16 colors) to cube
+https://github.com/ssatguru/BabylonJS-EditControl, 
+https://github.com/ssatguru/BabylonJS-MeshEditor, 
+https://doc.babylonjs.com/toolsAndResources/assetLibraries/postProcessLibrary/asciiArtPP for depth, 
+https://doc.babylonjs.com/features/featuresDeepDive/materials/using/parallaxMapping for display ?) -> 3d video  
+  
 https://cyos.babylonjs.com/  
 https://sandbox.babylonjs.com/  
 https://playground.babylonjs.com/  
