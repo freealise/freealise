@@ -20,11 +20,6 @@ projector with 3d prism instead of screen as screens are small and not bright en
 or plastic glasses with wireframe (transparent mat, black striped plastic, blue/yellow L/R, or prismatic top/bottom (why not L/R ?) https://en.wikipedia.org/wiki/KMQ_viewer)  
 or view stereograms on e-ink display, or very slow L/R sinusoidal movement for parallax  
   
-scene with color and shadows (filmed or drawn cubemap + layers / transparency; apply displacementmap from ascii or dot symbols x2 (0-65535, 16 colors) to cube
-https://github.com/ssatguru/BabylonJS-EditControl, 
-https://github.com/ssatguru/BabylonJS-MeshEditor, 
-https://doc.babylonjs.com/toolsAndResources/assetLibraries/postProcessLibrary/asciiArtPP for depth, 
-https://doc.babylonjs.com/features/featuresDeepDive/materials/using/parallaxMapping for display ?) -> 3d video  
 3d scanner: scanned foil (photogrammetry) / optical flow or stereo depth estimator (+in realtime)  
   (https://docs.opencv.org/4.x/dd/d53/tutorial_py_depthmap.html,
    https://docs.opencv.org/4.x/d4/dee/tutorial_optical_flow.html,
