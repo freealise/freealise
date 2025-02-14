@@ -12,6 +12,7 @@ find melodrama in lyrics and scripts
 matchmaker  
 IF educational game parser / character  
   
+interface designer  
 higher level language for screenwriting (data from flickr kml / georss)  
 can find data on its own by googling and spidering ?  
 can filter general stupidity linguistically ?  
