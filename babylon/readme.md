@@ -4,6 +4,7 @@ https://github.com/ssatguru/BabylonJS-EditControl,
 https://github.com/ssatguru/BabylonJS-MeshEditor, 
 https://doc.babylonjs.com/toolsAndResources/assetLibraries/postProcessLibrary/asciiArtPP for depth, 
 https://doc.babylonjs.com/features/featuresDeepDive/materials/using/parallaxMapping for display ?) -> 3d video  
+mocap (physics simulation for hair and clothes)  
   
 https://cyos.babylonjs.com/  
 https://sandbox.babylonjs.com/  
