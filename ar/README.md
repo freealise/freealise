@@ -27,7 +27,7 @@ animation by trilinear interpolation, foil -> mocap (+for auto quality feedback 
 //https://www.google.com/streetview/how-it-works/  
 //upload video/subs to archive.org for transcoding (https://archive.org/details/download_20240209_0047)  
   
-//foil is smoothed with nail file (?) and covered by food-grade white wax like the one from cheese;  
+//foil is smoothed with nail file or sandpaper (?) and covered by food-grade white wax like the one from cheese;  
 make (wet or papier mache with starch + water for natural beings) paper models from depth maps with texture  
 drawn or printed from pano thumbnails with large fov stitched together,  
 embossed with cardboard and stylus / wire / foil / wax and painted in CMYK  
