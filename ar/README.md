@@ -2,7 +2,8 @@
 [face-landmarks-detection](https://github.com/freealise/tfjs-models/tree/master/face-landmarks-detection)  
 [hand-pose-detection](https://github.com/freealise/tfjs-models/tree/master/hand-pose-detection)  
 [opencv](https://docs.opencv.org/4.x/d1/d0d/tutorial_js_pose_estimation.html, https://docs.opencv.org/3.4/d0/db7/tutorial_js_table_of_contents_dnn.html, https://docs.opencv.org/3.4/d6/de2/tutorial_py_table_of_contents_ml.html)  
-mocap: hand detection on video for chord transcription; pose and face detection for lipsync, music (common midi / web audio controls) or chat (with vectorizer)    
+mocap: hand detection on video for chord transcription; foil -> mocap (+for auto quality feedback ?)  
+pose and face detection for lipsync, music (common midi / web audio controls) or chat (with vectorizer)  
 [opencv nodejs/java](https://docs.opencv.org/4.x/dc/de6/tutorial_js_nodejs.html)  
   
 ([MindAR.js](https://github.com/hiukim/mind-ar-js))  
@@ -15,12 +16,10 @@ projector with 3d prism instead of screen as screens are small and not bright en
 or plastic glasses with wireframe (transparent mat, black striped plastic, blue/yellow L/R, or prismatic top/bottom (why not L/R ?) https://en.wikipedia.org/wiki/KMQ_viewer)  
 or view stereograms on e-ink display, or very slow L/R sinusoidal movement for parallax  
   
-3d scanner: scanned foil (photogrammetry) / optical flow or stereo depth estimator (+in realtime)  
+3d scanner: scanned foil (photogrammetry) / circular stereo depth estimation (+in realtime)  
   (https://docs.opencv.org/4.x/dd/d53/tutorial_py_depthmap.html,
-   https://docs.opencv.org/4.x/d4/dee/tutorial_optical_flow.html,
    https://docs.opencv.org/3.4/d5/dc4/tutorial_adding_images.html)  
 from phone camera (distance from subject with several cams) + gyroscope  
-animation by trilinear interpolation, foil -> mocap (+for auto quality feedback ?)  
   
 //3d tiles (https://www.google.com/intl/en_uk/earth/studio/)  
 //https://www.google.com/streetview/how-it-works/  
