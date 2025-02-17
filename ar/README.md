@@ -16,9 +16,11 @@ projector with 3d prism instead of screen as screens are small and not bright en
 or plastic glasses with wireframe (transparent mat, black striped plastic, blue/yellow L/R, or prismatic top/bottom (why not L/R ?) https://en.wikipedia.org/wiki/KMQ_viewer)  
 or view stereograms on e-ink display, or very slow L/R sinusoidal movement for parallax  
   
-3d scanner: scanned foil (photogrammetry) / circular stereo depth estimation (+in realtime)  
+3d scanner of foil (photogrammetry): circular optical flow / stereo depth estimation (+in realtime)  
   (https://docs.opencv.org/4.x/dd/d53/tutorial_py_depthmap.html,
+   https://docs.opencv.org/4.x/d4/dee/tutorial_optical_flow.html,
    https://docs.opencv.org/3.4/d5/dc4/tutorial_adding_images.html)  
+for edges with linear interpolation between them along flow direction (x for stereo)  
 from phone camera (distance from subject with several cams) + gyroscope  
   
 //3d tiles (https://www.google.com/intl/en_uk/earth/studio/)  
