@@ -3,7 +3,7 @@ scene with color and shadows (filmed or drawn cubemap + layers / transparency; a
 https://github.com/ssatguru/BabylonJS-EditControl, 
 https://github.com/ssatguru/BabylonJS-MeshEditor, 
 https://doc.babylonjs.com/toolsAndResources/assetLibraries/postProcessLibrary/asciiArtPP for depth, 
-https://doc.babylonjs.com/features/featuresDeepDive/materials/using/parallaxMapping for display ?) -> 3d video  
+https://doc.babylonjs.com/features/featuresDeepDive/materials/using/parallaxMapping for display ?) -> 3d video (animation by trilinear interpolation)  
 mocap (physics simulation for hair and clothes, or detect markers by color - https://docs.opencv.org/4.x/df/d9d/tutorial_py_colorspaces.html)  
   
 https://cyos.babylonjs.com/  
