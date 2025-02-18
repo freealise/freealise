@@ -15,7 +15,7 @@ fisheye lenses on phone cameras for 360 view (https://en.wikipedia.org/wiki/Seco
 projector with 3d prism instead of screen as screens are small and not bright enough (https://upload.wikimedia.org/wikipedia/commons/e/e2/Pyramid_holographic_3D_holographic_projection_phone_projector_3D_holographic_projection_3D_mobile_phone_naked_eye_3D_pyramid.jpg, https://commons.wikimedia.org/wiki/File:Anamorphose-miroir_01.JPG)  
 or plastic glasses with wireframe (transparent mat, black striped plastic, or prismatic top/bottom or L/R - https://en.wikipedia.org/wiki/KMQ_viewer)  
   
-3d scanner of foil (photogrammetry): crossfading ai depth estimation from phone camera + gyroscope (https://docs.opencv.org/3.4/d5/dc4/tutorial_adding_images.html)    
+(https://docs.opencv.org/3.4/d5/dc4/tutorial_adding_images.html)    
   
 //3d tiles (https://www.google.com/intl/en_uk/earth/studio/)  
 //https://www.google.com/streetview/how-it-works/  
