@@ -10,7 +10,7 @@ pose and face detection for lipsync, music (common midi / web audio controls) or
 ([AR.js](https://github.com/AR-js-org/AR.js))  
 [jsartoolkit5](https://github.com/artoolkitx/jsartoolkit5)  
   
-fisheye lenses on phone cameras for 360 view ?
+fisheye lenses on phone cameras for 360 view (https://en.wikipedia.org/wiki/Secondary_lens), to equi with ffmpeg  
   
 projector with 3d prism instead of screen as screens are small and not bright enough (https://upload.wikimedia.org/wikipedia/commons/e/e2/Pyramid_holographic_3D_holographic_projection_phone_projector_3D_holographic_projection_3D_mobile_phone_naked_eye_3D_pyramid.jpg, https://commons.wikimedia.org/wiki/File:Anamorphose-miroir_01.JPG)  
 or plastic glasses with wireframe (transparent mat, black striped plastic, or prismatic top/bottom or L/R - https://en.wikipedia.org/wiki/KMQ_viewer)  
