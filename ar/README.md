@@ -16,7 +16,7 @@ projector with 3d prism instead of screen as screens are small and not bright en
 or plastic glasses with wireframe (transparent mat, black striped plastic, blue/yellow L/R, or prismatic top/bottom (why not L/R ?) https://en.wikipedia.org/wiki/KMQ_viewer)  
 or view stereograms on e-ink display, or very slow L/R sinusoidal movement for parallax  
   
-3d scanner of foil (photogrammetry): averaged ai depth estimation from phone camera + gyroscope (https://docs.opencv.org/3.4/d5/dc4/tutorial_adding_images.html)    
+3d scanner of foil (photogrammetry): crossfading ai depth estimation from phone camera + gyroscope (https://docs.opencv.org/3.4/d5/dc4/tutorial_adding_images.html)    
   
 //3d tiles (https://www.google.com/intl/en_uk/earth/studio/)  
 //https://www.google.com/streetview/how-it-works/  
