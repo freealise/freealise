@@ -1,5 +1,4 @@
-STT ? radio show with Gemma  
-  
+
 https://developers.google.com/machine-learning  
 https://codelabs.developers.google.com/codelabs/tfjs-training-regression/index.html  
 https://codelabs.developers.google.com/codelabs/tensorflowjs-convert-python-savedmodel  
@@ -15,8 +14,6 @@ thisworddoesnotexist.com
 
 deterministic frequency parameter instead of 'temperature'  
 https://en.wiktionary.org/wiki/Wiktionary:Frequency_lists
-
-averaged face from camera as profile image (median filter)  
 
 https://www.wikiwand.com/en/Morphology_(folkloristics)  
 https://www.wikiwand.com/en/Historic-geographic_method  
