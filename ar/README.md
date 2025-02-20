@@ -2,7 +2,6 @@
 [face-landmarks-detection](https://github.com/freealise/tfjs-models/tree/master/face-landmarks-detection)  
 [hand-pose-detection](https://github.com/freealise/tfjs-models/tree/master/hand-pose-detection)  
 [opencv](https://docs.opencv.org/4.x/d1/d0d/tutorial_js_pose_estimation.html, https://docs.opencv.org/3.4/d0/db7/tutorial_js_table_of_contents_dnn.html, https://docs.opencv.org/3.4/d6/de2/tutorial_py_table_of_contents_ml.html)  
-mocap: hand detection on video for chord to midi / tab / notes transcription  
 foil -> mocap (+for auto quality feedback ?); pose and face detection for lipsync or chat (with vectorizer)  
 [opencv nodejs/java](https://docs.opencv.org/4.x/dc/de6/tutorial_js_nodejs.html)  
   
