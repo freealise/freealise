@@ -1,10 +1,10 @@
 [pose-detection](https://github.com/freealise/tfjs-models/tree/master/pose-detection)  
 [face-landmarks-detection](https://github.com/freealise/tfjs-models/tree/master/face-landmarks-detection)  
 [hand-pose-detection](https://github.com/freealise/tfjs-models/tree/master/hand-pose-detection)  
-[opencv](https://docs.opencv.org/4.x/d1/d0d/tutorial_js_pose_estimation.html, https://docs.opencv.org/3.4/d0/db7/tutorial_js_table_of_contents_dnn.html, https://docs.opencv.org/3.4/d6/de2/tutorial_py_table_of_contents_ml.html)  
-foil -> mocap (+for auto quality feedback ?); pose and face detection for lipsync or chat (with vectorizer)  
-[opencv nodejs/java](https://docs.opencv.org/4.x/dc/de6/tutorial_js_nodejs.html)  
+(https://docs.opencv.org/4.x/d1/d0d/tutorial_js_pose_estimation.html, https://docs.opencv.org/3.4/d0/db7/tutorial_js_table_of_contents_dnn.html)  
+foil -> mocap for auto quality feedback; face detection for lipsync or chat (with vectorizer)  
   
+[opencv nodejs/java](https://docs.opencv.org/4.x/dc/de6/tutorial_js_nodejs.html)  
 ([MindAR.js](https://github.com/hiukim/mind-ar-js))  
 ([AR.js](https://github.com/AR-js-org/AR.js))  
 [jsartoolkit5](https://github.com/artoolkitx/jsartoolkit5)  
@@ -13,8 +13,6 @@ fisheye lenses on phone cameras for 360 view (https://en.wikipedia.org/wiki/Seco
   
 projector with 3d prism instead of screen as screens are small and not bright enough (https://upload.wikimedia.org/wikipedia/commons/e/e2/Pyramid_holographic_3D_holographic_projection_phone_projector_3D_holographic_projection_3D_mobile_phone_naked_eye_3D_pyramid.jpg, https://commons.wikimedia.org/wiki/File:Anamorphose-miroir_01.JPG)  
 or plastic glasses with wireframe (transparent mat, black striped plastic, or prismatic top/bottom or L/R - https://en.wikipedia.org/wiki/KMQ_viewer)  
-  
-(https://docs.opencv.org/3.4/d5/dc4/tutorial_adding_images.html)    
   
 //3d tiles (https://www.google.com/intl/en_uk/earth/studio/)  
 //https://www.google.com/streetview/how-it-works/  
