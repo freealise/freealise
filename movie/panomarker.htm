@@ -109,6 +109,7 @@ function init() {
   
   volume.oninput = function(e) {
     const size = e.target.value*50;
+    sound.volume = e.target.value;
     marker.setSize({ height: size, width: size });
   }
 }
