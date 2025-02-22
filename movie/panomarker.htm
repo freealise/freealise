@@ -78,7 +78,7 @@ function init() {
     try {
     const rect = e.target.getBoundingClientRect();
     marker.setPosition({
-      heading: e.clientX-rect.x, 
+      heading: e.clientX-rect.x-180, 
       pitch: e.clientY-rect.y-90
     });
     } catch(e) {alert(e);}
