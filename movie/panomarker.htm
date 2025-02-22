@@ -82,9 +82,6 @@ function init() {
     if (sound.changing === false) {
       marker.setClassName('active');
       const mpos = marker.getPosition();
-      panorama.addListener("pov_changed", () => {
-        panorama.setPov({ heading: mpos.heading, pitch: mpos.pitch });
-      });
       map.onpointermove = function(e) {
         const rect = e.target.getBoundingClientRect();
         sound.heading = e.clientX-rect.x-180;
@@ -93,7 +90,6 @@ function init() {
       }
       sound.changing = true;
     } else {
-      panorama.removeListener("pov_changed");
       marker.setClassName('inactive');
       map.onpointermove = null;
       sound.changing = false;
