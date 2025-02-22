@@ -5,7 +5,7 @@
     <title>PanoMarker</title>
     <meta charset="utf-8">
     <style>
-        body {
+        #map, #trackpad {
           user-select: none;
           touch-action: none;
         }
@@ -50,6 +50,7 @@ var AVAILABLE_PANORAMAS = {
 function init() {
   var container = document.getElementById('map');
   var trackpad = document.getElementById('trackpad');
+  var data = document.getElementById('data');
 
   var panorama = new google.maps.StreetViewPanorama(
     container,
@@ -70,9 +71,21 @@ function init() {
       title: 'Click me!'
     });
 
-  /*google.maps.event.addListener(marker, 'click', function() {
-    alert('That\'s my bike!');
-  });*/
+  var sound = { heading: 0.0, pitch: 0.0, volume: 0.0, changing: false };
+  google.maps.event.addListener(marker, 'click', function() {
+    if (sound.changing === false) {
+      map.onpointermove = function(e) {
+        const rect = e.target.getBoundingClientRect();
+        sound.heading = e.clientX-rect.x-180;
+        sound.pitch = 90-(e.clientY-rect.y);
+        data.innerText = JSON.stringify(sound);
+      }
+      sound.changing = true;
+    } else {
+      map.onpointermove = null;
+      sound.changing = false;
+    }
+  });
   
   trackpad.onpointermove = function(e) {
     try {
@@ -91,5 +104,6 @@ function init() {
     <body onload="init()">
         <div id="map" style="width:620px; height:500px"></div>
         <div id="trackpad" style="background:url('./grid.png'); background-size: cover; width:360px; height:180px"></div>
+        <div id="data"></div>
     </body>
 </html>
