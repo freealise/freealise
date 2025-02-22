@@ -74,8 +74,9 @@ function init() {
   var sound = { heading: 0.0, pitch: 0.0, volume: 0.0, changing: false };
   google.maps.event.addListener(marker, 'click', function() {
     if (sound.changing === false) {
+      const mpos = marker.getPosition();
       map.onpointermove = function(e) {
-        e.preventDefault();
+        panorama.setPov({ heading: mpos.heading, pitch: mpos.pitch });
         const rect = e.target.getBoundingClientRect();
         sound.heading = e.clientX-rect.x-180;
         sound.pitch = 90-(e.clientY-rect.y);
