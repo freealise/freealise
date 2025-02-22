@@ -76,6 +76,7 @@ function init() {
       icon: 'info.png',
       title: 'Click me!'
     });
+  marker.setClassName('inactive');
 
   var sound = { heading: 0.0, pitch: 0.0, volume: 0.0, changing: false };
   google.maps.event.addListener(marker, 'click', function() {
@@ -86,6 +87,7 @@ function init() {
         const rect = e.target.getBoundingClientRect();
         sound.heading = e.clientX-rect.x-180;
         sound.pitch = 90-(e.clientY-rect.y);
+        document.getElementsByClassName('active')[0].style.transform = 'rotateY(' + sound.heading + 'deg) rotateX(' + sound.pitch + 'deg)';
         data.innerText = JSON.stringify(sound);
       }
       sound.changing = true;
