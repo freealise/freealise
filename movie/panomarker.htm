@@ -78,7 +78,9 @@ function init() {
   });*/
   
   trackpad.onpointermove = function(e) {
-    marker.position = { heading: e.clientX-e.getTargetClientRect().x, pitch: e.clientY-e.getTargetClientRect().y-90 };
+    try {
+    marker.setPosition({ heading: e.clientX-e.getTargetClientRect().x, pitch: e.clientY-e.getTargetClientRect().y-90 });
+    } catch(e) {alert(e);}
   }
 }
 
