@@ -33,7 +33,7 @@ var AVAILABLE_PANORAMAS = {
       getTileUrl: function() { return 'grid.png' }
     }
   },
-  gileppe: {
+  /*gileppe: {
     location: {
       pano: 'gileppe',
       description: 'Lac de la Gileppe',
@@ -47,7 +47,7 @@ var AVAILABLE_PANORAMAS = {
       centerHeading: 0,
       getTileUrl: function() { return 'gileppe.jpg' }
     }
-  }
+  }*/
 };
 
 function init() {
@@ -56,7 +56,7 @@ function init() {
   var panorama = new google.maps.StreetViewPanorama(
     container,
     {
-      pano: 'gileppe',
+      pano: 'grid',
       pov: {heading: 47.11, pitch: -13.1},
       panoProvider: function(pano) { return AVAILABLE_PANORAMAS[pano]; }
     });
@@ -81,30 +81,5 @@ function init() {
   </head>
     <body onload="init()">
         <div id="map" style="width:620px; height:500px"></div>
-        <pre>
-var container = document.getElementById('map');
-
-var panorama = new google.maps.StreetViewPanorama(
-  container,
-  {
-    pano: 'gileppe',
-    pov: {heading: 47.11, pitch: -13.1},
-    panoProvider: function(pano) { return AVAILABLE_PANORAMAS[pano]; }
-  });
-
-var marker = new PanoMarker(
-  {
-    pano: panorama,
-    position: {heading: 89.63, pitch: -27.22},
-    anchor: new google.maps.Point(20,20),
-    size: new google.maps.Size(40,40),
-    icon: 'info.png',
-    title: 'Click me!'
-  });
-
-google.maps.event.addListener(marker, 'click', function() {
-  alert('That\'s my bike!');
-});
-        </pre>
     </body>
 </html>
