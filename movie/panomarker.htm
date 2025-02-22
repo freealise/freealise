@@ -79,7 +79,8 @@ function init() {
   
   trackpad.onpointermove = function(e) {
     try {
-    marker.setPosition({ heading: e.clientX-e.getBoundingClientRect().x, pitch: e.clientY-e.getBoundingClientRect().y-90 });
+    const rect = e.target.getBoundingClientRect();
+    marker.setPosition({ heading: e.clientX-rect.x, pitch: e.clientY-rect.y-90 });
     } catch(e) {alert(e);}
   }
 }
