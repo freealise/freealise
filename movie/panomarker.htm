@@ -75,6 +75,10 @@ function init() {
   google.maps.event.addListener(marker, 'click', function() {
     alert('That\'s my bike!');
   });
+  google.maps.event.addListener(marker, 'drag', function(e) {
+    alert(JSON.stringify(e));
+    marker.position = { heading: e.x, pitch: e.y };
+  });
 }
 
     </script>
