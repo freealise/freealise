@@ -83,32 +83,29 @@ function init() {
     if (sound.changing === false) {
       marker.setClassName('active');
       const mpos = marker.getPosition();
-      map.onpointermove = function(e) {
+      trackpad.onpointermove = function(e) {
         const rect = e.target.getBoundingClientRect();
         sound.heading = e.clientX-rect.x-180;
         sound.pitch = 90-(e.clientY-rect.y);
         document.getElementsByClassName('active')[0].style.transform = 'rotateY(' + sound.heading + 'deg) rotateX(' + sound.pitch + 'deg)';
         data.innerText = JSON.stringify(sound);
       }
+      trackpad.onpointerdown = trackpad.onpointermove;
       sound.changing = true;
     } else {
       marker.setClassName('inactive');
-      map.onpointermove = null;
+      trackpad.onpointermove = function(e) {
+        const rect = e.target.getBoundingClientRect();
+        marker.setPosition({
+          heading: e.clientX-rect.x-180, 
+          pitch: 90-(e.clientY-rect.y)
+        });
+      }
+      trackpad.onpointerdown = trackpad.onpointermove;
       sound.changing = false;
       data.innerText = JSON.stringify(sound);
     }
   });
-  
-  trackpad.onpointermove = function(e) {
-    try {
-    const rect = e.target.getBoundingClientRect();
-    marker.setPosition({
-      heading: e.clientX-rect.x-180, 
-      pitch: 90-(e.clientY-rect.y)
-    });
-    } catch(e) {alert(e);}
-  }
-  trackpad.onpointerdown = trackpad.onpointermove;
 }
 
     </script>
