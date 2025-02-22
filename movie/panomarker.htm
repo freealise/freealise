@@ -56,7 +56,6 @@ var AVAILABLE_PANORAMAS = {
 function init() {
   var container = document.getElementById('map');
   var trackpad = document.getElementById('trackpad');
-  var data = document.getElementById('data');
 
   var panorama = new google.maps.StreetViewPanorama(
     container,
@@ -77,23 +76,24 @@ function init() {
       title: 'Click me!'
     });
   marker.setClassName('inactive');
-
   var sound = { heading: 0.0, pitch: 0.0, volume: 0.0, changing: false };
+  
   google.maps.event.addListener(marker, 'click', function() {
     if (sound.changing === false) {
       marker.setClassName('active');
+      
       const mpos = marker.getPosition();
       trackpad.onpointermove = function(e) {
         const rect = e.target.getBoundingClientRect();
         sound.heading = e.clientX-rect.x-180;
         sound.pitch = 90-(e.clientY-rect.y);
         document.getElementsByClassName('active')[0].style.transform = 'rotateY(' + sound.heading + 'deg) rotateX(' + sound.pitch + 'deg)';
-        data.innerText = JSON.stringify(sound);
       }
       trackpad.onpointerdown = trackpad.onpointermove;
       sound.changing = true;
     } else {
       marker.setClassName('inactive');
+      
       trackpad.onpointermove = function(e) {
         const rect = e.target.getBoundingClientRect();
         marker.setPosition({
@@ -103,7 +103,6 @@ function init() {
       }
       trackpad.onpointerdown = trackpad.onpointermove;
       sound.changing = false;
-      data.innerText = JSON.stringify(sound);
     }
   });
 }
@@ -113,6 +112,5 @@ function init() {
     <body onload="init()">
         <div id="map" style="width:620px; height:500px"></div>
         <div id="trackpad" style="background:url('./grid.png'); background-size: cover; width:360px; height:180px"></div>
-        <div id="data"></div>
     </body>
 </html>
