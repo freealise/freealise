@@ -77,7 +77,7 @@ function init() {
     alert('That\'s my bike!');
   });*/
   
-  trackpad.ondrag = function(e) {
+  trackpad.onpointermove = function(e) {
     marker.position = { heading: e.clientX-e.getTargetClientRect().x, pitch: e.clientY-e.getTargetClientRect().y-90 };
   }
 }
@@ -86,6 +86,6 @@ function init() {
   </head>
     <body onload="init()">
         <div id="map" style="width:620px; height:500px"></div>
-        <div id="trackpad" style="width:360px; height:180px"></div>
+        <div id="trackpad" style="background-color:lightgray; width:360px; height:180px"></div>
     </body>
 </html>
