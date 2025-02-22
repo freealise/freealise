@@ -74,11 +74,21 @@ function init() {
     alert('That\'s my bike!');
   });*/
   
+  var xold, yold, posold;
   trackpad.onpointermove = function(e) {
     try {
     const rect = e.target.getBoundingClientRect();
-    marker.setPosition({ heading: e.clientX-rect.x, pitch: e.clientY-rect.y-90 });
+    marker.setPosition({
+      heading: posold.heading + e.clientX-rect.x-xold, 
+      pitch: posold.pitch + e.clientY-rect.y-yold-90
+    });
     } catch(e) {alert(e);}
+  }
+  trackpad.onpointerdown = function(e) {
+    posold = marker.getPosition();
+    const rect = e.target.getBoundingClientRect();
+    xold = e.clientX-rect.x;
+    yold = e.clientY-rect.y;
   }
 }
 
