@@ -75,6 +75,7 @@ function init() {
   google.maps.event.addListener(marker, 'click', function() {
     if (sound.changing === false) {
       map.onpointermove = function(e) {
+        e.preventDefault();
         const rect = e.target.getBoundingClientRect();
         sound.heading = e.clientX-rect.x-180;
         sound.pitch = 90-(e.clientY-rect.y);
@@ -84,6 +85,7 @@ function init() {
     } else {
       map.onpointermove = null;
       sound.changing = false;
+      data.innerText = JSON.stringify(sound);
     }
   });
   
