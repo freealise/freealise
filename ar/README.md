@@ -2,7 +2,7 @@
 [face-landmarks-detection](https://github.com/freealise/tfjs-models/tree/master/face-landmarks-detection)  
 [hand-pose-detection](https://github.com/freealise/tfjs-models/tree/master/hand-pose-detection)  
 (https://docs.opencv.org/4.x/d1/d0d/tutorial_js_pose_estimation.html, https://docs.opencv.org/3.4/d0/db7/tutorial_js_table_of_contents_dnn.html)  
-Face detection for lipsync, motion capture of wax figures for auto quality feedback or virtual characters  
+Face or makeup color detection for lipsync, motion capture of wax figures for auto quality feedback or virtual characters  
   
 [opencv nodejs/java](https://docs.opencv.org/4.x/dc/de6/tutorial_js_nodejs.html)  
 ([MindAR.js](https://github.com/hiukim/mind-ar-js))  
