@@ -9,6 +9,12 @@
           user-select: none;
           touch-action: none;
         }
+        .active {
+          opacity: 1.0;
+        }
+        .inactive {
+          opacity: 0.5;
+        }
     </style>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
     <script src="./panomarker.js"></script>
@@ -67,16 +73,19 @@ function init() {
       position: {heading: 89.63, pitch: -27.22},
       anchor: new google.maps.Point(20,20),
       size: new google.maps.Size(40,40),
-      icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 73"><path fill="white" d="M16.1 32.848l-2.38 2.066v-13.97l-5.67-4.918-2.38 2.066V4.132l2.38-2.066L5.67 0 0 4.916v27.932l5.67 4.92V22.23l2.38-2.066v19.67l-1.19 1.032v4.148l1.19-1.033v24.58l-2.38 2.065 2.38 2.066 5.67-4.918v-28.71l2.38-2.065V52.52l-2.38 2.067 2.38 2.066v.002l5.67-4.918v-13.97l-5.67-4.92"/></svg>',
+      icon: 'info.png',
       title: 'Click me!'
     });
 
   var sound = { heading: 0.0, pitch: 0.0, volume: 0.0, changing: false };
   google.maps.event.addListener(marker, 'click', function() {
     if (sound.changing === false) {
+      marker.setClassName('active');
       const mpos = marker.getPosition();
-      map.onpointermove = function(e) {
+      panorama.addListener("pov_changed", () => {
         panorama.setPov({ heading: mpos.heading, pitch: mpos.pitch });
+      });
+      map.onpointermove = function(e) {
         const rect = e.target.getBoundingClientRect();
         sound.heading = e.clientX-rect.x-180;
         sound.pitch = 90-(e.clientY-rect.y);
@@ -84,6 +93,8 @@ function init() {
       }
       sound.changing = true;
     } else {
+      panorama.removeListener("pov_changed");
+      marker.setClassName('inactive');
       map.onpointermove = null;
       sound.changing = false;
       data.innerText = JSON.stringify(sound);
