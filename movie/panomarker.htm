@@ -164,7 +164,7 @@ function init() {
         const rect = e.target.getBoundingClientRect();
         sound.heading = e.clientX-rect.x-180;
         sound.pitch = 90-(e.clientY-rect.y);
-        document.getElementsByClassName('cube')[0].style.transform = 'scale3d(1, 1, 1, ' + sound.volume + ') rotate3d(0, 1, 0, ' + sound.heading + 'deg) rotate3d(1, 0, 0, ' + sound.pitch + 'deg)';
+        document.getElementsByClassName('cube')[0].style.transform = 'scale3d(' + sound.volume + ',' + sound.volume + ',' + sound.volume + ') rotate3d(0, 1, 0, ' + sound.heading + 'deg) rotate3d(1, 0, 0, ' + sound.pitch + 'deg)';
       }
       trackpad.onpointerdown = trackpad.onpointermove;
       sound.changing = true;
@@ -190,7 +190,7 @@ function init() {
     marker.setSize({ height: size, width: size });
     document.getElementsByClassName('active')[0].style.marginLeft = -size/2 + 'px';
     document.getElementsByClassName('active')[0].style.marginTop = -size/2 + 'px';
-    document.getElementsByClassName('cube')[0].style.transform = 'scale3d(1, 1, 1, ' + sound.volume + ') rotate3d(0, 1, 0, ' + sound.heading + 'deg) rotate3d(1, 0, 0, ' + sound.pitch + 'deg)';
+    document.getElementsByClassName('cube')[0].style.transform = 'scale3d(' + sound.volume + ',' + sound.volume + ',' + sound.volume + ') rotate3d(0, 1, 0, ' + sound.heading + 'deg) rotate3d(1, 0, 0, ' + sound.pitch + 'deg)';
     marker.setClassName('inactive');
   }
   } catch(e) {alert(e);}
