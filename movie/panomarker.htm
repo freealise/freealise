@@ -164,7 +164,7 @@ function init() {
         const rect = e.target.getBoundingClientRect();
         sound.heading = e.clientX-rect.x-180;
         sound.pitch = 90-(e.clientY-rect.y);
-        document.getElementsByClassName('active')[0].style.transform = 'rotateY(' + sound.heading + 'deg) rotateX(' + sound.pitch + 'deg)';
+        document.getElementsByClassName('cube')[0].style.transform = 'rotate3d(0, 1, 0, ' + sound.heading + 'deg) rotate3d(1, 0, 0, ' + sound.pitch + 'deg)';
       }
       trackpad.onpointerdown = trackpad.onpointermove;
       sound.changing = true;
