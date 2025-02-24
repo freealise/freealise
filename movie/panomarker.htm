@@ -149,11 +149,12 @@ function init() {
     <div class="face back"> </div>
   </div>
 </div>`;
-  alert(document.getElementsByClassName('inactive')[0].innerHTML);
-  document.getElementsByClassName('inactive')[0].getElementsByTagName('img')[0].outerHTML = cube;
   var sound = { heading: 0.0, pitch: 0.0, volume: 0.0, changing: false };
   
   google.maps.event.addListener(marker, 'click', function() {
+    alert(document.getElementsByClassName('inactive')[0].innerHTML);
+    document.getElementsByClassName('inactive')[0].getElementsByTagName('img')[0].outerHTML = cube;
+  
     if (sound.changing === false) {
       marker.setClassName('active');
       
