@@ -22,10 +22,9 @@
         }
         
 .container {
-  width: 40px;
-  height: 40px;
   perspective: 200px;
   margin: 0px;
+  padding: 0px;
 }
 
 .cube {
@@ -184,14 +183,12 @@ function init() {
   });
   
   volume.oninput = function(e) {
-    marker.setClassName('active');
     const size = e.target.value * 40;
     sound.volume = e.target.value;
     marker.setSize({ height: size, width: size });
     document.getElementsByClassName('cube')[0].style.transform = 'scale3d(' + sound.volume + ',' + sound.volume + ',' + sound.volume + ') rotate3d(0, 1, 0, ' + sound.heading + 'deg) rotate3d(1, 0, 0, ' + sound.pitch + 'deg)';
-    document.getElementsByClassName('active')[0].style.marginTop = -sound.volume*20 + 'px';
-    document.getElementsByClassName('active')[0].style.marginLeft = -sound.volume*20 + 'px';
-    marker.setClassName('inactive');
+    document.getElementsByClassName('container')[0].parentElement.style.marginTop = -sound.volume*20 + 'px';
+    document.getElementsByClassName('container')[0].parentElement.style.marginLeft = -sound.volume*20 + 'px';
   }
   } catch(e) {alert(e);}
 }
