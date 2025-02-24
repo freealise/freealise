@@ -163,7 +163,7 @@ function init() {
         const rect = e.target.getBoundingClientRect();
         sound.heading = e.clientX-rect.x-180;
         sound.pitch = 90-(e.clientY-rect.y);
-        document.getElementsByClassName('cube')[0].style.transform = 'scale3d(' + sound.volume + ',' + sound.volume + ',' + sound.volume + ') rotate3d(0, 1, 0, ' + (sound.heading+panorama.getPov().heading-90) + 'deg) rotate3d(1, 0, 0, ' + (sound.pitch-panorama.getPov().pitch) + 'deg)';
+        document.getElementsByClassName('cube')[0].style.transform = 'scale3d(' + sound.volume + ',' + sound.volume + ',' + sound.volume + ') rotate3d(0, 1, 0, ' + (sound.heading+panorama.getPov().heading-90) + 'deg) rotate3d(1, 0, 0, ' + (sound.pitch) + 'deg)';
       }
       trackpad.onpointerdown = trackpad.onpointermove;
       sound.changing = true;
@@ -186,13 +186,13 @@ function init() {
     const size = e.target.value * 40;
     sound.volume = e.target.value;
     marker.setSize({ height: size, width: size });
-    document.getElementsByClassName('cube')[0].style.transform = 'scale3d(' + sound.volume + ',' + sound.volume + ',' + sound.volume + ') rotate3d(0, 1, 0, ' + (sound.heading+panorama.getPov().heading-90) + 'deg) rotate3d(1, 0, 0, ' + (sound.pitch-panorama.getPov().pitch) + 'deg)';
+    document.getElementsByClassName('cube')[0].style.transform = 'scale3d(' + sound.volume + ',' + sound.volume + ',' + sound.volume + ') rotate3d(0, 1, 0, ' + (sound.heading+panorama.getPov().heading-90) + 'deg) rotate3d(1, 0, 0, ' + (sound.pitch) + 'deg)';
     document.getElementsByClassName('container')[0].parentElement.style.marginTop = -sound.volume*20 + 'px';
     document.getElementsByClassName('container')[0].parentElement.style.marginLeft = -sound.volume*20 + 'px';
   }
   
   panorama.addListener("pov_changed", () => {
-    document.getElementsByClassName('cube')[0].style.transform = 'scale3d(' + sound.volume + ',' + sound.volume + ',' + sound.volume + ') rotate3d(0, 1, 0, ' + (sound.heading+panorama.getPov().heading-90) + 'deg) rotate3d(1, 0, 0, ' + (sound.pitch-panorama.getPov().pitch) + 'deg)';
+    document.getElementsByClassName('cube')[0].style.transform = 'scale3d(' + sound.volume + ',' + sound.volume + ',' + sound.volume + ') rotate3d(0, 1, 0, ' + (sound.heading+panorama.getPov().heading-90) + 'deg) rotate3d(1, 0, 0, ' + (sound.pitch) + 'deg)';
   });
   } catch(e) {alert(e);}
 }
