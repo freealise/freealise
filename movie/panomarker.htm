@@ -188,9 +188,9 @@ function init() {
     const size = e.target.value * 40;
     sound.volume = e.target.value;
     marker.setSize({ height: size, width: size });
-    document.getElementsByClassName('active')[0].style.marginLeft = -size/2 + 'px';
-    document.getElementsByClassName('active')[0].style.marginTop = -size/2 + 'px';
     document.getElementsByClassName('cube')[0].style.transform = 'scale3d(' + sound.volume + ',' + sound.volume + ',' + sound.volume + ') rotate3d(0, 1, 0, ' + sound.heading + 'deg) rotate3d(1, 0, 0, ' + sound.pitch + 'deg)';
+    document.getElementsByClassName('active')[0].style.marginTop = -sound.volume*20 + 'px';
+    document.getElementsByClassName('active')[0].style.marginLeft = -sound.volume*20 + 'px';
     marker.setClassName('inactive');
   }
   } catch(e) {alert(e);}
