@@ -20,6 +20,62 @@
         .inactive {
           opacity: 0.5;
         }
+        
+.container {
+  width: 20px;
+  height: 20px;
+  perspective: 100px;
+  margin: 100px;
+}
+
+.cube {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  transform-style: preserve-3d;
+}
+
+.face {
+  width: 20px;
+  height: 20px;
+  background: skyblue;
+  border: 1px solid black;
+  position: absolute;
+  opacity: 0.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: monospace;
+  font-size: 2.5em;
+}
+
+.front {
+  transform: translateZ(10px);
+}
+
+.back {
+  transform: translateZ(-10px) rotateY(180deg);
+}
+
+.left {
+  transform: translateX(-10px) rotateY(-90deg);
+}
+
+.right {
+  transform: translateX(10px) rotateY(90deg);
+}
+
+.top {
+  transform: translateY(-10px) rotateX(90deg);
+}
+
+.bottom {
+  transform: translateY(10px) rotateX(-90deg);
+}
+
+.cube {
+  transform: rotate3d(1, 1, 1, 60deg);
+}
     </style>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
     <script src="./panomarker.js"></script>
@@ -82,6 +138,17 @@ function init() {
       title: 'Click me!'
     });
   marker.setClassName('inactive');
+  var cube = `<div class="container">
+  <div class="cube">
+    <div class="face top">T</div>
+    <div class="face bottom">B</div>
+    <div class="face left">L</div>
+    <div class="face right">R</div>
+    <div class="face front">⌾</div>
+    <div class="face back"> </div>
+  </div>
+</div>`;
+  document.getElementsByClassName('inactive')[0].innerHTML = cube;
   var sound = { heading: 0.0, pitch: 0.0, volume: 0.0, changing: false };
   
   google.maps.event.addListener(marker, 'click', function() {
