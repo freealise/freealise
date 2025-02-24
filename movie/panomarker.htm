@@ -115,6 +115,7 @@ var AVAILABLE_PANORAMAS = {
 };
 
 function init() {
+  try {
   var container = document.getElementById('map');
   var trackpad = document.getElementById('trackpad');
   var volume = document.getElementById('volume');
@@ -148,7 +149,7 @@ function init() {
     <div class="face back"> </div>
   </div>
 </div>`;
-  document.getElementsByClassName('inactive')[0].innerHTML = cube;
+  document.getElementsByClassName('inactive')[0].getElementsByTagName('img')[0].outerHTML = cube;
   var sound = { heading: 0.0, pitch: 0.0, volume: 0.0, changing: false };
   
   google.maps.event.addListener(marker, 'click', function() {
@@ -188,6 +189,7 @@ function init() {
     document.getElementsByClassName('active')[0].style.marginTop = -size/2 + 'px';
     marker.setClassName('inactive');
   }
+  } catch(e) {alert(e);}
 }
 
     </script>
