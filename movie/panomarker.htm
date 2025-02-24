@@ -151,6 +151,10 @@ function init() {
 </div>`;
   var sound = { heading: 0.0, pitch: 0.0, volume: 0.0, changing: false };
   
+  google.maps.event.addListener(marker, 'add', function() {
+    alert(document.getElementsByClassName('inactive')[0].outerHTML);
+    document.getElementsByClassName('inactive')[0].innerHTML = cube;
+  });
   google.maps.event.addListener(marker, 'click', function() {
     if (sound.changing === false) {
       marker.setClassName('active');
@@ -188,9 +192,6 @@ function init() {
     document.getElementsByClassName('active')[0].style.marginTop = -size/2 + 'px';
     marker.setClassName('inactive');
   }
-  
-  alert(document.getElementsByClassName('inactive')[0].outerHTML);
-  document.getElementsByClassName('inactive')[0].innerHTML = cube;
   } catch(e) {alert(e);}
 }
 
