@@ -139,6 +139,7 @@ function init() {
       title: 'Click me!'
     });
   marker.setClassName('inactive');
+  
   var cube = `<div class="container">
   <div class="cube">
     <div class="face top">T</div>
@@ -149,10 +150,9 @@ function init() {
     <div class="face back"> </div>
   </div>
 </div>`;
-  var sound = { heading: 0.0, pitch: 0.0, volume: 0.0, changing: false };
+  var sound = { heading: 0.0, pitch: 0.0, volume: 1.0, changing: false };
   
   google.maps.event.addListener(marker, 'add', function() {
-    alert(document.getElementsByClassName('inactive')[0].outerHTML);
     document.getElementsByClassName('inactive')[0].innerHTML = cube;
   });
   google.maps.event.addListener(marker, 'click', function() {
