@@ -8,6 +8,7 @@ presently recognizes not the beginning of phrase but the first stressed syllable
 multitrack 3d audio
 -------------------
 y: time  
-a-z: audio file  
-x: pan heading (0-360deg)  
-2 dot symbols: volume / pitch (-90-90deg)  
+x: track  
+a-z: audio file (begins with capital letter, pauses with comma, stops with dot)  
+clock emoji: theta (0-144) / phi (-90-90)  
+dot symbol: volume  
