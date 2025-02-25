@@ -8,7 +8,6 @@ presently recognizes not the beginning of phrase but the first stressed syllable
 multitrack 3d audio
 -------------------
 y: time  
-x: track  
 a-z: audio file (begins with capital letter, pauses with comma, stops with dot)  
-clock emoji: theta (0-144) / phi (-90-90)  
+clock emojis (or x / counting rods): theta (0-360) / phi (-90-90)  
 dot symbol: volume  
