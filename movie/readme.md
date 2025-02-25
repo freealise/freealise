@@ -7,9 +7,10 @@ presently recognizes not the beginning of phrase but the first stressed syllable
 
 3d audio source
 ---------------
-hue: heading (0-360deg)  
-saturation: volume (100%)  
-lightness: pitch (50%)  
+y: time  
+x: heading (0-360deg)  
+lightness: pitch (-90-90deg)  
+size: volume (100%)  
   
 multitracker (https://developers.google.com/chart/interactive/docs/gallery/timeline)  
 background: linear-gradient  
