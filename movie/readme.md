@@ -5,12 +5,9 @@ transcription with sentence / word level timepoints
 
 presently recognizes not the beginning of phrase but the first stressed syllable with rapid increase in volume  
 
-3d audio source
----------------
+multitrack 3d audio
+-------------------
 y: time  
-x: heading (0-360deg)  
-lightness: pitch (-90-90deg)  
-size: volume (100%)  
-  
-multitracker (https://developers.google.com/chart/interactive/docs/gallery/timeline)  
-background: linear-gradient  
+a-z: audio file  
+x: pan heading (0-360deg)  
+2 dot symbols: volume / pitch (-90-90deg)  
