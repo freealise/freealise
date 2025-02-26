@@ -6,7 +6,7 @@ transcription with sentence / word level timepoints
 presently recognizes not the beginning of phrase but the first stressed syllable with rapid increase in volume  
 
 ### in subtitles file
-y: line  
+y: line, audio source  
 x: time  
 clock emojis: theta (0-360) / phi (-90-90)  
 tone letters (rotary): volume  
