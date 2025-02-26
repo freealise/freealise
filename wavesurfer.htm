@@ -4,17 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width" />
   <title>wavesurfer</title>
+  <script src="https://unpkg.com/wavesurfer.js@7"></script>
 </head>
 <body>
-
-  <script src="https://unpkg.com/wavesurfer.js@7"></script>
 
 <div id="waveform" style="width:320px;height:256px">
   <!-- the waveform will be rendered here -->
 </div>
 
 
-  <script type="module">
+  <script>
   try {
 const wavesurfer = WaveSurfer.create({
   container: '#waveform',
