@@ -21,6 +21,10 @@ const wavesurfer = WaveSurfer.create({
   progressColor: '#383351',
   url: '/freealise/aq/outfoxing.mp3',
 })
+
+wavesurfer.on('click', () => {
+  wavesurfer.play()
+})
 } catch(e) {alert(e);}
   </script>
 
