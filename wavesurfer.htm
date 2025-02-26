@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width" />
+  <title>wavesurfer</title>
+</head>
+<body>
+
+  <script src="https://unpkg.com/wavesurfer.js@7"></script>
+
+<div id="waveform" style="width:320px;height:256px">
+  <!-- the waveform will be rendered here -->
+</div>
+
+
+  <script>
+const wavesurfer = WaveSurfer.create({
+  container: '#waveform',
+  waveColor: '#4F4A85',
+  progressColor: '#383351',
+  url: 'https://file-examples.com/wp-content/storage/2017/11/file_example_MP3_700KB.mp3',
+})
+  </script>
+
+</body>
+</html>
