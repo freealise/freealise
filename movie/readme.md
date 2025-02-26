@@ -5,9 +5,9 @@ transcription with sentence / word level timepoints
 
 presently recognizes not the beginning of phrase but the first stressed syllable with rapid increase in volume  
 
-multitrack 3d audio
--------------------
-y: time  
-a-z: audio file (begins with capital letter, pauses with comma, stops with dot)  
-clock emojis (or x / counting rods): theta (0-360) / phi (-90-90)  
-dot symbol: volume  
+3d audio
+--------
+wavesurfer with multitrack (clock emojis: theta (0-360) / phi (-90-90))  
+
+load audio files as svg stroke-dasharray (subpixel ratio of stroke and gap is volume,  
+x/y is theta/phi, backward stroke data or distance is envelope, text along path)  
