@@ -9,5 +9,5 @@ presently recognizes not the beginning of phrase but the first stressed syllable
 --------
 wavesurfer with multitrack (clock emojis: theta (0-360) / phi (-90-90))  
 
-load audio files as svg stroke-dasharray (subpixel ratio of stroke and gap is volume,  
-x/y is theta/phi, backward stroke data or distance is envelope, text along path)  
+load audio files as svg stroke-dasharray (lossless or for charting only; subpixel ratio of stroke / gap is volume,  
+x/y is theta/phi, backward stroke data or distance is envelope, text along path is filename to include)  
