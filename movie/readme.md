@@ -1,5 +1,3 @@
-STT ? radio show with Gemma  
-  
 transcription with sentence / word level timepoints  
 (https://huggingface.co/openai/whisper-large-v3)  
 
