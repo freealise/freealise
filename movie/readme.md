@@ -5,10 +5,13 @@ transcription with sentence / word level timepoints
 
 presently recognizes not the beginning of phrase but the first stressed syllable with rapid increase in volume  
 
-### in subtitles file
-y: line, audio source  
-x: time  
-clock emojis: theta (0-360) / phi (-90-90)  
-tone letters (rotary): volume  
+crossfade tracks in audacity among 5.1 channel speakers according to distance of source from them  
   
-crossfade tracks among 5.1 channel speakers according to distance of source from them  
+  
+tone letters / counting rods 𝍩𝍪𝍫𝍬𝍭 𝍠𝍡𝍢𝍣𝍤 :  
+position / fret (fretboard),  
+pitch / volume (vocalise)  
+
+clock emojis:  
+theta (-180-180) / phi (-90-90) panning (both)  
+  
