@@ -35,8 +35,6 @@
         </style>
     </head>
     <body>
-<textarea id="tmln" style="white-space:pre;width:100%;z-index:1;position:fixed;top:0"></textarea><select id="angle" style="z-index:1;position:fixed;top:0;right:0" oninput="tmln.value+=this.value+' ';"><option value='    '>_</option></select><button style="z-index:1;position:fixed;top:2em;right:0" onclick='parseTimes();'>ok</button>
-
 <input type='text' id='soundtrack' value='https://freeali.se/assets/mp3/nightingale_bird.mp3'/>
 <input type="file" id="fileElemAudio" accept="audio/aac, audio/mpeg, audio/ogg, audio/wav, audio/webm" style="display:none" />
 <button id="fileSelect">Upload soundtrack</button>
@@ -53,14 +51,6 @@ line3
 <button id="add_times" onclick="addTimes();">add</button><a id="subs_link" href=""></a>
 </div>
       <script>
-        //sound angle setter
-        var alpha = ('🕛|🕐|🕑|🕒|🕓|🕔|🕕|🕖|🕗|🕘|🕙|🕚').split('|');
-        var beta = ('🕧|🕜|🕝|🕞|🕟|🕠|🕡|🕢|🕣|🕤|🕥|🕦').split('|');
-        const tmln = document.getElementById("tmln");
-        const angle = document.getElementById("angle");
-        for (var i=0; i<alpha.length; i++) {
-          angle.innerHTML += "<option value='"+alpha[i]+"'>"+alpha[i]+" "+(i*30)+"°</option>";
-        }
         
         var times = document.getElementById("times");
         var subs = document.getElementById("subs");
@@ -214,15 +204,6 @@ line3
                 times.scrollTo(0, subs.scrollTop);
             }
         }
-        
-        
-function parseTimes() {
-  var times = tmln.value.replace(/     /g, ' ').split(' ').trim();
-
-  for (var i=0; i<times.length; i++) {
-    //json.animations[0].keys[i] = {'frame': i*40, 'values': [alpha.indexOf(times[i]),0,0]};
-  }
-}
             
 </script>
 </body>
