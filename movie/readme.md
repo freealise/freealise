@@ -10,3 +10,5 @@ y: line, audio source
 x: time  
 clock emojis: theta (0-360) / phi (-90-90)  
 tone letters (rotary): volume  
+  
+crossfade tracks among 5.1 channel speakers according to distance of source from them  
