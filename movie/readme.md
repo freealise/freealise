@@ -9,7 +9,4 @@ crossfade tracks in audacity among 5.1 channel speakers according to distance of
   
   
 rotary dot symbols (angle and length)  
-
-clock emojis:  
-theta (-180-180) / phi (-90-90) panning (both)  
   
