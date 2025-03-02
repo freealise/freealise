@@ -1,6 +1,5 @@
-transcription with sentence / word level timepoints  
-(https://huggingface.co/openai/whisper-large-v3,  
-OS speech recognition typing in textarea with timepoints for change of content)  
+transcription with timestamps: use scroll event with script  
+vocalise speaking practice: OS speech recognition typing in textarea  
 
 presently recognizes not the beginning of phrase but the first stressed syllable with rapid increase in volume  
 
