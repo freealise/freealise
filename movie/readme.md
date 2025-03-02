@@ -1,6 +1,5 @@
 transcription with sentence / word level timepoints  
 (https://huggingface.co/openai/whisper-large-v3,  
-https://stackoverflow.com/questions/60133689/is-it-possible-to-run-a-function-in-google-app-scripts-after-a-document-is-finis,  
 OS speech recognition typing in textarea with timepoints for change of content)  
 
 presently recognizes not the beginning of phrase but the first stressed syllable with rapid increase in volume  
