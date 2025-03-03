@@ -14,7 +14,7 @@
 </head>
 <body>
     <div>
-      <textarea cols="25" rows="10" onclick="addTimestamp(event);" title="Script" id="script" placeholder="Enter script here">All human beings are born free and equal in dignity and rights.
+      <textarea cols="25" rows="10" onclick="try{addTimestamp(event);}catch(e){alert(e);}" title="Script" id="script" placeholder="Enter script here">All human beings are born free and equal in dignity and rights.
 
 They are endowed with reason and conscience 
 and should act towards one another in a spirit of brotherhood.
@@ -34,7 +34,7 @@ and should act towards one another in a spirit of brotherhood.
 <button onclick="scrollSubs(true);">\/</button>
 <a href="#" onclick="downloadSubs(event);">Download</a><br/>
 
-<audio controls onclick="start=Date.now();" id='soundtrack' src='https://archive.org/download/universal_declaration_librivox/human_rights_un_eng_drb.mp3'></audio><br/>
+<audio controls onclick="start=Date.now();" id='soundtrack' src=''></audio><br/>
 <input type="file" id="fileElemAudio" accept="audio/aac, audio/mpeg, audio/ogg, audio/wav, audio/webm" style="display:none" />
 <button id="fileSelect">Upload soundtrack</button>
 
