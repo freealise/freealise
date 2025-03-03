@@ -37,7 +37,7 @@ and should act towards one another in a spirit of brotherhood.
 <button onclick="downloadSubs();">Download</button>
 <a href="#" id="subs_link"></a><br/>
 
-<audio controls onclick="start=Date.now();" id='soundtrack' src=''></audio><br/>
+<audio controls onplay="this.currentTime=0;start=Date.now();" id='soundtrack' src=''></audio><br/>
 <input type="file" id="fileElemAudio" accept="audio/aac, audio/mpeg, audio/ogg, audio/wav, audio/webm" style="display:none" />
 <button id="fileSelect">Upload soundtrack</button>
 
