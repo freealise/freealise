@@ -42,8 +42,8 @@ and should act towards one another in a spirit of brotherhood.
 <script>
     var start = Date.now();
     var t = Date.now() - start;
+    var d = new Date(start);
     const o = d.getTimezoneOffset()*60*1000;
-    var d = new Date(t + o);
     var t_old = 0;
     var time_old = '00:00:00.000';
 
