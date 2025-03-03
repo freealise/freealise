@@ -32,7 +32,8 @@ and should act towards one another in a spirit of brotherhood.
 </textarea><br/>
 <button onclick="scrollSubs(false);">/\</button>
 <button onclick="scrollSubs(true);">\/</button>
-<a href="#" onclick="try{downloadSubs(event);}catch(e){alert(e);}">Download</a><br/>
+<button onclick="downloadSubs();">Download</button>
+<a href="#" id="subs_link"></a><br/>
 
 <audio controls onclick="start=Date.now();" id='soundtrack' src=''></audio><br/>
 <input type="file" id="fileElemAudio" accept="audio/aac, audio/mpeg, audio/ogg, audio/wav, audio/webm" style="display:none" />
@@ -113,11 +114,11 @@ and should act towards one another in a spirit of brotherhood.
       e.target.focus();
     }
 
-    function downloadSubs(e) {
-      e.target.href = "data:text/vtt;base64," + btoa( 'WEBVTT\n\n' + document.getElementById('script').value );
-      e.target.download = 'subtitles.vtt';
-      e.target.click();
-      e.target.href = "#";
+    function downloadSubs() {
+      document.getElementById('subs_link').href = "data:text/vtt;base64," + btoa( 'WEBVTT\n\n' + document.getElementById('script').value );
+      document.getElementById('subs_link').download = 'subtitles.vtt';
+      document.getElementById('subs_link').click();
+      document.getElementById('subs_link').href = "#";
     }
 
         function scrollSubs(s) {
