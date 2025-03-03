@@ -97,7 +97,7 @@ and should act towards one another in a spirit of brotherhood.
       var txt = e.target.value.trim();
       var tpos = txt.substr(0, e.target.selectionStart).lastIndexOf('\n\n');
       tpos = txt.substr(0, tpos).lastIndexOf('\n\n') + 2;
-      if (tpos == 1) { tpos = 0; }
+      if (tpos <= 2) { tpos = 0; }
 
       if (tpos == 0 || txt.substr(tpos, 2) == '• ') {
         txt = txt.substr(0, tpos) + setTime() + txt.substr(tpos+2);
