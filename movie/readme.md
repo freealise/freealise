@@ -1,4 +1,4 @@
-transcription with timestamps: use scroll event with script (or YouTube's Automatic Captions)  
+transcription with timestamps: use scroll or select event with script (or YouTube's Automatic Captions)  
 vocalise speaking practice: OS speech recognition typing in textarea  
 
 presently recognizes not the beginning of phrase but the first stressed syllable with rapid increase in volume  
