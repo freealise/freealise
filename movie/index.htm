@@ -117,6 +117,9 @@ and should act towards one another in a spirit of brotherhood.
       e.target.setSelectionRange(tpos, tpos);
       e.target.blur();
       e.target.focus();
+    
+      var y = e.clientY - e.target.getBoundingClientRect().y + e.target.scrollTop;
+      e.target.scrollTo(0, y);
     }
 
     function downloadSubs() {
