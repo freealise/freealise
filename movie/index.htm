@@ -118,11 +118,12 @@ and should act towards one another in a spirit of brotherhood.
       e.target.blur();
       e.target.focus();
     
-      if (e.target.scrollTop == 0) {
-        e.target.scrollBy(0, e.target.clientHeight);
-      }
       var y = e.clientY - e.target.getBoundingClientRect().y + e.target.scrollTop;
-      e.target.scrollTo(0, y);
+      if (e.target.scrollTop == 0) {
+        e.target.scrollBy(0, y);
+      } else {
+        e.target.scrollTo(0, y);
+      }
     }
 
     function downloadSubs() {
