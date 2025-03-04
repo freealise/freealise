@@ -25,5 +25,8 @@ drawn or printed from pano thumbnails with large fov stitched together,
 embossed with cardboard and stylus / wire / foil / wax and painted in CMYK  
 (https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=CCBWqYeljZnrtlJzJQaEGw&cb_client=maps_sv.tactile.gps&w=8192&h=4096&yaw=208.25&pitch=0&thumbfov=165)  
   
+crossfade tracks in audacity among 5.1 channel speakers according to distance of source from them  
+tetrahedron in sphere in cube, 4 tracks aligned as cube map with trigonometric crossfades (merge 2 offscreen back channels to 1)  
+  
 for denoising average several frames, use median filter  
 script (~play) in markdown (most like coding, least awkward)  
