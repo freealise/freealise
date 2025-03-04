@@ -17,6 +17,7 @@ or plastic glasses with wireframe (transparent mat, black striped plastic, or pr
 //3d tiles (https://www.google.com/intl/en_uk/earth/studio/)  
 //https://www.google.com/streetview/how-it-works/  
 //upload video/subs to archive.org for transcoding (https://archive.org/details/download_20240209_0047)  
+//subtitles with timestamps: use YouTube's Automatic Captions  
   
 //foil is smoothed with nail file or sandpaper (?) and covered by food-grade white wax like the one from cheese;  
 make (wet or papier mache with starch + water for natural beings) paper models from depth maps with texture  
