@@ -14,7 +14,7 @@
 </head>
 <body>
     <div>
-      <textarea cols="25" rows="10" onclick="addTimestamp(event);" title="Script" id="script" placeholder="Enter script here">
+      <textarea cols="20" rows="15" onclick="addTimestamp(event);" title="Script" id="script" placeholder="Enter script here">
         
 All human beings are born free and equal in dignity and rights.
 
@@ -119,11 +119,7 @@ and should act towards one another in a spirit of brotherhood.
       e.target.focus();
     
       var y = e.clientY - e.target.getBoundingClientRect().y + e.target.scrollTop;
-      if (e.target.scrollTop == 0) {
-        e.target.scrollBy(0, y);
-      } else {
-        e.target.scrollTo(0, y);
-      }
+      e.target.scrollTo(0, y-e.target.clientHeight/2);
     }
 
     function downloadSubs() {
