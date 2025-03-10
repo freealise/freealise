@@ -1,5 +1,4 @@
-### Ad script
-reporter on location is contacted by news announcer among apocalyptic current events, responding that nothing is happening except the normal which looks like a miracle.  
+_Ad script_: reporter on location is contacted by news announcer among apocalyptic current events, responding that nothing is happening except the normal which looks like a miracle.  
   
 use gsv custom tiles for svg / css antarctic InF  
 (https://marmat.github.io/google-maps-api-addons/panomarker/examples/fancy.html, 
