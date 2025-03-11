@@ -3,7 +3,7 @@
 [hand-pose-detection](https://github.com/freealise/tfjs-models/tree/master/hand-pose-detection)  
 (https://docs.opencv.org/4.x/d1/d0d/tutorial_js_pose_estimation.html, https://docs.opencv.org/3.4/d0/db7/tutorial_js_table_of_contents_dnn.html)  
 Face or makeup color detection for lipsync (points on wax figure video input = source, face mocap = dest), motion capture of wax figures for auto quality feedback or virtual characters  
-find theta, phi and radius of each point on photos of model and neutral face related to average of all points as origin, then displace points on video of face with expression in spheric coordinates by their ratio  
+find theta, phi and radius of each point on photos of model and neutral face related to center of head as origin, then displace points on video of face with expression in spheric coordinates by their ratio  
   
 [opencv nodejs/java](https://docs.opencv.org/4.x/dc/de6/tutorial_js_nodejs.html)  
 ([MindAR.js](https://github.com/hiukim/mind-ar-js))  
