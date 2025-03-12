@@ -4,6 +4,7 @@
 (https://docs.opencv.org/4.x/d1/d0d/tutorial_js_pose_estimation.html, https://docs.opencv.org/3.4/d0/db7/tutorial_js_table_of_contents_dnn.html)  
 Face detection for virtual makeup with displacement map (?), motion capture of wax figures for auto quality feedback  
 face morph: 2d points from new detector (image mode) in radial coordinates related to center or average, set as linear and change angle and radius in multitouch (~parametric equalizer)  
+detect face points on both photo of wax model and video of face, then move the points on model in the direction of face points movement proportionally to size of face by each coordinate  
   
 [opencv nodejs/java](https://docs.opencv.org/4.x/dc/de6/tutorial_js_nodejs.html)  
 ([MindAR.js](https://github.com/hiukim/mind-ar-js))  
