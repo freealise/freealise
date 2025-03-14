@@ -214,6 +214,7 @@ footer {
   let faceLandmarkerResult = undefined;
   let results = undefined;
   let diff = [];
+  let scale = { 'x': 1.0, 'y': 1.0, 'z': 1.0 };
   
   function downloadFile() {
     document.getElementById('json_link').href = "data:text/plain;base64," + btoa(JSON.stringify(results));
@@ -309,10 +310,21 @@ async function handleClick(event) {
     const ctx = canvas.getContext("2d");
     const drawingUtils = new DrawingUtils(ctx);
     if (diff.length > 0) {
+      const l = faceLandmarkerResult.faceLandmarks[0][234];
+      const r = faceLandmarkerResult.faceLandmarks[0][454];
+      const t = faceLandmarkerResult.faceLandmarks[0][10];
+      const b = faceLandmarkerResult.faceLandmarks[0][152];
+      const f = faceLandmarkerResult.faceLandmarks[0][4];
+        
+      const c = { 'x': (l.x + r.x)/2, 'y': (t.y + b.y)/2, 'z': 0.0 };
+      const w = r.x - l.x;
+      const h = b.y - t.y;
+      const d = f.z;
+        
       for (var i=0; i<faceLandmarkerResult.faceLandmarks[0].length; i++) {
-        faceLandmarkerResult.faceLandmarks[0][i].x += diff[i].x;
-        faceLandmarkerResult.faceLandmarks[0][i].y += diff[i].y;
-        faceLandmarkerResult.faceLandmarks[0][i].z += diff[i].z;
+        faceLandmarkerResult.faceLandmarks[0][i].x += diff[i].x / scale.x * w;
+        faceLandmarkerResult.faceLandmarks[0][i].y += diff[i].y / scale.y * h;
+        faceLandmarkerResult.faceLandmarks[0][i].z += diff[i].z / scale.z * d;
       }
       //alert(JSON.stringify(faceLandmarkerResult.faceLandmarks[0]));
     }
@@ -417,9 +429,12 @@ async function predictWebcam() {
         const r = results.faceLandmarks[0][454];
         const t = results.faceLandmarks[0][10];
         const b = results.faceLandmarks[0][152];
+        const f = results.faceLandmarks[0][4];
+        
         const c = { 'x': (l.x + r.x)/2, 'y': (t.y + b.y)/2, 'z': 0.0 };
-        const w = r.x - l.x;
-        const h = b.y - t.y;
+        scale.x = r.x - l.x;
+        scale.y = b.y - t.y;
+        scale.z = f.z;
         
         if (results_old.length > 0 && !document.getElementById('update').checked) {
           diff = [];
