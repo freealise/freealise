@@ -4,10 +4,6 @@
 (https://docs.opencv.org/4.x/d1/d0d/tutorial_js_pose_estimation.html, https://docs.opencv.org/3.4/d0/db7/tutorial_js_table_of_contents_dnn.html)  
 face / pose / hands detection for auto quality feedback on wax figures  
   
-face morph (use for 3d, also for skeleton rotation): 2d points from new detector (image mode) in radial coordinates related to center or average, set as linear and change angle and radius in multitouch (~parametric equalizer)  
-use face points of both skeleton and video of face, move the points on model in the direction of face points movement proportionally to size of face by each coordinate  
-multiply diffs by ratio to initial size of face to forbid it to scale (relativity of diffs compensates for movement, rotation is not reqiured for 2d)  
-  
 morpher ('magic bus'): align equirectangular grid of points on panoramas next to each other or timepoints  
   
 [opencv nodejs/java](https://docs.opencv.org/4.x/dc/de6/tutorial_js_nodejs.html)  
