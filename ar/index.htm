@@ -63,7 +63,6 @@ try {
     // You can try more different parameters
     cv.approxPolyDP(cnt, tmp, 3, true);
     poly.push_back(tmp);
-    cnt.delete(); tmp.delete();
   }
   // draw contours with random Scalar
   for (let i = 0; i < contours.size(); ++i) {
@@ -72,8 +71,7 @@ try {
     cv.drawContours(dst, poly, i, color, 1, 8, hierarchy, 0);
   }
   cv.imshow('canvasOutput', dst);
-  src.delete(); dst.delete(); hierarchy.delete(); contours.delete(); poly.delete();
-
+  
 
 /*let src = cv.imread(imgElement);
 let dst = new cv.Mat();
