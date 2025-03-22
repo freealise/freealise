@@ -49,7 +49,6 @@
   </div>
   <script src="utils.js" type="text/javascript"></script> 
   <script id="codeSnippet" type="text/code-snippet">
-
   let src = cv.imread('canvasInput');
   let dst = cv.Mat.zeros(src.rows, src.cols, cv.CV_8UC3);
   cv.cvtColor(src, src, cv.COLOR_RGBA2GRAY, 0);
@@ -92,9 +91,6 @@
   utils.loadOpenCv(() => {
     tryIt.removeAttribute('disabled');
   });
-  </script>
-  <script>
-  (function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'92481bf1e9af4bbe',t:'MTc0MjY3MTg4NS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();
   </script>
 </body>
 </html>
