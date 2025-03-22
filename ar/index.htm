@@ -26,7 +26,7 @@ inputElement.addEventListener('change', (e) => {
  
 imgElement.onload = function() {
   //let mat = cv.imread(imgElement);
-  
+  try {
   let src = cv.imread(imgElement);
   let dst = cv.Mat.zeros(src.rows, src.cols, cv.CV_8UC3);
   cv.cvtColor(src, src, cv.COLOR_RGBA2GRAY, 0);
@@ -52,7 +52,7 @@ imgElement.onload = function() {
   }
   cv.imshow('canvasOutput', dst);
   src.delete(); dst.delete(); hierarchy.delete(); contours.delete(); poly.delete();
-
+} catch(e) {alert(e);}
   
   //cv.imshow('canvasOutput', mat);
   //mat.delete();
