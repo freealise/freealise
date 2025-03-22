@@ -8,88 +8,33 @@
 <h2>Hello OpenCV.js</h2>
 <p id="status">OpenCV.js is loading...</p>
 <div>
- <div class="inputoutput">
- <img id="imageSrc" alt="No Image" />
- <div class="caption">imageSrc <input type="file" id="fileInput" name="file" /></div>
- <img id="imageSrc_" alt="No Image" />
- <div class="caption">imageSrc_ <input type="file" id="fileInput_" name="file" /></div>
- </div>
- <button onclick="findContours();">contours</button>
- <div class="inputoutput">
- <canvas id="canvasOutput" ></canvas>
- <canvas id="canvasOutput_" ></canvas>
- <div class="caption">canvasOutput</div>
- </div>
+  <div class="inputoutput">
+    <img id="imageSrc" alt="No Image" />
+    <div class="caption">imageSrc <input type="file" id="fileInput" name="file" /></div>
+  </div>
+  <div class="inputoutput">
+    <canvas id="canvasOutput" ></canvas>
+    <div class="caption">canvasOutput</div>
+  </div>
 </div>
 <script type="text/javascript">
 let imgElement = document.getElementById('imageSrc');
 let inputElement = document.getElementById('fileInput');
-let imgElement_ = document.getElementById('imageSrc_');
-let inputElement_ = document.getElementById('fileInput_');
-let oldFrame, frame;
-let oldGray, frameGray;
-
 inputElement.addEventListener('change', (e) => {
- imgElement.onload = function() {
-  try {
-  oldFrame = cv.imread(imgElement);
-  } catch(e) {alert(e);}
- }
- imgElement.src = URL.createObjectURL(e.target.files[0]);
-}, false);
-inputElement_.addEventListener('change', (e) => {
- imgElement_.onload = function() {
-  try {
-  frame = cv.imread(imgElement_);
-  } catch(e) {alert(e);}
- }
- imgElement_.src = URL.createObjectURL(e.target.files[0]);
+  imgElement.src = URL.createObjectURL(e.target.files[0]);
 }, false);
  
-function findContours() {
-try {
-  let src = cv.imread('imgElement');
-  let dst = cv.Mat.zeros(src.rows, src.cols, cv.CV_8UC3);
-  cv.cvtColor(src, src, cv.COLOR_RGBA2GRAY, 0);
-  cv.threshold(src, src, 100, 200, cv.THRESH_BINARY);
-  let contours = new cv.MatVector();
-  let hierarchy = new cv.Mat();
-  let poly = new cv.MatVector();
-  cv.findContours(src, contours, hierarchy, cv.RETR_CCOMP, cv.CHAIN_APPROX_SIMPLE);
-  // approximates each contour to polygon
-  for (let i = 0; i < contours.size(); ++i) {
-    let tmp = new cv.Mat();
-    let cnt = contours.get(i);
-    // You can try more different parameters
-    cv.approxPolyDP(cnt, tmp, 3, true);
-    poly.push_back(tmp);
-  }
-  // draw contours with random Scalar
-  for (let i = 0; i < contours.size(); ++i) {
-    let color = new cv.Scalar(Math.round(Math.random() * 255), Math.round(Math.random() * 255),
-                              Math.round(Math.random() * 255));
-    cv.drawContours(dst, poly, i, color, 1, 8, hierarchy, 0);
-  }
-  cv.imshow('canvasOutput', dst);
-  
-
-/*let src = cv.imread(imgElement);
-let dst = new cv.Mat();
-cv.cvtColor(src, src, cv.COLOR_RGB2GRAY, 0);
-cv.Canny(src, oldGray, 60, 180, 7, true);
-cv.imshow('canvasOutput_', oldGray);
-src.delete(); dst.delete();*/
-
-} catch (err) {
-    alert(err);
-}
-}
+imgElement.onload = function() {
+  let mat = cv.imread(imgElement);
+  cv.imshow('canvasOutput', mat);
+  mat.delete();
+};
  
 var Module = {
- // https://emscripten.org/docs/api_reference/module.html#Module.onRuntimeInitialized
- onRuntimeInitialized() {
- document.getElementById('status').innerHTML = 'OpenCV.js is ready.';
- }
+  // https://emscripten.org/docs/api_reference/module.html#Module.onRuntimeInitialized
+  onRuntimeInitialized() {
+    document.getElementById('status').innerHTML = 'OpenCV.js is ready.';
+  }
 };
 </script>
 <script async src="opencv.js" type="text/javascript"></script>
