@@ -6,3 +6,5 @@ https://apibay.org/precompiled/data_top100_recent.json
 chart and catalog with links to legitimate google results  
 with an option to get magnet link by joining the private group  
 and subscribing to PP newsletter if present in country / PPI if not 
+
+data required to join: email, public page, profession, residence country  
