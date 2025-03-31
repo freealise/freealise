@@ -1,0 +1,11 @@
+https://apibay.org/q.php?q=QUERY
+magnet:?xt=urn:btih:{BTIH}&dn={NAME}&tr=udp%3A%2F%2Ftracker.example4.com%3A80&tr=udp%3A%2F%2Ftracker.example5.com%3A80&tr=udp%3A%2F%2Ftracker.example3.com%3A6969&tr=udp%3A%2F%2Ftracker.example2.com%3A80&tr=udp%3A%2F%2Ftracker.example1.com%3A1337
+
+https://apibay.org/precompiled/data_top100_recent.json  
+
+chart and catalog with links to legitimate google results  
+with an option to get magnet link by joining the private group  
+and subscribing to PP newsletter if present in country / PPI if not 
+
+data to join: nickname, email, public page, profession, work experience,  
+educations, political compass, religious affiliation, languages, home country  
