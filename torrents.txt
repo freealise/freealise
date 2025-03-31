@@ -7,5 +7,5 @@ chart and catalog with links to legitimate google results
 with an option to get magnet link by joining the private group  
 and subscribing to PP newsletter if present in country / PPI if not 
 
-data required to join: email, public page, profession, work experiences,  
+data to join: nickname, email, public page, profession, work experience,  
 educations, political compass, religious affiliation, languages, home country  
