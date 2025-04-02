@@ -9,3 +9,5 @@ and subscribing to PP newsletter if present in country / PPI if not
 
 data to join: nickname, email, public page, profession, work experience,  
 educations, political compass, religious affiliation, languages, home country  
+  
+https://en.wikipedia.org/wiki/List_of_Pirate_Parties  
