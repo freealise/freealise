@@ -131,7 +131,7 @@ function update() {
         
         avg += diffs[i];
         if (Math.abs(diffs[i]) >= 90) {
-          weights[i] = 1000;
+          weights[i] = Math.abs(diffs[i]); //1000;
         } else {
           weights[i] = Math.abs(diffs[i]);
 
