@@ -29,7 +29,7 @@
       try {
       if (!audioCtx) {
         audioCtx = new AudioContext();
-        audioCtx.audioWorklet.addModule("script.js").then(init());
+        audioCtx.audioWorklet.addModule("white-noise.js").then(init());
       }
       } catch(e) {alert(e);}
     };
