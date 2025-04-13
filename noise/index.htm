@@ -17,12 +17,10 @@
 
     let audioCtx;
 
-    // Stereo
-    let channels = 2;
-
     function init() {
       const whiteNoiseNode = new AudioWorkletNode(audioCtx, "white-noise");
       whiteNoiseNode.connect(audioCtx.destination);
+      alert('!');
     }
 
     button.onclick = function() {
