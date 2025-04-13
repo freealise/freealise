@@ -336,6 +336,12 @@
 
             RenderSpline();
             });
+            
+            var use_custom_d1 = document.getElementById("use_custom_d1");
+            use_custom_d1.addEventListener('change', () => {
+
+            RenderSpline();
+            });
 
 
             document.getElementById("point1_x").addEventListener('change', () => { RenderSpline(); });
