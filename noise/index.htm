@@ -46,10 +46,12 @@
         const nowBuffering = buffer.getChannelData(channel);
         var lastOut = 0.0;
         var white = 0.0;
+        var p = 1;
         for (let i = 0; i < frameCount; i++) {
+          if (i/2048 == parseInt(i/2048)) { p = Math.round(Math.random()); }
           // Math.random() is in [0; 1.0]
           // audio needs to be in [-1.0; 1.0]
-          white = Math.random() * 2 - 1;
+          white = (Math.random() * 2 - 1) * p;
           nowBuffering[i] = (lastOut + (0.02 * white)) / 1.02;
           lastOut = nowBuffering[i];
           nowBuffering[i] *= 3.5; // (roughly) compensate for gain
