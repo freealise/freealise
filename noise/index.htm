@@ -21,18 +21,17 @@
     let channels = 2;
 
     function init() {
-      
       const whiteNoiseNode = new AudioWorkletNode(audioCtx, "white-noise");
-
       whiteNoiseNode.connect(audioCtx.destination);
     }
 
     button.onclick = function() {
+      try {
       if (!audioCtx) {
         audioCtx = new AudioContext();
-        audioCtx.audioWorklet.addModule("script.js");
-        setTimeout(init, 1000);
+        audioCtx.audioWorklet.addModule("script.js").then(init());
       }
+      } catch(e) {alert(e);}
     };
   </script>
 </html>
