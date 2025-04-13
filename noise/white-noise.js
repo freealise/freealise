@@ -6,7 +6,6 @@ class WhiteNoise extends AudioWorkletProcessor {
       var white = 0;
       for (let i = 0; i < channel.length; i++) {
         channel[i] = Math.random() * 2 - 1;
-        
       }
     });
     return true;
