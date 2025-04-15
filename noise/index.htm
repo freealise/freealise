@@ -6,9 +6,8 @@
     <title>Web Audio API: AudioBuffer</title>
   </head>
 
-  <body>
+  <body style="background-color:black;color:white">
     <h1>Web Audio API: AudioBuffer</h1>
-    <img src="https://motorbehaviour.wordpress.com/wp-content/uploads/2011/06/frequency_response21.jpg"/><br/>
     <button>Make gray noise</button>
 
   </body>
@@ -58,19 +57,22 @@
         }
         var avg = 0;
         var w = 3;
-        for (let i = 0; i < frameCount; i++) {
-          avg = 0;
-          for (var k=i-parseInt(w/2); k<=i+parseInt(w/2); k++) {
-            if (k<0) {
-              avg += nowBuffering[frameCount+k];
-            } else if (k>=frameCount) {
-              avg += nowBuffering[k-frameCount];
-            } else {
-              avg += nowBuffering[k];
+        var passes = 3;
+        for (let j = 0; j < passes; j++) {
+          for (let i = 0; i < frameCount; i++) {
+            avg = 0;
+            for (var k=i-parseInt(w/2); k<=i+parseInt(w/2); k++) {
+              if (k<0) {
+                avg += nowBuffering[frameCount+k];
+              } else if (k>=frameCount) {
+                avg += nowBuffering[k-frameCount];
+              } else {
+                avg += nowBuffering[k];
+              }
             }
+            avg /= w;
+            nowBuffering[i] = avg;
           }
-          avg /= w;
-          nowBuffering[i] = avg;
         }
       }
 
