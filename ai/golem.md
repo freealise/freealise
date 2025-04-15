@@ -30,4 +30,5 @@ have to keep parts of image unchanged with layers
   
 aid for the blind with annotated google streets from pedestrian pov and earbud / tactile display if also deaf  
 
-smart home security instead of many sensors (for gmk)
+smart home security instead of many sensors (for gmk-b.)
+https://www.flickr.com/services/feeds/
