@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Quadtree Thumbnail Maker</title>
+  <style>
+        html, body {
+            background-color: black;
+            color: white;
+            font-family: sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        a {
+            color: #ccc;
+        }
+        #source, #img_out, #canvas {
+            display: none;
+        }
+        svg {
+            width: 640px;
+            height: 640px;
+            border: 8px solid white;
+        }
+        #info {
+            font-size: 13px;
+            float: right;
+            margin: 4px 4px;
+        }
+        #content {
+            width: 660px;
+            text-align: left;
+            margin: 0 auto;
+        }
+        p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+  </style>
+  <script type="text/javascript" src="quadtree.js"></script>
+</head>
+<body>
+  <h6>Quadtree Thumbnail Maker</h6>
+  <canvas id="source"></canvas>
+  <canvas id="canvas"></canvas>
+  <img id="img_out"/><div id="svg_out"><svg id="svg" width="640" height="640" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"></svg></div>
+  <div id="content">
+    <div>
+      <p id="info"></p>
+      <button onclick="start();">Start</button>
+      <button onclick="stop();">Stop</button> <button onclick=
+      "step(); redraw(true);">Step</button> <button onclick=
+      "reset(); redraw();">Reset</button>
+      <button id="fileSelect">Upload</button><input type="file" id="fileElem" accept="image/png,image/jpeg,image/gif" style="display:none" />
+      <a id="dl" href=""></a><button id="download" onclick="drawJpeg();">Download</button>
+    </div>
+    <p>Pictured above is a quadtree. Each node is filled in with
+    the average color of its region in the input image. A score is
+    computed for each node based on its mean squared error and its
+    area. The node with the lowest score (highest error) is split
+    into four child nodes. This process is repeated as many times
+    as desired. Detailed regions will be recursively refined while
+    low contrast regions will remain as larger nodes.</p>
+    <p>This is a web-based visualization of code originally written
+    in Python. See GitHub for the code: <a target="_blank" href=
+    "https://github.com/fogleman/Quads">https://github.com/fogleman/Quads</a></p>
+  </div>
+  <script>
+
+        const fileSelect = document.getElementById("fileSelect"),
+        fileElem = document.getElementById("fileElem");
+
+        fileSelect.addEventListener("click", (e) => {
+          fileElem.click();
+        }, false);
+        fileElem.addEventListener("change", handleFiles);
+
+        function handleFiles(e) {
+          if (!e.target.files.length) {
+            alert("No file selected!");
+          } else {
+            loadImage(e.target.files[0]);
+          }
+        }
+
+
+    function drawJpeg() {
+        var width = 1024;
+        var height = 1024;
+        
+        canvas_out.width = width;
+        canvas_out.height = height;
+        
+        img_out.src = "data:image/svg+xml;base64,"+btoa(svg.outerHTML);
+        img_out.onload = function() {
+          context_out.drawImage(img_out, 0, 0, width, height);
+          var dt = canvas_out.toDataURL('image/jpeg');
+          
+          document.getElementById("dl").href = dt;
+          document.getElementById("dl").download = "quad.jpg";
+          document.getElementById("dl").click();
+          document.getElementById("dl").href = "";
+        }
+    }
+
+
+    var bd = 0.01;
+
+    function showSvg() {
+        var svg_code = '';
+        for (var i=0; i<quads.length; i++) {
+          svg_code += '<rect width="'+(quads[i].w+bd*2)+'" height="'+(quads[i].h+bd*2)+'" x="'+(quads[i].x-bd)+'" y="'+(quads[i].y-bd)+'" rx="0" ry="0" stroke-width="0" stroke="'+quads[i].previousFill+'" fill="'+quads[i].fill+'" onclick="split(d);redraw();"/>';
+        }
+        svg.innerHTML = svg_code;
+    }
+
+    function loadImage(file) {
+        var imageType = /image.*/;
+        if (!file.type.match(imageType)) {
+          return;
+        }
+        var reader = new FileReader();
+        reader.onload = (function(x) {
+            return function(e) {
+                x.src = e.target.result;
+            };
+        })(img);
+        reader.readAsDataURL(file);
+    }
+
+    function start() {
+        running = true;
+        updateView();
+        updateModel();
+    }
+
+    function stop() {
+        running = false;
+        updateView();
+        updateModel();
+        //console.log(JSON.stringify(quads));
+    }
+
+    function reset() {
+        var width = 1024;
+        var height = 1024;
+        
+        canvas.width = width;
+        canvas.height = height;
+        context.drawImage(img, 0, 0, width, height);
+        quads = [];
+        quads.push(createQuad(0, 0, width, height, "#000000"));
+        redraw();
+    }
+
+    var leaf_size = 4;
+    var area_power = 1/4;
+
+    var svg_out = document.getElementById("svg_out");
+    var svg = document.getElementById("svg");
+    var img_out = document.getElementById("img_out");
+
+    var canvas = document.getElementById("source");
+    var context = canvas.getContext("2d");
+
+    var canvas_out = document.getElementById("canvas");
+    var context_out = canvas_out.getContext("2d");
+    
+    var quads = [];
+    var id = 0;
+    var updateViewTimer = null;
+    var updateModelTimer = null;
+    var running = true;
+
+    var img = new Image();
+    img.src = pic;
+    img.onload = function() {
+        reset();
+        updateView();
+        updateModel();
+    };
+
+    function key(d) {
+        return d.id;
+    }
+
+    function checkFilter(x) {
+      return !x.leaf;
+    }
+
+    function step() {
+        var items = quads.filter(checkFilter);
+        items.sort(function(a, b){return a.score-b.score});
+
+        var quad = items[0];
+        split(quad);
+    }
+
+    function updateModel() {
+        clearTimeout(updateModelTimer);
+        if (running) {
+            step();
+            updateModelTimer = setTimeout(updateModel, 1);
+        }
+    }
+
+    function updateView() {
+        clearTimeout(updateViewTimer);
+        if (running) {
+            redraw();
+            updateViewTimer = setTimeout(updateView, 40);
+        }
+    }
+
+    function redraw() {
+        var iterations = (quads.length - 1) / 3;
+        document.getElementById("info").innerText = 'Iterations: ' + iterations + ' - Shapes: ' + quads.length;
+        showSvg();
+    }
+
+    function split(quad) {
+        if (quad.leaf) {
+            return;
+        }
+        var index = quads.indexOf(quad);
+        quads.splice(index, 1);
+        var w = quad.w / 2;
+        var h = quad.h / 2;
+        var x1 = quad.x;
+        var x2 = quad.x + w;
+        var y1 = quad.y;
+        var y2 = quad.y + h;
+        quads.push(createQuad(x1, y1, w, h, quad.fill));
+        quads.push(createQuad(x2, y1, w, h, quad.fill));
+        quads.push(createQuad(x1, y2, w, h, quad.fill));
+        quads.push(createQuad(x2, y2, w, h, quad.fill));
+    }
+
+    function createQuad(x, y, w, h, previousFill) {
+        id++;
+        var c = computeColor(x, y, w, h);
+        var error = c[3];
+        var score = -error * Math.pow(w * h, area_power);
+        var color = 16777216 + (c[0] << 16) + (c[1] << 8) + c[2];
+        var fill = '#' + color.toString(16).substring(1);
+        var leaf = w <= leaf_size || h <= leaf_size;
+        return {
+            id: id,
+            x: x, y: y, w: w, h: h,
+            fill: fill, leaf: leaf, score: score,
+            previousFill: previousFill
+        }
+    }
+
+    function computeHistogram(x, y, w, h) {
+        var data = context.getImageData(x, y, w, h).data;
+        var result = [];
+        for (var i = 0; i < 1024; i++) {
+            result.push(0);
+        }
+        for (var i = 0; i < data.length; i++) {
+            result[(i % 4) * 256 + data[i]]++;
+        }
+        return result;
+    }
+
+    function weightedAverage(hist) {
+        var total = 0;
+        var value = 0;
+        for (var i = 0; i < 256; i++) {
+            total += hist[i];
+            value += hist[i] * i;
+        }
+        value = value / total;
+        var error = 0;
+        for (var i = 0; i < 256; i++) {
+            error += (value - i) * (value - i) * hist[i];
+        }
+        error = Math.sqrt(error / total);
+        return [value, error];
+    }
+
+    function colorFromHistogram(hist) {
+        var c1 = weightedAverage(hist.slice(0, 256));
+        var c2 = weightedAverage(hist.slice(256, 512));
+        var c3 = weightedAverage(hist.slice(512, 768));
+        var r = Math.round(c1[0]);
+        var g = Math.round(c2[0]);
+        var b = Math.round(c3[0]);
+        var e = c1[1] * 0.33 + c2[1] * 0.33 + c3[1] * 0.33;
+        return [r, g, b, e];
+    }
+
+    function computeColor(x, y, w, h) {
+        return colorFromHistogram(computeHistogram(x, y, w, h));
+    }
+
+  </script>
+</body>
+</html>
