@@ -56,6 +56,22 @@
           lastOut = nowBuffering[i];
           nowBuffering[i] *= 3.5; // (roughly) compensate for gain
         }
+        var avg = 0;
+        var w = 3;
+        for (let i = 0; i < frameCount; i++) {
+          avg = 0;
+          for (var k=i-parseInt(w/2); k<=i+parseInt(w/2); k++) {
+            if (k<0) {
+              avg += nowBuffering[frameCount+k];
+            } else if (k>=frameCount) {
+              avg += nowBuffering[k-frameCount];
+            } else {
+              avg += nowBuffering[k];
+            }
+          }
+          avg /= w;
+          nowBuffering[i] = avg;
+        }
       }
 
       // Get an AudioBufferSourceNode.
