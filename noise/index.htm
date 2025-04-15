@@ -6,11 +6,10 @@
     <title>Web Audio API: AudioBuffer</title>
   </head>
 
-  <body style="background-color:black;color:white">
+  <body style="background-color:black;color:gray">
     <h1>Web Audio API: AudioBuffer</h1>
     <button>Make gray noise</button>
-    <a href="https://archive.org/download/2-hrs-of-rain-sounds-rain-thunderstorm-sounds-to-sleep-relax-study-reduce-stress-help-insomnia">noise</a>
-
+    
   </body>
   <script>
     const button = document.querySelector("button");
@@ -74,6 +73,29 @@
             avg /= w;
             nowBuffering[i] = avg;
           }
+        }
+        var tmp = [];
+        var avg = 0;
+        var w = 4;
+        var passes = 4;
+        for (let j = 0; j < passes; j++) {
+          for (let i = 0; i < frameCount; i++) {
+            avg = 0;
+            for (var k=i-parseInt(w/2); k<i+parseInt(w/2); k++) {
+              if (k<0) {
+                avg += nowBuffering[frameCount+k];
+              } else if (k>=frameCount) {
+                avg += nowBuffering[k-frameCount];
+              } else {
+                avg += nowBuffering[k];
+              }
+            }
+            avg /= w;
+            tmp[i] = avg;
+          }
+        }
+        for (let i = 0; i < frameCount; i++) {
+          nowBuffering[i] -= tmp[i];
         }
       }
 
