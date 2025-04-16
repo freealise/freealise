@@ -19,10 +19,8 @@ or plastic glasses with wireframe (transparent mat, black striped plastic, or pr
 //upload video/subs to archive.org for transcoding (https://archive.org/details/download_20240209_0047)  
 //subtitles with timestamps: use YouTube's Automatic Captions  
   
-//foil is smoothed with nail file or sandpaper (?) and covered by food-grade white wax like the one from cheese or blu-tack / kneadable eraser for face (covered with airtight rubber balloon ?);  
-make (wet or papier mache with starch + water for natural beings) paper models from depth maps with texture  
-drawn or printed from pano thumbnails with large fov stitched together,  
-embossed with cardboard and stylus / wire / foil / wax and painted in CMYK  
+//foil is smoothed with nail file or sandpaper (?) and covered by food-grade white wax like the one from cheese or blu-tack / kneadable eraser painted in CMYK (covered with airtight rubber balloon ?)  
+make wet paper or cardboard models from depth map thumbnails with large fov for shadows  
 (https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=CCBWqYeljZnrtlJzJQaEGw&cb_client=maps_sv.tactile.gps&w=8192&h=4096&yaw=208.25&pitch=0&thumbfov=165)  
   
 crossfade tracks in audacity among 5.1 channel speakers according to distance of source from them  
