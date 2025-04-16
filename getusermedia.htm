@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        background: black;
+        color:#CCCCCC; 
+      }
+      #c2 {
+        background-color: #ff00ff;
+      }
+video {
+  margin-top: 2px;
+  border: 1px solid black;
+}
+
+.button {
+  cursor: pointer;
+  display: block;
+  width: 160px;
+  border: 1px solid black;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 2px;
+  padding-bottom: 4px;
+  color: white;
+  background-color: gray;
+  text-decoration: none;
+}
+
+.bottom {
+  clear: both;
+  padding-top: 10px;
+}
+
+#record {
+  position:fixed;
+  top:0;
+  right:0;
+}
+    </style>
+  </head>
+  <body>
+  
+<div id="record">
+  <input type="file" id="videofile" name="video" accept="video/*">
+  <div id="startButton" class="button">Start Recording</div>
+  <video id="preview" width="160" height="120" autoplay muted></video>
+  <div id="stopButton" class="button">Stop Recording</div>
+  <a id="downloadButton" class="button" href="">Download</a>
+</div>
+  
+    <div>
+      <video id="video" src="" controls="true"/>
+    </div>
+    <div>
+      <canvas id="c1" width="160" height="120"></canvas>
+      <canvas id="c2" width="160" height="120"></canvas>
+    </div>
+    
+<div class="bottom">
+  <pre id="log"></pre>
+</div>
+    
+<script type="text/javascript">
+  
+  let processor = {
+    timerCallback: function() {
+      if (this.video.paused || this.video.ended) {
+        return;
+      }
+      this.computeFrame();
+      let self = this;
+      setTimeout(function () {
+          self.timerCallback();
+        }, 0);
+    },
+  
+    doLoad: function() {
+      this.video = document.getElementById("video");
+      this.c1 = document.getElementById("c1");
+      this.ctx1 = this.c1.getContext("2d");
+      this.c2 = document.getElementById("c2");
+      this.ctx2 = this.c2.getContext("2d");
+      let self = this;
+      this.video.addEventListener("play", function() {
+          self.width = self.video.videoWidth / 2;
+          self.height = self.video.videoHeight / 2;
+          self.c1.width = self.width;
+          self.c1.height = self.height;
+          self.c2.width = self.width;
+          self.c2.height = self.height;
+          self.timerCallback();
+        }, false);
+    },
+  
+    computeFrame: function() {
+      this.ctx1.drawImage(this.video, 0, 0, this.width, this.height);
+      let frame = this.ctx1.getImageData(0, 0, this.width, this.height);
+          let l = frame.data.length / 4;
+  
+      for (let i = 0; i < l; i++) {
+        let r = frame.data[i * 4 + 0];
+        let g = frame.data[i * 4 + 1];
+        let b = frame.data[i * 4 + 2];
+        if (g < 43 && r < 43 && b < 43)
+          frame.data[i * 4 + 3] = 0;
+      }
+      this.ctx2.putImageData(frame, 0, 0);
+      return;
+    }
+  };
+
+document.addEventListener("DOMContentLoaded", () => {
+  processor.doLoad();
+});
+  
+
+//https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia
+
+let startButton = document.getElementById("startButton");
+let stopButton = document.getElementById("stopButton");
+let downloadButton = document.getElementById("downloadButton");
+let logElement = document.getElementById("log");
+
+let preview = document.getElementById("preview");
+preview.addEventListener('loadeddata', updateVideo);
+const uploadButton = document.getElementById('videofile');
+uploadButton.addEventListener('change', updateVideo);
+const video = document.getElementById("video");
+video.addEventListener('canplaythrough', loadedVideo);
+
+let recorder = null;
+let recordingTimeMS = 1000;
+
+function updateVideo(event) {
+  URL.revokeObjectURL(video.currentSrc);
+  if (event.target.tagName != "VIDEO") {
+    const file = event.target.files[0];
+    video.src = URL.createObjectURL(file);
+  } else {
+    video.src = event.target.src;
+  }
+  logElement.innerHTML = 'Loading video';
+  video.load();
+}
+
+function loadedVideo() {
+  logElement.innerHTML = 'Video is loaded.';
+}
+
+function log(msg) {
+  logElement.innerHTML += `${msg}\n`;
+}
+
+function wait(delayInMS) {
+  return new Promise((resolve) => setTimeout(resolve, delayInMS));
+}
+
+function startRecording(stream, lengthInMS) {
+  recorder = new MediaRecorder(stream);
+  let data = [];
+
+  recorder.ondataavailable = (event) => data.push(event.data);
+  recorder.start();
+  log(`${recorder.state} for ${lengthInMS / 1000} seconds…`);
+
+  let stopped = new Promise((resolve, reject) => {
+    recorder.onstop = resolve;
+    recorder.onerror = (event) => reject(event.name);
+  });
+
+  let recorded = wait(lengthInMS).then(() => {
+    stopButton.addEventListener(
+      "click",
+      () => {
+        if (recorder.state === "recording") {
+          recorder.stop();
+        }
+        stop(preview.srcObject);
+      },
+      false,
+    );
+  });
+
+  return Promise.all([stopped, recorded]).then(() => data);
+}
+
+function stop(stream) {
+  stream.getTracks().forEach((track) => track.stop());
+}
+
+startButton.addEventListener(
+  "click",
+  () => {
+    navigator.mediaDevices
+      .getUserMedia({
+        video: {
+	        facingMode: "user",
+	        width: { ideal: 160 },
+	        height: { ideal: 120 },
+	        frameRate: { ideal: 25 }
+	      },
+        audio: false,
+      })
+      .then((stream) => {
+        preview.srcObject = stream;
+        return new Promise((resolve) => (preview.onplaying = resolve));
+      })
+      .then(() => startRecording(preview.srcObject, recordingTimeMS))
+      .then((recordedChunks) => {
+        let recordedBlob = new Blob(recordedChunks, { type: "video/mp4" });
+        var url = URL.createObjectURL(recordedBlob);
+        log(
+          `Successfully recorded ${recordedBlob.size} bytes of ${recordedBlob.type} media.`,
+        );
+	      downloadButton.href = url;
+        downloadButton.download = "RecordedVideo.mp4";
+	      preview.srcObject = null;
+	      preview.src = url;
+      })
+      .catch((error) => {
+        if (error.name === "NotFoundError") {
+          log("Camera or microphone not found. Can't record.");
+        } else {
+          log(error);
+        }
+      });
+  },
+  false,
+);
+    </script>
+  </body>
+</html>
