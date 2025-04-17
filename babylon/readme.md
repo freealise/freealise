@@ -5,6 +5,7 @@ https://github.com/ssatguru/BabylonJS-MeshEditor,
 https://doc.babylonjs.com/toolsAndResources/assetLibraries/postProcessLibrary/asciiArtPP for depth, 
 https://doc.babylonjs.com/features/featuresDeepDive/materials/using/parallaxMapping for display ?) -> 3d video (animation by trilinear interpolation)  
 quadtrees for optimizing depth map triangulation (~earcut)  
+https://madebyevan.com/shaders/lightmap/  
   
 mocap of pose / face / hands for virtual characters (tensorflow / opencv; hand detection for multitouch modelling; physics simulation for hair and clothes, or detect markers by color - https://docs.opencv.org/4.x/df/d9d/tutorial_py_colorspaces.html)  
 3d scanner of foil (photogrammetry): ai depth estimation of cube sides from phone camera + gyroscope
