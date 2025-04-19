@@ -1,3 +1,5 @@
+use binary search for regression instead of random numbers  
+https://en.wikipedia.org/wiki/Binary_search  
 
 https://developers.google.com/machine-learning  
 https://codelabs.developers.google.com/codelabs/tfjs-training-regression/index.html  
