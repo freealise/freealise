@@ -1,4 +1,4 @@
-bezier to nurbs  
+bezier to nurbs by repeated knot insertion (three in a row)  
   
 scene with color and shadows (filmed or drawn cubemap + layers / transparency; apply displacementmap from ascii or dot symbols x2 (0-65535, 16 colors) to cube
 https://github.com/ssatguru/BabylonJS-EditControl, 
