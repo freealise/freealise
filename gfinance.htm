@@ -22,8 +22,9 @@
   <script>
 
   var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
+  xhttp.onreadystatechange = function(e) {
     if (this.readyState == 4 && this.status == 200) {
+       e.preventDefault();
        // Typical action to be performed when the document is ready:
        document.getElementById("test").innerText = xhttp.responseText;
     }
