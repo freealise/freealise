@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Google for Developers</title>
+  <meta name="robots" content="noindex,indexifembedded">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="viewport" content=
+  "width=device-width, initial-scale=1">
+  <meta name="iframe" content="framebox">
+  <link rel="stylesheet" href=
+  "//fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700&amp;display=swap">
+  <link rel="stylesheet" href=
+  "//fonts.googleapis.com/css?family=Material+Icons&amp;display=block">
+  <link rel="stylesheet" href=
+  "https://www.gstatic.com/devrel-devsite/prod/v02f7c7b934487be255c5f28ebb00ed6c2fde7a607ac1d91773e0036b0a06ec31/developers/css/app.css">
+
+</head>
+<body style="height: auto; overflow: hidden; padding: 16px;">
+  <meta name="auto_height" content="true">
+  <meta name="auto_width" content="true">
+  <head>
+    <link rel="stylesheet" href=
+    "https://developers.google.com/static/chart/interactive/css/framefix.css">
+    <title>Sheets Example</title>
+    <script type="text/javascript" src=
+    "https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+    google.charts.load('current', {packages: ['corechart']});
+    google.charts.setOnLoadCallback(drawGID);
+
+    // [START gid]
+    function drawGID() {
+      var queryString = encodeURIComponent('SELECT A, H, O, Q, R, U LIMIT 5 OFFSET 8');
+
+      var query = new google.visualization.Query(
+          'https://docs.google.com/spreadsheets/d/1XWJLkAwch5GXAt_7zOFDcg8Wm8Xv29_8PWuuW15qmAE/gviz/tq?gid=0&headers=1&tq=' + queryString);
+      query.send(handleQueryResponse);
+    }
+
+    function handleQueryResponse(response) {
+      if (response.isError()) {
+        alert('Error in query: ' + response.getMessage() + ' ' + response.getDetailedMessage());
+        return;
+      }
+
+      var data = response.getDataTable();
+      var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
+      chart.draw(data, { height: 400 });
+    }
+    // [END gid]
+
+    // [START sheet_name]
+    function drawSheetName() {
+      var queryString = encodeURIComponent('SELECT A, H, O, Q, R, U LIMIT 5 OFFSET 8');
+
+      var query = new google.visualization.Query(
+          'https://docs.google.com/spreadsheets/d/1XWJLkAwch5GXAt_7zOFDcg8Wm8Xv29_8PWuuW15qmAE/gviz/tq?sheet=Sheet1&headers=1&tq=' + queryString);
+      query.send(handleSampleDataQueryResponse);
+    }
+
+    function handleSampleDataQueryResponse(response) {
+      if (response.isError()) {
+        alert('Error in query: ' + response.getMessage() + ' ' + response.getDetailedMessage());
+        return;
+      }
+
+      var data = response.getDataTable();
+      var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
+      chart.draw(data, { height: 400 });
+    }
+    // [END sheet_name]
+    </script>
+  </head>
+  <div id="chart_div"></div>
+</body>
+</html>
