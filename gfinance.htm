@@ -23,6 +23,7 @@
 
   var xhttp = new XMLHttpRequest();
   xhttp.responseType = 'text';
+  xhttp.overrideMimeType("text/plain");
   xhttp.onreadystatechange = function(e) {
     if (this.readyState == 4 && this.status == 200) {
        e.preventDefault();
