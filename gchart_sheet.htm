@@ -31,10 +31,9 @@
 
     // [START gid]
     function drawGID() {
-      var queryString = encodeURIComponent('SELECT A, H, O, Q, R, U LIMIT 5 OFFSET 8');
 
       var query = new google.visualization.Query(
-          'https://docs.google.com/spreadsheets/d/1XWJLkAwch5GXAt_7zOFDcg8Wm8Xv29_8PWuuW15qmAE/gviz/tq?gid=0&headers=1&tq=' + queryString);
+          'https://docs.google.com/spreadsheets/d/1v1KixmY4ZWpXEWBTJTScynMhOhlN08_R0Q2V94ebHtw/gviz/tq?sheet=Sheet1&range=A1:B,D1:D,F1:F,H1:H,J1:J');
       query.send(handleQueryResponse);
     }
 
@@ -45,25 +44,10 @@
       }
 
       var data = response.getDataTable();
-      var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
+      var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
       chart.draw(data, { height: 400 });
     }
     // [END gid]
-
-    // [START sheet_name]
-    function drawSheetName() {
-      var queryString = encodeURIComponent('SELECT A, H, O, Q, R, U LIMIT 5 OFFSET 8');
-
-      var query = new google.visualization.Query(
-          'https://docs.google.com/spreadsheets/d/1XWJLkAwch5GXAt_7zOFDcg8Wm8Xv29_8PWuuW15qmAE/gviz/tq?sheet=Sheet1&headers=1&tq=' + queryString);
-      query.send(handleSampleDataQueryResponse);
-    }
-
-    function handleSampleDataQueryResponse(response) {
-      if (response.isError()) {
-        alert('Error in query: ' + response.getMessage() + ' ' + response.getDetailedMessage());
-        return;
-      }
 
       var data = response.getDataTable();
       var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
