@@ -25,12 +25,13 @@
   xhttp.responseType = 'text';
   xhttp.overrideMimeType("text/plain");
   xhttp.onreadystatechange = function(e) {
+    e.preventDefault();
     if (this.readyState == 4 && this.status == 200) {
        // Typical action to be performed when the document is ready:
        document.getElementById("test").innerText = xhttp.responseText;
     }
   };
-  xhttp.open("GET", "https://docs.google.com/spreadsheets/d/1v1KixmY4ZWpXEWBTJTScynMhOhlN08_R0Q2V94ebHtw/gviz/tq?tqx=out:html&sheet=Sheet1&range=A1:B,D1:D,F1:F,H1:H,J1:J&usp=sharing", true);
+  xhttp.open("GET", "https://docs.google.com/spreadsheets/d/1v1KixmY4ZWpXEWBTJTScynMhOhlN08_R0Q2V94ebHtw/gviz/tq?tqx=out:csv&sheet=Sheet1&range=A1:B,D1:D,F1:F,H1:H,J1:J", true);
   xhttp.send();
 
   </script>
