@@ -24,9 +24,10 @@
   var xhttp = new XMLHttpRequest();
   xhttp.responseType = 'text';
   xhttp.overrideMimeType("text/plain");
-  xhttp.onreadystatechange = function(e) {
-    e.preventDefault();
+  xhttp.onreadystatechange = function() {
+    this.preventDefault();
     if (this.readyState == 4 && this.status == 200) {
+       alert(xhttp.response);
        // Typical action to be performed when the document is ready:
        document.getElementById("test").innerText = xhttp.responseText;
     }
