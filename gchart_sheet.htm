@@ -43,7 +43,7 @@
 
       var data = response.getDataTable();
       var dataView = new google.visualization.DataView(data);
-      dataView.setColumns([0, 1, {sourceColumn: 2, role: 'interval'}, {sourceColumn: 3, role: 'interval'}, 4]);
+      dataView.setColumns([0, 4, {sourceColumn: 1, role: 'interval'}, {sourceColumn: 2, role: 'interval'}, {sourceColumn: 3, role: 'interval'}, {sourceColumn: 4, role: 'interval'}]);
       
       var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
       chart.draw(dataView, options);
