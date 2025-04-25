@@ -45,10 +45,17 @@
         alert('Error in query: ' + response.getMessage() + ' ' + response.getDetailedMessage());
         return;
       }
+      
+      var options = {
+            title: '',
+            lineWidth: 1,
+            //intervals: { 'style':'area' },
+            legend: 'none'
+      }
 
       var data = response.getDataTable();
       var chart = new google.visualization.CandlestickChart(document.getElementById('chart_div'));
-      chart.draw(data, { height: 400 });
+      chart.draw(data, options);
     }
     // [END gid]
 
