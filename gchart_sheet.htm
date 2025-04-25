@@ -20,7 +20,7 @@
     function drawGID() {
 
       var query = new google.visualization.Query(
-          'https://docs.google.com/spreadsheets/d/1v1KixmY4ZWpXEWBTJTScynMhOhlN08_R0Q2V94ebHtw/gviz/tq?sheet=Sheet1&range=A2:D');
+          'https://docs.google.com/spreadsheets/d/1v1KixmY4ZWpXEWBTJTScynMhOhlN08_R0Q2V94ebHtw/gviz/tq?sheet=Sheet1&range=A2:E');
       query.send(handleQueryResponse);
     }
 
@@ -40,6 +40,8 @@
       }
 
       var data = response.getDataTable();
+      dataView.setColumns([0, 1, {sourceColumn: 2, role: 'interval'}, {sourceColumn: 3, role: 'interval'}, 4]);
+      
       var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
       chart.draw(data, options);
     }
