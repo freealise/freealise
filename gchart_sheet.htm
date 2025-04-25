@@ -32,11 +32,14 @@
       
       var options = {
             title: '',
-            risingColor: { strokeWidth: 1 },
-            fallingColor: { strokeWidth: 1 },
+            bar: { groupWidth: '100%' }, // Remove space between bars.
+            candlestick: {
+              fallingColor: { strokeWidth: 1 },
+              risingColor: { strokeWidth: 1 }
+            },
             //intervals: { 'style':'area' },
             width: '100%',
-            height: 320,
+            height: '100%',
             chartArea: {width: '100%', height: '100%'},
             legend: 'none'
       }
@@ -48,6 +51,6 @@
     // [END gid]
 
   </script>
-  <div id="chart_div"></div>
+  <div id="chart_div"  style="width: 100%; height: 320px;"></div>
 </body>
 </html>
