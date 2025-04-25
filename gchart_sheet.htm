@@ -40,10 +40,11 @@
       }
 
       var data = response.getDataTable();
+      var dataView = new google.visualization.DataView(data);
       dataView.setColumns([0, 1, {sourceColumn: 2, role: 'interval'}, {sourceColumn: 3, role: 'interval'}, 4]);
       
       var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
-      chart.draw(data, options);
+      chart.draw(dataView, options);
     }
     // [END gid]
 
