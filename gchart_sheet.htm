@@ -20,7 +20,7 @@
     function drawGID() {
 
       var query = new google.visualization.Query(
-          'https://docs.google.com/spreadsheets/d/1v1KixmY4ZWpXEWBTJTScynMhOhlN08_R0Q2V94ebHtw/gviz/tq?sheet=Sheet1&range=A2:A,D2:D,B2:B,E2:E,C2:C');
+          'https://docs.google.com/spreadsheets/d/1v1KixmY4ZWpXEWBTJTScynMhOhlN08_R0Q2V94ebHtw/gviz/tq?sheet=Sheet1&range=A2:D');
       query.send(handleQueryResponse);
     }
 
@@ -32,12 +32,7 @@
       
       var options = {
             title: '',
-            bar: { groupWidth: '100%' }, // Remove space between bars.
-            candlestick: {
-              fallingColor: { strokeWidth: 1, stroke: '#ff0000', fill: '#ff0000' }, // red
-              risingColor: { strokeWidth: 1, stroke: '#00ff00', fill: '#00ff00' }   // green
-            },
-            //intervals: { 'style':'area' },
+            intervals: { 'style':'area' },
             width: '100%',
             height: '100%',
             chartArea: {width: '100%', height: '100%'},
@@ -45,7 +40,7 @@
       }
 
       var data = response.getDataTable();
-      var chart = new google.visualization.CandlestickChart(document.getElementById('chart_div'));
+      var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
       chart.draw(data, options);
     }
     // [END gid]
