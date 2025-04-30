@@ -7,4 +7,6 @@
 - Vecherovsky (Irish Jew) -> Siberia / Solovetz ? POV: programmer  
   
 - satire on current events (https://en.wikipedia.org/wiki/The_Cherry_Orchard)  
+
+- SG analysis of MK ??  
   
