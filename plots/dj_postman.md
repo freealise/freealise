@@ -5,3 +5,7 @@ both in Europe (as too far to the left for America, like Sanders) - TP is Britis
 
 credit card with the name Wilbury  
 💍 if he gave you a ring then you might be a king  
+
+
+#### BT archive
+chord | tab | notes database for learning (friends in America)  
