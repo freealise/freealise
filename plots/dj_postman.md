@@ -10,3 +10,10 @@ parody 'new wave' (retrofuturism), post-cyberpunk (disappointment with tech - 'n
 
 #### BT archive
 chord | tab | notes database for learning (friends in America)  
+
+
+"...the world of creative arts throughout Europe following the Enlightenment—from music, to art, 
+to literature and film—was known for pushing, rather than preserving, social and moral boundaries, 
+introducing new voices and ideas that challenged the prevailing establishment. 
+For hundreds of years, the secular arts were known for confronting and mocking traditional beliefs 
+and ways of life, all in the name of uninhibited exploration." 🥀
