@@ -22,3 +22,4 @@ and ways of life, all in the name of uninhibited exploration." 🥀
 According to author Keith Badman, this prompted Lennon to give a Nazi salute "and shout 'Sieg Heil!', 
 even holding his finger to his upper lip as a Hitler-style moustache". 
 Lennon also took to giving crowds an open-palmed benediction in the style of the Pope.'
+(reason: disappointment with Christianity)
