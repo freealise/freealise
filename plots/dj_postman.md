@@ -21,5 +21,7 @@ and ways of life, all in the name of uninhibited exploration." 🥀
 'The mass of people and sound was reminiscent of film footage of 1930s Nuremberg rallies. 
 According to author Keith Badman, this prompted Lennon to give a Nazi salute "and shout 'Sieg Heil!', 
 even holding his finger to his upper lip as a Hitler-style moustache". 
+During the group's years on the Hamburg club circuit, Lennon had taken to giving mock-Hitler tirades 
+from the stage and baiting audiences with jokes about Germany's loss in World War II.
 Lennon also took to giving crowds an open-palmed benediction in the style of the Pope.'
 (reason: disappointment with Christianity)
