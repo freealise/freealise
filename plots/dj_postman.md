@@ -24,4 +24,4 @@ even holding his finger to his upper lip as a Hitler-style moustache".
 During the group's years on the Hamburg club circuit, Lennon had taken to giving mock-Hitler tirades 
 from the stage and baiting audiences with jokes about Germany's loss in World War II.
 Lennon also took to giving crowds an open-palmed benediction in the style of the Pope.'
-(reason: disappointment with Christianity)
+(reason: disappointment with Christianity - https://en.wikipedia.org/wiki/More_popular_than_Jesus)
