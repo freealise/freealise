@@ -9,7 +9,7 @@ or plastic glasses with wireframe (transparent mat, black striped plastic, or pr
 //upload video/subs to archive.org for transcoding (https://archive.org/details/download_20240209_0047)  
 //subtitles with timestamps: use YouTube's Automatic Captions  
   
-//make dummies from wire and foil, photograph and recolor in CMYK (morph face)  
+//make dummies from wire and foil (smoothed with nail file or sandpaper and painted in CMYK ?), photograph and recolor (morph face)  
 wet paper or cardboard models from depth map thumbnails with large fov for shadows  
 (https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=CCBWqYeljZnrtlJzJQaEGw&cb_client=maps_sv.tactile.gps&w=8192&h=4096&yaw=208.25&pitch=0&thumbfov=165)  
   
