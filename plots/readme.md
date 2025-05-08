@@ -6,7 +6,7 @@
 
 - Mary Poppins is a Jew in disguise  
   
-- Vecherovsky (Irish Jew ?) -> Siberia / Solovetz ? POV: programmer  
+- Vecherovsky (Irish Jew ?) -> Birobidzhan capital of Siberia (Derek ?) / Solovetz ? POV: programmer  
   
 - satire on current events (https://en.wikipedia.org/wiki/The_Cherry_Orchard)  
 
