@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Multi Touch HTML5 Canvas Paint</title>
+<meta charset="UTF-8">
+</head>
+<!--[if lt IE 7 ]> <body class="ie6 "> <![endif]-->
+<!--[if IE 7 ]>    <body class="ie7 "> <![endif]-->
+<!--[if IE 8 ]>    <body class="ie8 "> <![endif]-->
+<!--[if !IE]>--> <body class=""> <!--<![endif]-->
+<!-- wondering wtf that ^^^ is? 
+     check: http://paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+-->
+
+<div id="content">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style media="screen">canvas{border:1px solid #ccc}</style>
+<canvas id="example" height=450 width=300></canvas>
+<input type="range" id="volume" min="0.0" max="1.0" step="0.001" value="1.0"/> volume
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js">
+</script>
+<script>
+ //<![CDATA[
+
+var w_old = [];
+var w_new = [];
+var d_old = [];
+var d_new = [];
+var xold, yold;
+var line_width, levels, threshold;
+
+
+var CanvasDrawr = function(options) {
+    var canvas = document.getElementById(options.id), ctxt = canvas.getContext("2d");
+    canvas.style.width = '100%'
+    canvas.width = canvas.offsetWidth;
+    canvas.style.width = '';
+    line_width = options.size || 16;
+    threshold = options.threshold || 0;
+    levels = options.levels || 16;
+    ctxt.lineWidth = line_width;
+    ctxt.lineCap = options.lineCap || "butt";
+    ctxt.lineJoin = options.lineJoin || "bevel";
+
+    ctxt.fillStyle = "rgba(255,255,255,1.0)";
+    ctxt.fillRect(0,0, canvas.width,canvas.height);
+
+    ctxt.pX = undefined;
+    ctxt.pY = undefined;
+    var lines = [, , ];
+    var offset = $(canvas).offset();
+    var self = {init: function() {
+            canvas.addEventListener('touchleave', self.colorPicker, false);
+            canvas.addEventListener('touchcancel', self.colorPicker, false);
+            canvas.addEventListener('touchend', self.colorPicker, false);
+            canvas.addEventListener('touchstart', self.preDraw, false);
+            canvas.addEventListener('touchmove', self.draw, false);
+        },colorPicker: function(event) {
+            event.preventDefault();
+            
+            //if (event.pageX-offset.left==xold && event.pageY-offset.top==yold) {
+              var p = ctxt.getImageData(event.pageX - offset.left, event.pageY - offset.top, 1, 1).data;
+              document.getElementById("volume").value = 1-(p[0]+p[1]+p[2])/3/255;
+            //}
+
+        },preDraw: function(event) {
+            $.each(event.touches, function(i, touch) {
+                var id = touch.identifier, colors = ["#ff0000", "#ff8000", "#ffff00", "#80ff00", "#00ff00", "#00ff80", "#00ffff", "#0080ff", "#0000ff", "#8000ff", "#ff00ff", "#ff0080"], mycolor = colors[Math.round(Math.random() * colors.length)];
+                lines[id] = {x: this.pageX - offset.left, y: this.pageY - offset.top, color: mycolor};
+                w_old[id] = line_width/2;
+                d_old[id] = 1;
+            });
+            event.preventDefault();
+            self.colorPicker(event);
+            xold = event.pageX - offset.left;
+            yold = event.pageY - offset.top;
+
+        },draw: function(event) {
+            var e = event, hmm = {};
+            $.each(event.touches, function(i, touch) {
+                var id = touch.identifier, moveX = this.pageX - offset.left - lines[id].x, moveY = this.pageY - offset.top - lines[id].y;
+                var ret = self.move(id, moveX, moveY);
+                lines[id].x = ret.x;
+                lines[id].y = ret.y;
+
+                console.log(touch.radiusX +' '+ touch.radiusY);
+            });
+            event.preventDefault();
+        },move: function(i, changeX, changeY) {
+            
+            d_new[i] = (Math.sqrt(Math.pow(changeX,2)+Math.pow(changeY,2)) + d_old[i]) / 2;
+            if (d_new[i] < 1) {
+              d_new[i] = 1;
+            }
+            if (Math.abs(d_new[i] - d_old[i]) > threshold) {
+              d_new[i] = (d_new[i]+d_old[i])/2;
+            }
+
+            w_new[i] = w_old[i];
+            var v = 1.0 - document.getElementById("volume").value;
+
+            let grd = ctxt.createLinearGradient(0, lines[i].y, 0, lines[i].y+changeY);
+            grd.addColorStop(0, "hsla(0,0%," + parseFloat(1/d_old[i]*100*v) + "%," + parseFloat(1/levels) + ")");
+            grd.addColorStop(1, "hsla(0,0%," + parseFloat(1/d_new[i]*100*v) + "%," + parseFloat(1/levels) + ")");
+
+            ctxt.strokeStyle = grd;
+            ctxt.fillStyle = grd;
+
+            for (var j=1; j<=levels; j++) {
+              ctxt.lineWidth = j;
+              ctxt.beginPath();
+              ctxt.moveTo(lines[i].x - w_old[i]/levels*j, lines[i].y);
+              ctxt.lineTo(lines[i].x + w_old[i]/levels*j, lines[i].y);
+              ctxt.lineTo(lines[i].x+changeX + w_new[i]/levels*j, lines[i].y+changeY);
+              ctxt.lineTo(lines[i].x+changeX - w_new[i]/levels*j, lines[i].y+changeY);
+              ctxt.lineTo(lines[i].x - w_old[i]/levels*j, lines[i].y);
+              ctxt.fill();
+              //ctxt.stroke();
+              ctxt.closePath();
+            }
+
+            w_old[i] = w_new[i];
+            d_old[i] = d_new[i];
+            return {x: lines[i].x + changeX, y: lines[i].y + changeY};
+        }};
+    return self.init();
+};
+$(function() {
+    var super_awesome_multitouch_drawing_canvas_thingy = new CanvasDrawr({id: "example", size: 16, levels: 16});
+});
+//]]></script>
+</div>
+
+<div id="footer">
+Multitouch Canvas Fingerpaint Demo.<br/>
+<b>Code by</b>  <a href="timbranyen.com">Tim Branyen</a>, <a href="http://miketaylr.com">Mike Taylr</a>, <a href="http://paulirish.com">Paul Irish</a> & <a href=//smus.com>Boris Smus</a>.</div>
+
+</body>
+</html>
