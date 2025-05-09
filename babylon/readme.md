@@ -9,7 +9,8 @@ https://doc.babylonjs.com/features/featuresDeepDive/materials/using/parallaxMapp
 quadtrees for optimizing depth map triangulation (~earcut)  
 https://madebyevan.com/shaders/lightmap/, https://madebyevan.com/webgl-path-tracing/  
   
-mocap of pose / face / hands for virtual characters (tensorflow / opencv; hand detection for multitouch modelling; physics simulation for hair and clothes, or detect markers by color - https://docs.opencv.org/4.x/df/d9d/tutorial_py_colorspaces.html)  
+mocap of pose / face / hands for virtual characters (tensorflow / opencv; hand detection for multitouch modelling; physics simulation for hair and clothes,  
+or detect markers by color - https://docs.opencv.org/4.x/df/d9d/tutorial_py_colorspaces.html, https://docs.opencv.org/4.x/db/d64/tutorial_js_colorspaces.html)  
 3d scanner of foil (photogrammetry): ai depth estimation of cube sides from phone camera + gyroscope
   
 ### face / pose / hands detection (for 3d skeleton rotation)  
