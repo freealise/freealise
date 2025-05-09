@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width" />
+  <title>Spectral synthesis by convolvers</title>
+  <style>
+
+#kbrd, #img {
+  display: none;
+}
+
+#txt {
+  width: 100%;
+  height: 256px;
+  font-size: 8px;
+  letter-spacing: 0;
+  line-height: 1em;
+  font-family: monospace;
+  white-space: pre;
+}
+
+  </style>
+</head>
+<body> <!-- use opencv for speed (https://docs.opencv.org/4.x/de/d06/tutorial_js_basic_ops.html) -->
+  <textarea id="txt">            
+ m           
+ m           
+ m           
+ m           
+ m           
+ m           
+ m           
+ m           
+ m           
+ m           
+ m           
+ m           
+ m           
+ m           
+ m           
+             </textarea>
+
+  <button id="play" onclick="play();">></button>
+  <pre id="kbrd"> _.`',-:;~/\^|"!+=<>irt*?v{}()1jl7cs[]zIJefxy3oa5#2uLn4T69CVqFYgkpw8Abh$0UdSZEP%GXNOmKRDQ@HB&WM€</pre>
+  <input type="checkbox" id="linear" onchange="changed=true;"/>linear | 
+  <input type="checkbox" id="invert"/>invert 
+  <input type="file" id="inp">
+  <img id="img"/><br/>
+  <canvas id="canvas"></canvas>
+
+  <script type="text/javascript">
+
+var kbrd = document.getElementById('kbrd').innerText.split("");
+//alert(kbrd.length);
+
+var audioCtx, oscillator, gain, waveArray, convolver_, _convolver, gain_, _gain, _noiseBuffer, noiseBuffer_, left_, right_, _left, _right, _waveArray, waveArray_, ch_, _ch, txt, freqs;
+var changed = true;
+
+var base = 440;
+var npo = 12;
+var octs = 1;
+var freq = base;
+var amp = 0.0;
+var sec = 1;
+var iter = 1;
+var n = 1;
+
+
+document.getElementById('inp').onchange = function(e) {
+  var img = document.getElementById('img');
+  img.onload = draw;
+  img.onerror = failed;
+  img.src = URL.createObjectURL(this.files[0]);
+};
+
+function draw() {
+  var canvas = document.getElementById('canvas');
+  canvas.width = this.width;
+  canvas.height = this.height;
+  var ctx = canvas.getContext('2d');
+  ctx.drawImage(this, 0,0);
+
+  const imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+  var ascii = "";
+
+  for (let i = 0; i < imgData.data.length; i += 4) {
+    var d = (imgData.data[i] + imgData.data[i+1] + imgData.data[i+2])/3;
+    if (!document.getElementById('invert').checked) {
+      d = 255 - d;
+    }
+    ascii += kbrd[parseInt(d/255*95)];
+    if (parseInt(i/4/canvas.width) == i/4/canvas.width) {
+      ascii += "\n";
+    }
+  }
+  ctx.putImageData(imgData, 0, 0);
+  document.getElementById('txt').value = ascii;
+  changed = true;
+}
+
+function failed() {
+  console.error("The provided file couldn't be loaded");
+}
+
+function setBuffers() {
+    if (gain_.gain.value < 0.1 && _gain.gain.value > 0.4 && ch_ === false) {
+      
+      var left = noiseBuffer_.getChannelData(0);
+      var right = noiseBuffer_.getChannelData(1);
+
+      for (var i = 0; i < noiseBuffer_.length; i++) {
+        left[i] = left_[n][i];
+        right[i] = right_[n][i];
+      }
+      console.log(gain_.gain.value);
+      convolver_.buffer = noiseBuffer_;
+      ch_ = true;
+      _ch = false;
+      n++;
+
+    } else if (_gain.gain.value < 0.1 && gain_.gain.value > 0.4 && _ch === false) {
+      
+      var left = _noiseBuffer.getChannelData(0);
+      var right = _noiseBuffer.getChannelData(1);
+
+      for (var i = 0; i < _noiseBuffer.length; i++) {
+        left[i] = _left[n][i];
+        right[i] = _right[n][i];
+      }
+      console.log(_gain.gain.value);
+      _convolver.buffer = _noiseBuffer;
+      _ch = true;
+      ch_ = false;
+      n++;
+
+    }
+    setTimeout(setBuffers, 0.001);
+}
+
+function generate() {
+  if (!audioCtx) {
+
+    audioCtx = new AudioContext();
+
+    convolver_ = audioCtx.createConvolver();
+    _convolver = audioCtx.createConvolver();
+    gain_ = audioCtx.createGain();
+    _gain = audioCtx.createGain();
+    _noiseBuffer = audioCtx.createBuffer(2, parseInt(1.0 * audioCtx.sampleRate), audioCtx.sampleRate);
+    noiseBuffer_ = audioCtx.createBuffer(2, parseInt(1.0 * audioCtx.sampleRate), audioCtx.sampleRate);
+
+    convolver_.connect(gain_);
+    gain_.connect(audioCtx.destination);
+    _convolver.connect(_gain);
+    _gain.connect(audioCtx.destination);
+
+    const myArrayBuffer = audioCtx.createBuffer(2, audioCtx.sampleRate * sec, audioCtx.sampleRate);
+
+    for (let channel = 0; channel < myArrayBuffer.numberOfChannels; channel++) {
+      const nowBuffering = myArrayBuffer.getChannelData(channel);
+      for (let i = 0; i < myArrayBuffer.length; i++) {
+        nowBuffering[i] = Math.random() - 0.5;
+      }
+    }
+    const source = audioCtx.createBufferSource();
+    source.buffer = myArrayBuffer;
+    source.loop = true;
+    source.connect(_convolver);
+    source.connect(convolver_);
+
+    source.start();
+    
+  }
+  oscillator = [];
+  gain = [];
+
+  waveArray = [];
+
+  left_ = [];
+  right_ = [];
+  _left = [];
+  _right = [];
+
+  txt = document.getElementById('txt').value.split('\n');
+  freqs = [];
+
+  sec = (txt.length-2)/32;
+  iter = txt.length-1;
+  n = 1;
+
+  for (var i=0; i<txt.length; i++) {
+    if (document.getElementById('linear').checked) {
+      var p = kbrd.indexOf(txt[i].slice(0, 1)); //pitch is brightness of 0th char
+    }
+    txt[i] = txt[i].split('');
+    freqs[i] = [];
+
+    for (var j=0; j<txt[i].length; j++) {
+      txt[i][j] = kbrd.indexOf(txt[i][j])/65536;
+      if (document.getElementById('linear').checked) {
+        freqs[i][j] = base*Math.pow(2, p/kbrd.length)*j;
+      } else {
+        freqs[i][j] = base*Math.pow(2, j/npo);
+      }
+    }
+  }
+
+  for (var k = 0; k < txt.length; k++) {
+    left_[k] = [];
+    right_[k] = [];
+    _left[k] = [];
+    _right[k] = [];
+
+    for (var i = 0; i < noiseBuffer_.length; i++) {
+      if (k==0) {
+        left_[k][i] = 0.0;
+        _left[k][i] = 0.0;
+
+        right_[k][i] = left_[k][i];
+        _right[k][i] = _left[k][i];
+
+      } else {
+        left_[k][i] = 0;
+        right_[k][i] = 0;
+        for (var j = 1; j <= npo*octs; j++) {
+
+          if (txt[k] && txt[k][j] && txt[k][j]>=0) {
+            left_[k][i] += Math.sin(i*Math.PI/audioCtx.sampleRate*2*freqs[k][j])*txt[k][j];
+          }
+
+        }
+        right_[k][i] = left_[k][i];
+        _right[k][i] = left_[k][i];
+        _left[k][i] = right_[k][i];
+      }
+    }
+  }
+
+  convolver_.buffer = noiseBuffer_;
+  _convolver.buffer = _noiseBuffer;
+
+  _waveArray = new Float32Array(iter+2);
+  waveArray_ = new Float32Array(iter+2);
+  _waveArray.fill(0.0);
+  waveArray_.fill(0.0);
+
+  for (var j = 1; j < _waveArray.length-1; j++) {
+    if (parseInt(j/2) == j/2) {
+      _waveArray[j] = 0.0;
+      waveArray_[j] = 1.0;
+    } else {
+      waveArray_[j] = 0.0;
+      _waveArray[j] = 1.0;
+    }
+  }
+
+  requestAnimationFrame(play);
+}
+
+
+function play() {
+  if (changed === true) {
+
+    changed = false;
+    generate();
+
+  } else {
+
+    _gain.gain.setValueCurveAtTime(_waveArray, audioCtx.currentTime, sec+sec/iter);
+    gain_.gain.setValueCurveAtTime(waveArray_, audioCtx.currentTime, sec+sec/iter);
+
+    ch_ = false;
+    _ch = false;
+    n = 1;
+  
+    setBuffers();
+  }
+}
+
+  </script>
+</body>
+</html>
