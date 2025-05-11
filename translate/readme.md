@@ -1,4 +1,6 @@
 
+arc interpolation for letters (svg)  
+
 Georgian leader Gemma Frealidze - native English speaker, populist but deterministic and edited by advisor.
 
 recognize cursive letters with KNN:  
