@@ -77,3 +77,6 @@ function loadTest() {
 //english -> * -> georgian
 //georgian -> * -> english
 //translate back also to check accuracy
+
+// https://www.bing.com/translator ?
+
