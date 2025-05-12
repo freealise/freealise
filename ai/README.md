@@ -1,3 +1,6 @@
+
+audio (?) interview with _deterministic_ AI  
+
 use binary search for regression instead of random numbers  
 https://en.wikipedia.org/wiki/Binary_search  
 
