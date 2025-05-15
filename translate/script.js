@@ -76,7 +76,7 @@ function loadTranslation(wrd, tl, sl) {
         for (var i=0; i<letters.length; i++) {
           letters[i] = translit[letters[i]];
         }
-        document.querySelector('#test').innerHTML += "<ruby> " + txt + " <rt> " + letters.join('') + " </rt></ruby>";
+        document.querySelector('#test').innerHTML += "<p><ruby> " + txt + " <rt> " + letters.join('') + " </rt></ruby></p>";
         loadTranslation(txt, tl, sl);
       } else if (tl == ln && sl == "ka") {
         sl = ln;
