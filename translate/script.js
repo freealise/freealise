@@ -74,7 +74,7 @@ function getWord(wrd, tl, sl) {
         j++;
         getWord(words[j], 'en', 'ka');
       } else {
-        document.querySelector('#test').innerHTML += "<p><ruby> " + txt + " <rt> " + letters.join('') + " </rt></ruby><br/><small>" + words.join(' • ') + "</small></p>";
+        document.querySelector('#test').innerHTML += "<p><ruby> " + txt + " <rt> " + words.join(' • ') + " <br/> " + letters.join('') + " </rt></ruby></p>";
         loadTranslation(txt, ln, 'ka');
       }
     }
