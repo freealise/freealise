@@ -58,8 +58,15 @@ function loadTranslation(wrd, tl, sl) {
     if (this.readyState == 4 && this.status == 200) {
       var res = JSON.parse(this.responseText)[0];
       console.log( this.responseText );
+      
+      var txt = "";
+      for (var i=0; i<res.length; i++) {
+        //console.log( res[i][0] );
+        txt += res[i][0];
+      }
+      
       if (tl == 'ka') {
-        var letters = res[i][0].split('');
+        var letters = txt.split('');
         for (var i=0; i<letters.length; i++) {
           letters[i] = translit[letters[i]];
         }
@@ -68,37 +75,17 @@ function loadTranslation(wrd, tl, sl) {
       if (tl == ln && sl == "en") {
         sl = ln;
         tl = "ka";
-        var txt = "";
-        for (var i=0; i<res.length; i++) {
-          //console.log( res[i][0] );
-          txt += res[i][0];
-        }
         loadTranslation(txt, tl, sl);
       } else if (tl == "ka" && sl == ln) {
         sl = "ka";
         tl = ln;
-        var txt = "";
-        for (var i=0; i<res.length; i++) {
-          //console.log( res[i][0] );
-          txt += res[i][0];
-        }
         document.querySelector('#test').innerHTML += "<p>" + txt + "</p>";
         loadTranslation(txt, tl, sl);
       } else if (tl == ln && sl == "ka") {
         sl = ln;
         tl = "en";
-        var txt = "";
-        for (var i=0; i<res.length; i++) {
-          //console.log( res[i][0] );
-          txt += res[i][0];
-        }
         loadTranslation(txt, tl, sl);
       } else if (tl == "en" && sl == ln) {
-        var txt = "";
-        for (var i=0; i<res.length; i++) {
-          //console.log( res[i][0] );
-          txt += res[i][0];
-        }
         document.querySelector('#test').innerHTML += "<p>" + txt + "</p>";
       }
     }
