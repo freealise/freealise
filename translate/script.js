@@ -74,7 +74,9 @@ function loadTranslation(wrd, tl, sl) {
         tl = ln;
         var letters = txt.split('');
         for (var i=0; i<letters.length; i++) {
-          letters[i] = translit[letters[i]];
+          if (translit[letters[i]] && translit[letters[i]].length > 0) {
+            letters[i] = translit[letters[i]];
+          }
         }
         document.querySelector('#test').innerHTML += "<p><ruby> " + txt + " <rt> " + letters.join('') + " </rt></ruby></p>";
         loadTranslation(txt, tl, sl);
