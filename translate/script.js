@@ -68,7 +68,7 @@ function getWord(wrd, tl, sl) {
         //console.log( res[i][0] );
         wrd += res[i][0];
       }
-      words[j] = wrd;
+      words[j] = wrd.toLowerCase().replace(/\s/g, '·');
       
       if (j<words.length-1) {
         j++;
