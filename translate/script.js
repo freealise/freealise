@@ -65,13 +65,6 @@ function loadTranslation(wrd, tl, sl) {
         txt += res[i][0];
       }
       
-      if (tl == 'ka') {
-        var letters = txt.split('');
-        for (var i=0; i<letters.length; i++) {
-          letters[i] = translit[letters[i]];
-        }
-        document.querySelector('#test').innerHTML += "<small>" + letters.join('') + "</small>";
-      }
       if (tl == ln && sl == "en") {
         sl = ln;
         tl = "ka";
@@ -79,7 +72,11 @@ function loadTranslation(wrd, tl, sl) {
       } else if (tl == "ka" && sl == ln) {
         sl = "ka";
         tl = ln;
-        document.querySelector('#test').innerHTML += "<p>" + txt + "</p>";
+        var letters = txt.split('');
+        for (var i=0; i<letters.length; i++) {
+          letters[i] = translit[letters[i]];
+        }
+        document.querySelector('#test').innerHTML += "<ruby> " + txt + " <rt> " + letters.join('') + " </rt></ruby>";
         loadTranslation(txt, tl, sl);
       } else if (tl == ln && sl == "ka") {
         sl = ln;
