@@ -111,7 +111,7 @@ function loadTranslation(wrd, tl, sl) {
           }
         }
         words = txt.replace(/./g, function(x){
-          if (translit[letters[i]] && translit[letters[i]].length > 0) {
+          if (translit[x] && translit[x].length > 0) {
             return x;
           } else {
             return '';
