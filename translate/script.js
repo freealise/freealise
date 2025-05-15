@@ -13,6 +13,8 @@ document.getElementById("sbmt").addEventListener('click', function(e) {
 });
 
 var translit = {
+    ' ': ' ',
+    
     'ი': 'i',
     'ე': 'e',
     'ა': 'a',
@@ -51,6 +53,36 @@ var translit = {
     'ყ': 'q’',
     'ჰ': 'h',
   };
+  
+var j;
+var words, letters, txt;
+function getWord(wrd, tl, sl) {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      var res = JSON.parse(this.responseText)[0];
+      console.log( this.responseText );
+      
+      var wrd = "";
+      for (var i=0; i<res.length; i++) {
+        //console.log( res[i][0] );
+        wrd += res[i][0];
+      }
+      words[j] = wrd;
+      
+      if (j<words.length-1) {
+        j++;
+        getWord(words[j], 'en', 'ka');
+      } else {
+        document.querySelector('#test').innerHTML += "<p><ruby> " + txt + " <rt> " + words.join(' ') + " </rt><rt> " + letters.join('') + " </rt></ruby></p>";
+        loadTranslation(txt, ln, 'ka');
+      }
+    }
+  };
+  xhttp.open("GET", "https://translate.googleapis.com/translate_a/single?client=gtx&dt=t&sl="+sl+"&tl="+tl+"&q=" + encodeURIComponent(wrd), true);
+  xhttp.send();
+}
+
 
 function loadTranslation(wrd, tl, sl) {
   var xhttp = new XMLHttpRequest();
@@ -59,7 +91,7 @@ function loadTranslation(wrd, tl, sl) {
       var res = JSON.parse(this.responseText)[0];
       console.log( this.responseText );
       
-      var txt = "";
+      txt = "";
       for (var i=0; i<res.length; i++) {
         //console.log( res[i][0] );
         txt += res[i][0];
@@ -72,14 +104,22 @@ function loadTranslation(wrd, tl, sl) {
       } else if (tl == "ka" && sl == ln) {
         sl = "ka";
         tl = ln;
-        var letters = txt.split('');
+        letters = txt.split('');
         for (var i=0; i<letters.length; i++) {
           if (translit[letters[i]] && translit[letters[i]].length > 0) {
             letters[i] = translit[letters[i]];
           }
         }
-        document.querySelector('#test').innerHTML += "<p><ruby> " + txt + " <rt> " + letters.join('') + " </rt></ruby></p>";
-        loadTranslation(txt, tl, sl);
+        words = txt.replace(/./g, function(x){
+          if (translit[letters[i]] && translit[letters[i]].length > 0) {
+            return x;
+          } else {
+            return '';
+          }
+        }).trim().split(' ');
+        j=0;
+        getWord(words[j], 'en', 'ka');
+        
       } else if (tl == ln && sl == "ka") {
         sl = ln;
         tl = "en";
