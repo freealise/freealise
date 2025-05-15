@@ -12,6 +12,45 @@ document.getElementById("sbmt").addEventListener('click', function(e) {
   try{ loadTest(); } catch(e) {alert(e);}
 });
 
+var translit = {
+    'ი': 'i',
+    'ე': 'e',
+    'ა': 'a',
+    'ო': 'o',
+    'უ': 'u',
+
+    'პ': 'pʼ',
+    'ფ': 'pʰ',
+    'ბ': 'b',
+    'ვ': 'v',
+    'მ': 'm',
+
+    'ტ': 'tʼ',
+    'თ': 'tʰ',
+    'დ': 'd',
+    'ნ': 'n',
+    'ს': 's',
+    'ზ': 'z',
+    'წ': 'tsʼ',
+    'ც': 'tsʰ',
+    'ძ': 'dz',
+    'ჯ': 'dʒ',
+    'ჩ': 'tʃʰ',
+    'ჭ': 'tʃʼ',
+    'შ': 'ʃ',
+    'ჟ': 'ʒ',
+    'რ': 'r',
+    'ლ': 'l',
+
+    'კ': 'kʼ',
+    'ქ': 'kʰ',
+    'გ': 'g',
+    'ღ': 'ɣ',
+    'ხ': 'x',
+
+    'ყ': 'q’',
+    'ჰ': 'h',
+  };
 
 function loadTranslation(wrd, tl, sl) {
   var xhttp = new XMLHttpRequest();
@@ -19,6 +58,13 @@ function loadTranslation(wrd, tl, sl) {
     if (this.readyState == 4 && this.status == 200) {
       var res = JSON.parse(this.responseText)[0];
       console.log( this.responseText );
+      if (tl == 'ka') {
+        var letters = res[i][0].split('');
+        for (var i=0; i<letters.length; i++) {
+          letters[i] = translit[letters[i]];
+        }
+        document.querySelector('#test').innerHTML += "<small>" + letters.join('') + "</small>";
+      }
       if (tl == ln && sl == "en") {
         sl = ln;
         tl = "ka";
