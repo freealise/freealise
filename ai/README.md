@@ -1,6 +1,9 @@
 
 audio (?) interview with _deterministic_ AI  
 
+recognize pictograms with KNN:  
+https://docs.opencv.org/4.x/d6/de2/tutorial_py_table_of_contents_ml.html  
+
 use binary search for regression instead of random numbers  
 https://en.wikipedia.org/wiki/Binary_search  
 
