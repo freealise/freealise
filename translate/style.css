@@ -2,6 +2,10 @@
   color: gray;
 }
 
+rt {
+  font-size: larger;
+}
+
 .google-translate-place {
     width: 480px;
     height: 200px;
