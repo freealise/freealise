@@ -78,7 +78,7 @@ function getWord(wrd, tl, sl) {
         j++;
         getWord(words[j], 'en', 'ka');
       } else {
-        document.querySelector('#test').innerHTML += "<p><ruby> " + txt + " <rt> " + words.join(' • ') + " <br/> " + letters.join('') + " </rt></ruby></p>";
+        document.querySelector('#test').innerHTML += "<p>" + sentences[k] + "<br/><ruby> " + txt + " <rt> " + words.join(' • ') + " <br/> " + letters.join('') + " </rt></ruby></p>";
         loadTranslation(txt, ln, 'ka');
       }
     }
@@ -129,7 +129,7 @@ function loadTranslation(wrd, tl, sl) {
         tl = "en";
         loadTranslation(txt, tl, sl);
       } else if (tl == "en" && sl == ln) {
-        document.querySelector('#test').innerHTML += "<p>" + sentences[k] + "<br/>" + txt + "</p>";
+        document.querySelector('#test').innerHTML += "<p>" + txt + "</p>";
         if (k<sentences.length-1) {
           k++;
           loadTranslation(sentences[k], ln, "en");
