@@ -8,9 +8,9 @@ addEventListener('load', function(e) {
 
 document.getElementById("in").addEventListener('change', function(e) {
   document.querySelector('#test').innerHTML = e.target.value;
-  sentences = e.target.value.replace(/\n/g, " ").replace(/(\.|\!|\?)/g, function(x){
+  sentences = e.target.value.replace(/\n/g, " ").replace(/(\. |\! |\? )/g, function(x){
     return x + '•';
-  }).split("• ");
+  }).split(" •");
   k = 0;
   loadTranslation(sentences[k], ln, "en");
 });
