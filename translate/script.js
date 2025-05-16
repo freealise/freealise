@@ -8,7 +8,7 @@ addEventListener('load', function(e) {
 
 document.getElementById("in").addEventListener('change', function(e) {
   document.querySelector('#test').innerHTML = e.target.value;
-  sentences = e.target.value.replace(/\n\n/g, " •").replace(/\n/g, ", ").replace(/(\. |\! |\? )/g, function(x){
+  sentences = e.target.value.replace(/\n\n/g, " •").replace(/\n/g, "; ").replace(/(\. |\! |\? )/g, function(x){
     return x + '•';
   }).split(" •");
   k = 0;
