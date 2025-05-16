@@ -129,7 +129,7 @@ function loadTranslation(wrd, tl, sl) {
         tl = "en";
         loadTranslation(txt, tl, sl);
       } else if (tl == "en" && sl == ln) {
-        document.querySelector('#test').innerHTML += "<p>" + txt + "</p>";
+        document.querySelector('#test').innerHTML += "<p>" + sentences[k] + "<br/>" + txt + "</p>";
         if (k<sentences.length-1) {
           k++;
           loadTranslation(sentences[k], ln, "en");
