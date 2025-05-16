@@ -1,4 +1,6 @@
 var ln = "sv"; //ja, el, it, fa, ar, iw(?), yi, fi(?), sv
+var j, k;
+var sentences, words, letters, txt;
 
 addEventListener('load', function(e) {
   document.querySelector('#test').innerHTML = 'English-Georgian';
@@ -6,7 +8,11 @@ addEventListener('load', function(e) {
 
 document.getElementById("in").addEventListener('change', function(e) {
   document.querySelector('#test').innerHTML = e.target.value;
-  loadTranslation(e.target.value.replace(/\n/g, " "), ln, "en");
+  sentences = e.target.value.replace(/\n/g, " ").replace(/(\.|\!|\?)/g, function(x){
+    return x + '•';
+  }).split("• ");
+  k = 0;
+  loadTranslation(sentences[k], ln, "en");
 });
 document.getElementById("sbmt").addEventListener('click', function(e) {
   try{ loadTest(); } catch(e) {alert(e);}
@@ -54,8 +60,6 @@ var translit = {
     'ჰ': 'h',
   };
   
-var j;
-var words, letters, txt;
 function getWord(wrd, tl, sl) {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
@@ -126,6 +130,10 @@ function loadTranslation(wrd, tl, sl) {
         loadTranslation(txt, tl, sl);
       } else if (tl == "en" && sl == ln) {
         document.querySelector('#test').innerHTML += "<p>" + txt + "</p>";
+        if (k<sentences.length-1) {
+          k++;
+          loadTranslation(sentences[k], ln, "en");
+        }
       }
     }
   };
