@@ -4,6 +4,8 @@
   https://en.wikipedia.org/wiki/Sirius_Black, https://www.google.com/search?q=eliezer+yudkowsky&hl=en)  
   begins with Harry demanding explanation of what happened to Sirius (5th book)  
 
+- teenager obeys parents advice and repeatedly gets in trouble (comedy)
+
 - Mary Poppins is a Jew in disguise  
   
 - Vecherovsky (Irish Jew ?) -> Birobidzhan capital of Siberia (Derek the angel ?) / Solovetz ? POV: programmer  
