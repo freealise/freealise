@@ -7,6 +7,9 @@ happening around Europe (as too far to the left for America, like Sanders) - DJ 
 💳 credit card with the name Wilbury ($40000)  
 💍 if he gave you a ring then you might be a king  
 
+"Driven not by money but popularity (?), an unfortunate DJ goes against the corporate culture and ethic, 
+only instead is broke and confused - and only the truth will save him"
+
 
 #### BT archive
 chord | tab | notes database for learning (friends in America)  
