@@ -1,6 +1,6 @@
 ### The Lost DJ
 
-The Last DJ and Postman are the same story (villain is the next Pope as a comedy dictator = personality cult)  
+The Last DJ and Postman are the same story set in foreseeable future (TP as main character, villain is the next Pope as a comedy dictator = personality cult)  
 happening around Europe (as too far to the left for America, like Sanders) - DJ laid off in Britain gets a station in Georgia  
 'new wave' (not a genre but direct revelation), post-cyberpunk (retrofuturism, disappointment with tech - 'nowpunk')  
 
