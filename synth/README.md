@@ -9,6 +9,8 @@ harmonic ruler as stencil - count on calculator and draw
 marks on ruler from highest, collapse to one octave only  
 (72 or 144mm - wallpaper in coat package), lower highlighted as bolder  
   
+keyboard | MIDI in: key is frequency, pressure or row (+shift) is volume change  
+  
   
 [Speech has rhythm and melody of semantic stress that music and lyrics follow.  
 Also follows story level of drama or emotion of speech by variation amplitude (value shift) or images expressed by sound if instrumental, each track in a record is the dynamics of more than one value. 
