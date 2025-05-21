@@ -18,6 +18,7 @@ pixelize, posterize and dither to display as banner
   
 crossfade tracks in audacity among 5.1 channel speakers according to distance of source from them  
 tetrahedron in sphere in cube, 4 tracks aligned as cube map with trigonometric crossfades (merge 2 offscreen back channels to 1)  
+or use gimp for audio editing ?  
 on violin cut the bass for noise reduction  
   
 for denoising average several frames, use median filter  
