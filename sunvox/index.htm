@@ -1,0 +1,18 @@
+<html>
+<head></head>
+<script src="lib/sunvox.js"></script>
+<script src="lib/sunvox_lib_loader.js"></script>
+<script>
+svlib.then( function(Module) {
+    var ver = sv_init( 0, 44100, 2, 0 );
+    if( ver >= 0 )
+    {
+        sv_open_slot( 0 );
+        // The SunVox is initialized.
+        // Slot 0 is open and ready for use.
+        // Then you can load and play some files in this slot.
+    }
+} );
+</script>
+<body></body>
+</html>
