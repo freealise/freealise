@@ -1,6 +1,6 @@
 Empty book = fill in the blanks within genre conventions (sci-fi | factualism !)  
   
-know character's actions ahead of them from characterization  
+know character's actions along with them from characterization (but not ahead, keep to the present moment like IRL or in meditation)  
 (Promise of the Premise is when they act as usual in a new situation and fail to change)
 
 the story naturally happens to a person in a location given enough specific detail
