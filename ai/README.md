@@ -14,7 +14,7 @@ https://codelabs.developers.google.com/codelabs/tensorflowjs-convert-python-save
 https://web.archive.org/web/20230602022440/http://download.huzheng.org/dict.org/, https://web.archive.org/web/20230602022440/http://download.huzheng.org/bigdict/  
 https://superuser.com/questions/137007/how-to-convert-stardict-dictionary-file-format-to-any-readable-format  
 find synonyms / more general or specific terms by similarity of description ?  
-projector.tensorflow.org
+https://projector.tensorflow.org  
 thisworddoesnotexist.com
 
 deterministic frequency parameter instead of 'temperature'  
