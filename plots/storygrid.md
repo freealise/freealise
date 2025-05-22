@@ -5,6 +5,6 @@ know character's actions along with them from characterization (but not ahead, k
 
 the story naturally happens to a person in a location given enough specific detail
 
-character represents theme metaphorically and is rationally the best entity to represent it by a set of qualities - 'silent as a fish, dull as a lawyer'
+character represents theme metaphorically and is rationally the best entity to represent it by a set of qualities - 'silent as a fish, dull as a lawyer'  
 clarify the subject but never attempt to know the theme from the start (killjoy and spoiler)  
   
