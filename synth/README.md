@@ -1,5 +1,5 @@
-compose phonetically with spectrogram (2 formants; vertical lines are noise at the beginning of notes, and consonants)  
-Vowels and rhythm with consonants and stresses (diphtongs as legato) are an additional tune  
+compose phonetically with spectrogram (2 formants; formants are notes, vertical lines are noise between them)  
+Vowels and rhythm with consonants and stresses (diphtongs as legato) are an additional tune (vowels as chords, consonants as beats)  
   
 Sonority Sequencing Principle:  
 https://en.wikipedia.org/wiki/Sonority_Sequencing_Principle  
