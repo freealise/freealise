@@ -4,5 +4,7 @@ translate word by word with gtranslate for better quality than whole sentence + 
 
 add transliteration  
 arc interpolation for letters (svg)  
-
+  
+lyrics calligraphy | bead or thread bracelet with alphabet  
+  
 Georgian leader Gemma Frealidze - native English speaker, populist but deterministic and edited by advisor.
