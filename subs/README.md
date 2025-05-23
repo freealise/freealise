@@ -15,7 +15,7 @@ wet paper or cardboard models from depth map thumbnails with large fov for shado
 pixelize, posterize and dither to display as banner  
 
 modular transparent melting beads pinboard or corkboard+pins for aligning wire to proportions from dimensions.com  
-(https://www.google.com/search?q=how+to+weave, https://www.google.com/search?q=melting+bead+board+set+transparent, https://www.google.com/search?q=pinboard)  
+(https://www.google.com/search?q=how+to+weave, https://www.google.com/search?q=melting+bead+board+set+transparent, https://www.google.com/search?q=small+pegboard, https://www.google.com/search?q=pinboard)  
 melt wax beads in layers as voxels (https://www.google.com/search?q=white+sealing+beeswax+beads, https://www.google.com/search?q=white+candle+beeswax)  
 // carve wax models with heated pointed knife ?  
   
