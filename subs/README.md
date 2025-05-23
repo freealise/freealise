@@ -14,6 +14,9 @@ wet paper or cardboard models from depth map thumbnails with large fov for shado
 (https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=CCBWqYeljZnrtlJzJQaEGw&cb_client=maps_sv.tactile.gps&w=8192&h=4096&yaw=208.25&pitch=0&thumbfov=165)  
 pixelize, posterize and dither to display as banner  
 
+modular transparent melting beads pinboard or corkboard+pins for aligning wire to proportions from dimensions.com  
+(https://www.google.com/search?q=melting+bead+board+set+transparent, https://www.google.com/search?q=pinboard)  
+melt wax beads in layers as voxels (https://www.google.com/search?q=white+sealing+beeswax+beads, https://www.google.com/search?q=white+candle+beeswax)  
 // carve wax models with heated pointed knife ?  
   
 crossfade tracks in audacity among 5.1 channel speakers according to distance of source from them  
