@@ -1,6 +1,9 @@
 
 audio (?) interview with _deterministic_ AI  
-
+  
+(slow and crashing on mobile, here for the sake of models list)  
+https://huggingface.co/docs/transformers.js/index  
+  
 recognize pictograms with KNN:  
 https://docs.opencv.org/4.x/d6/de2/tutorial_py_table_of_contents_ml.html  
 
