@@ -65,7 +65,7 @@ function getWord(wrd, tl, sl) {
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       var res = JSON.parse(this.responseText)[0];
-      console.log( this.responseText );
+      alert( this.responseText );
       
       var wrd = "";
       for (var i=0; i<res.length; i++) {
