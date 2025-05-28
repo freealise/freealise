@@ -1,8 +1,7 @@
 
-! is 'decoding' down to the morphemes (unit of meaning) a way to learn any language regardless of its similarity to English ?  
-translate word by word with gtranslate for better quality than whole sentence + learning benefit  
+! 'decoding' down to the morphemes (unit of meaning) is only the way to learn a language similar to English as the association has to continue on the word level  
 
-add stress pattern  
+add several translation options for word in dropdown list, and stress pattern  
 arc interpolation for letters (svg)  
   
 lyrics calligraphy | bead or thread bracelet with alphabet  
