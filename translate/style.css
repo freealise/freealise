@@ -6,6 +6,10 @@ rt {
   font-size: smaller;
 }
 
+b {
+  font-weight: normal;
+}
+
 .google-translate-place {
     width: 480px;
     height: 200px;
