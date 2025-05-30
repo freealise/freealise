@@ -43,5 +43,5 @@ https://linkedin.com
     <a href="https://www.flickr.com/people/183764047@N03/" target="_blank" title="Flickr"><i class="material-icons notranslate">hdr_strong</i></a>
     <a href="https://stackoverflow.com/users/9165398/freealise" target="_blank" title="Stack Overflow"><i class="material-icons notranslate">comment</i></a>
 
-Bipolar, paranoid, obsessive-compulsive, almost aphantasiac, Judaizing introvert.
+Bipolar, paranoid, obsessive-compulsive, almost aphantasiac, introvert.
 -->
