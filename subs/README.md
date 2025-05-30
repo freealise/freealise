@@ -16,7 +16,7 @@ pixelize, posterize and dither to display as banner
 
 modular transparent melting beads pinboard or corkboard+pins for aligning wire to proportions from dimensions.com  
 (https://www.google.com/search?q=how+to+weave, https://www.google.com/search?q=melting+bead+board+set+transparent, https://www.google.com/search?q=small+pegboard, https://www.google.com/search?q=pinboard)  
-melt wax beads in layers as voxels (https://www.google.com/search?q=white+sealing+beeswax+beads, https://www.google.com/search?q=white+candle+beeswax)  
+melt wax beads or glue paper-mache in layers as voxels (https://www.google.com/search?q=white+sealing+beeswax+beads, https://www.google.com/search?q=white+candle+beeswax)  
 // carve wax models with heated pointed knife ?  
 // 3d pen: thin candle as kernel in metal pen with changeable output diameter, wrapped in isolation for holding and heated electrically by small current with variable intensity  
   
