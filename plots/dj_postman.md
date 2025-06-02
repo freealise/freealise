@@ -6,7 +6,7 @@ happening around Europe (as too far to the left for America, like Sanders) - DJ 
 
 💳 credit card with the name Wilbury ($40000)  
 💍 if he gave you a ring then you might be a king  
-"small images" = long landscapes | cross-contour  
+"small images" = long landscapes  
 "a play that is worth producing, produces itself"  
 
 "Driven not by money but popularity (?), an unfortunate DJ goes against the corporate culture and ethic, 
