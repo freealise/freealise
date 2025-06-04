@@ -26,6 +26,7 @@ Unofficially Jewish by faith, with complex ethnicity.
 [![Follow me on HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97-Hugging%20Face-yellow?style=for-the-badge)](https://huggingface.co/freealise) 
 [![GPU nonexistent](https://img.shields.io/badge/GPU-no-green?style=for-the-badge)](https://en.wikipedia.org/wiki/Aphantasia)
 
+[Website repo](https://www.github.com/freealise/freealise.github.io/) | 
 [My gists](https://gist.github.com/freealise/)
 
 <!--
