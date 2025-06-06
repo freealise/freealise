@@ -16,9 +16,9 @@ pixelize, posterize and dither to display as banner
 
 modular transparent melting beads pinboard or corkboard+pins for aligning wire to proportions from cross-contour drawings or dimensions.com  
 (https://www.google.com/search?q=how+to+weave, https://www.google.com/search?q=melting+bead+board+set+transparent, https://www.google.com/search?q=small+pegboard, https://www.google.com/search?q=pinboard)  
-melt wax beads or glue paper-mache (or cellulose fiber) in layers as voxels (https://www.google.com/search?q=white+sealing+beeswax+beads, https://www.google.com/search?q=white+candle+beeswax)  
-// carve wax models with heated pointed knife ?  
-// 3d pen: thin candle as kernel in metal pen with changeable output diameter, wrapped in isolation for holding and heated electrically by small current with variable intensity  
+melt beeswax beads or glue paper-mache (or cellulose fiber) in layers as voxels (https://www.google.com/search?q=white+sealing+beeswax+beads, https://www.google.com/search?q=white+candle+beeswax)  
+// carve beeswax models with heated pointed knife ?  
+// 3d pen: thin natural candle as kernel in metal pen with changeable output diameter, wrapped in isolation for holding and heated electrically by small current with variable intensity  
   
 crossfade tracks in audacity among 5.1 channel speakers according to distance of source from them  
 tetrahedron in sphere in cube, 4 tracks aligned as cube map with trigonometric crossfades (merge 2 offscreen back channels to 1)  
