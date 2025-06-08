@@ -12,5 +12,7 @@
   
 - satire on current events (https://en.wikipedia.org/wiki/The_Cherry_Orchard)  
 
+- stupid teacher of literature as unconscious villain  
+
 - SG analysis of MK ??  
   
