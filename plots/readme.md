@@ -16,5 +16,7 @@
 
 - life of Leon Theremin as drama with actors ?
 
+- 'in soviet russia all is inverted', absurdist sci-fi like 'Through the looking glass'
+
 - SG analysis of MK ??  
   
