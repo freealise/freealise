@@ -14,5 +14,7 @@
 
 - stupid teacher of literature as unconscious villain  
 
+- life of Leon Theremin as drama with actors ?
+
 - SG analysis of MK ??  
   
