@@ -27,7 +27,8 @@ Unofficially Jewish by faith, with complex ethnicity.
 [![GPU nonexistent](https://img.shields.io/badge/GPU-no-green?style=for-the-badge)](https://en.wikipedia.org/wiki/Aphantasia)
 
 [Website repo](https://www.github.com/freealise/freealise.github.io/) | 
-[My gists](https://gist.github.com/freealise/)
+[My gists](https://gist.github.com/freealise/) | 
+[Ask Gemma](https://gemini.google.com/)
 
 <!--
 https://stackexchange.com/sites?view=grid
