@@ -21,7 +21,7 @@ Concerned with international relations and global issues.
 Unofficially Jewish by faith, with complex ethnicity.  
 
 <!--[![Quora Profile](https://img.shields.io/badge/⁉️-Quora-red?style=for-the-badge)](https://www.quora.com/profile/Marina-From-Freealise) -->
-[![YCombinator](https://img.shields.io/badge/Y-combinator-red.svg?style=for-the-badge)](https://www.startupschool.org/cofounder-matching/candidate/p61vtr8UW)
+[![YCombinator](https://img.shields.io/badge/YCombinator-?-red.svg?style=for-the-badge)](https://www.startupschool.org/cofounder-matching/candidate/p61vtr8UW)
 [![Stack Overflow Reputation](https://img.shields.io/stackexchange/stackoverflow/r/9165398?color=orange&label=stackoverflow&logo=stackoverflow&style=for-the-badge)](https://stackoverflow.com/users/9165398) 
 [![Follow me on HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97-Hugging%20Face-yellow?style=for-the-badge)](https://huggingface.co/freealise) 
 [![GPU nonexistent](https://img.shields.io/badge/GPU-no-green?style=for-the-badge)](https://en.wikipedia.org/wiki/Aphantasia)
