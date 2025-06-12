@@ -15,8 +15,8 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
+Person of not so traditional geospacial and temporal orientation.  
 Speaking English since 1992 (IELTS >7.0), coding since ~2000.  
-Person of non-traditional geospacial and temporal orientation.  
 Concerned with international relations and global issues.  
 Unofficially Jewish by faith, with complex ethnicity.  
 
