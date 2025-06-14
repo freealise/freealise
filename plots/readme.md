@@ -4,6 +4,8 @@
   https://en.wikipedia.org/wiki/Sirius_Black, https://www.google.com/search?q=eliezer+yudkowsky&hl=en)  
   begins with Harry demanding explanation of what happened to Sirius (5th book)  
 
+- sequel of Bakuman with Miyoshi getting into music business, initially not taking off in Japan, separated from family and friends and going to Europe  
+
 - teenager obeys parents advice and repeatedly gets in trouble (comedy)
 
 - Mary Poppins is a Jew in disguise  
