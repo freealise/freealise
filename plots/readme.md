@@ -6,6 +6,8 @@
 
 - sequel of Bakuman with Miyoshi getting into music business, initially not taking off in Japan, separated from family and friends and going to Europe  
 
+- sequel of 'Through the looking glass' as sci-fi
+
 - teenager obeys parents advice and repeatedly gets in trouble (comedy)
 
 - Mary Poppins is a Jew in disguise  
@@ -16,9 +18,9 @@
 
 - stupid teacher of literature as unconscious villain  
 
-- life of Leon Theremin as drama with actors ?
+- life of Leon Theremin as drama with actors ?  
 
-- 'in soviet russia all is inverted', absurdist sci-fi like 'Through the looking glass'
+- 'in soviet russia all is inverted'  
 
 - SG analysis of MK ??  
   
