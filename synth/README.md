@@ -1,3 +1,7 @@
+polyphonic theremin with camera and opencv (latency ?):  
+use as feedback for spectrogram drawing on paper, or voice with formant filters  
+AM and comb filters of synchronized frequency (delays) or convolver for spectrum  
+  
 compose phonetically with spectrogram (2 formants; formants are notes, vertical lines are noise between them)  
 Vowels and rhythm with consonants and stresses (diphtongs as legato) are an additional tune (vowels as chords, consonants as beats)  
   
