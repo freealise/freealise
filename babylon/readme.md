@@ -1,3 +1,5 @@
+buy a trackball with wheel for 3d  
+  
 bezier to nurbs by repeated knot insertion (three in a row)  
 https://pomax.github.io/bezierinfo/#bsplines  
   
