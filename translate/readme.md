@@ -1,6 +1,5 @@
 
-! 'decoding' down to the morphemes (unit of meaning) is only the way to learn a language  
-relatively similar to English as the association has to continue on the word level  
+! 'decoding' down to the morphemes (unit of meaning) is only the way to learn a language relatively similar to English as the association has to continue on the word level  
 (use AI for the rest)  
 
 add several translation options for word in dropdown list, and stress pattern  
