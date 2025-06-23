@@ -1,6 +1,7 @@
 _Ad script_: reporter on location is contacted by news announcer among apocalyptic current events, responding that nothing is happening except the normal which looks like a miracle.  
   
-language learning game with IRL simulation plot (Maslow pyramid)  
+text-based language learning game with IRL simulation (Maslow pyramid)  
+= interactive phrasebook | dictionary | 'mad libs' with AI  
   
 equirectangular image maps with links to nearby places (~geocities 2.0)  
 interactive website in 3d like the actual place of business or virtual  
