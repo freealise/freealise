@@ -1,7 +1,7 @@
 
 ! 'decoding' down to the morphemes (unit of meaning) is only the way to learn a language relatively similar to English as the association has to continue on the word level  
 (use AI for the rest)  
-words of phrases in the native language that sound like the given vocabulary, even not related to it by meaning,  
+words of phrases in the native language that sound like the given vocabulary, even not related to it by etymology,  
 can still serve as mnemonic devices (most of all when the words to learn are abstract with no specific imagery -  
 although conventional imagery like commonly accepted pictograms may also assist with these)
 
