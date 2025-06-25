@@ -33,7 +33,7 @@ Lennon also took to giving crowds an open-palmed benediction in the style of the
 (reason: disappointment with Christianity - https://en.wikipedia.org/wiki/More_popular_than_Jesus)
   
   
-_
+_  
 He told me that if it hadn't been for the Night Watchman, he might have had to give up writing. He had exhausted all his own stories. For weeks he cudgelled his brain in vain. Then suddenly in desperation he seized his pen and wrote:
 "Speaking of wimmen," said the Night Watchman.
 And after that, it was plain sailing. He left it to the Night Watchman. The Night Watchman talked on.
