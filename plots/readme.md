@@ -22,8 +22,6 @@
 
 - life of Leon Theremin as drama with actors ?  
 
-- Blade Runner sequel  
-
 - 'in soviet russia all is inverted'  
 
 - SG analysis of MK ??  
