@@ -80,8 +80,8 @@ function getWords(wrd, tl, sl) {
       
     }
   };
-  xhttp.responseType = "document";
   xhttp.open("GET", "https://script.google.com/macros/s/AKfycbz5br4wnfSGtucWKwGQq1Tb07eshJez6uVaFatn4xJAc_rcrcA/exec?a=proxy&q=https://glosbe.com/"+sl+"/"+tl+"/" + encodeURIComponent(wrd), true);
+  xhttp.responseType = "document";
   xhttp.send();
 }
 //try{getWords("და", "en", "ka");}catch(e){alert(e);}
