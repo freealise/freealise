@@ -68,13 +68,13 @@ function getWords(wrd, tl, sl) {
       
       try{var wrd = this.responseXML.getElementById("content-summary").getElementsByTagName("strong")[0].innerText;}catch(e){alert(e);}
       //var wrd = this.responseText.split('"content-summary">')[1].split('<strong>')[1].split("</p>")[0].split("</strong>")[0];
-      words[j] = "<div style='display:inline-block'>" + wrd.toLowerCase().replace(/, /g, '<br/>') + "</div>";
+      words[j] = wrd.toLowerCase().replace(/, /g, '<br/>');
       
       if (j<words.length-1) {
         j++;
         getWords(words[j], 'en', 'ka');
       } else {
-        document.querySelector('#test').innerHTML += "<table><tr><td style='text-align:justify' colspan='" + words.length + "'>" + sentences[k] + "</td></tr><tr><td> " + txt.replace(/\s/g, "</td><td>") + " </td></tr><tr><td> " + words.join(' </td><td> ') + " </td></tr><tr><td> " + letters.join('').replace(/\s/g, "</td><td>") + " </td></tr></table>";
+        document.querySelector('#test').innerHTML += "<table><tr><td colspan='" + words.length + "'>" + sentences[k] + "</td></tr><tr><td> " + txt.replace(/\s/g, "</td><td>") + " </td></tr><tr><td> " + words.join(' </td><td> ') + " </td></tr><tr><td> " + letters.join('').replace(/\s/g, "</td><td>") + " </td></tr></table>";
         loadTranslation(txt, ln, 'ka');
       }
       
