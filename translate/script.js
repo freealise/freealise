@@ -60,6 +60,23 @@ var translit = {
     'ჰ': 'h',
   };
   
+
+function getWords(wrd, tl, sl) {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      
+      alert( this.responseXML.getElementById("content-summary").innerHTML );
+      
+    }
+  };
+  xhttp.responseType = "document";
+  xhttp.overrideMimeType("text/xml");
+  xhttp.open("GET", "https://glosbe.com/"+sl+"/"+tl+"/" + encodeURIComponent(wrd), true);
+  xhttp.send();
+}
+getWords("და", "en", "ka");
+  
 function getWord(wrd, tl, sl) {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
