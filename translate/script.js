@@ -66,8 +66,8 @@ function getWords(wrd, tl, sl) {
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       
-      //alert( this.responseXML.getElementById("content-summary").innerHTML );
       alert( this.responseText.split('"content-summary">')[1].split("</p>")[0] );
+      alert( this.responseXML.getElementById("content-summary").innerHTML );
       
     }
   };
