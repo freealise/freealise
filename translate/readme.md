@@ -5,7 +5,7 @@ words of phrases in the native language that sound like the given vocabulary, ev
 can still serve as mnemonic devices (most of all when the words to learn are abstract with no specific imagery -  
 although conventional imagery like commonly accepted pictograms may also assist with these)
 
-add several translation options for word in dropdown list (by replacing AI with Glosbe - https://glosbe.com/ka/en/და) and stress pattern  
+display results in table and word options in dropdown list; add stress pattern  
 arc interpolation for letters (svg)  
   
 lyrics calligraphy | bead or thread bracelet with alphabet  
