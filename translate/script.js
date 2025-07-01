@@ -72,7 +72,7 @@ function getWords(wrd, tl, sl) {
   };
   xhttp.responseType = "document";
   xhttp.overrideMimeType("text/xml");
-  xhttp.open("GET", "https://glosbe.com/"+sl+"/"+tl+"/" + encodeURIComponent(wrd), true);
+  xhttp.open("GET", "https://script.google.com/macros/s/AKfycbz5br4wnfSGtucWKwGQq1Tb07eshJez6uVaFatn4xJAc_rcrcA/exec?a=proxy&q=https://glosbe.com/"+sl+"/"+tl+"/" + encodeURIComponent(wrd), true);
   xhttp.send();
 }
 getWords("და", "en", "ka");
