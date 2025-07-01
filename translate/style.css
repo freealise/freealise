@@ -1,4 +1,4 @@
-#test {
+#test, #test p {
   color: gray;
   text-align: justify;
 }
