@@ -74,7 +74,7 @@ function getWords(wrd, tl, sl) {
         j++;
         getWords(words[j], 'en', 'ka');
       } else {
-        document.querySelector('#test').innerHTML += "<table><tr><td colspan='" + words.length + "'>" + sentences[k] + "</td></tr><tr><td> " + txt.replace(/\s/g, "</td><td>") + " </td></tr><tr><td> " + words.join(' </td><td> ') + " </td></tr><tr><td> " + letters.join('').replace(/\s/g, "</td><td>") + " </td></tr></table>";
+        document.querySelector('#test').innerHTML += "<table><tr><td style='text-align:justify' colspan='" + words.length + "'>" + sentences[k] + "</td></tr><tr><td> " + txt.replace(/\s/g, "</td><td>") + " </td></tr><tr><td> " + words.join(' </td><td> ') + " </td></tr><tr><td> " + letters.join('').replace(/\s/g, "</td><td>") + " </td></tr></table>";
         loadTranslation(txt, ln, 'ka');
       }
       
