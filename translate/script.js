@@ -66,7 +66,8 @@ function getWords(wrd, tl, sl) {
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       
-      alert( this.responseXML.getElementById("content-summary").innerHTML );
+      //alert( this.responseXML.getElementById("content-summary").innerHTML );
+      alert( this.responseText.split('"content-summary">')[1].split("</p>")[0] );
       
     }
   };
@@ -75,7 +76,7 @@ function getWords(wrd, tl, sl) {
   xhttp.open("GET", "https://script.google.com/macros/s/AKfycbz5br4wnfSGtucWKwGQq1Tb07eshJez6uVaFatn4xJAc_rcrcA/exec?a=proxy&q=https://glosbe.com/"+sl+"/"+tl+"/" + encodeURIComponent(wrd), true);
   xhttp.send();
 }
-getWords("და", "en", "ka");
+try{getWords("და", "en", "ka");}catch(e){alert(e);}
   
 function getWord(wrd, tl, sl) {
   var xhttp = new XMLHttpRequest();
