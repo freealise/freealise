@@ -66,7 +66,8 @@ function getWords(wrd, tl, sl) {
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       
-      var wrd = this.responseText.split('"content-summary">')[1].split('<strong>')[1].split("</p>")[0].split("</strong>")[0];
+      try{var wrd = this.responseXML.getElementById("content-summary").getElementsByTagName("strong")[0].innerText;}catch(e){alert(e);}
+      //var wrd = this.responseText.split('"content-summary">')[1].split('<strong>')[1].split("</p>")[0].split("</strong>")[0];
       words[j] = "<div style='display:inline-block'>" + wrd.toLowerCase().replace(/, /g, '<br/>') + "</div>";
       
       if (j<words.length-1) {
@@ -79,6 +80,7 @@ function getWords(wrd, tl, sl) {
       
     }
   };
+  xhttp.responseType = "document";
   xhttp.open("GET", "https://script.google.com/macros/s/AKfycbz5br4wnfSGtucWKwGQq1Tb07eshJez6uVaFatn4xJAc_rcrcA/exec?a=proxy&q=https://glosbe.com/"+sl+"/"+tl+"/" + encodeURIComponent(wrd), true);
   xhttp.send();
 }
