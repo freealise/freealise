@@ -1,6 +1,9 @@
-#test, #test p {
+#test {
   color: gray;
-  text-align: justify;
+}
+
+td {
+  text-align: center;
 }
 
 rt {
