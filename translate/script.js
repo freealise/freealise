@@ -66,7 +66,7 @@ function getWords(wrd, tl, sl) {
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       
-      try{var wrd = this.responseXML.getElementById("content-summary").getElementsByTagName("strong")[0].innerText;}catch(e){alert(e);}
+      try{var wrd = this.responseXML.documentElement.getElementById("content-summary").getElementsByTagName("strong")[0].innerText;}catch(e){alert(e);}
       //var wrd = this.responseText.split('"content-summary">')[1].split('<strong>')[1].split("</p>")[0].split("</strong>")[0];
       words[j] = "<div style='display:inline-block'>" + wrd.toLowerCase().replace(/, /g, '<br/>') + "</div>";
       
