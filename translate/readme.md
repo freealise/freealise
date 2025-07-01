@@ -16,7 +16,7 @@ https://www.calligraphr.com/en/webapp/app_home/?/templates
   
 🕯 the point of going to Georgia is to spread the light, not to absorb it  
 
-_
+_  
 Hello!
 I am looking forward to taking your course, only unfortunately I'm not eligible now for immigration to Sweden for lack of evidence of positive business experience or a CV convincing to employers.
 Instead I am going to Georgia (country) to buy real estate and start a workshop that will hopefully promote English - while as a teacher of it I'd be so boring that even adults are going to fall asleep.
