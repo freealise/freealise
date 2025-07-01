@@ -66,14 +66,23 @@ function getWords(wrd, tl, sl) {
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       
-      alert( this.responseText.split('"content-summary">')[1].split('<strong>')[1].split("</p>")[0].split("</strong>")[0].replace(/,/g, '\n') );
+      var wrd = this.responseText.split('"content-summary">')[1].split('<strong>')[1].split("</p>")[0].split("</strong>")[0];
+      words[j] = "<div style='display:inline-block'>" + wrd.toLowerCase().replace(/, /g, '<br/>') + "</div>";
+      
+      if (j<words.length-1) {
+        j++;
+        getWords(words[j], 'en', 'ka');
+      } else {
+        document.querySelector('#test').innerHTML += "<p>" + sentences[k] + "<br/><ruby> " + txt + " <rt> " + words.join(' • ') + " <br/> " + letters.join('') + " </rt></ruby></p>";
+        loadTranslation(txt, ln, 'ka');
+      }
       
     }
   };
   xhttp.open("GET", "https://script.google.com/macros/s/AKfycbz5br4wnfSGtucWKwGQq1Tb07eshJez6uVaFatn4xJAc_rcrcA/exec?a=proxy&q=https://glosbe.com/"+sl+"/"+tl+"/" + encodeURIComponent(wrd), true);
   xhttp.send();
 }
-try{getWords("და", "en", "ka");}catch(e){alert(e);}
+//try{getWords("და", "en", "ka");}catch(e){alert(e);}
   
 function getWord(wrd, tl, sl) {
   var xhttp = new XMLHttpRequest();
@@ -137,7 +146,7 @@ function loadTranslation(wrd, tl, sl) {
           }
         }).trim().split(' ');
         j=0;
-        getWord(words[j], 'en', 'ka');
+        getWords(words[j], 'en', 'ka');
         
       } else if (tl == ln && sl == "ka") {
         sl = ln;
