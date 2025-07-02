@@ -4,6 +4,7 @@
 words of phrases in the native language that sound like the given vocabulary, even not related to it by meaning or etymology,  
 can still serve as mnemonic devices (= rebus; most of all when the words to learn are abstract with no specific imagery -  
 although conventional imagery like commonly accepted pictograms may also assist with these)
+find soundalikes by TTS in Georgian -> STT in English, or is an exercise for the learner
 
 add stress pattern  
 arc interpolation for letters (svg)  
