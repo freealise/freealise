@@ -18,46 +18,47 @@ document.getElementById("sbmt").addEventListener('click', function(e) {
   try{ loadTest(); } catch(e) {alert(e);}
 });
 
+
 var translit = {
     ' ': ' ',
     
-    'ი': 'i',
-    'ე': 'e',
-    'ა': 'a',
-    'ო': 'o',
-    'უ': 'u',
+    'ი': 'i', //(ini) - /i/ (like 'ee' in "feet")
+    'ე': 'e', //(eni) - /ɛ/ (like 'e' in "let")
+    'ა': 'a', //(ani) - /ɑ/ (like 'a' in "father")
+    'ო': 'o', //(oni) - /ɔ/ (like 'o' in "story" or "more")
+    'უ': 'u', //(uni) - /u/ (like 'oo' in "moon")
 
-    'პ': 'pʼ',
-    'ფ': 'pʰ',
-    'ბ': 'b',
-    'ვ': 'v',
-    'მ': 'm',
+    'პ': 'pʼ', //(pari) - /pʼ/ (ejective 'p' - no direct English equivalent. Similar to the 'p' in "spy" but with an ejective release.)
+    'ფ': 'pʰ', //(pari) - /pʰ/ (aspirated 'p', like 'p' in "pan")
+    'ბ': 'b', //(bani) - /b/ (like 'b' in "bed")
+    'ვ': 'v', //(vini) - /v/ (like 'v' in "van")
+    'მ': 'm', //(mani) - /m/ (like 'm' in "much")
 
-    'ტ': 'tʼ',
-    'თ': 'tʰ',
-    'დ': 'd',
-    'ნ': 'n',
-    'ს': 's',
-    'ზ': 'z',
-    'წ': 'tsʼ',
-    'ც': 'tsʰ',
-    'ძ': 'dz',
-    'ჯ': 'dʒ',
-    'ჩ': 'tʃʰ',
-    'ჭ': 'tʃʼ',
-    'შ': 'ʃ',
-    'ჟ': 'ʒ',
-    'რ': 'r',
-    'ლ': 'l',
+    'ტ': 'tʼ', //(tari) - /tʼ/ (ejective 't' - no direct English equivalent. Similar to the 't' in "sty" but with an ejective release.)
+    'თ': 'tʰ', //(tani) - /tʰ/ (aspirated 't', like 't' in "top")
+    'დ': 'd', //(doni) - /d/ (like 'd' in "dog")
+    'ნ': 'n', //(nari) - /n/ (like 'n' in "not")
+    'ს': 's', //(sani) - /s/ (like 's' in "sue")
+    'ზ': 'z', //(zeni) - /z/ (like 'z' in "zoo")
+    'წ': 'tsʼ', //(tsili) - /tsʼ/ (ejective 'ts' - no direct English equivalent. Similar to 'ts' but with an ejective release.)
+    'ც': 'tsʰ', //(tsani) - /tsʰ/ (aspirated 'ts' sound, like 'ts' in "cats")
+    'ძ': 'dz', //(dzili) - /dz/ (like 'dz' in "pads")
+    'ჯ': 'dʒ', //(jani) - /dʒ/ (like 'j' in "judge")
+    'ჩ': 'tʃʰ', //(chini) - /tʃʰ/ (aspirated 'ch', like 'ch' in "choose")
+    'ჭ': 'tʃʼ', //(chari) - /tʃʼ/ (ejective 'ch' - no direct English equivalent. Similar to 'ch' but with an ejective release.)
+    'შ': 'ʃ', //(shini) - /ʃ/ (like 'sh' in "shoe")
+    'ჟ': 'ʒ', //(zhani) - /ʒ/ (like 's' in "pleasure")
+    'რ': 'r', //(rae) - /r/ (often a trilled or tapped 'r', similar to Spanish 'r')
+    'ლ': 'l', //(lasi) - /l/ (like 'l' in "leaf")
 
-    'კ': 'kʼ',
-    'ქ': 'kʰ',
-    'გ': 'g',
-    'ღ': 'ɣ',
-    'ხ': 'x',
+    'კ': 'kʼ', //(kani) - /kʼ/ (ejective 'k' - no direct English equivalent. It's a 'k' sound made with a glottal stop, releasing air pressure from the throat.)
+    'ქ': 'kʰ', //(kani) - /kʰ/ (aspirated 'k', like 'k' in "can")
+    'გ': 'g', //(gani) - /ɡ/ (like 'g' in "go")
+    'ღ': 'ɣ', //(ghani) - /ɣ/ (voiced velar fricative, like the 'g' in some German words, or a voiced version of the Scottish "loch" sound)
+    'ხ': 'x', //(khani) - /x/ (voiceless velar fricative, like 'ch' in Scottish "loch" or German "Bach")
 
-    'ყ': 'q’',
-    'ჰ': 'h',
+    'ყ': 'q’', //(qari) - /qʼ/ (ejective uvular stop - produced further back in the throat than 'k', with an ejective release. No English equivalent.)
+    'ჰ': 'h', //(hae) - /h/ (like 'h' in "head")
   };
   
 
