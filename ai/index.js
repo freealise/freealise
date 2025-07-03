@@ -30,7 +30,7 @@ async function run() {
   model.compile({loss: 'meanSquaredError', optimizer: 'sgd'});
 
   // Generate some synthetic data for training. (y = 1/x)
-  const xs = tf.tensor2d([1, 2, 3, 4, 5, 6], [6, 1]);
+  const xs = tf.tensor2d([[0,0], [0,1], [0,2], [1,0], [1,1], [1,2][]], [6, 1]);
   const ys = tf.tensor2d([1.0, 0.5, 0.333, 0.25, 0.2, 0.165], [6, 1]);
 
   // Train the model using the data.
