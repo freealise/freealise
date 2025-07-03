@@ -4,7 +4,7 @@
 words of phrases in the native language that sound like the given vocabulary, even not related to it by meaning or etymology,  
 can still serve as mnemonic devices (= rebus; most of all when the words to learn are abstract with no specific imagery -  
 although conventional imagery like commonly accepted pictograms may also assist with these)  
-to find soundalikes in the phonetic dictionary (option for search with nearby phoneme substitutes), compose a rebus and relate it to the original word by meaning is an exercise for the learner
+to find soundalikes in the phonetic dictionary (option for search with nearby phoneme substitutes; might not be the one that sounds most like it but is related), compose a rebus and relate it to the original word by meaning is an exercise for the learner
 
 add stress pattern  
 arc interpolation for letters (svg)  
