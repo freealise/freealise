@@ -30,8 +30,8 @@ async function run() {
   model.compile({loss: 'meanSquaredError', optimizer: 'sgd'});
 
   // Generate some synthetic data for training. (y = 1/x)
-  const xs = tf.tensor2d([[0,0], [0,1], [0,2], [1,0], [1,1], [1,2][]], [6, 1]);
-  const ys = tf.tensor2d([1.0, 0.5, 0.333, 0.25, 0.2, 0.165], [6, 1]);
+  const xs = tf.tensor2d([[0,0], [0,1], [0,2], [1,0], [1,1], [1,2]], [3, 2]);
+  const ys = tf.tensor2d([0, 1, 2, 3, 4, 5], [3, 2]);
 
   // Train the model using the data.
   await model.fit(xs, ys, {epochs: 250});
@@ -39,7 +39,7 @@ async function run() {
   // Use the model to do inference on a data point the model hasn't seen.
   // Should print approximately 39.
   document.getElementById('micro-out-div').innerText =
-      model.predict(tf.tensor2d([7], [1, 1])).dataSync();
+      model.predict(tf.tensor2d([[0.5,1.1]], [1, 1])).dataSync();
 }
 
 try{run();}catch(e){alert(e);}
