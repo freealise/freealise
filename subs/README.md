@@ -21,6 +21,7 @@ transparent velcro (hook-and-loop fastener, https://www.hookandloop.com/) hooks 
 crocheted thin wire or steel conductive thread fabric for stretchable face ?  
 // carve beeswax models with heated pointed knife ?  
 // 3d pen: thin natural candle as kernel in metal pen with changeable output diameter, wrapped in isolation for holding and heated electrically by small current with variable intensity  
+// 3d scanner: magenta dot pattern on flashlight, size of visible dots is depth  
   
 crossfade tracks in audacity among 5.1 channel speakers according to distance of source from them  
 tetrahedron in sphere in cube, 4 tracks aligned as cube map with trigonometric crossfades (merge 2 offscreen back channels to 1)  
