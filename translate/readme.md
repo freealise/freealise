@@ -8,9 +8,10 @@ to find soundalikes in the dictionary (might not be the one that sounds most lik
 
 add etymology and relations of word root between languages  
 group words and morphemes by root and sound instead of subject
-
 add stress pattern  
+
 arc interpolation for letters (svg)  
+calligraphy of word as the outline of idea it represents  
   
 lyrics calligraphy | bead or thread bracelet with alphabet  
   
