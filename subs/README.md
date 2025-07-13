@@ -31,3 +31,5 @@ to separate recording into tracks: mute any part (not just the center) by propor
   
 for denoising average several frames, use median filter  
 script (~play) in markdown (most like coding, least awkward)  
+
+combine animation with live acting ? voice obviously  
