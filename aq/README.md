@@ -1,4 +1,6 @@
-_Ad script_: reporter on location is contacted by news announcer among apocalyptic current events, responding that nothing is happening except the normal which looks like a miracle.  
+_dream_: global positive nationalist movement like Zionism which is sincere but does not last as it is led by idealistic Christians, although if it is led by Jews might succeed
+
+_ad script_: reporter on location is contacted by news announcer among apocalyptic current events, responding that nothing is happening except the normal which looks like a miracle.  
   
 text-based language learning game with IRL simulation (Maslow pyramid)  
 = interactive phrasebook | dictionary | 'mad libs' with AI  
