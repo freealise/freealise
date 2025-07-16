@@ -108,17 +108,20 @@ try {
   window.onload = function () {
     let out = "";
     
-    for (var j=0; j<doc.json().length; j++) {
-      let arr = doc.json()[j].terms.map(t=>[t.text, t.penn]); //doc.syllables()
+    //for (var j=0; j<doc.json().length; j++) {
+    for (var j=0; j<wiki.length; j++) {
+      let arr = wiki[j].map(t=>t.text.replace(/[^\w\s\-]/g, ''));
+      //let arr = doc.json()[j].terms.map(t=>[t.text, t.penn]); //doc.syllables()
     
       for (var i=0; i<arr.length; i++) {
-        arr[i][1] = colors[arr[i][1]];
-        out += "<span style='color:"+arr[i][1]+";'>" + arr[i][0] + "</span> ";
+        txt = txt.replace(arr[i], "<b>"+arr[i].toUpperCase()+"</b>");
+        //arr[i][1] = colors[arr[i][1]];
+        //out += "<span style='color:"+arr[i][1]+";'>" + arr[i][0] + "</span> ";
       }
       out += "\n";
     }
     let el = document.getElementById('result');
-    el.innerHTML = JSON.stringify(wiki, null, 2); //out;
+    el.innerHTML = txt; //JSON.stringify(wiki, null, 2); //out;
   }
 } catch(e) {alert(e);}
 </script>
