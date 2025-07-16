@@ -102,7 +102,7 @@ try {
   var doc = nlp(txt);
   //doc.compute('syllables')
   doc.compute('penn');
-  doc.wikipedia();
+  var wiki = doc.wikipedia().json();
 
   window.onload = function () {
     let out = "";
@@ -117,7 +117,7 @@ try {
       out += "\n";
     }
     let el = document.getElementById('result');
-    el.innerHTML = out; //JSON.stringify(arr, null, 2);
+    el.innerHTML = JSON.stringify(wiki, null, 2); //out;
   }
 } catch(e) {alert(e);}
 </script>
