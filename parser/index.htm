@@ -21,6 +21,82 @@
   // plugin is loaded as 'window.compromiseSpeech'
   // nlp.plugin(compromiseSpeech);
 try {
+  const mapping = {
+    CC: 'Conjunction',
+    CD: 'Cardinal',
+    DT: 'Determiner',
+    EX: 'Preposition', //Existential there
+    FW: 'Expression',
+    IN: 'Preposition',
+    JJ: 'Adjective',
+    JJR: 'Comparative',
+    JJS: 'Superlative',
+    MD: 'Modal',
+    NN: 'Noun',
+    NNS: 'Plural',
+    NNP: 'Singular',
+    NNPS: 'Plural',
+    POS: 'Possessive',
+    PRP: 'Pronoun',
+    RB: 'Adverb',
+    RBR: 'Comparative',
+    RBS: 'Superlative',
+    RP: 'PhrasalVerb',
+    PDT: 'Determiner',
+    SYM: 'Expression',
+    TO: 'Conjunction',
+    UH: 'Expression',
+    VB: 'Verb',
+    VBD: 'PastTense',
+    VBG: 'Gerund',
+    VBN: 'Participle', // past participle
+    VBP: 'PresentTense', // non-3rd person singular present
+    VBZ: 'PresentTense', // 3rd person singular present
+    'PRP$': 'Pronoun',
+    'WP$': 'Possessive',
+    WDT: 'Determiner',
+    WP: 'Pronoun',
+    WRB: 'Adverb',
+  };
+  
+  const colors = {
+    CC: 'Conjunction',
+    CD: 'Cardinal',
+    DT: 'Determiner',
+    EX: 'Preposition', //Existential there
+    FW: 'Expression',
+    IN: 'Preposition',
+    JJ: 'green',
+    JJR: 'Comparative',
+    JJS: 'Superlative',
+    MD: 'Modal',
+    NN: 'red',
+    NNS: 'Plural',
+    NNP: 'Singular',
+    NNPS: 'Plural',
+    POS: 'Possessive',
+    PRP: 'Pronoun',
+    RB: 'cyan',
+    RBR: 'Comparative',
+    RBS: 'Superlative',
+    RP: 'PhrasalVerb',
+    PDT: 'Determiner',
+    SYM: 'Expression',
+    TO: 'Conjunction',
+    UH: 'Expression',
+    VB: 'blue',
+    VBD: 'PastTense',
+    VBG: 'Gerund',
+    VBN: 'Participle', // past participle
+    VBP: 'PresentTense', // non-3rd person singular present
+    VBZ: 'PresentTense', // 3rd person singular present
+    'PRP$': 'Pronoun',
+    'WP$': 'Possessive',
+    WDT: 'Determiner',
+    WP: 'Pronoun',
+    WRB: 'Adverb',
+  };
+    
   var doc = nlp("the april fool's day");
   //doc.compute('syllables')
   doc.compute('penn');
@@ -29,7 +105,7 @@ try {
     let arr = doc.json()[0].terms.map(t=>[t.text, t.penn]); //doc.syllables()
     let out = "";
     for (var i=0; i<arr.length; i++) {
-        arr[i][1] = arr[i][1].replace(/NN/, "red");
+        arr[i][1] = colors[arr[i][1]];
         out += "<span style='color:"+arr[i][1]+";'>" + arr[i][0] + "</span> ";
     }
     let el = document.getElementById('result');
