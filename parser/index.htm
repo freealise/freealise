@@ -109,20 +109,21 @@ try {
     let out = "";
     let arr = wiki.map(t=>t.text);
     alert(arr);
+    var rg = new RegExp("("+arr.join("|").replace(/\|\|/g, "|")+")", "gi");
     
     //for (var j=0; j<doc.json().length; j++) {
       //let arr = doc.json()[j].terms.map(t=>[t.text, t.penn]); //doc.syllables()
     
-      for (var i=0; i<arr.length; i++) {
-        if (arr[i]!='') {
-          txt = txt.replace(arr[i], function(x){
+      //for (var i=0; i<arr.length; i++) {
+        //if (arr[i]!='') {
+          txt = txt.replace(rg, function(x){
               "<b>"+x.toUpperCase()+"</b>";
               });
-        }
+        //}
         //arr[i][1] = colors[arr[i][1]];
         //out += "<span style='color:"+arr[i][1]+";'>" + arr[i][0] + "</span> ";
-      }
-      out += "\n";
+      //}
+      //out += "\n";
     //}
     let el = document.getElementById('result');
     el.innerHTML = txt; //JSON.stringify(wiki, null, 2); //out;
