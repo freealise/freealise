@@ -104,11 +104,11 @@ try {
   
   nlp.plugin(compromiseWikipedia);
   var wiki = doc.wikipedia().json();
-  alert(JSON.stringify(wiki));
 
   window.onload = function () {
     let out = "";
     let arr = wiki.map(t=>t.text);
+    alert(arr);
     
     //for (var j=0; j<doc.json().length; j++) {
       //let arr = doc.json()[j].terms.map(t=>[t.text, t.penn]); //doc.syllables()
