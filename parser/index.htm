@@ -135,7 +135,7 @@ try {
         }
         if (arr[i][0]!='') {
           var p = txt.indexOf(arr[i][0]);
-          document.write(p+' ');
+          //document.write(p+' ');
           var b = txt.substr(0,p);
           var d = txt.substr(p+arr[i][0].length);
           txt = b + "<B STYLE=\"COLOR:"+arr[i][1]+";OPACITY:"+(0.5/arr[i][2]+0.5)+";\">" + arr[i][0].split("").join("​").toUpperCase() + "</B>" + d;
