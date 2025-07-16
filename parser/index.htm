@@ -104,7 +104,7 @@ try {
   //doc.compute('syllables')
   doc.compute('penn');
   
-  doc.tfidf();
+  //doc.tfidf();
   var tfidf = doc.compute('tfidf').json();
   document.write(JSON.stringify(tfidf));
   
@@ -116,7 +116,7 @@ try {
     //let arr = wiki.map(t=>t.text);
     
     for (var j=0; j<doc.json().length; j++) {
-      let arr = doc.json()[j].terms.map(t=>[t.text, t.penn]); //doc.syllables()
+      let arr = doc.json()[j].terms.map(t=>[t.text, t.penn, t.tfidf]); //doc.syllables()
     
       for (var i=0; i<arr.length; i++) {
         /*if (arr[i] && arr[i]!='') {
@@ -124,7 +124,7 @@ try {
           txt = txt.substr(0, p) + "<b>"+arr[i].toUpperCase()+"</b>" + txt.substr(p+arr[i].length);
         }*/
         arr[i][1] = colors[arr[i][1]];
-        out += "<span style='color:"+arr[i][1]+";'>" + arr[i][0] + "</span> ";
+        out += "<span style='color:hsla(0,0%,0%,"+(arr[i][2]/100)+");'>" + arr[i][0] + "</span> ";
       }
       out += "\n";
     }
