@@ -20,7 +20,7 @@
   // compromise is loaded as 'window.nlp'
   // plugin is loaded as 'window.compromiseSpeech'
   // nlp.plugin(compromiseSpeech);
-
+try {
   var doc = nlp('edmonton oilers');
   //doc.compute('syllables')
   doc.compute('penn');
@@ -30,6 +30,7 @@
     let el = document.getElementById('result');
     el.innerHTML = JSON.stringify(arr, null, 2);
   }
+} catch(e) {alert(e);}
 </script>
 
 <body>
