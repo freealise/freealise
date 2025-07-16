@@ -101,6 +101,8 @@ try {
   var doc = nlp(txt);
   //doc.compute('syllables')
   doc.compute('penn');
+  
+  doc.tfidf();
   var tfidf = doc.compute('tfidf').json();
   document.write(JSON.stringify(tfidf));
   
