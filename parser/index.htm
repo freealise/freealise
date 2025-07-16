@@ -101,6 +101,8 @@ try {
   var doc = nlp(txt);
   //doc.compute('syllables')
   doc.compute('penn');
+  
+  nlp.plugin(compromiseWikipedia);
   var wiki = doc.wikipedia().json();
 
   window.onload = function () {
