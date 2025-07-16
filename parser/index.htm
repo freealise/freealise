@@ -100,7 +100,7 @@ try {
     
   var doc = nlp(txt);
   //doc.compute('syllables')
-  doc.compute('penn');
+  //doc.compute('penn');
   
   nlp.plugin(compromiseWikipedia);
   var wiki = doc.wikipedia().json();
@@ -108,8 +108,6 @@ try {
   window.onload = function () {
     let out = "";
     let arr = wiki.map(t=>t.text);
-    alert(arr);
-    alert(txt);
     
     //for (var j=0; j<doc.json().length; j++) {
       //let arr = doc.json()[j].terms.map(t=>[t.text, t.penn]); //doc.syllables()
