@@ -4,8 +4,7 @@
   <meta charset="utf-8" />
   <style>
     #result {
-      font-size: 40px;
-      margin: 20%;
+      font-size: 14px;
     }
 
     a {
@@ -14,6 +13,7 @@
   </style>
 </head>
 <script src="https://unpkg.com/compromise"></script>
+<script src="../notes.js"></script>
 <!-- <script src="../plugins/speech/builds/compromise-speech.cjs"></script> -->
 <!-- <script src="https://unpkg.com/compromise-numbers"></script> -->
 <script defer>
@@ -97,7 +97,7 @@ try {
     WRB: 'Adverb',
   };
     
-  var doc = nlp("the april fool's day is coming");
+  var doc = nlp(txt);
   //doc.compute('syllables')
   doc.compute('penn');
 
