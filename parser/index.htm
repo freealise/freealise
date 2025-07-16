@@ -113,7 +113,7 @@ try {
   //var wiki = doc.wikipedia().json();
 
   window.onload = function () {
-    let out = "";
+    //let out = "";
     //let arr = wiki.map(t=>t.text);
     
     for (var j=0; j<doc.json().length; j++) {
@@ -125,12 +125,13 @@ try {
           txt = txt.substr(0, p) + "<b>"+arr[i].toUpperCase()+"</b>" + txt.substr(p+arr[i].length);
         }*/
         arr[i][1] = colors[arr[i][1]];
-        out += "<span style='color:"+arr[i][1]+";opacity:"+(0.5/arr[i][2]+0.5)+";'>" + arr[i][0] + "</span> ";
+        var p = txt.indexOf(arr[i][0]);
+        txt = txt.substr(0,p) + "<span style='color:"+arr[i][1]+";opacity:"+(0.5/arr[i][2]+0.5)+";'>" + arr[i][0].toUpperCase() + "</span>" + txt.substr(p+arr[i][0].length);
       }
-      out += "\n";
+      //out += "\n";
     }
     let el = document.getElementById('result');
-    el.innerHTML = out; //JSON.stringify(wiki, null, 2); //txt;
+    el.innerHTML = txt; //JSON.stringify(wiki, null, 2); //out;
   }
 } catch(e) {alert(e);}
 </script>
