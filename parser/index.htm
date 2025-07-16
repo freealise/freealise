@@ -115,7 +115,9 @@ try {
     
       for (var i=0; i<arr.length; i++) {
         if (arr[i]!='') {
-          txt = txt.replace(arr[i], "<b>"+arr[i].toUpperCase()+"</b>");
+          txt = txt.replace(arr[i], function(x){
+              "<b>"+x.toUpperCase()+"</b>";
+              });
         }
         //arr[i][1] = colors[arr[i][1]];
         //out += "<span style='color:"+arr[i][1]+";'>" + arr[i][0] + "</span> ";
