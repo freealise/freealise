@@ -125,9 +125,9 @@ try {
           txt = txt.substr(0, p) + "<b>"+arr[i].toUpperCase()+"</b>" + txt.substr(p+arr[i].length);
         }*/
         if (colors[arr[i][1]]) {
-          arr[i][1] = colors[arr[i][1]];
+          arr[i][1] = colors[arr[i][1]].toUpperCase();
         } else {
-          arr[i][1] = 'darkgray';
+          arr[i][1] = ('darkgray').toUpperCase();
         }
         var p = txt.indexOf(arr[i][0]);
         txt = txt.substr(0,p) + "<SPAN STYLE='COLOR:"+arr[i][1]+";OPACITY:"+(0.5/arr[i][2]+0.5)+";'>" + arr[i][0].toUpperCase() + "</SPAN>" + txt.substr(p+arr[i][0].length);
