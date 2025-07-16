@@ -124,7 +124,11 @@ try {
           var p = txt.indexOf(arr[i]);
           txt = txt.substr(0, p) + "<b>"+arr[i].toUpperCase()+"</b>" + txt.substr(p+arr[i].length);
         }*/
-        arr[i][1] = colors[arr[i][1]];
+        if (colors[arr[i][1]]) {
+          arr[i][1] = colors[arr[i][1]];
+        } else {
+          arr[i][1] = 'darkgray';
+        }
         var p = txt.indexOf(arr[i][0]);
         txt = txt.substr(0,p) + "<SPAN STYLE='COLOR:"+arr[i][1]+";OPACITY:"+(0.5/arr[i][2]+0.5)+";'>" + arr[i][0].toUpperCase() + "</SPAN>" + txt.substr(p+arr[i][0].length);
       }
