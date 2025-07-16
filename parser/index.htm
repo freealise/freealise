@@ -65,41 +65,41 @@ try {
   };
   
   const colors = {
-    CC: 'lightgray',
-    CD: 'darkgray',
-    DT: 'lightgray',
-    EX: 'lightgray', //Existential there
-    FW: 'lightgray',
-    IN: 'lightgray',
-    JJ: 'darkgray',
-    JJR: 'darkgray',
-    JJS: 'darkgray',
-    MD: 'lightgray',
-    NN: 'black',
-    NNS: 'black',
-    NNP: 'black',
-    NNPS: 'black',
-    POS: 'lightgray',
-    PRP: 'lightgray',
-    RB: 'lightgray',
-    RBR: 'lightgray',
-    RBS: 'lightgray',
-    RP: 'gray',
-    PDT: 'lightgray',
-    SYM: 'lightgray',
-    TO: 'lightgray',
-    UH: 'lightgray',
-    VB: 'gray',
-    VBD: 'gray',
-    VBG: 'gray',
-    VBN: 'gray', // past participle
-    VBP: 'gray', // non-3rd person singular present
-    VBZ: 'gray', // 3rd person singular present
-    'PRP$': 'lightgray',
-    'WP$': 'lightgray',
-    WDT: 'lightgray',
-    WP: 'lightgray',
-    WRB: 'lightgray',
+    CC: '33',
+    CD: '50',
+    DT: '33',
+    EX: '33', //Existential there
+    FW: '33',
+    IN: '33',
+    JJ: '50',
+    JJR: '50',
+    JJS: '50',
+    MD: '33',
+    NN: '100',
+    NNS: '100',
+    NNP: '100',
+    NNPS: '100',
+    POS: '33',
+    PRP: '33',
+    RB: '33',
+    RBR: '33',
+    RBS: '33',
+    RP: '67',
+    PDT: '33',
+    SYM: '33',
+    TO: '33',
+    UH: '33',
+    VB: '67',
+    VBD: '67',
+    VBG: '67',
+    VBN: '67', // past participle
+    VBP: '67', // non-3rd person singular present
+    VBZ: '67', // 3rd person singular present
+    'PRP$': '33',
+    'WP$': '33',
+    WDT: '33',
+    WP: '33',
+    WRB: '33',
   };
   
   nlp.plugin(compromiseStats);
@@ -129,16 +129,16 @@ try {
           txt = txt.substr(0, p) + "<b>"+arr[i].toUpperCase()+"</b>" + txt.substr(p+arr[i].length);
         }*/
         if (colors[arr[i][1]]) {
-          arr[i][1] = colors[arr[i][1]].toUpperCase();
+          arr[i][1] = colors[arr[i][1]];
         } else {
-          arr[i][1] = ('darkgray').toUpperCase();
+          arr[i][1] = '50';
         }
         if (arr[i][0]!='') {
           var p = txt.indexOf(arr[i][0]);
           //document.write(p+' ');
           var b = txt.substr(0,p);
           var d = txt.substr(p+arr[i][0].length);
-          txt = b + "<B STYLE=\"COLOR:"+arr[i][1]+";OPACITY:"+(0.5/arr[i][2]+0.5)+";\">" + arr[i][0].split("").join("​").toUpperCase() + "</B>" + d;
+          txt = b + "<B STYLE=\"COLOR:HSLA(0,0%,"+arr[i][1]+"%,"+(0.5/arr[i][2]+0.5)+");\">" + arr[i][0].split("").join("​") + "</B>" + d;
         }
       }
       //out += "\n";
