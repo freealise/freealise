@@ -19,16 +19,16 @@
 <script defer>
   // compromise is loaded as 'window.nlp'
   // plugin is loaded as 'window.compromiseSpeech'
-  nlp.plugin(compromiseSpeech)
+  // nlp.plugin(compromiseSpeech);
 
-  var doc = nlp('edmonton oilers')
+  var doc = nlp('edmonton oilers');
   //doc.compute('syllables')
-  doc.compute('penn')
+  doc.compute('penn');
 
   window.onload = function () {
-    let arr = doc.json()[0].terms.map(t=>[t.text, t.penn]) //doc.syllables()
-    let el = document.getElementById('result')
-    el.innerHTML = JSON.stringify(arr, null, 2)
+    let arr = doc.json()[0].terms.map(t=>[t.text, t.penn]); //doc.syllables()
+    let el = document.getElementById('result');
+    el.innerHTML = JSON.stringify(arr, null, 2);
   }
 </script>
 
