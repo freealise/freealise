@@ -100,30 +100,30 @@ try {
     
   var doc = nlp(txt);
   //doc.compute('syllables')
-  //doc.compute('penn');
+  doc.compute('penn');
   
-  nlp.plugin(compromiseWikipedia);
-  var wiki = doc.wikipedia().json();
+  //nlp.plugin(compromiseWikipedia);
+  //var wiki = doc.wikipedia().json();
 
   window.onload = function () {
     let out = "";
-    let arr = wiki.map(t=>t.text);
+    //let arr = wiki.map(t=>t.text);
     
-    //for (var j=0; j<doc.json().length; j++) {
-      //let arr = doc.json()[j].terms.map(t=>[t.text, t.penn]); //doc.syllables()
+    for (var j=0; j<doc.json().length; j++) {
+      let arr = doc.json()[j].terms.map(t=>[t.text, t.penn]); //doc.syllables()
     
       for (var i=0; i<arr.length; i++) {
-        if (arr[i] && arr[i]!='') {
+        /*if (arr[i] && arr[i]!='') {
           var p = txt.indexOf(arr[i]);
           txt = txt.substr(0, p) + "<b>"+arr[i].toUpperCase()+"</b>" + txt.substr(p+arr[i].length);
-        }
-        //arr[i][1] = colors[arr[i][1]];
-        //out += "<span style='color:"+arr[i][1]+";'>" + arr[i][0] + "</span> ";
+        }*/
+        arr[i][1] = colors[arr[i][1]];
+        out += "<span style='color:"+arr[i][1]+";'>" + arr[i][0] + "</span> ";
       }
-      //out += "\n";
-    //}
+      out += "\n";
+    }
     let el = document.getElementById('result');
-    el.innerHTML = txt; //JSON.stringify(wiki, null, 2); //out;
+    el.innerHTML = out; //JSON.stringify(wiki, null, 2); //txt;
   }
 } catch(e) {alert(e);}
 </script>
