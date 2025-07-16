@@ -15,12 +15,14 @@
 <script src="https://unpkg.com/compromise"></script>
 <script src="text.js"></script>
 <!-- <script src="../plugins/speech/builds/compromise-speech.cjs"></script> -->
-<!-- <script src="https://unpkg.com/compromise-numbers"></script> -->
+<script src="https://unpkg.com/compromise-wikipedia"></script>
 <script defer>
   // compromise is loaded as 'window.nlp'
-  // plugin is loaded as 'window.compromiseSpeech'
-  // nlp.plugin(compromiseSpeech);
+  // plugin is loaded as 'window.compromiseWikipedia'
+  
 try {
+  nlp.plugin(stats);
+    
   const mapping = {
     CC: 'Conjunction',
     CD: 'Cardinal',
@@ -100,6 +102,7 @@ try {
   var doc = nlp(txt);
   //doc.compute('syllables')
   doc.compute('penn');
+  doc.wikipedia();
 
   window.onload = function () {
     let out = "";
