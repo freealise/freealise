@@ -116,7 +116,7 @@ try {
       for (var i=0; i<arr.length; i++) {
         if (arr[i] && arr[i]!='') {
           var p = txt.indexOf(arr[i]);
-          txt = txt.substr(0, p) + "<b>"+arr[i].toUpperCase()+"</b>" + txt.substr(p+arr[i].length);
+          txt = txt.substr(0, p) + arr[i].toUpperCase() + txt.substr(p+arr[i].length);
         }
         //arr[i][1] = colors[arr[i][1]];
         //out += "<span style='color:"+arr[i][1]+";'>" + arr[i][0] + "</span> ";
