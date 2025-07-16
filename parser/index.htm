@@ -62,40 +62,40 @@ try {
   
   const colors = {
     CC: 'Conjunction',
-    CD: 'magenta',
-    DT: 'yellow',
+    CD: 'darkgray',
+    DT: 'white',
     EX: 'Preposition', //Existential there
     FW: 'Expression',
     IN: 'Preposition',
-    JJ: 'green',
-    JJR: 'green',
-    JJS: 'green',
+    JJ: 'darkgray',
+    JJR: 'darkgray',
+    JJS: 'darkgray',
     MD: 'Modal',
-    NN: 'red',
-    NNS: 'red',
-    NNP: 'red',
-    NNPS: 'red',
+    NN: 'black',
+    NNS: 'black',
+    NNP: 'black',
+    NNPS: 'black',
     POS: 'Possessive',
     PRP: 'Pronoun',
-    RB: 'cyan',
-    RBR: 'cyan',
-    RBS: 'cyan',
-    RP: 'blue',
-    PDT: 'yellow',
+    RB: 'lightgray',
+    RBR: 'lightgray',
+    RBS: 'lightgray',
+    RP: 'gray',
+    PDT: 'white',
     SYM: 'Expression',
     TO: 'Conjunction',
     UH: 'Expression',
-    VB: 'blue',
-    VBD: 'blue',
-    VBG: 'blue',
-    VBN: 'blue', // past participle
-    VBP: 'blue', // non-3rd person singular present
-    VBZ: 'blue', // 3rd person singular present
+    VB: 'gray',
+    VBD: 'gray',
+    VBG: 'gray',
+    VBN: 'gray', // past participle
+    VBP: 'gray', // non-3rd person singular present
+    VBZ: 'gray', // 3rd person singular present
     'PRP$': 'Pronoun',
     'WP$': 'Possessive',
-    WDT: 'yellow',
+    WDT: 'white',
     WP: 'Pronoun',
-    WRB: 'cyan',
+    WRB: 'lightgray',
   };
   
   nlp.plugin(compromiseStats);
@@ -105,7 +105,7 @@ try {
   doc.compute('penn');
   
   //doc.tfidf();
-  let model = doc;
+  //let model = doc;
   var tfidf = doc.compute('tfidf').json();
   //document.write(JSON.stringify(tfidf));
   
