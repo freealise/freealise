@@ -105,9 +105,9 @@ try {
   doc.compute('penn');
   
   //doc.tfidf();
-  let model = doc;
+  //let model = doc;
   var tfidf = doc.compute('tfidf').json();
-  document.write(JSON.stringify(tfidf));
+  //document.write(JSON.stringify(tfidf));
   
   //nlp.plugin(compromiseWikipedia);
   //var wiki = doc.wikipedia().json();
@@ -125,7 +125,7 @@ try {
           txt = txt.substr(0, p) + "<b>"+arr[i].toUpperCase()+"</b>" + txt.substr(p+arr[i].length);
         }*/
         arr[i][1] = colors[arr[i][1]];
-        out += "<span style='color:hsla(0,0%,0%,"+(1/arr[i][2])+");'>" + arr[i][0] + "</span> ";
+        out += "<span style='color:"+arr[i][1]+";opacity:"+(1/arr[i][2])+";'>" + arr[i][0] + "</span> ";
       }
       out += "\n";
     }
