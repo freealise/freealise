@@ -108,10 +108,9 @@ try {
 
   window.onload = function () {
     let out = "";
+    let arr = wiki.map(t=>t.text);
     
     //for (var j=0; j<doc.json().length; j++) {
-    for (var j=0; j<wiki.length; j++) {
-      let arr = wiki[j].map(t=>t.text);
       //let arr = doc.json()[j].terms.map(t=>[t.text, t.penn]); //doc.syllables()
     
       for (var i=0; i<arr.length; i++) {
@@ -120,7 +119,7 @@ try {
         //out += "<span style='color:"+arr[i][1]+";'>" + arr[i][0] + "</span> ";
       }
       out += "\n";
-    }
+    //}
     let el = document.getElementById('result');
     el.innerHTML = txt; //JSON.stringify(wiki, null, 2); //out;
   }
