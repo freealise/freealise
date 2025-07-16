@@ -105,6 +105,7 @@ try {
   doc.compute('penn');
   
   //doc.tfidf();
+  let model = doc;
   var tfidf = doc.compute('tfidf').json();
   document.write(JSON.stringify(tfidf));
   
