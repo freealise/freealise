@@ -131,7 +131,7 @@ try {
         }
         if (arr[i][0]!='') {
           var p = txt.indexOf(arr[i][0]);
-          txt = txt.substr(0,p) + "<SPAN STYLE=\"COLOR:"+arr[i][1]+";OPACITY:"+(0.5/arr[i][2]+0.5)+";\">" + arr[i][0].toUpperCase() + "</SPAN>" + txt.substr(p+arr[i][0].length);
+          txt = txt.substr(0,p) + "<SPAN STYLE=\"COLOR:"+arr[i][1]+";OPACITY:"+(0.5/arr[i][2]+0.5)+";\">" + arr[i][0].split("").join("​") + "</SPAN>" + txt.substr(p+arr[i][0].length);
         }
       }
       //out += "\n";
