@@ -104,6 +104,7 @@ try {
   
   nlp.plugin(compromiseWikipedia);
   var wiki = doc.wikipedia().json();
+  alert(JSON.stringify(wiki));
 
   window.onload = function () {
     let out = "";
