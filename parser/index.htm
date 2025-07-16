@@ -114,7 +114,9 @@ try {
       //let arr = doc.json()[j].terms.map(t=>[t.text, t.penn]); //doc.syllables()
     
       for (var i=0; i<arr.length; i++) {
-        txt = txt.replace(arr[i], "<b>"+arr[i].toUpperCase()+"</b>");
+        if (arr[i]!='') {
+          txt = txt.replace(arr[i], "<b>"+arr[i].toUpperCase()+"</b>");
+        }
         //arr[i][1] = colors[arr[i][1]];
         //out += "<span style='color:"+arr[i][1]+";'>" + arr[i][0] + "</span> ";
       }
