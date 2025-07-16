@@ -109,6 +109,7 @@ try {
     let out = "";
     let arr = wiki.map(t=>t.text);
     alert(arr);
+    alert(txt);
     
     //for (var j=0; j<doc.json().length; j++) {
       //let arr = doc.json()[j].terms.map(t=>[t.text, t.penn]); //doc.syllables()
@@ -116,6 +117,7 @@ try {
       for (var i=0; i<arr.length; i++) {
         if (arr[i] && arr[i]!='') {
           var p = txt.indexOf(arr[i]);
+          
           txt = txt.substr(0, p) + arr[i].toUpperCase() + txt.substr(p+arr[i].length);
         }
         //arr[i][1] = colors[arr[i][1]];
