@@ -21,14 +21,19 @@
   // plugin is loaded as 'window.compromiseSpeech'
   // nlp.plugin(compromiseSpeech);
 try {
-  var doc = nlp("april fool's day");
+  var doc = nlp("the april fool's day");
   //doc.compute('syllables')
   doc.compute('penn');
 
   window.onload = function () {
     let arr = doc.json()[0].terms.map(t=>[t.text, t.penn]); //doc.syllables()
+    let out = "";
+    for (var i=0; i<arr.length; i++) {
+        arr[i][1] = arr[i][1].replace(/NN/, "red");
+        out += "<span style='color:"+arr[i][1]+";'>" + arr[i][0] + "</span> ";
+    }
     let el = document.getElementById('result');
-    el.innerHTML = JSON.stringify(arr, null, 2);
+    el.innerHTML = out; //JSON.stringify(arr, null, 2);
   }
 } catch(e) {alert(e);}
 </script>
