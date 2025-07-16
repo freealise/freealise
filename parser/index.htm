@@ -102,11 +102,16 @@ try {
   doc.compute('penn');
 
   window.onload = function () {
-    let arr = doc.json()[0].terms.map(t=>[t.text, t.penn]); //doc.syllables()
     let out = "";
-    for (var i=0; i<arr.length; i++) {
+    
+    for (var j=0; j<doc.json().length; j++) {
+      let arr = doc.json()[j].terms.map(t=>[t.text, t.penn]); //doc.syllables()
+    
+      for (var i=0; i<arr.length; i++) {
         arr[i][1] = colors[arr[i][1]];
         out += "<span style='color:"+arr[i][1]+";'>" + arr[i][0] + "</span> ";
+      }
+      out += "\n";
     }
     let el = document.getElementById('result');
     el.innerHTML = out; //JSON.stringify(arr, null, 2);
