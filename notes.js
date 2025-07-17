@@ -1,6 +1,6 @@
 var txt = ` 
 you are an immortal magician, understand
-friendship -> pirate party; storygrid & stc; Janis; churches of _Georgia_ and Ukraine (https://uk.wikipedia.org/wiki/%D0%9F%D1%80%D0%B0%D0%B2%D0%BE%D1%81%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0_%D1%86%D0%B5%D1%80%D0%BA%D0%B2%D0%B0_%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%B8): translated gospel of Mary w.comment as leaflet
+friendship -> pirate party; storygrid & stc; Janis; churches of _Georgia_ and Ukraine (https://uk.wikipedia.org/wiki/Православна_церква_України): translated gospel of Mary w.comment as leaflet
 script about the invisible hand of the market (welfare/free market/inequality/nonprofits) (https://en.wikipedia.org/wiki/Great_Depression#Literature, https://en.wikipedia.org/wiki/Sharing_economy#Examples) 
 remote desktop p2p rent ?; hivemind on website (Gemini as initial guest, interviewer, UI/UX designer, DJ)
 law against paid religious books (statement of personal faith), hate of show business -> s.hassan (cult started by Jung <- Nazis <- Nietzsche <- Zarathustra ?)
