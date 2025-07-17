@@ -106,7 +106,7 @@ try {
   
   nlp.plugin(compromiseStats);
     
-  txt = txt.replace(/\</g,'&lt;').replace(/\>/g,'&gt;');
+  txt = txt.replace(/\</g,'{').replace(/\>/g,'}');
   var doc = nlp(txt);
   //doc.compute('syllables')
   doc.compute('penn');
@@ -147,7 +147,7 @@ try {
       //out += "\n";
     }
     let el = document.getElementById('result');
-    txt = txt.replace(/\s/g,'&nbsp;').replace(/\n/g,'<br/>');
+    txt = txt.replace(/ /g,'&nbsp;').replace(/\n/g,'<br/>');
     el.innerHTML = txt; //JSON.stringify(wiki, null, 2); //out;
   }
 } catch(e) {alert(e);}
