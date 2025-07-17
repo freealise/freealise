@@ -7,6 +7,8 @@
       font-size: 14px;
       font-family: monospace;
       width:99vw;
+      white-space: pre-wrap;
+      word-break: normal;
     }
 
     a {
@@ -147,7 +149,6 @@ try {
       //out += "\n";
     }
     let el = document.getElementById('result');
-    txt = txt.replace(/\W \W/g,function(x){return x.slice(0,1)+'&nbsp;'+x.slice(2);}).replace(/\n/g,'<br/>');
     el.innerHTML = txt; //JSON.stringify(wiki, null, 2); //out;
   }
 } catch(e) {alert(e);}
