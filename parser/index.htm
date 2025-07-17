@@ -106,7 +106,7 @@ try {
   
   nlp.plugin(compromiseStats);
     
-  txt = txt.replace(/\</g,'{').replace(/\>/g,'}');
+  txt = txt.replace(/\</g,'').replace(/\>/g,'');
   var doc = nlp(txt);
   //doc.compute('syllables')
   doc.compute('penn');
