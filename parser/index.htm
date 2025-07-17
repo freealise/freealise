@@ -7,8 +7,6 @@
       font-size: 14px;
       font-family: monospace;
       width:99vw;
-      white-space: pre-wrap;
-      word-break: normal;
     }
 
     a {
@@ -108,7 +106,7 @@ try {
   
   nlp.plugin(compromiseStats);
     
-  txt = txt.replace(/</g,'').replace(/>/g,'');
+  txt = txt.replace(/</g,'\<').replace(/>/g,'\>').replace(/\s/g, '&nbsp;').replace(/\n/g, '<br/>');
   var doc = nlp(txt);
   //doc.compute('syllables')
   doc.compute('penn');
