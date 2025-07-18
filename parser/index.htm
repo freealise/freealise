@@ -75,15 +75,15 @@ fileElem.addEventListener("change", handleFiles);
 function handleFiles(e) {
   fileList.textContent = "";
   if (!e.target.files.length) {
-    fileList.textContent = "No files selected!";
-  } else {
+    fileList.textContent = "No file selected!";
+  } else {alert(e.target.files[0].name);
     var file = e.target.files[0];
     var reader  = new FileReader();
   
     reader.addEventListener("load", function () {
       txt = reader.result;
       e.target.value = null;
-      loadFile();
+      loadFile(colors);
     }, false);
   
     if (file) {
