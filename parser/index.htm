@@ -82,8 +82,6 @@ function handleFiles(e) {
   
     reader.addEventListener("load", function () {
       txt = reader.result;
-      alert('ok ' + txt);
-      
       loadFile(txt, colors);
       e.target.value = null;
     }, false);
@@ -178,6 +176,7 @@ function handleFiles(e) {
   //var wiki = doc.wikipedia().json();
 
   function loadFile(txt, colors) {
+    alert(colors + '\n\n' + txt);
     
     txt = txt.replace(/\</g,'≺').replace(/\>/g,'≻');
     var doc = nlp(txt);
