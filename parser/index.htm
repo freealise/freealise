@@ -82,6 +82,7 @@ function handleFiles(e) {
   
     reader.addEventListener("load", function () {
       txt = reader.result;
+      alert('ok'+e.target.files[0]);
       loadFile(txt, colors);
       e.target.value = null;
     }, false);
@@ -221,6 +222,7 @@ function handleFiles(e) {
   }
   
   window.onload = loadFile(txt, colors);
+  window.loadFile = loadFile;
   
 } catch(e) {alert(e);}
 </script>
