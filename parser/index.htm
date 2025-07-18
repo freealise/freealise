@@ -76,13 +76,14 @@ function handleFiles(e) {
   fileList.textContent = "";
   if (!e.target.files.length) {
     fileList.textContent = "No file selected!";
-  } else {alert(e.target.files[0].name);
+  } else {
     var file = e.target.files[0];
     var reader  = new FileReader();
   
     reader.addEventListener("load", function () {
       txt = reader.result;
       e.target.value = null;
+      alert('ok ' + e.target.files[0].name);
       loadFile(colors);
     }, false);
   
