@@ -176,7 +176,7 @@ function handleFiles(e) {
   //nlp.plugin(compromiseWikipedia);
   //var wiki = doc.wikipedia().json();
 
-  function loadFile() {
+  function loadFile(colors) {
     
     txt = txt.replace(/\</g,'≺').replace(/\>/g,'≻');
     var doc = nlp(txt);
@@ -220,7 +220,7 @@ function handleFiles(e) {
     el.innerHTML = txt; //JSON.stringify(wiki, null, 2); //out;
   }
   
-  window.onload = loadFile();
+  window.onload = loadFile(colors);
   
 } catch(e) {alert(e);}
 </script>
