@@ -45,7 +45,7 @@
 <body>
   <div>compromise plugin demo</div>
   <div><a href="https://github.com/spencermountain/compromise/blob/master/demo/plugin.html">view source</a></div>
-  <input type="file" id="fileElem" accept="text/*" style="display:none" />
+  <input type="file" id="fileElem" accept="application/*,text/*" style="display:none" />
   <button id="fileSelect">Upload</button><span id="fileList"></span>
   <div id="result"></div>
   
@@ -220,7 +220,7 @@ function handleFiles(e) {
     el.innerHTML = txt; //JSON.stringify(wiki, null, 2); //out;
   }
   
-  window.onload = loadFile;
+  window.onload = loadFile();
   
 } catch(e) {alert(e);}
 </script>
