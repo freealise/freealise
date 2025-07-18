@@ -55,8 +55,6 @@
 <script src="https://unpkg.com/compromise-stats"></script>
 <script>
 
-try {
-
 const fileSelect = document.getElementById("fileSelect"),
 fileElem = document.getElementById("fileElem"),
 fileList = document.getElementById("fileList");
@@ -77,18 +75,16 @@ function handleFiles(e) {
   if (!e.target.files.length) {
     fileList.textContent = "No file selected!";
   } else {
-    try {
     var reader  = new FileReader();
   
     reader.addEventListener("load", function () {
       txt = reader.result;
-      alert('ok'+e.target.files[0]);
-      loadFile(txt, colors);
+      alert('ok '+e.target.files[0].name);
+      try{loadFile(txt, colors);}catch(e){alert(e);}
       e.target.value = null;
     }, false);
   
     reader.readAsText(e.target.files[0]);
-    } catch(e) {alert(e);}
   }
 }
 
@@ -222,9 +218,7 @@ function handleFiles(e) {
   }
   
   window.onload = loadFile(txt, colors);
-  window.loadFile = loadFile;
   
-} catch(e) {alert(e);}
 </script>
 </body>
 </html>
