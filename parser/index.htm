@@ -81,10 +81,11 @@ function handleFiles(e) {
     var reader  = new FileReader();
   
     reader.addEventListener("load", function () {
-      var txt = reader.result;
-      e.target.value = null;
       alert('ok ' + e.target.files[0].name);
+      var txt = reader.result;
+      
       loadFile(txt, colors);
+      e.target.value = null;
     }, false);
   
     reader.readAsText(e.target.files[0]);
