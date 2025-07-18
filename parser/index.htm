@@ -42,6 +42,13 @@
     }
   </style>
 </head>
+<body>
+  <div>compromise plugin demo</div>
+  <div><a href="https://github.com/spencermountain/compromise/blob/master/demo/plugin.html">view source</a></div>
+  <input type="file" id="fileElem" accept="text/*" style="display:none" />
+  <button id="fileSelect">Upload</button><span id="fileList"></span>
+  <div id="result"></div>
+  
 <script src="https://unpkg.com/compromise"></script>
 <script src="../notes.js"></script>
 <!-- <script src="../plugins/speech/builds/compromise-speech.cjs"></script> -->
@@ -217,13 +224,5 @@ function handleFiles(e) {
   
 } catch(e) {alert(e);}
 </script>
-
-<body>
-  <div>compromise plugin demo</div>
-  <div><a href="https://github.com/spencermountain/compromise/blob/master/demo/plugin.html">view source</a></div>
-  <input type="file" id="fileElem" accept="text/*" style="display:none" />
-  <button id="fileSelect">Upload</button><span id="fileList"></span>
-  <div id="result"></div>
 </body>
-
 </html>
