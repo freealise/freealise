@@ -81,8 +81,8 @@ function handleFiles(e) {
     var reader  = new FileReader();
   
     reader.addEventListener("load", function () {
-      alert('ok ' + e.target.files[0].name);
-      var txt = reader.result;
+      txt = reader.result;
+      alert('ok ' + txt);
       
       loadFile(txt, colors);
       e.target.value = null;
