@@ -173,7 +173,6 @@ function handleFiles(e) {
   //var wiki = doc.wikipedia().json();
 
   function loadFile(txt, colors) {
-    alert(colors + '\n\n' + txt);
     
     txt = txt.replace(/\</g,'≺').replace(/\>/g,'≻');
     var doc = nlp(txt);
