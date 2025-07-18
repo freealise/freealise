@@ -70,52 +70,18 @@ function handleFiles(e) {
   if (!e.target.files.length) {
     fileList.textContent = "No files selected!";
   } else {
-    for (let i = 0; i < e.target.files.length; i++) {
-      th[k] = document.createElement('img');
-      thumbnail.appendChild(th[k]);
-      th[k].onload = function(e) {
-          e.target.width = e.target.naturalWidth;
-          e.target.height = e.target.naturalHeight;
-          URL.revokeObjectURL(e.target.src);
-          if (isCube.checked) {
-            try {
-            e.target.onload = function(e) {
-              //alert(e.target.width + 'x' + e.target.height);
-              e.target.style.width = '' + frame.width / 64 + 'px';
-              e.target.style.height = '' + frame.height / 64 + 'px';
-            };
-            e.target.src = cube2equi(e.target, false);
-            e.target.download = e.target.src;
-            e.target.addEventListener("click", copyDataUrl);
-            } catch(e) {alert(e);}
-          } else {
-            e.target.style.width = '' + frame.width / 64 + 'px';
-            e.target.style.height = '' + frame.height / 64 + 'px';
-          }
-		  }
-      th[k].download = e.target.files[i].name;
-      th[k].src = URL.createObjectURL(e.target.files[i]);
-      const metadata = {
-        copyright: '© ',
-        location: {
-          latLng: {
-            lat: -90.0,
-            lng: -90.0,
-          }
-        },
-        tiles: {
-          originHeading: 180.0,
-          originPitch: 0.0,
-          originRoll: 0.0,
-        },
-      };
-      stt.push(metadata);
-      k++;
+    var file = e.target.files[0];
+    var reader  = new FileReader();
+  
+    reader.addEventListener("load", function () {
+      txt = reader.result;
+      e.target.value = null;
+      loadFile();
+    }, false);
+  
+    if (file) {
+      reader.readAsText(file);
     }
-    thumbnail.style.display = 'block';
-    subs.value = JSON.stringify(stt);
-    stt = [];
-    k=1;
   }
 }
 
@@ -199,21 +165,22 @@ function handleFiles(e) {
   };
   
   nlp.plugin(compromiseStats);
-    
-  txt = txt.replace(/\</g,'≺').replace(/\>/g,'≻');
-  var doc = nlp(txt);
-  //doc.compute('syllables')
-  doc.compute('penn');
-  
-  //doc.tfidf();
-  //let model = doc;
-  var tfidf = doc.compute('tfidf').json();
-  //document.write(JSON.stringify(tfidf));
   
   //nlp.plugin(compromiseWikipedia);
   //var wiki = doc.wikipedia().json();
 
-  window.onload = function () {
+  function loadFile() {
+    
+    txt = txt.replace(/\</g,'≺').replace(/\>/g,'≻');
+    var doc = nlp(txt);
+    //doc.compute('syllables')
+    doc.compute('penn');
+  
+    //doc.tfidf();
+    //let model = doc;
+    var tfidf = doc.compute('tfidf').json();
+    //document.write(JSON.stringify(tfidf));
+      
     //let out = "";
     //let arr = wiki.map(t=>t.text);
     
@@ -245,13 +212,16 @@ function handleFiles(e) {
     let el = document.getElementById('result');
     el.innerHTML = txt; //JSON.stringify(wiki, null, 2); //out;
   }
+  
+  window.onload = loadFile;
+  
 } catch(e) {alert(e);}
 </script>
 
 <body>
   <div>compromise plugin demo</div>
   <div><a href="https://github.com/spencermountain/compromise/blob/master/demo/plugin.html">view source</a></div>
-  <input type="file" id="fileElem" multiple accept="text/*" style="display:none" />
+  <input type="file" id="fileElem" accept="text/*" style="display:none" />
   <button id="fileSelect">Upload</button><span id="fileList"></span>
   <div id="result"></div>
 </body>
