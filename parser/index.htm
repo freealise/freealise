@@ -45,7 +45,7 @@
 <body>
   <div>compromise plugin demo</div>
   <div><a href="https://github.com/spencermountain/compromise/blob/master/demo/plugin.html">view source</a></div>
-  <input type="file" id="fileElem" accept="application/*,text/*" style="display:none" />
+  <input type="file" id="fileElem" accept="*/*" style="display:none" />
   <button id="fileSelect">Upload</button><span id="fileList"></span>
   <div id="result"></div>
   
@@ -53,7 +53,7 @@
 <script src="../notes.js"></script>
 <!-- <script src="../plugins/speech/builds/compromise-speech.cjs"></script> -->
 <script src="https://unpkg.com/compromise-stats"></script>
-<script defer>
+<script>
 
 try {
 
