@@ -19,4 +19,4 @@ https://en.wiktionary.org/wiki/Appendix:Georgian_Swadesh_list
 https://en.wikipedia.org/wiki/Leipzig–Jakarta_list  
 https://www.calligraphr.com/en/webapp/app_home/?/templates  
   
-🕯 the point of going to Georgia is to spread the light, not to absorb it  
+🕯 learn Hebrew | Yiddish efficiently (clarify method to use for any language), make parser; language exchange with Jews
