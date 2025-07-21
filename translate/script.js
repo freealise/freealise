@@ -3,11 +3,11 @@ var j, k;
 var sentences, words, letters, txt;
 
 addEventListener('load', function(e) {
-  document.querySelector('//test').innerHTML = 'English-Georgian';
+  document.querySelector('#test').innerHTML = 'English-Georgian';
 });
 
 document.getElementById("in").addEventListener('change', function(e) {
-  document.querySelector('//test').innerHTML = e.target.value;
+  document.querySelector('#test').innerHTML = e.target.value;
   sentences = e.target.value.replace(/\n\n/g, " •").replace(/\n/g, "; ").replace(/(\. |\! |\? )/g, function(x){
     return x + '•';
   }).split(" •");
@@ -68,8 +68,8 @@ var translit = {
     "\u05bb": "u",  // Qubuts
     "\u05b3": "o",  // Hataf qamats
     "\u05b8": "a",  // Kamataz
-    HATAMA_DIACRITIC: STRESS_PHONEME,  // Stress (Hat'ama)
-    VOCAL_SHVA_DIACRITIC: "e",  // Vocal Shva
+    /*HATAMA_DIACRITIC: STRESS_PHONEME,  // Stress (Hat'ama)
+    VOCAL_SHVA_DIACRITIC: "e",  // Vocal Shva*/
 }
 
 /*var translit = {
@@ -127,10 +127,10 @@ function getWords(wrd, tl, sl) {
       
       if (j<words.length-1) {
         j++;
-        getWords(words[j], 'en', 'ka');
+        getWords(words[j], 'en', 'he');
       } else {
-        document.querySelector('//test').innerHTML += "<table><tr><td colspan='" + words.length + "'>" + sentences[k] + "</td></tr><tr><td> " + txt.replace(/\s/g, "</td><td>") + " </td></tr><tr><td> " + words.join(' </td><td> ') + " </td></tr><tr><td> " + letters.join('').replace(/\s/g, "</td><td>") + " </td></tr></table>";
-        loadTranslation(txt, ln, 'ka');
+        document.querySelector('#test').innerHTML += "<table><tr><td colspan='" + words.length + "'>" + sentences[k] + "</td></tr><tr><td> " + txt.replace(/\s/g, "</td><td>") + " </td></tr><tr><td> " + words.join(' </td><td> ') + " </td></tr><tr><td> " + letters.join('').replace(/\s/g, "</td><td>") + " </td></tr></table>";
+        loadTranslation(txt, ln, 'he');
       }
       
     }
@@ -158,10 +158,10 @@ function getWord(wrd, tl, sl) {
       
       if (j<words.length-1) {
         j++;
-        getWord(words[j], 'en', 'ka');
+        getWord(words[j], 'en', 'iw');
       } else {
-        document.querySelector('//test').innerHTML += "<p>" + sentences[k] + "<br/><ruby> " + txt + " <rt> " + words.join(' • ') + " <br/> " + letters.join('') + " </rt></ruby></p>";
-        loadTranslation(txt, ln, 'ka');
+        document.querySelector('#test').innerHTML += "<p>" + sentences[k] + "<br/><ruby> " + txt + " <rt> " + words.join(' • ') + " <br/> " + letters.join('') + " </rt></ruby></p>";
+        loadTranslation(txt, ln, 'iw');
       }
     }
   };
@@ -185,10 +185,10 @@ function loadTranslation(wrd, tl, sl) {
       
       if (tl == ln && sl == "en") {
         sl = ln;
-        tl = "ka";
+        tl = "iw";
         loadTranslation(txt, tl, sl);
-      } else if (tl == "ka" && sl == ln) {
-        sl = "ka";
+      } else if (tl == "iw" && sl == ln) {
+        sl = "iw";
         tl = ln;
         letters = txt.split('');
         for (var i=0; i<letters.length; i++) {
@@ -204,14 +204,14 @@ function loadTranslation(wrd, tl, sl) {
           }
         }).trim().split(' ');
         j=0;
-        getWords(words[j], 'en', 'ka');
+        getWords(words[j], 'en', 'iw');
         
-      } else if (tl == ln && sl == "ka") {
+      } else if (tl == ln && sl == "iw") {
         sl = ln;
         tl = "en";
         loadTranslation(txt, tl, sl);
       } else if (tl == "en" && sl == ln) {
-        document.querySelector('//test').innerHTML += "<p>" + txt + "</p>";
+        document.querySelector('#test').innerHTML += "<p>" + txt + "</p>";
         if (k<sentences.length-1) {
           k++;
           loadTranslation(sentences[k], ln, "en");
@@ -229,7 +229,7 @@ function loadTest() {
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       var res = this.responseText;
-      document.querySelector('//test').innerHTML = res;
+      document.querySelector('#test').innerHTML = res;
     }
   };
   xhttp.open("GET", "https://www.google.com/search?igu=1&q=weather&authuser=0", true);
