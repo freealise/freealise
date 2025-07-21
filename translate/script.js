@@ -1,4 +1,4 @@
-var ln = "yi"; //ja, el, it, fa, ar, iw(?), yi, fi(?), sv
+var ln = "de"; //ja, el, it, fa, ar, iw(?), yi, fi(?), sv
 var j, k;
 var sentences, words, letters, txt;
 
