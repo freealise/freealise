@@ -3,11 +3,11 @@ var j, k;
 var sentences, words, letters, txt;
 
 addEventListener('load', function(e) {
-  document.querySelector('#test').innerHTML = 'English-Georgian';
+  document.querySelector('//test').innerHTML = 'English-Georgian';
 });
 
 document.getElementById("in").addEventListener('change', function(e) {
-  document.querySelector('#test').innerHTML = e.target.value;
+  document.querySelector('//test').innerHTML = e.target.value;
   sentences = e.target.value.replace(/\n\n/g, " •").replace(/\n/g, "; ").replace(/(\. |\! |\? )/g, function(x){
     return x + '•';
   }).split(" •");
@@ -20,6 +20,59 @@ document.getElementById("sbmt").addEventListener('click', function(e) {
 
 
 var translit = {
+    "א": "ʔ",  // Alef
+    "ב": "v",  // Bet
+    "ג": "g",  // Gimel
+    "ד": "d",  // Dalet
+    "ה": "h",  // He
+    "ו": "v",  // Vav
+    "ז": "z",  // Zayin
+    "ח": "x",  // Het
+    "ט": "t",  // Tet
+    "י": "j",  // Yod
+    "ך": "x",  // Haf sofit
+    "כ": "x",  // Haf
+    "ל": "l",  // Lamed
+    "ם": "m",  // Mem Sofit
+    "מ": "m",  // Mem
+    "ן": "n",  // Nun Sofit
+    "נ": "n",  // Nun
+    "ס": "s",  // Samekh
+    "ע": "ʔ",  // Ayin, only voweled
+    "פ": "f",  // Fey
+    "ף": "f",  // Fey Sofit
+    "ץ": "ts",  // Tsadik sofit
+    "צ": "ts",  // Tsadik
+    "ק": "k",  // Kuf
+    "ר": "r",  // Resh
+    "ש": "ʃ",  // Shin
+    "ת": "t",  // Taf
+    // Beged Kefet
+    "בּ": "b",
+    "כּ": "k",
+    "פּ": "p",
+    // Shin Sin
+    "שׁ": "ʃ",
+    "שׂ": "s",
+    "'": "",
+    
+    "\u05b4": "i",  // Hiriq
+    "\u05b1": "e",  // Hataf segol
+    "\u05b5": "e",  // Tsere
+    "\u05b6": "e",  // Segol
+    "\u05b2": "a",  // Hataf Patah
+    "\u05b7": "a",  // Patah
+    "\u05c7": "o",  // Kamatz katan
+    "\u05b9": "o",  // Holam
+    "\u05ba": "o",  // Holam haser for vav
+    "\u05bb": "u",  // Qubuts
+    "\u05b3": "o",  // Hataf qamats
+    "\u05b8": "a",  // Kamataz
+    HATAMA_DIACRITIC: STRESS_PHONEME,  // Stress (Hat'ama)
+    VOCAL_SHVA_DIACRITIC: "e",  // Vocal Shva
+}
+
+/*var translit = {
     ' ': ' ',
     
     'ი': 'i', //(ini) - /i/ (like 'ee' in "feet")
@@ -60,7 +113,8 @@ var translit = {
     'ყ': 'q’', //(qari) - /qʼ/ (ejective uvular stop - produced further back in the throat than 'k', with an ejective release. No English equivalent.)
     'ჰ': 'h', //(hae) - /h/ (like 'h' in "head")
   };
-  
+*/
+
 
 function getWords(wrd, tl, sl) {
   var xhttp = new XMLHttpRequest();
@@ -75,7 +129,7 @@ function getWords(wrd, tl, sl) {
         j++;
         getWords(words[j], 'en', 'ka');
       } else {
-        document.querySelector('#test').innerHTML += "<table><tr><td colspan='" + words.length + "'>" + sentences[k] + "</td></tr><tr><td> " + txt.replace(/\s/g, "</td><td>") + " </td></tr><tr><td> " + words.join(' </td><td> ') + " </td></tr><tr><td> " + letters.join('').replace(/\s/g, "</td><td>") + " </td></tr></table>";
+        document.querySelector('//test').innerHTML += "<table><tr><td colspan='" + words.length + "'>" + sentences[k] + "</td></tr><tr><td> " + txt.replace(/\s/g, "</td><td>") + " </td></tr><tr><td> " + words.join(' </td><td> ') + " </td></tr><tr><td> " + letters.join('').replace(/\s/g, "</td><td>") + " </td></tr></table>";
         loadTranslation(txt, ln, 'ka');
       }
       
@@ -106,7 +160,7 @@ function getWord(wrd, tl, sl) {
         j++;
         getWord(words[j], 'en', 'ka');
       } else {
-        document.querySelector('#test').innerHTML += "<p>" + sentences[k] + "<br/><ruby> " + txt + " <rt> " + words.join(' • ') + " <br/> " + letters.join('') + " </rt></ruby></p>";
+        document.querySelector('//test').innerHTML += "<p>" + sentences[k] + "<br/><ruby> " + txt + " <rt> " + words.join(' • ') + " <br/> " + letters.join('') + " </rt></ruby></p>";
         loadTranslation(txt, ln, 'ka');
       }
     }
@@ -157,7 +211,7 @@ function loadTranslation(wrd, tl, sl) {
         tl = "en";
         loadTranslation(txt, tl, sl);
       } else if (tl == "en" && sl == ln) {
-        document.querySelector('#test').innerHTML += "<p>" + txt + "</p>";
+        document.querySelector('//test').innerHTML += "<p>" + txt + "</p>";
         if (k<sentences.length-1) {
           k++;
           loadTranslation(sentences[k], ln, "en");
@@ -175,7 +229,7 @@ function loadTest() {
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       var res = this.responseText;
-      document.querySelector('#test').innerHTML = res;
+      document.querySelector('//test').innerHTML = res;
     }
   };
   xhttp.open("GET", "https://www.google.com/search?igu=1&q=weather&authuser=0", true);
