@@ -22,6 +22,7 @@ https://www.calligraphr.com/en/webapp/app_home/?/templates
 🕯 learn Hebrew | Yiddish efficiently (clarify method to use for any language), make parser; language exchange with Jews  
   
 https://huggingface.co/spaces/freealise/phonemize-in-hebrew  
+https://glosbe.com/he/en/בסדר  
 https://dict.com/hebrew-english/בסדר (proxy)  
 https://books.google.com/ngrams/interactive_chart?content=בסדר_*&year_start=1800&year_end=2022&corpus=iw&smoothing=50  
 download pos data by frequency  
