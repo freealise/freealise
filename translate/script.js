@@ -160,7 +160,7 @@ function getWord(wrd, tl, sl) {
         j++;
         getWord(words[j], 'en', 'iw');
       } else {
-        document.querySelector('#test').innerHTML += "<p>" + sentences[k] + "<br/><ruby> " + txt + " <rt> " + words.join(' • ') + " <br/> " + letters.join('') + " </rt></ruby></p>";
+        document.querySelector('#test').innerHTML += "<table><tr><td colspan='" + words.length + "'>" + sentences[k] + "</td></tr><tr><td> " + txt.replace(/\s/g, "</td><td>") + " </td></tr><tr><td> " + words.join(' </td><td> ') + " </td></tr><tr><td> " + letters.join('').replace(/\s/g, "</td><td>") + " </td></tr></table>";
         loadTranslation(txt, ln, 'iw');
       }
     }
@@ -204,7 +204,7 @@ function loadTranslation(wrd, tl, sl) {
           }
         }).trim().split(' ');
         j=0;
-        getWords(words[j], 'en', 'iw');
+        getWord(words[j], 'en', 'iw');
         
       } else if (tl == ln && sl == "iw") {
         sl = ln;
