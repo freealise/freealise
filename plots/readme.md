@@ -1,5 +1,5 @@
 
-- future Eurovision parody album (#russiaIsUkraine #BelarusIsEurope #SiberiaForSale #SiberiaRemoteControl; Greece not believing what Americans do after it, location of head of church doesn't matter - protestant Orthodoxy ?)
+- future Eurovision parody album (#russiaIsUkraine #BelarusIsEurope #SiberiaForSale #SiberiaRemoteControl #russiaIsAColony; Greece not believing what Americans do after it, location of head of church doesn't matter - protestant Orthodoxy ?)
   
 - social sci-fi HP sequel with Sirius and spiritual explanation of magic  
  (https://scifi.stackexchange.com/questions/295283/what-was-j-k-rowlings-original-plan-for-the-death-of-sirius-black, 
