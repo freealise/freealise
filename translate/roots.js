@@ -2122,4 +2122,4 @@ var roots = `￼￼￼1,902 Hebrew roots
 ￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼
 `;
 
-document.write('<pre>' + roots.replace(/\s\w\,\s\d\s\w\)/g, '\n').replace(/\s/g, '\n').replace(/\n+/g, '\n\n') + '</pre>');
+document.write('<pre>' + roots.replace(/\d\d/g, '0').replace(/\s\w\,\s\d\s\w\)/g, '\n').replace(/\s/g, '\n').replace(/\n+/g, '\n\n') + '</pre>');
