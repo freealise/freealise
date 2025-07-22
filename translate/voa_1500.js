@@ -1,4 +1,4 @@
-Parts of speech
+var lxcn = `Parts of speech
 noun (n.) – a name word
 verb (v.) – an action word
 adjective (adj.) and adverb (adv.) – a describing word
@@ -1775,3 +1775,6 @@ George Herbert Walker Bush
 Bill Clinton
 George Walker Bush 
 Barack H. Obama
+`;
+
+document.write('<textarea cols=100 rows=50>' + lxcn.replace(/ \w\./g, function(x){return ' ['+x.slice(1)+']';}) + '</textarea>');
