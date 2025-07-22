@@ -1558,23 +1558,15 @@ virus – a kind of organism that causes disease
 x-rays – a kind of radiation that can pass through most solid materials, often used in medicine
 
 
-Organs of the body
-heart – pumps blood through the body
-intestines – tubes through which food passes after it is broken down in the stomach; part of the intestines also remove solid wastes from the body
-kidney – cleans liquid wastes from the body
-liver – makes some proteins and enzymes; removes poisons from the blood
-lung – takes in and expels air from the body
-prostate – a part of the male reproductive system
-stomach – breaks down food for the body to use
-uterus – a part of the female reproductive system where a fetus develops
-
-
 Some Organs of the Body
-breast – produces mothers’ milk to feed a baby heart – pumps blood through the body
-intestines – tubes through which food passes after it is bro- ken down in the stomach; a part of the intestines also removes solid wastes from the body
+breast – produces mothers’ milk to feed a baby 
+heart – pumps blood through the body
+intestines – tubes through which food passes after it is broken down in the stomach; a part of the intestines also removes solid wastes from the body
 kidneys – clean liquid wastes from the body
 liver – makes some proteins and enzymes; removes poisons from the blood
-lungs – take in and expel air from the body prostate – a part of the male reproductive system stomach – breaks down food for the body to use
+lungs – take in and expel air from the body 
+prostate – a part of the male reproductive system 
+stomach – breaks down food for the body to use
 uterus – a part of the female reproductive system where a fetus develops
 
 
@@ -1777,6 +1769,7 @@ Bill Clinton
 George Walker Bush 
 Barack H. Obama
 `;
+
 
 var terms = `Parts of speech
 noun (n.) – a name word
