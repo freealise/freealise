@@ -1,4 +1,4 @@
-var roots = `1,902 Hebrew roots
+var roots = `
 א
 א־ב
 א־ב־ב
@@ -1982,3 +1982,5 @@ var roots = `1,902 Hebrew roots
 `;
 
 document.write('<textarea cols=100 rows=50>' + roots + '</textarea>');
+
+//1,902 Hebrew roots
