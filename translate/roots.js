@@ -1902,6 +1902,6 @@ var roots = `
 ת־שׁ־שׁ
 ת־ת־ח`;
 
-document.write('<textarea cols=100 rows=50>' + roots.replace(/\n.\n/g, '\n') + '</textarea>');
+document.write('<textarea cols=100 rows=50>' + roots + '</textarea>');
 
 //1,902 Hebrew roots
