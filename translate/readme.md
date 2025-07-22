@@ -24,4 +24,5 @@ https://www.calligraphr.com/en/webapp/app_home/?/templates
 speech: https://huggingface.co/spaces/freealise/phonemize-in-hebrew  
 vocabulary: https://he.wiktionary.org/wiki/בסדר (iframe by root found by lookup in word list)  
 grammar: https://books.google.com/ngrams/interactive_chart?content=בסדר_*&year_start=1800&year_end=2022&corpus=iw&smoothing=50 (download pos data by frequency)  
-phrases: translate the siddur poetically  
+phrases: https://dict.com/hebrew-english/ (highlight by proxy or download)  
+translate the siddur poetically  
