@@ -1777,4 +1777,4 @@ George Walker Bush
 Barack H. Obama
 `;
 
-document.write('<textarea cols=100 rows=50>' + lxcn.replace(/\n/g, '\[\n').replace(/\].+\[/g, '][') + '</textarea>');
+document.write('<textarea cols=100 rows=50>' + lxcn.replace(/\n/g, '\[\n').replace(/\][^\n]+\[/g, '][') + '</textarea>');
