@@ -1981,6 +1981,4 @@ var roots = `1,902 Hebrew roots
 ת־ת־ח
 `;
 
-document.write('<textarea>' + roots.replace(/.־.־./g, function(x){
-    return '('+x+')';
-}).replace(/\).+\(/g, ')\n(') + '</textarea>');
+document.write('<textarea cols=100 rows=50>' + roots + '</textarea>');
