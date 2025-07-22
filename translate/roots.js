@@ -1,4 +1,3 @@
-var roots = `
 א־ב
 א־ב־ב
 א־ב־ד
@@ -1900,8 +1899,4 @@ var roots = `
 ת־שׁ־ע
 ת־שׁ־ר
 ת־שׁ־שׁ
-ת־ת־ח`;
-
-document.write('<textarea cols=100 rows=50>' + roots + '</textarea>');
-
-//1,902 Hebrew roots
+ת־ת־ח
