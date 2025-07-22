@@ -1666,7 +1666,8 @@ silver
 tin
 iodine 
 platinum 
-gold mercury 
+gold 
+mercury 
 lead 
 radon 
 radium 
