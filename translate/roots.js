@@ -387,7 +387,7 @@ var roots = `￼￼￼1,902 Hebrew roots
  ד־ל־ל c, 4 e)
  ד־ל־ע c, 1 e)
  ד־ל־ף c, 1 e)
- Hebrew terms belonging to the root 1( ד־ל־ק c, 6 e)
+ ד־ל־ק c, 6 e)
  ד־ל־ת c, 1 e)
  ד־ם c, 1 e)
  ד־מ־ד־ם c, 1 e)
