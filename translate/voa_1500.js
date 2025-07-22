@@ -1695,7 +1695,8 @@ World Wide Web - [n.] part of the Internet that can be easily searched using sof
 Business Terms
 account - [n.] a record of financial dealings. For example, a bank account is a record of how much money a person or company has in a bank
 bond - [n.] an agreement to pay interest on a loan, generally for a period of years, until the loan is repaid. A bond can be bought or sold.
-capital - [n.] money or property used to create more wealth contract - [n.] a legal agreement between people or groups to
+capital - [n.] money or property used to create more wealth 
+contract - [n.] a legal agreement between people or groups to
 do, provide or trade something
 corporation - [n.] a business that is organized as a legal com- pany separate from its owners and workers
 dividend - [n.] part of a company's earnings that is given to shareholders. Not all stocks pay dividends.
@@ -1777,4 +1778,4 @@ George Walker Bush
 Barack H. Obama
 `;
 
-document.write('<textarea cols=100 rows=50>' + lxcn.replace(/\n/g, '\[\n').replace(/\][^\n]+\[/g, '][') + '</textarea>');
+document.write('<textarea cols=100 rows=50>' + lxcn.replace(/\] [^\[]+\n/g, '\]\n').replace(/\] .+ \[/g, '][') + '</textarea>');
