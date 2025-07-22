@@ -9,7 +9,7 @@ conjunction (conj.) – a joining word
 A
 a (an) – [ad.] one; any; each
 able – [v.] having the power to do something
-about – [ad.] almost ("about half"); of or having a relation to ("We talk about the weather.")
+about – [ad.] almost 
 above – [ad.] at a higher place
 accept – [v.] to agree to receive
 accident – [n.] something that happens by chance or mistake; an unplanned event
@@ -20,16 +20,16 @@ activist – [n.] one who seeks change through action
 actor – [n.] someone acting in a play or show
 add – [v.] to put (something) with another to make it larger; to say more
 administration – [n.] the executive part of a government, usually headed by a president or prime minister
-admit – [v.] to accept ("admitted to the United Nations"); to express one's guilt or responsibility ("He admitted that what he did was wrong.")
+admit – [v.] to accept 
 adult – [n.] a grown person
 advise – [v.] to help with information, knowledge or ideas in making a decision
-affect – [v.] to produce an effect on; to influence ("A lack of sleep affected the singer's performance.")
+affect – [v.] to produce an effect on; to influence 
 afraid – [ad.] feeling fear
 after – [ad.] later; behind
 again – [ad.] another time; as before
 against – [ad.] opposed to; not agreeing with something
 age – [n.] how old a person or thing is
-agency – [n.] an organization that is part of a larger group ("an agency of the United Nations")
+agency – [n.] an organization that is part of a larger group 
 aggression – [n.] an attack against a person or country; the violation of a country's borders
 ago – [ad.] of time past; before now
 agree – [v.] to have the same belief as someone; to be willing to do something
@@ -47,7 +47,7 @@ all – [ad.] everything; everyone; the complete amount
 ally – [n.] a nation or person joined with another for a special purpose
 almost – [ad.] a little less than completely
 alone – [ad.] separated from others
-along – [ad.] near or on ("along the road")
+along – [ad.] near or on 
 already – [ad.] before now; even now
 also – [ad.] added to; too
 although – [conj.] even if it is true that
@@ -71,7 +71,7 @@ any – [ad.] one or more of no special kind
 apologize – [v.] to express regret for a mistake or accident for which one accepts responsibility
 appeal – [v.] to take to a higher court, person or group for a decision; to call on somebody for help
 appear – [v.] to show oneself; to come into sight; to seem
-appoint – [v.] to name; to choose ("appoint a judge")
+appoint – [v.] to name; to choose 
 approve – [v.] to agree with; to agree to support
 archeology – [n.] the scientific study of past human life and activities
 area – [n.] any place or part of it
@@ -83,14 +83,14 @@ arrest – [v.] to seize a person for legal action; to take as a prisoner
 arrive – [v.] to come to a place, especially at the end of a trip
 art – [n.] expressions or creations by humans, such as paintings, music, writing or statues
 artillery – [n.] big guns
-as – [conj.] equally ("as fast as"); when; while
+as – [conj.] equally ; when; while
 ash – [n.] the part left after something burns
-ask – [v.] to question; to say something is wanted ("We ask the teacher questions every day.")
+ask – [v.] to question; to say something is wanted 
 assist – [v.] to help
 astronaut – [n.] a person who travels in space
 astronomy – [n.] the scientific study of stars and the universe
 asylum – [n.] political protection given by a government to a person from another country
-at – [prep.] in or near ("at the edge"); where ("look at"); when ("at noon")
+at – [prep.] in or near 
 atmosphere – [n.] the gases surrounding any star or planet
 attach – [v.] to tie together; to connect
 attack – [n.] a violent attempt to damage, injure or kill; [v.] to start a fight
@@ -115,25 +115,25 @@ ban – [v.] to not permit; to stop; [n.] an official restriction
 bank – [n.] an organization that keeps and lends money
 bar – [v.] to prevent or block
 barrier – [n.] anything that blocks or makes an action difficult
-base – [n.] a military center; [v.] to establish as a fact ("Her research was based on experiments.")
+base – [n.] a military center; [v.] to establish as a fact 
 battle – [n.] a fight between opposing armed forces
 be – [v.] to live; to happen; to exist
 beat – [v.] to hit again and again
 beauty – [n.] that which pleases the eye, ear or spirit
-because – [prep.] for the reason that ("He left because he was sick.")
+because – [prep.] for the reason that 
 become – [v.] to come to be
 bed – [n.] a sleeping place
 before – [prep.] earlier
 begin – [v.] to do the first part of an action; to start
 behind – [ad.] at the back of; in back of
 believe – [v.] to think; to feel sure of; to accept as true; to trust
-bell – [n.] an instrument that makes a musical sound ("a church bell")
+bell – [n.] an instrument that makes a musical sound 
 belong – [v.] to be owned by; to be a member of
 below – [ad.] lower than
 best – [ad.] the most good
 betray – [v.] to turn against; to be false to
 better – [ad.] more good than
-between – [ad.] in the space or time that separates; from one to the other ("talks between two nations")
+between – [ad.] in the space or time that separates; from one to the other 
 big – [ad.] of great size; not small
 bill – [n.] a legislative proposal
 biology – [n.] the scientific study of life or living things in all their forms
@@ -146,7 +146,7 @@ bleed – [v.] to lose blood
 blind – [ad.] not able to see
 block – [v.] to stop something from being done; to prevent movement
 blood – [n.] red fluid in the body
-blow – [v.] to move with force, as in air ("The wind blows.")
+blow – [v.] to move with force, as in air 
 blue – [ad.] having the color like that of a clear sky
 boat – [n.] something built to travel on water that carries people or goods
 body – [n.] all of a person or animal; the remains of a person or animal
@@ -187,10 +187,10 @@ business – [n.] one's work; buying and selling to earn money; trade
 busy – [ad.] doing something; very active
 but – [conj.] however; other than; yet
 buy – [v.] to get by paying something, usually money
-by – [conj.] near; at; next to ("by the road"); from ("a play by William Shakespeare"); not later than ("by midnight")
+by – [conj.] near; at; next to 
 C
 cabinet – [n.] a group of ministers that helps lead a government
-call – [v.] to give a name to ("I call myself John."); to ask for or request ("They called for an end to the fighting.")
+call – [v.] to give a name to 
 calm – [ad.] quiet; peaceful; opposite tense
 camera – [n.] a device for taking pictures
 camp – [n.] a place with temporary housing
@@ -207,7 +207,7 @@ care – [v.] to like; to protect; to feel worry or interest
 careful – [ad.] acting safely; with much thought
 carry – [v.] to take something or someone from one place to another
 case (court) – [n.] a legal action
-case (medical) – [n.] an incident of disease ("There was only one case of chicken pox at the school.")
+case (medical) – [n.] an incident of disease 
 cat – [n.] a small animal that often lives with humans
 catch – [v.] to seize after a chase; to stop and seize with the hands
 cause – [v.] to make happen; [n.] the thing or person that produces a result
@@ -237,7 +237,7 @@ civilian – [ad.] not military
 civil rights – [n.] the political, economic and social rights given equally to all people of a nation
 claim – [v.] to say something as a fact
 clash – [n.] a battle; [v.] to fight or oppose
-clean – [v.] to make pure; [ad.] free from dirt or harmful substances ("clean water")
+clean – [v.] to make pure; [ad.] free from dirt or harmful substances 
 clear – [ad.] easy to see or see through; easily understood
 clergy – [n.] a body of officials within a religious organization
 climate – [n.] the normal weather conditions of a place
@@ -252,7 +252,7 @@ coalition – [n.] forces, groups or nations joined together
 coast – [n.] land on the edge of the ocean
 coffee – [n.] a drink made from the plant of the same name
 cold – [ad.] not warm; having or feeling great coolness or a low temperature
-collect – [v.] to bring or gather together in one place; to demand and receive ("collect taxes")
+collect – [v.] to bring or gather together in one place; to demand and receive 
 college – [n.] a small university
 colony – [n.] land controlled by another country or government
 color – [n.] the different effects of light on the eye, making blue, red, brown, black, yellow and others
@@ -261,7 +261,7 @@ come – [v.] to move toward; to arrive
 command – [v.] to order; to have power over something
 comment – [v.] to say something about; to express an opinion about something
 committee – [n.] a group of people given special work
-common – [ad.] usual; same for all ("a common purpose")
+common – [ad.] usual; same for all 
 communicate – [v.] to tell; to give or exchange information
 community – [n.] a group of people living together in one place or area
 company – [n.] a business organized for trade, industrial or other purposes
@@ -271,7 +271,7 @@ complete – [ad.] having all parts; ended or finished
 complex – [ad.] of or having many parts that are difficult to understand; not simple
 compromise – [n.] the settlement of an argument where each side agrees to accept less than first demanded
 computer – [n.] an electronic machine for storing and organizing information, and for communicating with others
-concern – [n.] interest, worry ("express concern about"); [v.] to fear ("to be concerned")
+concern – [n.] interest, worry 
 condemn – [v.] to say a person or action is wrong or bad
 condition – [n.] something declared necessary to complete an agreement; a person's health
 conference – [n.] a meeting
@@ -295,7 +295,7 @@ cooperate – [v.] to act or work together
 copy – [v.] to make something exactly like another; [n.] something made to look exactly like another
 corn – [n.] a food grain
 correct – [ad.] true; free from mistakes; [v.] to change to what is right
-cost – [n.] the price or value of something ("The cost of the book is five dollars."); [v.] to be valued at ("The book costs five dollars.")
+cost – [n.] the price or value of something 
 cotton – [n.] a material made from a plant of the same name
 count – [v.] to speak or add numbers
 country – [n.] a nation; the territory of a nation; land away from cities
@@ -317,9 +317,9 @@ crowd – [n.] a large number of people gathered in one place
 crush – [v.] to damage or destroy by great weight; to defeat completely
 cry – [v.] to express or show sorrow or pain
 culture – [n.] all the beliefs, traditions and arts of a group or population
-cure – [v.] to improve health; to make well ("The doctor can cure the disease."); [n.] something that makes a sick person well ("Antibiotics are a cure for infection.")
+cure – [v.] to improve health; to make well 
 curfew – [n.] an order to people to stay off the streets or to close their businesses
-current – [n.] movement of air, water or electricity; [ad.] belonging to the present time ("She found the report in a current publication.")
+current – [n.] movement of air, water or electricity; [ad.] belonging to the present time 
 custom – [n.] a long-established belief or activity of a people
 customs – [n.] taxes on imports
 cut – [v.] to divide or injure with a sharp tool; to make less; to reduce
@@ -328,13 +328,13 @@ dam – [n.] a wall built across a river to hold back flowing water
 damage – [v.] to cause injury or destruction; [n.] harm; hurt or injury, usually to things
 dance – [v.] to move the body and feet to music; [n.] a series of steps, usually to music
 danger – [n.] a strong chance of suffering injury, damage or loss
-dark – [ad.] having little or no light ("The room was dark.")
+dark – [ad.] having little or no light 
 date – [n.] an expression of time; a day, month and year
 daughter – [n.] a person's female child
 day – [n.] twenty-four hours; the hours of sunlight
 dead – [ad.] not living
 deaf – [ad.] not able to hear
-deal – [v.] to have to do with ("The talks will deal with the problem of pollution."); to buy or sell ("Her company deals in plastic.")
+deal – [v.] to have to do with 
 debate – [v.] to argue for or against something; [n.] a public discussion or argument
 debt – [n.] something that is owed; the condition of owing
 decide – [v.] to choose; to settle; to judge
@@ -350,7 +350,7 @@ delay – [v.] to decide to do something at a later time; to postpone; to cause 
 delegate – [n.] one sent to act for another; one who represents another
 demand – [v.] to ask by ordering; to ask with force
 democracy – [n.] the system of government in which citizens vote to choose leaders or to make other important decisions
-demonstrate – [v.] to make a public show of opinions or feelings ("The crowd demonstrated in support of human rights."); to explain by using examples ("The teacher demonstrated the idea with an experiment.")
+demonstrate – [v.] to make a public show of opinions or feelings 
 denounce – [v.] to accuse of being wrong or evil; to criticize severely
 deny – [v.] to declare that something is not true; to refuse a request
 depend – [v.] to need help and support
@@ -371,9 +371,9 @@ diet – [n.] usual daily food and drink
 different – [ad.] not the same
 difficult – [ad.] not easy; hard to do, make or carry out
 dig – [v.] to make a hole in the ground
-dinner – [n.] the main amount of food eaten at a usual time ("The family had its dinner at noon."); a special event that includes food ("The official dinner took place at the White House.")
+dinner – [n.] the main amount of food eaten at a usual time 
 diplomat – [n.] a person who represents his or her government in dealing with another government
-direct – [v.] to lead; to aim or show the way ("He directed me to the theater."); [ad.] straight to something; not through some other person or thing ("The path is direct.")
+direct – [v.] to lead; to aim or show the way 
 direction – [n.] the way (east, west, north, south); where someone or something came from or went to
 dirt – [n.] earth or soil
 disappear – [v.] to become unseen; to no longer exist
@@ -384,7 +384,7 @@ disease – [n.] a sickness in living things, often caused by viruses, germs or 
 dismiss – [v.] to send away; to refuse to consider
 dispute – [v.] to oppose strongly by argument; [n.] an angry debate
 dissident – [n.] a person who strongly disagrees with his or her government
-distance – [n.] the amount of space between two places or objects ("The distance from my house to your house is two kilometers.")
+distance – [n.] the amount of space between two places or objects 
 dive – [v.] to jump into water head first
 divide – [v.] to separate into two or more parts
 do – [v.] to act; to make an effort
@@ -418,7 +418,7 @@ ecology – [n.] the scientific study of the environment and links among living 
 economy – [n.] the system by which money, industry and trade are organized
 edge – [n.] the line where something ends or begins
 education – [n.] the act of teaching
-effect – [n.] the result or change caused by something ("The storm had a serious effect on the economy.")
+effect – [n.] the result or change caused by something 
 effort – [n.] an attempt; the work necessary to do something
 egg – [n.] the rounded object containing unborn young produced by female birds, fish or reptiles; a single cell in a female person or animal that can develop into a baby
 either – [ad.] one of two, but not the other
@@ -442,12 +442,12 @@ environment – [n.] all surrounding things, conditions and influences that affe
 equal – [ad.] the same in amount, size, weight or value; having the same rights
 equipment – [n.] things, tools or machines needed for a purpose or activity
 escape – [v.] to get free; to get away from; to get out of
-especially – [ad.] more than others ("We liked the food, especially the fish.")
+especially – [ad.] more than others 
 establish – [v.] to bring into existence; to create
 estimate – [v.] to form an opinion about a value, size or amount using less than complete information
 ethnic – [ad.] of or concerning people belonging to a large group because of their race, religion, language, tribe or where their ancestors lived
 evaporate – [v.] to change from a liquid into a gas
-even – [ad.] in a way not thought possible ("They survived, even though the building was destroyed.")
+even – [ad.] in a way not thought possible 
 event – [n.] that which happens, especially something of importance
 ever – [ad.] at any time
 every – [ad.] each one; all
@@ -467,7 +467,7 @@ exist – [v.] to be; to live
 expand – [v.] to make larger; to grow larger
 expect – [v.] to think or believe that something will happen; to wait for an event
 expel – [v.] to force out; to remove from; to send away
-experience – [v.] to live through an event, situation or condition ("She experienced great pain."); [n.] something that one has done or lived through ("The experience caused her great pain.")
+experience – [v.] to live through an event, situation or condition 
 experiment – [v.] to test; [n.] a test or trial carried out to prove if an idea is true or false, or to discover something
 expert – [n.] a person with special knowledge or training
 explain – [v.] to give reasons for; to make clear; to tell about; to tell the meaning
@@ -494,7 +494,7 @@ farm – [n.] land used to grow crops and animals for food
 fast – [ad.] moving or working at great speed; quick
 fat – [n.] tissue in the bodies of humans and animals used to store energy and to keep warm; [ad.] thick; heavy
 father – [n.] the male parent; a man who has a child or children
-fear – [v.] to be afraid; to worry that something bad is near or may happen ("He feared falling down."); [n.] a strong emotion when there is danger or trouble ("He had a fear that he would fall down.")
+fear – [v.] to be afraid; to worry that something bad is near or may happen 
 federal – [ad.] of or having to do with a national or central government
 feed – [v.] to give food to
 feel – [v.] to have or experience an emotion; to know by touching
@@ -509,22 +509,22 @@ fill – [v.] to put or pour something into a container until there is space for
 film – [v.] to record something so it can be seen again; to make a motion picture or movie; [n.] a thin piece of material for making pictures with a camera; a movie
 final – [ad.] at the end; last
 financial – [ad.] of or about the system that includes the use of money, credit, investments and banks
-find – [v.] to discover or learn something by searching or by accident; to decide a court case ("The jury finds the man guilty of murder.")
+find – [v.] to discover or learn something by searching or by accident; to decide a court case 
 fine – [n.] a payment ordered by a court to punish someone for a crime; [ad.] very good; very small or thin
 finish – [v.] to complete; to end
 fire – [v.] to shoot a gun; [n.] the heat and light produced by something burning
 fireworks – [n.] rockets producing bright fire in the sky, used in holiday celebrations
-firm – [ad.] not easily moved or changed ("She is firm in her opinion.")
+firm – [ad.] not easily moved or changed 
 first – [ad.] coming before all others
 fish – [n.] a creature that lives and can breathe in water
-fit – [v.] to be of the correct size or shape ("These shoes fit my feet.")
+fit – [v.] to be of the correct size or shape 
 fix – [v.] to make good or right again
 flag – [n.] a piece of colored cloth used to represent a nation, government or organization
 flat – [ad.] smooth; having no high places
 flee – [v.] to run away from
 float – [v.] to be on water without sinking; to move or be moved gently on water or through air
 flood – [v.] to cover with water; [n.] the movement of water out of a river, lake or ocean onto land
-floor – [n.] the bottom part of a room for walking on ("The book fell to the floor."); the level of a building ("The fire was on the first floor.")
+floor – [n.] the bottom part of a room for walking on 
 flow – [v.] to move like a liquid
 flower – [n.] the colored part of plants that carry seeds
 fluid – [n.] any substance that can flow, such as a liquid
@@ -534,13 +534,13 @@ follow – [v.] to come or go after; to accept the rule or power of; to obey
 food – [n.] that which is taken in by all living things for energy, strength and growth
 fool – [v.] to make someone believe something that is not true; to trick; [n.] a person who is tricked easily
 foot – [n.] the bottom part of the leg; the part of the body that touches the ground when a person or animal walks
-for – [prep.] because of ("He is famous for his work."); in exchange ("Give me one dollar for the book."); through space or time ("They travelled for one hour."); representative of ("I speak for all people."); to be employed by ("She works for a computer company.")
+for – [prep.] because of 
 force – [v.] to make someone do something or make something happen by using power; [n.] power, strength; strength used against a person or object; military power of a nation; a military group
 foreign – [ad.] of, about or from another nation; not from one's own place or country
 forest – [n.] a place of many trees
 forget – [v.] to not remember
 forgive – [v.] to pardon; to excuse; to remove guilt
-form – [v.] to make; to start; to shape ("They formed a swim team."); [n.] a kind ("Swimming is a form of exercise.")
+form – [v.] to make; to start; to shape 
 former – [ad.] earlier in time; not now
 forward – [ad.] the direction in front of; toward the front
 free – [v.] to release; [ad.] not controlled by another or by outside forces; not in prison; independent; not limited by rules; without cost
@@ -549,14 +549,14 @@ freeze – [v.] to cause or to become very cold; to make or to become hard by co
 fresh – [ad.] newly made or gathered; recent
 friend – [n.] a person one likes and trusts
 frighten – [v.] to cause great fear
-from – [prep.] having a person, place or thing as a beginning or cause ("It is a message from the president."); at a place distant, not near ("The school is five kilometers from my home."); because of ("He is suffering from cancer.")
+from – [prep.] having a person, place or thing as a beginning or cause 
 front – [n.] the forward part; the opposite of back; the beginning; the first part
 fruit – [n.] food from trees and plants
 fuel – [n.] any substance burned to create heat or power
 full – [ad.] containing as much as a person or thing can hold; complete
 fun – [n.] anything that is pleasing and causes happiness
 funeral – [n.] a ceremony held in connection with the burial or burning of the dead
-future – [n.] time after now ("We can talk about it in the future."); [ad.] in the time to come ("All future meetings will be held in this room.")
+future – [n.] time after now 
 G
 gain – [v.] to get possession of; to get more; to increase
 game – [n.] an activity with rules in which people or teams play or compete, usually sports
@@ -571,7 +571,7 @@ give – [v.] to present to another to keep without receiving payment
 glass – [n.] a hard, clear material that is easily broken, used most often for windows or for containers to hold liquids
 go – [v.] to move from one place to another; to leave
 goal – [n.] that toward which an effort is directed; that which is aimed at; the end of a trip or race
-god – [n.] the spirit that is honored as creator of all things ("They believe in God."); a spirit or being believed in many religions to have special powers
+god – [n.] the spirit that is honored as creator of all things ; a spirit or being believed in many religions to have special powers
 gold – [n.] a highly valued yellow metal
 good – [ad.] pleasing; helpful; kind; correct; not bad
 goods – [n.] things owned or made to be sold
@@ -591,7 +591,7 @@ ground – [n.] land; the earth's surface; soil
 group – [n.] a number of people or things together; a gathering of people working for a common purpose
 grow – [v.] to develop or become bigger; to increase in size or amount
 guarantee – [v.] to promise a result; to promise that something will happen
-guard – [v.] to watch and protect a person, place or thing ("He guards the president."); [n.] a person or thing that watches or protects ("He is a prison guard.")
+guard – [v.] to watch and protect a person, place or thing 
 guerrilla – [n.] a person who fights as part of an unofficial army, usually against an official army or police
 guide – [v.] to lead to; to show the way; [n.] one who shows the way
 guilty – [ad.] having done something wrong or in violation of a law; responsible for a bad action
@@ -627,13 +627,13 @@ hijack – [v.] to seize or take control of a vehicle by force
 hill – [n.] a small mountain
 history – [n.] the written record or description of past events; the study of the past
 hit – [v.] to strike; to touch with force
-hold – [v.] to carry or support, usually in the hands or arms; to keep in one position; to keep as a prisoner; to contain; to possess; to occupy; to organize and be involved in ("The two sides hold talks this week.")
+hold – [v.] to carry or support, usually in the hands or arms; to keep in one position; to keep as a prisoner; to contain; to possess; to occupy; to organize and be involved in 
 hole – [n.] an opening; a torn or broken place in something
 holiday – [n.] a day when one does not work; a day on which no work is done to honor or remember a person or event
 holy – [ad.] greatly honored in religion
 home – [n.] the building where a person lives, especially with family; the place where one was born or comes from; the area or country where one lives
 honest – [ad.] truthful; able to be trusted
-honor – [v.] to obey; to show strong, good feelings for ("to honor one's parents"); [n.] an award; an act of giving special recognition ("He received many honors for his efforts to help others.")
+honor – [v.] to obey; to show strong, good feelings for 
 hope – [v.] to expect; to believe there is a good chance that something will happen as wanted; to want something to happen
 horrible – [ad.] causing great fear; terrible
 horse – [n.] a large animal often used for racing, riding or farm work
@@ -643,7 +643,7 @@ hostile – [ad.] ready to fight; ready for war
 hot – [ad.] having or feeling great heat or a high temperature
 hotel – [n.] a building with rooms, and often food, for travellers
 hour – [n.] a measure of time; sixty minutes
-house – [n.] a building in which people live; a country's parliament or lawmaking group ("House of Representatives")
+house – [n.] a building in which people live; a country's parliament or lawmaking group 
 how – [ad.] in what way; to what amount
 however – [conj.] yet; but
 huge – [ad.] very big; of great size
@@ -659,7 +659,7 @@ I – [pro.] the person speaking
 ice – [n.] frozen water
 idea – [n.] a thought or picture in the mind; a belief
 identify – [v.] to recognize someone or something and to say who or what they are
-if – [conj.] on condition; provided that ("I will go if you go.")
+if – [conj.] on condition; provided that 
 illegal – [ad.] not legal; in violation of a law
 imagine – [v.] to make a picture in the mind; to form an idea
 immediate – [ad.] without delay; very near in time or place
@@ -692,7 +692,7 @@ insult – [v.] to say something or to do something that makes another person an
 intelligence – [n.] the ability to think or learn; information gathered by spying
 intelligent – [ad.] quick to understand or learn
 intense – [ad.] very strong; extremely serious
-interest – [n.] what is important to someone ("He acted to protect his interests." "She had a great interest in painting."); a share in owning a business; money paid for the use of money borrowed
+interest – [n.] what is important to someone ; a share in owning a business; money paid for the use of money borrowed
 interfere – [v.] to get in the way of; to work against; to take part in the activities of others, especially when not asked to do so
 international – [ad.] of or about more than one nation or many nations; of the whole world
 intervene – [v.] to come between; to come between in order to settle or solve
@@ -705,7 +705,7 @@ involve – [v.] to take part in; to become a part of; to include
 iron – [n.] a strong, hard metal used to make machines and tools
 island – [n.] a land area with water all around it
 issue – [n.] an important problem or subject that people are discussing or arguing about
-it – [pro.] a thing, place, event or idea that is being spoken about ("The sky is blue, but it also has a few white clouds.")
+it – [pro.] a thing, place, event or idea that is being spoken about 
 J
 jail – [n.] a prison for those waiting to be tried for a crime or for those serving sentences for crimes that are not serious
 jewel – [n.] a valuable stone, such as a diamond or emerald
@@ -716,13 +716,13 @@ joke – [n.] something done or said to cause others to laugh
 judge – [v.] to form an opinion about; to decide a question, especially a legal one; [n.] a public official who decides problems of law in a court
 jump – [v.] to push down on the feet and move up quickly into the air
 jury – [n.] a group of people chosen to decide what is true in a trial
-just – [ad.] only ("Help me for just a minute."); very shortly before or after the present ("He just left."); at the same time ("He left just as I came in."); what is right or fair ("The law is just, in my opinion.")
+just – [ad.] only 
 K
 keep – [v.] to possess; to have for oneself
 kick – [v.] to hit with the foot
 kidnap – [v.] to seize and take away by force
 kill – [v.] to make dead; to cause to die
-kind – [n.] sort ("What kind of dog is that?"); [ad.] gentle; caring; helpful
+kind – [n.] sort ; [ad.] gentle; caring; helpful
 kiss – [v.] to touch with the mouth to show love or honor
 knife – [n.] a tool or weapon used to cut
 know – [v.] to understand something as correct; to have the facts about; to recognize someone because you have met and talked together before
@@ -732,10 +732,10 @@ labor – [n.] work; workers as a group
 laboratory – [n.] a room or place where experiments in science are done
 lack – [v.] to be without; [n.] the condition of needing, wanting or not having
 lake – [n.] a large area of fresh water surrounded by land
-land – [v.] to come to the earth from the air ("Airplanes land at airports."); [n.] the part of the earth not covered by water; the ground
+land – [v.] to come to the earth from the air ; [n.] the part of the earth not covered by water; the ground
 language – [n.] words and their use; what people speak in a country, nation or group
 large – [ad.] big; being of more than usual size, amount or number; opposite small
-last – [v.] to continue ("The talks will last three days."); [ad.] after all others; the only one remaining ("She is the last person in line.")
+last – [v.] to continue 
 late – [ad.] after the correct time; near the end; opposite early
 laugh – [v.] to make sounds to express pleasure or happy feelings
 launch – [v.] to put into operation; to begin; to send into the air or space
@@ -771,7 +771,7 @@ live – [v.] to have life; to exist; [ad.] having life; alive
 load – [v.] to put objects on or into a vehicle or container; [n.] that which is carried
 loan – [n.] money borrowed that usually must be returned with interest payments; something borrowed
 local – [ad.] about or having to do with one place
-lonely – [ad.] feeling alone and wanting friends; visited by few or no people ("a lonely man")
+lonely – [ad.] feeling alone and wanting friends; visited by few or no people 
 long – [ad.] not short; measuring from beginning to end; measuring much; for much time
 look – [v.] to turn the eyes toward so as to see; to search or hunt for; to seem to be
 lose – [v.] to have no longer; to not find; to fail to keep; to be defeated
@@ -802,7 +802,7 @@ mate – [v.] to bring together a male and a female to create another creature
 material – [n.] the substance, substances or matter of which something is made or from which something can be made, such as wood, cloth or stone; anything that can be made into something else
 mathematics – [n.] the science dealing with amounts, sizes and shapes, as explained by numbers and signs
 matter – [n.] anything that can be seen or felt; what things are made of
-may – [v.] a word used with an action word to mean permit or possible ("May I go?" "They may leave tomorrow.")
+may – [v.] a word used with an action word to mean permit or possible 
 mayor – [n.] the chief official of a city or town government
 meal – [n.] food eaten to satisfy hunger, such as dinner
 mean – [v.] to want to; to give the idea of; to have the idea of
@@ -828,7 +828,7 @@ milk – [n.] the white liquid produced by female animals to feed their young
 mind – [n.] the thinking, feeling part of a person
 mine – [v.] to dig useful or valuable substances out of the earth; [n.] a place in the earth where such substances are found; a bomb placed under the ground or under water so it cannot be seen
 mineral – [n.] a substance found in nature that is not an animal or a plant, such as coal or salt
-minister – [n.] a member of a cabinet; a high government official ("prime minister,"foreign minister")
+minister – [n.] a member of a cabinet; a high government official 
 minor – [ad.] small in size; of little importance
 minority – [n.] the smaller number; opposite majority
 minute – [n.] a measure of time; one of the sixty equal parts of an hour; sixty seconds
@@ -858,7 +858,7 @@ movie – [n.] a motion picture; a film
 much – [ad.] great in amount
 murder – [v.] to kill another person illegally; [n.] the crime of killing another person
 music – [n.] the making of sounds by singing or using a musical instrument
-must – [v.] a word used with an action word to mean necessary ("You must go to school.")
+must – [v.] a word used with an action word to mean necessary 
 mystery – [n.] something that is not or cannot be explained or understood; a secret
 N
 name – [v.] to appoint; to nominate; to give a name to; [n.] a word by which a person, animal or thing is known or called
@@ -886,7 +886,7 @@ nominate – [v.] to name someone as a candidate for an election; to propose a p
 noon – [n.] the middle of the day; twelve o'clock in the daytime
 normal – [n.] the usual condition, amount or form; [ad.] usual; what is expected
 north – [n.] the direction to the left of a person facing the rising sun
-not – [ad.] a word showing that something is denied or untrue ("She is not going.")
+not – [ad.] a word showing that something is denied or untrue 
 note – [v.] to talk about something already known; [n.] a word or words written to help a person remember; a short letter
 nothing – [n.] not anything; no thing
 now – [ad.] at this time; immediately
@@ -896,7 +896,7 @@ number – [n.] a word or sign used to show the order or amount of things
 O
 obey – [v.] to act as one is ordered to act
 object – [v.] to show that one does not like or approve; to protest; [n.] something not alive that can be seen or touched
-observe – [v.] to watch; to look at carefully; to celebrate or honor something ("They will observe the anniversary of the day she was born.")
+observe – [v.] to watch; to look at carefully; to celebrate or honor something 
 occupy – [v.] to take and hold or to control by force
 ocean – [n.] the area of salt water that covers almost seventy-five percent of the earth's surface; any of the five main divisions of this water
 of – [prep.] made from; belonging to; about; connected to; included among
@@ -909,24 +909,24 @@ official – [n.] a person with power in an organization; a representative of an
 often – [ad.] many times
 oil – [n.] a thick liquid that does not mix with water and that burns easily; a black liquid taken from the ground and used as fuel
 old – [ad.] not young or new; having lived or existed for many years
-on – [prep.] above and held up by; touching the upper surface of ("The book is on the table."); supported by ("He is on his feet."); about ("The report on the meeting is ready."); at the time of ("He left on Wednesday.")
+on – [prep.] above and held up by; touching the upper surface of 
 once – [ad.] one time only
-only – [ad.] being the single one or ones; no more than ("We have only two dollars.")
-open – [v.] to start ("They opened talks."); [ad.] not closed; not secret
+only – [ad.] being the single one or ones; no more than 
+open – [v.] to start ; [ad.] not closed; not secret
 operate – [v.] to do work or a job; to cut into the body for medical reasons
 opinion – [n.] a belief based on one's own ideas and thinking
 oppose – [v.] to be against; to fight against
-opposite – [ad.] different as possible; completely different from; exactly the other way ("North is the opposite direction from south.")
+opposite – [ad.] different as possible; completely different from; exactly the other way 
 oppress – [v.] to make others suffer; to control by the use of unjust and cruel force or power
 or – [conj.] giving another of two choices; giving the last of several choices
 orbit – [v.] to travel in space around a planet or other object; [n.] the path or way an object travels in space around another object or planet
 order – [v.] to give a command; to tell someone what to do; [n.] a command; the correct or normal way things are organized; a peaceful situation in which people obey laws
 organize – [v.] to put in order; to put together into a system
-other – [ad.] different; of another kind; the remaining one or ones of two or more ">("That man is short; the other is tall.")
+other – [ad.] different; of another kind; the remaining one or ones of two or more ">
 our – [ad.] of or belonging to us
 oust – [v.] to force to leave; to remove by force
 out – [ad.] away from the inside; opposite of in
-over – [conj.] above; covering; across, in or on every part of ("all over the world")
+over – [conj.] above; covering; across, in or on every part of 
 overthrow – [v.] to remove from power; to defeat or end by force
 owe – [v.] to pay or have to repay (usually money) in return for something received
 own – [v.] to have or possess for oneself
@@ -950,8 +950,8 @@ path – [n.] a narrow way for walking; a way along which something moves
 patient – [n.] a person being treated by a doctor for a health problem
 pay – [v.] to give money for work done or for something bought
 peace – [n.] the condition of freedom from war, fighting or noise; rest; quiet
-people – [n.] any group of persons; all the persons of a group, race, religion or nation ("the American people")
-percent – [n.] a part of every hundred ("Ten is ten percent of one hundred.")
+people – [n.] any group of persons; all the persons of a group, race, religion or nation 
+percent – [n.] a part of every hundred 
 perfect – [ad.] complete or correct in every way; completely right or good; without mistakes
 perform – [v.] to speak, dance or sing in front of others
 period – [n.] an amount of time within events, restrictions or conditions
@@ -966,8 +966,8 @@ pig – [n.] a farm animal used for its meat
 pilot – [n.] one who guides or flies an airplane or helicopter
 pipe – [n.] a long, round piece of material used to move liquid or gas
 place – [v.] to put something somewhere; [n.] an area or a part of an area; space where a person or thing is; any room, building, town or country
-plan – [v.] to organize or develop an idea or method of acting or doing something ">("They plan to have a party."); [n.] an organized or developed idea or method ("The plan will not work.")
-planet – [n.] a large object in space that orbits the sun ("Earth is a planet.")
+plan – [v.] to organize or develop an idea or method of acting or doing something ">
+planet – [n.] a large object in space that orbits the sun 
 plant – [v.] to put into the ground to grow; [n.] a living growth from the ground which gets its food from air, water and earth
 plastic – [n.] a material made from chemicals that can be formed and made into things
 play – [v.] to have fun; to not work; to take part in a sport; to make music on an instrument; [n.] a story acted in a theater
@@ -991,11 +991,11 @@ possible – [ad.] able to be done; can happen or is expected to happen
 postpone – [v.] to delay action until a later time
 pour – [v.] to flow; to cause to flow
 poverty – [n.] the condition of being poor
-power – [n.] the ability to control or direct others; control; strength; ruling force; force or energy used to do work ("Water power turns the wheel.")
+power – [n.] the ability to control or direct others; control; strength; ruling force; force or energy used to do work 
 praise – [v.] to say good things about; to approve
 pray – [v.] to make a request to a god or spirit; to praise a god or spirit
 pregnant – [ad.] carrying a child within the body before it is born; expecting to give birth to a baby
-present – [v.] to offer for consideration ("We will present our idea to the committee."); [n.] a gift ("I gave them a present for their anniversary."); now ("The present time is a good time."); [ad.] to be at a place ("I was present at school yesterday.")
+present – [v.] to offer for consideration 
 president – [n.] the chief official of a country that is a republic; the leader of an organization
 press – [v.] to urge strongly; [n.] newspapers, magazines and other publications
 pressure – [n.] the force produced when something is pushed down or against something else
@@ -1033,7 +1033,7 @@ purpose – [n.] the reason or desired effect for doing something; goal
 push – [v.] to use force to move something away from the person or thing using the force; opposite pull
 put – [v.] to place; to set in position
 Q
-quality – [n.] that which something is known to have or be ("An important quality of steel is its strength."); amount of value or excellence ("Their goods are of the highest quality.")
+quality – [n.] that which something is known to have or be 
 question – [v.] to ask; to express wonder or disbelief; [n.] a sentence or word used in asking for information; a problem; an issue to be discussed
 quick – [ad.] fast
 quiet – [ad.] with little or no noise; having little or no movement; calm
@@ -1062,7 +1062,7 @@ recent – [ad.] a short time ago
 recession – [n.] a temporary reduction in economic activity, when industries produce less and many workers lose their jobs
 recognize – [v.] to know or remember something or someone that was known, known about or seen before; to accept another nation as independent and establish diplomatic ties with its government
 record – [v.] to write something in order to have it for future use; to put sound or pictures in a form that can be kept and heard or seen again; [n.] a writing that shows proof or facts about something
-recover – [v.] to get again something that was lost, stolen or taken away ("The police recovered the stolen money."); to return to normal health or normal conditions She is expected to recover from the operation.")
+recover – [v.] to get again something that was lost, stolen or taken away 
 red – [ad.] having the color like that of blood
 reduce – [v.] to make less or smaller in number, size or amount; to cut
 reform – [v.] to make better by changing; to improve; [n.] a change to a better condition
@@ -1090,7 +1090,7 @@ resign – [v.] to leave a position, job or office
 resist – [v.] to oppose; to fight to prevent
 resolution – [n.] an official statement of agreement by a group of people, usually reached by voting
 resource – [n.] anything of value that can be used or sold
-responsible – [ad.] having a duty or job to do ("He is responsible for preparing the report."); being the cause of ("They were responsible for the accident.")
+responsible – [ad.] having a duty or job to do 
 rest – [v.] to sit, lie down or sleep to regain strength; [n.] that which remains; the others
 restrain – [v.] to keep controlled; to limit action by a person or group
 restrict – [v.] to limit; to prevent from increasing or becoming larger
@@ -1101,7 +1101,7 @@ revolt – [v.] to protest violently; to fight for a change, especially of gover
 rice – [n.] a food grain
 rich – [ad.] having much money or goods; having plenty of something
 ride – [v.] to sit on or in and be carried along; to travel by animal, wheeled vehicle, airplane or boat
-right – [n.] what a person legally and morally should be able to do or have ("It is their right to vote."); [ad.] agreeing with the facts; good; correct; opposite wrong; on the side that is toward the east when one is facing north; opposite left
+right – [n.] what a person legally and morally should be able to do or have ; [ad.] agreeing with the facts; good; correct; opposite wrong; on the side that is toward the east when one is facing north; opposite left
 riot – [v.] to act with many others in a violent way in a public place; [n.] a violent action by a large group of people
 rise – [v.] to go up; to go higher; to increase; to go from a position of sitting or lying to a position of standing
 risk – [n.] the chance of loss, damage or injury
@@ -1122,7 +1122,7 @@ ruin – [v.] to damage severely; to destroy
 rule – [v.] to govern or control; to decide; [n.] a statement or an order that says how something must be done
 run – [v.] to move quickly by steps faster than those used for walking
 S
-sabotage – [v.] to damage or destroy as an act against an organization or nation ("The rebels sabotaged the railroad.")
+sabotage – [v.] to damage or destroy as an act against an organization or nation 
 sacrifice – [v.] to do without something or to suffer a loss for a belief, idea, goal or another person
 sad – [ad.] not happy
 safe – [ad.] away from harm or danger
@@ -1139,15 +1139,15 @@ school – [n.] a place for education; a place where people go to learn
 science – [n.] the study of nature and the actions of natural things, and the knowledge gained about them
 sea – [n.] a large area of salt water, usually part of an ocean
 search – [v.] to look for carefully
-season – [n.] one of the four periods of the year that is based on the earth's position toward the sun (spring, summer, autumn, winter); a period of time based on different weather conditions ("dry season", "rainy season"); a period during the year when something usually happens ("baseball season")
-seat – [n.] a thing to sit on; a place to sit or the right to sit there ("a seat in parliament")
+season – [n.] one of the four periods of the year that is based on the earth's position toward the sun (spring, summer, autumn, winter); a period of time based on different weather conditions 
+seat – [n.] a thing to sit on; a place to sit or the right to sit there 
 second – [ad.] the one that comes after the first
 secret – [n.] something known only to a few and kept from general knowledge; [ad.] hidden from others; known only to a few
-security – [n.] freedom from danger or harm; protection; measures necessary to protect a person or place ("Security was increased in the city.")
+security – [n.] freedom from danger or harm; protection; measures necessary to protect a person or place 
 see – [v.] to know or sense through the eyes; to understand or know
 seed – [n.] the part of a plant from which new plants grow
-seek(ing) – [v.] to search for ("They are seeking a cure for cancer."); to try to get ("She is seeking election to public office."); to plan to do ("Electric power companies are seeking to reduce their use of coal.")
-seem – [v.] to appear to be ("She seems to be in good health.")
+seek(ing) – [v.] to search for 
+seem – [v.] to appear to be 
 seize – [v.] to take quickly by force; to take control of quickly; to arrest
 self – [n.] all that which makes one person different from others
 sell – [v.] to give something in exchange for money
@@ -1159,7 +1159,7 @@ separate – [v.] to set or keep people, things or ideas away from or independen
 series – [n.] a number of similar things or events that follow one after another in time, position or order
 serious – [ad.] important; needing careful consideration; dangerous
 serve – [v.] to work as an official; to be employed by the government; to assist or help
-service – [n.] an organization or system that provides something for the public ("Schools and roads are services paid for by taxes."); a job that an organization or business can do for money; military organizations such as an army, navy or air force; a religious ceremony
+service – [n.] an organization or system that provides something for the public ; a job that an organization or business can do for money; military organizations such as an army, navy or air force; a religious ceremony
 set – [v.] to put in place or position; to establish a time, price or limit
 settle – [v.] to end (a dispute); to agree about (a problem); to make a home in a new place
 several – [ad.] three or more, but not many
@@ -1179,7 +1179,7 @@ shock – [v.] to cause to feel sudden surprise or fear; [n.] something that gre
 shoe – [n.] a covering for the foot
 shoot – [v.] to cause a gun or other weapon to send out an object designed to kill; to use a gun
 short – [ad.] lasting only for a small period of time; not long; opposite tall
-should – [v.] used with another verb (action word) to show responsibility ("We should study."), probability ("The talks should begin soon."), or that something is believed to be a good idea ("Criminals should be punished.")
+should – [v.] used with another verb (action word) to show responsibility 
 shout – [v.] to speak very loudly
 show – [v.] to make something be seen; to make known; [n.] a play or story presented in a theater, or broadcast on radio or television, for enjoyment or education; something organized to be seen by the public
 shrink – [v.] to make or become less in size, weight or value
@@ -1192,7 +1192,7 @@ silence – [v.] to make quiet; to stop from speaking or making noise; [n.] a la
 silver – [n.] a valued white metal
 similar – [ad.] like something else but not exactly the same
 simple – [ad.] easy to understand or do; not difficult or complex
-since – [prep.] from a time in the past until now ("I have known her since we went to school together.")
+since – [prep.] from a time in the past until now 
 sing – [v.] to make music sounds with the voice
 single – [ad.] one only
 sink – [v.] to go down into water or other liquid
@@ -1210,11 +1210,11 @@ slide – [v.] to move smoothly over a surface
 slow – [v.] to reduce the speed of; [ad.] not fast in moving, talking or other activities
 small – [ad.] little in size or amount; few in number; not important; opposite large
 smash – [v.] to break or be broken into small pieces by force; to hit or move with force
-smell – [v.] to sense through the nose; [n.] something sensed by the nose ("the smell of food cooking")
+smell – [v.] to sense through the nose; [n.] something sensed by the nose 
 smoke – [v.] to use cigarettes or other tobacco products by burning them and breathing in the smoke; [n.] that which can be seen rising into the air like a cloud from something burning
 smooth – [ad.] having a level surface; opposite rough
 snow – [n.] soft, white pieces of frozen water that fall from the sky, usually in winter or when the air temperature is very cold
-so – [ad.] in such a way that ("He held the flag so all could see it."); also; too ("She left early, and so did we."); very ("I am so sick."); as a result ("They were sick, so they could not come."); [conj.] in order that; for the purpose of ("Come early so we can discuss the plans.")
+so – [ad.] in such a way that 
 social – [ad.] of or about people or a group
 soft – [ad.] not hard; easily shaped; pleasing to touch; not loud
 soil – [n.] earth in which plants grow
@@ -1232,7 +1232,7 @@ speak – [v.] to talk; to say words with the mouth; to express one's thoughts t
 special – [ad.] of a different or unusual kind; not for general use; better or more important than others of the same kind
 speech – [n.] a talk given to a group of people
 speed – [v.] to make something go or move faster; [n.] the rate at which something moves or travels; the rate at which something happens or is done
-spend – [v.] to give as payment; to use ("He spends much time studying.")
+spend – [v.] to give as payment; to use 
 spill – [v.] to cause or permit liquid to flow out, usually by accident
 spirit – [n.] the part of a human that is not physical and is connected to thoughts and emotions; the part of a person that is believed to remain alive after death
 split – [v.] to separate into two or more parts; to divide or break into parts
@@ -1247,15 +1247,15 @@ star – [n.] a mass of gas that usually appears as a small light in the sky at 
 start – [v.] to begin; to make something begin
 starve – [v.] to suffer or die from a lack of food
 state – [v.] to say; to declare; [n.] a political part of a nation
-station – [n.] a place of special work or purpose ("a police station"); a place where passengers get on or off trains or buses; a place for radio or television broadcasts
+station – [n.] a place of special work or purpose ; a place where passengers get on or off trains or buses; a place for radio or television broadcasts
 statue – [n.] a form of a human, animal or other creature usually made of stone, wood or metal
-stay – [v.] to continue to be where one is; to remain; to not leave; to live for a time ("They stayed in New York for two years.")
+stay – [v.] to continue to be where one is; to remain; to not leave; to live for a time 
 steal – [v.] to take without permission or paying
 steam – [n.] the gas that comes from hot water
 steel – [n.] iron made harder and stronger by mixing it with other substances
 step – [v.] to move by lifting one foot and placing it in a new position; [n.] the act of stepping; one of a series of actions designed to reach a goal
-stick – [v.] to attach something to another thing using a substance that will hold them together; to become fixed in one position so that movement is difficult ("Something is making the door stick."); [n.] a thin piece of wood
-still – [ad.] not moving ("The man was standing still."); until the present or a stated time ("Was he still there?"); even so; although ("The job was difficult, but she still wanted to do it.")
+stick – [v.] to attach something to another thing using a substance that will hold them together; to become fixed in one position so that movement is difficult ; [n.] a thin piece of wood
+still – [ad.] not moving 
 stone – [n.] a small piece of rock
 stop – [v.] to prevent any more movement or action; to come or bring to an end
 store – [v.] to keep or put away for future use; [n.] a place where people buy things
@@ -1288,11 +1288,11 @@ sun – [n.] the huge star in the sky that provides heat and light to earth
 supervise – [v.] to direct and observe the work of others
 supply – [v.] to give; to provide; [n.] the amount of something that can be given or sold to others
 support – [v.] to carry the weight of; to hold up or in position; to agree with others and help them reach a goal; to approve
-suppose – [v.] to believe, think or imagine ("I suppose you are right."); to expect ("It is supposed to rain tonight.")
+suppose – [v.] to believe, think or imagine 
 suppress – [v.] to put down or to keep down by force; to prevent information from being known publicly
 sure – [ad.] very probable; with good reason to believe; true without question
-surface – [n.] the outer side or top of something ("The rocket landed on the surface of the moon.")
-surplus – [n.] an amount that is more than is needed; extra; ("That country has a trade surplus. It exports more than it imports.")
+surface – [n.] the outer side or top of something 
+surplus – [n.] an amount that is more than is needed; extra; 
 surprise – [v.] to cause a feeling of wonder because something is not expected; [n.] something not expected; the feeling caused by something not expected
 surrender – [v.] to give control of oneself or one's property to another or others; to stop fighting and admit defeat
 surround – [v.] to form a circle around; to be in positions all around someone or something
@@ -1300,25 +1300,25 @@ survive – [v.] to remain alive during or after a dangerous situation
 suspect – [v.] to imagine or believe that a person is guilty of something bad or illegal; [n.] a person believed to be guilty
 suspend – [v.] to cause to stop for a period of time
 swallow – [v.] to take into the stomach through the mouth
-swear in – [v.] to put an official into office by having him or her promise to carry out the duties of that office ("The chief justice will swear in the president.")
+swear in – [v.] to put an official into office by having him or her promise to carry out the duties of that office 
 sweet – [ad.] tasting pleasant, like sugar
 swim – [v.] to move through water by making motions with the arms and legs
 sympathy – [n.] a sharing of feelings or emotions with another person, usually feelings of sadness
 system – [n.] a method of organizing or doing something by following rules or a plan; a group of connected things or parts working together for a common purpose or goal
 T
-take – [v.] to put a hand or hands around something and hold it, often to move it to another place; to carry something ; to seize; to capture; to begin to be in control ("The president takes office tomorrow.")
+take – [v.] to put a hand or hands around something and hold it, often to move it to another place; to carry something ; to seize; to capture; to begin to be in control 
 talk – [v.] to express thoughts in spoken words; [n.] a meeting for discussion
 tall – [ad.] higher than others; opposite short
 tank – [n.] a large container for holding liquids; a heavy military vehicle with guns
 target – [n.] any person or object aimed at or fired at
-taste – [v.] to sense through the mouth ("The fruit tastes sweet.")
+taste – [v.] to sense through the mouth 
 tax – [n.] the money a person or business must pay to the government so the government can provide services
 tea – [n.] a drink made from the plant of the same name
 teach – [v.] to show how to do something; to provide knowledge; to cause to understand
 team – [n.] a group organized for some purpose, often for sports
 tear – [v.] to pull apart, often by force
 tears – [n.] the fluid that comes out of the eyes while crying
-technical – [ad.] involving machines, processes and materials in industry, transportation and communications; of or about a very special kind of subject or thing ("You need technical knowledge to understand how this system works.")
+technical – [ad.] involving machines, processes and materials in industry, transportation and communications; of or about a very special kind of subject or thing 
 technology – [n.] the use of scientific knowledge and methods to produce goods and services
 telephone – [n.] a device or system for sending sounds, especially the voice, over distances
 telescope – [n.] a device for making objects that are far away appear closer and larger
@@ -1327,24 +1327,24 @@ tell – [v.] to give information; to make known by speaking; to order; to comma
 temperature – [n.] the measurement of heat and cold
 temporary – [ad.] lasting only a short time
 tense – [ad.] having fear or concern; dangerous; opposite calm
-term – [n.] a limited period of time during which someone does a job or carries out a responsibility ("He served two terms in Congress."); the conditions of an agreement that have been accepted by those involved in it
+term – [n.] a limited period of time during which someone does a job or carries out a responsibility ; the conditions of an agreement that have been accepted by those involved in it
 terrible – [ad.] very bad; causing terror or fear
 territory – [n.] a large area of land
 terror – [n.] extreme fear; that which causes great fear
 terrorist – [n.] a person who carries out acts of extreme violence as a protest or a way to influence a government
-test – [v.] to attempt to learn or prove what something is like or how it will act by studying or doing ("The scientists will test the new engine soon."); [n.] an attempt to learn or prove what something is like or how it will act by studying or doing ("The test of the new engine takes place today."); a group of questions or problems used to find out a person's knowledge ("The students did well on the language test.")
-than – [conj.] connecting word used to link things that may be similar, but are not equal ("My sister is taller than I am.")
-thank – [v.] to say that one has a good feeling toward another because that person did something kind ("I want to thank you for helping me.")
-that – [ad.] showing the person, place or thing being spoken about ("That man is a soldier."); [pro.] the person, place or thing being spoken about ("The building that I saw was very large.")
+test – [v.] to attempt to learn or prove what something is like or how it will act by studying or doing 
+than – [conj.] connecting word used to link things that may be similar, but are not equal 
+thank – [v.] to say that one has a good feeling toward another because that person did something kind 
+that – [ad.] showing the person, place or thing being spoken about 
 the – [pro.] used in front of a name word to show that it is a person or thing that is known about or is being spoken about
 theater – [n.] a place where movies are shown or plays are performed
 them – [pro.] other people being spoken about
 then – [ad.] at that time; existing; and so
-theory – [n.] a possible explanation of why something exists or how something happens using experiments or ideas, but which is not yet proven ("Other scientists are debating his theory about the disappearance of dinosaurs.")
+theory – [n.] a possible explanation of why something exists or how something happens using experiments or ideas, but which is not yet proven 
 there – [ad.] in that place or position; to or toward that place
 these – [pro.] of or about the people, places or things nearby that have been spoken about already
 they – [pro.] those ones being spoken about
-thick – [ad.] having a large distance between two opposite surfaces ("The wall is two meters thick."); having many parts close together ("The forest is very thick."); almost solid, such as a liquid that does not flow easily; opposite thin
+thick – [ad.] having a large distance between two opposite surfaces ; almost solid, such as a liquid that does not flow easily; opposite thin
 thin – [ad.] having a small distance between two opposite surfaces; not fat; not wide; opposite thick
 thing – [n.] any object
 think – [v.] to produce thoughts; to form ideas in the mind; to consider; to believe
@@ -1353,7 +1353,7 @@ this – [pro.] of or about the person, place or thing nearby that has been spok
 threaten – [v.] to warn that one will do harm or cause damage
 through – [prep.] in at one end and out at the other; from front to back; from top to bottom; with the help of; by
 throw – [v.] to cause to go through the air by a movement of the arm
-tie – [v.] to join or hold together with some material; [n.] anything that joins or unites; links or connections ("The two nations have strong trade ties.")
+tie – [v.] to join or hold together with some material; [n.] anything that joins or unites; links or connections 
 time – [n.] that which is measured in minutes, hours, days and years; a period that can be identified in hours and minutes and is shown on a clock; a period when an event should or will take place
 tired – [ad.] having less strength because of work or exercise; needing sleep or rest
 to – [prep.] showing the direction of an action; showing the person or place toward which an action is directed; showing a goal or purpose
@@ -1398,17 +1398,17 @@ try – [v.] to make an effort; to take court action against a person to decide 
 tube – [n.] a long, round structure through which liquids or gases can flow; a long, thin container in which they can be kept
 turn – [v.] to change direction; to move into a different position; to change color, form or shape
 U
-under – [prep.] below; below the surface of; less than; as called for by a law, agreement or system ("The river flows under the bridge." "Such action is not permitted under the law.")
+under – [prep.] below; below the surface of; less than; as called for by a law, agreement or system 
 understand – [v.] to know what is meant; to have knowledge of
 unite – [v.] to join together
 universe – [n.] all of space, including planets and stars
 university – [n.] a place of education that usually includes several colleges and research organizations
-unless – [conj.] except if it happens; on condition that ("I will not go, unless the rain stops.")
+unless – [conj.] except if it happens; on condition that 
 until – [conj.] up to a time; before
 up – [ad.] to, in or at a higher position or value
 urge – [v.] to advise strongly; to make a great effort to get someone to do something
 urgent – [ad.] needing an immediate decision or action
-us – [pro.] the form of the word "we" used after a preposition ("He said he would write to us.") or used as an object of a verb ("They saw us yesterday.")
+us – [pro.] the form of the word "we" used after a preposition 
 use – [v.] to employ for a purpose; to put into action
 usual – [ad.] as is normal or common; as is most often done, seen or heard
 V
@@ -1417,7 +1417,7 @@ value – [n.] the quality of being useful, important or desired; the amount of 
 vegetable – [n.] a plant grown for food
 vehicle – [n.] anything on or in which a person or thing can travel or be transported, especially anything on wheels; a car or truck
 version – [n.] the form of something with different details than earlier or later forms
-very – [ad.] extremely ("He was very late.")
+very – [ad.] extremely 
 veto – [v.] to reject or refuse to approve
 vicious – [ad.] bad; dangerous; showing harm or hate
 victim – [n.] someone or something that is injured, killed or made to suffer; someone who is tricked
@@ -1444,7 +1444,7 @@ watch – [v.] to look at; to observe closely; to look and wait for
 water – [n.] the liquid that falls from the sky as rain or is found in lakes, rivers and oceans
 wave – [v.] to move or cause to move one way and the other, as a flag in the wind; to signal by moving the hand one way and the other; [n.] a large mass of water that forms and moves on the surface of a lake or ocean
 way – [n.] a path on land or sea or in the air; how something is done; method
-we – [pro.] two or more people, including the speaker or writer ("He and I will go together, and we will return together.")
+we – [pro.] two or more people, including the speaker or writer 
 weak – [ad.] having little power; easily broken, damaged or destroyed; opposite strong
 wealth – [n.] a large amount of possessions, money or other things of value
 weapon – [n.] anything used to cause injury or to kill during an attack, fight or war
@@ -1456,22 +1456,22 @@ welcome – [v.] to express happiness or pleasure when someone arrives or someth
 well – [ad.] in a way that is good or pleasing; in good health; [n.] a hole in the ground where water, gas or oil can be found
 west – [n.] the direction in which the sun goes down
 wet – [ad.] covered with water or other liquid; not dry
-what – [pro.] used to ask about something or to ask for information about something ("What is this?"); [ad.] which or which kind ("He wants to know what you would like to drink.")
+what – [pro.] used to ask about something or to ask for information about something 
 wheat – [n.] a grain used to make bread; the plant that produces the grain
 wheel – [n.] a round structure that turns around a center
-when – [ad.] at what time; at any time ("When will she come home?"); [conj.] during or at the time ("I studied hard when I was in school.")
-where – [ad.], [conj.] at, to or in what place ("Where is his house?" "The house where he lives is in the old part of the city.")
-which – [pro.] used to ask about what one or what ones of a group of things or people ("Which program do you like best?" "Which students will take the test?")
-while – [n.] a space of time ("Please come to my house for a while."); [conj.] at or during the same time ("It may not be a good idea to eat while you are running.")
+when – [ad.] at what time; at any time 
+where – [ad.], [conj.] at, to or in what place 
+which – [pro.] used to ask about what one or what ones of a group of things or people 
+while – [n.] a space of time 
 white – [ad.] having the color like that of milk or snow
-who – [pro.] what or which person or persons that ("Who wants to go?"); the person or persons ("They are the ones who want to go.")
+who – [pro.] what or which person or persons that 
 whole – [ad.] the complete amount; all together; not divided; not cut into pieces
-why – [ad.] for what cause or reason ("Why did she do it?"); [conj.] the reason for which ("I do not know why she did it.")
+why – [ad.] for what cause or reason 
 wide – [ad.] having a great distance from one side to the other; not limited
 wife – [n.] a woman who is married
 wild – [ad.] living and growing in natural conditions and not organized or supervised by humans; angry; uncontrolled
-will – [v.] a word used with action words to show future action ("They will hold talks tomorrow.")
-willing – [ad.] being ready or having a desire to ("They are willing to talk about the problem.")
+will – [v.] a word used with action words to show future action 
+willing – [ad.] being ready or having a desire to 
 win – [v.] to gain a victory; to defeat another or others in a competition, election or battle
 wind – [n.] a strong movement of air
 window – [n.] an opening in a wall to let in light and air, usually filled with glass
@@ -1479,11 +1479,11 @@ winter – [n.] the coldest time of year, between autumn and spring
 wire – [n.] a long, thin piece of metal used to hang objects or to carry electricity or electronic communications from one place to another
 wise – [ad.] having much knowledge and understanding; able to use knowledge and understanding to make good or correct decisions
 wish – [v.] to want; to express a desire for
-with – [prep.] along or by the side of; together; using ("He fixed it with a tool."); having ("the house with the red door")
+with – [prep.] along or by the side of; together; using 
 withdraw – [v.] to take or move out, away or back; to remove
 without – [prep.] with no; not having or using; free from; not doing
 woman – [n.] an adult female human
-wonder – [v.] to ask oneself; to question ("She wonders if it is true."); [n.] a feeling of surprise
+wonder – [v.] to ask oneself; to question ; [n.] a feeling of surprise
 wonderful – [ad.] causing wonder; especially good
 wood – [n.] the solid material of which trees are made
 word – [n.] one or more connected sounds that form a single part of a language
@@ -1502,7 +1502,7 @@ year – [n.] a period of time equal to twelve months
 yellow – [ad.] having the color like that of gold or the sun
 yes – [ad.] used to express agreement or to permit
 yesterday – [n.] the day before today
-yet – [ad.] at some time before now ("Have they arrived yet?"); now; at this time ("I cannot tell you about it yet."); [conj.] however ("The sun was shining, yet it was cold.")
+yet – [ad.] at some time before now 
 you – [pro.] the person or persons being spoken to
 young – [ad.] in the early years of life; not old
 Z
@@ -1519,9 +1519,9 @@ un- : not (unusual, unhappy)
 
 
 Common expressions
-carry out – to do; to put into effect ("Please carry out the plan.")
-pass a bill – approve ("Congress is expected to pass a bill to cut taxes.")
-take steps – to start to do something ("The government will take steps to halt inflation.")
+carry out – to do; to put into effect 
+pass a bill – approve 
+take steps – to start to do something 
 
 
 Words used in VOA science programs
@@ -1777,4 +1777,4 @@ George Walker Bush
 Barack H. Obama
 `;
 
-document.write('<textarea cols=100 rows=50>' + lxcn.replace(/\(\".+\"\)/g, '') + '</textarea>');
+document.write('<textarea cols=100 rows=50>' + lxcn.replace(/\].+\[/g, '][').replace(/\].+\n/g, ']\n') + '</textarea>');
