@@ -187,6 +187,7 @@ function handleFiles(e) {
       
     //let out = "";
     //let arr = wiki.map(t=>t.text);
+    alert(doc.json()[0].terms[0])
     
     for (var j=0; j<doc.json().length; j++) {
       let arr = doc.json()[j].terms.map(t=>[t.text, t.penn, t.tfidf]); //doc.syllables()
