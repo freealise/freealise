@@ -136,17 +136,17 @@ function handleFiles(e) {
     EX: '33', //Existential there
     FW: '33',
     IN: '33',
-    JJ: '50',
+    Adjective: '50',
     JJR: '50',
     JJS: '50',
     MD: '33',
-    NN: '100',
+    Noun: '100',
     NNS: '100',
     NNP: '100',
     NNPS: '100',
     POS: '33',
     PRP: '33',
-    RB: '33',
+    Adverb: '33',
     RBR: '33',
     RBS: '33',
     RP: '67',
@@ -154,7 +154,7 @@ function handleFiles(e) {
     SYM: '33',
     TO: '33',
     UH: '33',
-    VB: '67',
+    Verb: '67',
     VBD: '67',
     VBG: '67',
     VBN: '67', // past participle
@@ -178,7 +178,7 @@ function handleFiles(e) {
     var doc = nlp(txt);
     alert('ok');
     //doc.compute('syllables')
-    doc.compute('penn');
+    //doc.compute('penn'); //t.penn
   
     //doc.tfidf();
     //let model = doc;
@@ -190,7 +190,7 @@ function handleFiles(e) {
     alert(JSON.stringify(doc.json()[0].terms[0]));
     
     for (var j=0; j<doc.json().length; j++) {
-      let arr = doc.json()[j].terms.map(t=>[t.text, t.penn, t.tfidf]); //doc.syllables()
+      let arr = doc.json()[j].terms.map(t=>[t.text, t.chunk, t.tfidf]); //doc.syllables()
     
       for (var i=0; i<arr.length; i++) {
         /*if (arr[i] && arr[i]!='') {
