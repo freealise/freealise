@@ -12,10 +12,8 @@
       try{var compressed = '{"true":"cool0;! cat,.com,a0;ge,mungo"}'
       
       var trie = efrt(compressed);
-      var attempt = ['miles davis', 'cool.com', 'cool'].map(function (str) {
-        return str + ' -> ' + trie.hasOwnProperty(str)
-      })
-      document.getElementById('result').innerText = attempt.join('\n')
+      
+      document.getElementById('result').innerText = JSON.stringify(trie);
       }catch(e){alert(e);}
     </script>
   </body>
