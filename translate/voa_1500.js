@@ -3278,4 +3278,4 @@ security - [n.]
 stock - [n.]
 `;
 
-document.write('<textarea cols=100 rows=50>' + lxcn.replace(/\] [^\[]+\n/g, '\]\n').replace(/\] .+ \[/g, '][') + '</textarea>');
+document.write('<textarea cols=100 rows=50>' + lxcn.replace(/\ \– [^\–]+\n/g, '\n') + '</textarea>');
