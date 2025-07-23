@@ -99,7 +99,7 @@ function handleFiles(e) {
     FW: 'Expression',
     IN: 'Preposition',
     JJ: 'Adjective',
-    JJR: 'Comparative',
+    JJR: 'Preposition',
     JJS: 'Superlative',
     MD: 'Modal',
     NN: 'Noun',
@@ -130,41 +130,41 @@ function handleFiles(e) {
   };
   
   const colors = {
-    CC: '33',
-    CD: '50',
-    DT: '33',
-    EX: '33', //Existential there
-    FW: '33',
-    IN: '33',
+    Conjunction: '33',
+    Cardinal: '50',
+    Determiner: '33',
+    Preposition: '33', //Existential there
+    Expression: '33',
+    Preposition: '33',
     Adjective: '50',
-    JJR: '50',
-    JJS: '50',
-    MD: '33',
+    Preposition: '50',
+    Superlative: '50',
+    Modal: '33',
     Noun: '100',
-    NNS: '100',
-    NNP: '100',
-    NNPS: '100',
-    POS: '33',
-    PRP: '33',
+    Plural: '100',
+    Singular: '100',
+    Plural: '100',
+    Possessive: '33',
+    Pronoun: '33',
     Adverb: '33',
-    RBR: '33',
-    RBS: '33',
-    RP: '67',
-    PDT: '33',
-    SYM: '33',
-    TO: '33',
-    UH: '33',
+    Comparative: '33',
+    Superlative: '33',
+    PhrasalVerb: '67',
+    Determiner: '33',
+    Expression: '33',
+    Conjunction: '33',
+    Expression: '33',
     Verb: '67',
-    VBD: '67',
-    VBG: '67',
-    VBN: '67', // past participle
-    VBP: '67', // non-3rd person singular present
-    VBZ: '67', // 3rd person singular present
-    'PRP$': '33',
-    'WP$': '33',
-    WDT: '33',
-    WP: '33',
-    WRB: '33',
+    PastTense: '67',
+    Gerund: '67',
+    Participle: '67', // past participle
+    PresentTense: '67', // non-3rd person singular present
+    PresentTense: '67', // 3rd person singular present
+    Pronoun: '33',
+    Possessive: '33',
+    Determiner: '33',
+    Pronoun: '33',
+    Adverb: '33',
   };
   
   nlp.plugin(compromiseStats);
@@ -187,7 +187,7 @@ function handleFiles(e) {
       
     //let out = "";
     //let arr = wiki.map(t=>t.text);
-    alert(JSON.stringify(doc.json()[0].terms[0]));
+    alert(JSON.stringify(doc.json()[0].terms[0]).chunk);
     
     for (var j=0; j<doc.json().length; j++) {
       let arr = doc.json()[j].terms.map(t=>[t.text, t.chunk, t.tfidf]); //doc.syllables()
