@@ -180,6 +180,7 @@ function handleFiles(e) {
     
     txt = txt.replace(/\</g,'≺').replace(/\>/g,'≻');
     var doc = nlp(txt);
+    alert(JSON.stringify(doc));
     //doc.compute('syllables')
     doc.compute('penn');
   
