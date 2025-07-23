@@ -4932,4 +4932,4 @@ security
 stock
 `;
 
-document.write('<textarea cols=100 rows=50>' + list.replace(/\s+\n/g, '",\n"').trim() + '</textarea>');
+document.write('<textarea cols=100 rows=50>' + list.replace(/\s+\n/g, '\n').replace(/\n/g, '",\n"').trim() + '</textarea>');
