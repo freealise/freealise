@@ -9,12 +9,13 @@
     ></script>
 
     <script type="text/javascript">
-      var compressed = '{"true":"cool0;! cat,.com,a0;ge,mungo"}'
+      try{var compressed = '{"true":"cool0;! cat,.com,a0;ge,mungo"}'
       var trie = unpack(compressed)
       var attempt = ['miles davis', 'cool.com', 'cool'].map(function (str) {
         return str + ' -> ' + trie.hasOwnProperty(str)
       })
       document.getElementById('result').innerText = attempt.join('\n')
+      }catch(e){alert(e);}
     </script>
   </body>
 </html>
