@@ -187,10 +187,10 @@ function handleFiles(e) {
       
     //let out = "";
     //let arr = wiki.map(t=>t.text);
-    alert(JSON.stringify(doc.json()[0].terms[0]).chunk);
     
     for (var j=0; j<doc.json().length; j++) {
       let arr = doc.json()[j].terms.map(t=>[t.text, t.chunk, t.tfidf]); //doc.syllables()
+      document.write(arr+'<br/>');
     
       for (var i=0; i<arr.length; i++) {
         /*if (arr[i] && arr[i]!='') {
