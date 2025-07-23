@@ -2172,7 +2172,7 @@ for (var i=0; i<Object.keys(data).length; i++) {
   for (var j=0; j<list.length; j++) {
     
     var arr = data[Object.keys(data)[i]].slice(5).split(",");
-    res[Object.keys(data)[i]] = arr.splice(arr.indexOf(list[j]),0,1);
+    data[Object.keys(data)[i]] = 'true¦' + arr.splice(arr.indexOf(list[j]),0,1).join(',');
   }
 }
   document.write('<textarea cols=100 rows=50>'+JSON.stringify(res).replace(/\"\,/g,'",\n')+'</textarea>');
