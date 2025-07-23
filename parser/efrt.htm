@@ -2187,7 +2187,7 @@ for (var i=0; i<Object.keys(data).length; i++) {
     data[Object.keys(data)[i]] = 'true¦' + arr.join(',');
   }
 }
-  document.write('<textarea cols=100 rows=50>'+JSON.stringify(data).replace(/[ABCDEFGHIJKLMNOPQRSTUVWXYZ]/g,'').replace(/\,+/g,',').replace(/\w\,\"/g,function(x){return x.slice(0,1)+'"';}).replace(/\¦\,/g,'¦').replace(/\"[\d\.]+\"/g,function(x){return x.slice(1,-1);})+'\n\n'+JSON.stringify(res)+'</textarea>');
+  document.write('<textarea cols=100 rows=50>'+JSON.stringify(data).replace(/[ABCDEFGHIJKLMNOPQRSTUVWXYZ]/g,'').replace(/\,+/g,',').replace(/\w\,\"/g,function(x){return x.slice(0,1)+'"';}).replace(/\¦\,/g,'¦').replace(/\"[\d\.]+\"/g,function(x){return x.slice(1,-1);})+'\n\n'+JSON.stringify(res)+'\n\n'+JSON.stringify(res).toLowerCase()+'</textarea>');
 
   }catch(e){alert(e);}
   
