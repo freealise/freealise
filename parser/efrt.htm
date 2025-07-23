@@ -4,9 +4,9 @@
     <pre id="result" />
 
     <script type="text/javascript">
-      import { unpack } from 'https://unpkg.com/efrt@2.7.0/builds/efrt-unpack.min.js'
+      try{import { unpack } from 'https://unpkg.com/efrt@2.7.0/builds/efrt-unpack.min.js'
       
-      try{var compressed = '{"true":"cool0;! cat,.com,a0;ge,mungo"}'
+      var compressed = '{"true":"cool0;! cat,.com,a0;ge,mungo"}'
       
       var trie = unpack(compressed);
       
