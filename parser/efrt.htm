@@ -4,11 +4,11 @@
     <pre id="result"></pre>
 
     <script type="module">
-      try{import { unpack } from 'https://unpkg.com/efrt@2.7.0/builds/efrt-unpack.min.js'
+      try{import { efrt } from 'https://unpkg.com/efrt@2.7.0/builds/efrt-unpack.min.js'
       
       var compressed = '{"true":"cool0;! cat,.com,a0;ge,mungo"}'
       
-      var trie = unpack(compressed);
+      var trie = efrt(compressed);
       
       document.getElementById('result').innerText = JSON.stringify(trie);
       }catch(e){alert(e);}
