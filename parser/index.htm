@@ -55,10 +55,6 @@
 <script src="https://unpkg.com/compromise-stats"></script>
 <script>
 
-try {var obj = unpack('{England:b0che1;ambridge0edford0uckingham0;shire|Scotland:a0banff1;berdeen0rgyll0yr0;shire}');
-    alert(JSON.stringify(obj));} catch(e) {alert(e);}
-    
-
 const fileSelect = document.getElementById("fileSelect"),
 fileElem = document.getElementById("fileElem"),
 fileList = document.getElementById("fileList");
@@ -180,7 +176,7 @@ function handleFiles(e) {
     
     txt = txt.replace(/\</g,'≺').replace(/\>/g,'≻');
     var doc = nlp(txt);
-    alert(JSON.stringify(doc));
+    alert(doc);
     //doc.compute('syllables')
     doc.compute('penn');
   
