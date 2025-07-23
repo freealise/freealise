@@ -2170,6 +2170,7 @@ for (var i=0; i<Object.keys(data).length; i++) {
 }
   document.write('<textarea cols=100 rows=50>'+JSON.stringify(res).replace(/\"\,/g,'",\n')+'</textarea>');*/
   
+var list = ltwf.slice(0,-1).split('. ');
 var res = Array.from(list);
 for (var i=0; i<Object.keys(data).length; i++) {
   for (var j=0; j<list.length; j++) {
