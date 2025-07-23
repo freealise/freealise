@@ -5,13 +5,13 @@
 
     <script
       type="text/javascript"
-      src="https://unpkg.com/efrt@latest/builds/efrt-unpack.min.js"
+      src="https://unpkg.com/efrt@latest/builds/efrt-unpack.min.cjs"
     ></script>
 
     <script type="text/javascript">
       try{var compressed = '{"true":"cool0;! cat,.com,a0;ge,mungo"}'
       alert(JSON.stringify(efrt));
-      var trie = efrt(compressed);
+      var trie = efrt.unpack(compressed);
       var attempt = ['miles davis', 'cool.com', 'cool'].map(function (str) {
         return str + ' -> ' + trie.hasOwnProperty(str)
       })
