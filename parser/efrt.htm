@@ -509,9 +509,9 @@
 var res = {};
 for (var i=0; i<Object.keys(data).length; i++) {
   const compressedTrie = 'true¦denmark,o0scandanavia;h0ntar0;io';
-  res[Object.keys(data)[i]] = JSON.stringify(efrt(data[Object.keys(data)[i]]));
+  res[Object.keys(data)[i]] = JSON.stringify(efrt(data[Object.keys(data)[i]])).slice(1,-1).replace(/\"/g,'').replace(/\:true/g,'');
 }
-  document.write(JSON.stringify(res));
+  document.write('<textarea cols=100 rows=50>'+JSON.stringify(res)+'</textarea>');
 
   }catch(e){alert(e);}
   
