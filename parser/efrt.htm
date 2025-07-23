@@ -2172,10 +2172,10 @@ for (var i=0; i<Object.keys(data).length; i++) {
   for (var j=0; j<list.length; j++) {
     
     var arr = data[Object.keys(data)[i]].slice(5).split(",");
-    data[Object.keys(data)[i]] = 'true¦' + arr.splice(arr.indexOf(list[j]),0,1).join(',');
+    data[Object.keys(data)[i]] = 'true¦' + arr.splice(arr.indexOf(list[j]),1).join(',');
   }
 }
-  document.write('<textarea cols=100 rows=50>'+JSON.stringify(res).replace(/\"\,/g,'",\n')+'</textarea>');
+  document.write('<textarea cols=100 rows=50>'+JSON.stringify(data)+'</textarea>');
 
   }catch(e){alert(e);}
   
