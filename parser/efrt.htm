@@ -12,10 +12,12 @@
 
 <script src="https://unpkg.com/efrt@latest/builds/efrt-unpack.min.js"></script>
 <script>
+ try{ 
   const compressedTrie = 'true¦denmark,o0scandanavia;h0ntar0;io'
   const p = unpack(compressedTrie)
   alert(p.hasOwnProperty('ohio'))
   // true
+  }catch(e){alert(e);}
 </script>
 </body>
 </html>
