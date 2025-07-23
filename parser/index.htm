@@ -169,6 +169,13 @@ function handleFiles(e) {
   
   nlp.plugin(compromiseStats);
   
+  for (var i=0; i<Object.keys(nlp.model().one.lexicon).length; i++) {
+      if (list.indexOf(Object.keys(nlp.model().one.lexicon)[i]) == -1) {
+          delete nlp.model().one.lexicon[Object.keys(nlp.model().one.lexicon)[i]];
+      }
+  }
+  document.write(JSON.stringify(nlp.model().one.lexicon));
+  
   //nlp.plugin(compromiseWikipedia);
   //var wiki = doc.wikipedia().json();
 
