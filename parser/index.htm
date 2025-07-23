@@ -56,6 +56,10 @@
 <script src="https://unpkg.com/efrt@latest/builds/efrt-unpack.min.js"></script>
 <script>
 
+try {var obj = unpack('{England:b0che1;ambridge0edford0uckingham0;shire|Scotland:a0banff1;berdeen0rgyll0yr0;shire}');
+    alert(JSON.stringify(obj));} catch(e) {alert(e);}
+    
+
 const fileSelect = document.getElementById("fileSelect"),
 fileElem = document.getElementById("fileElem"),
 fileList = document.getElementById("fileList");
@@ -215,9 +219,6 @@ function handleFiles(e) {
     }
     let el = document.getElementById('result');
     el.innerHTML = txt; //JSON.stringify(wiki, null, 2); //out;
-    
-    try {var obj = unpack('{England:b0che1;ambridge0edford0uckingham0;shire|Scotland:a0banff1;berdeen0rgyll0yr0;shire}');
-    alert(JSON.stringify(obj));} catch(e) {alert(e);}
   }
   
   window.onload = loadFile(txt, colors);
