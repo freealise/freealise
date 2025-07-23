@@ -10,8 +10,8 @@
 
     <script type="text/javascript">
       try{var compressed = '{"true":"cool0;! cat,.com,a0;ge,mungo"}'
-      alert(JSON.stringify(efrt));
-      var trie = efrt.unpack(compressed);
+      
+      var trie = efrt(compressed);
       var attempt = ['miles davis', 'cool.com', 'cool'].map(function (str) {
         return str + ' -> ' + trie.hasOwnProperty(str)
       })
