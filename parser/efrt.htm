@@ -2170,22 +2170,24 @@ for (var i=0; i<Object.keys(data).length; i++) {
 }
   document.write('<textarea cols=100 rows=50>'+JSON.stringify(res).replace(/\"\,/g,'",\n')+'</textarea>');*/
   
-var list = ltwf.slice(0,-1).split('. ');
+var list = ltwf.slice(0,-1).toUpperCase().split('. ');
 var res = Array.from(list);
 for (var i=0; i<Object.keys(data).length; i++) {
+  data[Object.keys(data)[i]] = data[Object.keys(data)[i]].toUpperCase();
+  
   for (var j=0; j<list.length; j++) {
     
     var arr = data[Object.keys(data)[i]].slice(5).split(",");
     for (var k=0; k<arr.length; k++) {
       if (arr[k] == list[j]) {
-          arr[k] = list[j].toUpperCase();
+          arr[k] = list[j].toLowerCase();
           res[j] = arr[k];
       }
     }
     data[Object.keys(data)[i]] = 'true¦' + arr.join(',');
   }
 }
-  document.write('<textarea cols=100 rows=50>'+JSON.stringify(data)+'\n\n'+JSON.stringify(res)+'</textarea>');
+  document.write('<textarea cols=100 rows=50>'+JSON.stringify(data).replace(/[ABCDEFGHIJKLMNOPQRSTUVWXYZ]/g,'').replace(/\,+/g,',').replace(/\,\"/g,'"')+'\n\n'+JSON.stringify(res)+'</textarea>');
 
   }catch(e){alert(e);}
   
