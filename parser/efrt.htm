@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width" />
+  <title>new</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>new</h1>
+  <div id="test"></div>
+
+<script src="https://unpkg.com/efrt@latest/builds/efrt-unpack.min.js"></script>
+<script>
+  const compressedTrie = 'true¦denmark,o0scandanavia;h0ntar0;io'
+  const p = unpack(compressedTrie)
+  alert(p.hasOwnProperty('ohio'))
+  // true
+</script>
+</body>
+</html>
