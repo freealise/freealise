@@ -176,7 +176,7 @@ function handleFiles(e) {
     
     txt = txt.replace(/\</g,'≺').replace(/\>/g,'≻');
     var doc = nlp(txt);
-    alert(JSON.stringify(doc.json()));
+    alert('ok');
     //doc.compute('syllables')
     doc.compute('penn');
   
