@@ -509,10 +509,10 @@
 var res = {};
 for (var i=0; i<Object.keys(data).length; i++) {
   const compressedTrie = 'true¦denmark,o0scandanavia;h0ntar0;io';
-  res[Object.keys(data)[i]] = efrt(data[Object.keys(data)[i]]);
+  res[Object.keys(data)[i]] = JSON.stringify(efrt(data[Object.keys(data)[i]]));
 }
-  alert(JSON.stringify(res))
-  // true
+  document.write(JSON.stringify(res));
+
   }catch(e){alert(e);}
   
 </script>
