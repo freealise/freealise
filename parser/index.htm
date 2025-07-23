@@ -53,7 +53,7 @@
 <script src="../notes.js"></script>
 <!-- <script src="../plugins/speech/builds/compromise-speech.cjs"></script> -->
 <script src="https://unpkg.com/compromise-stats"></script>
-<script src="https://unpkg.com/efrt"></script>
+<script src="https://unpkg.com/efrt@latest/builds/efrt-unpack.min.js"></script>
 <script>
 
 const fileSelect = document.getElementById("fileSelect"),
@@ -216,7 +216,7 @@ function handleFiles(e) {
     let el = document.getElementById('result');
     el.innerHTML = txt; //JSON.stringify(wiki, null, 2); //out;
     
-    try {var obj = unpack('England:b0che1;ambridge0edford0uckingham0;shire|Scotland:a0banff1;berdeen0rgyll0yr0;shire');
+    try {var obj = unpack('{England:b0che1;ambridge0edford0uckingham0;shire|Scotland:a0banff1;berdeen0rgyll0yr0;shire}');
     alert(JSON.stringify(obj));} catch(e) {alert(e);}
   }
   
