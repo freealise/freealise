@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width" />
+  <title>new</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>new</h1>
+  <div id="test"></div>
+
+  <script type="module">
+  import { transliterate } from "https://esm.sh/hebrew-transliteration";
+
+  const str = "בְּרֵאשִׁ֖ית";
+  // bərēʾšît;
+
+  document.querySelector('#test').innerHTML = transliterate(str);
+  </script>
+</body>
+</html>
