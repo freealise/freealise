@@ -10,13 +10,14 @@
   <h1>new</h1>
   <div id="test"></div>
 
-  <script type="module">
+  <script type="module">try{
   import { transliterate } from "https://cdn.jsdelivr.net/npm/hebrew-transliteration@2.8.4/+esm";
 
   const str = "בְּרֵאשִׁ֖ית";
   // bərēʾšît;
 
   document.querySelector('#test').innerHTML = transliterate(str);
+  }catch(e){alert(e);}
   </script>
 </body>
 </html>
