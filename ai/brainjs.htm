@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width" />
+  <title>brain_js</title>
+</head>
+<body>
+  <h1>brain_js</h1>
+  <div id="test"></div>
+  <script src="https://unpkg.com/brain.js"></script>
+  <script>
+      try {
+// create configuration for training
+const config = {
+  iterations: 1500,
+  callback: function(x){document.getElementById('test').innerText += x;},
+  log: true,
+  logPeriod: 10,
+  layers: [10],
+};
+
+// create data which will be used for training
+const data = [
+  { input: 'Argon', output: 'a' },
+  { input: 'Argentina', output: 'a' },
+  { input: 'Aron', output: 'a' },
+  { input: 'August', output: 'a' },
+  { input: 'Australia', output: 'a' },
+  { input: 'America', output: 'a' },
+  { input: 'Allison', output: 'a' },
+  { input: 'Alex', output: 'a' },
+  { input: 'Arthur', output: 'a' },
+  { input: 'Also', output: 'a' },
+
+  { input: 'Barcelona', output: 'b' },
+  { input: 'Baseball', output: 'b' },
+  { input: 'Bayern', output: 'b' },
+  { input: 'Batch', output: 'b' },
+  { input: 'Brasillia', output: 'b' },
+  { input: 'Brass', output: 'b' },
+  { input: 'Bateman', output: 'b' },
+  { input: 'Bose', output: 'b' },
+  { input: 'Biscuit', output: 'b' },
+  { input: 'Bhutan', output: 'b' },
+
+  { input: 'China', output: 'c' },
+  { input: 'Chile', output: 'c' },
+  { input: 'Cheat', output: 'c' },
+  { input: 'Caught', output: 'c' },
+  { input: 'Colombia', output: 'c' },
+  { input: 'Colorado', output: 'c' },
+  { input: 'Cult', output: 'c' },
+  { input: 'Cristiano', output: 'c' },
+  { input: 'Choke', output: 'c' },
+  { input: 'Cut', output: 'c' },
+];
+
+// the thing we would test
+const test = 'Code';
+
+const network = new brain.recurrent.LSTM();
+network.train(data, config);
+const output = network.run(test);
+console.log(`It starts with: ` + output); // It starts with: c
+} catch(e) {alert(e);}
+  </script>
+</body>
+</html>
