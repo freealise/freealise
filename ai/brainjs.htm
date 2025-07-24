@@ -15,10 +15,10 @@ document.getElementsByTagName('h1')[0].onclick = function(e){
       try {
 // create configuration for training
 const config = {
-  iterations: 1500,
+  iterations: 150,
   log: function(x){document.getElementById('test').innerText += x;},
   logPeriod: 10,
-  layers: [10],
+  layers: [100],
 };
 
 // create data which will be used for training
@@ -63,7 +63,7 @@ const test = 'Code';
 const network = new brain.recurrent.LSTM();
 network.train(data, config);
 const output = network.run(test);
-console.log(`It starts with: ` + output); // It starts with: c
+alert(`It starts with: ` + output); // It starts with: c
 } catch(e) {alert(e);}
 };
   </script>
