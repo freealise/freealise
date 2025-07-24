@@ -10,12 +10,13 @@
   <div id="test"></div>
   <script src="https://unpkg.com/brain.js"></script>
   <script>
+document.getElementsByTagName('h1')[0].onclick = function(e){
+    alert('ok');
       try {
 // create configuration for training
 const config = {
   iterations: 1500,
-  callback: function(x){document.getElementById('test').innerText += x;},
-  log: true,
+  log: function(x){document.getElementById('test').innerText += x;},
   logPeriod: 10,
   layers: [10],
 };
@@ -64,6 +65,7 @@ network.train(data, config);
 const output = network.run(test);
 console.log(`It starts with: ` + output); // It starts with: c
 } catch(e) {alert(e);}
+};
   </script>
 </body>
 </html>
