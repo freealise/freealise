@@ -15,10 +15,10 @@ document.getElementsByTagName('h1')[0].onclick = function(e){
       try {
 // create configuration for training
 const config = {
-  iterations: 1500,
+  iterations: 1000,
   log: function(x){alert(x);},
-  logPeriod: 100,
-  layers: [10],
+  logPeriod: 250,
+  layers: [16],
 };
 
 // create data which will be used for training
