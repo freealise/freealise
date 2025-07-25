@@ -28,7 +28,9 @@ Unofficially Jewish by faith, with complex ethnicity.
 
 [Website repo](https://www.github.com/freealise/freealise.github.io/) | 
 [My gists](https://gist.github.com/freealise/) | 
-[Ask Gemma](https://gemini.google.com/)
+[Ask Gemma](https://gemini.google.com/) 
+<!--[Download repo] (https://downgit.evecalm.com/#/home?url=https://github.com/freealise/freealise/tree/master/wiki/)-->
+
 
 <!--
 https://stackexchange.com/sites?view=grid
