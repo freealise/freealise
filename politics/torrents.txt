@@ -11,3 +11,5 @@ data to join: nickname, email, public page, profession, work experience,
 educations, political compass, religious affiliation, languages, home country  
   
 https://en.wikipedia.org/wiki/List_of_Pirate_Parties  
+
+proxy: https://developers.cloudflare.com/workers/examples/fetch-html/  
