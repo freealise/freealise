@@ -74,6 +74,7 @@ fileSelect.addEventListener(
 fileElem.addEventListener("change", handleFiles);
 
 document.onscroll = function(e){
+    alert(document.getElementById('result').scrollTop);
   if (document.getElementById('result').scrollTop > scr) {
     for (var i=0; i<25; i++) {
       if (lines[ln]) {
