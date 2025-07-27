@@ -4,7 +4,7 @@ _ad script_: reporter on location is contacted by news announcer among apocalypt
   
 text-based language learning game with IRL simulation (Maslow pyramid)  
 = interactive phrasebook | dictionary | 'mad libs' with AI  
-has a structure of wiki  
+has a structure of antipropaganda wiki for general political education and legislation (+map)  
   
 equirectangular image maps with links to nearby places (~geocities 2.0)  
 interactive website in 3d like the actual place of business or virtual  
