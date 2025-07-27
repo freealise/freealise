@@ -72,7 +72,7 @@ fileSelect.addEventListener(
 );
 fileElem.addEventListener("change", handleFiles);
 
-document.onscroll = loadFile(arr[ln], colors);
+document.onscroll = loadFile(arr[ln], colors, ln);
 
 function handleFiles(e) {
   fileList.textContent = "";
@@ -86,7 +86,7 @@ function handleFiles(e) {
       arr = txt.split('\n');
       alert('ok '+e.target.files[0].name);
       for (var i=0; i<25; i++) {
-        try{loadFile(arr[i], colors);}catch(e){alert(e);}
+        try{loadFile(arr[i], colors, ln);}catch(e){alert(e);}
       }
       e.target.value = null;
     }, false);
@@ -179,7 +179,7 @@ function handleFiles(e) {
   //nlp.plugin(compromiseWikipedia);
   //var wiki = doc.wikipedia().json();
 
-  function loadFile(txt, colors) {
+  function loadFile(txt, colors, ln) {
     
     txt = txt.replace(/\</g,'≺').replace(/\>/g,'≻');
     var doc = nlp(txt);
@@ -225,7 +225,7 @@ function handleFiles(e) {
     ln++;
   }
   
-  window.onload = loadFile(txt, colors);
+  window.onload = loadFile(txt, colors, ln);
   
 </script>
 </body>
