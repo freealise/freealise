@@ -78,7 +78,7 @@ fileElem.addEventListener("change", handleFiles);
 document.onscroll = function(e){
   if (document.body.scrollTop > scr) {
     for (var i=0; i<pg; i++) {
-      if (lines[ln]) {
+      if (ln<lines.length) {
         result.innerHTML += '\n';
         loadFile(lines[ln], colors, ln);
         ln++;
@@ -101,7 +101,7 @@ function handleFiles(e) {
       lines = txt.split('\n');
       alert('ok '+e.target.files[0].name);
       for (var i=0; i<pg; i++) {
-        if (lines[i]) {
+        if (i<lines.length) {
           result.innerHTML += '\n';
           try{loadFile(lines[i], colors, ln);}catch(e){alert(e);}
           ln++;
