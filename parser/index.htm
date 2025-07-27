@@ -57,7 +57,7 @@
 var lines;
 var ln = 0;
 var scr = 0;
-var pg = 25;
+var pg = 50;
 
 const fileSelect = document.getElementById("fileSelect"),
 fileElem = document.getElementById("fileElem"),
@@ -79,7 +79,11 @@ document.onscroll = function(e){
   if (document.body.scrollTop > scr) {
     for (var i=0; i<pg; i++) {
       if (lines[ln]) {
-        loadFile(lines[ln], colors, ln);
+        if (lines[i].trim() != '') {
+          loadFile(lines[ln], colors, ln);
+        } else {
+          result.innerHTML += '\n';
+        }
         ln++;
       }
     }
@@ -101,7 +105,12 @@ function handleFiles(e) {
       alert('ok '+e.target.files[0].name);
       for (var i=0; i<pg; i++) {
         if (lines[i]) {
-          try{loadFile(lines[i], colors, ln);ln++;}catch(e){alert(e);}
+          if (lines[i].trim() != '')
+            try{loadFile(lines[i], colors, ln);}catch(e){alert(e);}
+          } else {
+            result.innerHTML += '\n';
+          }
+          ln++;
         }
       }
       e.target.value = null;
