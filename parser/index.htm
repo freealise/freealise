@@ -79,7 +79,7 @@ document.onscroll = function(e){
   if (document.body.scrollTop > scr) {
     for (var i=0; i<pg; i++) {
       if (lines[ln]) {
-        if (lines[i].trim() != '') {
+        if (lines[ln].trim() != '') {
           loadFile(lines[ln], colors, ln);
         } else {
           result.innerHTML += '\n';
@@ -248,7 +248,7 @@ function handleFiles(e) {
     result.innerHTML += '\n' + txt; //JSON.stringify(wiki, null, 2); //out;
   }
   
-  window.onload = try{loadFile(txt, colors, ln);}catch(e){alert(e);}
+  window.onload = loadFile(txt, colors, ln);
   
 </script>
 </body>
