@@ -79,11 +79,8 @@ document.onscroll = function(e){
   if (document.body.scrollTop > scr) {
     for (var i=0; i<pg; i++) {
       if (lines[ln]) {
-        if (lines[ln].trim() != '') {
-          loadFile(lines[ln], colors, ln);
-        } else {
-          result.innerHTML += '\n';
-        }
+        result.innerHTML += '\n';
+        loadFile(lines[ln], colors, ln);
         ln++;
       }
     }
@@ -105,11 +102,8 @@ function handleFiles(e) {
       alert('ok '+e.target.files[0].name);
       for (var i=0; i<pg; i++) {
         if (lines[i]) {
-          if (lines[i].trim() != '') {
-            try{loadFile(lines[i], colors, ln);}catch(e){alert(e);}
-          } else {
-            result.innerHTML += '\n';
-          }
+          result.innerHTML += '\n';
+          try{loadFile(lines[i], colors, ln);}catch(e){alert(e);}
           ln++;
         }
       }
@@ -245,7 +239,7 @@ function handleFiles(e) {
       }
       //out += "\n";
     }
-    result.innerHTML += '\n' + txt; //JSON.stringify(wiki, null, 2); //out;
+    result.innerHTML += txt; //JSON.stringify(wiki, null, 2); //out;
   }
   
   window.onload = loadFile(txt, colors, ln);
