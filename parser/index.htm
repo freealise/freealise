@@ -54,6 +54,8 @@
 <!-- <script src="../plugins/speech/builds/compromise-speech.cjs"></script> -->
 <script src="./compromise-stats-0.1.1.min.js"></script>
 <script>
+var arr = [];
+var ln = 0;
 
 const fileSelect = document.getElementById("fileSelect"),
 fileElem = document.getElementById("fileElem"),
@@ -70,6 +72,8 @@ fileSelect.addEventListener(
 );
 fileElem.addEventListener("change", handleFiles);
 
+document.onscroll = loadFile(arr[ln], colors);
+
 function handleFiles(e) {
   fileList.textContent = "";
   if (!e.target.files.length) {
@@ -79,8 +83,11 @@ function handleFiles(e) {
   
     reader.addEventListener("load", function () {
       txt = reader.result;
+      arr = txt.split('\n');
       alert('ok '+e.target.files[0].name);
-      try{loadFile(txt, colors);}catch(e){alert(e);}
+      for (var i=0; i<25; i++) {
+        try{loadFile(arr[i], colors);}catch(e){alert(e);}
+      }
       e.target.value = null;
     }, false);
   
@@ -214,7 +221,8 @@ function handleFiles(e) {
       //out += "\n";
     }
     let el = document.getElementById('result');
-    el.innerHTML = txt; //JSON.stringify(wiki, null, 2); //out;
+    el.innerHTML += txt; //JSON.stringify(wiki, null, 2); //out;
+    ln++;
   }
   
   window.onload = loadFile(txt, colors);
