@@ -93,6 +93,7 @@ function handleFiles(e) {
     var reader  = new FileReader();
   
     reader.addEventListener("load", function () {
+      document.getElementById('result').innerHTML = '';
       txt = reader.result;
       lines = txt.split('\n\n');
       alert('ok '+e.target.files[0].name);
@@ -233,8 +234,7 @@ function handleFiles(e) {
       }
       //out += "\n";
     }
-    let el = document.getElementById('result');
-    el.innerHTML += '\n\n' + txt; //JSON.stringify(wiki, null, 2); //out;
+    document.getElementById('result').innerHTML += '\n\n' + txt; //JSON.stringify(wiki, null, 2); //out;
   }
   
   window.onload = loadFile(txt, colors, ln);
