@@ -72,7 +72,14 @@ fileSelect.addEventListener(
 );
 fileElem.addEventListener("change", handleFiles);
 
-document.onscroll = function(e){loadFile(lines[ln], colors, ln);ln++;}
+document.onscroll = function(e){
+  for (var i=0; i<25; i++) {
+    if (lines[ln]) {
+      loadFile(lines[ln], colors, ln);
+      ln++;
+    }
+  }
+}
 
 function handleFiles(e) {
   fileList.textContent = "";
@@ -85,8 +92,8 @@ function handleFiles(e) {
       txt = reader.result;
       lines = txt.split('\n\n');
       alert('ok '+e.target.files[0].name);
-      for (var i=0; i<lines.length; i++) {
-        if (i<25) {
+      for (var i=0; i<25; i++) {
+        if (lines[i]) {
           try{loadFile(lines[i], colors, ln);ln++;}catch(e){alert(e);}
         }
       }
