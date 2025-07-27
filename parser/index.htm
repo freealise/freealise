@@ -248,7 +248,7 @@ function handleFiles(e) {
     result.innerHTML += '\n' + txt; //JSON.stringify(wiki, null, 2); //out;
   }
   
-  window.onload = loadFile(txt, colors, ln);
+  window.onload = try{loadFile(txt, colors, ln);}catch(e){alert(e);}
   
 </script>
 </body>
