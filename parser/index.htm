@@ -86,7 +86,9 @@ function handleFiles(e) {
       lines = txt.split('\n\n');
       alert('ok '+e.target.files[0].name);
       for (var i=0; i<lines.length; i++) {
-        try{loadFile(lines[i], colors, ln);ln++;}catch(e){alert(e);}
+        if (i<25) {
+          try{loadFile(lines[i], colors, ln);ln++;}catch(e){alert(e);}
+        }
       }
       e.target.value = null;
     }, false);
@@ -183,7 +185,7 @@ function handleFiles(e) {
     
     txt = txt.replace(/\</g,'≺').replace(/\>/g,'≻');
     var doc = nlp(txt);
-    alert('ok');
+    //alert('ok');
     //doc.compute('syllables')
     doc.compute('penn');
   
