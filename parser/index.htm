@@ -57,10 +57,12 @@
 var lines;
 var ln = 0;
 var scr = 0;
+var pg = 25;
 
 const fileSelect = document.getElementById("fileSelect"),
 fileElem = document.getElementById("fileElem"),
-fileList = document.getElementById("fileList");
+fileList = document.getElementById("fileList"),
+result = document.getElementById('result');
 
 fileSelect.addEventListener(
   "click",
@@ -75,7 +77,7 @@ fileElem.addEventListener("change", handleFiles);
 
 document.onscroll = function(e){
   if (document.body.scrollTop > scr) {
-    for (var i=0; i<25; i++) {
+    for (var i=0; i<pg; i++) {
       if (lines[ln]) {
         loadFile(lines[ln], colors, ln);
         ln++;
@@ -93,11 +95,11 @@ function handleFiles(e) {
     var reader  = new FileReader();
   
     reader.addEventListener("load", function () {
-      document.getElementById('result').innerHTML = '';
+      result.innerHTML = '';
       txt = reader.result;
-      lines = txt.split('\n\n');
+      lines = txt.split('\n');
       alert('ok '+e.target.files[0].name);
-      for (var i=0; i<25; i++) {
+      for (var i=0; i<pg; i++) {
         if (lines[i]) {
           try{loadFile(lines[i], colors, ln);ln++;}catch(e){alert(e);}
         }
@@ -234,7 +236,7 @@ function handleFiles(e) {
       }
       //out += "\n";
     }
-    document.getElementById('result').innerHTML += '\n\n' + txt; //JSON.stringify(wiki, null, 2); //out;
+    result.innerHTML += '\n' + txt; //JSON.stringify(wiki, null, 2); //out;
   }
   
   window.onload = loadFile(txt, colors, ln);
