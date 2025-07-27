@@ -56,6 +56,7 @@
 <script>
 var lines;
 var ln = 0;
+var scr = 0;
 
 const fileSelect = document.getElementById("fileSelect"),
 fileElem = document.getElementById("fileElem"),
@@ -73,11 +74,14 @@ fileSelect.addEventListener(
 fileElem.addEventListener("change", handleFiles);
 
 document.onscroll = function(e){
-  for (var i=0; i<25; i++) {
-    if (lines[ln]) {
-      loadFile(lines[ln], colors, ln);
-      ln++;
+  if (document.scrollTop > scr) {
+    for (var i=0; i<25; i++) {
+      if (lines[ln]) {
+        loadFile(lines[ln], colors, ln);
+        ln++;
+      }
     }
+    scr = document.scrollTop;
   }
 }
 
@@ -230,7 +234,7 @@ function handleFiles(e) {
       //out += "\n";
     }
     let el = document.getElementById('result');
-    el.innerHTML += txt; //JSON.stringify(wiki, null, 2); //out;
+    el.innerHTML += '\n\n' + txt; //JSON.stringify(wiki, null, 2); //out;
   }
   
   window.onload = loadFile(txt, colors, ln);
