@@ -72,7 +72,7 @@ fileSelect.addEventListener(
 );
 fileElem.addEventListener("change", handleFiles);
 
-document.onscroll = loadFile(lines[ln], colors, ln);
+document.onscroll = function(e){loadFile(lines[ln], colors, ln);ln++;}
 
 function handleFiles(e) {
   fileList.textContent = "";
@@ -86,7 +86,7 @@ function handleFiles(e) {
       lines = txt.split('\n\n');
       alert('ok '+e.target.files[0].name);
       for (var i=0; i<lines.length; i++) {
-        try{loadFile(lines[i], colors, ln);}catch(e){alert(e);}
+        try{loadFile(lines[i], colors, ln);ln++;}catch(e){alert(e);}
       }
       e.target.value = null;
     }, false);
@@ -222,7 +222,6 @@ function handleFiles(e) {
     }
     let el = document.getElementById('result');
     el.innerHTML += txt; //JSON.stringify(wiki, null, 2); //out;
-    ln++;
   }
   
   window.onload = loadFile(txt, colors, ln);
