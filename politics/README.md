@@ -9,10 +9,5 @@ https://lime.ppi.rocks/index.php?r=survey/index&sid=341246
 https://enrollment.lfx.linuxfoundation.org/?project=lfeurope&code=Wr-IQTyNAyEB9giOUyxSAozBbdQ8pxxugBAkxnTdAvBLN&state=UnF2VnUwSGJ%2BRDRUdnF3SEZfWFEydWF4b1JkNFp%2BTFdYU1NQOGNNRkF6QQ%3D%3D  
 https://linuxfoundation.eu/en/join  
   
-  
-data to join: nickname, email, public page, profession, work experience,  
-educations, political compass, religious affiliation, languages, home country  
-  
 https://en.wikipedia.org/wiki/List_of_Pirate_Parties  
-
-proxy: https://developers.cloudflare.com/workers/examples/fetch-html/  
+  
