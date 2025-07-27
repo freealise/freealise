@@ -105,7 +105,7 @@ function handleFiles(e) {
       alert('ok '+e.target.files[0].name);
       for (var i=0; i<pg; i++) {
         if (lines[i]) {
-          if (lines[i].trim() != '')
+          if (lines[i].trim() != '') {
             try{loadFile(lines[i], colors, ln);}catch(e){alert(e);}
           } else {
             result.innerHTML += '\n';
