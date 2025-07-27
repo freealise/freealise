@@ -74,14 +74,14 @@ fileSelect.addEventListener(
 fileElem.addEventListener("change", handleFiles);
 
 document.onscroll = function(e){
-  if (document.scrollTop > scr) {
+  if (document.getElementById('result').scrollTop > scr) {
     for (var i=0; i<25; i++) {
       if (lines[ln]) {
         loadFile(lines[ln], colors, ln);
         ln++;
       }
     }
-    scr = document.scrollTop;
+    scr = document.getElementById('result').scrollTop;
   }
 }
 
