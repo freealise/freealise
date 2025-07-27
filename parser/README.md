@@ -1,6 +1,4 @@
 ### TODO:  
-parse by screen or line on scroll ?  
-
 merge defining vocabularies, sort by frequency and POS  
 https://learnthesewordsfirst.com/about/other-learners-dictionaries.html  
 
