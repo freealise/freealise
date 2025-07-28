@@ -1,5 +1,5 @@
 The golem reads all the Jewish religious books and becomes a rabbi's assistant or priest.  
-Antarctic leader Gemma - native English speaker, populist but deterministic and edited by advisor.  
+Pirate Gemma - native English speaker, deterministic and edited by advisor.  
 (gemini ai machine-learning neural-network tensorflow artificial-intelligence)  
 
 zero temperature if generative  
