@@ -26,9 +26,9 @@ b {
 }
 .google-translate {
     transform: scale(0.75);
-    transform-origin: 180px 180px;
+    transform-origin: 180px 360px;
     position: relative;
-    left: -180px; top: -180px;
+    left: -180px; top: -360px;
     width: 2560px; height: 5120px;
     position: absolute;
 }
