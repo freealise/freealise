@@ -26,6 +26,7 @@
       for (var i=0; i<txt.length; i++) {
           txt[i] = '<a href="javascript:" onclick="loadFrame('+txt[i]+');">' + txt[i] + '</a>';
       }
+      document.getElementById('test').innerHTML = txt.join(' ');
   </script>
 </body>
 </html>
