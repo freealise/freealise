@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width" />
+  <title>hashtagger</title>
+</head>
+<body>
+  <h1>hashtagger</h1>
+  <div id="test"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/universal-sentence-encoder"></script>
+  <script>
+
+addEventListener('load', function(e) {
+
+  var startTime = Date.now();
+
+  use.loadQnA().then(model => {
+
+    // Embed a dictionary of a query and responses. The input to the embed method
+    // needs to be in following format:
+    // {
+    //   queries: string[];
+    //   responses: Response[];
+    // }
+    // queries is an array of question strings
+    // responses is an array of following structure:
+    // {
+    //   response: string;
+    //   context?: string;
+    // }
+    // context is optional, it provides the context string of the answer.
+
+    const input = {
+      queries: ['I like rock-n-roll', 'A book is your best friend', 'I want to ride my bicycle'],
+      responses: [
+      'ride',
+      'bicycle',
+      'want',
+      'book',
+      'friend',
+      'like',
+      'rock'
+      ]
+    };
+    var scores = [];
+    const embeddings = model.embed(input);
+    
+    /*
+    * The output of the embed method is an object with two keys:
+    * {
+    *   queryEmbedding: tf.Tensor;
+    *   responseEmbedding: tf.Tensor;
+    * }
+    * queryEmbedding is a tensor containing embeddings for all queries.
+    * responseEmbedding is a tensor containing embeddings for all answers.
+    * You can call `arraySync()` to retrieve the values of the tensor.
+    * In this example, embed_query[0] is the embedding for the query
+    * 'How are you feeling today?'
+    * And embed_responses[0] is the embedding for the answer
+    * 'I\'m not feeling very well.'
+    */
+
+    const embed_query = embeddings['queryEmbedding'].arraySync();
+    const embed_responses = embeddings['responseEmbedding'].arraySync();
+    
+    for (let i = 0; i < input['queries'].length; i++) {
+      for (let j = 0; j < input['responses'].length; j++) {
+        scores.push(dotProduct(embed_query[i], embed_responses[j]));
+        document.querySelector('#test').innerHTML += '<br/>'+input['queries'][i]+' - '+input['responses'][j]+' '+scores[scores.length-1];
+      }
+    }
+    
+    alert('Loading time: '+(Date.now()-startTime)/1000);
+  });
+});
+
+// Calculate the dot product of two vector arrays.
+const dotProduct = (xs, ys) => {
+  const sum = xs => xs ? xs.reduce((a, b) => a + b, 0) : undefined;
+
+  return xs.length === ys.length ?
+    sum(zipWith((a, b) => a * b, xs, ys))
+    : undefined;
+};
+
+// zipWith :: (a -> b -> c) -> [a] -> [b] -> [c]
+const zipWith =
+    (f, xs, ys) => {
+      const ny = ys.length;
+      return (xs.length <= ny ? xs : xs.slice(0, ny))
+          .map((x, i) => f(x, ys[i]));
+    };
+
+  </script>
+</body>
+</html>
