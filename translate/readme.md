@@ -23,6 +23,6 @@ https://www.calligraphr.com/en/webapp/app_home/?/templates
   
 speech: https://huggingface.co/spaces/freealise/phonemize-in-hebrew  
 vocabulary: https://he.wiktionary.org/wiki/בסדר (popup by root on click - https://en.wiktionary.org/wiki/Category:Hebrew_roots, https://www.pealim.com/search/?q=למלוך)  
-grammar: https://books.google.com/ngrams/interactive_chart?content=בסדר_*&year_start=1800&year_end=2022&corpus=iw&smoothing=50 (parse phrases iteratively, download pos data by frequency)  
+grammar: https://books.google.com/ngrams/interactive_chart?content=בסדר_*&year_start=1800&year_end=2022&corpus=iw&smoothing=50 (parse phrases iteratively, download pos data by frequency), Dicta on HF  
 phrases: https://dict.com/hebrew-english/ (highlight by proxy or download)  
 translate the siddur poetically  
