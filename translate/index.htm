@@ -10,12 +10,22 @@
   <h1>English-Hebrew</h1>
   <textarea id="in"></textarea><br/>
   <button id="sbmt">Translate</button>
-  <p id="test"></p>
+  <p id="test">המלך רואה דרך</p>
   
   <div class="google-translate-place">
 	<div class="google-translate-crop">
     <iframe class="google-translate" src="https://www.google.com/search?igu=1&q=google+translate+שֵׁם&authuser=0&hl=en-US"></iframe>
    </div>
   </div>
+  <script>
+      function loadFrame(word) {
+          document.getElementsByTagName('iframe')[0].src = "https://www.google.com/search?igu=1&q=google+translate+"+word+"&authuser=0&hl=en-";
+      }
+  
+      var txt = document.getElementById('test').innerText.split(' ');
+      for (var i=0; i<txt.length; i++) {
+          txt[i] = '<a href="javascript:" onclick="loadFrame('+txt[i]+');">' + txt[i] + '</a>';
+      }
+  </script>
 </body>
 </html>
