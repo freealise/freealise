@@ -12,14 +12,14 @@ b {
 
 .google-translate-place {
     width: 256px;
-    height: 256px;
+    height: 128px;
     margin-left:-128px;
     position:relative;
     left:128px;
 }
 .google-translate-crop {
     width: 256px;
-    height: 256px;
+    height: 128px;
     overflow-y: scroll;
     overflow-x: scroll;
     position: absolute;
