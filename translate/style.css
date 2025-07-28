@@ -13,9 +13,9 @@ b {
 .google-translate-place {
     width: 256px;
     height: 256px;
-    margin-left:-188px;
+    margin-left:-128px;
     position:relative;
-    left:188px;
+    left:128px;
 }
 .google-translate-crop {
     width: 256px;
