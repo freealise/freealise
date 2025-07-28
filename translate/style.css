@@ -11,15 +11,15 @@ b {
 }
 
 .google-translate-place {
-    width: 480px;
-    height: 200px;
+    width: 256px;
+    height: 256px;
     margin-left:-188px;
     position:relative;
     left:188px;
 }
 .google-translate-crop {
-    width: 480px;
-    height: 200px;
+    width: 256px;
+    height: 256px;
     overflow-y: scroll;
     overflow-x: scroll;
     position: absolute;
