@@ -24,7 +24,7 @@ Unofficially Jewish by faith, with complex ethnicity.
 [![YCombinator](https://img.shields.io/badge/💔-YCombinator-red.svg?style=for-the-badge)](https://www.startupschool.org/cofounder-matching/candidate/p61vtr8UW)
 [![Stack Overflow Reputation](https://img.shields.io/stackexchange/stackoverflow/r/9165398?color=orange&label=stackoverflow&logo=stackoverflow&style=for-the-badge)](https://stackoverflow.com/users/9165398) 
 [![Follow me on HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97-Hugging%20Face-yellow?style=for-the-badge)](https://huggingface.co/freealise)  
-[![Status](https://img.shields.io/badge/dynamic/xml?url=https://freeali.se/feed.xml&query=//*[local-name()='feed']/*[local-name()='entry'][1]/*[local-name()='title']/text()&label=status&color=green&style=for-the-badge)](https://freeali.se)
+[![Status](https://img.shields.io/badge/dynamic/xml?url=https://freeali.se/feed.xml&query=//*[local-name()='feed']/*[local-name()='entry'][1]/*[local-name()='title']/text()&label=🪧&color=green&style=for-the-badge)](https://freeali.se)
 
 [Website repo](https://www.github.com/freealise/freealise.github.io/) | 
 [My gists](https://gist.github.com/freealise/) | 
