@@ -1,4 +1,12 @@
 
+.gcse-search * {
+    color: transparent;
+}
+
+.gcse-search img {
+    min-width: 256px;
+}
+
 .google-translate-place {
     width: 256px;
     height: 128px;
