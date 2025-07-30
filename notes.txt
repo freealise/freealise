@@ -88,7 +88,7 @@ https://en.wikipedia.org/wiki/Dead_Souls
               prompt AI for pictograms of basic words
               average basic vocabulary definitions with AI; pos and recursive word definition similarity as hint and auto correctness checker (Levenstein distance for word definitions and definition of every word in them - https://en.wikipedia.org/wiki/Damerau%E2%80%93Levenshtein_distance or https://github.com/tensorflow/tfjs-models/tree/master/universal-sentence-encoder with dataset from cefr and dictionary examples), assess by translation to native language
   (https://www.englishprofile.org/english-grammar-profile/egp-online, https://www.englishprofile.org/wordlists/evp, https://learnenglish.britishcouncil.org/)
-            words keyboard like poetry set (heap of words to drag and click)
+            words keyboard like poetry set (heap of words to drag and click, sort by POS and frequency, use defining vocabulary)
             popup definitions from several dictionaries
             use scrolling vector image with long radial gradient instead of ascii ?
             apply multitouch (?) pointer interface to spectrograms (_interface with velocity / acceleration as depth) 
