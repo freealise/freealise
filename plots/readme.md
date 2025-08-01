@@ -8,7 +8,9 @@
 
 - sequel of Bakuman with Miyoshi getting into music business, initially not taking off in Japan, separated from family and friends and going to Europe  
 
-- sequel of 'Through the looking glass' as sci-fi
+- sequel of 'Through the looking glass' as sci-fi  
+
+- grown-up Pippi's pirate ship crashes on the shore of Antarctica  
 
 - teenager obeys parents advice and repeatedly gets in trouble (comedy)
 
