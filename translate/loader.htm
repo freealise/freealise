@@ -9,7 +9,13 @@ function loadDoc(wrd) {
   const xhttp = new XMLHttpRequest(); 
   xhttp.onload = function() {
 
-    var a = this.responseText.replace(/\{\{.+\}\}/g, '').replace(/\[\[/g, '<b>').replace(/\]\]/g, '</b>').split('\n');
+    var a = this.responseText.replace(/\{\{.+\}\}/g, function(x){
+      if (x.split('|').length <= 2) {
+        return '<i>' + x.slice(2,-2).replace(/\w+\|/,'') + '</i>';
+      } else {
+        return '';
+      }
+    }).replace(/\[\[/g, '<b>').replace(/\]\]/g, '</b>').split('\n');
     for (var i=0; i<a.length; i++) {
       if (a[i].trim() == '#' || a[i].indexOf('#') == -1 || a[i].indexOf('*') > -1) {
         a[i] = '';
