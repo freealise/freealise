@@ -11,7 +11,7 @@ function loadDoc(wrd) {
 
     var json = JSON.parse(this.responseText);
     alert(this.responseText);
-    document.getElementById("demo").innerHTML = json;
+    document.getElementById("demo").innerHTML = JAON.stringify(json.he[0]);
   };
 
   xhttp.open("GET", "https://en.wiktionary.org/api/rest_v1/page/definition/"+wrd);
