@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head><title>Wiktionary translation loader</title></head>
+<body>
+<div id="demo"></div>
+<script>
+
+function loadDoc(wrd) { 
+  const xhttp = new XMLHttpRequest(); 
+  xhttp.onload = function() {
+
+    var json = JSON.parse(this.responseText);
+    alert(this.responseText);
+    document.getElementById("demo").innerHTML = json;
+  };
+
+  xhttp.open("GET", "https://en.wiktionary.org/api/rest_v1/page/definition/"+wrd);
+  xhttp.send();
+}
+
+loadDoc('שם');
+</script>
+</body>
+</html>
