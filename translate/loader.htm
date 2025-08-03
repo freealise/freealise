@@ -15,6 +15,7 @@ function loadDoc(wrd) {
     var txt = '';
     
     for (var i=0; i<json.he.length; i++) {
+        txt += '<i>' + json.he[i].partOfSpeech + '</i><br/>';
         for (var j=0; j<json.he[i].definitions.length; j++) {
             txt += json.he[i].definitions[j].definition.replace(/\<\a /g, '<b ').replace(/\<\/\a\>/g, '</b>') + '<br/>';
         }
