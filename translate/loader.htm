@@ -10,7 +10,7 @@ function loadConj(wrd) {
   xhttp.onload = function() {
 
     //alert(this.responseText);
-    document.getElementById("demo").innerHTML = this.responseText;
+    document.getElementById("demo").innerHTML = this.responseText.replace(/\<\a /g, "<a target='_blank' ");
   };
 
   xhttp.open("GET", "https://script.google.com/macros/s/AKfycbz5br4wnfSGtucWKwGQq1Tb07eshJez6uVaFatn4xJAc_rcrcA/exec?a=proxy&q=https://pealim.com/search/?q="+wrd);
