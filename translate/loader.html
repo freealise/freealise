@@ -16,7 +16,7 @@ function loadDoc(wrd) {
     
     for (var i=0; i<json.he.length; i++) {
         for (var j=0; j<json.he[i].definitions.length; j++) {
-            txt += json.he[i].definitions[j] + '<br/>';
+            txt += json.he[i].definitions[j].definition + '<br/>';
         }
         txt += '<br/>';
     }
