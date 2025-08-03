@@ -16,7 +16,7 @@ function loadDoc(wrd) {
       }
     }
 
-    var txt = a.join('').slice(1).replace(/#/g, ', <br/>');
+    var txt = a.join('').slice(1).replace(/#/g, '; <br/>');
     document.getElementById("demo").innerHTML = txt;
   };
 
