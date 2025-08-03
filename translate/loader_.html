@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head><title>Wiktionary translation loader</title></head>
+<body>
+<div id="demo"></div>
+<script>
+
+function loadDoc(wrd) { 
+  const xhttp = new XMLHttpRequest(); 
+  xhttp.onload = function() {
+
+    var a = this.responseText.replace(/\{\{.+\}\}/g, '').replace(/[\:\.\;]/g, '').replace(/\[\[/g, '<b>').replace(/\]\]/g, '</b>').split('\n');
+    for (var i=0; i<a.length; i++) {
+      if (a[i].trim() == '#' || a[i].indexOf('#') == -1 || a[i].indexOf('*') > -1) {
+        a[i] = '';
+      }
+    }
+
+    var txt = a.join('').slice(1).replace(/#/g, '; <br/>');
+    document.getElementById("demo").innerHTML = txt;
+  };
+
+  xhttp.open("GET", "https://en.wiktionary.org/w/api.php?format=json&action=query&origin=*&export&exportnowrap&titles="+wrd);
+  xhttp.send();
+}
+
+loadDoc(location.href.split('?q=')[1]);
+</script>
+</body>
+</html>
