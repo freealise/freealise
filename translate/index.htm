@@ -7,26 +7,19 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    
-  <span id="test"></span>
   
   <div class="google-translate-place"><div class="google-translate-crop">
-    <iframe class="google-translate" src="https://www.google.com/search?igu=1&q='שם'+in+English+google+translate&authuser=0&hl=en-US"></iframe>
+    <iframe class="google-translate" src="https://www.google.com/search?igu=1&q=שם+in+English+google+translate&authuser=0&hl=en-US"></iframe>
    </div>
   </div>
   
   <script>
   
       function loadFrame(word) {
-          document.getElementsByTagName('iframe')[1].src = 'https://www.google.com/search?igu=1&q="google+translate"+"'+word+'"&oq=google+translate&authuser=0&hl=en&lr=lang_en';
+          document.getElementsByTagName('iframe')[1].src = 'https://www.google.com/search?igu=1&q='+word+'+in+English+google+translate&oq=google+translate&authuser=0&hl=en&lr=lang_en';
       }
       loadFrame(location.href.split('?q=')[1]);
-  
-      var txt = document.getElementById('test').innerText.split(' ');
-      for (var i=0; i<txt.length; i++) {
-          txt[i] = '<a onclick="loadFrame(`'+txt[i]+'`);" href="#gsc.q='+txt[i]+'&gsc.tab=1&gsc.sort=">' + txt[i] + '</a>';
-      }
-      document.getElementById('test').innerHTML = txt.join(' ');
+
   </script>
 </body>
 </html>
