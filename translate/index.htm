@@ -22,7 +22,7 @@
   <script>
   
       function loadFrame(word) {
-          document.getElementsByTagName('iframe')[0].src = 'https://www.google.com/search?igu=1&q=google+translate+"'+word+'"&oq=google+translate&authuser=0&hl=en&lr=lang_en';
+          document.getElementsByTagName('iframe')[0].src = 'https://www.google.com/search?igu=1&q="google+translate"+"'+word+'"&oq=google+translate&authuser=0&hl=en&lr=lang_en';
       }
       loadFrame(location.href.split('?q=')[1]);
   
