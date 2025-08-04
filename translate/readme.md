@@ -20,7 +20,7 @@ https://en.wiktionary.org/wiki/Appendix:Hebrew_Swadesh_list
 https://en.wikipedia.org/wiki/Leipzig–Jakarta_list  
 https://www.calligraphr.com/en/webapp/app_home/?/templates  
   
-🕯 learn Hebrew | Yiddish efficiently (clarify method to use for any language), make parser  
+🕯 learn Hebrew efficiently (clarify method for any language), make parser  
   
 speech: https://huggingface.co/spaces/freealise/phonemize-in-hebrew  
 vocabulary: https://en.wiktionary.org/wiki/Category:Hebrew_roots  
