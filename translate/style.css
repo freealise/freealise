@@ -1,11 +1,4 @@
 
-img {
-    min-width: 256px;
-    position: relative;
-    display: inline-block;
-    margin-top: 8em;
-}
-
 .google-translate-place {
     width: 256px;
     height: 128px;
