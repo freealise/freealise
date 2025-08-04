@@ -5,6 +5,7 @@ words of phrases in the native language that sound like the given vocabulary, ev
 can still serve as mnemonic devices (= rebus; most of all when the words to learn are abstract with no specific imagery -  
 although conventional imagery like commonly accepted pictograms may also assist with these)  
 to find soundalikes in the dictionary (might not be the one that sounds most like it but is related), compose a rebus and relate it to the original word by meaning is an exercise for the learner  
+can also be flashcards with AI-generated pictograms  
 
 add etymology and relations of word root between languages  
 group words and morphemes by root and sound instead of subject
