@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <iframe src='https://script.google.com/macros/s/AKfycbz5br4wnfSGtucWKwGQq1Tb07eshJez6uVaFatn4xJAc_rcrcA/exec?a=proxy&q=https://translate.google.com/'></iframe>
     
   <span id="test"></span>
   
@@ -23,8 +22,9 @@
   <script>
   
       function loadFrame(word) {
-          document.getElementsByTagName('iframe')[0].src = 'https://www.google.com/search?igu=1&q=google+translate+"'+word+'"&authuser=0&hl=en&lr=lang_en';
+          document.getElementsByTagName('iframe')[0].src = 'https://www.google.com/search?igu=1&q=google+translate+"'+word+'"&oq=google+translate&authuser=0&hl=en&lr=lang_en';
       }
+      loadFrame(location.href.split('?q=')[1]);
   
       var txt = document.getElementById('test').innerText.split(' ');
       for (var i=0; i<txt.length; i++) {
