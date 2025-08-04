@@ -21,6 +21,7 @@ https://en.wikipedia.org/wiki/Leipzig–Jakarta_list
 https://www.calligraphr.com/en/webapp/app_home/?/templates  
   
 🕯 learn Hebrew efficiently (clarify method for any language), make parser  
+https://en.wikipedia.org/wiki/Vera_F._Birkenbihl#Birkenbihl's_learning_methods  
   
 speech: https://huggingface.co/spaces/freealise/phonemize-in-hebrew  
 vocabulary: https://en.wiktionary.org/wiki/Category:Hebrew_roots  
