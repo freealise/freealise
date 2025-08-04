@@ -5,6 +5,19 @@
 <div id="demo"></div>
 <script>
 
+function loadPhr(wrd) { 
+  const xhttp = new XMLHttpRequest(); 
+  xhttp.onload = function() {
+
+    alert(this.responseText);
+    document.getElementById("demo").innerHTML = this.responseText;
+  };
+
+  xhttp.open("GET", "https://script.google.com/macros/s/AKfycbz5br4wnfSGtucWKwGQq1Tb07eshJez6uVaFatn4xJAc_rcrcA/exec?a=proxy&q=https://dict.com/hebrew-english/"+wrd);
+  xhttp.send();
+}
+
+
 function loadConj(wrd) { 
   const xhttp = new XMLHttpRequest(); 
   xhttp.onload = function() {
@@ -16,6 +29,7 @@ function loadConj(wrd) {
   xhttp.open("GET", "https://script.google.com/macros/s/AKfycbz5br4wnfSGtucWKwGQq1Tb07eshJez6uVaFatn4xJAc_rcrcA/exec?a=proxy&q=https://pealim.com/search/?q="+wrd);
   xhttp.send();
 }
+
 
 function loadDef(wrd) { 
   const xhttp = new XMLHttpRequest(); 
@@ -41,10 +55,13 @@ function loadDef(wrd) {
 }
 
 var wrd = location.href.split('?q=')[1].split('&a=')[0];
-if (location.href.split('&a=')[1] == 'def') {
+var act = location.href.split('&a=')[1];
+if (act == 'def') {
     loadDef(wrd);
-} else {
+} else if (act == 'conj') {
     loadConj(wrd);
+} else if (act == 'phr') {
+    loadPhr(wrd);
 }
 </script>
 </body>
