@@ -5,20 +5,6 @@
 <div id="demo"></div>
 <script>
 
-function loadPhr(wrd) { 
-  const xhttp = new XMLHttpRequest(); 
-  xhttp.onload = function() {
-
-    //alert(this.responseText);
-    document.getElementById("demo").innerHTML = this.responseText;
-    document.getElementById('subs-toolbar').style.display = 'none';
-  };
-
-  xhttp.open("GET", "https://script.google.com/macros/s/AKfycbz5br4wnfSGtucWKwGQq1Tb07eshJez6uVaFatn4xJAc_rcrcA/exec?a=proxy&q=https://dict.com/hebrew-english/"+wrd);
-  xhttp.send();
-}
-
-
 function loadConj(wrd) { 
   const xhttp = new XMLHttpRequest(); 
   xhttp.onload = function() {
@@ -61,8 +47,6 @@ if (act == 'def') {
     loadDef(wrd);
 } else if (act == 'conj') {
     loadConj(wrd);
-} else if (act == 'phr') {
-    loadPhr(wrd);
 }
 </script>
 </body>
