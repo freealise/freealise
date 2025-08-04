@@ -26,5 +26,4 @@ https://en.wikipedia.org/wiki/Vera_F._Birkenbihl#Birkenbihl's_learning_methods
 speech: https://huggingface.co/spaces/freealise/phonemize-in-hebrew  
 vocabulary: https://en.wiktionary.org/wiki/Category:Hebrew_roots  
 grammar: https://books.google.com/ngrams/interactive_chart?content=בסדר_*&year_start=1800&year_end=2022&corpus=iw&smoothing=50 (parse phrases iteratively, download pos data by frequency), https://huggingface.co/spaces/freealise/joint-demo  
-phrases: https://dict.com/hebrew-english/ (highlight by proxy or download)  
 translate the siddur poetically  
