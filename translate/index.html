@@ -27,11 +27,12 @@ function loadW(ltwf, freqs) {
     alert(ltwf[0]+' '+freqs[1].replace(/ +/g, ' ').split(' ')[1]);
     
     var k=0;
-    for (var i=1; i<freqs.length; i++) {
-        for (var j=0; j<ltwf.length; j++) {
-            if (ltwf[j].trim() == freqs[i].replace(/ +/g, ' ').split(' ')[1].trim()) {
+    for (var j=0; j<ltwf.length; j++) {
+        for (var i=1; i<freqs.length; i++) {
+            if (ltwf[j].trim()==freqs[i].replace(/ +/g, ' ').split(' ')[1]) {
                 txt += freqs[i] + '<br/>';
                 k++;
+                break;
             }
         }
     }
