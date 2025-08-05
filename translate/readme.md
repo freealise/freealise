@@ -15,9 +15,6 @@ arc interpolation for letters (svg)
 calligraphy of word as the outline of idea it represents (mnemonic device)  
   
 lyrics calligraphy | bead or thread bracelet with alphabet  
-  
-https://en.wiktionary.org/wiki/Appendix:Hebrew_Swadesh_list  
-https://en.wikipedia.org/wiki/Leipzig–Jakarta_list  
 https://www.calligraphr.com/en/webapp/app_home/?/templates  
   
 🕯 learn Hebrew efficiently (clarify method for any language), make parser  
