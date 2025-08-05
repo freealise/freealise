@@ -28,13 +28,14 @@ function loadW(roots, freqs) {
     
     for (var i=1; i<freqs.length; i++) {
         for (var j=1; j<roots.length; j++) {
-            if (roots[j].trim() == freqs[i].split(',')[0].trim()) {
-                document.getElementById("test").innerText += freqs[i] + '\n';
+            if (roots[j].trim() == freqs[i].split(',')[0]) {
+                txt += freqs[i] + '\n';
             } else {
                 document.getElementById("count").innerText = i + ' ' + j;
             }
         }
     }
+    document.getElementById("test").innerText = txt;
   };
 
   xhttp.open("GET", "hebrew_1grams_freq.csv");
