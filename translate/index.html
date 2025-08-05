@@ -30,12 +30,11 @@ function loadW(ltwf, dict) {
     var k=0;
     for (var j=0; j<ltwf.length; j++) {
         if (dict[ltwf[j]]) {
-            txt += ltwf[j] + ' ' + dict[ltwf[j]][3];
+            txt += ltwf[j] + ' ' + dict[ltwf[j]][3] + '<br/>';
             k++;
         } else {
             out += ltwf[j] + ', ';
         }
-        txt += '<br/>';
     }
     document.getElementById("test").innerHTML = txt + '<hr/>' + out;
     document.getElementById("count").innerText = ltwf.length + ' ' + k;
