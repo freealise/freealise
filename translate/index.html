@@ -24,18 +24,19 @@ function loadW(roots, freqs) {
     ltwf = ltwf.slice(0,-1).split('. ');
     freqs = this.responseText.split('\n');
     
-    alert(ltwf[1]+' '+freqs[1].split(',')[0]);
+    alert(ltwf[0]+' '+freqs[1].split(',')[0]);
     
+    var k=0;
     for (var i=1; i<freqs.length; i++) {
-        for (var j=1; j<ltwf.length; j++) {
+        for (var j=0; j<ltwf.length; j++) {
             if (ltwf[j].trim() == freqs[i].split(',')[0].trim()) {
                 txt += freqs[i] + '<br/>';
-            } else {
-                document.getElementById("count").innerText = i + ' ' + j;
+                k++;
             }
         }
     }
     document.getElementById("test").innerHTML = txt;
+    document.getElementById("count").innerText = ltwf.length + ' ' + k;
   };
 
   xhttp.open("GET", "english_1grams_freq.csv");
