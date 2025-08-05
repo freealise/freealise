@@ -11,39 +11,37 @@
   <div id="test"></div>
 
   <script src='ltwf.js'></script>
+  <script src='english_1grams_freq.js'></script>
   <script>
 var freqs = "";
   
 function loadW(ltwf, freqs) { 
-  const xhttp = new XMLHttpRequest(); 
-  xhttp.onload = function() {
+  /*const xhttp = new XMLHttpRequest(); 
+  xhttp.onload = function() {*/
 
     //alert(this.responseText);
     var txt = "";
     
     ltwf = ltwf.slice(0,-1).split('. ');
-    freqs = this.responseText.split('\n');
     
-    alert(ltwf[0]+' '+freqs[1].replace(/ +/g, ' ').split(' ')[1]);
+    alert(ltwf[0]+' '+dict[ltwf[0]][3];
     
     var k=0;
     for (var j=0; j<ltwf.length; j++) {
         txt += ltwf[j] + ' ';
-        for (var i=1; i<freqs.length; i++) {
-            if (ltwf[j].trim()==freqs[i].replace(/ +/g, ' ').split(' ')[1]) {
-                txt += freqs[i];
-                k++;
-                break;
-            }
+        if (dict[ltwf[j]]) {
+            txt += dict[ltwf[j]][3];
+            k++;
+            break;
         }
         txt += '<br/>';
     }
     document.getElementById("test").innerHTML = txt;
     document.getElementById("count").innerText = ltwf.length + ' ' + k;
-  };
+  /*};
 
-  xhttp.open("GET", "english_1grams_freq_oed.tsv");
-  xhttp.send();
+  xhttp.open("GET", "english_1grams_freq.tsv");
+  xhttp.send();*/
 }
 try{loadW(ltwf, freqs);}catch(e){alert(e);}
 
