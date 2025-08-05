@@ -20,6 +20,7 @@ function loadW(ltwf, dict) {
 
     alert(this.responseText);
     var txt = "";
+    var out = "";
     
     ltwf = ltwf.slice(0,-1).split('. ');
     dict = JSON.parse(this.responseText);
@@ -28,14 +29,15 @@ function loadW(ltwf, dict) {
     
     var k=0;
     for (var j=0; j<ltwf.length; j++) {
-        txt += ltwf[j] + ' ';
         if (dict[ltwf[j]]) {
-            txt += dict[ltwf[j]][3];
+            txt += ltwf[j] + ' ' + dict[ltwf[j]][3];
             k++;
+        } else {
+            out += ltwf[j] + ', ';
         }
         txt += '<br/>';
     }
-    document.getElementById("test").innerHTML = txt;
+    document.getElementById("test").innerHTML = txt + '<hr/>' + out;
     document.getElementById("count").innerText = ltwf.length + ' ' + k;
   };
 
