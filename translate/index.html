@@ -26,9 +26,9 @@ function loadW(roots, freqs) {
     
     alert(roots[1]+' '+freqs[1]);
     
-    for (var i=0; i<freqs.length; i++) {
+    for (var i=1; i<freqs.length; i++) {
         freqs[i] = freqs[i].split(',');
-        for (var j=0; j<roots.length; j++) {
+        for (var j=1; j<roots.length; j++) {
             if (roots[j].trim() == freqs[i][2].trim()) {
                 document.getElementById("test").innerText += freqs[i][2] + ' ' + freqs[i][3] + '\n';
             } else {
