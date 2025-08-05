@@ -21,5 +21,5 @@ https://www.calligraphr.com/en/webapp/app_home/?/templates
 https://en.wikipedia.org/wiki/Vera_F._Birkenbihl#Birkenbihl's_learning_methods  
   
 https://huggingface.co/spaces/freealise/phonemize-in-hebrew, https://huggingface.co/spaces/freealise/joint-demo  
-vocabulary: ltwf ?  
+vocabulary: English defining -> translate defs to hebrew  
 translate the siddur poetically  
