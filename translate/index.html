@@ -14,7 +14,7 @@
   <script>
 var freqs = "";
   
-function loadW(roots, freqs) { 
+function loadW(ltwf, freqs) { 
   const xhttp = new XMLHttpRequest(); 
   xhttp.onload = function() {
 
@@ -42,7 +42,7 @@ function loadW(roots, freqs) {
   xhttp.open("GET", "english_1grams_freq.csv");
   xhttp.send();
 }
-try{loadW(roots, freqs);}catch(e){alert(e);}
+try{loadW(ltwf, freqs);}catch(e){alert(e);}
 
   </script>
 </body>
