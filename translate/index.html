@@ -24,7 +24,7 @@ function loadW(roots, freqs) {
     roots = roots.replace(/[ \־]/g, '').split('\n');
     freqs = this.responseText.split('\n');
     
-    alert(roots[0]+' '+freqs[1]);
+    alert(roots[1]+' '+freqs[1]);
     
     for (var i=0; i<freqs.length; i++) {
         freqs[i] = freqs[i].split(',');
