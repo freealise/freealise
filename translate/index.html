@@ -27,10 +27,9 @@ function loadW(roots, freqs) {
     alert(roots[1]+' '+freqs[1]);
     
     for (var i=1; i<freqs.length; i++) {
-        freqs[i] = freqs[i].split(',');
         for (var j=1; j<roots.length; j++) {
-            if (roots[j].trim() == freqs[i][2].trim()) {
-                document.getElementById("test").innerText += freqs[i][2] + ' ' + freqs[i][3] + '\n';
+            if (roots[j].trim() == freqs[i].split(',')[3].trim()) {
+                document.getElementById("test").innerText += freqs[i] + '\n';
             } else {
                 document.getElementById("count").innerText = i + ' ' + j;
             }
