@@ -28,13 +28,15 @@ function loadW(ltwf, freqs) {
     
     var k=0;
     for (var j=0; j<ltwf.length; j++) {
+        txt += ltwf[j] + ' ';
         for (var i=1; i<freqs.length; i++) {
             if (ltwf[j].trim()==freqs[i].replace(/ +/g, ' ').split(' ')[1]) {
-                txt += freqs[i] + '<br/>';
+                txt += freqs[i];
                 k++;
                 break;
             }
         }
+        txt += '<br/>';
     }
     document.getElementById("test").innerHTML = txt;
     document.getElementById("count").innerText = ltwf.length + ' ' + k;
