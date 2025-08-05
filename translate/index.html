@@ -21,6 +21,7 @@ function loadW(ltwf, dict) {
     alert(this.responseText);
     var txt = "";
     var out = "";
+    var arr = [];
     
     ltwf = ltwf.slice(0,-1).split('. ');
     dict = JSON.parse(this.responseText);
@@ -31,12 +32,14 @@ function loadW(ltwf, dict) {
     for (var j=0; j<ltwf.length; j++) {
         if (dict[ltwf[j]]) {
             txt += ltwf[j] + ' ' + dict[ltwf[j]][3] + '<br/>';
+            arr[k] = [ ltwf[j], dict[ltwf[j]][3] ];
             k++;
         } else {
             out += ltwf[j] + ', ';
         }
     }
-    document.getElementById("test").innerHTML = txt + '<hr/>' + out;
+    arr.sort(function(a, b){return b[1] - a[1]});
+    document.getElementById("test").innerHTML = arr.join('<br/>') + '<hr/>' + txt + '<hr/>' + out;
     document.getElementById("count").innerText = ltwf.length + ' ' + k;
   };
 
