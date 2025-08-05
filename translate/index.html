@@ -10,7 +10,7 @@
   <h1 id='count'>new</h1>
   <div id="test"></div>
 
-  <script src='hebrew_roots.js'></script>
+  <script src='ltwf.js'></script>
   <script>
 var freqs = "";
   
@@ -21,14 +21,14 @@ function loadW(roots, freqs) {
     //alert(this.responseText);
     var txt = "";
     
-    roots = roots.replace(/[ \־]/g, '').split('\n');
+    ltwf = ltwf.slice(0,-1).split('. ');
     freqs = this.responseText.split('\n');
     
-    alert(roots[1]+' '+freqs[1].split(',')[0]);
+    alert(ltwf[1]+' '+freqs[1].split(',')[0]);
     
     for (var i=1; i<freqs.length; i++) {
-        for (var j=1; j<roots.length; j++) {
-            if (roots[j].trim() == freqs[i].split(',')[0]) {
+        for (var j=1; j<ltwf.length; j++) {
+            if (ltwf[j].trim() == freqs[i].split(',')[0].trim()) {
                 txt += freqs[i] + '<br/>';
             } else {
                 document.getElementById("count").innerText = i + ' ' + j;
@@ -38,7 +38,7 @@ function loadW(roots, freqs) {
     document.getElementById("test").innerHTML = txt;
   };
 
-  xhttp.open("GET", "hebrew_1grams_freq.csv");
+  xhttp.open("GET", "english_1grams_freq.csv");
   xhttp.send();
 }
 try{loadW(roots, freqs);}catch(e){alert(e);}
