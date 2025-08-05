@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>new</h1>
+  <h1 id='count'>new</h1>
   <textarea id="test"></textarea>
 
   <script src='hebrew_roots.js'></script>
@@ -30,11 +30,12 @@ function loadW(roots, freqs) {
         freqs[i] = freqs[i].split(',');
         for (var j=0; j<roots.length; j++) {
             if (roots[j].trim() == freqs[i][2].trim()) {
-                txt += freqs[i][2] + ' ' + freqs[i][3] + '\n';
+                document.getElementById("test").innerText += freqs[i][2] + ' ' + freqs[i][3] + '\n';
+            } else {
+                document.getElementById("count").innerText = i + ' ' + j;
             }
         }
     }
-    document.getElementById("test").innerText = txt;
   };
 
   xhttp.open("GET", "hebrew_1grams_freq.csv");
