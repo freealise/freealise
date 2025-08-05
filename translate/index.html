@@ -24,11 +24,11 @@ function loadW(roots, freqs) {
     roots = roots.replace(/[ \־]/g, '').split('\n');
     freqs = this.responseText.split('\n');
     
-    alert(roots[1]+' '+freqs[1].split(',')[2]);
+    alert(roots[1]+' '+freqs[1].split(',')[3]);
     
     for (var i=1; i<freqs.length; i++) {
         for (var j=1; j<roots.length; j++) {
-            if (roots[j].trim() == freqs[i].split(',')[2].trim()) {
+            if (roots[j].trim() == freqs[i].split(',')[3].trim()) {
                 document.getElementById("test").innerText += freqs[i] + '\n';
             } else {
                 document.getElementById("count").innerText = i + ' ' + j;
