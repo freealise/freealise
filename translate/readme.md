@@ -21,5 +21,5 @@ https://www.calligraphr.com/en/webapp/app_home/?/templates
 https://en.wikipedia.org/wiki/Vera_F._Birkenbihl#Birkenbihl's_learning_methods  
   
 https://huggingface.co/spaces/freealise/phonemize-in-hebrew, https://huggingface.co/spaces/freealise/joint-demo  
-vocabulary: English defining -> translate defs to hebrew  
+vocabulary: english defining -> translate to hebrew; more important are words more often included in definitions of other controlled vocabulary words  
 translate the siddur poetically  
