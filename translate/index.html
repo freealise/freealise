@@ -8,9 +8,37 @@
 </head>
 <body>
   <h1>new</h1>
-  <div id="test"></div>
+  <textarea id="test"></textarea>
 
-  <script src='voa_1500.js'>
+  <script src='hebrew_roots.js'></script>
+  <script>
+  var freqs = "";
+  
+  function loadW() { 
+  const xhttp = new XMLHttpRequest(); 
+  xhttp.onload = function() {
+
+    //alert(this.responseText);
+    var txt = "";
+    
+    roots = roots.replace(/[ \־]/g, '').split('\n');
+    freqs = this.responseText.split('\n');
+    for (var i=0; i<freqs.length; i++) {
+        freqs[i] = freqs[i].split(',');
+        for (var j=0; j<roots.length; j++) {
+            if (roots[j].trim() == freqs[i][2].trim()) {
+                txt += freqs[i][2] + ' ' + freqs[i][3] + '\n';
+            }
+        }
+    }
+    document.getElementById("test").innerText = txt;
+  };
+
+  xhttp.open("GET", "hebrew_1grams_freq.csv");
+  xhttp.send();
+}
+loadW();
+
   </script>
 </body>
 </html>
