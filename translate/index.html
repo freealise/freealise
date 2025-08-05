@@ -24,12 +24,12 @@ function loadW(ltwf, freqs) {
     ltwf = ltwf.slice(0,-1).split('. ');
     freqs = this.responseText.split('\n');
     
-    alert(ltwf[0]+' '+freqs[1].split(',')[0]);
+    alert(ltwf[0]+' '+freqs[1].replace(/ +/g, ' ').split(' ')[1]);
     
     var k=0;
     for (var i=1; i<freqs.length; i++) {
         for (var j=0; j<ltwf.length; j++) {
-            if (ltwf[j].trim() == freqs[i].split(',')[0].trim()) {
+            if (ltwf[j].trim() == freqs[i].replace(/ +/g, ' ').split(' ')[1].trim()) {
                 txt += freqs[i] + '<br/>';
                 k++;
             }
@@ -39,7 +39,7 @@ function loadW(ltwf, freqs) {
     document.getElementById("count").innerText = ltwf.length + ' ' + k;
   };
 
-  xhttp.open("GET", "english_1grams_freq.csv");
+  xhttp.open("GET", "english_1grams_freq_oed.tsv");
   xhttp.send();
 }
 try{loadW(ltwf, freqs);}catch(e){alert(e);}
