@@ -14,7 +14,7 @@
   <script>
 var freqs = "";
   
-function loadW() { 
+function loadW(roots, freqs) { 
   const xhttp = new XMLHttpRequest(); 
   xhttp.onload = function() {
 
@@ -37,7 +37,7 @@ function loadW() {
   xhttp.open("GET", "hebrew_1grams_freq.csv");
   xhttp.send();
 }
-try{loadW();}catch(e){alert(e);}
+try{loadW(roots, freqs);}catch(e){alert(e);}
 
   </script>
 </body>
