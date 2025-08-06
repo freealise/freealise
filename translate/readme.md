@@ -22,5 +22,5 @@ https://en.wikipedia.org/wiki/Vera_F._Birkenbihl#Birkenbihl's_learning_methods
   
 https://huggingface.co/spaces/freealise/phonemize-in-hebrew, https://huggingface.co/spaces/freealise/joint-demo  
 roots: https://www.peshat.org/rootList.action  
-vocabulary: english defining -> translate to hebrew; more important are words more often included in definitions of other controlled vocabulary words  
+vocabulary: ltwf -> google translate to hebrew; more important are words more often included in definitions of other controlled vocabulary words  
 translate the siddur poetically  
