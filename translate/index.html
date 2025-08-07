@@ -33,7 +33,7 @@ function loadW(ltwf, dict) {
     for (var j=0; j<ltwf.length; j++) {
         if (dict[ltwf[j]]) {
             txt += ltwf[j] + ' ' + dict[ltwf[j]][3] + '<br/>';
-            arr[k] = [ ltwf[j], dict[ltwf[j]][3] ];
+            arr[k] = ltwf[j];
             k++;
         } else if (ltwf[j].trim().search(/\s/) == -1) {
             out += ltwf[j] + ', ';
