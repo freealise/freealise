@@ -5,10 +5,8 @@ to
 in
 a
 is
-is
 that
 for
-was
 was
 as
 with
@@ -21,7 +19,6 @@ by
 or
 his
 are
-are
 he
 from
 at
@@ -31,7 +28,6 @@ have
 had
 you
 an
-were
 were
 but
 they
@@ -74,7 +70,6 @@ these
 two
 such
 said
-could
 could
 also
 any
@@ -177,7 +172,6 @@ himself
 less
 large
 left
-left
 thought
 think
 last
@@ -208,7 +202,6 @@ second
 name
 course
 around
-went
 went
 family
 law
@@ -243,7 +236,6 @@ once
 yet
 better
 human
-am
 am
 value
 certain
@@ -675,7 +667,6 @@ brother
 pain
 statement
 lay
-lay
 ago
 oil
 car
@@ -838,7 +829,6 @@ pattern
 judgment
 appearance
 bit
-bit
 iron
 spent
 otherwise
@@ -961,7 +951,6 @@ winter
 fresh
 concern
 rose
-rose
 mine
 represent
 path
@@ -973,7 +962,6 @@ sister
 lie
 edge
 sum
-check
 check
 everyone
 minute
@@ -1006,7 +994,6 @@ fellow
 possibility
 plane
 judge
-shot
 shot
 taught
 suggest
@@ -1563,7 +1550,6 @@ helpful
 match
 expensive
 wound
-wound
 shadow
 profession
 string
@@ -1789,7 +1775,6 @@ verb
 fame
 cook
 ate
-ate
 widespread
 owing
 remark
@@ -1921,7 +1906,6 @@ exciting
 admiration
 crazy
 weekly
-drunk
 drunk
 stretch
 jump
@@ -2300,7 +2284,6 @@ worm
 sour
 nut
 harmless
-tire
 tire
 knot
 armor
