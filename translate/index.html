@@ -29,13 +29,13 @@ function loadW(ltwf, dict) {
     dict = JSON.parse(this.responseText);
     res = res.replace(/\d/g, '').replace(/\,/g, '<br/>');
     
-    alert(ltwf[0]+' '+dict[ltwf[0]][3]);
+    alert(ltwf[0]+' '+dict[ltwf[0]][4]);
     
     var k=0;
     for (var j=0; j<ltwf.length; j++) {
         if (dict[ltwf[j]]) {
-            txt += ltwf[j] + ' ' + dict[ltwf[j]][3] + '<br/>';
-            arr[k] = [ ltwf[j], dict[ltwf[j]][3] ];
+            txt += ltwf[j] + ' ' + dict[ltwf[j]][4] + '<br/>';
+            arr[k] = [ ltwf[j], dict[ltwf[j]][4] ];
             k++;
         } else if (ltwf[j].trim().search(/\s/) == -1) {
             out += ltwf[j] + ', ';
