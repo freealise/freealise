@@ -1,10 +1,10 @@
-var res = `dis-
-im-
+var res = `non-
 in-
-ir-
-non-
 re-
+dis-
 un-
+ir-
+im-
 the
 of
 and
