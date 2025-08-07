@@ -1,4 +1,11 @@
-var res = `the
+var res = `dis-
+im-
+in-
+ir-
+non-
+re-
+un-
+the
 of
 and
 to
