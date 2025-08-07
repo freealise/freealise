@@ -34,8 +34,8 @@ function loadW(ltwf, dict) {
     var k=0;
     for (var j=0; j<ltwf.length; j++) {
         if (dict[ltwf[j]]) {
-            txt += ltwf[j] + ' ' + dict[ltwf[j]][4] + '<br/>';
-            arr[k] = [ ltwf[j], dict[ltwf[j]][4] ];
+            txt += ltwf[j] + ' ' + dict[ltwf[j]][4] + ' ' + j + '<br/>';
+            arr[k] = [ ltwf[j], dict[ltwf[j]][4], j ];
             k++;
         } else if (ltwf[j].trim().search(/\s/) == -1) {
             out += ltwf[j] + ', ';
@@ -43,7 +43,7 @@ function loadW(ltwf, dict) {
             phr += ltwf[j] + ', ';
         }
     }
-    arr.sort(function(a, b){return b[1] - a[1]});
+    arr.sort(function(a, b){return a[1] - b[1]});
     document.getElementById("test").innerHTML = res + '<hr/>' + arr.join('<br/>') + '<hr/>' + txt + '<hr/>' + out + '<hr/>' + phr;
     document.getElementById("count").innerText = ltwf.length + ' ' + k;
   };
