@@ -21,6 +21,7 @@ function loadW(ltwf, dict) {
     alert(this.responseText);
     var txt = "";
     var out = "";
+    var phr = "";
     var arr = [];
     
     ltwf = ltwf.slice(0,-1).split('. ');
@@ -34,12 +35,14 @@ function loadW(ltwf, dict) {
             txt += ltwf[j] + ' ' + dict[ltwf[j]][3] + '<br/>';
             arr[k] = [ ltwf[j], dict[ltwf[j]][3] ];
             k++;
-        } else {
+        } else if (ltwf[j].trim().search(/\s/) == -1) {
             out += ltwf[j] + ', ';
+        } else {
+            phr += ltwf[j] + ', ';
         }
     }
     arr.sort(function(a, b){return b[1] - a[1]});
-    document.getElementById("test").innerHTML = arr.join('<br/>') + '<hr/>' + txt + '<hr/>' + out;
+    document.getElementById("test").innerHTML = arr.join('<br/>') + '<hr/>' + txt + '<hr/>' + out + '<hr/>' + phr;
     document.getElementById("count").innerText = ltwf.length + ' ' + k;
   };
 
