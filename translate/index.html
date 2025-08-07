@@ -28,15 +28,7 @@ function loadW(ltwf, dict) {
     ltwf = ltwf.slice(0,-1).split('. ').sort();
     dict = JSON.parse(this.responseText);
     
-    var r = res.split('\n');
-    for (var j=1; j<r.length; j++) {
-        if (r[j-1] == r[j]) {
-            r[j] = '';
-        }
-    }
-    res = r.join('\n').replace(/\n+/g, '\n');
-    
-    alert(ltwf[0]+' '+dict[ltwf[0]][4]);
+    //alert(ltwf[0]+' '+dict[ltwf[0]][4]);
     
     var k=0;
     for (var j=0; j<ltwf.length; j++) {
