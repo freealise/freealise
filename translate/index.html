@@ -36,9 +36,9 @@ function loadW(ltwf, dict) {
             txt += ltwf[j] + ' ' + dict[ltwf[j]][4] + ' ' + j + '<br/>';
             arr[k] = [ ltwf[j], dict[ltwf[j]][4], j ];
             k++;
-        } else if (ltwf[j].trim().search(/\s/) == -1) {
+        } else if (!dict[ltwf[j]] && ltwf[j].trim().search(/\s/) == -1) {
             out += ltwf[j] + ', ';
-        } else {
+        } else if (!dict[ltwf[j]]) {
             phr += ltwf[j] + ', ';
         }
     }
