@@ -2534,6 +2534,7 @@ disappoint,476597
 woollen,469325
 prickly,462343
 wrongdoing,456734
+offence,
 favourable,
 forgave,447577
 wove,430573
