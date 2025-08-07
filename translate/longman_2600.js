@@ -1,8 +1,8 @@
 var res = `non-
 in-
 re-
-dis-
 un-
+dis-
 ir-
 im-
 the
