@@ -25,7 +25,7 @@ function loadW(ltwf, dict) {
     var phr = "";
     var arr = [];
     
-    ltwf = ltwf.slice(0,-1).split('. ');
+    ltwf = ltwf.slice(0,-1).split('. ').sort();
     dict = JSON.parse(this.responseText);
     res = res.replace(/\n/g, '<br/>');
     
@@ -33,7 +33,7 @@ function loadW(ltwf, dict) {
     
     var k=0;
     for (var j=0; j<ltwf.length; j++) {
-        if (dict[ltwf[j]]) {
+        if ((j==0 || ltwf[j-1]!=ltwf[j]) && dict[ltwf[j]]) {
             txt += ltwf[j] + ' ' + dict[ltwf[j]][4] + ' ' + j + '<br/>';
             arr[k] = [ ltwf[j], dict[ltwf[j]][4], j ];
             k++;
