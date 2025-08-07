@@ -42,7 +42,7 @@ function loadW(ltwf, dict) {
         }
     }
     arr.sort(function(a, b){return b[1] - a[1]});
-    document.getElementById("test").innerHTML = arr.join('<br/>').replace(/[\,\d]/g, '') + '<hr/>' + txt + '<hr/>' + out + '<hr/>' + phr;
+    document.getElementById("test").innerHTML = arr.join('<br/>').replace(/\d/g, '') + '<hr/>' + txt + '<hr/>' + out + '<hr/>' + phr;
     document.getElementById("count").innerText = ltwf.length + ' ' + k;
   };
 
