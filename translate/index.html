@@ -11,6 +11,7 @@
   <div id="test"></div>
 
   <script src='ltwf.js'></script>
+  <script src='longman_2600.js'></script>
   <script>
 var dict = {};
   
@@ -26,6 +27,7 @@ function loadW(ltwf, dict) {
     
     ltwf = ltwf.slice(0,-1).split('. ');
     dict = JSON.parse(this.responseText);
+    res = res.replace(/[\,\d]/g, '');
     
     alert(ltwf[0]+' '+dict[ltwf[0]][3]);
     
@@ -42,7 +44,7 @@ function loadW(ltwf, dict) {
         }
     }
     arr.sort(function(a, b){return b[1] - a[1]});
-    document.getElementById("test").innerHTML = arr.join('<br/>').replace(/\d/g, '') + '<hr/>' + txt + '<hr/>' + out + '<hr/>' + phr;
+    document.getElementById("test").innerHTML = res + '<hr/>' + arr.join('<br/>') + '<hr/>' + txt + '<hr/>' + out + '<hr/>' + phr;
     document.getElementById("count").innerText = ltwf.length + ' ' + k;
   };
 
