@@ -27,13 +27,20 @@ function loadW(ltwf, dict) {
     
     ltwf = ltwf.slice(0,-1).split('. ').sort();
     dict = JSON.parse(this.responseText);
-    res = res.replace(/\n/g, '<br/>');
+    
+    var r = res.split('\n');
+    for (var j=1; j<r.length; j++) {
+        if (r[j-1] == r[j]) {
+            r[j] = '';
+        }
+    }
+    res = r.join('\n').replace(/\n+/g, '\n');
     
     alert(ltwf[0]+' '+dict[ltwf[0]][4]);
     
     var k=0;
     for (var j=0; j<ltwf.length; j++) {
-        if ((j==0 || ltwf[j-1]!=ltwf[j]) && dict[ltwf[j]]) {
+        if ((j==0 || ltwf[j-1] != ltwf[j]) && dict[ltwf[j]]) {
             txt += ltwf[j] + ' ' + dict[ltwf[j]][4] + ' ' + j + '<br/>';
             arr[k] = [ ltwf[j], dict[ltwf[j]][4], j ];
             k++;
@@ -44,7 +51,7 @@ function loadW(ltwf, dict) {
         }
     }
     arr.sort(function(a, b){return a[1] - b[1]});
-    document.getElementById("test").innerHTML = res + '<hr/>' + arr.join('<br/>') + '<hr/>' + txt + '<hr/>' + out + '<hr/>' + phr;
+    document.getElementById("test").innerHTML = '<pre>' + res + '</pre><hr/>' + arr.join('<br/>') + '<hr/>' + txt + '<hr/>' + out + '<hr/>' + phr;
     document.getElementById("count").innerText = ltwf.length + ' ' + k;
   };
 
