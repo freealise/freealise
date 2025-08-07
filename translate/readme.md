@@ -18,10 +18,10 @@ lyrics calligraphy | bead or thread bracelet with alphabet
 https://www.calligraphr.com/en/webapp/app_home/?/templates  
   
 🕯 learn Hebrew efficiently (clarify method for any language), make parser  
-
-
+  
+  
 https://en.wikipedia.org/wiki/Vera_F._Birkenbihl#Birkenbihl's_learning_methods
-
+  
 - "Decoding": Work on the foreign text through a word-by-word translation, so you get used to the foreign syntax.
 - Active listening (via CD, MP3, etc.) to the foreign text while simultaneously reading the word-by-word translation from step one.
 - Passive listening to the foreign text in everyday life while doing other activities.
