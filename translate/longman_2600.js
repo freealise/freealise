@@ -2558,4 +2558,31 @@ centimetre
 swum
 kilometre
 cannot
-undoes`;
+undoes
+according to
+as opposed to
+consist of
+deal with
+dealt with
+find out
+found out
+in spite of
+lain down
+lay down
+let go of
+lie down
+look after
+look for
+look up
+lying down
+made into
+made up
+make into
+make up
+no one
+only just
+owing to
+per cent
+pick up
+rid of
+upside down`;
