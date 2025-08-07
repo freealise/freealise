@@ -44,7 +44,7 @@ function loadW(ltwf, dict) {
     }
     arr.sort(function(a, b){return a[1] - b[1]});
     document.getElementById("test").innerHTML = '<pre>' + res + '</pre><hr/>' + arr.join('<br/>') + '<hr/>' + txt + '<hr/>' + out + '<hr/>' + phr;
-    document.getElementById("count").innerText = ltwf.length + ' ' + k;
+    document.getElementById("count").innerText = res.split('\n').length + ' ' + k;
   };
 
   xhttp.open("GET", "english_1grams_freq.js");
