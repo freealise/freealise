@@ -30,4 +30,4 @@ https://en.wikipedia.org/wiki/Vera_F._Birkenbihl#Birkenbihl's_learning_methods
   
 https://huggingface.co/spaces/freealise/phonemize-in-hebrew, https://huggingface.co/spaces/freealise/joint-demo  
 vocabulary: ltwf -> google translate to hebrew with corrections, use sorted list of dictionary words with highlighted levels  
-translate the siddur poetically  
+translate the siddur poetically; read the books, news and wiki  
