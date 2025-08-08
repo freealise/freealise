@@ -1,1 +1,39 @@
- 
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <title>Word Finding Tool</title>
+  <!-- Copyright (c) 2014 David Bullock. -->
+  <meta name='viewport' content=
+  'width=device-width, initial-scale=1.0'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+  <script type='text/javascript' src='script.js'></script>
+</head>
+<body onload='document.getElementById("Input").value=ltwf;CheckVocabulary();'>
+  <div class='Frame'>
+    <h2 class='Header'><a href='LearnTheseWordsFirst.html'>Word
+    Finding Tool</a></h2>
+    <hr>
+    <noscript>
+    <p>(You need JavaScript to use this tool.)</p></noscript>
+    <p>This tool will show you where you can find words and learn
+    what they mean by looking inside these books: <a class='Book'
+    href='LearnTheseWordsFirst.html'>Learn These Words First</a>
+    and the <a class='Book' href='http://www.ldoceonline.com'
+    target='_blank'>Longman English Dictionary Online</a>.</p>
+    <p>You can use this tool when you are reading. It can help you
+    see which words you know and which words you need to learn.</p>
+    <p>Using this tool is easy: Put your words and sentences below.
+    Then press "Find These Words".</p>
+    <p>
+    <textarea id='Input' class='Input' rows='10' cols='80' onfocus=
+    'SelectInput();'>Copy your text here.</textarea></p>
+    <p><button type='button' onclick='CheckVocabulary();'>Find
+    These Words</button></p>
+    <div id='Output'></div>
+  </div>
+</body>
+</html>
