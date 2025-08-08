@@ -1,0 +1,114 @@
+* {font-family:'Averia Sans Libre',sans-serif;font-style:italic;}
+
+body {font-family:'Averia Sans Libre',sans-serif;}
+div {font-family:'Averia Sans Libre',sans-serif;}
+h1 {font-family:'Averia Sans Libre',sans-serif;}
+h2 {font-family:'Averia Sans Libre',sans-serif;}
+p {font-family:'Averia Sans Libre',sans-serif;}
+li {font-family:'Averia Sans Libre',sans-serif;}
+h1 {font-weight:normal;font-size:2em;}
+h2 {font-weight:normal;font-size:1.5em;}
+p {font-size:1em;}
+li {font-size:1em;}
+body {border:0;padding:0;}
+div {border:0;padding:0;}
+h1 {border:0;padding:0;}
+h2 {border:0;padding:0;}
+p {border:0;padding:0;}
+ul {border:0;padding:0;}
+li {border:0;padding:0;}
+hr {padding:0;}
+body {margin:0;}
+div {margin:0;}
+h1 {margin:10px;}
+h2 {margin:10px;}
+p {margin:10px;}
+ul {margin:10px;}
+li {margin:10px;}
+hr {margin:0;}
+li {margin-left:30px;}
+a:link {color:blue;}
+a:visited {color:purple;}
+img {height:auto;width:auto;max-width:100%;}
+img {border:0;}
+body {background-color:white;}
+div.Frame {background-color:white;}
+div.Frame {padding-bottom:10px;}
+h1.Title {margin-top:0;}
+h1.Title {color:white;background-color:navy;}
+h1.Title {font-weight:normal;font-size:2em;}
+h1.Title {margin-left:0;margin-right:0;}
+h1.Title {padding:10px;}
+div.Menu {display:block;}
+h2.Lesson {color:white;background-color:navy;}
+h2.Lesson {font-weight:normal;font-size:2em;}
+h2.Lesson {margin-left:0;margin-right:0;}
+h2.Lesson {padding:10px;}
+h2.Header {margin-top:0;}
+h2.Header {color:white;background-color:navy;}
+h2.Header {font-weight:normal;font-size:2em;}
+h2.Header {margin-left:0;margin-right:0;}
+h2.Header {padding:10px;}
+h2.Header a {color:white;text-decoration:none;}
+span.Smile {font-size:2em;color:green;}
+a.Section {font-size:2em;}
+p.Definition {}
+b.Headword {color:red;}
+p.Caption {font-size:1.5em;}
+li.Sense {}
+p.Question {}
+li.Answer a {color:blue;text-decoration:underline;}
+p.Title {margin-left:0;margin-right:0;}
+img.Title {height:auto;width:100%;}
+p.Image {margin-left:0;margin-right:0;}
+p.Gloss {margin-left:0;margin-right:0;}
+p.Right {margin-left:0;margin-right:0;}
+p.Wrong {margin-left:0;margin-right:0;}
+img.Image {height:auto;max-height:400px;}
+img.Gloss {height:auto;max-height:100px;}
+img.Right {height:auto;max-height:200px;}
+img.Wrong {height:auto;max-height:200px;}
+img.Image {width:auto;max-width:100%;}
+img.Gloss {width:auto;max-width:100%;}
+img.Right {width:auto;max-width:100%;}
+img.Wrong {width:auto;max-width:100%;}
+a.Word:link {color:black;text-decoration:none;}
+a.Word:visited {color:black;text-decoration:none;}
+a.Word:hover {color:blue;text-decoration:underline;}
+a.Word:active {color:blue;text-decoration:underline;}
+a.Book {color:blue;font-style:italic;text-decoration:none;}
+@media screen and (min-width:940px)
+{
+body {background-color:#E0E0FF;}
+div.Frame {width:900px;}
+div.Frame {margin-left:auto;margin-right:auto;}
+div.Frame {padding-top:10px;}
+h1.Title {margin-left:10px;margin-right:10px;}
+h2.Lesson {margin-left:10px;margin-right:10px;}
+h2.Header {margin-left:10px;margin-right:10px;}
+p.Title {margin-left:10px;margin-right:10px;}
+p.Image {margin-left:10px;margin-right:10px;}
+p.Gloss {margin-left:10px;margin-right:10px;}
+p.Right {margin-left:10px;margin-right:10px;}
+p.Wrong {margin-left:10px;margin-right:10px;}
+hr {margin-left:10px;margin-right:10px;}
+}
+
+
+  textarea.Input {width:99%;}
+  a.Layer1:link {color:green;text-decoration:none;}
+  a.Layer1:visited {color:green;text-decoration:none;}
+  a.Layer1:hover {color:green;text-decoration:underline;}
+  a.Layer1:active {color:green;text-decoration:underline;}
+
+  a.Layer2:link {color:blue;text-decoration:none;}
+  a.Layer2:visited {color:blue;text-decoration:none;}
+  a.Layer2:hover {color:blue;text-decoration:underline;}
+  a.Layer2:active {color:blue;text-decoration:underline;}
+
+  a.Layer3:link {color:red;text-decoration:none;}
+  a.Layer3:visited {color:red;text-decoration:none;}
+  a.Layer3:hover {color:red;text-decoration:underline;}
+  a.Layer3:active {color:red;text-decoration:underline;}
+
+  div.a {display: inline-block; transform: skew(7.5deg,0deg);}
