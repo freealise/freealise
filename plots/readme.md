@@ -16,6 +16,8 @@
 
 - Mary Poppins is a Jew in disguise  
   
+- 'Land of crimson clouds' rewrite ?
+  
 - Vecherovsky (Irish Jew ?) -> Birobidzhan capital of Siberia (Derek the angel ?) / Solovetz ? POV: programmer  
   
 - satire on current events (https://en.wikipedia.org/wiki/The_Cherry_Orchard)  
