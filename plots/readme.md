@@ -18,7 +18,7 @@
   
 - 'Land of crimson clouds' rewrite ?
   
-- Vecherovsky (Irish Jew ?) -> Birobidzhan capital of Siberia (Derek is a corrupt priest or prophet) / Solovetz ? POV: programmer  
+- Vecherovsky (Irish Jew ?) -> Birobidzhan capital of Siberia (Derek is a corrupt priest or prophet, or any celebrity) / Solovetz ? POV: programmer  
   
 - satire on current events (https://en.wikipedia.org/wiki/The_Cherry_Orchard)  
 
