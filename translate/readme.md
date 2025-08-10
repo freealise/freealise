@@ -18,6 +18,7 @@ lyrics calligraphy | bead or thread bracelet with alphabet
 https://www.calligraphr.com/en/webapp/app_home/?/templates  
   
 🕯 learn Hebrew efficiently (clarify method for any language), make parser  
+'Maiden Zion' (representing language) is to write for you = as you think a certain better way in English, so in Hebrew  
   
   
 https://en.wikipedia.org/wiki/Vera_F._Birkenbihl#Birkenbihl's_learning_methods
