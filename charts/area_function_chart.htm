@@ -38,8 +38,11 @@
             legend: 'none'
         };
   
+        var view = new google.visualization.DataView(data);
+        view.getFilteredRows([{column: 0}, {column: 1}, {column: 2}, {column: 3}]);
+        
         var chart_lines = new google.visualization.LineChart(document.getElementById('chart_lines'));
-        chart_lines.draw(data, options_lines);
+        chart_lines.draw(view, options_lines);
       }
     </script>
   </head>
