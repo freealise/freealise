@@ -39,7 +39,7 @@
         };
   
         var view = new google.visualization.DataView(data);
-        view.setRows(view.getFilteredRows([{column: 0}, {column: 1}, {column: 2}, {column: 3}]));
+        view.setColumns([0,1,2,3]);
         
         var chart_lines = new google.visualization.LineChart(document.getElementById('chart_lines'));
         chart_lines.draw(view, options_lines);
