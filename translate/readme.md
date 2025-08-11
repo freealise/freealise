@@ -30,5 +30,5 @@ p- Passive listening to the foreign text in everyday life while doing other acti
   
   
 https://huggingface.co/spaces/freealise/phonemize-in-hebrew, https://huggingface.co/spaces/freealise/joint-demo  
-vocabulary: ltwf -> google translate to hebrew with corrections, use sorted list of dictionary words with highlighted levels  
+vocabulary: ltwf -> google translate to hebrew with corrections, use sorted net of dictionary words with highlighted levels (words more/less used in LTWF definitions of each other are more/less connected)  
 translate the siddur poetically; read the books, news and wiki  
