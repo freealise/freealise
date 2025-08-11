@@ -19,13 +19,13 @@ https://www.calligraphr.com/en/webapp/app_home/?/templates
   
 🕯 learn Hebrew efficiently (clarify method for any language), make parser  
 'Maiden Zion' (representing language) is to write for you = as you think a certain better way in English, so in Hebrew  
+Singing is a key to fluency, not a 'special' form of speech  
   
   
 https://en.wikipedia.org/wiki/Vera_F._Birkenbihl#Birkenbihl's_learning_methods
   
 - "Decoding": Work on the foreign text through a word-by-word translation, so you get used to the foreign syntax.
-- Active listening (via CD, MP3, etc.) to the foreign text while simultaneously reading the word-by-word translation from step one.
-- Passive listening to the foreign text in everyday life while doing other activities.
+p- Passive listening to the foreign text in everyday life while doing other activities.
 - Speaking – reading – writing, depending on the pursued learning objective.
   
   
