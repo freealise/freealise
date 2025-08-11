@@ -49,31 +49,29 @@
   </head>
   <body>
       
-<!--<svg height="150" width="400" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <filter id="imageArithmetic">
-      <feImage href="https://www.random.org/bitmaps/?format=png&width=300&height=300&zoom=1" x="0px" y="0px" width="400px" />
-      <feTurbulence
-      type="turbulence"
-      baseFrequency="0.05"
-      numOctaves="2"
-      result="turbulence" />
-      <feComposite
+<svg
+  width="200"
+  height="200"
+  viewBox="0 0 220 220"
+  xmlns="http://www.w3.org/2000/svg">
+  <linearGradient id="grad2" x1="0%" x2="100%" y1="0%" y2="0%">
+      <stop offset="0%" stop-color="black" />
+      <stop offset="50%" stop-color="transparent" />
+      <stop offset="100%" stop-color="black" /> 
+    </linearGradient>
+  <filter id="displacementFilter">
+    <feTurbulence baseFrequency="1.0" type="fractalNoise" numOctaves="2" seed="7329663"/>
+    <feComposite
         in2="SourceGraphic"
         operator="arithmetic"
         k1="1.0"
         k2="0"
         k3="0"
         k4="0" />
-    </filter>
-    <linearGradient id="grad2" x1="0%" x2="100%" y1="0%" y2="0%">
-      <stop offset="0%" stop-color="white" />
-      <stop offset="50%" stop-color="transparent" />
-      <stop offset="100%" stop-color="white" /> 
-    </linearGradient>
-  </defs>
-  <rect x="0" y="0" width="150" height="400" filter="url(#imageArithmetic)" fill="url(#grad2)"/>
-</svg>-->
+  </filter>
+
+  <rect x="0" y="0" width="400" height="150" fill="url(#grad2)" filter="url(#displacementFilter)" />
+</svg>
 
     <div id="chart_lines" style="width: 900px; height: 500px;"></div>
   </body>
