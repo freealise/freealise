@@ -39,13 +39,11 @@
         };
         var chart_lines = new google.visualization.LineChart(document.getElementById('chart_lines'));
   
-        var view = new google.visualization.DataView(data);
+        /*var view = new google.visualization.DataView(data);
         view.setColumns([0,1,2,3]);
-        chart_lines.draw(view, options_lines);
-        
-        var view = new google.visualization.DataView(data);
-        view.setColumns([0,1,4,5]);
-        chart_lines.draw(view, options_lines);
+        chart_lines.draw(view, options_lines);*/
+
+        chart_lines.draw(data, options_lines);
       }
     </script>
   </head>
