@@ -37,11 +37,10 @@
             intervals: { 'style':'area' },
             legend: 'none'
         };
+        var chart_lines = new google.visualization.LineChart(document.getElementById('chart_lines'));
   
         var view = new google.visualization.DataView(data);
         view.setColumns([0,1,2,3]);
-        
-        var chart_lines = new google.visualization.LineChart(document.getElementById('chart_lines'));
         chart_lines.draw(view, options_lines);
         
         var view = new google.visualization.DataView(data);
