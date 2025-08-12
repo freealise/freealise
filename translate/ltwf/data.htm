@@ -53,16 +53,20 @@ var a = ("A B C D E F GH IJK LM NO P QR S T UVWXYZ").split(" ");
     hr[hr.length-1] = "";
     hr[hr.length-2] = "";
 
-    document.querySelector('#test').innerHTML = hr.join('\n\n').replace(/\<\/div>/g, '\<\/div>•');
-    document.querySelector('#test').innerHTML = document.querySelector('#test').innerText.replace(/\s\s+/g, '\n').replace(/•/g, '').replace(/\d+-\d+\.\s/g, '').replace(/\[.+\]\n/g, '');
+    document.querySelector('#test').innerHTML = hr.join('•');
+    document.querySelector('#test').innerHTML = document.querySelector('#test').innerText.replace(/\s\s+/g, '\n').replace(/\d+-\d+\.\s/g, '').replace(/\[.+\]\n/g, '');
 
-    var arr = document.querySelector('#test').innerText.split('\n\n');
+    var arr = document.querySelector('#test').innerText.split('•');
     var json = {};
 
     for (var i=0; i<arr.length; i++) {
-      var item = arr[i].split('.\n[');
+      var tmp = arr[i].split('.\n');
+      tmp[0] = tmp[0].replace(/\n/g,' ') + '~';
+      arr[i] = tmp.join('.\n');
+
+      var item = arr[i].split('~');
       if (item.length > 1) {
-        json[item[0].trim()] = '[' + item[1].trim();
+        json[item[0].trim()] = item[1].trim().slice(2);
       }
     }
     document.querySelector('#new').innerText += JSON.stringify(json)+',\n';
@@ -74,7 +78,6 @@ var a = ("A B C D E F GH IJK LM NO P QR S T UVWXYZ").split(" ");
   xhttp.open("GET", "https://script.google.com/macros/s/AKfycbz5br4wnfSGtucWKwGQq1Tb07eshJez6uVaFatn4xJAc_rcrcA/exec?a=proxy&q=https://learnthesewordsfirst.com/Lesson-"+n+a[j]+".html");
   xhttp.send();
 }
-
 
 var j = 0;
 var n = 3;
