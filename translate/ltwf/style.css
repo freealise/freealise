@@ -96,6 +96,11 @@ hr {margin-left:10px;margin-right:10px;}
 
 
   textarea.Input {width:99%;}
+  a.Layer0:link {color:gray;text-decoration:none;}
+  a.Layer0:visited {color:gray;text-decoration:none;}
+  a.Layer0:hover {color:gray;text-decoration:underline;}
+  a.Layer0:active {color:gray;text-decoration:underline;}
+  
   a.Layer1:link {color:green;text-decoration:none;}
   a.Layer1:visited {color:green;text-decoration:none;}
   a.Layer1:hover {color:green;text-decoration:underline;}
