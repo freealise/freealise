@@ -105,6 +105,8 @@ function CheckVocabulary()
 
 var TokenList = new Array();
 
+var Layer0List = new Object();
+
 // Layer1List["root"] = Output HTML <a...>root</a> for the given Layer1 root.
 
 var Layer1List = new Object();
@@ -122,6 +124,7 @@ var Layer3List = new Object();
 function ClearGlobals()
 {
 	TokenList = new Array();
+	Layer0List = new Object();
 	Layer1List = new Object();
 	Layer2List = new Object();
 	Layer3List = new Object();
@@ -139,8 +142,21 @@ function ProcessInput(sToken)
 	var sWord = CleanWord(sToken);
 
 	// See if the word has a root in the Layer1Root array (from the lessons).
+	
+	var sRoot = FindLayer0Root(sWord);
+	if (sRoot)
+	{
+		// Add a link from the token to the root in the alphabetical index.
 
-	var sRoot = FindLayer1Root(sWord);
+		TokenList.push(MakeLayer0Link(sToken,sRoot));
+
+		// Map the root to an HTML link to the root.
+
+		Layer0List[sRoot] = MakeLayer0Link(sRoot,sRoot);
+		return;
+	}
+
+	sRoot = FindLayer1Root(sWord);
 	if (sRoot)
 	{
 		// Add a link from the token to the root in the alphabetical index.
@@ -211,6 +227,10 @@ function GenerateOutput()
 	// Join the HTML strings from the TokenList array.
 
 	var sOutput = "<p>" + TokenList.join("<br/>") + "</p>";
+	
+	sOutput = sOutput + "<p><b>Basic words from ";
+	sOutput = sOutput + "<i>Learn These Words First</i>:</b></p>";
+	sOutput = sOutput + "<p>" + SortKeysAndJoin(Layer0List) + "</p>";
 
 	// Join the HTML strings from the Layer1List array.
 
@@ -324,6 +344,24 @@ function ReplaceNonAlpha(sWord)
 }
 
 /**************************************************************************/
+
+function MakeLayer0Link(sToken,sRoot)
+{
+	// Replace special characters in the strings.
+
+	sToken = EscapeHtml(sToken);
+	sRoot = ReplaceNonAlpha(sRoot);
+
+	// Make a reference to the correct file and anchor in the alphabetical index.
+
+	var sHref = MakeIndexHref(sRoot);
+
+	// Make a class='Layer1' (black) link and return the HTML string.
+
+	var sLink = "<div class='a'><a class='Layer0' href='" + sHref + "' ";
+	sLink = sLink + "target='_blank'>" + sToken + "</a></div>";
+	return sLink;
+}
 
 // Return a Layer1 link from the given token to the root in the alphabetical index.
 
@@ -463,6 +501,8 @@ function MakeLayer3Link(sToken,sWord)
 
 /**************************************************************************/
 
+var Layer0Root = null;
+
 // Layer1Root["stem"] = The Layer1 root (first headword) for the given stem.
 // The Layer1Root array gets initialized with words from the lessons.
 
@@ -473,14 +513,39 @@ var Layer1Root = null;
 
 var Layer2Root = null;
 
+function FindLayer0Root(sWord)
+{
+	// Initialize Layer1Root and Layer2Root arrays, if not already initialized.
+
+	if ((! Layer0Root) || (! Layer1Root) || (! Layer2Root))
+	{
+	    Layer0Root = new Object();
+		Layer1Root = new Object();
+		Layer2Root = new Object();
+		InitializeRoots();
+	}
+
+	// Get the stem for the given word and look up the associated Layer1 root.
+	// If the root is found, return it. Otherwise, return null.
+
+	var sStem = CreateStem(sWord);
+	var sRoot = Layer0Root[sStem];
+	if (sRoot)
+	{
+		return sRoot;
+	}
+	return null;
+}
+
 // Return the root of the given word in Layer1 (or null if the word was not found).
 
 function FindLayer1Root(sWord)
 {
 	// Initialize Layer1Root and Layer2Root arrays, if not already initialized.
 
-	if ((! Layer1Root) || (! Layer2Root))
+	if ((! Layer0Root) || (! Layer1Root) || (! Layer2Root))
 	{
+	    Layer0Root = new Object();
 		Layer1Root = new Object();
 		Layer2Root = new Object();
 		InitializeRoots();
@@ -504,8 +569,9 @@ function FindLayer2Root(sWord)
 {
 	// Initialize Layer1Root and Layer2Root arrays, if not already initialized.
 
-	if ((! Layer1Root) || (! Layer2Root))
+	if ((! Layer0Root) || (! Layer1Root) || (! Layer2Root))
 	{
+	    Layer0Root = new Object();
 		Layer1Root = new Object();
 		Layer2Root = new Object();
 		InitializeRoots();
@@ -521,6 +587,31 @@ function FindLayer2Root(sWord)
 		return sRoot;
 	}
 	return null;
+}
+
+function AddLayer0Root(sWordList)
+{
+	// Split the space-separated list of words.
+	// It contains a root word followed by its irregular inflections and variants.
+	// For example: "see saw seen".
+
+	var oWordList = sWordList.split(/ /);
+
+	// Map the stem of each word in the list.
+
+	for (var iIndex = 0; iIndex < oWordList.length; ++iIndex)
+	{
+		var sStem = CreateStem(oWordList[iIndex]);
+
+		// If the stem is not already mapped,
+		// map it to the root (the first word in the list).
+
+		if (! Layer0Root[sStem])
+		{
+			var sRoot = oWordList[0];
+			Layer0Root[sStem] = sRoot;
+		}
+	}
 }
 
 // Given a string containing a root word followed by its irregular inflections,
