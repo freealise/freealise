@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width" />
+  <title>ltwf_data</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>ltwf_data</h1>
+  <pre id="test"></pre>
+  <pre id="new"></pre>
+
+  <script src="data.js"></script>
+  <script>
+
+function loadDoc() { 
+  const xhttp = new XMLHttpRequest(); 
+  xhttp.onload = function() {
+
+    document.querySelector('#test').innerHTML = this.responseText.split('<hr/>')[1].replace(/\<\/div>/g, '\<\/div>•');
+    document.querySelector('#test').innerHTML = document.querySelector('#test').innerText.replace(/\(See .+\)\./g, '').replace(/\s\s+/g, '\n').replace(/•/g, '');
+
+    var arr = document.querySelector('#test').innerText.split('\n\n');
+    var json = {};
+
+    for (var i=0; i<arr.length; i++) {
+      var item = arr[i].split('=');
+      if (item.length > 1) {
+        json[item[0].trim()] = item[1].trim();
+      }
+    }
+    document.querySelector('#new').innerText += JSON.stringify(json)+',\n';
+    j++;
+    if (a[j]) {loadDoc();}
+  };
+
+  xhttp.open("GET", "https://script.google.com/macros/s/AKfycbz5br4wnfSGtucWKwGQq1Tb07eshJez6uVaFatn4xJAc_rcrcA/exec?a=proxy&q=https://learnthesewordsfirst.com/Words-"+a[j]+".html");
+  xhttp.send();
+}
+
+
+var j = 0;
+var a = ("A B C D E F GH IJK LM NO P QR S T UVWXYZ").split(" ");
+
+
+addEventListener('load', function(e) {
+  //loadDoc();
+
+  /* building vega chart (too many words)
+  var words = [];
+  var freqs = {};
+  var res = {nodes:[], links:[]};
+
+  for (var i=0; i<Object.keys(data).length; i++) {
+    res.nodes[i] = {"name":Object.keys(data)[i], "group":0, "index":i};
+
+    words = data[Object.keys(data)[i]].toLowerCase().replace(/[^\w\s]/g,'').replace(/\n/g,' ').split(' ').sort();
+    freqs[Object.keys(data)[i]] = {};
+    for (var j=0; j<words.length; j++) {
+      if (words[j].length > 0) {
+        if (j==0 || words[j-1] != words[j]) {
+          freqs[Object.keys(data)[i]][words[j]] = 1;
+        } else {
+          freqs[Object.keys(data)[i]][words[j]]++;
+        }
+      }
+    }
+    for (var j=0; j<words.length; j++) {
+      if (Object.keys(data).indexOf(words[j]) > -1) {
+        res.links[res.links.length] = {"source":i, "target":Object.keys(data).indexOf(words[j]), "value":freqs[Object.keys(data)[i]][words[j]]};
+      }
+    }
+  }
+  //document.querySelector('#new').innerText = JSON.stringify(freqs);
+  document.querySelector('#new').innerText += '\n\n' + JSON.stringify(res);
+  */
+
+
+});
+
+  </script>
+</body>
+</html>
