@@ -92,6 +92,8 @@ function CheckVocabulary()
 
 		var oOutput = document.getElementById("Output");
 		oOutput.innerHTML = GenerateOutput();
+		
+		alert(primes);
 	}
 	catch (oError)
 	{
@@ -100,6 +102,8 @@ function CheckVocabulary()
 }
 
 /**************************************************************************/
+
+var primes = [];
 
 // TokenList[index] = Output HTML <a...>token</a> for each input token.
 
@@ -360,6 +364,9 @@ function MakeLayer0Link(sToken,sRoot)
 
 	var sLink = "<div class='a'><a class='Layer0' href='" + sHref + "' ";
 	sLink = sLink + "target='_blank'>" + sToken + "</a></div>";
+	
+	primes[primes.length] = sToken;
+	
 	return sLink;
 }
 
