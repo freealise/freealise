@@ -365,7 +365,7 @@ function MakeLayer0Link(sToken,sRoot)
 	var sLink = "<div class='a'><a class='Layer0' href='" + sHref + "' ";
 	sLink = sLink + "target='_blank'>" + sToken + "</a></div>";
 	
-	if (primes[primes.length-1] != sToken) {
+	if (primes.length > 0 && primes[primes.length-1] != sToken) {
 	    primes[primes.length] = sToken;
 	}
 	
