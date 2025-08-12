@@ -769,15 +769,15 @@ function TruncateStem(sStem,iLength)
 
 function InitializeRoots()
 {
-	AddLayer1Root("see saw seen");
-	AddLayer1Root("thing");
-	AddLayer1Root("something");
-	AddLayer1Root("what");
-	AddLayer1Root("this");
-	AddLayer1Root("these");
-	AddLayer1Root("other");
-	AddLayer1Root("another");
-	AddLayer1Root("else");
+	AddLayer0Root("see saw seen");
+	AddLayer0Root("thing");
+	AddLayer0Root("something");
+	AddLayer0Root("what");
+	AddLayer0Root("this");
+	AddLayer0Root("these");
+	AddLayer0Root("other");
+	AddLayer0Root("another");
+	AddLayer0Root("else");
 	AddLayer1Root("same");
 	AddLayer1Root("be am are is being was were been");
 	AddLayer1Root("am are");
@@ -786,7 +786,7 @@ function InitializeRoots()
 	AddLayer1Root("as");
 	AddLayer1Root("one");
 	AddLayer1Root("two");
-	AddLayer1Root("person people");
+	AddLayer0Root("person people");
 	AddLayer1Root("many");
 	AddLayer1Root("much");
 	AddLayer1Root("inside");
@@ -846,12 +846,12 @@ function InitializeRoots()
 	AddLayer1Root("short");
 	AddLayer1Root("move");
 	AddLayer1Root("to");
-	AddLayer1Root("I");
+	AddLayer0Root("I");
 	AddLayer1Root("me");
-	AddLayer1Root("you");
+	AddLayer0Root("you");
 	AddLayer1Root("here");
 	AddLayer1Root("now");
-	AddLayer1Root("someone");
+	AddLayer0Root("someone");
 	AddLayer1Root("who");
 	AddLayer1Root("whom");
 	AddLayer1Root("after");
