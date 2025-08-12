@@ -44,6 +44,46 @@ var j = 0;
 var a = ("A B C D E F GH IJK LM NO P QR S T UVWXYZ").split(" ");
 
 
+/*function loadDoc_() { 
+  const xhttp = new XMLHttpRequest(); 
+  xhttp.onload = function() {
+
+    var hr = this.responseText.split('<hr/>');
+    hr[0] = "";
+    hr[hr.length-1] = "";
+    hr[hr.length-2] = "";
+
+    document.querySelector('#test').innerHTML = hr.join('\n\n').replace(/\<\/div>/g, '\<\/div>•');
+    document.querySelector('#test').innerHTML = document.querySelector('#test').innerText.replace(/\s\s+/g, '\n').replace(/•/g, '').replace(/\d+-\d+\.\s/g, '').replace(/\[.+\]\n/g, '');
+
+    var arr = document.querySelector('#test').innerText.split('\n\n');
+    var json = {};
+
+    for (var i=0; i<arr.length; i++) {
+      var item = arr[i].split('.\n[');
+      if (item.length > 1) {
+        json[item[0].trim()] = '[' + item[1].trim();
+      }
+    }
+    document.querySelector('#new').innerText += JSON.stringify(json)+',\n';
+
+    j++;
+    if (a[j]) {loadDoc();} else {j=0; n++; if (n<=12) {loadDoc();}}
+  };
+
+  xhttp.open("GET", "https://script.google.com/macros/s/AKfycbz5br4wnfSGtucWKwGQq1Tb07eshJez6uVaFatn4xJAc_rcrcA/exec?a=proxy&q=https://learnthesewordsfirst.com/Lesson-"+n+a[j]+".html");
+  xhttp.send();
+}
+
+
+var j = 0;
+var n = 3;
+var a = ("A B C D E F G H").split(" ");
+
+loadDoc_();
+*/
+
+
 addEventListener('load', function(e) {
   //loadDoc();
 
