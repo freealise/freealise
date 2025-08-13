@@ -93,7 +93,7 @@ function CheckVocabulary()
 		var oOutput = document.getElementById("Output");
 		oOutput.innerHTML = GenerateOutput();
 		
-		alert(primes);
+		oOutput.innerHTML += '<hr/>' + primes;
 	}
 	catch (oError)
 	{
