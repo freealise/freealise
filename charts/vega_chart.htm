@@ -176,6 +176,25 @@
           "ellipsis": {"value": " "}
         }
       }
+    },
+    {
+      "type": "symbol",
+      "name": "arrows",
+      "zindex": 1,
+      "from": {"data": "links"},
+      "encode": {
+        "update": {
+          "shape": {"value": "triangle"},
+          "angle": {"signal": "-datum.angle2-90"},
+          "x": {"signal": "datum.arrowX"},
+          "y": {"signal": "datum.arrowY"},
+          "text": {"signal": "'▲'"},
+          "fill": {
+            "signal": "datum.datum.source.index!=nodeHover.id && datum.datum.target.index!=nodeHover.id ? '#929399':merge(hsl(scale('color', datum.datum.source.group)), {l:0.64})"
+          },
+          "size": {"signal": "nodeRadius==1?0:60"}
+        }
+      }
     }
             ]
             }
