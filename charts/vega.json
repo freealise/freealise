@@ -1,0 +1,5 @@
+{
+"nodes":[{"name":"DET","group":0,"index":0},{"name":"NOUN","group":1,"index":1},{"name":"VERB","group":2,"index":2},{"name":"ADJ","group":3,"index":3},{"name":"ADV","group":4,"index":4},{"name":"ADP","group":5,"index":5},{"name":"PRON","group":6,"index":6},{"name":"PRT","group":7,"index":7},{"name":"CONJ","group":8,"index":8},{"name":"NUM","group":9,"index":9}],
+
+"links":[{"source":1,"target":0,"value":1},{"source":2,"target":0,"value":1},{"source":3,"target":0,"value":1},{"source":4,"target":0,"value":1},{"source":5,"target":0,"value":1},{"source":6,"target":0,"value":1},{"source":7,"target":0,"value":1},{"source":8,"target":0,"value":1},{"source":9,"target":0,"value":1}]
+}
