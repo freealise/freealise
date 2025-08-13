@@ -176,25 +176,6 @@
           "ellipsis": {"value": " "}
         }
       }
-    },
-    {
-      "type": "symbol",
-      "name": "arrows",
-      "zindex": 1,
-      "from": {"data": "link-data"},
-      "encode": {
-        "update": {
-          "shape": {"value": "triangle"},
-          "angle": {"signal": "-datum.angle2-90"},
-          "x": {"signal": "datum.arrowX"},
-          "y": {"signal": "datum.arrowY"},
-          "text": {"signal": "'▲'"},
-          "fill": {
-            "signal": "'gray'"
-          },
-          "size": {"signal": "nodeRadius==1?0:60"}
-        }
-      }
     }
             ]
             }
