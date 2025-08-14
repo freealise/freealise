@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {packages:['wordtree']});
+      google.charts.setOnLoadCallback(drawChart);
+
+// https://developers.google.com/chart/interactive/docs/gallery/wordtree
+// 4_ADJ_,6_ADP_,5_ADV_,9_CONJ_,1_DET_,2_NOUN_,10_NUM_,7_PRON_,8_PRT_,3_VERB_
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable(
+          [ ['phrase', 'size', 'value'],
+['x VERB see saw seen', 1, 1],
+['x NOUN thing', 1, 1],
+['x NOUN something', 1, 1],
+['x PRON what', 1, 1],
+['x DET this these', 1, 1],
+['x DET other', 1, 1],
+['x DET another', 1, 1],
+['x ADV else', 1, 1],
+['x DET same', 1, 1],
+['x VERB be am are is being was were been', 1, 1],
+['x CONJ as', 1, 1],
+['x NUM one', 1, 1],
+['x NUM two', 1, 1],
+['x NOUN person people', 1, 1],
+['x ADJ many', 1, 1],
+['x ADJ much', 1, 1],
+['x ADP inside', 1, 1],
+['x PRT not', 1, 1],
+['x ADJ some', 1, 1],
+['x ADJ all', 1, 1],
+['x ADP there', 1, 1],
+['x ADJ more', 1, 1],
+['x CONJ than', 1, 1],
+['x VERB live', 1, 1],
+['x ADJ alive', 1, 1],
+['x ADJ big', 1, 1],
+['x ADJ small', 1, 1],
+['x PRT very', 1, 1],
+['x NOUN kind', 1, 1],
+['x CONJ if', 1, 1],
+['x VERB touch', 1, 1],
+['x ADP far', 1, 1],
+['x ADP near', 1, 1],
+['x NOUN place', 1, 1],
+['x ADP someplace', 1, 1],
+['x CONJ where', 1, 1],
+['x CONJ in', 1, 1],
+['x ADP above', 1, 1],
+['x NOUN side', 1, 1],
+['x CONJ on', 1, 1],
+['x VERB hear heard', 1, 1],
+['x VERB say said', 1, 1],
+['x CONJ about', 1, 1],
+['x NOUN word', 1, 1],
+['x ADJ true', 10, 10],
+['x CONJ like', 1, 1],
+['x VERB have has had', 1, 1],
+['x VERB belong', 1, 1],
+['x NOUN part', 1, 1],
+['x CONJ of', 1, 1],
+['x VERB do does doing did done', 1, 1],
+['x CONJ with', 1, 1],
+['x VERB happen', 1, 1],
+['x CONJ because', 1, 1],
+['x VERB think thought', 1, 1],
+['x VERB know knew known', 1, 1],
+['x VERB want', 1, 1],
+['x VERB can could', 1, 1],
+['x VERB cannot', 1, 1],
+['x ADJ bad', 1, 1],
+['x ADJ good', 1, 1],
+['x ADJ well', 1, 1],
+['x VERB feel felt feeling', 1, 1],
+['x NOUN time', 1, 1],
+['x CONJ when', 1, 1],
+['x CONJ at', 1, 1],
+['x CONJ before', 1, 1],
+['x ADJ short', 1, 1],
+['x VERB move', 1, 1],
+['x CONJ to', 1, 1],
+['x PRON I', 1, 1],
+['x PRON me', 1, 1],
+['x PRON you', 1, 1],
+['x ADV here', 1, 1],
+['x ADV now', 1, 1],
+['x NOUN someone', 1, 1],
+['x CONJ who', 1, 1],
+['x CONJ whom', 1, 1],
+['x CONJ after', 1, 1],
+['x CONJ for', 1, 1],
+['x NOUN moment', 1, 1],
+['x NOUN body', 1, 1],
+['x VERB die dying', 1, 1],
+['x ADJ dead', 1, 1],
+['x PRT maybe', 1, 1],
+['x ADP below', 1, 1],
+          ]
+        );
+
+        var root = document.getElementById('root').value;
+        var options = {
+          width: 1024,
+          height: 1024,
+          fontName: 'monospace',
+          colors: ['darkgray', 'gray', 'black'],
+          wordtree: {
+            format: 'implicit',
+            type: 'double',
+            word: root
+          }
+        };
+
+        var chart = new google.visualization.WordTree(document.getElementById('wordtree_basic'));
+
+        chart.draw(data, options);
+        document.getElementById('go').onclick = drawChart;
+
+        resetColors();
+      }
+
+
+      var sel = {};
+
+      function resetColors() {
+        var paths = document.getElementById('wordtree_basic').getElementsByTagName('path');
+        for (var i=0; i<paths.length; i++) {
+          paths[i].setAttribute('fill', '#f0f0f0');
+        }
+
+        var txt = document.getElementById('wordtree_basic').getElementsByTagName('text');
+        for (var i=0; i<txt.length; i++) {
+          if (txt[i].textContent == 'ADJ') {
+            txt[i].setAttribute('fill', '#0000ff');
+          }
+          if (sel[txt[i].textContent]) {
+            txt[i].setAttribute('stroke-width', '1');
+            txt[i].setAttribute('stroke', txt[i].getAttribute('fill'));
+          }
+
+          txt[i].setAttribute('onpointerdown', 'selectWord(this,event)');
+          txt[i].setAttribute('onpointerup', 'selectWord(this,event)');
+          
+        }
+        document.getElementById('svg').innerText = document.getElementById('wordtree_basic').innerHTML;
+      }
+
+
+      var x = 0, y = 0;
+      var md = false;
+
+      function selectWord(et, evt) {
+        if (md===false || (parseInt(evt.clientX)==x && parseInt(evt.clientY)==y)){
+
+          if (sel[et.textContent] === true) {
+            delete sel[et.textContent];
+
+            et.setAttribute('stroke-width', '0');
+            et.setAttribute('stroke', 'none');
+          } else {
+            sel[et.textContent] = true;
+
+            et.setAttribute('stroke-width', '1');
+            et.setAttribute('stroke', et.getAttribute('fill'));
+          }
+        }
+        document.getElementById('status').innerText = JSON.stringify(sel);
+        x = parseInt(evt.clientX);
+        y = parseInt(evt.clientY);
+        md = !md;
+      }
+    </script>
+  </head>
+  <body>
+    <label for="root">Word:</label> <input value="x" id=
+  "root"><input type="button" value="go" id="go">
+    <div onclick='resetColors()' id="wordtree_basic" style="width: 1024px; height: 1024px;"></div>
+    <textarea id='status'></textarea>
+    <textarea cols=100 rows=25 id='svg'></textarea>
+  </body>
+</html>
