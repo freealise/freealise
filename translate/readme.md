@@ -19,7 +19,7 @@ https://www.calligraphr.com/en/webapp/app_home/?/templates
   
 🕯 learn Hebrew efficiently (clarify method for any language), make parser  
 'Maiden Zion' (representing language) is to write for you = as you think a certain better way in English, so in Hebrew  
-Singing is a key to fluency, not a 'special' form of speech  
+Singing is a key to fluency (and meditation), not a 'special' form of speech  
   
   
 https://en.wikipedia.org/wiki/Vera_F._Birkenbihl#Birkenbihl's_learning_methods
