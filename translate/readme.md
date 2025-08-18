@@ -25,7 +25,7 @@ Singing is a key to fluency (and meditation), not a 'special' form of speech
 https://en.wikipedia.org/wiki/Vera_F._Birkenbihl#Birkenbihl's_learning_methods
   
 - "Decoding": Work on the foreign text through a word-by-word translation, so you get used to the foreign syntax.
-p- Passive listening to the foreign text in everyday life while doing other activities.
+- Passive listening to the foreign text in everyday life while doing other activities.
 - Speaking – reading – writing, depending on the pursued learning objective.
   
   
