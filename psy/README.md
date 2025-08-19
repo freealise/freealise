@@ -5,5 +5,5 @@ Abulafia deliberately confuses himself (his animal soul) by physical and linguis
   
 the key to avoiding singularity is spiritual development, not 'creativity' at which robots already excel greater than any people  
   
-hobby mindset = doing without becoming  
+hobby mindset = doing without becoming (not doing without pay)  
   
