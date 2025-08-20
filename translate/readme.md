@@ -21,6 +21,8 @@ https://www.calligraphr.com/en/webapp/app_home/?/templates
 'Maiden Zion' (representing language) is to write for you = as you think a certain better way in English, so in Hebrew  
 Singing is a key to fluency (and meditation), not a 'special' form of speech  
   
+Emulate AI by typing nonsense in required form and editing to acceptance.  
+  
   
 https://en.wikipedia.org/wiki/Vera_F._Birkenbihl#Birkenbihl's_learning_methods
   
