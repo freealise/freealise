@@ -12,7 +12,7 @@
 
 - grown-up Pippi's pirate ship crashes on the shore of Antarctica  
 
-- teenager obeys parents advice and repeatedly gets in trouble (comedy)
+- teenager obeys parents advice and repeatedly gets in trouble (comedy) - 'Loserville College of Trial and Error' ?
 
 - Mary Poppins is a Jew in disguise  
   
