@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width" />
+  <title>compounding_interest</title>
+  <link rel="stylesheet" href="style.css" />
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+<body>
+
+<!-- https://www.structx.com/annual_compound_interest_with_contributions.html -->
+
+
+<!--Calculator------------------------->
+      <div class="resourcesection" align="center">
+        <!------------------------------------->
+        <!------------------------------------->
+        <table class="CalcContainer">
+          <tr>
+            <th>Calculator Input</th>
+            <th>Output</th>
+          </tr>
+          <tr>
+            <td>
+              <!------------------------------------->
+              <table class="form">
+                <tr style="background-color:transparent;">
+                  <td class="form">Principal Investment, P</td>
+                  <td class="form"><input oninput="calculate();"
+                  class="form" type="text" id="P" name="Principal"
+                  maxlength="10" size="12" value="850"></td>
+                  <td class="form" id="unit1">$</td>
+                </tr>
+                <tr style="background-color:transparent;">
+                  <td class="form">Monthly Contributions, PMT</td>
+                  <td class="form"><input oninput="calculate();"
+                  class="form" type="text" id="PMT" name="Cont"
+                  maxlength="10" size="12" value="850"></td>
+                  <td class="form" id="unit2">$</td>
+                </tr>
+                <tr style="background-color:transparent;">
+                  <td class="form">Annual Interest Rate, r<br/>
+                  Inflation Rate, inf</td>
+                  <td class="form"><input oninput="calculate();"
+                  class="form" type="text" id="r" name="Interest"
+                  maxlength="10" size="12" value="12"><br/>
+                  <input oninput="calculate();"
+                  class="form" type="text" id="inf" name="Inflation"
+                  maxlength="10" size="12" value="3"></td>
+                  <td class="form" id="unit3">%</td>
+                </tr>
+                <tr style="background-color:transparent;">
+                  <td class="form">Compounds per Year, n</td>
+                  <td class="form"><input oninput="calculate();"
+                  class="form" type="text" id="n" name="Count"
+                  maxlength="10" size="12" value="12"></td>
+                  <td class="form" id="unit4"></td>
+                </tr>
+                <tr style="background-color:transparent;">
+                  <td class="form">Number of Years, t</td>
+                  <td class="form"><input oninput="calculate();"
+                  class="form" type="text" id="t" name="Time"
+                  maxlength="10" size="12" value="10"></td>
+                  <td class="form" id="unit5"></td>
+                </tr>
+              </table><!------------------------------------->
+            </td>
+            <td>
+              <!------------------------------------->
+              <table class="form">
+                <tr style="background-color:transparent;">
+                  <td class="form">Future Value:</td>
+                  <td class="form2" id="id01" style=
+                  "width:8em; text-align:right; background-color:white; border-width:1px;">
+                  </td>
+                  <td class="form" id="unit30">$</td>
+                </tr>
+                <tr style="background-color:transparent;">
+                  <td class="form">Total Contributions:</td>
+                  <td class="form2" id="id02" style=
+                  "width:8em; text-align:right; background-color:white; border-width:1px;">
+                  </td>
+                  <td class="form" id="unit31">$</td>
+                </tr>
+                <tr style="background-color:transparent;">
+                  <td class="form">Interest on Principal:</td>
+                  <td class="form2" id="id03" style=
+                  "width:8em; text-align:right; background-color:white; border-width:1px;">
+                  </td>
+                  <td class="form" id="unit32">$</td>
+                </tr>
+                <tr style="background-color:transparent;">
+                  <td class="form">Interest on Contributions:</td>
+                  <td class="form2" id="id04" style=
+                  "width:8em; text-align:right; background-color:white; border-width:1px;">
+                  </td>
+                  <td class="form" id="unit33">$</td>
+                </tr>
+                <tr style="background-color:transparent;">
+                  <td class="form">Total Interest:</td>
+                  <td class="form2" id="id05" style=
+                  "width:8em; text-align:right; background-color:white; border-width:1px;">
+                  </td>
+                  <td class="form" id="unit34">%</td>
+                </tr>
+              </table><!------------------------------------->
+            </td>
+          </tr>
+        </table><br>
+        <!------------------------------------->
+        <div id="curve_chart" style="width: 900px; height: 500px"></div>
+        <!------------------------------------->
+        <!------------------------------------->
+        <!--Calculator------------------------->
+        <div style="float: left;">
+<pre>
+                            nt    
+              nt   (1 + r/n)   - 1
+A = P(1 + r/n)   + ---------------
+                        (r/n)     
+</pre>
+        </div>
+        <p style="margin-left:20em;">The concept of compound
+        interest is that rather than having the interest added only
+        once at the end, the interest is added periodically back
+        onto the principal sum so that future interest is earned on
+        the added interest during the next compounding period. The
+        above calculator also includes the equation to determine
+        the future value of a series of monthly contributions to
+        the investment - that is, on top of the principal
+        investment amount, an additional monthly contribution is
+        added by the investor.</p>
+      </div>
+      <div class="resourcesection">
+        <!--Resources Page Title-->
+        <div class="title">
+          <h1>Notation and Units</h1>
+        </div><!--End Resources Page Title-->
+        <h2 style="margin-bottom:0; padding-top:1em">Financial
+        Assessment</h2>
+        <p>the compound interest formula above assumes that the
+        interest calculation occurs before the regular deposit is
+        added on and does not account for all mathematical and
+        financial theory limitations. The financial calculators
+        have been provided with educational purposes in mind and
+        should be used accordingly. As with all calculations care
+        must be taken to keep consistent units throughout with
+        examples of units which should be adopted listed below:</p>
+        <h1 class="subheading">Notation</h1>
+        <ul class="body">
+          <li class="body">P = The principal investment (the
+          initial deposit or amount), as a dollar value</li>
+          <li class="body">PMT = The monthly repayment</li>
+          <li class="body">A = The future value of the
+          investment/loan, including interest, as a dollar
+          value</li>
+          <li class="body">r = the annual interest rate, as a
+          percent</li>
+          <li class="body">n = the number of times that interest is
+          compounded per year, e.g. 12 times per year is equivalent
+          to compounded monthly</li>
+          <li class="body">t = the number of years the money is
+          invested or borrowed for, in years</li>
+        </ul>
+      </div><!--#1 End Resources Details Section-->
+      
+  <script>
+            
+      var darray = [['Year', 'Value', '_']];
+
+      const minute = 1000 * 60;
+      const hour = minute * 60;
+      const day = hour * 24;
+      const year = day * 365;
+
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(selectUnit);
+
+      function drawChart(darray) {
+        var data = google.visualization.arrayToDataTable(darray);
+
+        var options = {
+          title: 'Compounding Interest',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+
+
+
+        function selectUnit(n) {
+          var Metric = {
+            valueM1:"$",
+            valueM2:"%",
+
+          };
+
+          document.getElementById("unit1").innerHTML = Metric.valueM1;
+          document.getElementById("unit2").innerHTML = Metric.valueM1;
+          document.getElementById("unit3").innerHTML = Metric.valueM2;
+          document.getElementById("unit30").innerHTML = Metric.valueM1;
+          document.getElementById("unit31").innerHTML = Metric.valueM1;
+          document.getElementById("unit32").innerHTML = Metric.valueM1;
+          document.getElementById("unit33").innerHTML = Metric.valueM1;
+          document.getElementById("unit34").innerHTML = Metric.valueM2;
+
+          calculate();
+
+        }
+
+        function calculate() {
+        var P = parseFloat(document.getElementById("P").value);
+        var PMT = parseFloat(document.getElementById("PMT").value);
+        var r = parseFloat(document.getElementById("r").value);
+        var inf = parseFloat(document.getElementById("inf").value);
+        var n = parseFloat(document.getElementById("n").value);
+        var t = parseFloat(document.getElementById("t").value);
+
+        
+        if (P<0) { P=0; document.getElementById("P").value = P; }
+        
+        if (PMT<0) { PMT=0; document.getElementById("PMT").value = PMT; }
+        
+        if (r<0) { r=0; document.getElementById("r").value = r; }
+
+        if (inf>0) { inf=0; document.getElementById("inf").value = inf; }
+        
+        if (n<1) { n=1; document.getElementById("n").value = n; }
+        
+        if (t<0) { t=0; document.getElementById("t").value = t; }
+        
+
+        r = r - inf;
+        var temp = t;
+        
+        darray = [['Year', 'Value', '_']];
+
+        for (t=0; t<=temp; t+=1/n) {
+          var A = P*Math.pow(1+((r/100)/n),n*t)
+          var S = PMT*((Math.pow((1+((r/100)/n)),(n*t))-1)/((r/100)/n))
+          
+          var dt = new Date(Date.now() + t*year);
+          var yr = dt.getFullYear();
+          var mn = dt.getMonth()+1;
+
+          darray.push([yr+' '+mn, (A+S), 0.0]);
+        }
+        t = temp;
+
+        document.getElementById("id01").innerHTML = (A+S).toFixed(2);
+        document.getElementById("id02").innerHTML = (PMT*t*12).toFixed(2);
+        document.getElementById("id03").innerHTML = (A-P).toFixed(2);
+        document.getElementById("id04").innerHTML = (S-(PMT*t*12)).toFixed(2);
+        document.getElementById("id05").innerHTML = ((((A-P)+(S-(PMT*t*12)))/(A+S))*100).toFixed(2);
+
+        drawChart(darray);
+
+        }
+
+  </script>
+</body>
+</html>
