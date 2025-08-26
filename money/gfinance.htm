@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width" />
+  <title>gfinance</title>
+</head>
+<body>
+  <h1>gfinance</h1>
+  <div id="test"></div>
+
+<!-- 
+  gfinance  https://support.google.com/docs/answer/3093281
+  sparkline https://support.google.com/docs/answer/3093289
+  
+  share https://docs.google.com/spreadsheets/d/1v1KixmY4ZWpXEWBTJTScynMhOhlN08_R0Q2V94ebHtw/edit?usp=sharing
+  data  https://docs.google.com/spreadsheets/d/1v1KixmY4ZWpXEWBTJTScynMhOhlN08_R0Q2V94ebHtw/gviz/tq?tqx=out:csv&sheet=Sheet1&range=A2:F
+
+  yahoo https://script.google.com/macros/s/AKfycbz5br4wnfSGtucWKwGQq1Tb07eshJez6uVaFatn4xJAc_rcrcA/exec?a=proxy&q=https://query1.finance.yahoo.com/v8/finance/chart/GC=F?period1=946684800&period2=1725667200&interval=1d&events=history
+        https://script.google.com/macros/s/AKfycbz5br4wnfSGtucWKwGQq1Tb07eshJez6uVaFatn4xJAc_rcrcA/exec?a=proxy&q=https://query2.finance.yahoo.com/v8/finance/chart/GC=F?period1=946684800&period2=1725667200&interval=1d&events=history
+        
+        https://query2.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(symbolText)}?period1=${startDateNum}&period2=${endDateNum}&interval=1d&events=${dividend?'div':'events'}&includeAdjustedClose=true
+
+
+! don't leave trades open over weekend  
+
+$ Rich Dad international nonprofit (university) ? affiliate marketing  
+$ Train AI on historic data of USD/eur (how much of it is habitual and incidental) 10 am market opens  
+$ leverage and stop loss on fiat currency  
+
+📈♾ compounding is reinvestment of profits from borrowed money which are greater than cost  
+
+https://www.interactivebrokers.com/en/trading/ib-api.php  
+-->
+
+<iframe width="100%" height="320" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1v1KixmY4ZWpXEWBTJTScynMhOhlN08_R0Q2V94ebHtw/gviz/tq?tqx=out:csv&sheet=Sheet1&range=A2:F"></iframe>
+
+  <script>
+
+  var xhttp = new XMLHttpRequest();
+  xhttp.responseType = 'text';
+  xhttp.overrideMimeType("text/plain");
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+       // Typical action to be performed when the document is ready:
+       document.write(xhttp.responseText);
+    }
+  };
+  xhttp.open("GET", "https://docs.google.com/spreadsheets/d/1v1KixmY4ZWpXEWBTJTScynMhOhlN08_R0Q2V94ebHtw/gviz/tq?tqx=out:csv&sheet=Sheet1&range=A2:F", true);
+  xhttp.send();
+
+  </script>
+</body>
+</html>
