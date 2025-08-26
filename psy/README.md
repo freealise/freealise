@@ -7,3 +7,8 @@ the key to avoiding singularity is spiritual development, not 'creativity' at wh
   
 hobby mindset = doing without becoming (not doing without pay)  
   
+  
+candle and no electric light | electronics (+siesta ?) -> biphasic night sleep ?
+
+guitar is held against 2nd chkr (belly button) - cure IBS ?  
+stand on one foot for exercise; use the left and right side of brain and body at the same time (cross-crawl dance, outdoor activities, traditional crafts, design or natural puzzles)  
