@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width" />
+  <title>compounding_interest</title>
+  <link rel="stylesheet" href="style.css" />
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+<body>
+
+<!-- https://www.structx.com/annual_compound_interest_with_contributions.html -->
+
+
+<!--Calculator------------------------->
+      <div class="resourcesection" align="center">
+        <!------------------------------------->
+        <!------------------------------------->
+        <table class="CalcContainer">
+          <tr>
+            <th>Calculator Input</th>
+            <th>Output</th>
+          </tr>
+          <tr>
+            <td>
+              <!------------------------------------->
+              <table class="form">
+                <tr style="background-color:transparent;">
+                  <td class="form">Principal Investment, P</td>
+                  <td class="form"><input oninput="calculate();"
+                  class="form" type="text" id="P" name="Principal"
+                  maxlength="10" size="12" value="850"></td>
+                  <td class="form" id="unit1">$</td>
+                </tr>
+                <tr style="background-color:transparent;">
+                  <td class="form">Monthly Contributions, PMT</td>
+                  <td class="form"><input oninput="calculate();"
+                  class="form" type="text" id="PMT" name="Cont"
+                  maxlength="10" size="12" value="850"></td>
+                  <td class="form" id="unit2">$</td>
+                </tr>
+                <tr style="background-color:transparent;">
+                  <td class="form">Annual Interest Rate, r<br/>
+                  Inflation Rate, inf</td>
+                  <td class="form"><input oninput="calculate();"
+                  class="form" type="text" id="r" name="Interest"
+                  maxlength="10" size="12" value="12"><br/>
+                  <input oninput="calculate();"
+                  class="form" type="text" id="inf" name="Inflation"
+                  maxlength="10" size="12" value="3"></td>
+                  <td class="form" id="unit3">%</td>
+                </tr>
+                <tr style="background-color:transparent;">
+                  <td class="form">Compounds per Year, n</td>
+                  <td class="form"><input oninput="calculate();"
+                  class="form" type="text" id="n" name="Count"
+                  maxlength="10" size="12" value="12"></td>
+                  <td class="form" id="unit4"></td>
+                </tr>
+                <tr style="background-color:transparent;">
+                  <td class="form">Number of Years, t</td>
+                  <td class="form"><input oninput="calculate();"
+                  class="form" type="text" id="t" name="Time"
+                  maxlength="10" size="12" value="10"></td>
+                  <td class="form" id="unit5"></td>
+                </tr>
+              </table><!------------------------------------->
+            </td>
+            <td>
+              <!------------------------------------->
+              <table class="form">
+                <tr style="background-color:transparent;">
+                  <td class="form">Future Value:</td>
+                  <td class="form2" id="id01" style=
+                  "width:8em; text-align:right; background-color:white; border-width:1px;">
+                  </td>
+                  <td class="form" id="unit30">$</td>
+                </tr>
+                <tr style="background-color:transparent;">
+                  <td class="form">Total Contributions:</td>
+                  <td class="form2" id="id02" style=
+                  "width:8em; text-align:right; background-color:white; border-width:1px;">
+                  </td>
+                  <td class="form" id="unit31">$</td>
+                </tr>
+                <tr style="background-color:transparent;">
+                  <td class="form">Interest on Principal:</td>
+                  <td class="form2" id="id03" style=
+                  "width:8em; text-align:right; background-color:white; border-width:1px;">
+                  </td>
+                  <td class="form" id="unit32">$</td>
+                </tr>
+                <tr style="background-color:transparent;">
+                  <td class="form">Interest on Contributions:</td>
+                  <td class="form2" id="id04" style=
+                  "width:8em; text-align:right; background-color:white; border-width:1px;">
+                  </td>
+                  <td class="form" id="unit33">$</td>
+                </tr>
+                <tr style="background-color:transparent;">
+                  <td class="form">Total Interest:</td>
+                  <td class="form2" id="id05" style=
+                  "width:8em; text-align:right; background-color:white; border-width:1px;">
+                  </td>
+                  <td class="form" id="unit34">%</td>
+                </tr>
+              </table><!------------------------------------->
+            </td>
+          </tr>
+        </table><br>
+        <!------------------------------------->
+        <div id="curve_chart" style="width: 900px; height: 500px"></div>
+        <!------------------------------------->
+        <!------------------------------------->
+        <!--Calculator------------------------->
+        <div style=
+        "float: left; padding-right:1em; padding-top:2em;">
+        <img src="data:image/png;base64,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" /></div>
+        <h3 style="padding-bottom:1em; margin-left:5em;"></h3>
+        <p style="margin-left:20em;">The concept of compound
+        interest is that rather than having the interest added only
+        once at the end, the interest is added periodically back
+        onto the principal sum so that future interest is earned on
+        the added interest during the next compounding period. The
+        above calculator also includes the equation to determine
+        the future value of a series of monthly contributions to
+        the investment - that is, on top of the principal
+        investment amount, an additional monthly contribution is
+        added by the investor.</p>
+      </div>
+      <div class="resourcesection">
+        <!--Resources Page Title-->
+        <div class="title">
+          <h1>Notation and Units</h1>
+        </div><!--End Resources Page Title-->
+        <h2 style="margin-bottom:0; padding-top:1em">Financial
+        Assessment</h2>
+        <p>the compound interest formula above assumes that the
+        interest calculation occurs before the regular deposit is
+        added on and does not account for all mathematical and
+        financial theory limitations. The financial calculators
+        have been provided with educational purposes in mind and
+        should be used accordingly. As with all calculations care
+        must be taken to keep consistent units throughout with
+        examples of units which should be adopted listed below:</p>
+        <h1 class="subheading">Notation</h1>
+        <ul class="body">
+          <li class="body">P = The principal investment (the
+          initial deposit or amount), as a dollar value</li>
+          <li class="body">PMT = The monthly repayment</li>
+          <li class="body">A = The future value of the
+          investment/loan, including interest, as a dollar
+          value</li>
+          <li class="body">r = the annual interest rate, as a
+          percent</li>
+          <li class="body">n = the number of times that interest is
+          compounded per year, e.g. 12 times per year is equivalent
+          to compounded monthly</li>
+          <li class="body">t = the number of years the money is
+          invested or borrowed for, in years</li>
+        </ul>
+      </div><!--#1 End Resources Details Section-->
+      
+  <script>
+            
+      var darray = [['Year', 'Value', '_']];
+
+      const minute = 1000 * 60;
+      const hour = minute * 60;
+      const day = hour * 24;
+      const year = day * 365;
+
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(selectUnit);
+
+      function drawChart(darray) {
+        var data = google.visualization.arrayToDataTable(darray);
+
+        var options = {
+          title: 'Compounding Interest',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+
+
+
+        function selectUnit(n) {
+          var Metric = {
+            valueM1:"$",
+            valueM2:"%",
+
+          };
+
+          document.getElementById("unit1").innerHTML = Metric.valueM1;
+          document.getElementById("unit2").innerHTML = Metric.valueM1;
+          document.getElementById("unit3").innerHTML = Metric.valueM2;
+          document.getElementById("unit30").innerHTML = Metric.valueM1;
+          document.getElementById("unit31").innerHTML = Metric.valueM1;
+          document.getElementById("unit32").innerHTML = Metric.valueM1;
+          document.getElementById("unit33").innerHTML = Metric.valueM1;
+          document.getElementById("unit34").innerHTML = Metric.valueM2;
+
+          calculate();
+
+        }
+
+        function calculate() {
+        var P = parseFloat(document.getElementById("P").value);
+        var PMT = parseFloat(document.getElementById("PMT").value);
+        var r = parseFloat(document.getElementById("r").value);
+        var inf = parseFloat(document.getElementById("inf").value);
+        var n = parseFloat(document.getElementById("n").value);
+        var t = parseFloat(document.getElementById("t").value);
+
+        
+        if (P<0) { P=0; document.getElementById("P").value = P; }
+        
+        if (PMT<0) { PMT=0; document.getElementById("PMT").value = PMT; }
+        
+        if (r<0) { r=0; document.getElementById("r").value = r; }
+
+        if (inf>0) { inf=0; document.getElementById("inf").value = inf; }
+        
+        if (n<1) { n=1; document.getElementById("n").value = n; }
+        
+        if (t<0) { t=0; document.getElementById("t").value = t; }
+        
+
+        r = r - inf;
+        var temp = t;
+        
+        darray = [['Year', 'Value', '_']];
+
+        for (t=0; t<=temp; t+=1/n) {
+          var A = P*Math.pow(1+((r/100)/n),n*t)
+          var S = PMT*((Math.pow((1+((r/100)/n)),(n*t))-1)/((r/100)/n))
+          
+          var dt = new Date(Date.now() + t*year);
+          var yr = dt.getFullYear();
+          var mn = dt.getMonth()+1;
+
+          darray.push([yr+' '+mn, (A+S), 0.0]);
+        }
+        t = temp;
+
+        document.getElementById("id01").innerHTML = (A+S).toFixed(2);
+        document.getElementById("id02").innerHTML = (PMT*t*12).toFixed(2);
+        document.getElementById("id03").innerHTML = (A-P).toFixed(2);
+        document.getElementById("id04").innerHTML = (S-(PMT*t*12)).toFixed(2);
+        document.getElementById("id05").innerHTML = ((((A-P)+(S-(PMT*t*12)))/(A+S))*100).toFixed(2);
+
+        drawChart(darray);
+
+        }
+
+  </script>
+</body>
+</html>
