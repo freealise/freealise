@@ -14,6 +14,9 @@
     <script>
     // Define a model for linear regression. The script tag makes `tf` available
     // as a global variable.
+    
+    // use Blockly as interface
+    
     const model = tf.sequential();
     model.add(tf.layers.dense({units: 1, inputShape: [1]}));
 
