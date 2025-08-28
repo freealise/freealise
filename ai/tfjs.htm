@@ -19,7 +19,9 @@
     // adapt Brain.js toSVG (https://github.com/BrainJS/brain.js-examples/blob/main/src/rendering-svg/index.html)
     
     const model = tf.sequential();
-    model.add(tf.layers.dense({units: 1, inputShape: [1]}));
+    const denseLayer = tf.layers.dense({units: 1, inputShape: [1]});
+
+    model.add(denseLayer);
 
     model.compile({loss: 'meanSquaredError', optimizer: 'sgd'});
 
@@ -30,7 +32,10 @@
     // Train the model using the data.
     model.fit(xs, ys, {epochs: 10}).then(() => {
       // Use the model to do inference on a data point the model hasn't seen before:
-      document.getElementById('log').innerText = model.predict(tf.tensor2d([5], [1, 1])).toString();
+      const output = denseLayer.apply(tf.tensor2d([5], [1, 1]));
+      
+      document.getElementById('log').innerText += output + '\n';
+      document.getElementById('log').innerText += model.predict(tf.tensor2d([5], [1, 1])).toString();
       // Open the browser devtools to see the output
     });
     </script>
