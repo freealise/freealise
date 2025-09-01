@@ -12,3 +12,12 @@ candle and no electric light | electronics (+siesta ?) -> biphasic night sleep ?
 
 guitar is held against 2nd chkr (belly button) - cure IBS ?  
 stand on one foot for exercise; use the left and right side of brain and body at the same time (cross-crawl dance, outdoor activities, traditional crafts, design or natural puzzles)  
+  
+  
+"In all my techniques, almost all, there is a confusion". – Milton H. Erickson
+(unless confusion is the problem)
+
+1. Indirect language with embedded commands ('British English') - L
+2. Introducing ambiguity (freedom of choice and thinking) - W
+3. Using metaphors and storytelling (everyman or indirect reference, story develops before it's interpreted) while matching the experience (presupposition, realistic you-character) - E
+4. Utilization (constructive trolling) - P
