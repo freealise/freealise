@@ -12,7 +12,7 @@ hobby mindset = doing without becoming (not doing without pay)
 stand on one foot for exercise; use the left and right side of brain and body at the same time (cross-crawl dance, outdoor activities, traditional crafts, design or natural puzzles)  
   
   
-DMT may be released during mild hypoxia, for which a conscious change in breathing patterns (amplitude, frequency, phase) is required, possibly along with sensory deprivation (~paper bag on the head, eye mask, ear blockers, darkness).  
+DMT may be released during mild hypoxia, for which a conscious change in breathing patterns (amplitude, frequency, phase) is required, possibly along with sensory deprivation (~paper bag on the head, eye mask, ear blockers, darkness) or synchronized musical | physical activity.  
 candle and no electric light | electronics (sensory deprivation) -> biphasic night sleep ?  
   
   
