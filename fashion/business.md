@@ -5,4 +5,5 @@
   
 https://www.saintjavelin.com/pages/contact-us  
 monetize own clothes - how ?  
+second hand store of any household items with custom pricing and KYC  
   
