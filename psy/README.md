@@ -12,7 +12,11 @@ hobby mindset = doing without becoming (not doing without pay)
 stand on one foot for exercise; use the left and right side of brain and body at the same time (cross-crawl dance, outdoor activities, traditional crafts, design or natural puzzles)  
   
   
-DMT may be released during mild hypoxia, for which a conscious change in breathing patterns (amplitude, frequency, phase) is required, possibly along with sensory deprivation (~paper bag on the head, eye mask, ear blockers, darkness) or synchronized musical | physical activity.  
+Controlled breathing can induce sleep or increased wakefulness as a change in the brainwave patterns, for which a conscious change in breathing amplitude, frequency and phase is required, possibly along with synchronized musical or physical activity  
+and sensory deprivation (~paper bag on the head, eye mask, ear blockers, darkness).  
+  
+DMT is released in the body all the time and is required for normal brain functioning, only the amount is strongly affected by stress.  
+
 candle and no electric light | electronics (sensory deprivation) -> biphasic night sleep ?  
   
   
