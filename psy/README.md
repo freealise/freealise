@@ -20,7 +20,7 @@ https://en.wikipedia.org/wiki/Ganzfeld_effect (same with noise)
 https://en.wikipedia.org/wiki/Neurofeedback  
   
 DMT is released in the body all the time and is required for normal brain functioning, only the amount is strongly affected by stress (mostly physical) through the change in breathing, and density of air related to height (~bike uphill).  
-DMT significantly decreased the power of alpha (8-12 Hz) oscillations throughout all scalp locations, while simultaneously increasing power of delta (1-4 Hz) and gamma (30-40 Hz) oscillations.  
+DMT significantly decreases the power of alpha (8-12 Hz) oscillations throughout all scalp locations, while simultaneously increasing power of delta (1-4 Hz), theta (4-7 Hz) and gamma (30-40 Hz) oscillations, as well as brain connectivity.  
   
 candle and no electric light | electronics (darkness; sensory deprivation ?) -> melatonin (biphasic night sleep ?)  
   
