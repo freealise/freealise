@@ -17,7 +17,7 @@ and sensory deprivation (~paper bag on the head, eye mask, ear blockers, darknes
   
 DMT is released in the body all the time and is required for normal brain functioning, only the amount is strongly affected by stress.  
 
-candle and no electric light | electronics (sensory deprivation) -> biphasic night sleep ?  
+candle and no electric light | electronics (darkness; sensory deprivation ?) -> melatonin (biphasic night sleep ?)  
   
   
 "In all my techniques, almost all, there is a confusion". – Milton H. Erickson
