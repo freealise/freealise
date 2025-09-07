@@ -15,7 +15,7 @@ stand on one foot for exercise; use the left and right side of brain and body at
 Controlled breathing can induce sleep or increased wakefulness as a change in the brainwave patterns, for which a conscious change in breathing amplitude, frequency and phase is required, possibly along with synchronized musical or physical activity  
 and sensory deprivation (~paper bag on the head, eye mask, ear blockers, darkness).  
   
-DMT is released in the body all the time and is required for normal brain functioning, only the amount is strongly affected by stress.  
+DMT is released in the body all the time and is required for normal brain functioning, only the amount is strongly affected by stress (mostly physical).  
 
 candle and no electric light | electronics (darkness; sensory deprivation ?) -> melatonin (biphasic night sleep ?)  
   
