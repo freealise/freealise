@@ -17,6 +17,7 @@ https://en.wikipedia.org/wiki/Brainwave_entrainment
 https://en.wikipedia.org/wiki/Transcranial_magnetic_stimulation#Obsessive%E2%80%93compulsive_disorder_(OCD)  
 and sensory deprivation (~hammock or mattress, tallit or paper bag on the head, eye mask or kippah on the face, ear blockers, darkness - or the Dead Sea at night of new moon).  
 https://en.wikipedia.org/wiki/Ganzfeld_effect (same with noise)  
+https://en.wikipedia.org/wiki/Neurofeedback  
   
 DMT is released in the body all the time and is required for normal brain functioning, only the amount is strongly affected by stress (mostly physical) through the change in breathing, and density of air related to height (~bike uphill).  
   
