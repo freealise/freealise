@@ -26,7 +26,7 @@ DMT is released in the body all the time and is required for normal brain functi
 DMT significantly decreases the power of alpha (8-12 Hz) oscillations throughout all scalp locations, while simultaneously increasing power of delta (1-4 Hz), theta (4-7 Hz) and gamma (30-40 Hz) oscillations, as well as brain connectivity - which explains the similarity of effects to those of sensory deprivation.  
 Salts of high purity can be bought legally (https://www.google.com/search?q=dmt+salt, https://professor.nl/, https://www.scribd.com/document/655744148/Dmt-fumarate-to-freebase-1)  
   
-candle and no electric light | electronics (darkness; sensory deprivation ?) -> melatonin (biphasic night sleep ?)  
+candle and no electric light | electronics (darkness; sensory deprivation ?) -> melatonin (biphasic night sleep ? both Jews and Muslims wake up to pray)  
   
   
 "In all my techniques, almost all, there is a confusion". – Milton H. Erickson
