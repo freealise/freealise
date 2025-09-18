@@ -32,4 +32,4 @@ to separate recording into tracks: mute any part (not just the center) by propor
 for denoising average several frames, use median filter  
 combine animation with live acting ? voice obviously  
   
-script (storyboard) in ascii or google slides (like coding, least awkward)  
+script (~storyboard) in custom emoji (most like coding, least awkward)  
