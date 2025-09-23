@@ -1,4 +1,6 @@
-
+  
+- Traveling Wilburys Vol.2 (by Freealise); subsequent volumes by the 'band anyone can join'  
+  
 - future Eurovision album (#russiaIsUkraine #BelarusIsEurope #SiberiaForSale #SiberiaRemoteControl #russiaIsAColony #PietariIsFinland; Greece not believing what Americans do after it, Holy Spirit goes _through_ the son (any human), location of head of church doesn't matter - protestant Orthodoxy ?); Georgia is 'affordable Israel without war'; Czechia, Sweden ? open source music contest  
   
 - social sci-fi HP sequel with Sirius and spiritual explanation of magic  
