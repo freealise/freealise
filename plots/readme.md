@@ -1,7 +1,7 @@
   
-- Miriam Wilbury Vol.2 (by Freealise); subsequent volumes by the 'band anyone can join' ($40000)  
+- Miriam Wilbury Vol.2 (by Freealise - $40000)  
   
-- future Eurovision album (#russiaIsUkraine #BelarusIsEurope #SiberiaForSale #SiberiaRemoteControl #russiaIsAColony #PietariIsFinland; Greece not believing what Americans do after it, Holy Spirit goes _through_ the son (any human), location of head of church doesn't matter - protestant Orthodoxy ?); Georgia is 'affordable Israel without war'; Czechia, Sweden ? open source music contest (by Freealise)  
+- future Eurovision album (#russiaIsUkraine #BelarusIsEurope #SiberiaForSale #SiberiaRemoteControl #russiaIsAColony #PietariIsFinland; Greece not believing what Americans do after it, Holy Spirit goes _through_ the son (any human), location of head of church doesn't matter - protestant Orthodoxy ?); Georgia is 'affordable Israel without war'; Czechia, Sweden ? open source music contest & supergroup ('band anyone can join')  
   
 - social sci-fi HP sequel with Sirius and spiritual explanation of magic  
  (https://scifi.stackexchange.com/questions/295283/what-was-j-k-rowlings-original-plan-for-the-death-of-sirius-black, 
