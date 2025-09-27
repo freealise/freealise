@@ -1,3 +1,5 @@
+Story of the golem + box of notes -> comic book about the general idea of AI  
+  
 The golem reads all the Jewish religious books and becomes a rabbi's assistant or priest.  
 Pirate Gemma - native English speaker, deterministic and edited by advisor.  
 (gemini ai machine-learning neural-network tensorflow artificial-intelligence)  
