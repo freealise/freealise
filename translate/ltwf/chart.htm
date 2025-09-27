@@ -1,122 +1,125 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
       google.charts.load('current', {packages:['wordtree']});
       google.charts.setOnLoadCallback(drawChart);
 
 // https://developers.google.com/chart/interactive/docs/gallery/wordtree
-// 4_ADJ_,6_ADP_,5_ADV_,9_CONJ_,1_DET_,2_NOUN_,10_NUM_,7_PRON_,8_PRT_,3_VERB_
+// )4_ADJ_, @6_ADP_, }5_ADV_, &9_CONJ_, =1_DET_, ]2_NOUN_, %10_NUM_, *7_PRON_, #8_PRT_, >3_VERB_
+
+      var a = [ ['phrase', 'size', 'value', 'link'],
+['x > verb \u237F \u239A  see saw seen', 1, 1, 'A 1-01'],
+['x ] noun \u2B1A \u23CD  thing', 1, 1, 'A 1-02'],
+['x ] noun \u2B1A \u25A2  something', 1, 1, 'A 1-02'],
+['x ] noun \u2B1A \u2B1A\u0309  what', 1, 1, 'A 1-02'],
+['x = det \u2261  this these', 1, 1, 'A 1-03'],
+['x = det \u2262  other', 1, 1, 'A 1-04'],
+['x = det \u2260  another', 1, 1, 'A 1-04'],
+['x # prt \u2331  else', 1, 1, 'A 1-04'],
+['x = det \u2256  same', 1, 1, 'B 1-05'],
+['x > verb \u221E \u2022  be am are is being was were been', 1, 1, 'B 1-05'],
+['x & conj ~ \u224E  as', 1, 1, 'B 1-05'],
+['x ) adj % num \u2680  one', 1, 1, 'B 1-06'],
+['x ) adj % num \u2681  two', 1, 1, 'B 1-07'],
+['x ] noun \u25CC \u2389  person people', 1, 1, 'B 1-08'],
+['x ) adj % num \u066A  many', 1, 1, 'C 1-09'],
+['x ) adj % num \u29A6  much', 1, 1, 'C 1-09'],
+['x ) adj % num \u299F  little', 1, 1, ''],
+['x ) adj % num \u060A  few', 1, 1, ''],
+['x # prt \u2612  not', 1, 1, 'C 1-11'],
+['x ) adj % num \u0609  some', 1, 1, 'D 1-12'],
+['x ) adj % num \u2140  all', 1, 1, 'D 1-13'],
+['x @ adp \u26B2 \u2316  there', 1, 1, 'D 1-14'],
+['x ) adj \u238E +  more', 1, 1, 'D 1-15'], //\u29FD
+['x ) adj \u238E \u2AA4  than', 1, 1, 'D 1-15'],
+['x > verb \u221E \u2698  live living alive', 1, 1, 'E 1-16'],
+['x ) adj \u2300 \u235C  big', 1, 1, 'E 1-17'],
+['x ) adj \u2300 \u235B  small', 1, 1, 'E 1-18'],
+['x ) adj \u238E \u203C  very', 1, 1, 'E 1-19'],
+['x ] noun \u22D4 \u2443  kind', 1, 1, 'F 1-20'],
+['x # prt \u29BD  if', 1, 1, 'F 1-21'],
+['x # prt \u22B1  then', 1, 1, 'F 1-21'],
+['x > verb \u237F \u226C  touch', 1, 1, 'F 1-22'],
+['x @ adp \u26B2 \u22BC  far', 1, 1, 'F 1-23"'],
+['x @ adp \u26B2 \u29CB  near', 1, 1, 'F 1-24'],
+['x ] noun \u22D4 \u22B9  place', 1, 1, 'G 1-25'],
+['x @ adp \u26B2 \u2388  somewhere', 1, 1, 'G 1-25'],
+['x @ adp \u26B2 \u26B2\u0309  where', 1, 1, 'G 1-25'],
+['x & conj \u26CB  in inside', 1, 1, 'C 1-10'],
+['x @ adp \u26B2 \u2238  above', 1, 1, 'G 1-26'],
+['x ] noun \u22D4 \uFB35  side', 1, 1, 'G 1-27'],
+['x & conj \u2390  on', 1, 1, 'G 1-27'],
+['x > verb \u237F \u23E6  hear heard', 1, 1, 'H 1-28'],
+['x > verb \u263C \u2383  say said', 1, 1, 'H 1-29'],
+['x & conj ~ \u2248  about', 1, 1, 'H 1-29'],
+['x ] noun \u22D4 \u2381  word', 1, 1, 'H 1-30'],
+['x # prt \u23FB  true', 1, 1, 'H 1-31'],
+['x & conj ~ \u29C9  like', 1, 1, 'A 2-01'],
+['x > verb \u263C \u00A4  have has had', 1, 1, 'A 2-02'],
+['x > verb \u263C \u232D  belong', 1, 1, 'A 2-02'],
+['x ] noun \u22D4 \u2314  part', 1, 1, 'A 2-03'],
+['x & conj \u29C2  of', 1, 1, 'A 2-03'],
+['x > verb \u23CE \u2425  do does doing did done', 1, 1, 'B 2-04'],
+['x & conj \u26AF  with', 1, 1, 'B 2-04'],
+['x > verb \u23CE \u2311  happen', 1, 1, 'B 2-05'],
+['x # prt \u22B0  because', 1, 1, 'B 2-06'],
+['x > verb \u23E7 \u22EF  think thought thinking', 1, 1, 'C 2-07'],
+['x > verb \u23E7 \u2299  know knew known', 1, 1, 'C 2-08'],
+['x > verb \u23E7 \u238B  want', 1, 1, 'C 2-09'],
+['x > verb \u23E7 \u224D  can could cannot', 1, 1, 'C 2-10'],
+['x ) adj \u233F \u237B  bad', 1, 1, 'D 2-11'],
+['x ) adj \u233F \u23B7  good well', 1, 1, 'D 2-12'],
+['x > verb \u23E7 \u2661  feel felt feeling', 1, 1, 'D 2-13'],
+['x ] noun \u22D4 \u29D6  time', 1, 1, 'E 2-14'],
+['x @ adp \u25F7 \u25F7\u0309  when', 1, 1, 'E 2-14'],
+['x & conj \u2380  at', 1, 1, 'E 2-14'],
+['x @ adp \u25F7 \u27E3  before', 1, 1, 'E 2-15'],
+['x ) adj \u2300 \u27F7  long', 1, 1, 'E 2-16'],
+['x ) adj \u2300 \u21AD  short', 1, 1, 'E 2-17'],
+['x > verb \u23CE \u238C  move', 1, 1, 'E 2-18'],
+['x & conj \u2386  to', 1, 1, 'F 1-24'],
+['x ] noun * pron \u2369  I', 1, 1, 'F 2-19'],
+['x ] noun * pron \u2364  me', 1, 1, 'F 2-19'],
+['x ] noun * pron \u2368  you', 1, 1, 'F 2-20'],
+['x @ adp \u26B2 \u27DF  here', 1, 1, 'F 2-21'],
+['x @ adp \u25F7 \u22C8  now', 1, 1, 'F 2-22'],
+['x ] noun \u25CC \u2687  someone', 1, 1, 'G 2-23'],
+['x ] noun \u25CC \u25CC\u0309  who whom', 1, 1, 'G 2-23'],
+['x @ adp \u25F7 \u27E2  after', 1, 1, 'G 2-24'],
+['x & conj \u29C3  for', 1, 1, 'D 2-12'],
+['x ] noun \u22D4 \u27E1  moment', 1, 1, 'G 2-26'],
+['x ] noun \u22D4 \u2021  body', 1, 1, 'H 2-27'],
+['x > verb \u221E \u2A4D  die dying dead', 1, 1, 'H 2-28'],
+['x # prt \u2325  maybe', 1, 1, 'H 2-29'],
+['x @ adp \u26B2 \u2A2A  below', 1, 1, 'H 2-30'],
+          ];
 
       function drawChart() {
-        var data = google.visualization.arrayToDataTable(
-          [ ['phrase', 'size', 'value'],
-['x VERB see saw seen', 1, 1],
-['x NOUN thing', 1, 1],
-['x NOUN something', 1, 1],
-['x PRON what', 1, 1],
-['x DET this these', 1, 1],
-['x DET other', 1, 1],
-['x DET another', 1, 1],
-['x ADV else', 1, 1],
-['x DET same', 1, 1],
-['x VERB be am are is being was were been', 1, 1],
-['x CONJ as', 1, 1],
-['x NUM one', 1, 1],
-['x NUM two', 1, 1],
-['x NOUN person people', 1, 1],
-['x ADJ many', 1, 1],
-['x ADJ much', 1, 1],
-['x ADP inside', 1, 1],
-['x PRT not', 1, 1],
-['x ADJ some', 1, 1],
-['x ADJ all', 1, 1],
-['x ADP there', 1, 1],
-['x ADJ more', 1, 1],
-['x CONJ than', 1, 1],
-['x VERB live', 1, 1],
-['x ADJ alive', 1, 1],
-['x ADJ big', 1, 1],
-['x ADJ small', 1, 1],
-['x PRT very', 1, 1],
-['x NOUN kind', 1, 1],
-['x CONJ if', 1, 1],
-['x VERB touch', 1, 1],
-['x ADP far', 1, 1],
-['x ADP near', 1, 1],
-['x NOUN place', 1, 1],
-['x ADP someplace', 1, 1],
-['x CONJ where', 1, 1],
-['x CONJ in', 1, 1],
-['x ADP above', 1, 1],
-['x NOUN side', 1, 1],
-['x CONJ on', 1, 1],
-['x VERB hear heard', 1, 1],
-['x VERB say said', 1, 1],
-['x CONJ about', 1, 1],
-['x NOUN word', 1, 1],
-['x ADJ true', 10, 10],
-['x CONJ like', 1, 1],
-['x VERB have has had', 1, 1],
-['x VERB belong', 1, 1],
-['x NOUN part', 1, 1],
-['x CONJ of', 1, 1],
-['x VERB do does doing did done', 1, 1],
-['x CONJ with', 1, 1],
-['x VERB happen', 1, 1],
-['x CONJ because', 1, 1],
-['x VERB think thought', 1, 1],
-['x VERB know knew known', 1, 1],
-['x VERB want', 1, 1],
-['x VERB can could', 1, 1],
-['x VERB cannot', 1, 1],
-['x ADJ bad', 1, 1],
-['x ADJ good', 1, 1],
-['x ADJ well', 1, 1],
-['x VERB feel felt feeling', 1, 1],
-['x NOUN time', 1, 1],
-['x CONJ when', 1, 1],
-['x CONJ at', 1, 1],
-['x CONJ before', 1, 1],
-['x ADJ short', 1, 1],
-['x VERB move', 1, 1],
-['x CONJ to', 1, 1],
-['x PRON I', 1, 1],
-['x PRON me', 1, 1],
-['x PRON you', 1, 1],
-['x ADV here', 1, 1],
-['x ADV now', 1, 1],
-['x NOUN someone', 1, 1],
-['x CONJ who', 1, 1],
-['x CONJ whom', 1, 1],
-['x CONJ after', 1, 1],
-['x CONJ for', 1, 1],
-['x NOUN moment', 1, 1],
-['x NOUN body', 1, 1],
-['x VERB die dying', 1, 1],
-['x ADJ dead', 1, 1],
-['x PRT maybe', 1, 1],
-['x ADP below', 1, 1],
-          ]
-        );
+        var data = google.visualization.arrayToDataTable(a);
 
         var root = document.getElementById('root').value;
         var options = {
-          width: 1024,
+          width: 512,
           height: 1024,
           fontName: 'monospace',
           colors: ['darkgray', 'gray', 'black'],
           wordtree: {
             format: 'implicit',
-            type: 'double',
+            type: 'suffix',
             word: root
           }
         };
 
         var chart = new google.visualization.WordTree(document.getElementById('wordtree_basic'));
 
-        chart.draw(data, options);
+        var view = new google.visualization.DataView(data);
+        view.setColumns([0,1,2]);
+        chart.draw(view, options); //data
+
         document.getElementById('go').onclick = drawChart;
 
         resetColors();
@@ -141,11 +144,14 @@
             txt[i].setAttribute('stroke', txt[i].getAttribute('fill'));
           }
 
-          txt[i].setAttribute('onpointerdown', 'selectWord(this,event)');
-          txt[i].setAttribute('onpointerup', 'selectWord(this,event)');
-          
+          txt[i].setAttribute('onclick', 'lookupWord(this, event)');
+          txt[i].setAttribute('onpointerup', 'selectWord(this, event)');
+          txt[i].setAttribute('onpointerdown', 'selectWord(this, event)');
         }
         document.getElementById('svg').innerText = document.getElementById('wordtree_basic').innerHTML;
+        document.getElementById('svg').style.display = 'none';
+
+        ltwf.style.display = 'none';
       }
 
 
@@ -172,13 +178,64 @@
         y = parseInt(evt.clientY);
         md = !md;
       }
+
+      function lookupWord(et, evt) {
+        var found = false;
+        for (var i=0; i<a.length; i++) {
+          var tmp = a[i][0].split('  ');
+          var tmp = ' ' + tmp[tmp.length-1] + ' ';
+
+          if (tmp.indexOf(' '+et.textContent+' ') >= 0) {
+            loadBasicWords(a[i][3]);
+            found = true;
+            break;
+          }
+        }
+        if (found === false) {
+          ltwf.style.display = 'none';
+        }
+      }
+
+      function loadBasicWords(q) {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            ltwf_.document.open();
+            ltwf_.document.write(this.responseText);
+            ltwf_.document.close();
+
+            ltwf.onload = function() {
+              setTimeout(function() {
+                ltwf.src = "#" + q.split(" ")[1];
+                ltwf_.document.getElementById(q.split(" ")[1]).scrollIntoView();
+                document.getElementById('root').scrollIntoView();
+              }, 40);
+            };
+
+            ltwf.style.display = 'block';
+            ltwf.blur();
+          }
+        };
+        xhttp.open("GET", url + "?a=nsm&q=" + q.replace(" ", "_"), true);
+        xhttp.send();
+      }
     </script>
   </head>
   <body>
-    <label for="root">Word:</label> <input value="x" id=
-  "root"><input type="button" value="go" id="go">
-    <div onclick='resetColors()' id="wordtree_basic" style="width: 1024px; height: 1024px;"></div>
+
+    <div style='position:absolute;z-index:1'><label for="root">Word:</label> <input value="x" id="root"><input type="button" value="go" id="go"></div>
+    
+    <div onclick='resetColors()' id="wordtree_basic" style="user-select: none; touch-action: none; width: 512px;"></div>
+    <iframe id="ltwf" style="display:none; top:100px; left:0px; width:256px; height:384px; position:absolute;" src="about:blank"></iframe>
+
     <textarea id='status'></textarea>
     <textarea cols=100 rows=25 id='svg'></textarea>
+        <script language="Javascript">
+      var ltwf = document.getElementById('ltwf');
+      ltwf_ = ltwf.contentWindow || (ltwf.contentDocument.document || ltwf.contentDocument);
+
+      var url = "https://script.google.com/macros/s/AKfycbz5br4wnfSGtucWKwGQq1Tb07eshJez6uVaFatn4xJAc_rcrcA/exec";
+
+        </script>
   </body>
 </html>
