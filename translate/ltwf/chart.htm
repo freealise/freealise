@@ -196,6 +196,7 @@
         }
       }
 
+
       function loadBasicWords(q) {
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
@@ -204,10 +205,18 @@
             ltwf_.document.write(this.responseText);
             ltwf_.document.close();
 
+            tl_.document.open();
+            tl_.document.write(this.responseText.replace('<body>', '<body>'+document.getElementById('tw').value));
+            tl_.document.close();
+
             ltwf.onload = function() {
               setTimeout(function() {
                 ltwf.src = "#" + q.split(" ")[1];
+                tl.src = "#" + q.split(" ")[1];
+
                 ltwf_.document.getElementById(q.split(" ")[1]).scrollIntoView();
+                tl_.document.getElementById(q.split(" ")[1]).scrollIntoView();
+                
                 document.getElementById('root').scrollIntoView();
               }, 40);
             };
@@ -219,6 +228,7 @@
         xhttp.open("GET", url + "?a=nsm&q=" + q.replace(" ", "_"), true);
         xhttp.send();
       }
+
     </script>
   </head>
   <body>
@@ -227,12 +237,28 @@
     
     <div onclick='resetColors()' id="wordtree_basic" style="user-select: none; touch-action: none; width: 512px;"></div>
     <iframe id="ltwf" style="display:none; top:100px; left:0px; width:256px; height:384px; position:absolute;" src="about:blank"></iframe>
+    <iframe id="tl" style="display:block; top:100px; right:0px; width:256px; height:384px; position:absolute;" src="about:blank"></iframe>
 
     <textarea id='status'></textarea>
     <textarea cols=100 rows=25 id='svg'></textarea>
+
+    <textarea id='tw' style='display:none'><div id="google_translate_element"></div>
+<script>
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+            { pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE },
+            'google_translate_element'
+        );
+    }
+</script>
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script></textarea>
+
         <script language="Javascript">
       var ltwf = document.getElementById('ltwf');
       ltwf_ = ltwf.contentWindow || (ltwf.contentDocument.document || ltwf.contentDocument);
+
+      var tl = document.getElementById('tl');
+      tl_ = tl.contentWindow || (tl.contentDocument.document || tl.contentDocument);
 
       var url = "https://script.google.com/macros/s/AKfycbz5br4wnfSGtucWKwGQq1Tb07eshJez6uVaFatn4xJAc_rcrcA/exec";
 
