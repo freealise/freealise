@@ -199,16 +199,28 @@
       }
 
 
+      function highlightWords(q) {
+        return q.replace(/[>\s]\w+[\s.,?!<]/g, function(x){
+          return x.slice(0,1)+'<span style="opacity:'+(100-Math.random()*67)+'%;">'+x.slice(1,-1)+'</span>'+x.slice(-1);
+        });
+      }
+
+
       function loadBasicWords(q) {
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
           if (this.readyState == 4 && this.status == 200) {
+            var arr = this.responseText.split('<body>');
+
+            arr[1] = highlightWords(arr[1]);
+            var res = arr[0] + '<body>' + highlightWords(arr[1]);
+
             ltwf_.document.open();
-            ltwf_.document.write(this.responseText);
+            ltwf_.document.write(res);
             ltwf_.document.close();
 
             tl_.document.open();
-            tl_.document.write(this.responseText.replace('</body>', document.getElementById('tw').value+'</body>'));
+            tl_.document.write(res.replace('</body>', document.getElementById('tw').value+'</body>'));
             tl_.document.close();
 
             ltwf.onload = function() {
