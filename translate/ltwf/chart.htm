@@ -243,7 +243,12 @@
     <textarea cols=100 rows=25 id='svg'></textarea>
 
     <textarea id='tw' style='display:none'>
-<div style="position:fixed;bottom:0;right:0;" id="google_translate_element"></div>
+<style>
+    .goog-te-banner-frame.skiptranslate {
+      display: none !important;
+    }
+</style>
+<div style="position:fixed;bottom:-16px;right:0;" id="google_translate_element"></div>
 <script>
     function googleTranslateElementInit() {
         new google.translate.TranslateElement(
