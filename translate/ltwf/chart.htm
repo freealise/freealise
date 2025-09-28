@@ -219,6 +219,9 @@
                 ltwf_.document.getElementById(q.split(" ")[1]).scrollIntoView();
                 tl_.document.getElementById(q.split(" ")[1]).scrollIntoView();
                 
+                ltwf.contentWindow.onscroll = function(e){tl.contentWindow.scrollTo(0, ltwf.contentWindow.scrollY);}
+                tl.contentWindow.onscroll = function(e){ltwf.contentWindow.scrollTo(0, tl.contentWindow.scrollY);}
+                
                 document.getElementById('root').scrollIntoView();
               }, 40);
             };
