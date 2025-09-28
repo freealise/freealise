@@ -219,10 +219,11 @@
                 ltwf_.document.getElementById(q.split(" ")[1]).scrollIntoView();
                 tl_.document.getElementById(q.split(" ")[1]).scrollIntoView();
                 
+                document.getElementById('root').scrollIntoView();
+
                 ltwf_.onscroll = function(e){tl_.scrollTo(0, ltwf_.scrollY);}
                 tl_.onscroll = function(e){ltwf_.scrollTo(0, tl_.scrollY);}
-                
-                document.getElementById('root').scrollIntoView();
+
               }, 40);
             };
 
@@ -244,8 +245,8 @@
     <div style='position:absolute;z-index:1'><label for="root">Word:</label> <input value="x" id="root"><input type="button" value="go" id="go"></div>
     
     <div onclick='resetColors()' id="wordtree_basic" style="user-select: none; touch-action: none; width: 512px;"></div>
-    <iframe id="ltwf" style="display:none; top:100px; left:0px; width:256px; height:384px; position:absolute;" src="about:blank"></iframe>
-    <iframe id="tl" style="display:none; top:100px; left:256px; width:256px; height:384px; position:absolute;" src="about:blank"></iframe>
+    <iframe id="ltwf" style="display:none; top:36px; left:0px; width:160px; height:448px; position:absolute;" src="about:blank"></iframe>
+    <iframe id="tl" style="display:none; top:36px; left:160px; width:160px; height:448px; position:absolute;" src="about:blank"></iframe>
 
     <textarea id='status'></textarea>
     <textarea cols=100 rows=25 id='svg'></textarea>
