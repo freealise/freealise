@@ -199,11 +199,9 @@
       }
 
 
-      var sub = ('⁰¹²³⁴⁵⁶⁷⁸⁹').split('');
-
       function highlightWords(q) {
         return q.replace(/[>\s]\w+[\s.,?!<]/g, function(x){
-          return x.slice(0,1)+'<span style="opacity:'+(100-Math.random()*80)+'%;">'+x.slice(1,-1)+sub[parseInt(Math.random()*10)]+'&#x200B;</span>'+x.slice(-1);
+          return x.slice(0,1)+'<span style="font-size:'+parseInt(32-Math.random()*16)+'px;opacity:'+(100-Math.random()*80)+'%;">'+x.slice(1,-1)+'&#x200B;</span>'+x.slice(-1);
         });
       }
 
