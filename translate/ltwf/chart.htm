@@ -219,8 +219,8 @@
                 ltwf_.document.getElementById(q.split(" ")[1]).scrollIntoView();
                 tl_.document.getElementById(q.split(" ")[1]).scrollIntoView();
                 
-                ltwf.contentWindow.onscroll = function(e){tl.contentWindow.scrollTo(0, ltwf.contentWindow.scrollY);}
-                tl.contentWindow.onscroll = function(e){ltwf.contentWindow.scrollTo(0, tl.contentWindow.scrollY);}
+                ltwf_.onscroll = function(e){tl_.scrollTo(0, ltwf_.scrollY);}
+                tl_.onscroll = function(e){ltwf_.scrollTo(0, tl_.scrollY);}
                 
                 document.getElementById('root').scrollIntoView();
               }, 40);
