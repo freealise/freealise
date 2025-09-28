@@ -201,7 +201,7 @@
 
       function highlightWords(q) {
         return q.replace(/[>\s]\w+[\s.,?!<]/g, function(x){
-          return x.slice(0,1)+'<span style="opacity:'+(100-Math.random()*67)+'%;">'+x.slice(1,-1)+'</span>'+x.slice(-1);
+          return x.slice(0,1)+'<span style="opacity:'+(100-Math.random()*75)+'%;">'+x.slice(1,-1)+'</span>'+x.slice(-1);
         });
       }
 
