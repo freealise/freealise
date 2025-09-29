@@ -5,7 +5,6 @@
   
 https://www.saintjavelin.com/pages/contact-us  
 monetize own clothes - how ?  
-second hand store of any household items with custom pricing and KYC (~freemarket) ??  
-embroidery machine for cross stitching on existing garments  
-make merch with slogans out of beads for promotion  
+second hand shop of household items with custom pricing & KYC (~freemarket)  
+make merch with slogans out of beads or thread or cross stitch for promotion  
   
