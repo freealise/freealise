@@ -12,5 +12,5 @@ https://linuxfoundation.eu/en/join
 https://en.wikipedia.org/wiki/List_of_Pirate_Parties  
 national ruling Pirate Party of Marie Byrd Land (ask for affiliation)  
   
-free.eu.org is against bureaucracy  
+free.eu.com is against bureaucracy  
   
