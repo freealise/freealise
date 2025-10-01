@@ -12,5 +12,5 @@ https://linuxfoundation.eu/en/join
 https://en.wikipedia.org/wiki/List_of_Pirate_Parties  
 national ruling Pirate Party of Marie Byrd Land (ask for affiliation)  
   
-free.eu.com is against bureaucracy, which is appropriate when necessary for compliance (or in a religious stucture) but beyond it a threat to survival  
+free.eu.com is against bureaucracy, which is appropriate when necessary for compliance (or in a religious structure) but beyond it a threat to survival  
   
