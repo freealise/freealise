@@ -125,7 +125,7 @@ https://en.wikipedia.org/wiki/Dead_Souls
   fp: link to form for submissions / faq, ai chat on sn / money chart (knightlabs)
       replace avatar on non-personal sn; new announcements -> google sites; github cv
       logo: serif; font: deja vu -> recursive ?
-      🐈 link to stc (https://savethecat.com/get-started, https://savethecat.com/tips-and-tactics/the-transformation-machine-one-sheet) / mckee books on google books (+widget) or archive.org (https://archive.org/search.php?query=creator%3A%22Snyder%2C+Blake%2C+1957-%22)
+      🐾 link to stc (https://savethecat.com/get-started, https://savethecat.com/tips-and-tactics/the-transformation-machine-one-sheet) / mckee books on google books (+widget) or archive.org (https://archive.org/search.php?query=creator%3A%22Snyder%2C+Blake%2C+1957-%22)
   does screen time proportion have to reflect the actual timing of story events ?
       sitemap (https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap#rss, https://developers.google.com/search/blog/2014/10/best-practices-for-xml-sitemaps-rssatom)
 
