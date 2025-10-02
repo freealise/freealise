@@ -8,7 +8,7 @@
       google.charts.load('current', {packages:['wordtree']});
       google.charts.setOnLoadCallback(drawChart);
 
-//TODO: fix translation, variable font ? add parser, check by grammar books
+//TODO: pure tags without inline css, add parser, check by grammar books
 
 // https://developers.google.com/chart/interactive/docs/gallery/wordtree
 // )4_ADJ_, @6_ADP_, }5_ADV_, &9_CONJ_, =1_DET_, ]2_NOUN_, %10_NUM_, *7_PRON_, #8_PRT_, >3_VERB_
@@ -276,10 +276,20 @@ for (var i=1; i<a.length; i++) {
           var b = '';
           var d = '';
           for (var i=0; i<parseInt(Math.random()*8); i++) {
-            b += '<small>';
-            d += '</small>';
+            b += '<span>';
+            d += '</span>';
           }
-          return x.slice(0,1)+b+x.slice(1,-1)+d+x.slice(-1);
+          x = x.slice(0,1)+b+x.slice(1,-1)+d+x.slice(-1);
+
+          var b = '';
+          var d = '';
+          for (var i=0; i<parseInt(Math.random()*8); i++) {
+            b += '<u>';
+            d += '</u>';
+          }
+          x = x.slice(0,1)+b+x.slice(1,-1)+d+x.slice(-1);
+
+          return x;
         });
       }
 
@@ -348,6 +358,14 @@ for (var i=1; i<a.length; i++) {
     }
     body {
       top: 0px !important;
+    }
+    span {
+      opacity: 80%;
+    }
+    u {
+      text-decoration: none;
+      color: #ff0000;
+      filter: hue-rotate(22.5deg);
     }
 </style>
 <div style="position:fixed;bottom:-20px;right:0;" id="google_translate_element"></div>
