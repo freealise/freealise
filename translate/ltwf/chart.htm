@@ -361,7 +361,7 @@ letter-spacing:"+parseInt(Math.random()*4-2)+"px;
             var res = arr[0] + '<body>' + highlightWords(arr[1]).replace(/<a /g, "<a target='_blank' style='text-decoration:none' ");
 
             ltwf_.document.open();
-            ltwf_.document.write(res.replace('</body>', document.getElementById('tw').value+'</body>'));
+            ltwf_.document.write(res.replace('</body>', document.getElementById('tw').value.split('<div')[0]+'</body>'));
             ltwf_.document.close();
 
             tl_.document.open();
@@ -420,7 +420,7 @@ letter-spacing:"+parseInt(Math.random()*4-2)+"px;
       opacity: 80%;
     }
     span::after {
-      content: ' ';
+      content: '` ';
     }
     u {
       text-decoration: none;
