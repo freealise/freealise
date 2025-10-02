@@ -247,7 +247,7 @@ for (var i=1; i<a.length; i++) {
       }
 
 
- /*     var cl = 0;
+      /*var cl = 0;
 
       function highlightWords_(q) {
         var style = document.createElement('style');
@@ -262,21 +262,21 @@ for (var i=1; i<a.length; i++) {
           b = b.slice(0,-1);
 
           style.innerHTML += ".c"+cl+" { 
-display:inline-block;
-rotate:"+parseInt(Math.random()*22.5-11.25)+"deg;
+//display:inline-block;
+//rotate:"+parseInt(Math.random()*22.5-11.25)+"deg;
 
 letter-spacing:"+parseInt(Math.random()*4-2)+"px;
 
-text-shadow:"+b+";
+//text-shadow:"+b+";
 
 //color:hsl("+parseInt(Math.random()*360)+",100%,10%);
 
-font-size:"+parseInt(32-Math.random()*16)+"px;
+//font-size:"+parseInt(32-Math.random()*16)+"px;
 
 //opacity:"+(100-Math.random()*80)+"%;
 
-position:relative;
-top:"+parseInt(Math.random()*8-4)+"px; }";
+//position:relative;
+//top:"+parseInt(Math.random()*8-4)+"px; }";
           cl++;
 
           return x.slice(0,1)+"<span class='c"+cl+"'>"+x.slice(1,-1)+"</span>"+x.slice(-1);
@@ -307,8 +307,40 @@ top:"+parseInt(Math.random()*8-4)+"px; }";
           var b = '';
           var d = '';
           for (var i=0; i<parseInt(Math.random()*8)+1; i++) {
-            b += '<sup>';
-            d += '</sup>';
+            b += '<s>';
+            d += '</s>';
+          }
+          x = x.slice(0,1)+b+x.slice(1,-1)+d+x.slice(-1);
+
+          var b = '';
+          var d = '';
+          for (var i=0; i<parseInt(Math.random()*8)+1; i++) {
+            b += '<small>';
+            d += '</small>';
+          }
+          x = x.slice(0,1)+b+x.slice(1,-1)+d+x.slice(-1);
+
+          var b = '';
+          var d = '';
+          for (var i=0; i<parseInt(Math.random()*8)+1; i++) {
+            b += '<i>';
+            d += '</i>';
+          }
+          x = x.slice(0,1)+b+x.slice(1,-1)+d+x.slice(-1);
+
+          var b = '';
+          var d = '';
+          for (var i=0; i<parseInt(Math.random()*8)+1; i++) {
+            b += '<em>';
+            d += '</em>';
+          }
+          x = x.slice(0,1)+b+x.slice(1,-1)+d+x.slice(-1);
+
+          var b = '';
+          var d = '';
+          for (var i=0; i<parseInt(Math.random()*8)+1; i++) {
+            b += '<b>';
+            d += '</b>';
           }
           x = x.slice(0,1)+b+x.slice(1,-1)+d+x.slice(-1);
 
@@ -393,8 +425,27 @@ top:"+parseInt(Math.random()*8-4)+"px; }";
       color: #ff0000;
       filter: hue-rotate(45deg);
     }
-    sub, sup {
-      font-size: inherit;
+    s {
+      text-decoration: none;
+      position: relative;
+      top: -0.0625em;
+    }
+    small {
+      font-size: 95%;
+    }
+    i {
+      font-style: normal;
+      display: inline-block;
+      rotate: 1deg;
+    }
+    em {
+      font-style: normal;
+      display: inline-block;
+      rotate: -1deg;
+    }
+    b {
+      font-weight: normal;
+      text-shadow: 0 0 0.5px;
     }
 </style>
 <div style="position:fixed;bottom:-20px;right:0;" id="google_translate_element"></div>
