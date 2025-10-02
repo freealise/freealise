@@ -249,7 +249,7 @@ for (var i=1; i<a.length; i++) {
 
       var cl = 0;
 
-      function highlightWords(q) {
+      function highlightWords_(q) {
         var style = document.createElement('style');
         style.type = 'text/css';
         style.innerHTML = '';
@@ -268,6 +268,19 @@ for (var i=1; i<a.length; i++) {
         });
 
         return style.outerHTML + res;  
+      }
+
+
+      function highlightWords(q) {
+        return q.replace(/[>\s\"][a-zA-Z]+[\s.,?!:<]/g, function(x){
+          var b = '';
+          var d = '';
+          for (var i=0; i<parseInt(Math.random()*8); i++) {
+            b += '<small>';
+            d += '</small>';
+          }
+          return x.slice(0,1)+b+x.slice(1,-1)+d+x.slice(-1);
+        });
       }
 
 
