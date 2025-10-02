@@ -247,7 +247,7 @@ for (var i=1; i<a.length; i++) {
       }
 
 
-      var cl = 0;
+ /*     var cl = 0;
 
       function highlightWords_(q) {
         var style = document.createElement('style');
@@ -261,21 +261,36 @@ for (var i=1; i<a.length; i++) {
           }
           b = b.slice(0,-1);
 
-          style.innerHTML += ".c"+cl+" { display:inline-block;rotate:"+parseInt(Math.random()*22.5-11.25)+"deg;letter-spacing:"+parseInt(Math.random()*4-2)+"px;text-shadow:"+b+";color:hsl("+parseInt(Math.random()*360)+",100%,10%);font-size:"+parseInt(32-Math.random()*16)+"px;opacity:"+(100-Math.random()*80)+"%;position:relative;top:"+parseInt(Math.random()*8-4)+"px; }";
+          style.innerHTML += ".c"+cl+" { 
+display:inline-block;
+rotate:"+parseInt(Math.random()*22.5-11.25)+"deg;
+
+letter-spacing:"+parseInt(Math.random()*4-2)+"px;
+
+text-shadow:"+b+";
+
+//color:hsl("+parseInt(Math.random()*360)+",100%,10%);
+
+font-size:"+parseInt(32-Math.random()*16)+"px;
+
+//opacity:"+(100-Math.random()*80)+"%;
+
+position:relative;
+top:"+parseInt(Math.random()*8-4)+"px; }";
           cl++;
 
           return x.slice(0,1)+"<span class='c"+cl+"'>"+x.slice(1,-1)+"</span>"+x.slice(-1);
         });
 
         return style.outerHTML + res;  
-      }
+      }*/
 
 
       function highlightWords(q) {
         return q.replace(/[>\s\"][a-zA-Z]+[\s.,?!:<]/g, function(x){
           var b = '';
           var d = '';
-          for (var i=0; i<parseInt(Math.random()*8); i++) {
+          for (var i=0; i<parseInt(Math.random()*8)+1; i++) {
             b += '<span>';
             d += '</span>';
           }
@@ -283,9 +298,17 @@ for (var i=1; i<a.length; i++) {
 
           var b = '';
           var d = '';
-          for (var i=0; i<parseInt(Math.random()*8); i++) {
+          for (var i=0; i<parseInt(Math.random()*8)+1; i++) {
             b += '<u>';
             d += '</u>';
+          }
+          x = x.slice(0,1)+b+x.slice(1,-1)+d+x.slice(-1);
+
+          var b = '';
+          var d = '';
+          for (var i=0; i<parseInt(Math.random()*8)+1; i++) {
+            b += '<sup>';
+            d += '</sup>';
           }
           x = x.slice(0,1)+b+x.slice(1,-1)+d+x.slice(-1);
 
@@ -304,7 +327,7 @@ for (var i=1; i<a.length; i++) {
             var res = arr[0] + '<body>' + highlightWords(arr[1]).replace(/<a /g, "<a target='_blank' style='text-decoration:none' ");
 
             ltwf_.document.open();
-            ltwf_.document.write(res);
+            ltwf_.document.write(res.replace('</body>', document.getElementById('tw').value+'</body>'));
             ltwf_.document.close();
 
             tl_.document.open();
@@ -362,10 +385,16 @@ for (var i=1; i<a.length; i++) {
     span {
       opacity: 80%;
     }
+    span::after {
+      content: ' ';
+    }
     u {
       text-decoration: none;
       color: #ff0000;
-      filter: hue-rotate(22.5deg);
+      filter: hue-rotate(45deg);
+    }
+    sub, sup {
+      font-size: inherit;
     }
 </style>
 <div style="position:fixed;bottom:-20px;right:0;" id="google_translate_element"></div>
