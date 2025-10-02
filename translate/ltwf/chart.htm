@@ -249,7 +249,7 @@ for (var i=1; i<a.length; i++) {
 
       var cl = 0;
 
-      function highlightWords(q) {
+      function highlightWords_(q) {
         var style = document.createElement('style');
         style.type = 'text/css';
         style.innerHTML = '';
@@ -271,7 +271,7 @@ for (var i=1; i<a.length; i++) {
       }
 
 
-      function highlightWords_(q) {
+      function highlightWords(q) {
         return q.replace(/[>\s\"][a-zA-Z]+[\s.,?!:<]/g, function(x){
           var b = '';
           var d = '';
