@@ -353,8 +353,8 @@ letter-spacing:"+parseInt(Math.random()*4-2)+"px;
 
 
       function splitWords(q) {
-        return q.replace(/[a-zA-Z]+</g, function(x){
-          return x.slice(0,1).toUpperCase()+x.slice(1,-1)+';<';
+        return q.replace(/>[a-zA-Z]+</g, function(x){
+          return '>•'+x.slice(1,2).toUpperCase()+x.slice(2,-1)+';<';
         });
       }
 
