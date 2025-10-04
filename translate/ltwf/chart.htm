@@ -9,7 +9,6 @@
       google.charts.setOnLoadCallback(drawChart);
 
 //TODO: add parser, check by grammar books
-//remove second iframe ?
 
 // https://developers.google.com/chart/interactive/docs/gallery/wordtree
 // )4_ADJ_, @6_ADP_, }5_ADV_, &9_CONJ_, =1_DET_, ]2_NOUN_, %10_NUM_, *7_PRON_, #8_PRT_, >3_VERB_
@@ -196,7 +195,6 @@ for (var i=1; i<a.length; i++) {
         document.getElementById('svg').style.display = 'none';
 
         ltwf.style.display = 'none';
-        tl.style.display = 'none';
       }
 
 
@@ -243,7 +241,6 @@ for (var i=1; i<a.length; i++) {
         }
         if (found === false) {
           ltwf.style.display = 'none';
-          tl.style.display = 'none';
         }
       }
 
@@ -300,8 +297,8 @@ letter-spacing:"+parseInt(Math.random()*4-2)+"px;
           var b = '';
           var d = '';
           for (var i=0; i<parseInt(Math.random()*8)+1; i++) {
-            b += '<small>';
-            d += '</small>';
+            b += '<big>';
+            d += '</big>';
           }
           x = x.slice(0,1)+b+x.slice(1,-1)+d+x.slice(-1);
 
@@ -352,8 +349,10 @@ letter-spacing:"+parseInt(Math.random()*4-2)+"px;
 
 
       function splitWords(q) {
-        return q.replace(/>[a-zA-Z]+</g, function(x){
-          return "><ruby><span class='notranslate'>"+x.slice(1,-1)+"</span><rt>"+x.slice(1,-1)+"</rt></ruby><";
+        return q.replace(/<p class='Caption'>.+<\/p>/g, function(y){
+          return y.slice(0,19) + y.slice(19,-4).replace(/>[a-zA-Z]+</g, function(x){
+            return "><ruby><span class='notranslate'>"+x.slice(1,-1)+"</span><rt>"+x.slice(1,-1)+"</rt></ruby><";
+          }) + '<br/><small>' + y.slice(19,-4) + '</small></p>';
         });
       }
 
@@ -367,37 +366,26 @@ letter-spacing:"+parseInt(Math.random()*4-2)+"px;
             arr[1] = highlightWords(arr[1]);
             var res = arr[0] + '<body>' + highlightWords(arr[1]).replace(/<a /g, "<a target='_blank' style='text-decoration:none' ");
 
-            var rs = splitWords(res);
+            res = splitWords(res);
 
             ltwf_.document.open();
-            ltwf_.document.write(rs.replace('</body>', document.getElementById('tw').value+'</body>'));
+            ltwf_.document.write(res.replace('</body>', document.getElementById('tw').value+'</body>'));
             ltwf_.document.close();
-
-            tl_.document.open();
-            tl_.document.write(res.replace('</body>', document.getElementById('tw').value+'</body>'));
-            tl_.document.close();
 
             ltwf.onload = function() {
               setTimeout(function() {
                 ltwf.src = "#" + q.split(" ")[1];
-                tl.src = "#" + q.split(" ")[1];
 
                 ltwf_.document.getElementById(q.split(" ")[1]).scrollIntoView();
-                tl_.document.getElementById(q.split(" ")[1]).scrollIntoView();
-                
                 document.getElementById('root').scrollIntoView();
 
-                ltwf_.onscroll = function(e){tl_.scrollTo(0, ltwf_.scrollY);}
-                tl_.onscroll = function(e){ltwf_.scrollTo(0, tl_.scrollY);}
+                //ltwf_.onscroll = function(e){tl_.scrollTo(0, ltwf_.scrollY);}
 
               }, 40);
             };
 
             ltwf.style.display = 'block';
-            tl.style.display = 'block';
-
             ltwf.blur();
-            tl.blur();
           }
         };
         xhttp.open("GET", url + "?a=nsm&q=" + q.replace(" ", "_"), true);
@@ -411,8 +399,7 @@ letter-spacing:"+parseInt(Math.random()*4-2)+"px;
     <div style='position:absolute;z-index:1'><label for="root">Word:</label> <input value="x" id="root"><input type="button" value="go" id="go"></div>
     
     <div onclick='resetColors()' id="wordtree_basic" style="user-select: none; width: 512px;"></div>
-    <iframe id="ltwf" style="display:none; top:36px; left:0px; width:160px; height:448px; position:absolute;" src="about:blank"></iframe>
-    <iframe id="tl" style="display:none; top:36px; left:160px; width:160px; height:448px; position:absolute;" src="about:blank"></iframe>
+    <iframe id="ltwf" style="display:none; top:36px; left:0px; width:320px; height:448px; position:absolute;" src="about:blank"></iframe>
 
     <textarea id='status'></textarea>
     <textarea cols=100 rows=25 id='svg'></textarea>
@@ -441,7 +428,7 @@ letter-spacing:"+parseInt(Math.random()*4-2)+"px;
       position: relative;
       top: -0.0625em;
     }
-    small {
+    big {
       font-size: 95%;
     }
     b {
@@ -478,9 +465,6 @@ letter-spacing:"+parseInt(Math.random()*4-2)+"px;
         <script language="Javascript">
       var ltwf = document.getElementById('ltwf');
       ltwf_ = ltwf.contentWindow || (ltwf.contentDocument.document || ltwf.contentDocument);
-
-      var tl = document.getElementById('tl');
-      tl_ = tl.contentWindow || (tl.contentDocument.document || tl.contentDocument);
 
       var url = "https://script.google.com/macros/s/AKfycbz5br4wnfSGtucWKwGQq1Tb07eshJez6uVaFatn4xJAc_rcrcA/exec";
 
