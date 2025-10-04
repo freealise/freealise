@@ -285,7 +285,7 @@ letter-spacing:"+parseInt(Math.random()*4-2)+"px;
 
 
       function highlightWords(q) {
-        return q.replace(/[>\s\"][a-zA-Z,]+[\s.?!:<]/g, function(x){
+        return q.replace(/[>\s\"][a-zA-Z\,\.\:]+[\s?!<]/g, function(x){
           var b = '';
           var d = '';
           for (var i=0; i<parseInt(Math.random()*8)+1; i++) {
@@ -350,7 +350,7 @@ letter-spacing:"+parseInt(Math.random()*4-2)+"px;
 
       function splitWords(q) {
         return q.replace(/[\[\]]/g,'').replace(/ id='Quiz'/g, " id='Quiz' class='notranslate'").replace(/<p class='(Caption|Definition)'>.+<\/p>/g, function(y){
-          return y.slice(0,y.indexOf("'>")+2) + y.slice(y.indexOf("'>")+2,-4).replace(/>[a-zA-Z,]+</g, function(x){
+          return y.slice(0,y.indexOf("'>")+2) + y.slice(y.indexOf("'>")+2,-4).replace(/>[a-zA-Z\,\.\:]+</g, function(x){
             return "><ruby><span class='notranslate'>"+x.slice(1,-1)+"</span><rt>"+x.slice(1,-1)+"</rt></ruby><";
           }) + '<p><small>' + y.slice(y.indexOf("'>")+2,-4).replace(/(<span>|<\/span>)/g,'').replace(/ class='Headword'/g,'') + '</small></p></p>';
         });
