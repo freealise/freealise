@@ -8,7 +8,7 @@
       google.charts.load('current', {packages:['wordtree']});
       google.charts.setOnLoadCallback(drawChart);
 
-//TODO: add parser, check by grammar books
+//TODO: move highlighter to separate script, add google books parser, check by grammar books
 
 // https://developers.google.com/chart/interactive/docs/gallery/wordtree
 // )4_ADJ_, @6_ADP_, }5_ADV_, &9_CONJ_, =1_DET_, ]2_NOUN_, %10_NUM_, *7_PRON_, #8_PRT_, >3_VERB_
@@ -285,7 +285,10 @@ letter-spacing:"+parseInt(Math.random()*4-2)+"px;
 
 
       function highlightWords(q) {
-        return q.replace(/[>\s\"][a-zA-Z\,\.\:]+[\s?!<]/g, function(x){
+        return q.replace(/<b class='Headword'>.+<\/b>/g, function(x){
+          return x.slice(0,x.indexOf("'>")+2) + x.slice(x.indexOf("'>")+2,-4).replace(/\s/g,'\u00A0') + "</b>";
+          
+        }).replace(/[> \"][a-zA-Z\,\.\:\u00A0]+[ ?!<]/g, function(x){
           var b = '';
           var d = '';
           for (var i=0; i<parseInt(Math.random()*8)+1; i++) {
@@ -350,7 +353,7 @@ letter-spacing:"+parseInt(Math.random()*4-2)+"px;
 
       function splitWords(q) {
         return q.replace(/[\[\]]/g,'').replace(/ id='Quiz'/g, " id='Quiz' class='notranslate'").replace(/<p class='(Caption|Definition)'>.+<\/p>/g, function(y){
-          return y.slice(0,y.indexOf("'>")+2) + y.slice(y.indexOf("'>")+2,-4).replace(/>[a-zA-Z\,\.\:]+</g, function(x){
+          return y.slice(0,y.indexOf("'>")+2) + y.slice(y.indexOf("'>")+2,-4).replace(/>[a-zA-Z\,\.\:\u00A0]+</g, function(x){
             return "><ruby><span class='notranslate'>"+x.slice(1,-1)+"</span><rt>"+x.slice(1,-1)+"</rt></ruby><";
           }) + '<p><small>' + y.slice(y.indexOf("'>")+2,-4).replace(/(<span>|<\/span>)/g,'').replace(/ class='Headword'/g,'') + '</small></p></p>';
         });
