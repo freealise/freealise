@@ -5,8 +5,9 @@ How to switch the 'editor' mode on and off without alcohol ?
 People can speak with improved fluency under hypnosis (that's what Jesus did when subjectively turning water to wine and making people act drunk)  
 (Do what Abulafia did)  
   
-Abulafia deliberately confuses himself (his animal soul) by physical and linguistic means as exercise for natural confusion of any kind (spiritual or mundane) so it is useful even if prophecy is witheld (no anticipation or selfish motives) - Jewish 'shaman' ?  
-(dancing syncs the brainwaves ~music, improves memory, imaging, fluency, _)  
+Abulafia deliberately confuses himself (his animal soul) by physical and linguistic means as exercise for natural confusion of any kind (spiritual or mundane) so it is useful as a step to prophecy - Jewish 'shaman' like Miriam  
+what AI (a golem) does is permute letters and phonemes to arrive at an idea  
+  
   
 when did I reject Metatron (Daat) ?  
 obsession with external drugs or technology to induce mystical experience in ignorance of natural capacity of any human for this  
@@ -16,6 +17,7 @@ the key to avoiding singularity is spiritual development, not 'creativity' at wh
 hobby mindset = doing without becoming (not doing without pay)  
   
   
+(dancing syncs the brainwaves ~music, improves memory, imaging, fluency, _)  
 stand on one foot for exercise; use the left and right side of brain and body at the same time (cross-crawl dance, outdoor activities, traditional crafts, design or natural puzzles)  
   
   
