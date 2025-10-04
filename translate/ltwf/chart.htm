@@ -352,7 +352,7 @@ letter-spacing:"+parseInt(Math.random()*4-2)+"px;
         return q.replace(/ id='Quiz'/g, " id='Quiz' class='notranslate'").replace(/<p class='(Caption|Definition)'>.+<\/p>/g, function(y){
           return y.slice(0,y.indexOf("'>")+2) + y.slice(y.indexOf("'>")+2,-4).replace(/>[a-zA-Z]+</g, function(x){
             return "><ruby><span class='notranslate'>"+x.slice(1,-1)+"</span><rt>"+x.slice(1,-1)+"</rt></ruby><";
-          }) + '<p>' + y.slice(y.indexOf("'>")+2,-4).replace(/(<span>|<\/span>)/g,'').replace(/ class='Headword'/g,'') + '</p></p>';
+          }) + '<p><small>' + y.slice(y.indexOf("'>")+2,-4).replace(/(<span>|<\/span>)/g,'').replace(/ class='Headword'/g,'') + '</small></p></p>';
         });
       }
 
@@ -429,7 +429,7 @@ letter-spacing:"+parseInt(Math.random()*4-2)+"px;
       top: -0.0625em;
     }
     small {
-      font-size: 95%;
+      font-size: 80%;
     }
     big {
       font-style: normal;
@@ -448,9 +448,6 @@ letter-spacing:"+parseInt(Math.random()*4-2)+"px;
     i {
       position: absolute;
       font-size: 0;
-    }
-    p div {
-      font-size: 50%;
     }
 </style>
 <div style="position:fixed;bottom:-20px;right:0;" id="google_translate_element"></div>
