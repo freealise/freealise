@@ -9,6 +9,7 @@
       google.charts.setOnLoadCallback(drawChart);
 
 //TODO: add parser, check by grammar books
+//remove second iframe ?
 
 // https://developers.google.com/chart/interactive/docs/gallery/wordtree
 // )4_ADJ_, @6_ADP_, }5_ADV_, &9_CONJ_, =1_DET_, ]2_NOUN_, %10_NUM_, *7_PRON_, #8_PRT_, >3_VERB_
@@ -195,7 +196,6 @@ for (var i=1; i<a.length; i++) {
         document.getElementById('svg').style.display = 'none';
 
         ltwf.style.display = 'none';
-        dec.style.display = 'none';
         tl.style.display = 'none';
       }
 
@@ -243,7 +243,6 @@ for (var i=1; i<a.length; i++) {
         }
         if (found === false) {
           ltwf.style.display = 'none';
-          dec.style.display = 'none';
           tl.style.display = 'none';
         }
       }
@@ -354,7 +353,7 @@ letter-spacing:"+parseInt(Math.random()*4-2)+"px;
 
       function splitWords(q) {
         return q.replace(/>[a-zA-Z]+</g, function(x){
-          return "><ruby><span class='notranslate'>"+x.slice(1,-1)+"</span><rt><i>•</i>"+x.slice(1,-1)+"<i>.</i></rt></ruby><";
+          return "><ruby><span class='notranslate'>"+x.slice(1,-1)+"</span><rt>"+x.slice(1,-1)+"</rt></ruby><";
         });
       }
 
@@ -371,12 +370,8 @@ letter-spacing:"+parseInt(Math.random()*4-2)+"px;
             var rs = splitWords(res);
 
             ltwf_.document.open();
-            ltwf_.document.write(res.replace('</body>', document.getElementById('tw').value.split('<div')[0]+'</body>'));
+            ltwf_.document.write(rs.replace('</body>', document.getElementById('tw').value+'</body>'));
             ltwf_.document.close();
-
-            dec_.document.open();
-            dec_.document.write(rs.replace('</body>', document.getElementById('tw').value+'</body>'));
-            dec_.document.close();
 
             tl_.document.open();
             tl_.document.write(res.replace('</body>', document.getElementById('tw').value+'</body>'));
@@ -385,17 +380,14 @@ letter-spacing:"+parseInt(Math.random()*4-2)+"px;
             ltwf.onload = function() {
               setTimeout(function() {
                 ltwf.src = "#" + q.split(" ")[1];
-                dec.src = "#" + q.split(" ")[1];
                 tl.src = "#" + q.split(" ")[1];
 
                 ltwf_.document.getElementById(q.split(" ")[1]).scrollIntoView();
-                dec_.document.getElementById(q.split(" ")[1]).scrollIntoView();
                 tl_.document.getElementById(q.split(" ")[1]).scrollIntoView();
                 
                 document.getElementById('root').scrollIntoView();
 
                 ltwf_.onscroll = function(e){tl_.scrollTo(0, ltwf_.scrollY);}
-                dec_.onscroll = function(e){ltwf_.scrollTo(0, dec_.scrollY);}
                 tl_.onscroll = function(e){ltwf_.scrollTo(0, tl_.scrollY);}
 
               }, 40);
@@ -405,7 +397,6 @@ letter-spacing:"+parseInt(Math.random()*4-2)+"px;
             tl.style.display = 'block';
 
             ltwf.blur();
-            dec.blur();
             tl.blur();
           }
         };
@@ -413,27 +404,14 @@ letter-spacing:"+parseInt(Math.random()*4-2)+"px;
         xhttp.send();
       }
 
-
-      function switchIframe() {
-        if (tl.style.display == 'block') {
-          tl.style.display = 'none';
-          dec.style.display = 'block';
-
-        } else if (dec.style.display == 'block') {
-          dec.style.display = 'none';
-          tl.style.display = 'block';
-        }
-      }
-
     </script>
   </head>
   <body>
 
-    <div style='position:absolute;z-index:1'><label for="root">Word:</label> <input value="x" id="root"><input type="button" value="go" id="go"><button onclick='switchIframe()'>Sentence | Words</button></div>
+    <div style='position:absolute;z-index:1'><label for="root">Word:</label> <input value="x" id="root"><input type="button" value="go" id="go"></div>
     
     <div onclick='resetColors()' id="wordtree_basic" style="user-select: none; width: 512px;"></div>
     <iframe id="ltwf" style="display:none; top:36px; left:0px; width:160px; height:448px; position:absolute;" src="about:blank"></iframe>
-    <iframe id="dec" style="display:none; top:36px; left:160px; width:160px; height:448px; position:absolute;" src="about:blank"></iframe>
     <iframe id="tl" style="display:none; top:36px; left:160px; width:160px; height:448px; position:absolute;" src="about:blank"></iframe>
 
     <textarea id='status'></textarea>
@@ -503,9 +481,6 @@ letter-spacing:"+parseInt(Math.random()*4-2)+"px;
 
       var tl = document.getElementById('tl');
       tl_ = tl.contentWindow || (tl.contentDocument.document || tl.contentDocument);
-
-      var dec = document.getElementById('dec');
-      dec_ = dec.contentWindow || (dec.contentDocument.document || dec.contentDocument);
 
       var url = "https://script.google.com/macros/s/AKfycbz5br4wnfSGtucWKwGQq1Tb07eshJez6uVaFatn4xJAc_rcrcA/exec";
 
