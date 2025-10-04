@@ -349,10 +349,10 @@ letter-spacing:"+parseInt(Math.random()*4-2)+"px;
 
 
       function splitWords(q) {
-        return q.replace(/<p class='Caption'>.+<\/p>/g, function(y){
-          return y.slice(0,19) + y.slice(19,-4).replace(/>[a-zA-Z]+</g, function(x){
+        return q.replace(/<p class='(Caption|Definition)'>.+<\/p>/g, function(y){
+          return y.slice(0,y.indexOf("'>")+2) + y.slice(y.indexOf("'>")+2,-4).replace(/>[a-zA-Z]+</g, function(x){
             return "><ruby><span class='notranslate'>"+x.slice(1,-1)+"</span><rt>"+x.slice(1,-1)+"</rt></ruby><";
-          }) + '<br/><small>' + y.slice(19,-4) + '</small></p>';
+          }) + '<div>' + y.slice(y.indexOf("'>")+2,-4) + '</div></p>';
         });
       }
 
@@ -448,6 +448,9 @@ letter-spacing:"+parseInt(Math.random()*4-2)+"px;
     i {
       position: absolute;
       font-size: 0;
+    }
+    p div {
+      font-size: 50%;
     }
 </style>
 <div style="position:fixed;bottom:-20px;right:0;" id="google_translate_element"></div>
