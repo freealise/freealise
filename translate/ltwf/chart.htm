@@ -288,7 +288,7 @@ letter-spacing:"+parseInt(Math.random()*4-2)+"px;
         return q.replace(/<b class='Headword'>.+<\/b>/g, function(x){
           return x.slice(0,x.indexOf("'>")+2) + x.slice(x.indexOf("'>")+2,-4).replace(/\s/g,'\u00A0') + "</b>";
           
-        }).replace(/[>\s\"][a-zA-Z\,\.\:\u00A0]+[\s?!<]/g, function(x){
+        }).replace(/[>\s\"][a-zA-Z\,\.\:\u00A0]+[\s\"?!<]/g, function(x){
           var b = '';
           var d = '';
           for (var i=0; i<parseInt(Math.random()*8)+1; i++) {
