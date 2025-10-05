@@ -354,7 +354,7 @@ letter-spacing:"+parseInt(Math.random()*4-2)+"px;
       function splitWords(q) {
         return q.replace(/[\[\]]/g,'').replace(/ id='Quiz'/g, " id='Quiz' class='notranslate'").replace(/<p class='(Caption|Definition)'>.+<\/p>/g, function(y){
           return y.slice(0,y.indexOf("'>")+2) + y.slice(y.indexOf("'>")+2,-4).replace(/>[a-zA-Z\,\.\:\u00A0]+</g, function(x){
-            return "><ruby><span class='notranslate'>"+x.slice(1,-1)+"</span><rt>"+x.slice(1,-1)+"</rt></ruby><";
+            return "><ruby><span class='notranslate'>"+x.slice(1,-1)+"</span><rp>`</rp><rt>"+x.slice(1,-1)+"</rt><rp>`</rp></ruby><";
           }) + '<p><small>' + y.slice(y.indexOf("'>")+2,-4).replace(/(<span>|<\/span>)/g,'').replace(/ class='Headword'/g,'') + '</small></p></p>';
         }).replace(/>who</g,'>who`<');
       }
@@ -447,6 +447,11 @@ letter-spacing:"+parseInt(Math.random()*4-2)+"px;
     strong {
       font-weight: normal;
       text-shadow: 0 0 0.5px;
+    }
+    rt {
+      position: absolute;
+      top: -1.25em;
+      left: -8em;
     }
 </style>
 <div style="position:fixed;bottom:-20px;right:0;" id="google_translate_element"></div>
