@@ -30,6 +30,6 @@ on violin cut the bass for noise reduction
 to separate recording into tracks: mute any part (not just the center) by proportionally adjusting the volume of subtracted channel    
   
 for denoising average several frames, use median filter  
-combine animation with live acting ? voice obviously  
+combine animation with audioplays  
   
 script in json with javascript functions (most like coding, least awkward)  
