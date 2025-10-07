@@ -41,7 +41,7 @@ letter-spacing:"+parseInt(Math.random()*4-2)+"px;
       
 
       function highlight(w) {
-        w = w.replace(/[>\s\"][a-zA-Z\,\.\:\u00A0]+[\s\"?!<]/g, function(x){
+        w = w.replace(/[\u00A0\s\"][a-zA-Z\,\.\:\;]+[\u00A0\s\"?!]/g, function(x){
           var b = '';
           var d = '';
           for (var i=0; i<parseInt(Math.random()*8)+1; i++) {
