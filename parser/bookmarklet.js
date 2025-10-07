@@ -1,5 +1,5 @@
 
-var ps = document.getElementsByTagName('p');
+var divs = document.getElementsByTagName('div');
 
       /*var cl = 0;
 
@@ -137,7 +137,9 @@ var style = `<style id='highlighter_style'>
     }
 </style>`;
 
-for (var i=0; i<ps.length; i++) {
-    var txt = highlight(highlight(ps[i].innerHTML));
-    ps[i].innerHTML = txt;
+for (var i=0; i<divs.length; i++) {
+  if (!divs[i].getElementsByTagName('div')[0]) {
+    var txt = highlight(highlight(divs[i].innerHTML));
+    divs[i].innerHTML = txt;
+  }
 }
