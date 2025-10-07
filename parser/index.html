@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width" />
+  <title>highlighter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body style="margin: 0;">
+  <input type="text" id="url" style="width:90vw; height:1.5em;" onchange="loadPage(this.value)"/><input type="button" id="go" style="width:8vw; height:1.5em;" value="go"/>
+  <iframe id="ifr" style="width:100vw; height:100vh;" src="about:blank"></iframe>
+  <textarea cols=100 rows=25 id='html'></textarea>
+
+  <script>
+
+      function loadPage(q) {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+
+            ifr_.document.open();
+            ifr_.document.write(this.responseText);
+            ifr_.document.close();
+
+document.getElementById('html').value = this.responseText;
+
+            ifr.onload = function() {
+              setTimeout(function() {
+                ifr.src = "#" + q.split("#")[1];
+
+                if (ifr_.document.getElementById(q.split("#")[1])) {
+                  ifr_.document.getElementById(q.split("#")[1]).scrollIntoView();
+                }
+              }, 40);
+            };
+          }
+        };
+        xhttp.open("GET", url + "?a=proxy&q=" + q, true);
+        xhttp.send();
+      }
+
+
+      var ifr = document.getElementById('ifr');
+      ifr_ = ifr.contentWindow || (ifr.contentDocument.document || ifr.contentDocument);
+
+      var url = "https://script.google.com/macros/s/AKfycbz5br4wnfSGtucWKwGQq1Tb07eshJez6uVaFatn4xJAc_rcrcA/exec";
+
+  </script>
+</body>
+</html>
