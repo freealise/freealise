@@ -144,7 +144,7 @@ for (var i=0; i<ps.length; i++) {
 }
 
 for (var i=0; i<divs.length; i++) {
-  if (!divs[i].getElementsByTagName('div')[0] && !divs[i].getElementsByTagName('style')[0] && !divs[i].getElementsByTagName('script')[0] && !divs[i].getElementsByTagName('img')[0] && !divs[i].getElementsByTagName('p')[0]) {
+  if (!divs[i].getElementsByTagName('div')[0] && !divs[i].getElementsByTagName('style')[0] && !divs[i].getElementsByTagName('script')[0] && !divs[i].getElementsByTagName('img')[0] && !divs[i].getElementsByTagName('svg')[0] && !divs[i].getElementsByTagName('p')[0]) {
     var txt = highlight(highlight(divs[i].innerHTML));
     divs[i].innerHTML = txt;
   }
