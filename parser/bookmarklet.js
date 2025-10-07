@@ -105,7 +105,7 @@ letter-spacing:"+parseInt(Math.random()*4-2)+"px;
         return w;
       }
         
-var style = `<style id='highlighter_style'>
+var style = `
     span {
       opacity: 80%;
     }
@@ -136,7 +136,7 @@ var style = `<style id='highlighter_style'>
       font-weight: normal;
       text-shadow: 0 0 0.5px;
     }
-</style>`;
+`;
 
 for (var i=0; i<ps.length; i++) {
   var txt = highlight(highlight(ps[i].innerHTML));
@@ -150,4 +150,6 @@ for (var i=0; i<divs.length; i++) {
   }
 }
 
-document.body.innerHTML = style + document.body.innerHTML;
+var s = document.createElement('style');
+s.innerText = style;
+document.body.appendChild(s);
