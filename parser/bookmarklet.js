@@ -1,6 +1,45 @@
 
 var html = document.body.innerHTML;
 
+      /*var cl = 0;
+
+      function highlightWords_(q) {
+        var style = document.createElement('style');
+        style.type = 'text/css';
+        style.innerHTML = '';
+
+        var res = q.replace(/[>\s\"][a-zA-Z]+[\s.,?!:<]/g, function(x){
+          var b = '';
+          for (var i=0; i<parseInt(Math.random()*16); i++) {
+            b += '0 0 0.67px,';
+          }
+          b = b.slice(0,-1);
+
+          style.innerHTML += ".c"+cl+" { 
+//display:inline-block;
+//rotate:"+parseInt(Math.random()*22.5-11.25)+"deg;
+
+letter-spacing:"+parseInt(Math.random()*4-2)+"px;
+
+//text-shadow:"+b+";
+
+//color:hsl("+parseInt(Math.random()*360)+",100%,10%);
+
+//font-size:"+parseInt(32-Math.random()*16)+"px;
+
+//opacity:"+(100-Math.random()*80)+"%;
+
+//position:relative;
+//top:"+parseInt(Math.random()*8-4)+"px; }";
+          cl++;
+
+          return x.slice(0,1)+"<span class='c"+cl+"'>"+x.slice(1,-1)+"</span>"+x.slice(-1);
+        });
+
+        return style.outerHTML + res;  
+      }*/
+      
+
       function highlight(w) {
         w = w.replace(/[>\s\"][a-zA-Z\,\.\:\u00A0]+[\s\"?!<]/g, function(x){
           var b = '';
