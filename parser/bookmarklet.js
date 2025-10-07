@@ -50,7 +50,7 @@ letter-spacing:"+parseInt(Math.random()*4-2)+"px;
             b += '<span>';
             d += '</span>';
           }
-          x = b+x.slice(1,-1)+d;
+          x = x.slice(0,1)+b+x.slice(1,-1)+d+x.slice(-1);
           
           /*var b = '';
           var d = '';
