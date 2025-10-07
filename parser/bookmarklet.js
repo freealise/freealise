@@ -1,5 +1,7 @@
 
-var html = document.body.innerHTML;
+var html = document.body.innerHTML.replace(/<style.+>.+<\/style>/g,function(x){
+    return x.slice(0,x.indexOf('>')+1) + x.slice(x.indexOf('>')+1).replace(/\s/g,'');
+});
 
       /*var cl = 0;
 
@@ -41,7 +43,7 @@ letter-spacing:"+parseInt(Math.random()*4-2)+"px;
       
 
       function highlight(w) {
-        w = w.replace(/[\u00A0\s\"][a-zA-Z\,\.\:\;]+[\u00A0\s\"?!]/g, function(x){
+        w = w.replace(/[>\s][a-zA-Z\,\:\;\"\']+[\s.?!<]/g, function(x){
           var b = '';
           var d = '';
           for (var i=0; i<parseInt(Math.random()*8)+1; i++) {
