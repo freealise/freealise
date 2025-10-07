@@ -69,9 +69,6 @@ var style = `<style id='highlighter_style'>
     span {
       opacity: 80%;
     }
-    i::before, i::after, b::before, b::after, span::before, span::after {
-      content: ' ';
-    }
     u {
       text-decoration: none;
       color: #ff0000;
@@ -101,7 +98,4 @@ var style = `<style id='highlighter_style'>
     }
 </style>`;
 
-if (document.getElementById('highlighter_style')) {
-  document.getElementById('highlighter_style').outerHTML = '';
-}
 document.body.innerHTML = style + highlight(highlight(html));
