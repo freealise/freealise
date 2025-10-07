@@ -8,7 +8,7 @@
       google.charts.load('current', {packages:['wordtree']});
       google.charts.setOnLoadCallback(drawChart);
 
-//TODO: move highlighter to separate script, add google books parser, check by grammar books
+//TODO: move highlighter to separate script, add more words as a double tree with lookup by multiple, add google books parser and TTS, check by grammar books
 
 // https://developers.google.com/chart/interactive/docs/gallery/wordtree
 // )4_ADJ_, @6_ADP_, }5_ADV_, &9_CONJ_, =1_DET_, ]2_NOUN_, %10_NUM_, *7_PRON_, #8_PRT_, >3_VERB_
@@ -30,13 +30,13 @@
 ['x ] noun \u25CC \u2389  person people', 1, 1, 'B 1-08'],
 ['x ) adj % num \u066A  many', 1, 1, 'C 1-09'],
 ['x ) adj % num \u29A6  much', 1, 1, 'C 1-09'],
-['x ) adj % num \u299F  little', 1, 1, ''],
-['x ) adj % num \u060A  few', 1, 1, ''],
+/*['x ) adj % num \u299F  little', 1, 1, ''],
+['x ) adj % num \u060A  few', 1, 1, ''],*/
 ['x # prt \u2612  not', 1, 1, 'C 1-11'],
 ['x ) adj % num \u0609  some', 1, 1, 'D 1-12'],
 ['x ) adj % num \u2140  all', 1, 1, 'D 1-13'],
 ['x @ adp \u26B2 \u2316  there', 1, 1, 'D 1-14'],
-['x ) adj \u238E +  more', 1, 1, 'D 1-15'], //\u29FD
+['x ) adj \u238E +  more', 1, 1, 'D 1-15'],
 ['x ) adj \u238E \u2AA4  than', 1, 1, 'D 1-15'],
 ['x > verb \u221E \u2698  live living alive', 1, 1, 'E 1-16'],
 ['x ) adj \u2300 \u235C  big', 1, 1, 'E 1-17'],
@@ -49,7 +49,7 @@
 ['x @ adp \u26B2 \u22BC  far', 1, 1, 'F 1-23"'],
 ['x @ adp \u26B2 \u29CB  near', 1, 1, 'F 1-24'],
 ['x ] noun \u22D4 \u22B9  place', 1, 1, 'G 1-25'],
-['x @ adp \u26B2 \u2388  somewhere', 1, 1, 'G 1-25'],
+['x @ adp \u26B2 \u2388  someplace', 1, 1, 'G 1-25'],
 ['x @ adp \u26B2 \u26B2\u0309  where', 1, 1, 'G 1-25'],
 ['x & conj \u26CB  in inside', 1, 1, 'C 1-10'],
 ['x @ adp \u26B2 \u2238  above', 1, 1, 'G 1-26'],
@@ -104,8 +104,10 @@ var ltr = 'ABCDEFGH';
 a[0][4] = 'level';
 
 for (var i=1; i<a.length; i++) {
-  a[i][4] = (parseInt(a[i][3].charAt(2))-1) * 8 + ltr.indexOf(a[i][3].charAt(0));
+  a[i][4] = (parseInt(a[i][3].charAt(2))-1) * 8 + ltr.indexOf(a[i][3].charAt(0)) + parseInt(a[i][3].slice(4))/32;
 }
+a.sort(function(a, b){return a[4]-b[4];});
+
 
       function drawChart() {
         var data = google.visualization.arrayToDataTable(a);
@@ -131,7 +133,7 @@ for (var i=1; i<a.length; i++) {
 
         document.getElementById('go').onclick = drawChart;
 
-        resetColors();
+        if (root == 'x') { resetColors(); }
       }
 
 
@@ -361,6 +363,9 @@ letter-spacing:"+parseInt(Math.random()*4-2)+"px;
 
 
       function loadBasicWords(q) {
+        for (var i=0; i<btns.length; i++) {
+          btns[i].disabled = true;
+        }
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
           if (this.readyState == 4 && this.status == 200) {
@@ -379,11 +384,16 @@ letter-spacing:"+parseInt(Math.random()*4-2)+"px;
               setTimeout(function() {
                 ltwf.src = "#" + q.split(" ")[1];
 
-                ltwf_.document.getElementById(q.split(" ")[1]).scrollIntoView();
+                if (ltwf_.document.getElementById(q.split(" ")[1])) {
+                  ltwf_.document.getElementById(q.split(" ")[1]).scrollIntoView();
+                }
                 document.getElementById('root').scrollIntoView();
 
                 //ltwf_.onscroll = function(e){tl_.scrollTo(0, ltwf_.scrollY);}
 
+                for (var i=0; i<btns.length; i++) {
+                  btns[i].disabled = false;
+                }
               }, 40);
             };
 
@@ -395,11 +405,57 @@ letter-spacing:"+parseInt(Math.random()*4-2)+"px;
         xhttp.send();
       }
 
+
+      var indx = 1;
+      var num_old = -1;
+      var btns = document.getElementsByTagName('button');
+
+      function loadWord(fwd) {
+        for (var i=0; i<btns.length; i++) {
+          btns[i].disabled = true;
+        }
+        if (fwd === true) {
+          indx++;
+          indx = Math.min(indx,a.length-1);
+        } else if (fwd === false) {
+          indx--;
+          indx = Math.max(1,indx);
+        }
+
+        document.getElementById('root').value = a[indx][0].slice(a[indx][0].lastIndexOf('  ')+2).split(' ')[0];
+        if (parseInt(a[indx][4]) != num_old) {
+          loadBasicWords(a[indx][3]);
+          num_old = parseInt(a[indx][4]);
+        } else {
+          ltwf.src = "#" + a[indx][3].split(" ")[1];
+
+          if (ltwf_.document.getElementById(a[indx][3].split(" ")[1])) {
+            ltwf_.document.getElementById(a[indx][3].split(" ")[1]).scrollIntoView();
+          }
+          document.getElementById('root').scrollIntoView();
+
+          setTimeout(function() {
+            for (var i=0; i<btns.length; i++) {
+              btns[i].disabled = false;
+            }
+          }, 1000);
+        }
+        ltwf.style.display = 'block';
+        drawChart();
+      }
+
+
+      function loadRoot() {
+        document.getElementById('root').value = 'x';
+        ltwf.style.display = 'none';
+        drawChart();
+      }
+
     </script>
   </head>
   <body>
 
-    <div style='position:absolute;z-index:1'><label for="root">Word:</label> <input value="x" id="root"><input type="button" value="go" id="go"></div>
+    <div style='position:absolute;z-index:1'><button onclick="loadRoot();">x</button><button onclick="loadWord(false);"> <- </button><button onclick="loadWord(null);">•</button><button onclick="loadWord(true);"> -> </button><label for="root">Word:</label> <input value="x" id="root"><button id="go">go</button></div>
     
     <div onclick='resetColors()' id="wordtree_basic" style="user-select: none; width: 512px;"></div>
     <iframe id="ltwf" style="display:none; top:36px; left:0px; width:320px; height:448px; position:absolute;" src="about:blank"></iframe>
