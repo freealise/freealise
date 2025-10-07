@@ -11,6 +11,55 @@ var html = document.body.innerHTML;
           }
           x = x.slice(0,1)+b+x.slice(1,-1)+d+x.slice(-1);
           
+          /*var b = '';
+          var d = '';
+          for (var i=0; i<parseInt(Math.random()*8)+1; i++) {
+            b += '<big>';
+            d += '</big>';
+          }
+          x = x.slice(0,1)+b+x.slice(1,-1)+d+x.slice(-1);
+
+          var b = '';
+          var d = '';
+          for (var i=0; i<parseInt(Math.random()*8)+1; i++) {
+            b += '<u>';
+            d += '</u>';
+          }
+          x = x.slice(0,1)+b+x.slice(1,-1)+d+x.slice(-1);
+
+          var b = '';
+          var d = '';
+          for (var i=0; i<parseInt(Math.random()*8)+1; i++) {
+            b += '<s>';
+            d += '</s>';
+          }
+          x = x.slice(0,1)+b+x.slice(1,-1)+d+x.slice(-1);
+
+          var b = '';
+          var d = '';
+          for (var i=0; i<parseInt(Math.random()*8)+1; i++) {
+            b += '<b>';
+            d += '</b>';
+          }
+          x = x.slice(0,1)+b+x.slice(1,-1)+d+x.slice(-1);
+
+          var b = '';
+          var d = '';
+          for (var i=0; i<parseInt(Math.random()*8)+1; i++) {
+            b += '<em>';
+            d += '</em>';
+          }
+          x = x.slice(0,1)+b+x.slice(1,-1)+d+x.slice(-1);
+
+          var b = '';
+          var d = '';
+          for (var i=0; i<parseInt(Math.random()*8)+1; i++) {
+            b += '<strong>';
+            d += '</strong>';
+          }
+          x = x.slice(0,1)+b+x.slice(1,-1)+d+x.slice(-1);
+          */
+          
           return x;
         });
         return w;
