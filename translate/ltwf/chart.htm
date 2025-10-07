@@ -8,7 +8,7 @@
       google.charts.load('current', {packages:['wordtree']});
       google.charts.setOnLoadCallback(drawChart);
 
-//TODO: move highlighter to separate script, add more words as a double tree with lookup by multiple, add google books parser and TTS, check by grammar books
+//TODO: add more words as a double tree with lookup by multiple, add google books parser and TTS, check by grammar books
 
 // https://developers.google.com/chart/interactive/docs/gallery/wordtree
 // )4_ADJ_, @6_ADP_, }5_ADV_, &9_CONJ_, =1_DET_, ]2_NOUN_, %10_NUM_, *7_PRON_, #8_PRT_, >3_VERB_
@@ -247,45 +247,6 @@ a.sort(function(a, b){return a[4]-b[4];});
       }
 
 
-      /*var cl = 0;
-
-      function highlightWords_(q) {
-        var style = document.createElement('style');
-        style.type = 'text/css';
-        style.innerHTML = '';
-
-        var res = q.replace(/[>\s\"][a-zA-Z]+[\s.,?!:<]/g, function(x){
-          var b = '';
-          for (var i=0; i<parseInt(Math.random()*16); i++) {
-            b += '0 0 0.67px,';
-          }
-          b = b.slice(0,-1);
-
-          style.innerHTML += ".c"+cl+" { 
-//display:inline-block;
-//rotate:"+parseInt(Math.random()*22.5-11.25)+"deg;
-
-letter-spacing:"+parseInt(Math.random()*4-2)+"px;
-
-//text-shadow:"+b+";
-
-//color:hsl("+parseInt(Math.random()*360)+",100%,10%);
-
-//font-size:"+parseInt(32-Math.random()*16)+"px;
-
-//opacity:"+(100-Math.random()*80)+"%;
-
-//position:relative;
-//top:"+parseInt(Math.random()*8-4)+"px; }";
-          cl++;
-
-          return x.slice(0,1)+"<span class='c"+cl+"'>"+x.slice(1,-1)+"</span>"+x.slice(-1);
-        });
-
-        return style.outerHTML + res;  
-      }*/
-
-
       function highlightWords(q) {
         return q.replace(/<b class='Headword'>.+<\/b>/g, function(x){
           return x.slice(0,x.indexOf("'>")+2) + x.slice(x.indexOf("'>")+2,-4).replace(/\s/g,'\u00A0') + "</b>";
@@ -298,55 +259,6 @@ letter-spacing:"+parseInt(Math.random()*4-2)+"px;
             d += '</span>';
           }
           x = x.slice(0,1)+b+x.slice(1,-1)+d+x.slice(-1);
-
-          /*var b = '';
-          var d = '';
-          for (var i=0; i<parseInt(Math.random()*8)+1; i++) {
-            b += '<big>';
-            d += '</big>';
-          }
-          x = x.slice(0,1)+b+x.slice(1,-1)+d+x.slice(-1);
-
-          var b = '';
-          var d = '';
-          for (var i=0; i<parseInt(Math.random()*8)+1; i++) {
-            b += '<u>';
-            d += '</u>';
-          }
-          x = x.slice(0,1)+b+x.slice(1,-1)+d+x.slice(-1);
-
-          var b = '';
-          var d = '';
-          for (var i=0; i<parseInt(Math.random()*8)+1; i++) {
-            b += '<s>';
-            d += '</s>';
-          }
-          x = x.slice(0,1)+b+x.slice(1,-1)+d+x.slice(-1);
-
-          var b = '';
-          var d = '';
-          for (var i=0; i<parseInt(Math.random()*8)+1; i++) {
-            b += '<b>';
-            d += '</b>';
-          }
-          x = x.slice(0,1)+b+x.slice(1,-1)+d+x.slice(-1);
-
-          var b = '';
-          var d = '';
-          for (var i=0; i<parseInt(Math.random()*8)+1; i++) {
-            b += '<em>';
-            d += '</em>';
-          }
-          x = x.slice(0,1)+b+x.slice(1,-1)+d+x.slice(-1);
-
-          var b = '';
-          var d = '';
-          for (var i=0; i<parseInt(Math.random()*8)+1; i++) {
-            b += '<strong>';
-            d += '</strong>';
-          }
-          x = x.slice(0,1)+b+x.slice(1,-1)+d+x.slice(-1);
-          */
 
           return x;
         });
@@ -474,35 +386,13 @@ letter-spacing:"+parseInt(Math.random()*4-2)+"px;
     span {
       opacity: 80%;
     }
-    i::before, i::after, b::before, b::after, span::before, span::after {
+    s::before, s::after, u::before, u::after, i::before, i::after, b::before, b::after, span::before, span::after {
       content: ' ';
     }
     u {
       text-decoration: none;
       color: #ff0000;
       filter: hue-rotate(45deg);
-    }
-    s {
-      text-decoration: none;
-      position: relative;
-      top: -0.0625em;
-    }
-    small {
-      font-size: 80%;
-    }
-    big {
-      font-style: normal;
-      display: inline-block;
-      rotate: 1deg;
-    }
-    em {
-      font-style: normal;
-      display: inline-block;
-      rotate: -1deg;
-    }
-    strong {
-      font-weight: normal;
-      text-shadow: 0 0 0.5px;
     }
     rt {
       position: absolute;
