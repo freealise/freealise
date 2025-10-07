@@ -69,12 +69,15 @@
 			</div>
 
 			<p>Grab the code on <a href="https://github.com/freealise/freealise/">GitHub</a>.</p>
+			
+			<textarea cols='50' rows='25' id='code'></textarea>
 
 		</div>
 		<script>
 			const xhttp = new XMLHttpRequest();
 			xhttp.onload = function() {
 			  document.getElementsByClassName('bookmarklet')[0].href = "javascript:(function(){" + encodeURIComponent(this.responseText) + "})()";
+			  document.getElementById('code').value = this.responseText;
 			}
 			xhttp.open("GET", "bookmarklet.js");
 			xhttp.send();
