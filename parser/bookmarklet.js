@@ -1,7 +1,8 @@
 
 var html = document.body.innerHTML;
 
-html = html.replace(/[>\s\"][a-zA-Z\,\.\:\u00A0]+[\s\"?!<]/g, function(x){
+      function highlight(w) {
+        w = w.replace(/[>\s\"][a-zA-Z\,\.\:\u00A0]+[\s\"?!<]/g, function(x){
           var b = '';
           var d = '';
           for (var i=0; i<parseInt(Math.random()*8)+1; i++) {
@@ -12,6 +13,8 @@ html = html.replace(/[>\s\"][a-zA-Z\,\.\:\u00A0]+[\s\"?!<]/g, function(x){
           
           return x;
         });
+        return w;
+      }
         
 var style = `<style id='highlighter_style'>
     span {
@@ -52,4 +55,4 @@ var style = `<style id='highlighter_style'>
 if (document.getElementById('highlighter_style')) {
   document.getElementById('highlighter_style').outerHTML = '';
 }
-document.body.innerHTML = style + html;
+document.body.innerHTML = style + highlight(highlight(html));
