@@ -1,7 +1,5 @@
 
-var html = document.body.innerHTML.replace(/<style.+>.+<\/style>/g,function(x){
-    return x.slice(0,x.indexOf('>')+1) + x.slice(x.indexOf('>')+1).replace(/\s/g,'');
-});
+var ps = document.getElementsByTagName('p');
 
       /*var cl = 0;
 
@@ -139,4 +137,7 @@ var style = `<style id='highlighter_style'>
     }
 </style>`;
 
-document.body.innerHTML = style + highlight(highlight(html));
+for (var i=0; i<ps.length; i++) {
+    var txt = highlight(highlight(ps[i].innerHTML));
+    ps[i].innerHTML = txt;
+}
