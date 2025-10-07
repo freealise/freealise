@@ -48,7 +48,7 @@ letter-spacing:"+parseInt(Math.random()*4-2)+"px;
             b += '<span>';
             d += '</span>';
           }
-          x = x.slice(0,1)+b+x.slice(1,-1)+d+x.slice(-1);
+          x = b+x.slice(1,-1)+d;
           
           /*var b = '';
           var d = '';
