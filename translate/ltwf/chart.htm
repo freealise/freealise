@@ -27,9 +27,9 @@ var _pos = {
 };
 
 var pos_ = new RegExp("("+Object.keys(_pos).join("|")+")", "g");
-var pos_all = new RegExp("[﹞﹥﹚﹜﹟﹫﹡﹠﹦﹑]", "g");
-var pos_not = new RegExp("[^﹞﹥﹚﹜﹟﹫﹡﹠﹦﹑]", "g");
-var imp = "﹥﹞﹚﹜﹦﹑﹡﹟﹫﹠";
+var pos_all = new RegExp("[﹞﹥﹚﹜﹟﹫﹡﹠﹦﹑_]", "g");
+var pos_not = new RegExp("[^﹞﹥﹚﹜﹟﹫﹡﹠﹦﹑_]", "g");
+var imp = "﹥﹞﹚﹜﹦﹑﹡﹟﹫﹠_";
 
       var a = [ ['phrase', 'size', 'value', 'link'],
 ['x > verb \u237F \u239A  see saw seen', 1, 0.5, 'A 1-01'],
@@ -449,7 +449,15 @@ function loadSyntax(q) {
       //phrase.setSelectionRange(b+n, d+n);
       //phrase.focus();
       
-      phrases[k] = r.substr(0, b+n) + " " + r.substr(b+n);
+      var tmp = r.substr(0, b+n) + " " + r.substr(b+n);
+      var o = phrases[k].replace(/[\s\u00A0]+/g,' ').replace(/[^\w\s]/g,'').trim().split(' ');
+      var len_r = tmp.split(' ').length;
+      if (o.length > len_r) {
+        for (var i=len_r; i<=o.length; i++) {
+          tmp += ' ' + o[i-1] + imp[imp.length-1];
+        }
+      }
+      phrases[k] = tmp;
 console.log(phrases[k]);
 
       var ps = ltwf_.document.getElementsByTagName('sub');
@@ -457,8 +465,20 @@ console.log(phrases[k]);
       var sb = phrases[k].replace(pos_not,'');
       for (var i=0; i<sb.length; i++) {
         for (var j=0; j<ps.length; j++) {
-          var ph = ps[j].parentElement.innerText.replace(/[^\w\s\u00A0]/g,'');
-          if (ps[j].innerText == '' && (ph.trim() == ws[i] || ph.indexOf('\u00A0'+ws[i]) >= 0 || ph.indexOf(ws[i]+'\u00A0') >= 0)) {
+          var ph = ps[j].parentElement.innerText.replace(/[\s\u00A0]+/g,' ').replace(/[^\w\s]/g,'').trim();
+          var found = false;
+          if (ph == ws[i]) {
+            found = true;
+          } else {
+            var a = ph.split(' ');
+            for (var n=0; n<a.length; n++) {
+              if (a[n] == ws[i]) {
+                found = true;
+                break;
+              }
+            }
+          }
+          if (ps[j].innerText == '' && found === true) {
             ps[j].innerText = sb.charAt(i);
             ps[j].parentElement.style.opacity = 1.0-(imp.indexOf(sb.charAt(i))+1)/12.5;
             ps[j].parentElement.style.filter = 'hue-rotate(' + imp.indexOf(sb.charAt(i))*36 + 'deg)';
