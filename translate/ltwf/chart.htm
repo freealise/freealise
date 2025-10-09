@@ -8,10 +8,28 @@
       google.charts.load('current', {packages:['wordtree']});
       google.charts.setOnLoadCallback(drawChart);
 
-//TODO: add more words as a double tree with lookup by multiple, add google books parser and TTS, check by grammar books
+//TODO: add more words as a double tree with lookup by multiple, add TTS, check by grammar books
 
 // https://developers.google.com/chart/interactive/docs/gallery/wordtree
 // )4_ADJ_, @6_ADP_, }5_ADV_, &9_CONJ_, =1_DET_, ]2_NOUN_, %10_NUM_, *7_PRON_, #8_PRT_, >3_VERB_
+
+var _pos = {
+  "_NOUN": ["﹞", "noun"],
+  "_VERB": ["﹥", "verb"],
+  "_ADJ": ["﹚", "adjective"],
+  "_ADV": ["﹜", "adverb"],
+  "_NUM": ["﹟", "numeral"],
+  "_ADP": ["﹫", "adposition"],
+  "_PRON": ["﹡", "pronoun"],
+  "_CONJ": ["﹠", "conjunction"],
+  "_DET": ["﹦", "determiner"],
+  "_PRT": ["﹑", "particle"]
+};
+
+var pos_ = new RegExp("("+Object.keys(_pos).join("|")+")", "g");
+var pos_all = new RegExp("[﹞﹥﹚﹜﹟﹫﹡﹠﹦﹑]", "g");
+var pos_not = new RegExp("[^﹞﹥﹚﹜﹟﹫﹡﹠﹦﹑]", "g");
+var imp = "﹥﹞﹚﹜﹦﹑﹡﹟﹫﹠";
 
       var a = [ ['phrase', 'size', 'value', 'link'],
 ['x > verb \u237F \u239A  see saw seen', 1, 0.5, 'A 1-01'],
@@ -254,10 +272,10 @@ a.sort(function(a, b){return a[4]-b[4];});
         }).replace(/[>\s\"][a-zA-Z\,\.\:\u00A0]+[\s\"?!<]/g, function(x){
           var b = '';
           var d = '';
-          for (var i=0; i<parseInt(Math.random()*8)+1; i++) {
+          //for (var i=0; i<parseInt(Math.random()*8)+1; i++) {
             b += '<span>';
             d += '</span>';
-          }
+          //}
           x = x.slice(0,1)+b+x.slice(1,-1)+d+x.slice(-1);
 
           return x;
@@ -265,16 +283,34 @@ a.sort(function(a, b){return a[4]-b[4];});
       }
 
 
+      var phrases = [];
+      var k = 0;
+
       function splitWords(q) {
-        return q.replace(/[\[\]]/g,'').replace(/ id='Quiz'/g, " id='Quiz' class='notranslate'").replace(/<p class='(Caption|Definition)'>.+<\/p>/g, function(y){
+        phrases = [];
+
+        return q.replace(/(\[|\]|<i>|<\/i>)/g,'').replace(/ id='Quiz'/g, " id='Quiz' class='notranslate'").replace(/<p class='(Caption|Definition)'>.+<\/p>/g, function(y){
           var s = y.slice(y.indexOf("'>")+2,-4).replace(/(<span>|<\/span>)/g,'').replace(/\sclass='Headword'/g,'');
+          var p = "";
           if (s.search(/\d/) == -1) {
             var o = s.replace(/(<b>|<\/b>)/g,'').replace(/\s+/g, ' ');
-            s += "<br/>" + o;
+            p = "<sub></sub>";
+            if (y.indexOf("class='")+7 == y.indexOf("Caption")) {
+              phrases[phrases.length] = o;
+            } else {
+              var a = o.replace(/=/g,'').split('. ');
+              for (var i=0; i<a.length; i++) {
+                phrases[phrases.length] = a[i].trim();
+              }
+            }
           }
-            
+          
           return y.slice(0,y.indexOf("'>")+2) + y.slice(y.indexOf("'>")+2,-4).replace(/>[a-zA-Z\,\.\:\u00A0]+</g, function(x){
-            return "><ruby><span class='notranslate'>"+x.slice(1,-1)+"</span><rp>`</rp><rt>"+x.slice(1,-1)+"</rt><rp>`</rp></ruby><";
+            var p_ = p;
+            if (x.slice(1,-1).search(/\w/) == -1) {
+              p_ = "";
+            }
+            return "><ruby><span class='notranslate'>"+x.slice(1,-1)+p_+"</span><rp>`</rp><rt>"+x.slice(1,-1)+"</rt><rp>`</rp></ruby><";
           }) + '<p><small>' + s + '</small></p></p>';
         }).replace(/>who</g,'>who`<');
       }
@@ -293,7 +329,7 @@ a.sort(function(a, b){return a[4]-b[4];});
             var res = arr[0] + '<body>' + highlightWords(arr[1]).replace(/<a /g, "<a target='_blank' style='text-decoration:none' ");
 
             res = splitWords(res);
-
+            
             ltwf_.document.open();
             ltwf_.document.write(res.replace('</body>', document.getElementById('tw').value+'</body>'));
             ltwf_.document.close();
@@ -312,6 +348,9 @@ a.sort(function(a, b){return a[4]-b[4];});
                 for (var i=0; i<btns.length; i++) {
                   btns[i].disabled = false;
                 }
+
+                if (phrases[k]) { loadSyntax(phrases[k]); }
+                
               }, 40);
             };
 
@@ -369,6 +408,76 @@ a.sort(function(a, b){return a[4]-b[4];});
         drawChart();
       }
 
+
+function loadSyntax(q) {
+  var b = parseInt(q.length);
+  var d = parseInt(q.length);
+  if (b == d) {
+    var n = q.substr(0, b).replace(/[^\w\s]/g, "").trim().split(" ").length;
+  } else {
+    var n = q.replace(/[^\w\s]/g, "").trim().split(" ").length;
+  }
+  var q = q.replace(/[^\w\s]/g, "").trim().split(" ");
+  for (var i=0; i<q.length; i++) {
+    q[i] += "_*";
+    if (q[i+1]) {
+      q[i] = q[i] + " " + q[i+1];
+    }
+  }
+  var q = q.join(",");
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      //console.log(this.responseText);
+      var json = JSON.parse("["+this.responseText.split(">[")[1].split("]<")[0]+"]");
+      var r = "";
+      for (var i=0; i<json.length; i++) {
+        if (json[i].ngram.indexOf("_*") > -1) {
+          var j = i+2;
+          while (json[j] && json[j].ngram.split(" ")[0].split("_")[0] == json[i].ngram.split(" ")[0].split("_")[0]) {
+            json[j].ngram = "";
+            j++;
+          }
+          json[i].ngram = "";
+        }
+        if (json[i].ngram.length > 0) {
+          r += json[i].ngram.split(" ")[0] + " ";
+        }
+      }
+      r = r.trim().replace(pos_, function(x) { return _pos[x][0]; });
+      //phrase.value = r.substr(0, b+n) + " " + r.substr(b+n);
+      //phrase.setSelectionRange(b+n, d+n);
+      //phrase.focus();
+      
+      phrases[k] = r.substr(0, b+n) + " " + r.substr(b+n);
+console.log(phrases[k]);
+
+      var ps = ltwf_.document.getElementsByTagName('sub');
+      var ws = phrases[k].replace(pos_all,'').replace(/\s+/g,' ').trim().split(' ');
+      var sb = phrases[k].replace(pos_not,'');
+      for (var i=0; i<sb.length; i++) {
+        for (var j=0; j<ps.length; j++) {
+          var ph = ps[j].parentElement.innerText.replace(/[^\w\s\u00A0]/g,'');
+          if (ps[j].innerText == '' && (ph.trim() == ws[i] || ph.indexOf('\u00A0'+ws[i]) >= 0 || ph.indexOf(ws[i]+'\u00A0') >= 0)) {
+            ps[j].innerText = sb.charAt(i);
+            ps[j].parentElement.style.opacity = 1.0-(imp.indexOf(sb.charAt(i))+1)/12.5;
+            ps[j].parentElement.style.filter = 'hue-rotate(' + imp.indexOf(sb.charAt(i))*36 + 'deg)';
+            break;
+          }
+        }
+      }
+      k++;
+      if (phrases[k]) {
+        loadSyntax(phrases[k]);
+      } else {
+        k=0;
+      }
+    }
+  };
+  xhttp.open("GET", url + "?a=parse&q=" + encodeURIComponent(q), true);
+  xhttp.send();
+}
+
     </script>
   </head>
   <body>
@@ -390,10 +499,7 @@ a.sort(function(a, b){return a[4]-b[4];});
       top: 0px !important;
     }
     span {
-      opacity: 90%;
-      text-decoration: none;
-      color: hsl(0,25%,25%);
-      filter: hue-rotate(45deg);
+      color: hsl(180,25%,25%);
     }
     s::before, s::after, u::before, u::after, i::before, i::after, b::before, b::after, span::before, span::after {
       content: ' ';
