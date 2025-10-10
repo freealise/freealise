@@ -267,7 +267,7 @@ a.sort(function(a, b){return a[4]-b[4];});
 
       function highlightWords(q) {
         return q.replace(/<b\sclass='Headword'>[a-zA-Z\s]+<\/b>/g, function(x){
-          return x.slice(0,x.indexOf("'>")+2) + x.slice(x.indexOf("'>")+2,-4).replace(/\s/g,'\u00A0') + "</b>";
+          return x.slice(0,x.indexOf("'>")+2) + x.slice(x.indexOf("'>")+2,-4).replace(/\s+/g,'\u00A0') + "</b>";
           
         }).replace(/[>\s\"][a-zA-Z\,\.\:\u00A0]+[\s\"?!<]/g, function(x){
           var b = '';
@@ -310,7 +310,7 @@ a.sort(function(a, b){return a[4]-b[4];});
             if (x.slice(1,-1).search(/\w/) == -1) {
               p_ = "";
             }
-            return "><ruby><span class='notranslate'>"+x.slice(1,-1)+p_+"</span><rp>`</rp><rt>"+x.slice(1,-1)+"</rt><rp>`</rp></ruby><";
+            return "><ruby><span class='notranslate'>"+x.slice(1,-1).replace(/\u00A0/g,'\u00A0'+p_)+p_+"</span><rp>`</rp><rt>"+x.slice(1,-1)+"</rt><rp>`</rp></ruby><";
           }) + '<p><small>' + s + '</small></p></p>';
         }).replace(/>who</g,'>who`<');
       }
