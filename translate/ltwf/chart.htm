@@ -8,7 +8,7 @@
       google.charts.load('current', {packages:['wordtree']});
       google.charts.setOnLoadCallback(drawChart);
 
-//TODO: add morphology and TTS, only load syntax for phrase in window ?
+//TODO: add TTS, only load syntax for phrase in window ?
 //add more words as a double tree with lookup by multiple, check by grammar books
 
 // https://developers.google.com/chart/interactive/docs/gallery/wordtree
@@ -31,6 +31,11 @@ var pos_ = new RegExp("("+Object.keys(_pos).join("|")+")", "g");
 var pos_all = new RegExp("[﹞﹥﹚﹜﹟﹫﹡﹠﹦﹑_]", "g");
 var pos_not = new RegExp("[^﹞﹥﹚﹜﹟﹫﹡﹠﹦﹑_]", "g");
 var imp = "﹥﹞﹚﹜﹦﹑﹡﹟﹫﹠_";
+
+var v_ssml = "iː ɪ eɪ ɛ æ ə ɚ ʌ ɑː ɔː oʊ ʊ uː aɪ aʊ ɔɪ";
+var c_ssml = "p b t d k ɡ m n ŋ f v s z θ ð ʃ ʒ h l ɹ ʧ ʤ j w";
+var ph_ = new RegExp("("+v_ssml.replace(/\w/g, "").trim().replace(/\s+/g, "|")+"|"+c_ssml.replace(/\w/g, "").trim().replace(/\s+/g, "|")+")", "g");
+
 
       var a = [ ['phrase', 'size', 'value', 'link'],
 ['x > verb \u237F \u239A  see saw seen', 1, 0.5, 'A 1-01'],
@@ -293,8 +298,8 @@ a.sort(function(a, b){return a[4]-b[4];});
         return q.replace(/(\[|\]|<i>|<\/i>)/g,'').replace(/ id='Quiz'/g, " id='Quiz' class='notranslate'").replace(/<p class='(Caption|Definition)'>.+<\/p>/g, function(y){
           var s = y.slice(y.indexOf("'>")+2,-4).replace(/(<span>|<\/span>)/g,'').replace(/\sclass='Headword'/g,'');
           var p = "";
+          var o = s.replace(/\d+-\d+\./g,'').replace(/(<b>|<\/b>)/g,'').replace(/\s+/g, ' ');
           if (s.search(/\d/) == -1) {
-            var o = s.replace(/(<b>|<\/b>)/g,'').replace(/\s+/g, ' ');
             p = "<sub></sub>";
             if (y.indexOf("class='")+7 == y.indexOf("Caption")) {
               phrases[phrases.length] = o;
@@ -311,8 +316,8 @@ a.sort(function(a, b){return a[4]-b[4];});
             if (x.slice(1,-1).search(/\w/) == -1) {
               p_ = "";
             }
-            return "><ruby><span class='notranslate'>"+x.slice(1,-1).replace(/\u00A0/g,'\u00A0'+p_)+p_+"</span><rp>`</rp><rt>"+x.slice(1,-1)+"</rt><rp>`</rp></ruby><";
-          }) + '<p><small>' + s + '</small></p></p>';
+            return "><ruby><span class='notranslate'><u onclick='window.parent.loadMorph(event);'>"+x.slice(1,-1).replace(/\u00A0/g, p_+"</u>\u00A0<u onclick='window.parent.loadMorph(event);'>")+p_+"</u></span><rp>`</rp><rt>"+x.slice(1,-1)+"</rt><rp>`</rp></ruby><";
+          }) + '<p><button title="Say" id="say" onclick="window.parent.loadSpeech(`' + o.replace(/\"/g,"'") + '`);">&#x25B7;</button><small>' + s + '</small></p></p>';
         }).replace(/>who</g,'>who`<');
       }
 
@@ -488,6 +493,13 @@ console.log(phrases[k]);
         }
       }
       k++;
+      
+      if (et) {
+        var popup = ltwf_.document.getElementById('popup');
+        popup.style.top = ltwf_.scrollY + et.getBoundingClientRect().y + 'px';
+        popup.style.left = ltwf_.scrollX + et.getBoundingClientRect().x + 'px';
+      }
+      
       if (phrases[k]) {
         loadSyntax(phrases[k]);
       } else {
@@ -497,6 +509,64 @@ console.log(phrases[k]);
   };
   xhttp.open("GET", url + "?a=parse&q=" + encodeURIComponent(q), true);
   xhttp.send();
+}
+
+
+var et = null;
+
+function loadMorph(e) {
+  var q = e.target.innerText;
+  if (q != "") {
+    q = q.replace(/[^\w\s]/g, "").trim() + "_INF";
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        //console.log(this.responseText);
+        var json = JSON.parse("["+this.responseText.split(">[")[1].split("]<")[0]+"]");
+        var r = "";
+        for (var i=1; i<json.length; i++) {
+          if (json[i].ngram.length > 0) {
+            r += "<li>" + json[i].ngram + "</li>";
+          }
+        }
+        et = e.target;
+        var popup = ltwf_.document.getElementById('popup');
+
+        popup.innerHTML = '<button onclick="this.parentElement.style.visibility=\'hidden\';">x</button><audio src=""></audio><select id="accent" title="Accent"><option value="US">US</option><option value="UK">UK</option><option value="AU">AU</option></select><button title="Say" id="say" onclick="window.parent.loadSpeech(\'' + q.slice(0,q.indexOf('_')) + '\');">&#x25B7;</button><ul>'+r+'</ul>';
+
+        popup.style.top = ltwf_.scrollY + et.getBoundingClientRect().y + 'px';
+        popup.style.left = ltwf_.scrollX + et.getBoundingClientRect().x + 'px';
+
+        popup.style.visibility = 'visible';
+        
+        e.target.focus();
+        window.parent.loadSpeech( q.slice(0,q.indexOf('_')) );
+      }
+    };
+    xhttp.open("GET", url + "?a=parse&q=" + encodeURIComponent(q), true);
+    xhttp.send();
+  }
+}
+
+
+function loadSpeech(q) {
+  var ipa = q.replace(/\w/g, "");
+  if (ipa.search(ph_) != -1 || ipa.search(/[·ˈˌ]/) != -1) {
+    speak(q); //ˌmænɪˈtoʊbə
+  } else {
+alert(q);
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+
+        ltwf_.document.getElementsByTagName('audio')[0].src = "data:audio/mp3;base64," + this.responseText;
+        ltwf_.document.getElementsByTagName('audio')[0].load();
+        ltwf_.document.getElementsByTagName('audio')[0].play();
+      }
+    };
+    xhttp.open("GET", url + "?a=tts&accent=" + ltwf_.document.getElementById("accent").value + "&q=" + encodeURIComponent(q), true);
+    xhttp.send();
+  }
 }
 
     </script>
@@ -512,6 +582,7 @@ console.log(phrases[k]);
     <textarea cols=100 rows=25 id='svg'></textarea>
 
     <textarea id='tw' style='display:none'>
+<div id="popup"><button onclick="this.parentElement.style.visibility=\'hidden\';">x</button><audio src=""></audio><select id="accent" title="Accent"><option value="US">US</option><option value="UK">UK</option><option value="AU">AU</option></select></div>
 <style>
     iframe {
       display: none !important;
@@ -519,10 +590,11 @@ console.log(phrases[k]);
     body {
       top: 0px !important;
     }
-    span {
+    span, u {
+      text-decoration: none;
       color: hsl(180,25%,25%);
     }
-    s::before, s::after, u::before, u::after, i::before, i::after, b::before, b::after, span::before, span::after {
+    s::before, s::after, i::before, i::after, b::before, b::after, span::before, span::after {
       content: ' ';
     }
     rt {
@@ -530,6 +602,23 @@ console.log(phrases[k]);
       top: -1.25em;
       left: -8em;
       font-size: 50%;
+    }
+    #popup {
+      width: 144px;
+      margin-top: 2em;
+      line-height: 1em;
+      border: 1px dashed lightgray;
+      position: absolute;
+      background-color: #ffffff;
+      font-size: 80%;
+      visibility: hidden;
+    }
+    #popup button, #popup select {
+      margin: 0;
+      color: #000000;
+      float: right;
+      width: 48px;
+      height: 32px;
     }
 </style>
 <div style="position:fixed;bottom:-20px;right:0;" id="google_translate_element"></div>
