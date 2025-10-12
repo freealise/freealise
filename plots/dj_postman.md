@@ -19,9 +19,9 @@ villain speech (Daniel Ek ~Joe) ending in a joke and actual solution
 only instead is broke and confused - and only the truth will save him"
 
 
-Indeed, there was a group of My servants who used to pray, ‘Our Lord! We have believed, so forgive us and have mercy on us, for You are the best of those who show mercy,’ (23:109)
-but you were ˹so busy˺ making fun of them that it made you forget My remembrance. And you used to laugh at them. (23:110) 
-Today I have indeed rewarded them for their perseverance: they are certainly the triumphant.” (23:111) 
+”Indeed, there was a group of My servants who used to pray, ‘Our Lord! We have believed, so forgive us and have mercy on us, for You are the best of those who show mercy,’ (23:109)  
+but you were ˹so busy˺ making fun of them that it made you forget My remembrance. And you used to laugh at them. (23:110)  
+Today I have indeed rewarded them for their perseverance: they are certainly the triumphant.” (23:111)  
 
 
 #### BT archive
