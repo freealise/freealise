@@ -296,9 +296,12 @@ a.sort(function(a, b){return a[4]-b[4];});
         return q.replace(/(\[|\]|<i>|<\/i>)/g,'').replace(/ id='Quiz'/g, " id='Quiz' class='notranslate'").replace(/<p class='(Caption|Definition)'>.+<\/p>/g, function(y){
           var s = y.slice(y.indexOf("'>")+2,-4).replace(/(<span>|<\/span>)/g,'').replace(/\sclass='Headword'/g,'');
           var p = "";
+          var b = "";
           var o = s.replace(/\d+-\d+\./g,'').replace(/(<b>|<\/b>)/g,'').replace(/\s+/g, ' ');
           if (s.search(/\d/) == -1) {
             p = '<sub title="' + o.replace(/[^\w\s]/g,'') + '"></sub>';
+            b = '<button class="notranslate" title="Parse" id="parse" onclick="window.parent.loadSyntax(`' + o.replace(/\"/g,"'") + '`);">⎂</button>';
+
             if (y.indexOf("class='")+7 == y.indexOf("Caption")) {
               phrases[phrases.length] = o;
             } else {
@@ -315,7 +318,7 @@ a.sort(function(a, b){return a[4]-b[4];});
               p_ = "";
             }
             return "><ruby><span class='notranslate'><u onclick='window.parent.loadMorph(event);'>"+x.slice(1,-1).replace(/\u00A0/g, p_+"</u>\u00A0<u onclick='window.parent.loadMorph(event);'>")+p_+"</u></span><rp>`</rp><rt>"+x.slice(1,-1)+"</rt><rp>`</rp></ruby><";
-          }) + '<p><button class="notranslate" title="Say" id="say" onclick="window.parent.loadSpeech(`' + o.replace(/\"/g,"'") + '`);">&#x25B7;</button><button class="notranslate" title="Parse" id="parse" onclick="window.parent.loadSyntax(`' + o.replace(/\"/g,"'") + '`);">⎂</button><small>' + s + '</small></p></p>';
+          }) + '<p><button class="notranslate" title="Say" id="say" onclick="window.parent.loadSpeech(`' + o.replace(/\"/g,"'") + '`);">&#x25B7;</button>'+b+'<small>' + s + '</small></p></p>';
         }).replace(/>who</g,'>who`<');
       }
 
