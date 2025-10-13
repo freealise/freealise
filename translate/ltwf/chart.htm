@@ -8,7 +8,7 @@
       google.charts.load('current', {packages:['wordtree']});
       google.charts.setOnLoadCallback(drawChart);
 
-//TODO: add more words as a double tree with lookup by multiple, check by grammar books
+//TODO: translate morphology in ruby; add more words as a double tree with lookup by multiple, check by grammar books; credits
 
 // https://developers.google.com/chart/interactive/docs/gallery/wordtree
 // )4_ADJ_, @6_ADP_, }5_ADV_, &9_CONJ_, =1_DET_, ]2_NOUN_, %10_NUM_, *7_PRON_, #8_PRT_, >3_VERB_
@@ -299,15 +299,15 @@ a.sort(function(a, b){return a[4]-b[4];});
           var b = "";
           var o = s.replace(/\d+-\d+\./g,'').replace(/(<b>|<\/b>)/g,'').replace(/\s+/g, ' ');
           if (s.search(/\d/) == -1) {
-            p = '<sub title="' + o.replace(/[^\w\s]/g,'') + '"></sub>';
-            b = '<button class="notranslate" title="Parse" id="parse" onclick="window.parent.loadSyntax(`' + o.replace(/\"/g,"'") + '`);">⎂</button>';
+            p = '<sub title="' + o.replace(/[^\w\s]/g,'').replace(/\s+/g,' ') + '"></sub>';
+            b = '<button class="notranslate" title="Parse" id="parse" onclick="window.parent.loadSyntax(`' + o.slice(0,o.indexOf(". ")).replace(/\"/g,"'") + '`);">⎂</button>';
 
             if (y.indexOf("class='")+7 == y.indexOf("Caption")) {
               phrases[phrases.length] = o;
             } else {
               var a = o.replace(/=/g,'').split('. ');
               for (var i=0; i<a.length; i++) {
-                phrases[phrases.length] = a[i].trim();
+                phrases[phrases.length] = a[i].replace(/[^\w\s]/g,'').trim();
               }
             }
           }
@@ -416,8 +416,7 @@ a.sort(function(a, b){return a[4]-b[4];});
 function loadSyntax(q) {
   var found = false;
   for (var k=0; k<phrases.length; k++) {
-    console.log(phrases[k] +' | '+q);
-    if (phrases[k].replace(/"/g, "'") == q) {
+    if (q.indexOf(phrases[k].replace(/"/g, "'")) >= 0) {
       found = true;
       break;
     }
@@ -478,6 +477,8 @@ function loadSyntax(q) {
       var ws = phrase.split(' ');
       var sb = phrases[k].replace(pos_not,'');
 
+      var next = "";
+      var present = "";
       for (var i=0; i<sb.length; i++) {
         for (var j=0; j<ps.length; j++) {
           var ph = ps[j].parentElement.innerText.replace(/[\s\u00A0]+/g,' ').replace(/[^\w\s]/g,'').trim();
@@ -494,10 +495,13 @@ function loadSyntax(q) {
               }
             }
           }
-          if (ps[j].title == phrase && ps[j].innerText == '' && found === true) {
+
+          if (ps[j].title.indexOf(phrase) >= 0 && ps[j].innerText == '' && found === true) {
             ps[j].innerText = sb.charAt(i);
             ps[j].parentElement.style.opacity = 1.0-(imp.indexOf(sb.charAt(i))+1)/12.5;
             ps[j].parentElement.style.filter = 'hue-rotate(' + imp.indexOf(sb.charAt(i))*36 + 'deg)';
+            present = ps[j].title;
+            if (ps[j+1]) { next = ps[j+1].title; }
             break;
           }
         }
@@ -506,6 +510,15 @@ function loadSyntax(q) {
         var popup = ltwf_.document.getElementById('popup');
         popup.style.top = ltwf_.scrollY + et.getBoundingClientRect().y + 'px';
         popup.style.left = ltwf_.scrollX + et.getBoundingClientRect().x + 'px';
+      }
+      k++;
+      if (phrases[k]) {
+        var phrase = phrases[k].replace(/\s+/g,' ').trim();
+        console.log(phrase +' | '+next);
+        if (next == present && next.indexOf(phrase) >= 0) {
+          
+          loadSyntax(phrases[k].replace(/\"/g,"'"));
+        }
       }
     }
   };
