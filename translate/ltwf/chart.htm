@@ -274,7 +274,7 @@ a.sort(function(a, b){return a[4]-b[4];});
         return q.replace(/<b\sclass='Headword'>[a-zA-Z\s]+<\/b>/g, function(x){
           return x.slice(0,x.indexOf("'>")+2) + x.slice(x.indexOf("'>")+2,-4).replace(/\s+/g,'\u00A0') + "</b>";
           
-        }).replace(/[>\s\"][a-zA-Z\,\.\:\u00A0]+[\s\"?!<]/g, function(x){
+        }).replace(/[>\s][a-zA-Z\,\.\:\u00A0\"\']+[\s?!<]/g, function(x){
           var b = '';
           var d = '';
           //for (var i=0; i<parseInt(Math.random()*8)+1; i++) {
@@ -309,7 +309,7 @@ a.sort(function(a, b){return a[4]-b[4];});
             }
           }
           
-          return y.slice(0,y.indexOf("'>")+2) + y.slice(y.indexOf("'>")+2,-4).replace(/>[a-zA-Z\,\.\:\u00A0]+</g, function(x){
+          return y.slice(0,y.indexOf("'>")+2) + y.slice(y.indexOf("'>")+2,-4).replace(/>[a-zA-Z\,\.\:\u00A0\"\']+</g, function(x){
             var p_ = p;
             if (x.slice(1,-1).search(/\w/) == -1) {
               p_ = "";
