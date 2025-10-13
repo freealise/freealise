@@ -315,7 +315,7 @@ a.sort(function(a, b){return a[4]-b[4];});
               p_ = "";
             }
             return "><ruby><span class='notranslate'><u onclick='window.parent.loadMorph(event);'>"+x.slice(1,-1).replace(/\u00A0/g, p_+"</u>\u00A0<u onclick='window.parent.loadMorph(event);'>")+p_+"</u></span><rp>`</rp><rt>"+x.slice(1,-1)+"</rt><rp>`</rp></ruby><";
-          }) + '<p><button class="notranslate" title="Say" id="say" onclick="window.parent.loadSpeech(`' + o.replace(/\"/g,"'") + '`);">&#x25B7;</button><small><button class="notranslate" title="Parse" id="parse" onclick="window.parent.loadSyntax(`' + o.replace(/\"/g,"'") + '`);">⎂</button>' + s + '</small></p></p>';
+          }) + '<p><button class="notranslate" title="Say" id="say" onclick="window.parent.loadSpeech(`' + o.replace(/\"/g,"'") + '`);">&#x25B7;</button><button class="notranslate" title="Parse" id="parse" onclick="window.parent.loadSyntax(`' + o.replace(/\"/g,"'") + '`);">⎂</button><small>' + s + '</small></p></p>';
         }).replace(/>who</g,'>who`<');
       }
 
