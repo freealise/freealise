@@ -8,8 +8,7 @@
       google.charts.load('current', {packages:['wordtree']});
       google.charts.setOnLoadCallback(drawChart);
 
-//TODO: add TTS, only load syntax for phrase in window ?
-//add more words as a double tree with lookup by multiple, check by grammar books
+//TODO: add more words as a double tree with lookup by multiple, check by grammar books
 
 // https://developers.google.com/chart/interactive/docs/gallery/wordtree
 // )4_ADJ_, @6_ADP_, }5_ADV_, &9_CONJ_, =1_DET_, ]2_NOUN_, %10_NUM_, *7_PRON_, #8_PRT_, >3_VERB_
@@ -290,7 +289,6 @@ a.sort(function(a, b){return a[4]-b[4];});
 
 
       var phrases = [];
-      var k = 0;
 
       function splitWords(q) {
         phrases = [];
@@ -300,7 +298,7 @@ a.sort(function(a, b){return a[4]-b[4];});
           var p = "";
           var o = s.replace(/\d+-\d+\./g,'').replace(/(<b>|<\/b>)/g,'').replace(/\s+/g, ' ');
           if (s.search(/\d/) == -1) {
-            p = "<sub></sub>";
+            p = '<sub title="' + o.replace(/[^\w\s]/g,'') + '"></sub>';
             if (y.indexOf("class='")+7 == y.indexOf("Caption")) {
               phrases[phrases.length] = o;
             } else {
@@ -317,7 +315,7 @@ a.sort(function(a, b){return a[4]-b[4];});
               p_ = "";
             }
             return "><ruby><span class='notranslate'><u onclick='window.parent.loadMorph(event);'>"+x.slice(1,-1).replace(/\u00A0/g, p_+"</u>\u00A0<u onclick='window.parent.loadMorph(event);'>")+p_+"</u></span><rp>`</rp><rt>"+x.slice(1,-1)+"</rt><rp>`</rp></ruby><";
-          }) + '<p><button title="Say" id="say" onclick="window.parent.loadSpeech(`' + o.replace(/\"/g,"'") + '`);">&#x25B7;</button><small>' + s + '</small></p></p>';
+          }) + '<p><button title="Say" id="say" onclick="window.parent.loadSpeech(`' + o.replace(/\"/g,"'") + '`);">&#x25B7;</button><small><button title="Parse" id="parse" onclick="window.parent.loadSyntax(`' + o.replace(/\"/g,"'") + '`);">⎂</button>' + s + '</small></p></p>';
         }).replace(/>who</g,'>who`<');
       }
 
@@ -354,9 +352,6 @@ a.sort(function(a, b){return a[4]-b[4];});
                 for (var i=0; i<btns.length; i++) {
                   btns[i].disabled = false;
                 }
-
-                if (phrases[k]) { loadSyntax(phrases[k]); }
-                
               }, 40);
             };
 
@@ -416,6 +411,16 @@ a.sort(function(a, b){return a[4]-b[4];});
 
 
 function loadSyntax(q) {
+  var found = false;
+  for (var k=0; k<phrases.length; k++) {
+    console.log(phrases[k] +' | '+q);
+    if (phrases[k].replace(/"/g, "'") == q) {
+      found = true;
+      break;
+    }
+  }
+  if (found === false) { return; }
+
   var b = parseInt(q.length);
   var d = parseInt(q.length);
   if (b == d) {
@@ -464,14 +469,16 @@ function loadSyntax(q) {
         }
       }
       phrases[k] = tmp;
-console.log(phrases[k]);
 
       var ps = ltwf_.document.getElementsByTagName('sub');
-      var ws = phrases[k].replace(pos_all,'').replace(/\s+/g,' ').trim().split(' ');
+      var phrase = phrases[k].replace(pos_all,'').replace(/\s+/g,' ').trim();
+      var ws = phrase.split(' ');
       var sb = phrases[k].replace(pos_not,'');
+
       for (var i=0; i<sb.length; i++) {
         for (var j=0; j<ps.length; j++) {
           var ph = ps[j].parentElement.innerText.replace(/[\s\u00A0]+/g,' ').replace(/[^\w\s]/g,'').trim();
+
           var found = false;
           if (ph == ws[i]) {
             found = true;
@@ -484,7 +491,7 @@ console.log(phrases[k]);
               }
             }
           }
-          if (ps[j].innerText == '' && found === true) {
+          if (ps[j].title == phrase && ps[j].innerText == '' && found === true) {
             ps[j].innerText = sb.charAt(i);
             ps[j].parentElement.style.opacity = 1.0-(imp.indexOf(sb.charAt(i))+1)/12.5;
             ps[j].parentElement.style.filter = 'hue-rotate(' + imp.indexOf(sb.charAt(i))*36 + 'deg)';
@@ -492,18 +499,10 @@ console.log(phrases[k]);
           }
         }
       }
-      k++;
-      
       if (et) {
         var popup = ltwf_.document.getElementById('popup');
         popup.style.top = ltwf_.scrollY + et.getBoundingClientRect().y + 'px';
         popup.style.left = ltwf_.scrollX + et.getBoundingClientRect().x + 'px';
-      }
-      
-      if (phrases[k]) {
-        loadSyntax(phrases[k]);
-      } else {
-        k=0;
       }
     }
   };
