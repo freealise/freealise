@@ -8,7 +8,7 @@
       google.charts.load('current', {packages:['wordtree']});
       google.charts.setOnLoadCallback(drawChart);
 
-//TODO: translate morphology in ruby; add more words as a double tree with lookup by multiple, check by grammar books; credits
+//TODO: add more words as a double tree with lookup by multiple, check by grammar books; credits
 
 // https://developers.google.com/chart/interactive/docs/gallery/wordtree
 // )4_ADJ_, @6_ADP_, }5_ADV_, &9_CONJ_, =1_DET_, ]2_NOUN_, %10_NUM_, *7_PRON_, #8_PRT_, >3_VERB_
@@ -541,13 +541,13 @@ function loadMorph(e) {
         var r = "";
         for (var i=1; i<json.length; i++) {
           if (json[i].ngram.length > 0) {
-            r += "<li>" + json[i].ngram + "</li>";
+            r += "<li><ruby><span onclick='window.parent.loadSpeech(`" + json[i].ngram + ");' class='notranslate'>" + json[i].ngram + "</span><rp>`</rp><rt>" + json[i].ngram + "</rt><rp>`</rp></ruby></li>";
           }
         }
         et = e.target;
         var popup = ltwf_.document.getElementById('popup');
 
-        popup.innerHTML = '<button onclick="this.parentElement.style.visibility=\'hidden\';">x</button><audio src=""></audio><select id="accent" title="Accent"><option value="US">US</option><option value="UK">UK</option><option value="AU">AU</option></select><button title="Say" id="say" onclick="window.parent.loadSpeech(\'' + q.slice(0,q.indexOf('_')) + '\');">&#x25B7;</button><ul>'+r+'</ul>';
+        popup.innerHTML = '<div id="nav" class="notranslate"><button onclick="this.parentElement.parentElement.style.visibility=\'hidden\';">x</button><audio src=""></audio><select id="accent" title="Accent"><option value="US">US</option><option value="UK">UK</option><option value="AU">AU</option></select><button title="Say" id="say" onclick="window.parent.loadSpeech(\'' + q.slice(0,q.indexOf('_')) + '\');">&#x25B7;</button></div><hr/><ul>'+r+'</ul>';
 
         popup.style.top = ltwf_.scrollY + et.getBoundingClientRect().y + 'px';
         popup.style.left = ltwf_.scrollX + et.getBoundingClientRect().x + 'px';
@@ -597,7 +597,7 @@ alert(q);
     <textarea cols=100 rows=25 id='svg'></textarea>
 
     <textarea id='tw' style='display:none'>
-<div id="popup" class="notranslate"><button onclick="this.parentElement.style.visibility=\'hidden\';">x</button><audio src=""></audio><select id="accent" title="Accent"><option value="US">US</option><option value="UK">UK</option><option value="AU">AU</option></select></div>
+<div id="popup"><div id="nav" class="notranslate"><button onclick="this.parentElement.parentElement.style.visibility=\'hidden\';">x</button><audio src=""></audio><select id="accent" title="Accent"><option value="US">US</option><option value="UK">UK</option><option value="AU">AU</option></select></div><hr/></div>
 <style>
     iframe {
       display: none !important;
@@ -634,6 +634,9 @@ alert(q);
       float: right;
       width: 48px;
       height: 32px;
+    }
+    #popup rt {
+      font-size: 80%;
     }
 </style>
 <div style="position:fixed;bottom:-20px;right:0;" id="google_translate_element"></div>
