@@ -8,7 +8,7 @@
       google.charts.load('current', {packages:['wordtree']});
       google.charts.setOnLoadCallback(drawChart);
 
-//TODO: add more words as a double tree with lookup by multiple, check by grammar books; credits
+//TODO: STT window; add more words as a double tree with lookup by multiple, check by grammar books; credits
 
 // https://developers.google.com/chart/interactive/docs/gallery/wordtree
 // )4_ADJ_, @6_ADP_, }5_ADV_, &9_CONJ_, =1_DET_, ]2_NOUN_, %10_NUM_, *7_PRON_, #8_PRT_, >3_VERB_
@@ -565,11 +565,6 @@ function loadMorph(e) {
 
 
 function loadSpeech(q) {
-  var ipa = q.replace(/\w/g, "");
-  if (ipa.search(ph_) != -1 || ipa.search(/[·ˈˌ]/) != -1) {
-    speak(q); //ˌmænɪˈtoʊbə
-  } else {
-alert(q);
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
@@ -581,7 +576,6 @@ alert(q);
     };
     xhttp.open("GET", url + "?a=tts&accent=" + ltwf_.document.getElementById("accent").value + "&q=" + encodeURIComponent(q), true);
     xhttp.send();
-  }
 }
 
     </script>
@@ -593,6 +587,12 @@ alert(q);
     <div onclick='resetColors()' id="wordtree_basic" style="user-select: none; width: 512px;"></div>
     <iframe id="ltwf" style="display:none; top:36px; left:0px; width:320px; height:448px; position:absolute;" src="about:blank"></iframe>
 
+    <div class="google-translate-place">
+      <div class="google-translate-crop">
+        <iframe class="google-translate" src="https://www.google.com/search?igu=1&q=שם+in+English+google+translate&authuser=0&hl=en-US"></iframe>
+      </div>
+    </div>
+    
     <textarea id='status'></textarea>
     <textarea cols=100 rows=25 id='svg'></textarea>
 
@@ -657,6 +657,38 @@ alert(q);
 
       var url = "https://script.google.com/macros/s/AKfycbz5br4wnfSGtucWKwGQq1Tb07eshJez6uVaFatn4xJAc_rcrcA/exec";
 
+
+      function loadFrame(word) {
+          document.getElementsByTagName('iframe')[1].src = 'https://www.google.com/search?igu=1&q='+word+'+in+English+google+translate&oq=google+translate&authuser=0&hl=en&lr=lang_en';
+      }
+      //loadFrame(location.href.split('?q=')[1]);
+
         </script>
+
+  <style>
+.google-translate-place {
+    width: 256px;
+    height: 144px;
+    margin-left:-128px;
+    position:relative;
+    left:128px;
+}
+.google-translate-crop {
+    width: 256px;
+    height: 144px;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    position: absolute;
+}
+.google-translate {
+    transform: scale(0.75);
+    transform-origin: 180px 180px;
+    position: relative;
+    left: -180px; top: -180px;
+    width: 2560px; height: 5120px;
+    position: absolute;
+}
+  </style>
+
   </body>
 </html>
