@@ -8,6 +8,7 @@ Vowels and rhythm with consonants and stresses (diphtongs as legato) are an addi
 https://en.wikipedia.org/wiki/Sound_symbolism  
 Sonority Sequencing Principle:  
 https://en.wikipedia.org/wiki/Sonority_Sequencing_Principle  
+! regex for SSP  
 (verified by phonological data: https://en.wikipedia.org/wiki/English_phonology#Phonotactics)  
 
 formants <-> chord by octave transposition (are similar by sound, not only visually on different scales)  
