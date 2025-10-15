@@ -8,7 +8,7 @@
       google.charts.load('current', {packages:['wordtree']});
       google.charts.setOnLoadCallback(drawChart);
 
-//TODO: STT window; add more words as a double tree with lookup by multiple, check by grammar books; credits
+//TODO: add more words as a double tree with lookup by multiple, check by grammar books; credits
 
 // https://developers.google.com/chart/interactive/docs/gallery/wordtree
 // )4_ADJ_, @6_ADP_, }5_ADV_, &9_CONJ_, =1_DET_, ]2_NOUN_, %10_NUM_, *7_PRON_, #8_PRT_, >3_VERB_
@@ -578,11 +578,20 @@ function loadSpeech(q) {
     xhttp.send();
 }
 
+
+function toggleNote() {
+  if (gtframe.style.display != 'block') {
+    gtframe.style.display = 'block';
+  } else {
+    gtframe.style.display = 'none';
+  }
+}
+
     </script>
   </head>
   <body>
 
-    <div style='position:absolute;z-index:1'><button onclick="loadRoot();">x</button><button onclick="loadWord(false);"> <- </button><button onclick="loadWord(null);">•</button><button onclick="loadWord(true);"> -> </button><label for="root">Word:</label> <input value="x" id="root"><button id="go">go</button></div>
+    <div style='position:absolute;z-index:1'><button onclick="loadRoot();">x</button><button onclick="loadWord(false);"> <- </button><button onclick="loadWord(null);">•</button><button onclick="loadWord(true);"> -> </button><button onclick="toggleNote();">&#x2399;</button><label for="root">Word:</label> <input value="x" id="root"><button id="go">go</button></div>
     
     <div onclick='resetColors()' id="wordtree_basic" style="user-select: none; width: 512px;"></div>
     <iframe id="ltwf" style="display:none; top:36px; left:0px; width:320px; height:448px; position:absolute;" src="about:blank"></iframe>
@@ -655,6 +664,8 @@ function loadSpeech(q) {
       var ltwf = document.getElementById('ltwf');
       ltwf_ = ltwf.contentWindow || (ltwf.contentDocument.document || ltwf.contentDocument);
 
+      var gtframe = document.getElementsByClassName("google-translate-place")[0]
+
       var url = "https://script.google.com/macros/s/AKfycbz5br4wnfSGtucWKwGQq1Tb07eshJez6uVaFatn4xJAc_rcrcA/exec";
 
 
@@ -670,8 +681,10 @@ function loadSpeech(q) {
     width: 256px;
     height: 144px;
     margin-left:-128px;
-    position:relative;
-    left:128px;
+    position:absolute;
+    left:144px;
+    top:32px;
+    display:none;
 }
 .google-translate-crop {
     width: 256px;
