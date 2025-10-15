@@ -6,6 +6,9 @@ People can speak with improved fluency under hypnosis (that's what Jesus did whe
 (Do what Abulafia did)  
   
 Abulafia deliberately confuses himself (his animal soul) by physical and linguistic means as exercise for natural confusion of any kind (spiritual or mundane) so it is useful as a step to prophecy - Jewish 'shaman' like Miriam  
+  
+Phonemes -> syllables -> ideas as words by association  
+  
 what AI (a golem) does is permute letters and phonemes to arrive at an idea  
 only initially it gets data in an ordered way with an index  
   
