@@ -8,7 +8,7 @@
       google.charts.load('current', {packages:['wordtree']});
       google.charts.setOnLoadCallback(drawChart);
 
-//TODO: add more words as a double tree with lookup by multiple, check by grammar books; credits
+//TODO: add more words with POS as a filtered tree with lookup by multiple, check by grammar books; credits
 
 // https://developers.google.com/chart/interactive/docs/gallery/wordtree
 // )4_ADJ_, @6_ADP_, }5_ADV_, &9_CONJ_, =1_DET_, ]2_NOUN_, %10_NUM_, *7_PRON_, #8_PRT_, >3_VERB_
@@ -131,12 +131,37 @@ for (var i=1; i<a.length; i++) {
 }
 a.sort(function(a, b){return a[4]-b[4];});
 
+var data = null;
+var view = null;
+var chart = null;
+var options = null;
+
+var filter = "";
+
+
+      function filterChart(q) {
+        filter = q;
+        view = new google.visualization.DataView(data);
+
+        view.setColumns([0,1,2]);
+        view.setRows(view.getFilteredRows([{column: 0, test: (value, rowId, columnId, datatable) => { 
+          var found = false;
+          if (value.indexOf(filter) >= 0) {
+            console.log(filter +' '+value);
+            found = true;
+          }
+          return found;
+        }}]));
+        chart.draw(view, options);
+        
+        resetColors();
+      }
+
 
       function drawChart() {
-        var data = google.visualization.arrayToDataTable(a);
+        data = google.visualization.arrayToDataTable(a);
 
-        var root = document.getElementById('root').value;
-        var options = {
+        options = {
           width: 512,
           height: 1024,
           fontName: 'monospace',
@@ -144,19 +169,18 @@ a.sort(function(a, b){return a[4]-b[4];});
           wordtree: {
             format: 'implicit',
             type: 'suffix',
-            word: root
+            word: 'x'
           }
         };
 
-        var chart = new google.visualization.WordTree(document.getElementById('wordtree_basic'));
+        chart = new google.visualization.WordTree(document.getElementById('wordtree_basic'));
 
-        var view = new google.visualization.DataView(data);
+        view = new google.visualization.DataView(data);
         view.setColumns([0,1,2]);
         chart.draw(view, options); //data
 
-        document.getElementById('go').onclick = drawChart;
-
-        if (root == 'x') { resetColors(); }
+        var root = document.getElementById('root').value;
+        if (root.search(/\w/) == -1 || root == 'x') { resetColors(); }
       }
 
 
@@ -201,11 +225,15 @@ a.sort(function(a, b){return a[4]-b[4];});
                 arc.setAttribute('stroke-dasharray', ''+(22.5*pb)+' '+(360-22.5*pb));
                 arc.setAttribute('transform', 'rotate(-90 '+arc.getAttribute('cx')+' '+arc.getAttribute('cy')+')');
                 g.appendChild(arc);
-                document.getElementsByTagName('svg')[0].appendChild(g);
               }
             }
           }
         }
+        var root = document.getElementById('root').value;
+        if (root.search(/\w/) == -1 || root == 'x') { 
+          document.getElementsByTagName('svg')[0].appendChild(g);
+        }
+
         for (var i=0; i<txt.length; i++) {
           if (sel[txt[i].textContent]) {
             txt[i].setAttribute('stroke-width', '1');
@@ -591,7 +619,7 @@ function toggleNote() {
   </head>
   <body>
 
-    <div style='position:absolute;z-index:1'><button onclick="loadRoot();">x</button><button onclick="loadWord(false);"> <- </button><button onclick="loadWord(null);">•</button><button onclick="loadWord(true);"> -> </button><button onclick="toggleNote();">&#x2399;</button><label for="root">Word:</label> <input value="x" id="root"><button id="go">go</button></div>
+    <div style='position:absolute;z-index:1'><button onclick="loadRoot();">x</button><button onclick="loadWord(false);"> <- </button><button onclick="loadWord(null);">•</button><button onclick="loadWord(true);"> -> </button><button onclick="toggleNote();">&#x2399;</button><label for="root">Word:</label> <input value="x" id="root" oninput="filterChart(this.value)"></div>
     
     <div onclick='resetColors()' id="wordtree_basic" style="user-select: none; width: 512px;"></div>
     <iframe id="ltwf" style="display:none; top:36px; left:0px; width:320px; height:448px; position:absolute;" src="about:blank"></iframe>
