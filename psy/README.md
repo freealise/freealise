@@ -25,6 +25,9 @@ hobby mindset = doing without becoming (not doing without pay)
 stand on one foot for exercise; use the left and right side of brain and body at the same time (cross-crawl dance, outdoor activities, traditional crafts, design or natural puzzles)  
   
   
+Jews don't habitually (only affectively) prostrate in prayer because it may induce sleepiness, although it is allowed  
+  
+  
 Controlled breathing can induce sleep or increased wakefulness as a change in the brainwave patterns, for which a conscious change in breathing amplitude, frequency and phase is required, possibly along with synchronized musical or physical activity  
 https://en.wikipedia.org/wiki/Brainwave_entrainment  
 https://en.wikipedia.org/wiki/Transcranial_magnetic_stimulation#Obsessive%E2%80%93compulsive_disorder_(OCD)  
