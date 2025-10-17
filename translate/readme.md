@@ -36,4 +36,4 @@ pronouncing, inscribing, mentally hearing and seeing letter or phoneme combinati
 https://huggingface.co/spaces/freealise/phonemize-in-hebrew, https://huggingface.co/spaces/freealise/joint-demo  
 vocabulary: ltwf (with inline decoding and parser) -> google translate to hebrew with corrections, show 64-360-2000 basic words as two way tree, filter next level by basic words in definition (multiple select)  
 phrases: google books, https://ngrams.dev/  
-translate the siddur poetically; read the books, news and wiki  
+translate the siddur poetically, add natural tune; read the books, news and wiki  
