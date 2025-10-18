@@ -14,6 +14,7 @@ only initially it gets data in an ordered way with an index
   
   
 when did I reject Metatron (Daat) ?  
+Enoch -> Metatron, therefore Metatron is a jinn (has freedom of will)  
 obsession with external drugs or technology to induce mystical experience in ignorance of natural capacity of any human for this  
   
 the key to avoiding singularity is spiritual development, not 'creativity' at which robots already excel greater than any people  
