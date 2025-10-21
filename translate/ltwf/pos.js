@@ -12,7 +12,7 @@ acceptable : adjective, adverb, noun,
 accident : noun, 
 accidental : adjective, adverb, 
 accordance : noun, 
-according : 
+according : phrasal verb, 
 according to : preposition, 
 account : noun, verb, phrasal verb, 
 ache : verb, noun, adjective, 
