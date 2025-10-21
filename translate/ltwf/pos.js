@@ -837,7 +837,7 @@ fed : noun,
 feed : verb, phrasal verb, noun, 
 feel : verb, phrasal verb, noun, 
 feeling : noun, adjective, adverb, 
-feelings : 
+feelings : noun, 
 feet : noun, 
 fell : noun, verb, adjective, 
 fellow : noun, adjective, 
