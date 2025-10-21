@@ -2393,7 +2393,7 @@ turn : verb, phrasal verb, noun,
 twice : adverb, predeterminer, noun, 
 twist : verb, noun, adjective, 
 two : number, noun, adverb, 
-tying : 
+tying : verb, phrasal verb, 
 type : noun, verb, 
 typical : adjective, 
 tyre : noun, 
