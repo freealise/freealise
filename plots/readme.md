@@ -23,6 +23,7 @@
 - Vecherovsky (Irish Jew ?) -> Birobidzhan capital of Siberia / Solovetz ? POV: programmer  
   
 - satire on current events (https://en.wikipedia.org/wiki/The_Cherry_Orchard)  
+- '12 chairs' sequel (to monetize bad ideas) ?  
 
 - stupid teacher of literature as unconscious villain  
 
