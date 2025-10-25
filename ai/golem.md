@@ -1,4 +1,4 @@
-Story of the golem + box of notes -> comic book about the Sefer Yetzirah and the general idea of AI (without the Czech story)  
+Story of the golem + box of notes -> comic book about the Sefer Yetzirah and the general idea of AI (https://www.chabad.org/library/article_cdo/aid/4117874/jewish/10-Facts-About-the-Maharal-Every-Jew-Should-Know.htm#footnoteRef6a4117874)  
   
 The golem reads all the Jewish religious books and becomes a rabbi's assistant or priest.  
 Pirate Gemma - native English speaker, deterministic and edited by advisor.  
