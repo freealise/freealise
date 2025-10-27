@@ -4,9 +4,9 @@ simplified shape of face and body -> outline of clothes to fit
 
 crocheted thin wire or steel conductive thread fabric for cooling clothes
 
-cross-stitch ~ weaving -> cross-hatch, as faster variation (use quadtree compression), grid for plastic beads immersed in watercolor for dimensions - is a QR code as image  
-
-
+cross-stitch ~ weaving -> cross-hatch, as faster variation (use quadtree compression), grid for plastic beads immersed in watercolor for dimensions - use reflective thread  
+  
+  
 + mary magdalene with drone tied to the pot to carry it  
 + st.george with laser  
 + old ladoga is ukraine  
