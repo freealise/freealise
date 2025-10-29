@@ -1,4 +1,5 @@
-[{ id: "0", name: "that" },
+[
+{ id: "0", name: "that" },
 { id: "1", name: "happens" },
 { id: "2", name: "to" },
 { id: "3", name: "something" },
@@ -775,4 +776,5 @@
 { id: "774", name: "please" },
 { id: "775", name: "thank, thanks, to thank, thanking, thanked" },
 { id: "776", name: "thank" },
-{ id: "777", name: "sorry" }]
+{ id: "777", name: "sorry" }
+]
