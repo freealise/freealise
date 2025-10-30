@@ -1,3 +1,6 @@
+"Don't waste your words - tell a story that works !"
+
+
 Empty book = fill in the blanks within genre conventions (sci-fi | factualism !)  
   
 know character's actions along with them from characterization (but not ahead, keep to the present moment like IRL or in meditation)  
