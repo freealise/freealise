@@ -1,10 +1,11 @@
-{"a": "( \n[There is an X here.] = X is some kind of thing. There is one of this kind of thing here. This is not one that you said something about a short time before now.\n).\n(See in a place 1-25).\n(See on a side 1-27).\n(See at a time 2-14).\n(See a long time 2-16).\n(See a short time 2-17).\n(See in a moment 2-26).\nEach.",
+const defs = {
+"a": "([There is an X here.] = X is some kind of thing. There is one of this kind of thing here. This is not one that you said something about a short time before now.).\n(See in a place 1-25).\n(See on a side 1-27).\n(See at a time 2-14).\n(See a long time 2-16).\n(See a short time 2-17).\n(See in a moment 2-26).\nEach.",
 
 "abbreviation": "You write some parts but not all parts of a long word. When someone sees what you wrote, they know it means the same as this long word.",
 
 "ability": "What someone can do.",
 
-"able": "( \n[X is able to do this.] = X can do this.\n).",
+"able": "([X is able to do this.] = X can do this.).",
 
 "about": "(See say about 1-29).\n(See think about 2-07).\n(See know about 2-08).\nThinking or saying what this thing is, what it does, and what happens to it.\nNear.\nAround.\nA short time before.\nVery much like but not the same as and not more than.\nNot much more than or much less than.",
 
@@ -56,7 +57,7 @@
 
 "actually": "This is true.",
 
-"add": "( \n[You add something.] = You put something more in a place.\n[You add J and K.] = J and K are numbers, and you want to know this other number: If the number of things inside a group was J before, and then the number of things you put into the group is K, you do something with the numbers J and K to know the number of things inside the group now.\n).\nCause to become more.",
+"add": "([You add something.] = You put something more in a place.\n[You add J and K.] = J and K are numbers, and you want to know this other number: If the number of things inside a group was J before, and then the number of things you put into the group is K, you do something with the numbers J and K to know the number of things inside the group now.).\nCause to become more.",
 
 "addition": "When you put something more in a place.\nWhen you know the number of things inside a group before, and you know the number of things you put into the group, and you do something with these numbers to know the number of things inside the group now.",
 
@@ -74,7 +75,7 @@
 
 "admittance": "Allow someone to be inside a place.",
 
-"adult": "( \n[X is an adult.] = X is an animal. This kind of animal cannot have children when it is young. X is not young like this. This kind of animal can have children after it is alive for some time more. X is like this: It is alive for some time more, like others that have children.\n).",
+"adult": "([X is an adult.] = X is an animal. This kind of animal cannot have children when it is young. X is not young like this. This kind of animal can have children after it is alive for some time more. X is like this: It is alive for some time more, like others that have children.).",
 
 "advance": "Move towards something.\nBecome good more than before.\nHappening before this other thing.",
 
@@ -124,13 +125,13 @@
 
 "aim": "Try to cause something to happen.\nWhat you do because you want to be able to make something move and hit something you see.",
 
-"air": "( \n[X is some air.] = You cannot see X, but when some of it moves, you can feel it touching you. When much of it moves, it can cause other things that it touches to move. You can move through places that contain much of this, because it is not difficult to move through, and you can feel some of this touching you, but you do not feel this much or think about this much. All people cause X to move into and out of their bodies many times, because if a person does not do this for a short time, this person will die.\n).",
+"air": "([X is some air.] = You cannot see X, but when some of it moves, you can feel it touching you. When much of it moves, it can cause other things that it touches to move. You can move through places that contain much of this, because it is not difficult to move through, and you can feel some of this touching you, but you do not feel this much or think about this much. All people cause X to move into and out of their bodies many times, because if a person does not do this for a short time, this person will die.).",
 
 "aircraft": "A vehicle that can fly.",
 
 "airport": "Place on the surface of the ground where people move things into and out of many aircraft before and after they fly.",
 
-"alcohol": "( \n[X is alcohol.] = X is a kind of chemical that is like this: People often press some fruit and cause the liquid inside the fruit to move into a container. After a long time, parts of this liquid become this kind of chemical. Some people enjoy drinking this chemical, and it causes them not to feel the same as before. For some time after people drink much of this chemical, they cannot do or think some things that they could before.\n).",
+"alcohol": "([X is alcohol.] = X is a kind of chemical that is like this: People often press some fruit and cause the liquid inside the fruit to move into a container. After a long time, parts of this liquid become this kind of chemical. Some people enjoy drinking this chemical, and it causes them not to feel the same as before. For some time after people drink much of this chemical, they cannot do or think some things that they could before.).",
 
 "alike": "The same as.\nVery similar.",
 
@@ -138,7 +139,7 @@
 
 "all": "(See 1-13).",
 
-"allow": "( \n[You allow X to happen.] = X can happen, because you do not do things to prevent or stop it.\n).",
+"allow": "([You allow X to happen.] = X can happen, because you do not do things to prevent or stop it.).",
 
 "almost": "A short time before.\nVery much like, but not the same as and not more than.",
 
@@ -164,7 +165,7 @@
 
 "among": "In the same place near these others.\nInside the same group.\nEach is given some of this.",
 
-"amount": "( \n[The amount of X in one place is more than the amount of X in the other place.] = X is something you can compare or measure or count. There is some X in one place, and there is less in the other place.\n).",
+"amount": "([The amount of X in one place is more than the amount of X in the other place.] = X is something you can compare or measure or count. There is some X in one place, and there is less in the other place.).",
 
 "amuse": "Do or think about something you enjoy for some time.\nDo things that make someone laugh.",
 
@@ -172,19 +173,19 @@
 
 "amusing": "You enjoy this and it makes you laugh.",
 
-"an": "( \n[There is an X here.] = X is some kind of thing. There is one of this kind of thing here. This is not one that you said something about a short time before now.\n).\nEach.",
+"an": "([There is an X here.] = X is some kind of thing. There is one of this kind of thing here. This is not one that you said something about a short time before now.).\nEach.",
 
 "ancient": "Happening or existing a very long time before now.",
 
-"and": "( \n[J is true, and K is true.] = These two things are true: J is true. K is true.\n[J and K do X.] = These two things do X. J is one that does this. K is another that does this.\n).",
+"and": "([J is true, and K is true.] = These two things are true: J is true. K is true.\n[J and K do X.] = These two things do X. J is one that does this. K is another that does this.).",
 
 "anger": "Feeling angry.",
 
 "angle": "The place where two straight marks are touching.\nThe place where two flat surfaces are touching.\nNumber used to measure the distance between two straight marks that are touching in one place.\nOne end of this straight thing is above the other end but more near to one side.",
 
-"angry": "( \n[You feel angry.] = You feel something bad like this: Something happened that you do not want, and when you think about this, you feel something bad. Because of this you want to know who caused this to happen, and you want to hurt them or make them feel bad.\n).",
+"angry": "([You feel angry.] = You feel something bad like this: Something happened that you do not want, and when you think about this, you feel something bad. Because of this you want to know who caused this to happen, and you want to hurt them or make them feel bad.).",
 
-"animal": "( \n[X is an animal.] = There are many kinds of living things that can feel and can move when they want. X is one of these.\n).",
+"animal": "([X is an animal.] = There are many kinds of living things that can feel and can move when they want. X is one of these.).",
 
 "ankle": "Part of the body where two long leg bones connect to the foot.",
 
@@ -244,15 +245,15 @@
 
 "argument": "When people argue.",
 
-"arm": "( \n[X is one of your arms.] = X is a long part of your body. People have two of these long body parts. One is on one side of your body, and another is on the other side of your body. One end of X is connected to the big part of your body near your head. The other end of X has five narrow parts that can each move and touch things. You can use these two long parts of your body to carry things.\n).\nPart of.",
+"arm": "([X is one of your arms.] = X is a long part of your body. People have two of these long body parts. One is on one side of your body, and another is on the other side of your body. One end of X is connected to the big part of your body near your head. The other end of X has five narrow parts that can each move and touch things. You can use these two long parts of your body to carry things.).\nPart of.",
 
 "armour, (armor)": "Soldiers use metal or other things to make a hard surface around their bodies, because this can prevent damage if something hits them.",
 
-"arms": "( \n[X is one of your arms.] = X is a long part of your body. People have two of these long body parts. One is on one side of your body, and another is on the other side of your body. One end of X is connected to the big part of your body near your head. The other end of X has five narrow parts that can each move and touch things. You can use these two long parts of your body to carry things.\n).\nThings people make inside one country because they can be used to cause many people to die inside another country.",
+"arms": "([X is one of your arms.] = X is a long part of your body. People have two of these long body parts. One is on one side of your body, and another is on the other side of your body. One end of X is connected to the big part of your body near your head. The other end of X has five narrow parts that can each move and touch things. You can use these two long parts of your body to carry things.).\nThings people make inside one country because they can be used to cause many people to die inside another country.",
 
 "army": "Group of many soldiers.\nGroup of many people trying to cause the same thing.",
 
-"around": "( \n[J is around K.] = J is near the front and back and sides of K. J is near K like something long that has parts near K on all sides.\n[J moves around K.] = J moves like this: From a place in front of K, J moves to one side of K, then J moves behind K, then J moves to the other side of K, and then J moves to the front of K.\n).\nNear.\nIn different parts of this place.\nNot much more than or much less than.\nThe front turns towards the place that was near the back.",
+"around": "([J is around K.] = J is near the front and back and sides of K. J is near K like something long that has parts near K on all sides.\n[J moves around K.] = J moves like this: From a place in front of K, J moves to one side of K, then J moves behind K, then J moves to the other side of K, and then J moves to the front of K.).\nNear.\nIn different parts of this place.\nNot much more than or much less than.\nThe front turns towards the place that was near the back.",
 
 "arrange": "You plan where and when you want something to happen, and you do things to make this happen.\nYou tell someone where and when you plan to do something, and they say they will do the same.\nYou put things in the places where you want them.",
 
@@ -278,7 +279,7 @@
 
 "aside": "Towards one side.\nAll these things but not this one.",
 
-"ask": "( \n[You ask me to do X.] = You tell me that you want me to do X or tell you what you want to know about X.\n).",
+"ask": "([You ask me to do X.] = You tell me that you want me to do X or tell you what you want to know about X.).",
 
 "asleep": "Sleeping.",
 
@@ -286,9 +287,9 @@
 
 "at": "(See at a time 2-14).\n(See look at 4-12).\nIn this place.\nTime when something happens.\nTowards a place.\nBecause of.\nWhen.\nWhen you do this.\nSomething you say about this.",
 
-"ate": "( \n[J eats K.] = J is a person or an animal. K is something that was part of some other living thing before. J causes K to move into its body. People and animals need to do this many times, because if they do not do this for a long time, they will die.\n).",
+"ate": "([J eats K.] = J is a person or an animal. K is something that was part of some other living thing before. J causes K to move into its body. People and animals need to do this many times, because if they do not do this for a long time, they will die.).",
 
-"atom": "( \n[X is an atom.] = X is something very small. You cannot see one of these, but you can see groups containing very many of these, because they are all the parts of all things you can see and touch. There are less than one hundred kinds of these very small things existing inside all the parts of the things people often use.\n).",
+"atom": "([X is an atom.] = X is something very small. You cannot see one of these, but you can see groups containing very many of these, because they are all the parts of all things you can see and touch. There are less than one hundred kinds of these very small things existing inside all the parts of the things people often use.).",
 
 "attack": "Try to hurt someone or damage something.\nTry to change something.",
 
@@ -326,7 +327,7 @@
 
 "baby": "Animal that is small because it is very young.",
 
-"back": "( \n[J is the back of K.] = J is the part of K that is far from the front of K more than all other parts.\n).\nBefore.\nMove to the place where you were before.\nBecome like you were before.\nPart of your body that is behind all other parts and is between your head and legs.",
+"back": "([J is the back of K.] = J is the part of K that is far from the front of K more than all other parts.).\nBefore.\nMove to the place where you were before.\nBecome like you were before.\nPart of your body that is behind all other parts and is between your head and legs.",
 
 "background": "What you see behind something.\nWhat happened before.",
 
@@ -384,13 +385,13 @@
 
 "beat, beaten": "Hit something many times.\nMany loud sounds, each a short time after the one before.\nDo something more than or before another person.",
 
-"beautiful": "( \n[X is beautiful.] = Seeing X or hearing X feels good for you.\n).",
+"beautiful": "([X is beautiful.] = Seeing X or hearing X feels good for you.).",
 
 "beauty": "Something that is beautiful.",
 
 "because": "(See 2-06).",
 
-"become, became": "( \n[J became K.] = Something happened to J for some time. After this happened, K is something true you can know about J. But before this happened, K was not true.\n).",
+"become, became": "([J became K.] = Something happened to J for some time. After this happened, K is something true you can know about J. But before this happened, K was not true.).",
 
 "bed": "Place where someone sleeps.\nPart of something below all other parts.",
 
@@ -410,7 +411,7 @@
 
 "behaviour, (behavior)": "The things that someone does.",
 
-"behind": "( \n[J is behind K.] = J is not where you can see it in front of K. J is near to the part of K that is far from the front of K. It is far from the front more than all other parts.\n).\nYou wanted to do more before this time, but you did less than you wanted.\nSomething is in a place where you were before.\nHelping to cause this.",
+"behind": "([J is behind K.] = J is not where you can see it in front of K. J is near to the part of K that is far from the front of K. It is far from the front more than all other parts.).\nYou wanted to do more before this time, but you did less than you wanted.\nSomething is in a place where you were before.\nHelping to cause this.",
 
 "belief": "What you think is true.",
 
@@ -436,9 +437,9 @@
 
 "best": "Good more than all others.\nWhat someone wants more than all others.",
 
-"better": "( \n[J is better than K.] = J is good more than K.\n).\nGood more than these others.\nGood more than before.\nWhat someone wants more than these others.",
+"better": "([J is better than K.] = J is good more than K.).\nGood more than these others.\nGood more than before.\nWhat someone wants more than these others.",
 
-"between": "( \n[X is in a place between J and K.] = X is in a place. J is on one side of X, and K is on the other side of X.\n[X happens at a time between J and K.] = X happens after J and before K.\n[X is between J and K.] = X is more than J but not more than K.\n).\n(See distance between 6-05).",
+"between": "([X is in a place between J and K.] = X is in a place. J is on one side of X, and K is on the other side of X.\n[X happens at a time between J and K.] = X happens after J and before K.\n[X is between J and K.] = X is more than J but not more than K.).\n(See distance between 6-05).",
 
 "beyond": "On the side of this thing or place that is more far from here.\nAfter.\nMore than.",
 
@@ -450,7 +451,7 @@
 
 "bind, bound": "Cause two or more things to be connected.\nNeeding to do what you promised.",
 
-"bird": "( \n[X is a bird.] = X is a kind of animal that has two legs. This kind of animal does not have hair, but many long flat things grow out of the surface of its body and cover most parts of its body. There are many kinds of animals like this. Most can fly when they move the long flat things that cover the sides of their bodies.\n).",
+"bird": "([X is a bird.] = X is a kind of animal that has two legs. This kind of animal does not have hair, but many long flat things grow out of the surface of its body and cover most parts of its body. There are many kinds of animals like this. Most can fly when they move the long flat things that cover the sides of their bodies.).",
 
 "birth": "When a child moves out of the body of its female parent.",
 
@@ -462,7 +463,7 @@
 
 "bitter": "You are angry and not happy for a long time because something you wanted very much did not happen and maybe cannot happen.\nYou can taste or feel this, but most people do not want to taste or feel much of this.",
 
-"black": "( \n[X is black.] = The colour of X is like the colour you see when you are inside a place and there is not light in this place.\n).\nVery bad.",
+"black": "([X is black.] = The colour of X is like the colour you see when you are inside a place and there is not light in this place.).\nVery bad.",
 
 "blade": "Long flat part of something.\nThis part of something is flat and can cut.",
 
@@ -476,15 +477,15 @@
 
 "block": "Piece of something solid that has flat sides and a flat top and bottom.\nPlace where the ground surface has the shape of a big square.\nPrevent something.",
 
-"blood": "( \n[X is some blood.] = X is the red liquid that moves inside the bodies of living people and animals.\n).\nFamily.",
+"blood": "([X is some blood.] = X is the red liquid that moves inside the bodies of living people and animals.).\nFamily.",
 
 "blow, blew": "Cause air to move.\nHit.\nExplode.\nSomething becomes damaged when you use it, and it cannot be used after this.",
 
-"blue": "( \n[X is blue.] = The colour of X is like the colour of the sky at times when you can look up and see the sun and the sky.\n).\nSad.",
+"blue": "([X is blue.] = The colour of X is like the colour of the sky at times when you can look up and see the sun and the sky.).\nSad.",
 
 "board": "Flat wide piece of a tree that people cut.\nFood someone buys.\nThe small group of people who make rules and decide what the other people do inside a business or other group.",
 
-"boat": "( \n[X is a boat.] = X is something people make to carry people and things in places where there is much water. X can move for a long time, touching the top surface of the water all this time.\n).",
+"boat": "([X is a boat.] = X is something people make to carry people and things in places where there is much water. X can move for a long time, touching the top surface of the water all this time.).",
 
 "body": "(See 2-27).\nBig part of something.\nPiece of something.\nGroup.\nMuch.",
 
@@ -492,9 +493,9 @@
 
 "bomb": "Something someone makes that can explode and that someone can use to damage things and cause people to die.",
 
-"bone": "( \n[X is a bone.] = X is a hard white part inside the body of a person or animal. Many kinds of animals have more than a hundred hard white parts like X.\n).",
+"bone": "([X is a bone.] = X is a hard white part inside the body of a person or animal. Many kinds of animals have more than a hundred hard white parts like X.).",
 
-"book": "( \n[X is a book.] = X is a group of pieces of paper that are connected. There are many words or pictures on the surfaces of these pieces of paper. Part of each piece of paper is connected to all the other pieces. A person can hold X and look at the words and pictures on the surface of each piece of paper.\n).",
+"book": "([X is a book.] = X is a group of pieces of paper that are connected. There are many words or pictures on the surfaces of these pieces of paper. Part of each piece of paper is connected to all the other pieces. A person can hold X and look at the words and pictures on the surface of each piece of paper.).",
 
 "boot": "Something people make to cover your foot and the low part of your leg. You put each foot inside one of these, and this prevents something damaging your feet.\nPart of a vehicle that you use to contain things but not people.",
 
@@ -512,7 +513,7 @@
 
 "bottle": "Container people make to contain liquids. The top of this container is more narrow than the other parts of the container. You can see the liquid inside this container because people make it using something that light can move through.",
 
-"bottom": "( \n[J is the bottom of K.] = J is the part of K that is below all other parts of K.\n).\nThe part of your body that connects to the top part of your legs.",
+"bottom": "([J is the bottom of K.] = J is the part of K that is below all other parts of K.).\nThe part of your body that connects to the top part of your legs.",
 
 "bowels": "Several hours after you eat, food moves into this part of your body that is like a long tube. Your body does not use some solid parts of the food, and it moves through this tube and out of your body.\nInside something and far from the surface.",
 
@@ -530,7 +531,7 @@
 
 "brave": "You do something that many people fear doing. You do this because you think this thing is good to do, and you think someone needs to do this.",
 
-"bread": "( \n[X is some bread.] = X is a kind of food people make like this: People press some kinds of seeds to make them become very small dry pieces. Then people mix these small dry pieces and some liquid and put this inside a hot place. After it is hot for some time, it becomes a solid food that people eat. Many people eat this kind of food each day.\n).",
+"bread": "([X is some bread.] = X is a kind of food people make like this: People press some kinds of seeds to make them become very small dry pieces. Then people mix these small dry pieces and some liquid and put this inside a hot place. After it is hot for some time, it becomes a solid food that people eat. Many people eat this kind of food each day.).",
 
 "breadth": "Distance between one side and the other side.\nKnowing about many things.",
 
@@ -542,7 +543,7 @@
 
 "breath": "The air that moves out of your body when you breathe.",
 
-"breathe": "( \n[X breathes.] = X moves some air into its body, and then it moves this air out of its body. People and many kinds of animals need to do this many times, because if they do not do this for some time, they will die.\n).",
+"breathe": "([X breathes.] = X moves some air into its body, and then it moves this air out of its body. People and many kinds of animals need to do this many times, because if they do not do this for some time, they will die.).",
 
 "breed, bred": "Kind of living thing.\nWhen two living things cause a child to exist.",
 
@@ -560,7 +561,7 @@
 
 "brother": "Male who has the same parents as you.",
 
-"brown": "( \n[X is brown.] = The colour of X is like the colour you see when you mix much red and much yellow and some black.\n).",
+"brown": "([X is brown.] = The colour of X is like the colour you see when you mix much red and much yellow and some black.).",
 
 "brush": "People make something that has many narrow things like hairs that are connected to a long part that one hand can hold. People move this thing and make the hairs touch another surface. People do this to clean the surface or to cause a liquid to touch parts of the surface.\nPlants like small trees that cover the ground in a place.\nTwo things touch for a short time like when your hair or clothing touches something you are moving near.",
 
@@ -568,7 +569,7 @@
 
 "build, built": "Make something.\nMake a building.\nBecome more.",
 
-"building": "( \n[X is a building.] = X is something big and solid that people make. Part of X is above all the people and things inside X. Other parts of X can be on the sides of the people and things inside X. People make X because they want to have a place inside where people can live and move and do things. When people make these big things, they want them to be in one place for a long time.\n).",
+"building": "([X is a building.] = X is something big and solid that people make. Part of X is above all the people and things inside X. Other parts of X can be on the sides of the people and things inside X. People make X because they want to have a place inside where people can live and move and do things. When people make these big things, they want them to be in one place for a long time.).",
 
 "bullet": "Small round piece of metal. People put this inside a metal tube. When something inside this tube explodes, it causes the round piece of metal to move quickly out of the tube and then through the air to hit something.",
 
@@ -576,7 +577,7 @@
 
 "burial": "Put a dead body into a hole in the ground and cover it using pieces of the ground.",
 
-"burn, burnt": "( \n[X is burning.] = X is very hot. This is causing X to change, and X will not be the same after this. This can cause parts of the air near X to be hot and to change. This can cause there to be light.\n).",
+"burn, burnt": "([X is burning.] = X is very hot. This is causing X to change, and X will not be the same after this. This can cause parts of the air near X to be hot and to change. This can cause there to be light.).",
 
 "burst": "For some time, there was much inside this container. But then, because there was very much inside, part of the container becomes damaged and makes a hole in the container, and much of what was inside the container moves out of the container in a moment. The container cannot contain much after this.",
 
@@ -586,19 +587,19 @@
 
 "bush": "Kinds of plants that are like small trees, but are less big. These plants have many long narrow parts that grow out from parts of the plant that less narrow.",
 
-"business": "( \n[X is a business.] = X is a person or a group of people. X tells people what kind of work they will do if people give them money. When X finds people who want this kind of work done, these people give X money and X does this work.\n).",
+"business": "([X is a business.] = X is a person or a group of people. X tells people what kind of work they will do if people give them money. When X finds people who want this kind of work done, these people give X money and X does this work.).",
 
 "busy": "When someone does many things at a time.\nWhen many things happen in this place at a time.",
 
-"but": "( \n[J is true, but K is not true.] = You say J is true. Maybe when some people hear J is true, they think K is true because of this. You want them to know K is not true, and you say this.\n).",
+"but": "([J is true, but K is not true.] = You say J is true. Maybe when some people hear J is true, they think K is true because of this. You want them to know K is not true, and you say this.).",
 
 "butter": "Yellow solid that people make using the fat inside milk. People often put this on the surface of bread and eat it.",
 
 "button": "Small hard part of clothing that often has the shape of a circle. This part is connected to one part of your clothing, and you push it through a hole in another part of your clothing when you want to connect these two parts.\nSmall part of a machine that you push because it causes the machine to do something.",
 
-"buy, bought": "( \n[You buy X.] = Someone has X and says they will give it to you if you give them some money. You give money to this person, and because of this, the person then gives you X.\n).",
+"buy, bought": "([You buy X.] = Someone has X and says they will give it to you if you give them some money. You give money to this person, and because of this, the person then gives you X.).",
 
-"by": "( \n[J was caused by K.] = K caused J.\n).\n(See multiply by 10-25).\nWhat someone does this with.\nBecause of.\nNear.\nBefore.\nWhat you know about this.\nDistance between the sides and distance between the front and back.\nNumber inside each group.\nEach one after another.",
+"by": "([J was caused by K.] = K caused J.).\n(See multiply by 10-25).\nWhat someone does this with.\nBecause of.\nNear.\nBefore.\nWhat you know about this.\nDistance between the sides and distance between the front and back.\nNumber inside each group.\nEach one after another.",
 
 "cage": "Container that people put a living animal inside. People make this container using many long hard narrow things. You can look between these narrow things to see the animal inside, but the animal cannot move out of the container.",
 
@@ -628,7 +629,7 @@
 
 "captain": "Someone who tells people what to do, and expects them to do it. Like a person who leads a group of soldiers.",
 
-"car": "( \n[X is a car.] = X is a vehicle that can carry several people inside. X has four wheels and a machine that causes it to move.\n).",
+"car": "([X is a car.] = X is a vehicle that can carry several people inside. X has four wheels and a machine that causes it to move.).",
 
 "card": "Piece of cardboard that a person can hold. Its shape is like a square. Often something is written on its surface.\nSomething small, thin and hard that has a shape like a square.",
 
@@ -636,13 +637,13 @@
 
 "care": "You are careful to prevent bad things that can happen to someone.\nYou very much want good things to happen to someone.\nYou think this is important.",
 
-"careful, carefully": "( \n[You do X carefully.] = When you do X, you think very much about what you are doing, because you do not want something bad to happen. You try very much to do X well and to prevent damaging something.\n).",
+"careful, carefully": "([You do X carefully.] = When you do X, you think very much about what you are doing, because you do not want something bad to happen. You try very much to do X well and to prevent damaging something.).",
 
 "careless": "Not careful.",
 
 "carriage": "Vehicle that has wheels and can carry people and things.",
 
-"carry": "( \n[J carries K.] = K is not touching the ground, because J is holding K. At the same time that J is holding K, J moves to another place. Because of this, K moves to the same place.\n).",
+"carry": "([J carries K.] = K is not touching the ground, because J is holding K. At the same time that J is holding K, J moves to another place. Because of this, K moves to the same place.).",
 
 "cart": "Vehicle that has wheels and can carry things. A person or animal pushes or pulls this vehicle to cause it to move.",
 
@@ -650,13 +651,13 @@
 
 "castle": "Big buildings some people made a long time before now. These buildings could prevent soldiers moving into the building and hurting people inside.",
 
-"cat": "( \n[X is a cat.] = X is an animal that has four legs and has hair covering its body. There are several different kinds of this animal: Some kinds are big, and some kinds are small. Many people enjoy having a small kind of this animal inside buildings where people live. X will find and eat other very small animals that people do not want inside buildings.\n).",
+"cat": "([X is a cat.] = X is an animal that has four legs and has hair covering its body. There are several different kinds of this animal: Some kinds are big, and some kinds are small. Many people enjoy having a small kind of this animal inside buildings where people live. X will find and eat other very small animals that people do not want inside buildings.).",
 
 "catch, caught": "After something moves for some time, you stop it and hold it.\nYou see someone doing something they do not want you to see.",
 
 "cattle": "Kind of animal that is big more than a big person. These animals have four legs and hair, and they do not eat other animals. People have many of these animals in places because people eat these animals and drink the milk made inside their bodies.",
 
-"cause": "( \n[J causes K to happen.] = K happens because J happens or because J does something.\n).",
+"cause": "([J causes K to happen.] = K happens because J happens or because J does something.).",
 
 "ceiling": "When you are inside part of a building, this is the part of the building that you can see above you.",
 
@@ -672,7 +673,7 @@
 
 "central": "Near the centre.\nThe part that controls other parts.\nMore important.",
 
-"centre, (center)": "( \n[J is the centre of K.] = J is a small place between one side of K and the other side of K, like this: The distance between J and one side of K is the same as the distance between J and the other side of K. The distance between J and the front of K is the same as the distance between J and the back of K. The distance between J and the top of K is the same as the distance between J and the bottom of K.\n).\nPlace where many things happen.\nPlace where important things happen.",
+"centre, (center)": "([J is the centre of K.] = J is a small place between one side of K and the other side of K, like this: The distance between J and one side of K is the same as the distance between J and the other side of K. The distance between J and the front of K is the same as the distance between J and the back of K. The distance between J and the top of K is the same as the distance between J and the bottom of K.).\nPlace where many things happen.\nPlace where important things happen.",
 
 "century": "This long time is a group of one hundred years.",
 
@@ -690,7 +691,7 @@
 
 "chance": "Maybe this will happen, and maybe it will not happen.\nIf you try to do something at this time, maybe this will happen.\nYou think this is more likely to happen than some things and less likely than others.",
 
-"change": "( \n[X changed.] = Something happened to X. Because of this, X is not the same as before.\n[J changed K.] = J caused K to change.\n).",
+"change": "([X changed.] = Something happened to X. Because of this, X is not the same as before.\n[J changed K.] = J caused K to change.).",
 
 "character": "You think these things about this person are true at most times: what is good or bad, and what is not the same as other people.\nPerson that a story says something about.\nWhen you write words, this is one of the shapes you draw.",
 
@@ -714,7 +715,7 @@
 
 "cheese": "People do something to milk to make this solid food.",
 
-"chemical": "( \n[X is a chemical.] = X is a kind of solid or liquid or gas. Each very small part of X is like this: Each contains the same number and kinds of connected atoms.\n).",
+"chemical": "([X is a chemical.] = X is a kind of solid or liquid or gas. Each very small part of X is like this: Each contains the same number and kinds of connected atoms.).",
 
 "chemistry": "What people know about the things that happen when atoms connect and the kinds of chemicals this makes.",
 
@@ -726,7 +727,7 @@
 
 "chief": "Person who leads a big group of people.\nMore than all others.",
 
-"child, children": "( \n[X is a child.] = X is a person or an animal. X is alive because two other living things existed before X existed. They were the same kind of living thing as X. They did something that caused X to exist. X was small at this time, but after some time, X can become big.\n).",
+"child, children": "([X is a child.] = X is a person or an animal. X is alive because two other living things existed before X existed. They were the same kind of living thing as X. They did something that caused X to exist. X was small at this time, but after some time, X can become big.).",
 
 "childhood": "Time when someone is a young child.",
 
@@ -738,7 +739,7 @@
 
 "choice": "One of two or more things you can choose.",
 
-"choose, chose, chosen": "( \n[You choose one of these things.] = There are two or more things you can do. If you do one of these, you cannot do another. You think about these and what you want to do. There is one moment when you know what one of these you want more, and after this moment, you try for some time to do this one.\n).",
+"choose, chose, chosen": "([You choose one of these things.] = There are two or more things you can do. If you do one of these, you cannot do another. You think about these and what you want to do. There is one moment when you know what one of these you want more, and after this moment, you try for some time to do this one.).",
 
 "church": "Building where many people say things about one god and say things to this one god. They say they love this god because this god is very good. They say there are not other gods.",
 
@@ -746,7 +747,7 @@
 
 "cinema": "Building where people use a kind of machine to show pictures. The machine shows many pictures, each for a very short time. When you see this, it looks like things inside the picture are moving.",
 
-"circle": "( \n[X is a circle.] = X is a shape. Someone can mark a flat surface to make this shape. You think like this about the shape of X: The distance between the centre of X and each part of X is the same as the distance between the centre of X and each other part of X.\n).",
+"circle": "([X is a circle.] = X is a shape. Someone can mark a flat surface to make this shape. You think like this about the shape of X: The distance between the centre of X and each part of X is the same as the distance between the centre of X and each other part of X.).",
 
 "circular": "This has the same shape as a circle.",
 
@@ -760,9 +761,9 @@
 
 "class": "One of several groups of things, where each thing inside this group is like the other things inside the same group.\nWhen you think about people or things inside two groups, you think one group is good more than the other.\nInside a school or other place where people learn things, someone helps this group of people learn things at the same time.",
 
-"clay": "( \n[X is some clay.] = X is something people can find that is part of the ground. People use X to make things, like this: When X and water are mixed, people can change the shape of it to make a shape that they want. After this, people put it inside a very hot place for some time. This causes it to become very dry and hard, and after this it does not change shape. People do this to make many kinds of things.\n).",
+"clay": "([X is some clay.] = X is something people can find that is part of the ground. People use X to make things, like this: When X and water are mixed, people can change the shape of it to make a shape that they want. After this, people put it inside a very hot place for some time. This causes it to become very dry and hard, and after this it does not change shape. People do this to make many kinds of things.).",
 
-"clean": "( \n[You cleaned X.] = Some things were touching the surface of X. These were things you did not want on the surface, like small pieces of the ground or things that can cause disease. You moved these things, causing them not to be on the surface after this. Maybe you used water and rubbed X to move the things you did not want on the surface.\n[X is clean.] = There are not things inside X or on the surface of X that you do not want here.\n).",
+"clean": "([You cleaned X.] = Some things were touching the surface of X. These were things you did not want on the surface, like small pieces of the ground or things that can cause disease. You moved these things, causing them not to be on the surface after this. Maybe you used water and rubbed X to move the things you did not want on the surface.\n[X is clean.] = There are not things inside X or on the surface of X that you do not want here.).",
 
 "clear": "When you are on one side of this thing you can see what is on the other side of this thing because light moves through this thing.\nYou want to do something, and you do not see things in this place that can prevent this.\nYou say something, and because you say it like this, more people can hear and know what you mean.",
 
@@ -780,17 +781,17 @@
 
 "close": "There is not a place you can move through to move into or out of this thing.\nStop allowing things to move into or out of this place.\nWhen something stops.\nNear.\nVery much like.",
 
-"cloth": "( \n[X is some cloth.] = X is something long and wide and flat and thin that people make. People use X to make clothing. People make all parts of X using long pieces of narrow string, like this: You put a string where it is touching two groups of many strings, above one group and below the other group. Then you put a different part of this string where it is touching the same groups of strings, but below the one group and above the other. You do this very many times to make X. This makes each string connect to the other strings near it, making X become long and wide.\n).",
+"cloth": "([X is some cloth.] = X is something long and wide and flat and thin that people make. People use X to make clothing. People make all parts of X using long pieces of narrow string, like this: You put a string where it is touching two groups of many strings, above one group and below the other group. Then you put a different part of this string where it is touching the same groups of strings, but below the one group and above the other. You do this very many times to make X. This makes each string connect to the other strings near it, making X become long and wide.).",
 
 "clothes": "Pieces of clothing.",
 
-"clothing": "( \n[X is a piece of clothing.] = X is something people make to cover parts of their bodies and prevent them becoming cold. When you use X, part of your body is inside X and this carries X when you move from one place to another.\n).",
+"clothing": "([X is a piece of clothing.] = X is something people make to cover parts of their bodies and prevent them becoming cold. When you use X, part of your body is inside X and this carries X when you move from one place to another.).",
 
 "cloud": "Something far above the ground that can be big and white. This contains many very small pieces of water. The water can fall from this and move down through the air to the ground.",
 
 "club": "Group of people who want to do similar things and who plan to do these things in a place at the same time as other people inside this group.\nSomeone can hold one end of this long thing and move it to hit another person or thing.",
 
-"coal": "( \n[X is some coal.] = X is something solid and black that people can find far below the surface of the ground. People burn X to make the air inside a building less cold.\n).\nSmall piece of something that is burning.",
+"coal": "([X is some coal.] = X is something solid and black that people can find far below the surface of the ground. People burn X to make the air inside a building less cold.).\nSmall piece of something that is burning.",
 
 "coast": "On the sides of a place where there is very much water, this is where the surface of the ground touches the water.",
 
@@ -800,7 +801,7 @@
 
 "coin": "Piece of money that is metal.",
 
-"cold": "( \n[X is cold.] = At some times a place can be like this: In this place some solid things become liquid, and some liquids become gas. At other times the place can be like this: In this place some gases become liquid, and some liquids become solid. X feels more like the place when liquids become solid.\n).\nKind of disease that people often have for a short time inside their head and the body parts they use to breathe.",
+"cold": "([X is cold.] = At some times a place can be like this: In this place some solid things become liquid, and some liquids become gas. At other times the place can be like this: In this place some gases become liquid, and some liquids become solid. X feels more like the place when liquids become solid.).\nKind of disease that people often have for a short time inside their head and the body parts they use to breathe.",
 
 "collar": "Part of your clothing or another thing that is around this part of your body: the narrow part of your body that is connected below your head and connects to the big part of your body.",
 
@@ -808,7 +809,7 @@
 
 "college": "School where adult people learn.",
 
-"colour, (color)": "( \n[J is the colour of K.] = Something you know about J is the same as something you know about K. This is something you know about K because you see it. This is not something you can know about K if you do not see it. This is not something you can know about K because you touch it.\n).",
+"colour, (color)": "([J is the colour of K.] = Something you know about J is the same as something you know about K. This is something you know about K because you see it. This is not something you can know about K if you do not see it. This is not something you can know about K because you touch it.).",
 
 "comb": "People move their hair and make it straight using something that has many small parts that hair can move between.",
 
@@ -836,7 +837,7 @@
 
 "company": "Business.\nWhen you are in the same place as another person for some time.",
 
-"compare": "( \n[You compare J and K.] = You think about J and K, and you try to know more about them. You think about the things you know about J and K that are the same or different. You think about what you can say about J more than or less than you can say about K.\n).",
+"compare": "([You compare J and K.] = You think about J and K, and you try to know more about them. You think about the things you know about J and K that are the same or different. You think about what you can say about J more than or less than you can say about K.).",
 
 "comparison": "When you compare two or more things.",
 
@@ -876,7 +877,7 @@
 
 "confusing": "These things confuse someone.",
 
-"connect": "( \n[J is connected to K.] = For some time this is true: Something causes part of J to be touching part of K at all times. This part of J cannot move if this part of K does not move.\n).\nWhen you think about one of these, you think about others inside this same group.\nWhen something happens to one of these, something happens to the others.",
+"connect": "([J is connected to K.] = For some time this is true: Something causes part of J to be touching part of K at all times. This part of J cannot move if this part of K does not move.).\nWhen you think about one of these, you think about others inside this same group.\nWhen something happens to one of these, something happens to the others.",
 
 "connection": "The place where two things connect.\nWhen something happening to one thing can cause something to happen to the other thing.",
 
@@ -890,9 +891,9 @@
 
 "consonant": "Several kinds of sounds you make when you say parts of some words. When you make these sounds, the shape of your mouth stops some of the air moving through your mouth.",
 
-"contain": "( \n[J contains K.] = K is inside J.\n).",
+"contain": "([J contains K.] = K is inside J.).",
 
-"container": "( \n[X is a container.] = X is something that people make because they want to use it to contain other things.\n).",
+"container": "([X is a container.] = X is something that people make because they want to use it to contain other things.).",
 
 "contents": "What something contains.",
 
@@ -902,7 +903,7 @@
 
 "contract": "Something two or more people write that says what these people promise to do.",
 
-"control": "( \n[You control X.] = You can choose what you want X to do and you can cause X to do what you choose. You cause X to do some things and not do other things.\n).",
+"control": "([You control X.] = You can choose what you want X to do and you can cause X to do what you choose. You cause X to do some things and not do other things.).",
 
 "convenient": "Something that is near here and easy to do for a short time.",
 
@@ -934,9 +935,9 @@
 
 "council": "The small group of people who are chosen to decide things and make rules inside a government or other group.",
 
-"count": "( \n[You count the things in a place.] = You do something like this to know the number of things in a place: You touch or think about touching each thing. Each time after you touch a thing, you say the number of things you touched before. After you touch all the things in this place, you will know the number of things in this place.\n).",
+"count": "([You count the things in a place.] = You do something like this to know the number of things in a place: You touch or think about touching each thing. Each time after you touch a thing, you say the number of things you touched before. After you touch all the things in this place, you will know the number of things in this place.).",
 
-"country": "( \n[X is a country.] = X is the group of all places that one government controls.\n).\nPlaces where there are many plants far from places where there are many buildings.",
+"country": "([X is a country.] = X is the group of all places that one government controls.).\nPlaces where there are many plants far from places where there are many buildings.",
 
 "countryside": "Places where there are many plants far from places where there are many buildings.",
 
@@ -946,7 +947,7 @@
 
 "court": "Place where people hear what someone did and where people decide if the government rules allow this.\nPlace between two or more buildings where the ground is flat.\nFlat place that people make because they want to play games here.",
 
-"cover": "( \n[J is covering K.] = J is above K or around the sides of K. Because of this, other things cannot see K or touch K.\n).\nSay something about.\nWhen this happens, you will have the money you need.",
+"cover": "([J is covering K.] = J is above K or around the sides of K. Because of this, other things cannot see K or touch K.).\nSay something about.\nWhen this happens, you will have the money you need.",
 
 "cow": "One of several kinds of big female adult animals that do not eat other animals and that make milk inside their bodies.",
 
@@ -1012,19 +1013,19 @@
 
 "customer": "People who buy things from you.",
 
-"cut": "( \n[Something cuts X.] = X is something solid. Something causes two parts of X not to be connected, like this: Something hard and very thin presses X and moves between two parts of X. Because of this, these two parts of X become not connected. These two parts of X were connected before, but after this thin thing presses between them, they are not connected.\n).\nCause something to stop.",
+"cut": "([Something cuts X.] = X is something solid. Something causes two parts of X not to be connected, like this: Something hard and very thin presses X and moves between two parts of X. Because of this, these two parts of X become not connected. These two parts of X were connected before, but after this thin thing presses between them, they are not connected.).\nCause something to stop.",
 
 "cycle": "Something happens that has two or more parts. This thing happens many times. Each time it happens, all the same parts happen, and each happens before the same parts as before.\nYou sit on top of a vehicle that has two wheels, and you move your feet to cause its wheels to turn, and this makes it move from one place to another.",
 
 "daily": "Happening each day.",
 
-"damage": "( \n[J damaged K.] = J did something to K that was bad for K and it changed K like this: Before this happened, some parts of K were good more than now. Before this happened, K could do some things more than it can now.\n).",
+"damage": "([J damaged K.] = J did something to K that was bad for K and it changed K like this: Before this happened, some parts of K were good more than now. Before this happened, K could do some things more than it can now.).",
 
 "dance": "You move your body at the same time as you hear the sounds that are part of music because you enjoy doing this.",
 
 "danger": "Things happening in this place are able or likely to hurt you or cause you to die.\nSomething bad for you is likely to happen.",
 
-"dangerous": "( \n[X is dangerous.] = X is able or likely to hurt someone or cause someone to die.\n).",
+"dangerous": "([X is dangerous.] = X is able or likely to hurt someone or cause someone to die.).",
 
 "dare": "When someone does something daring.\nYou tell someone to do something to show people that they do not fear doing this.",
 
@@ -1036,7 +1037,7 @@
 
 "daughter": "Your female child.",
 
-"day": "( \n[X is one day.] = X is one time like this: There is part of this time when most people in this place are sleeping, because they cannot see the sun and there is not much light. After this, there is another part of this time when most people are not sleeping, because the sun is above this place and there is much light. After this, there is another part of this time when most people are sleeping, because they cannot see the sun and there is not much light.\n).\nWhen people can see the sun and most people are not sleeping.",
+"day": "([X is one day.] = X is one time like this: There is part of this time when most people in this place are sleeping, because they cannot see the sun and there is not much light. After this, there is another part of this time when most people are not sleeping, because the sun is above this place and there is much light. After this, there is another part of this time when most people are sleeping, because they cannot see the sun and there is not much light.).\nWhen people can see the sun and most people are not sleeping.",
 
 "dead": "(See 2-28).",
 
@@ -1056,7 +1057,7 @@
 
 "deceive": "You cause someone to think something is true when you know it is not true.\nYou cause someone to think something is good when you know it is not good.",
 
-"decide": "( \n[You decide that X is true.] = You think about what you know like this: Maybe some of these things can cause you to know X is true, and maybe some of these things can cause you to know X is not true. After thinking for some time, because of what you know, you think this: X is true.\n).\nChoose.",
+"decide": "([You decide that X is true.] = You think about what you know like this: Maybe some of these things can cause you to know X is true, and maybe some of these things can cause you to know X is not true. After thinking for some time, because of what you know, you think this: X is true.).\nChoose.",
 
 "decimal": "When an amount is written using several numbers, each less than ten. Each written number counts part of this amount. Numbers on one side of a small mark count parts of this amount less than one. Numbers on the other side of this small mark count parts of this amount multiplied by one or ten or more.",
 
@@ -1148,9 +1149,9 @@
 
 "difference": "The things you can say are different when you compare two things.",
 
-"different": "( \n[These things are different.] = These things are not the same.\n).",
+"different": "([These things are different.] = These things are not the same.).",
 
-"difficult": "( \n[Doing X is difficult.] = You cannot do X if you do not do much more or think much more than when you do many other things.\n).",
+"difficult": "([Doing X is difficult.] = You cannot do X if you do not do much more or think much more than when you do many other things.).",
 
 "difficulty": "Doing something that is difficult.",
 
@@ -1186,13 +1187,13 @@
 
 "discussion": "When several people discuss something.",
 
-"disease": "( \n[You have a disease.] = Something bad for you is happening inside your body. This can happen because many very small living things are alive inside your body. When this happens, some parts of your body cannot do the things they could do before. Maybe some very small parts of your body are dying. This can make your body feel bad.\n).",
+"disease": "([You have a disease.] = Something bad for you is happening inside your body. This can happen because many very small living things are alive inside your body. When this happens, some parts of your body cannot do the things they could do before. Maybe some very small parts of your body are dying. This can make your body feel bad.).",
 
 "dish": "This is a container that people make. People use it to contain food a short time before people eat this food. These containers are not tall, and most have the same shape as a circle.",
 
 "dismiss": "You tell someone that they cannot be here after now.\nYou tell someone that they do not need to be here after now.\nYou say something is not important and you do not want to say more about it.",
 
-"distance": "( \n[X is the distance between J and K.] = J and K are two things that are not touching. X is a length you can think about like this: One end of something can touch J at the same time that its other end touches K if its length is X, but not if its length is less than X.\n).",
+"distance": "([X is the distance between J and K.] = J and K are two things that are not touching. X is a length you can think about like this: One end of something can touch J at the same time that its other end touches K if its length is X, but not if its length is less than X.).",
 
 "distant": "Far from here.",
 
@@ -1204,11 +1205,11 @@
 
 "do, does, doing, did, done": "(See 2-04).",
 
-"doctor": "( \n[X is a doctor.] = X is someone who learns much for a long time and knows what to do that can help people who have a disease or damaged body to make them become more healthy.\n).\nSomeone who learns much for a long time and can work inside a school, helping other adults learn the same things.",
+"doctor": "([X is a doctor.] = X is someone who learns much for a long time and knows what to do that can help people who have a disease or damaged body to make them become more healthy.).\nSomeone who learns much for a long time and can work inside a school, helping other adults learn the same things.",
 
 "document": "One or more pieces of paper that contain something important that someone writes.",
 
-"dog": "( \n[X is a dog.] = X is a kind of animal that has hair and four legs and eats other animals. This kind of animal is less big than most adult people, but can be more big than small children. Many people want to have these animals near or inside the buildings where people live. These animals can do things people tell them to do. If an animal or another person tries to hurt someone, these animals can often prevent this.\n).",
+"dog": "([X is a dog.] = X is a kind of animal that has hair and four legs and eats other animals. This kind of animal is less big than most adult people, but can be more big than small children. Many people want to have these animals near or inside the buildings where people live. These animals can do things people tell them to do. If an animal or another person tries to hurt someone, these animals can often prevent this.).",
 
 "dollar": "Money that people use inside some countries.",
 
@@ -1222,11 +1223,11 @@
 
 "doubt": "When you think maybe this thing is not true.",
 
-"down": "( \n[X moved down.] = X moved from one place towards a place below it.\n).\nBelow.\nOn a surface.\nLess.\nMoving towards a place.\nSad.\nNot doing something.",
+"down": "([X moved down.] = X moved from one place towards a place below it.).\nBelow.\nOn a surface.\nLess.\nMoving towards a place.\nSad.\nNot doing something.",
 
 "drag": "You hold one part of this thing and pull it, causing this thing to move. All this time, part of this thing is touching the ground.",
 
-"draw, drew, drawn": "( \n[You draw something.] = You mark a surface. These marks are not the same as what people use to write words. When people see these marks, they see shapes that look like other things people can see.\n).\nPull.",
+"draw, drew, drawn": "([You draw something.] = You mark a surface. These marks are not the same as what people use to write words. When people see these marks, they see shapes that look like other things people can see.).\nPull.",
 
 "drawer": "Small container that you can pull out of or push into something people make. At most times, you push it inside, and you cannot see what is inside the container. When you want to see what is inside, you can pull part of it out, and you can move things into or out of the container.",
 
@@ -1234,7 +1235,7 @@
 
 "dress": "When you put parts of your body inside clothing to cover your body.\nKind of clothing women use to cover much of their legs and much of their body below their head. This clothing covers much of their legs, but is not between their legs.",
 
-"drink, drank, drunk": "( \n[J drinks K.] = J is a person or an animal. K is some liquid. J causes K to move into its body through its mouth.\n).\nPut alcohol into your body through your mouth.",
+"drink, drank, drunk": "([J drinks K.] = J is a person or an animal. K is some liquid. J causes K to move into its body through its mouth.).\nPut alcohol into your body through your mouth.",
 
 "drive, drove, driven": "Control where a vehicle moves.\nMake an animal move to the place where you want it.\nMake something move and control where it moves.\nMake someone do something.",
 
@@ -1246,9 +1247,9 @@
 
 "drum": "Something people make and use to make music. This thing has air inside. People hit this thing to make sounds that are part of some music.\nBig container having a top and bottom surface the shape of a circle.",
 
-"drunk": "( \n[J drinks K.] = J is a person or an animal. K is some liquid. J causes K to move into its body through its mouth.\n).\nWhen you put much alcohol into your body through your mouth.",
+"drunk": "([J drinks K.] = J is a person or an animal. K is some liquid. J causes K to move into its body through its mouth.).\nWhen you put much alcohol into your body through your mouth.",
 
-"dry, dries, dried": "( \n[X is dry.] = X is not touching water or liquid.\n[Something dries X.] = Something causes X to become dry.\n).",
+"dry, dries, dried": "([X is dry.] = X is not touching water or liquid.\n[Something dries X.] = Something causes X to become dry.).",
 
 "duck": "Kind of bird that can fly and can move on the surface of water. These birds have legs that are not long. This kind of bird has a hard mouth that is long, wide and flat.",
 
@@ -1260,11 +1261,11 @@
 
 "duty": "Something you need to do because people think it is good to do. People will think you are bad if you do not do it.\nMoney you need to give the government when you buy something.",
 
-"each": "( \n[You know X about each of these things.] = There are two or more things. You think about all these things like this: If something is one of these things, then you know X about it.\n).",
+"each": "([You know X about each of these things.] = There are two or more things. You think about all these things like this: If something is one of these things, then you know X about it.).",
 
 "eager": "You want to do something very much.",
 
-"ear": "( \n[These are your ears.] = These are two parts of your body. You have one of these on each side of your head. You can hear because of these two body parts.\n).",
+"ear": "([These are your ears.] = These are two parts of your body. You have one of these on each side of your head. You can hear because of these two body parts.).",
 
 "early": "Something happens before you expect it to happen.\nA short time after something starts, but a long time before it stops.",
 
@@ -1276,9 +1277,9 @@
 
 "eastern": "In a place towards the east.",
 
-"easy, easily": "( \n[Doing X is easy.] = Doing X is not difficult.\n).",
+"easy, easily": "([Doing X is easy.] = Doing X is not difficult.).",
 
-"eat, ate, eaten": "( \n[J eats K.] = J is a person or an animal. K is something that was part of some other living thing before. J causes K to move into its body. People and animals need to do this many times, because if they do not do this for a long time, they will die.\n).",
+"eat, ate, eaten": "([J eats K.] = J is a person or an animal. K is something that was part of some other living thing before. J causes K to move into its body. People and animals need to do this many times, because if they do not do this for a long time, they will die.).",
 
 "economic": "Thinking about many people who buy things, who make things that other people buy, and who do work that someone gives them money to do.",
 
@@ -1296,9 +1297,9 @@
 
 "effort": "The things you think or do to try to cause something to happen.\nTrying very much to make something happen.",
 
-"egg": "( \n[X is an egg.] = X is something inside the body of a female animal that can grow and become another animal that is the same kind. If the female animal is a bird, X is something round that moves out of her body, and after some time, the inside part of this round thing can become a young bird.\n).",
+"egg": "([X is an egg.] = X is something inside the body of a female animal that can grow and become another animal that is the same kind. If the female animal is a bird, X is something round that moves out of her body, and after some time, the inside part of this round thing can become a young bird.).",
 
-"eight": "( \n[There are eight things here.] = There are seven things here, and there is one more thing here.\n).",
+"eight": "([There are eight things here.] = There are seven things here, and there is one more thing here.).",
 
 "eighth": "One more after seven others.\nOne of eight parts of one thing. Each part is the same.",
 
@@ -1314,7 +1315,7 @@
 
 "electric": "This thing uses electricity.",
 
-"electricity": "( \n[X is electricity.] = X is something you cannot see, but it is not gas. X is something that can move through long pieces of metal. People can use X to cause something to become hot, or to cause something to move, or to cause there to be light. People make long narrow thin pieces of metal that they can cause X to move through. When people cause X to move through very long metal pieces, X can move very far to other places where people can use it.\n).",
+"electricity": "([X is electricity.] = X is something you cannot see, but it is not gas. X is something that can move through long pieces of metal. People can use X to cause something to become hot, or to cause something to move, or to cause there to be light. People make long narrow thin pieces of metal that they can cause X to move through. When people cause X to move through very long metal pieces, X can move very far to other places where people can use it.).",
 
 "electronic": "This thing uses electricity. People make it using many very small parts. These small parts each control electricity that moves through them.",
 
@@ -1346,7 +1347,7 @@
 
 "encouragement": "Things that encourage someone.",
 
-"end": "( \n[J and K are the two ends of X.] = J and K are two parts of X. You think like this about the shape of X: J is far from K more than all other parts of X, and K is far from J more than all other parts of X.\n).\nStop.\nWhen this stops.\nWhat happens because of this.",
+"end": "([J and K are the two ends of X.] = J and K are two parts of X. You think like this about the shape of X: J is far from K more than all other parts of X, and K is far from J more than all other parts of X.).\nStop.\nWhen this stops.\nWhat happens because of this.",
 
 "enemy": "This is someone who wants to hurt you and tries to cause things to happen that are bad for you. This is someone who feels angry when good things happen to you and happy when bad things happen to you.",
 
@@ -1356,7 +1357,7 @@
 
 "engineer": "Someone who does this kind of work: This person plans and makes machines, buildings and other big things.\nSomeone who does this kind of work: This person controls big vehicles and machines.\nEnglish = These are the words and rules that many people use to make sentences when they say things in many places inside many countries. In other places and countries, there are different words and rules that people use.",
 
-"enjoy": "( \n[You enjoy X.] = You want to do X or do something with X, because when you do this, it feels good for you.\n).",
+"enjoy": "([You enjoy X.] = You want to do X or do something with X, because when you do this, it feels good for you.).",
 
 "enjoyable": "This is something you enjoy.",
 
@@ -1434,21 +1435,21 @@
 
 "exercise": "You do something many times now, because you want to be able to do this well at a time after this.\nYou can do something and you do it now.",
 
-"exist": "( \n[Someplace an X exists.] = Someplace there is an X, or someplace an X is alive.\n).",
+"exist": "([Someplace an X exists.] = Someplace there is an X, or someplace an X is alive.).",
 
 "existence": "When something exist.",
 
-"expect": "( \n[You expect X to happen.] = You think about what can happen after this time. Maybe X happens after this time, and maybe X does not happen. Before you know what happens, you think like this: You think X happens much more than you think X does not happen.\n).",
+"expect": "([You expect X to happen.] = You think about what can happen after this time. Maybe X happens after this time, and maybe X does not happen. Before you know what happens, you think like this: You think X happens much more than you think X does not happen.).",
 
 "expensive": "You need much money to buy this.",
 
 "experience": "What you know and can do now, because you did things like this many times before.\nSomething that happens to you that you feel and think about.",
 
-"explain": "( \n[X explains something.] = X carefully tells you something you did not know about a thing, or what something means, or what caused something to happen.\n).",
+"explain": "([X explains something.] = X carefully tells you something you did not know about a thing, or what something means, or what caused something to happen.).",
 
 "explanation": "What someone says when they carefully tell you something you did not know about a thing, or what something means, or what caused something to happen.",
 
-"explode": "( \n[X explodes.] = Something like this happens: X is something inside a container. For a short time, X quickly becomes very much more hot and big. In a moment, the container cannot contain X because of this. This causes a loud sound, and small pieces of X and the container move from the centre very quickly. These pieces can move far and damage other things they hit.\n).\nQuickly become more.",
+"explode": "([X explodes.] = Something like this happens: X is something inside a container. For a short time, X quickly becomes very much more hot and big. In a moment, the container cannot contain X because of this. This causes a loud sound, and small pieces of X and the container move from the centre very quickly. These pieces can move far and damage other things they hit.).\nQuickly become more.",
 
 "explosion": "When something explodes.",
 
@@ -1460,7 +1461,7 @@
 
 "extreme, extremely": "Very.\nVery much.\nThere is not another that is more than this.",
 
-"eye": "( \n[These are your eyes.] = These are two parts of your body. You can see because of these two body parts.\n).",
+"eye": "([These are your eyes.] = These are two parts of your body. You can see because of these two body parts.).",
 
 "eyelid": "This is a small thin part of the surface of your head near each eye. It can move down and cover the eye, preventing light moving into your eye.",
 
@@ -1486,7 +1487,7 @@
 
 "faithful": "People think that you will do the same as what you said you will do, and that you will do what is good for other people. People very much think you will do these things, because you did this many times before.\nWhat someone said is true.",
 
-"fall, fell, fallen": "( \n[X falls.] = X was more high before. But now X moves quickly down through the air. It moves down because there is not something touching X that prevents it moving down.\n).\nBecome more bad.\nBecome less.\nBecome.\nThree months that are after the hot part of a year and before the cold part of a year.",
+"fall, fell, fallen": "([X falls.] = X was more high before. But now X moves quickly down through the air. It moves down because there is not something touching X that prevents it moving down.).\nBecome more bad.\nBecome less.\nBecome.\nThree months that are after the hot part of a year and before the cold part of a year.",
 
 "false": "Not true.\nWhat you think you see is not true.",
 
@@ -1494,7 +1495,7 @@
 
 "familiar": "Many people know about this because many people see it or do it many times.",
 
-"family": "( \n[X is your family.] = X is a group of people that contains you and the person you married and your children. X can contain other people who have parents or children that are part of this group. X can contain other people who are married to someone that is part of this group.\n).",
+"family": "([X is your family.] = X is a group of people that contains you and the person you married and your children. X can contain other people who have parents or children that are part of this group. X can contain other people who are married to someone that is part of this group.).",
 
 "famous": "Many people know about you and often say things about you.",
 
@@ -1516,7 +1517,7 @@
 
 "fasten": "Cause things to connect.\nConnected.",
 
-"fat": "( \n[X is some fat.] = X is like this: X is something inside animal bodies near the surface. X is a yellow white solid part of the body that helps the animal not become cold quickly. People can eat X and can burn X. When you put X into water, it moves up to the top surface of the water. When X becomes hot, it becomes liquid.\n).\nMore wide than most things that are the same kind.",
+"fat": "([X is some fat.] = X is like this: X is something inside animal bodies near the surface. X is a yellow white solid part of the body that helps the animal not become cold quickly. People can eat X and can burn X. When you put X into water, it moves up to the top surface of the water. When X becomes hot, it becomes liquid.).\nMore wide than most things that are the same kind.",
 
 "fate": "Something that happens to you that you cannot control.",
 
@@ -1530,7 +1531,7 @@
 
 "favourite, (favorite)": "You enjoy or want this one more than all others.",
 
-"fear": "( \n[You fear X.] = You feel like this: X is something you think can hurt you or can cause something very bad for you. You think maybe this will happen now or a short time after now. You do not want this bad thing to happen, but you cannot control it. You think about it very much, but thinking about it makes you feel something bad that you do not want to feel. You want to be in a different place where this bad thing cannot happen.\n).",
+"fear": "([You fear X.] = You feel like this: X is something you think can hurt you or can cause something very bad for you. You think maybe this will happen now or a short time after now. You do not want this bad thing to happen, but you cannot control it. You think about it very much, but thinking about it makes you feel something bad that you do not want to feel. You want to be in a different place where this bad thing cannot happen.).",
 
 "feather": "One of the many long flat things that grow out of the surface of the body of a bird and cover most parts of its body. A bird needs these things to fly.",
 
@@ -1546,7 +1547,7 @@
 
 "fellow": "Man.\nSomeone who does the same kind of work as you do in the same place.",
 
-"female": "( \n[X is female.] = People and many kinds of animals are like this: When two animals cause a child to exist, their child is alive inside the body of one of these two animals for some time. X is like the one that can have a child live inside its body.\n).",
+"female": "([X is female.] = People and many kinds of animals are like this: When two animals cause a child to exist, their child is alive inside the body of one of these two animals for some time. X is like the one that can have a child live inside its body.).",
 
 "fence": "Something long and tall and narrow that people make between one place and another place. A person or animal needs to move above this long narrow thing to move from one place to the other, but cannot do this easily. People make this to prevent people or animals moving out of one place into the other.",
 
@@ -1574,7 +1575,7 @@
 
 "financial": "The things people do with money.",
 
-"find, found": "( \n[You find X.] = You now know that X is here in this place. But before now, you did not know this. Maybe you wanted to know where X was, but you did not know before now.\n).\nYou know something now that you did not know before.\nYou know something now because you did things to try to know about this.",
+"find, found": "([You find X.] = You now know that X is here in this place. But before now, you did not know this. Maybe you wanted to know where X was, but you did not know before now.).\nYou know something now that you did not know before.\nYou know something now because you did things to try to know about this.",
 
 "find out, found out": "You know something now that you did not know before.",
 
@@ -1590,15 +1591,15 @@
 
 "firm": "Not likely to change or move.",
 
-"first": "( \n[X was the first thing that happened.] = Several things happened, but X happened before all the others.\n).\nWhat is said or done before all other things.\nThis one is more important than all others.",
+"first": "([X was the first thing that happened.] = Several things happened, but X happened before all the others.).\nWhat is said or done before all other things.\nThis one is more important than all others.",
 
-"fish": "( \n[X is a fish.] = X is a kind of animal that is cold and has two eyes and does not have legs. These animals live in places where there is much water. They live and move below the top surface of the water. These animals will die if they are not inside water for a short time. There are many kinds of animals like this.\n).\nWhen a kind of animal lives and moves below the surface of the water, and someone tries to find it and pull it out of the water.",
+"fish": "([X is a fish.] = X is a kind of animal that is cold and has two eyes and does not have legs. These animals live in places where there is much water. They live and move below the top surface of the water. These animals will die if they are not inside water for a short time. There are many kinds of animals like this.).\nWhen a kind of animal lives and moves below the surface of the water, and someone tries to find it and pull it out of the water.",
 
 "fisherman, fishermen": "Someone who finds fish and pulls them out of the water.",
 
 "fit": "This one thing has a shape that can be inside this other thing. It does not need to be less big to be inside this other thing.\nSomeone or something can be in the same place as these other people or things and can do what you want.\nHealthy.",
 
-"five": "( \n[There are five things here.] = There are four things here, and there is one more thing here.\n).",
+"five": "([There are five things here.] = There are four things here, and there is one more thing here.).",
 
 "fix": "After something becomes damaged, you change the damaged parts and cause this thing to be something good you can use, like it was before it became damaged.\nCause something to be connected to a place.\nPromise to do something at a time.\nMake something now that you can eat or use after this time.",
 
@@ -1608,7 +1609,7 @@
 
 "flash": "You see much light for a very short time, but you do not see much light before or after this time.",
 
-"flat": "( \n[X is flat.] = The shape of X is like the top surface of water when there is much water in a place and this water does not move.\n).\nThis does not change much.\nThe distance between the top and the bottom is very much less than the distance between the two sides.\nThe top of this is more near to the bottom than you expect.\nA sound that is more low than you expect.",
+"flat": "([X is flat.] = The shape of X is like the top surface of water when there is much water in a place and this water does not move.).\nThis does not change much.\nThe distance between the top and the bottom is very much less than the distance between the two sides.\nThe top of this is more near to the bottom than you expect.\nA sound that is more low than you expect.",
 
 "flesh": "The parts of the body of a person or animal that are not hard and that are between the body surface and the bones.\nThe surface of the body of a person.\nThe parts of a plant or animal that are not hard and can be eaten.",
 
@@ -1618,15 +1619,15 @@
 
 "flood": "When much water moves into a place where there was not much water before.",
 
-"floor": "( \n[X is the floor.] = X is the big surface people are on top of when they are inside part of a building.\n).\nOne of several different big surfaces inside a building like this: People can be on top of each of these surfaces, and each of these surfaces is above or below another that people can be on top of.",
+"floor": "([X is the floor.] = X is the big surface people are on top of when they are inside part of a building.).\nOne of several different big surfaces inside a building like this: People can be on top of each of these surfaces, and each of these surfaces is above or below another that people can be on top of.",
 
 "flour": "Very small dry pieces of grain seeds that people use to make bread.",
 
 "flow": "When something moves for some time like liquid moves.",
 
-"flower": "( \n[X is a flower.] = X is a part of a plant. X grows in the place where seeds or fruit will grow. X is often beautiful and not the same colour as other parts of the plant. X exists for a short time, and after this, the seeds or fruit will grow in this same place.\n).",
+"flower": "([X is a flower.] = X is a part of a plant. X grows in the place where seeds or fruit will grow. X is often beautiful and not the same colour as other parts of the plant. X exists for a short time, and after this, the seeds or fruit will grow in this same place.).",
 
-"fly, flies, flew, flown": "( \n[X is flying.] = X is something solid moving through the air for a long time. X is touching the air, but not touching other things.\n).\nSome kinds of very small animals that have six legs and can move through the air for a long time.",
+"fly, flies, flew, flown": "([X is flying.] = X is something solid moving through the air for a long time. X is touching the air, but not touching other things.).\nSome kinds of very small animals that have six legs and can move through the air for a long time.",
 
 "fold": "You change the shape of something solid, like this: Two parts of its surface were not touching before. You do not change the shape of these two parts, but you move one of the parts and cause its surface to be touching the surface of the other part.",
 
@@ -1634,13 +1635,13 @@
 
 "fond": "When you enjoy someone or something.",
 
-"food": "( \n[X is some food.] = X is something that people and animals eat.\n).",
+"food": "([X is some food.] = X is something that people and animals eat.).",
 
 "fool": "Someone who does foolish things.\nCausing someone to think something is true, when it is not true.",
 
 "foolish": "You decided to do something, but you did not think about it much before you decided to do it, and because of this, you decided to do something that most people know is not good for you.",
 
-"foot, feet": "( \n[X is one of your feet.] = X is the bottom end of each of your legs. When people use their legs to move from one place to another, each X moves many times and the bottom of each X touches different parts of the ground.\n).\nInside some countries, people measure things using this length: One metre is more than three of this length and less than four of this length.",
+"foot, feet": "([X is one of your feet.] = X is the bottom end of each of your legs. When people use their legs to move from one place to another, each X moves many times and the bottom of each X touches different parts of the ground.).\nInside some countries, people measure things using this length: One metre is more than three of this length and less than four of this length.",
 
 "football": "Game where two groups of people use their feet to move a round thing. One group tries to move the round thing to one side of a place, and the other group tries to move it to the other side.",
 
@@ -1682,7 +1683,7 @@
 
 "forward, forwards": "Looking or moving towards the place in front of you.\nTowards the place where you want to move.\nMore near to the front part of something.\nAfter now.",
 
-"four": "( \n[There are four things here.] = There are two things here, and there are two more things here.\n).",
+"four": "([There are four things here.] = There are two things here, and there are two more things here.).",
 
 "fourth": "One more after three others.\nOne of four parts of one thing. Each part is the same.",
 
@@ -1708,11 +1709,11 @@
 
 "frightening": "Causing someone to feel fear.",
 
-"from": "( \n[X moved here from this other place.] = X was in this other place before it moved for some time. Because X moved, it is here after this, and it is not in this other place.\n).\n(See far from 1-23).\nBetween this and another.\nWhat this was like before.\nNot to be like this.\nWhat caused this.",
+"from": "([X moved here from this other place.] = X was in this other place before it moved for some time. Because X moved, it is here after this, and it is not in this other place.).\n(See far from 1-23).\nBetween this and another.\nWhat this was like before.\nNot to be like this.\nWhat caused this.",
 
-"front": "( \n[J is the front of K.] = Most times when you use K or when K moves towards you, J is the part of K that you see and that is near to you more than other parts of K.\n[J is in front of K.] = J is near the front of K.\n).",
+"front": "([J is the front of K.] = Most times when you use K or when K moves towards you, J is the part of K that you see and that is near to you more than other parts of K.\n[J is in front of K.] = J is near the front of K.).",
 
-"fruit": "( \n[X is a piece of fruit.] = X is a part of a plant that contains seeds. This part of many kinds of plants and trees becomes big and good for people to eat.\n).",
+"fruit": "([X is a piece of fruit.] = X is a part of a plant that contains seeds. This part of many kinds of plants and trees becomes big and good for people to eat.).",
 
 "fulfil, (fulfill)": "You do the thing someone wanted you to do.",
 
@@ -1736,7 +1737,7 @@
 
 "gain": "You will have more after this.\nBecoming more than before.\nDoing more than another person or thing.",
 
-"game": "( \n[You play a game.] = You play for some time like this: There are rules that say what you can and cannot do. The rules tell you to try to do something before another person does it, or more than another person does, or before some time. You do not know if you can do this, but you try doing it for some time because you enjoy this.\n).\nKinds of animals that live in big places where people do not control them, but at some times people will eat some of them.",
+"game": "([You play a game.] = You play for some time like this: There are rules that say what you can and cannot do. The rules tell you to try to do something before another person does it, or more than another person does, or before some time. You do not know if you can do this, but you try doing it for some time because you enjoy this.).\nKinds of animals that live in big places where people do not control them, but at some times people will eat some of them.",
 
 "garage": "Building where people put a vehicle when they are not using it.\nBuilding where people change the damaged parts of a vehicle and make it good to use.",
 
@@ -1744,7 +1745,7 @@
 
 "garment": "One piece of clothing.",
 
-"gas": "( \n[X is a gas.] = X is air or some other kind of thing that is like air. X is like this: You cannot see it, but you can feel it touching you when it moves.\n).\nKind of liquid that people put inside machines where it burns and makes the machine move.",
+"gas": "([X is a gas.] = X is air or some other kind of thing that is like air. X is like this: You cannot see it, but you can feel it touching you when it moves.).\nKind of liquid that people put inside machines where it burns and makes the machine move.",
 
 "gate": "People need to move through this narrow place to move from one place to another. You can put something solid inside this narrow place to prevent people moving through it.",
 
@@ -1764,7 +1765,7 @@
 
 "girl": "Young female person.",
 
-"give, gave, given": "( \n[You give X to someone.] = X is something you have. But now you cause someone to have X, and after this you do not have X.\n).\nDo something to someone.",
+"give, gave, given": "([You give X to someone.] = X is something you have. But now you cause someone to have X, and after this you do not have X.).\nDo something to someone.",
 
 "glad": "You feel happy thinking about something.",
 
@@ -1774,11 +1775,11 @@
 
 "glue": "Something people use to connect things, like this: People put this kind of liquid between two things, and when it becomes dry, it becomes solid and connects these two things.",
 
-"go, goes, going, went, gone": "( \n[X goes to this place.] = X moves to this place from another place.\n).\nDo something.\nHappen.\nBecome.",
+"go, goes, going, went, gone": "([X goes to this place.] = X moves to this place from another place.).\nDo something.\nHappen.\nBecome.",
 
 "goat": "Kind of animal that is like a sheep, but eats many kinds of plants. This kind of animal has two long hard narrow things on top of its head and long hair below its mouth. These animals can easily move up on top of big stones.",
 
-"god": "( \n[X is a god.] = Many people think someone like this exists: X is someone good. X is not like people and does not have a body that dies. X existed before all other things existed. All other things exist because X caused them to exist.\n).",
+"god": "([X is a god.] = Many people think someone like this exists: X is someone good. X is not like people and does not have a body that dies. X existed before all other things existed. All other things exist because X caused them to exist.).",
 
 "gold": "Yellow metal that people use to make metal pieces of money and small beautiful things that people put around parts of their body. You need much money to buy this kind of metal.",
 
@@ -1792,7 +1793,7 @@
 
 "govern": "What a government does when it controls a country.",
 
-"government": "( \n[X is a government.] = X is the group of people that controls a big place and all the people who live in this place. X does some things that are good for the people in this place. X prevents some things that can hurt the people in this place. X makes rules that say what the people in this place need to do and are not allowed to do. X can do things that are bad for people who do not do what these rules say.\n).",
+"government": "([X is a government.] = X is the group of people that controls a big place and all the people who live in this place. X does some things that are good for the people in this place. X prevents some things that can hurt the people in this place. X makes rules that say what the people in this place need to do and are not allowed to do. X can do things that are bad for people who do not do what these rules say.).",
 
 "grace": "What someone does is graceful.",
 
@@ -1800,7 +1801,7 @@
 
 "gradual": "For a long time this thing changes many times. After all these changes, this thing is not the same as before. Each small change makes it become more like it will be after all the changes and less like it was before all the changes.",
 
-"grain": "( \n[X is some grain.] = X is some seeds. These are seeds that people eat from several kinds of plants. Each day, most people eat food that is made using some of these kinds of seeds. People use these seeds to make food like this: Some people put these seeds into hot water for some time and then eat them. Some people use these seeds to make bread.\n).\nSomething that looks like many long straight marks on the surface of a piece of a plant.\nVery small piece.",
+"grain": "([X is some grain.] = X is some seeds. These are seeds that people eat from several kinds of plants. Each day, most people eat food that is made using some of these kinds of seeds. People use these seeds to make food like this: Some people put these seeds into hot water for some time and then eat them. Some people use these seeds to make bread.).\nSomething that looks like many long straight marks on the surface of a piece of a plant.\nVery small piece.",
 
 "gram": "One thousand of this weight is the same as one kilogram.",
 
@@ -1822,7 +1823,7 @@
 
 "great": "Very good.\nVery much.\nVery important.\nVery big.",
 
-"green": "( \n[X is green.] = The colour of X is like the colour of most living parts of most plants.\n).",
+"green": "([X is green.] = The colour of X is like the colour of most living parts of most plants.).",
 
 "greet": "You did not see someone or say something to them for a long time, but now you say something to them to tell them you are happy you can see them or say something to them now.",
 
@@ -1834,11 +1835,11 @@
 
 "grieve": "You feel grief for some time.",
 
-"ground": "( \n[X is the ground.] = X is something solid. There is very much of it below the places where people live. Most plants have some parts that grow down into it and other parts that grow up above it.\n).\nWhat causes someone to do something.",
+"ground": "([X is the ground.] = X is something solid. There is very much of it below the places where people live. Most plants have some parts that grow down into it and other parts that grow up above it.).\nWhat causes someone to do something.",
 
-"group": "( \n[X is a group of things.] = There are two or more things in a place, but you think about them like they are one thing. You think like this: X is one thing, and these two or more things are like parts of X or like things inside X.\n).",
+"group": "([X is a group of things.] = There are two or more things in a place, but you think about them like they are one thing. You think like this: X is one thing, and these two or more things are like parts of X or like things inside X.).",
 
-"grow, grew, grown": "( \n[X is growing.] = X is becoming more big.\n).\nBecome.",
+"grow, grew, grown": "([X is growing.] = X is becoming more big.).\nBecome.",
 
 "growth": "When something grows.",
 
@@ -1862,7 +1863,7 @@
 
 "habitual": "Doing something that is a habit.",
 
-"hair": "( \n[X is a hair.] = X is something long and very thin and narrow. Many of these grow out of the surface of the bodies of many kinds of animals. Most people have many of these growing out of the top part of the head.\n).",
+"hair": "([X is a hair.] = X is something long and very thin and narrow. Many of these grow out of the surface of the bodies of many kinds of animals. Most people have many of these growing out of the top part of the head.).",
 
 "hairy": "Having much hair.",
 
@@ -1872,7 +1873,7 @@
 
 "hammer": "This is something people make. One end of this thing is big and heavy more than the other end. Using one hand to hold the less heavy end, you can move this thing and cause the heavy end to hit something.",
 
-"hand": "( \n[X is one of your hands.] = X is one end of each of your arms. X has five narrow parts. Each of these five narrow parts can move and touch the other four parts, and each can move when the other four parts do not move. You use X very often when you touch and hold things.\n).",
+"hand": "([X is one of your hands.] = X is one end of each of your arms. X has five narrow parts. Each of these five narrow parts can move and touch the other four parts, and each can move when the other four parts do not move. You use X very often when you touch and hold things.).",
 
 "handkerchief": "Small piece of cloth or paper that people use to dry their nose or eyes.",
 
@@ -1882,9 +1883,9 @@
 
 "happen": "(See 2-05).",
 
-"happy": "( \n[You feel happy.] = You feel something good like this: You feel like when something good for you happens or like when you are doing something you enjoy. Because of this you feel good, and for some time you do not think about other things you want.\n).",
+"happy": "([You feel happy.] = You feel something good like this: You feel like when something good for you happens or like when you are doing something you enjoy. Because of this you feel good, and for some time you do not think about other things you want.).",
 
-"hard": "( \n[X is hard.] = X is something solid. You cannot change the shape of X, or you cannot easily cause the shape of X to change.\n).\nDifficult to do.\nVery much.\nLikely to hurt someone.",
+"hard": "([X is hard.] = X is something solid. You cannot change the shape of X, or you cannot easily cause the shape of X to change.).\nDifficult to do.\nVery much.\nLikely to hurt someone.",
 
 "harden": "Become hard.",
 
@@ -1908,13 +1909,13 @@
 
 "have, has, had": "(See 2-02).\nPart of.\nWhat someone can know and say about this.\nYou control and can use this.\nYou need to do this.\nAt a time before now.\nIf.",
 
-"he": "( \n[He does something.] = This male person or animal does something.\n[Something happens to him.] = Something happens to this male person or animal.\n[This is his X.] = This X belongs to this male person or animal.\n).",
+"he": "([He does something.] = This male person or animal does something.\n[Something happens to him.] = Something happens to this male person or animal.\n[This is his X.] = This X belongs to this male person or animal.).",
 
-"head": "( \n[X is your head.] = X is a round part of your body. Your mouth and eyes are parts of X. Something happens inside X when you think. Something inside X controls the other parts of your body.\n).\nThe part of something that controls what the other parts do.",
+"head": "([X is your head.] = X is a round part of your body. Your mouth and eyes are parts of X. Something happens inside X when you think. Something inside X controls the other parts of your body.).\nThe part of something that controls what the other parts do.",
 
 "health": "When you are healthy.\nWhat you know about someone when you know they are more or less healthy.",
 
-"healthy": "( \n[You are healthy.] = You do not have a disease, and your body feels good. Your body is able to do most things you want and expect it to do.\n).",
+"healthy": "([You are healthy.] = You do not have a disease, and your body feels good. Your body is able to do most things you want and expect it to do.).",
 
 "hear, heard": "(See 1-28).",
 
@@ -1924,21 +1925,21 @@
 
 "heaven": "Many people think a place like this exists: God is in this place. Some part of a person can live in this place after their body dies.",
 
-"heavy": "( \n[X is heavy.] = X is difficult to lift. X is more difficult to lift than other things that are the same shape.\n).\nDifficult.\nVery much.",
+"heavy": "([X is heavy.] = X is difficult to lift. X is more difficult to lift than other things that are the same shape.).\nDifficult.\nVery much.",
 
 "heel": "The back part of your foot.",
 
 "height": "Distance between the top surface and bottom surface.\nDistance between the ground and a thing or place above the ground.\nWhen something is more than other things or more than at other times.",
 
-"hello": "( \n[You say: \"Hello.\"] = You say a word that people often say when they see someone, before they say other words. You say this word to someone because you want them to know you are here, and then they can say this same word to you to tell you that they can hear you. You want to know they can hear you before you start saying more to them.\n).",
+"hello": "([You say: \"Hello.\"] = You say a word that people often say when they see someone, before they say other words. You say this word to someone because you want them to know you are here, and then they can say this same word to you to tell you that they can hear you. You want to know they can hear you before you start saying more to them.).",
 
-"help": "( \n[You help J do K.] = You do something. Maybe you do part of K. Because of what you do, J can do K more easily.\n).",
+"help": "([You help J do K.] = You do something. Maybe you do part of K. Because of what you do, J can do K more easily.).",
 
 "helpful": "Someone or something that helps you.",
 
 "hen": "Adult female bird.",
 
-"her": "( \n[She does something.] = This female person or animal does something.\n[Something happens to her.] = Something happens to this female person or animal.\n[This is her X.] = This X belongs to this female person or animal.\n).",
+"her": "([She does something.] = This female person or animal does something.\n[Something happens to her.] = Something happens to this female person or animal.\n[This is her X.] = This X belongs to this female person or animal.).",
 
 "here": "(See 2-21).\nAt this time.",
 
@@ -1948,27 +1949,27 @@
 
 "hide, hid, hidden": "Put something in a place where other people cannot easily see it or find it.\nCover something because you do not want people to see it.",
 
-"high": "( \n[X is high.] = X is above and far from the ground.\n[X is a high sound.] = You expect something more long and something less long to make different sounds. X is the kind of sound you expect to hear from things that are less long.\n[J is higher than K.] = J is high more than K.\n).\nDistance between the top and bottom.\nMuch more than many other things or other times.\nVery good or important.",
+"high": "([X is high.] = X is above and far from the ground.\n[X is a high sound.] = You expect something more long and something less long to make different sounds. X is the kind of sound you expect to hear from things that are less long.\n[J is higher than K.] = J is high more than K.).\nDistance between the top and bottom.\nMuch more than many other things or other times.\nVery good or important.",
 
 "hill": "On top of this place, the ground surface is above the ground surface on each side of this place.",
 
-"him": "( \n[He does something.] = This male person or animal does something.\n[Something happens to him.] = Something happens to this male person or animal.\n[This is his X.] = This X belongs to this male person or animal.\n).",
+"him": "([He does something.] = This male person or animal does something.\n[Something happens to him.] = Something happens to this male person or animal.\n[This is his X.] = This X belongs to this male person or animal.).",
 
 "himself": "This same male person or animal: the same one who does this and not others.",
 
 "hire": "You promise to give someone money if they allow you to use something that belongs to them for some time.\nYou promise to give someone money if they do some work that you want them to do.",
 
-"his": "( \n[He does something.] = This male person or animal does something.\n[Something happens to him.] = Something happens to this male person or animal.\n[This is his X.] = This X belongs to this male person or animal.\n).",
+"his": "([He does something.] = This male person or animal does something.\n[Something happens to him.] = Something happens to this male person or animal.\n[This is his X.] = This X belongs to this male person or animal.).",
 
 "historical": "Things that happened or existed a long time before now.",
 
 "history": "True things someone says about what happened in a place a long time before now.\nAll things that happened to these people or things before now.",
 
-"hit": "( \n[J hits K.] = J is moving quickly towards K before this moment when it touches K. Because it is moving quickly when it touches K, it can cause K to move or cause J or K to change shape.\n).",
+"hit": "([J hits K.] = J is moving quickly towards K before this moment when it touches K. Because it is moving quickly when it touches K, it can cause K to move or cause J or K to change shape.).",
 
-"hold, held": "( \n[You hold X.] = You touch X to cause it to be near to you for some time. You touch X to control where it moves or cause it not to move.\n).\nCause this not to change or not to move from this place for some time.",
+"hold, held": "([You hold X.] = You touch X to cause it to be near to you for some time. You touch X to control where it moves or cause it not to move.).\nCause this not to change or not to move from this place for some time.",
 
-"hole": "( \n[J is a hole in K.] = K is something solid. J is a place inside K. There are not parts of K in this place. Other things can move into or through this place and be inside K.\n).",
+"hole": "([J is a hole in K.] = K is something solid. J is a place inside K. There are not parts of K in this place. Other things can move into or through this place and be inside K.).",
 
 "holiday": "Day when many people do not work, because people want to use this day to think about something important.\nSeveral days when many people work, but you do not work because you want to use these days to do some things you enjoy. This is not something you do each group of seven days.",
 
@@ -2004,17 +2005,17 @@
 
 "host": "When people are in a place for a short time, this person gives them food and causes things to be here that they are likely to enjoy seeing or hearing.\nVery many.",
 
-"hot": "( \n[X is hot.] = At some times a place can be like this: In this place some solid things become liquid, and some liquids become gas. At other times the place can be like this: In this place some gases become liquid, and some liquids become solid. X feels more like the place when liquids become gas.\n).\nSomething that causes people to feel more and want something more than at most other times.",
+"hot": "([X is hot.] = At some times a place can be like this: In this place some solid things become liquid, and some liquids become gas. At other times the place can be like this: In this place some gases become liquid, and some liquids become solid. X feels more like the place when liquids become gas.).\nSomething that causes people to feel more and want something more than at most other times.",
 
 "hotel": "Business that has a building where people can sleep. People give the business money to sleep inside this building one or more days.",
 
-"hour": "( \n[X is one hour.] = X is a time that is part of a day. Four groups each containing six of this time is the same as one day.\n).",
+"hour": "([X is one hour.] = X is a time that is part of a day. Four groups each containing six of this time is the same as one day.).",
 
 "hourly": "Happening each hour.",
 
-"house": "( \n[X is a house.] = X is a building where one family eats and sleeps. The same family uses this building for a long time.\n).\nA big building where many people do the same things.",
+"house": "([X is a house.] = X is a building where one family eats and sleeps. The same family uses this building for a long time.).\nA big building where many people do the same things.",
 
-"how": "( \n[I want to know how to cause X.] = I want to know all the things I need to do to cause X.\n[I want to know how X happened.] = I want to know more about what X was like when it happened.\n[I want to know how many Xs are here.] = I want to know the number of Xs that are here.\n[I want to know how much X is inside this container.] = I want to know the amount of X inside this container.\n).\nSaying if something happens that is good for or bad for someone.\nYou want someone to tell you what this is like.\nVery.",
+"how": "([I want to know how to cause X.] = I want to know all the things I need to do to cause X.\n[I want to know how X happened.] = I want to know more about what X was like when it happened.\n[I want to know how many Xs are here.] = I want to know the number of Xs that are here.\n[I want to know how much X is inside this container.] = I want to know the amount of X inside this container.).\nSaying if something happens that is good for or bad for someone.\nYou want someone to tell you what this is like.\nVery.",
 
 "human": "Person.",
 
@@ -2022,7 +2023,7 @@
 
 "humour, (humor)": "Something that makes people laugh.\nThe kinds of things you feel because of what you are thinking.\nSomeone says something you think is not true, or they tell you to do something you do not want to do. But you want to make them happy. Because of this, you do what they want, and you do not tell them what they said is not true.",
 
-"hundred": "( \n[There are one hundred things here.] = You can think about the number of things here like this: There are ten groups of things here, and each group contains ten things.\n).",
+"hundred": "([There are one hundred things here.] = You can think about the number of things here like this: There are ten groups of things here, and each group contains ten things.).",
 
 "hundredth": "The one of a hundred that is after all the others.\nOne of a hundred parts of one thing. Each part is the same.",
 
@@ -2034,7 +2035,7 @@
 
 "hurry": "Moving quickly.\nTrying to do something more quickly than at most other times when you do the same kind of thing.",
 
-"hurt": "( \n[This part of your body hurts.] = Something feels bad inside this part of your body. It feels very bad for you, like when something damages part of your body.\n[J hurts K.] = J does something that damages K or feels bad for K.\n).",
+"hurt": "([This part of your body hurts.] = Something feels bad inside this part of your body. It feels very bad for you, like when something damages part of your body.\n[J hurts K.] = J does something that damages K or feels bad for K.).",
 
 "husband": "The man that a woman is married to.",
 
@@ -2070,7 +2071,7 @@
 
 "importance": "This thing is important.",
 
-"important": "( \n[X is important.] = You think X causes or can be used to cause something that you very much want. If this does not happen, this could feel very bad for you.\n).",
+"important": "([X is important.] = You think X causes or can be used to cause something that you very much want. If this does not happen, this could feel very bad for you.).",
 
 "impressive": "This thing causes people to think it is very good.\nThis thing causes people to think about it for a long time.",
 
@@ -2166,7 +2167,7 @@
 
 "interrupt": "Someone says or does something for some time and they want to say or do more, but you say or do something that stops them for a short time.",
 
-"into": "( \n[J moved into K.] = J was not inside K before. Then J moved, and now J is inside K.\n).\nBecome.\nBecome part of.\nHit.",
+"into": "([J moved into K.] = J was not inside K before. Then J moved, and now J is inside K.).\nBecome.\nBecome part of.\nHit.",
 
 "introduce": "When you tell someone your name.\nWhen you say things for a short time to help people know about something they did not know about before.\nCause something to happen in a place where something like it did not happen before.",
 
@@ -2192,9 +2193,9 @@
 
 "island": "Around this place on all sides there is much water covering the ground. But in this place there is not water above the ground.",
 
-"it": "( \n[It does something.] = This thing does something.\n[They do something.] = These things or people do something.\n[Something happens to them.] = Something happens to these things or people.\n).\nWhat happens at this time.",
+"it": "([It does something.] = This thing does something.\n[They do something.] = These things or people do something.\n[Something happens to them.] = Something happens to these things or people.).\nWhat happens at this time.",
 
-"its": "( \n[This is its X.] = This X belongs to it.\n[These things are their things.] = These things belong to them.\n).",
+"its": "([This is its X.] = This X belongs to it.\n[These things are their things.] = These things belong to them.).",
 
 "itself": "This same thing that does this, and not others.",
 
@@ -2246,7 +2247,7 @@
 
 "kilo": "One kilogram.",
 
-"kilogram": "( \n[X is one kilogram.] = X is a weight. One thousand of these weights is the same as the weight of the water inside a container where the sides and bottom are each a square and the distance between two sides is one metre.\n).",
+"kilogram": "([X is one kilogram.] = X is a weight. One thousand of these weights is the same as the weight of the water inside a container where the sides and bottom are each a square and the distance between two sides is one metre.).",
 
 "kilometre, (kilometer)": "One thousand metres.",
 
@@ -2300,11 +2301,11 @@
 
 "lately": "A short time before now.",
 
-"laugh": "( \n[Something made you laugh.] = Something caused you to make sounds like this: You saw or heard something you did not expect, and for a short time you thought this could be bad for someone. But then you saw or heard or thought more, and you knew this was not something bad for someone and not bad for you. The moment you knew this, you felt good, and the sides of your mouth moved up towards your eyes, and you made some sounds breathing much air out several short times.\n).",
+"laugh": "([Something made you laugh.] = Something caused you to make sounds like this: You saw or heard something you did not expect, and for a short time you thought this could be bad for someone. But then you saw or heard or thought more, and you knew this was not something bad for someone and not bad for you. The moment you knew this, you felt good, and the sides of your mouth moved up towards your eyes, and you made some sounds breathing much air out several short times.).",
 
 "laughter": "When someone laughs.\nWhat you hear when people laugh.",
 
-"law": "( \n[X is a law.] = X is a rule that the government makes.\n).",
+"law": "([X is a law.] = X is a rule that the government makes.).",
 
 "lawyer": "Someone who knows much about the government rules. You give money to this person to do this kind of work: This person tells you what the government rules say. This person tries to make the government decide that you did not do things the government rules do not allow.",
 
@@ -2314,13 +2315,13 @@
 
 "lazy": "You are able to work and do difficult things, but for a long time you do not want to work, you do not move very much, and you do not try to do things if they are not very easy.",
 
-"lead, led": "( \n[You lead X.] = X is a group of people. The people inside this group do the things you tell them to do, because they think the things you tell them are important and likely to be good for the group.\n).\nSomeone sees you move to a place or do something, and because of this, they move to the same place or do the same thing you did.\nWill cause something to happen.",
+"lead, led": "([You lead X.] = X is a group of people. The people inside this group do the things you tell them to do, because they think the things you tell them are important and likely to be good for the group.).\nSomeone sees you move to a place or do something, and because of this, they move to the same place or do the same thing you did.\nWill cause something to happen.",
 
 "leaf, leaves": "One of many thin flat green parts of a plant.",
 
 "lean": "When the top part of something tall moves towards one side, but the bottom part does not move. Because of this, the tall thing looks like maybe it will fall towards this one side.\nWhen something solid is on one side of something tall, and you move the top part of this tall thing towards this one side and make it touch this solid thing. The tall thing does not fall, because its top is touching the solid thing.",
 
-"learn, learnt": "( \n[You learned X.] = X is something you did not know or could not do at one time. But then someone said something to you, or you saw and heard and did some things. Because of this, you know X now or you can do X now.\n).",
+"learn, learnt": "([You learned X.] = X is something you did not know or could not do at one time. But then someone said something to you, or you saw and heard and did some things. Because of this, you know X now or you can do X now.).",
 
 "least": "Less than all others.\nNot less than this.",
 
@@ -2328,19 +2329,19 @@
 
 "leave, left": "You are in one place, and then you move to another place.\nYou and this other thing are in one place, and then you move to another place, but this other thing does not move to another place.",
 
-"left": "( \n[X is on the left side of your body.] = X is on this side of your body: Most people do not write using the hand they have on this side of their body. They write using their other hand.\n).",
+"left": "([X is on the left side of your body.] = X is on this side of your body: Most people do not write using the hand they have on this side of their body. They write using their other hand.).",
 
-"leg": "( \n[X is one of your legs.] = X is a long part of your body. People have two of these long body parts. Many kinds of animals have four. You can use these long body parts to move from one place to another, like this: The bottom end of each of these long body parts touches the ground, and you move each many times to touch different parts of the ground. This causes you to move from one place to a different place.\n).\nPeople make some kinds of thing that have long parts like this: One end of each touches the ground, and all other parts do not touch the ground.",
+"leg": "([X is one of your legs.] = X is a long part of your body. People have two of these long body parts. Many kinds of animals have four. You can use these long body parts to move from one place to another, like this: The bottom end of each of these long body parts touches the ground, and you move each many times to touch different parts of the ground. This causes you to move from one place to a different place.).\nPeople make some kinds of thing that have long parts like this: One end of each touches the ground, and all other parts do not touch the ground.",
 
 "legal": "Something that the government rules allow you to do.\nThe government rules say something about this.",
 
 "lend, lent": "Something belongs to you, but for a short time you allow another person to move it and use it. This other person promises they will stop using it and give it to you after this time.",
 
-"length": "( \n[The length of J is the same as the length of K.] = You know this about J and you know the same thing about K: You know J is not more long than K, and K is not more long than J.\n).\nYou know this about one time and you can compare it with another time to say if one happens for some time more than the other.\nA piece of something that has two ends.",
+"length": "([The length of J is the same as the length of K.] = You know this about J and you know the same thing about K: You know J is not more long than K, and K is not more long than J.).\nYou know this about one time and you can compare it with another time to say if one happens for some time more than the other.\nA piece of something that has two ends.",
 
-"less": "( \n[There is less here than in the other place.] = There is more in the other place than there is here.\n[J is like X less than K is like X.] = K is like X more than J is like X.\n).\nAfter you move part of this to another place.",
+"less": "([There is less here than in the other place.] = There is more in the other place than there is here.\n[J is like X less than K is like X.] = K is like X more than J is like X.).\nAfter you move part of this to another place.",
 
-"lesson": "( \n[X is a lesson.] = X is something that someone plans and does at a time to help people learn something.\n).\nWhat you learn because of something that happens.",
+"lesson": "([X is a lesson.] = X is something that someone plans and does at a time to help people learn something.).\nWhat you learn because of something that happens.",
 
 "let": "Allow.\nAllow someone to use something that belongs to you for some time if they give you money.",
 
@@ -2360,27 +2361,27 @@
 
 "life, lives": "Time when something is alive.\nLiving.\nTime when people can use something.",
 
-"lift": "( \n[J lifts K.] = Before this, K was touching the surface below it. Now J causes K to move up where it is above and not touching the surface below it.\n).\nMachine that moves people up and down inside a building.\nCause to feel good.",
+"lift": "([J lifts K.] = Before this, K was touching the surface below it. Now J causes K to move up where it is above and not touching the surface below it.).\nMachine that moves people up and down inside a building.\nCause to feel good.",
 
-"light, lit": "( \n[X is light.] = X is something people need to be able to see. When there is much of this in a place, people can see many things in this place. When there is not some of this in a place, people cannot see things in this place. X can move into your eyes from places far from here, and because of this, you can see things that are far from here.\n).\nCause something to burn.\nSomething people make and use to be able to see in a place, like when people burn something in a place to be able to see.\nColour when you mix white and another colour.\nNot heavy.\nNot much.\nNot difficult.",
+"light, lit": "([X is light.] = X is something people need to be able to see. When there is much of this in a place, people can see many things in this place. When there is not some of this in a place, people cannot see things in this place. X can move into your eyes from places far from here, and because of this, you can see things that are far from here.).\nCause something to burn.\nSomething people make and use to be able to see in a place, like when people burn something in a place to be able to see.\nColour when you mix white and another colour.\nNot heavy.\nNot much.\nNot difficult.",
 
 "lightning": "When much electricity moves through the sky and causes there to be much light in this moment.",
 
 "like": "(See 2-01).\nYou want this because you enjoy it.\nThings you can know and say about this thing.",
 
-"likely": "( \n[X is likely to happen.] = You think about what will happen after this time. Maybe X will happen, and maybe X will not happen. Before you know what happens, you think like this: You think X will happen much more than you think X will not happen. You think this because you know there are more other times like this when something like X happened.\n).",
+"likely": "([X is likely to happen.] = You think about what will happen after this time. Maybe X will happen, and maybe X will not happen. Before you know what happens, you think like this: You think X will happen much more than you think X will not happen. You think this because you know there are more other times like this when something like X happened.).",
 
 "limb": "An arm or leg.\nOne of several long parts of a tree that grow up from the wide part that touches the ground.",
 
 "limit": "There can be this amount of something, but not more than this.\nYou prevent something becoming more than this.\nSomething can be inside this place, but it cannot be in other places, because someone says they do not want it in other places.",
 
-"line": "( \n[X is a line.] = X is a long narrow mark.\n).\nSomething long and narrow like string.\nLong narrow part of a place where it touches another place.\nThe places something moves through when it moves from one place to another.\nSeveral people or words, where each is near to two others, one on one side and one on the other side.\nKind of business that carries people or things from one place to another.",
+"line": "([X is a line.] = X is a long narrow mark.).\nSomething long and narrow like string.\nLong narrow part of a place where it touches another place.\nThe places something moves through when it moves from one place to another.\nSeveral people or words, where each is near to two others, one on one side and one on the other side.\nKind of business that carries people or things from one place to another.",
 
 "lion": "Kind of very big cat that has yellow brown hair. These cats can grow big more than people. These cats eat big animals. The male adults have much long brown hair that grows around the back and sides of their heads.",
 
 "lip": "These two parts are around the front of your mouth where the surface is more red: One is above your mouth, and one is below your mouth.",
 
-"liquid": "( \n[X is a liquid.] = X is like this: It is not a gas and not something solid. When it is inside a container, it moves down into the bottom part of the container, and its shape changes to be like the shape of the inside bottom part of the container. If there are very small holes through the bottom of the container, all of it will move down through these holes and out of the container.\n).",
+"liquid": "([X is a liquid.] = X is like this: It is not a gas and not something solid. When it is inside a container, it moves down into the bottom part of the container, and its shape changes to be like the shape of the inside bottom part of the container. If there are very small holes through the bottom of the container, all of it will move down through these holes and out of the container.).",
 
 "list": "Group of names or numbers or things that you want to think about after some time. You can write one or more words to help you think about each of these things.",
 
@@ -2408,9 +2409,9 @@
 
 "lonely": "You are sad because you are not near to the people you want to be near.",
 
-"long": "( \n[X is long.] = You think like this about the shape of X: One end of this shape is far from the other end of this shape.\n[J is longer than K.] = J is long more than K.\n).\n(See long time 2-16).\nLength.\nFor some time.\nVery much more than a short time.",
+"long": "([X is long.] = You think like this about the shape of X: One end of this shape is far from the other end of this shape.\n[J is longer than K.] = J is long more than K.).\n(See long time 2-16).\nLength.\nFor some time.\nVery much more than a short time.",
 
-"look": "( \n[J looks like K.] = You move your eyes to see J, and when you see it, you think what you see is like K.\n[You look at X.] = You move your eyes to see X.\n).",
+"look": "([J looks like K.] = You move your eyes to see J, and when you see it, you think what you see is like K.\n[You look at X.] = You move your eyes to see X.).",
 
 "look after": "For some time you look at some people or things, because you want to prevent bad things that can happen to them.",
 
@@ -2428,11 +2429,11 @@
 
 "lot": "Many.\nMuch.\nVery much.\nAll.\nGroup that contains many similar things.\nThe one of several things that you choose.\nWhat happens to you.\nThe ground surface of a big place that belongs to someone.",
 
-"loud": "( \n[X is a loud sound.] = X is very much sound, like when something here makes a sound and someone far from here can hear it.\n).",
+"loud": "([X is a loud sound.] = X is very much sound, like when something here makes a sound and someone far from here can hear it.).",
 
-"love": "( \n[You love X.] = X is someone or something. You want very much to be near to X for a long time. You feel very good when you see or think about X. You want things to happen that are good for X. You do not want things to happen that are bad for X. You want to do things that are good for X. When X thinks about you, you want X to feel the same.\n).",
+"love": "([You love X.] = X is someone or something. You want very much to be near to X for a long time. You feel very good when you see or think about X. You want things to happen that are good for X. You do not want things to happen that are bad for X. You want to do things that are good for X. When X thinks about you, you want X to feel the same.).",
 
-"low": "( \n[X is low.] = X is near the ground.\n[X is a low sound.] = You expect something more long and something less long to make different sounds. X is the kind of sound you expect to hear from things that are more long.\n[J is lower than K.] = J is more low than K.\n).\nThe top of this is near to the bottom.\nThere is not much.\nMany others have more.\nMuch less than many other things or other times.\nSad.\nNot good.\nNot loud.",
+"low": "([X is low.] = X is near the ground.\n[X is a low sound.] = You expect something more long and something less long to make different sounds. X is the kind of sound you expect to hear from things that are more long.\n[J is lower than K.] = J is more low than K.).\nThe top of this is near to the bottom.\nThere is not much.\nMany others have more.\nMuch less than many other things or other times.\nSad.\nNot good.\nNot loud.",
 
 "lower": "This one is below these others.\nNear the bottom.\nThis one is less than these others.\nMove down.\nBecome less.",
 
@@ -2448,7 +2449,7 @@
 
 "lung": "One of two body parts that people and some animals use to breathe. They become more big when you breathe air into your body, and they become less big when you breathe air out of your body.",
 
-"machine": "( \n[X is a machine.] = X is something people make. When people make some things like X, they use many parts to make these things. Some parts of X move. Some parts can cause other parts to move. People make things like this because these things do something that people want. These things can do more than people can do and more than people want to do.\n).",
+"machine": "([X is a machine.] = X is something people make. When people make some things like X, they use many parts to make these things. Some parts of X move. Some parts can cause other parts to move. People make things like this because these things do something that people want. These things can do more than people can do and more than people want to do.).",
 
 "machinery": "Machines.\nThe parts inside a machine that make it do something.",
 
@@ -2464,15 +2465,15 @@
 
 "main": "This thing is the one that is big or important or can do more than all the others.",
 
-"make, made": "( \n[J made K.] = J did something to some things and caused them to become parts of one different kind of thing that was not here before. K is this thing that now exists because of this.\n[J made K happen.] = J caused K to happen.\n).",
+"make, made": "([J made K.] = J did something to some things and caused them to become parts of one different kind of thing that was not here before. K is this thing that now exists because of this.\n[J made K happen.] = J caused K to happen.).",
 
 "make into, made into": "Use these things to make something. These things become the parts of the thing you make.",
 
 "make up, made up": "Say something you know is not true.\nMake something.\nThese are the parts of this thing.\nCause something to become more like what you want than it was before.\nPut something on the surface of your body to change its colour.",
 
-"male": "( \n[X is male.] = When two people or animals cause a child to exist, one of these two is female and the other one is not female. X is like the one that is not female.\n).",
+"male": "([X is male.] = When two people or animals cause a child to exist, one of these two is female and the other one is not female. X is like the one that is not female.).",
 
-"man, men": "( \n[X is a man.] = X is an adult male person.\n).\nPeople.",
+"man, men": "([X is a man.] = X is an adult male person.).\nPeople.",
 
 "manage": "You control the work that some people do inside part of a business.\nYou carefully try to control the things that happen in a place.\nYou are able to do something difficult.",
 
@@ -2486,15 +2487,15 @@
 
 "march": "You use your feet to move like a group of soldiers: The soldiers all lift one foot and move it towards the front at the same time. Then, after it touches the ground, they all lift and move the other foot at the same time. The soldiers do this many times, and the time between moving each foot is the same each time.",
 
-"mark": "( \n[Something marks X.] = Something touches X and changes the colour of a small part of its surface. After this, you can see that this part of its surface does not look the same as other parts of its surface.\n).",
+"mark": "([Something marks X.] = Something touches X and changes the colour of a small part of its surface. After this, you can see that this part of its surface does not look the same as other parts of its surface.).",
 
 "market": "Place where people often have things that other people can buy.",
 
 "marriage": "When two people are married.\nWhen two people become married.",
 
-"married": "( \n[J and K are married.] = J is a man and K is a woman. They promised to do some things, and they said this to other people. They promise to do these things at all times after this that the two of them are alive. They promise to try to do what is good for and prevent what is bad for all children that they cause to exist. They promise not to do sexual things with other people. J promises to try to be near to K often and do what is good for her and prevent what is bad for her. K promises to try to be near to J often and do what is good for him and prevent what is bad for him.\n).",
+"married": "([J and K are married.] = J is a man and K is a woman. They promised to do some things, and they said this to other people. They promise to do these things at all times after this that the two of them are alive. They promise to try to do what is good for and prevent what is bad for all children that they cause to exist. They promise not to do sexual things with other people. J promises to try to be near to K often and do what is good for her and prevent what is bad for her. K promises to try to be near to J often and do what is good for him and prevent what is bad for him.).",
 
-"marry": "( \n[J and K are married.] = J is a man and K is a woman. They promised to do some things, and they said this to other people. They promise to do these things at all times after this that the two of them are alive. They promise to try to do what is good for and prevent what is bad for all children that they cause to exist. They promise not to do sexual things with other people. J promises to try to be near to K often and do what is good for her and prevent what is bad for her. K promises to try to be near to J often and do what is good for him and prevent what is bad for him.\n).",
+"marry": "([J and K are married.] = J is a man and K is a woman. They promised to do some things, and they said this to other people. They promise to do these things at all times after this that the two of them are alive. They promise to try to do what is good for and prevent what is bad for all children that they cause to exist. They promise not to do sexual things with other people. J promises to try to be near to K often and do what is good for her and prevent what is bad for her. K promises to try to be near to J often and do what is good for him and prevent what is bad for him.).",
 
 "mass": "Big amount of something in a place. All parts of it are the same kind of thing.\nMany people or many things in a place.\nThe amount of something that has a weight you can measure and compare with other things in the same place.",
 
@@ -2518,13 +2519,13 @@
 
 "meal": "The food someone eats at one time when they eat more than a small amount of food.\nMany very small dry pieces of grain. People press grain to make it become these very small pieces.",
 
-"mean, meant": "( \n[J means K.] = J is one or more words that someone says or writes. K is what this person wants you to think or think about when you hear or see these words.\n).\nWhat you expect to be true because of what you see or hear.\nWhat you want to happen.",
+"mean, meant": "([J means K.] = J is one or more words that someone says or writes. K is what this person wants you to think or think about when you hear or see these words.).\nWhat you expect to be true because of what you see or hear.\nWhat you want to happen.",
 
-"meaning": "( \n[J means K.] = J is one or more words that someone says or writes. K is what this person wants you to think or think about when you hear or see these words.\n).\nWhat you want someone to think or think about because of what you say.\nWhat makes this important.",
+"meaning": "([J means K.] = J is one or more words that someone says or writes. K is what this person wants you to think or think about when you hear or see these words.).\nWhat you want someone to think or think about because of what you say.\nWhat makes this important.",
 
-"means": "( \n[J means K.] = J is one or more words that someone says or writes. K is what this person wants you to think or think about when you hear or see these words.\n).\nWhat you use or do to cause something to happen.\nMoney you can use to cause things to happen.",
+"means": "([J means K.] = J is one or more words that someone says or writes. K is what this person wants you to think or think about when you hear or see these words.).\nWhat you use or do to cause something to happen.\nMoney you can use to cause things to happen.",
 
-"measure": "( \n[You measure X.] = You do something to know the length of X, or the weight of X, or something else about X. Then you can compare this with what you know about other things. You can compare numbers if you can count what you know about X and other things, like this: If you want to know the weight of X, you can use small things that all have the same weight, and count the number you need to make a group that has the same weight as X. Then you can count the number of these small things that you need to make a group that has the same weight as the other thing you want to compare. And then you can compare the numbers.\n).\nWhat you do to try to cause something.\nEach group of sounds that is played for a short time and is part of a piece of music.",
+"measure": "([You measure X.] = You do something to know the length of X, or the weight of X, or something else about X. Then you can compare this with what you know about other things. You can compare numbers if you can count what you know about X and other things, like this: If you want to know the weight of X, you can use small things that all have the same weight, and count the number you need to make a group that has the same weight as X. Then you can count the number of these small things that you need to make a group that has the same weight as the other thing you want to compare. And then you can compare the numbers.).\nWhat you do to try to cause something.\nEach group of sounds that is played for a short time and is part of a piece of music.",
 
 "measurement": "What you do to measure something.\nWhat you know because you measure something.",
 
@@ -2556,11 +2557,11 @@
 
 "messenger": "You give this person a message and this person gives it to the person that you want to hear it or read it.",
 
-"metal": "( \n[X is metal.] = X is something that people can find below the surface of the ground. People use it to make many things, like this: People cause it to become very hot to make it become liquid. Then people make this liquid become a shape that they want. When this liquid becomes less hot, it becomes solid and hard. Light cannot move through it. People often use this to make things that can cut other things.\n).",
+"metal": "([X is metal.] = X is something that people can find below the surface of the ground. People use it to make many things, like this: People cause it to become very hot to make it become liquid. Then people make this liquid become a shape that they want. When this liquid becomes less hot, it becomes solid and hard. Light cannot move through it. People often use this to make things that can cut other things.).",
 
 "method": "The things you can plan to do to cause something that you want to happen.",
 
-"metre, (meter)": "( \n[X is one metre.] = X is a length. When you measure most people, the distance between the top of the head and bottom of the feet is more than X, but less than two of these lengths. Inside most countries, when people measure length and distance, they count the number of parts that are the length of X or groups of one thousand lengths of X.\n).\nWhen someone writes something that uses the same number of less loud sounds after each more loud sound.",
+"metre, (meter)": "([X is one metre.] = X is a length. When you measure most people, the distance between the top of the head and bottom of the feet is more than X, but less than two of these lengths. Inside most countries, when people measure length and distance, they count the number of parts that are the length of X or groups of one thousand lengths of X.).\nWhen someone writes something that uses the same number of less loud sounds after each more loud sound.",
 
 "metric": "Using metres and kilograms to measure things.\nNumbers you know and can compare because you measured things.",
 
@@ -2574,7 +2575,7 @@
 
 "military": "Groups of soldiers and what these soldiers do.",
 
-"milk": "( \n[X is milk.] = X is a liquid that many kinds of female animals make inside their bodies. Their children drink this liquid and do not need other kinds of food when they are young.\n).",
+"milk": "([X is milk.] = X is a liquid that many kinds of female animals make inside their bodies. Their children drink this liquid and do not need other kinds of food when they are young.).",
 
 "million": "You can think about the number of things here like this: There are one thousand groups of things here, and each group contains one thousand things.",
 
@@ -2598,7 +2599,7 @@
 
 "mistake": "You do something that you think will cause something you want to happen and not cause something bad. But when you do it, you cause something bad to happen that you do not want.\nYou say something and you think it is true, but it is not true.",
 
-"mix": "( \n[You mix J and K.] = J is one kind of thing in one place. K is another kind of thing in another place. You move J and K into the same place or container, and you move all the small parts of J and K into many different parts of this place or container. Because of this, there are parts of J near all the parts of K, and there are parts of K near all the parts of J.\n).",
+"mix": "([You mix J and K.] = J is one kind of thing in one place. K is another kind of thing in another place. You move J and K into the same place or container, and you move all the small parts of J and K into many different parts of this place or container. Because of this, there are parts of J near all the parts of K, and there are parts of K near all the parts of J.).",
 
 "mixture": "Two or more things when they are mixed.",
 
@@ -2608,11 +2609,11 @@
 
 "moment": "(See 2-26).",
 
-"money": "( \n[X is some money.] = X is something that many people have and use like this: People will often give you some X if you do some work that they want you to do. People will often give you something you say you want if you give them some X. Governments make X using metal or paper. Governments do not allow other people to make X.\n).",
+"money": "([X is some money.] = X is something that many people have and use like this: People will often give you some X if you do some work that they want you to do. People will often give you something you say you want if you give them some X. Governments make X using metal or paper. Governments do not allow other people to make X.).",
 
 "monkey": "Several kinds of animals that have brown hair. They have two arms and two legs. They have a long narrow part connected behind their back where their legs are connected. They move up into trees using their hands to pull. When you see them, you can think they look and do things like small people.",
 
-"month": "( \n[X is a month.] = X is a time that contains four groups of seven days. Some of these times contain one or two or three days more.\n).",
+"month": "([X is a month.] = X is a time that contains four groups of seven days. Some of these times contain one or two or three days more.).",
 
 "monthly": "Happening each month.",
 
@@ -2626,7 +2627,7 @@
 
 "morning": "The part of each day when most people in this place stop sleeping. It happens between these two times: the time a short time before you can see the sun and the time several hours after you can see the sun.",
 
-"most": "( \n[X happens to most things here.] = X happens to many things here. Maybe X does not happen to all things here, but there are more things that X happens to than things that X does not happen to.\n).\nVery.\nMore than all others.",
+"most": "([X happens to most things here.] = X happens to many things here. Maybe X does not happen to all things here, but there are more things that X happens to than things that X does not happen to.).\nVery.\nMore than all others.",
 
 "mother": "Female parent.",
 
@@ -2636,7 +2637,7 @@
 
 "mouse, mice": "Kind of small animal. You can hold two or three of them using one hand. This animal has four legs that are not long. Hair grows from most parts of the body of this animal. It has a long narrow part that is connected behind its back where its back legs are connected, and this part does not have hair. Some of these animals live inside buildings where people have food, because these animals want to eat this food. But people do not want them here, and because of this, people put cats inside buildings to find and eat these small animals.",
 
-"mouth": "( \n[X is your mouth.] = X is the part of your body that food moves through when it moves into your body. This part of your body moves when you say something.\n).\nHole that something can move through into or out of a container.",
+"mouth": "([X is your mouth.] = X is the part of your body that food moves through when it moves into your body. This part of your body moves when you say something.).\nHole that something can move through into or out of a container.",
 
 "move": "(See 2-18).\nCause something not to be in the same place as before.\nCause to happen.\nChange.",
 
@@ -2646,19 +2647,19 @@
 
 "mud": "These two things when they are mixed: water and very small pieces of the ground.",
 
-"multiply": "( \n[You multiply J and K.] = J and K are numbers, and you want to know this other number: If J is the number of groups, and K is the number of things inside each group, then you do something with the numbers J and K to know the number of things inside all of these groups.\n).\nWhen the number of things in a place quickly becomes more.",
+"multiply": "([You multiply J and K.] = J and K are numbers, and you want to know this other number: If J is the number of groups, and K is the number of things inside each group, then you do something with the numbers J and K to know the number of things inside all of these groups.).\nWhen the number of things in a place quickly becomes more.",
 
 "murder": "You cause a person to die. You were trying to make this person die, and the government rules do not allow you to do this.",
 
 "muscle": "Parts of your body that can change shape and cause your body to move, like this: These parts can become less long, and this pulls other parts of your body and causes them to move.",
 
-"music": "( \n[X is music.] = X is some groups of sounds that people make for some time. These groups contain different sounds that are more or less loud and high or low. Many of these groups sound like other groups you hear before or after them. People make groups of sounds like this because people enjoy hearing this.\n).",
+"music": "([X is music.] = X is some groups of sounds that people make for some time. These groups contain different sounds that are more or less loud and high or low. Many of these groups sound like other groups you hear before or after them. People make groups of sounds like this because people enjoy hearing this.).",
 
 "musician": "Person who makes music.",
 
 "must": "This needs to happen.\nYou expect this.",
 
-"my": "( \n[This is my X.] = This X belongs to me.\n).",
+"my": "([This is my X.] = This X belongs to me.).",
 
 "myself": "Me and not others.",
 
@@ -2668,9 +2669,9 @@
 
 "nail": "Long narrow metal things people make. You hit one end to push the other end into a piece of something solid. You can push one end through one piece of something solid and into another solid piece, because this causes these two pieces to become connected.\nThe hard flat part that grows from the end of each of the five long narrow parts of your hand or foot.",
 
-"name": "( \n[J is the name of K.] = K is one person or thing. J is one word or several words that someone chose to use when they think about K or say things about K. Now when someone says J, other people know they are saying something about K.\n).",
+"name": "([J is the name of K.] = K is one person or thing. J is one word or several words that someone chose to use when they think about K or say things about K. Now when someone says J, other people know they are saying something about K.).",
 
-"narrow": "( \n[X is narrow.] = You think like this about the distance between two sides of X: All parts of one side are near to the other side. The distance between these two sides is very much less than the length of X.\n).",
+"narrow": "([X is narrow.] = You think like this about the distance between two sides of X: All parts of one side are near to the other side. The distance between these two sides is very much less than the length of X.).",
 
 "nasty": "This hurts someone very much.\nThis feels very bad for someone.\nBad.",
 
@@ -2696,7 +2697,7 @@
 
 "neck": "The narrow part of your body that is connected below your head and connects to the big part of your body.",
 
-"need": "( \n[You need J if you want K to happen.] = K cannot happen if you do not do J or have J.\n[You need X.] = If you do not do X or have X, something bad can happen.\n).",
+"need": "([You need J if you want K to happen.] = K cannot happen if you do not do J or have J.\n[You need X.] = If you do not do X or have X, something bad can happen.).",
 
 "needle": "Very narrow metal thing that has a hole in one end. People put string through this hole, push this metal thing through cloth, and use it to pull the string through the cloth.\nVery narrow metal tube. Someone can push one end through the surface of your body and use the tube to move liquid into or out of your body.\nSomething long and very narrow.",
 
@@ -2732,11 +2733,11 @@
 
 "night": "The time each day when there is not much light in a place and people cannot see the sun and most people in this place are sleeping.",
 
-"nine": "( \n[There are nine things here.] = There are eight things here, and there is one more thing here.\n).",
+"nine": "([There are nine things here.] = There are eight things here, and there is one more thing here.).",
 
 "ninth": "One more after eight others.\nOne of nine parts of one thing. Each part is the same.",
 
-"no": "( \n[You say: \"No.\"] = You say something is not true, or you say you do not want this.\n).\nThere is not some of this.\nNot.",
+"no": "([You say: \"No.\"] = You say something is not true, or you say you do not want this.).\nThere is not some of this.\nNot.",
 
 "no one": "There is not someone that you can say this about.",
 
@@ -2760,7 +2761,7 @@
 
 "northern": "In a place towards the north.",
 
-"nose": "( \n[X is your nose.] = X is the part of your head below your eyes and above your mouth that you can breathe through. When you breathe air into X, you can feel it inside your head and know something about the things that the air moved near to a short time before you breathed it.\n).\nFront part of something.",
+"nose": "([X is your nose.] = X is the part of your head below your eyes and above your mouth that you can breathe through. When you breathe air into X, you can feel it inside your head and know something about the things that the air moved near to a short time before you breathed it.).\nFront part of something.",
 
 "not": "(See 1-11).",
 
@@ -2772,13 +2773,13 @@
 
 "noticeable": "Something most people will notice.",
 
-"noun": "( \n[X is a noun.] = X is a kind of word. When people hear this kind of word, they know what person or place or kind of thing you are saying something about.\n).",
+"noun": "([X is a noun.] = X is a kind of word. When people hear this kind of word, they know what person or place or kind of thing you are saying something about.).",
 
 "now": "(See 2-22).\nBecause.",
 
 "nowhere": "There is not a place where this is true.",
 
-"number": "( \n[The number of things in place J is the same as the number of things in place K.] = There can be different kinds of things in these two places, but there is something you know about things in place J that is the same as what you know about things in place K. This is what you know: If there is one thing in place J, there is one thing in place K. If there are more things in place J, you can do or think about doing something like this: You move one thing out of place J and one thing out of place K. You do this one or more times. Maybe many times. After this, when there is one thing in place J, there will be one thing in place K.\n).\nSome.\nMany.",
+"number": "([The number of things in place J is the same as the number of things in place K.] = There can be different kinds of things in these two places, but there is something you know about things in place J that is the same as what you know about things in place K. This is what you know: If there is one thing in place J, there is one thing in place K. If there are more things in place J, you can do or think about doing something like this: You move one thing out of place J and one thing out of place K. You do this one or more times. Maybe many times. After this, when there is one thing in place J, there will be one thing in place K.).\nSome.\nMany.",
 
 "nurse": "Try to help someone become healthy.\nSomeone who carefully helps people who have diseases or damaged bodies.\nWhen a young child drinks milk from the body of its female parent.",
 
@@ -2818,7 +2819,7 @@
 
 "official": "This person is an officer and can decide to do or say these things because of this.\nSomething that the government does or says.",
 
-"often": "( \n[X happens often.] = There are many times when X happens.\n).",
+"often": "([X happens often.] = There are many times when X happens.).",
 
 "oil": "Liquid fat and other liquids that are like this. When you put these liquids into water, they move up to the top surface of the water. People can burn these liquids. You can put some of this liquid between two machine parts that are touching, and because of this, these parts can move more easily.",
 
@@ -2836,7 +2837,7 @@
 
 "onion": "Kind of plant that has long green parts that grow above the ground and a big round white part that grows below the ground. Inside the big round part, there is another round part that looks the same, but is less big. Inside this round part, there are several more round parts that look the same. Each is less big and contains another round part. People eat these round parts. When you eat or cut these round parts, people who breathe the air near you can know you ate or cut this kind of plant.",
 
-"only": "( \n[You have only X.] = You have X. You do not have others. You do not have more than X.\n).\nBut.",
+"only": "([You have only X.] = You have X. You do not have others. You do not have more than X.).\nBut.",
 
 "only just": "A short time before now.\nNot less than this, but not more.",
 
@@ -2860,7 +2861,7 @@
 
 "opposition": "When someone wants to do something, but you very much do not want it to happen, and you do things to try to cause it not to happen.",
 
-"or": "( \n[J is true, or K is true.] = If J is not true, then K is true.\n[J or K does this.] = If J does not do this, then K does this.\n).",
+"or": "([J is true, or K is true.] = If J is not true, then K is true.\n[J or K does this.] = If J does not do this, then K does this.).",
 
 "orange": "Colour that is like the colour you see when you mix the colours red and yellow.\nKind of round fruit that grows in places that are hot. The colour of this fruit is like the colour when red and yellow are mixed. You can pull the surface using your hands and cause it not to be connected to the parts inside. Then you can eat each of the parts inside.",
 
@@ -2888,7 +2889,7 @@
 
 "ourselves": "These people and me.\nThese people and me, but not others.",
 
-"out": "( \n[J moved out of K.] = J was inside K before. Then J moved, and now J is not inside K.\n).\nMove from one place to other places less near.\nWhere this can be seen because it is not inside and not near other parts of the surface.\nThere is not some of this inside now, because it all moved to another place.\nThis is not burning or causing light now.\nUse these parts to make something.",
+"out": "([J moved out of K.] = J was inside K before. Then J moved, and now J is not inside K.).\nMove from one place to other places less near.\nWhere this can be seen because it is not inside and not near other parts of the surface.\nThere is not some of this inside now, because it all moved to another place.\nThis is not burning or causing light now.\nUse these parts to make something.",
 
 "outdoor": "Something that happens or that people use in a place that is not inside a building.",
 
@@ -2904,7 +2905,7 @@
 
 "owing to": "Because of.",
 
-"own": "( \n[You own X.] = X belongs to you because you bought it or made it or someone gave it to you.\n).\nThis belongs to someone.\nYou did this and other people did not help.",
+"own": "([You own X.] = X belongs to you because you bought it or made it or someone gave it to you.).\nThis belongs to someone.\nYou did this and other people did not help.",
 
 "owner": "The person this thing belongs to, because this person bought it or made it or someone gave it to this person.",
 
@@ -2934,13 +2935,13 @@
 
 "pan": "Metal container that people use like this: People put food inside this container when they make the food hot before they eat it. Often the bottom of this container has the same shape as a circle. The container can have a long part that you can hold using one hand to carry the container.",
 
-"paper": "( \n[X is a piece of paper.] = X is something people make, like this: People cut the hard parts of trees to make many very small pieces. People mix these very small pieces and very hot water. Then people press this and make it become long and wide but very thin and flat. When this becomes dry, it makes a flat surface where people can write or draw things.\n).",
+"paper": "([X is a piece of paper.] = X is something people make, like this: People cut the hard parts of trees to make many very small pieces. People mix these very small pieces and very hot water. Then people press this and make it become long and wide but very thin and flat. When this becomes dry, it makes a flat surface where people can write or draw things.).",
 
 "parallel": "When there are two long things, and thinking about each part, you know all these distances are the same: the distance between each of the long things and each part of the other long thing.\nTwo similar things happen at the same time.\nYou know similar things about two different things.",
 
 "parcel": "Container you can carry that contains things that someone put inside.\nOne piece of the ground surface that someone can buy.",
 
-"parent": "( \n[J and K are the parents of X.] = J and K are two people or animals. One is male and one is female. X is their child.\n).",
+"parent": "([J and K are the parents of X.] = J and K are two people or animals. One is male and one is female. X is their child.).",
 
 "park": "Big place where people can enjoy seeing plants and play on the surface of the ground.\nCause a vehicle to be in a place and not move for some time.",
 
@@ -2978,7 +2979,7 @@
 
 "pause": "Something stops happening for a short time. It happens before this time and after this time, but it does not happen for this short time.",
 
-"pay, paid": "( \n[You pay X.] = You give money to X because X did some work you wanted them to do, or because X gave you something that you wanted to buy.\n).",
+"pay, paid": "([You pay X.] = You give money to X because X did some work you wanted them to do, or because X gave you something that you wanted to buy.).",
 
 "payment": "Money you give someone because they did some work you wanted them to do, or because they gave you something that you wanted to buy.",
 
@@ -3038,9 +3039,9 @@
 
 "pick up": "Lift something.\nLift and carry something.\nHave something you did not have before.\nBecome more.\nBecome more good.",
 
-"picture": "( \n[J is a picture of K.] = J is something that a person or machine makes. K is something you can see, like a person or a place or some other thing. J has a flat surface, and a person or machine causes different parts of this surface to become different colours. Because of this, when you see this surface, you see something that looks like K.\n).",
+"picture": "([J is a picture of K.] = J is something that a person or machine makes. K is something you can see, like a person or a place or some other thing. J has a flat surface, and a person or machine causes different parts of this surface to become different colours. Because of this, when you see this surface, you see something that looks like K.).",
 
-"piece": "( \n[J is a piece of K.] = K is a kind of thing that is solid. J is some of this solid. J is one thing like this: There are many parts of this kind of solid thing. J is one of these many parts, but J is not connected to other parts of this solid now.\n).\nOne of several things like this.\nOne thing someone makes.",
+"piece": "([J is a piece of K.] = K is a kind of thing that is solid. J is some of this solid. J is one thing like this: There are many parts of this kind of solid thing. J is one of these many parts, but J is not connected to other parts of this solid now.).\nOne of several things like this.\nOne thing someone makes.",
 
 "pig": "Kind of animal that uses its nose to move pieces of the ground to find things to eat. This animal has four legs that are not long. Some hard hairs grow out of its body, but there are not many hairs and they are not long. These animals eat all kinds of food. Some people have these animals and give them food that people do not want to eat. These animals eat much food and quickly become big and heavy. Then people eat these animals.",
 
@@ -3060,21 +3061,21 @@
 
 "plain": "You can easily see this or hear it or know what it means.\nThis thing has all the parts you need to use it, but it does not have other parts that make it beautiful or other parts you do not need.\nBig place where the ground surface is flat.",
 
-"plan": "( \n[You plan to do X.] = Before you do X, you think about this for some time and choose when to do things and where to put things. Maybe you write or draw something that people can see, and because of this they can know what you want to do.\n).",
+"plan": "([You plan to do X.] = Before you do X, you think about this for some time and choose when to do things and where to put things. Maybe you write or draw something that people can see, and because of this they can know what you want to do.).",
 
 "plane": "Kind of vehicle that can fly. It has two long flat parts, one connected to each side, and it needs these parts to fly.\nThe shape of a very flat surface.\nSomething that people use to cut the surface of part of a tree to make it flat and smooth.\nDistance above another thing.",
 
-"plant": "( \n[X is a plant.] = There are many kinds of living things that are not animals. X is one of these. X is a living thing that will die in a place if there is not light for a long time.\n).\nOne or more buildings where people make things.\nPut seeds into the ground.\nPut something in a place.",
+"plant": "([X is a plant.] = There are many kinds of living things that are not animals. X is one of these. X is a living thing that will die in a place if there is not light for a long time.).\nOne or more buildings where people make things.\nPut seeds into the ground.\nPut something in a place.",
 
 "plastic": "One of several kinds of chemicals that people make and use like this: For a short time, people can cause this chemical to become many different shapes. Then it becomes solid, and after this, its shape does not change. People use this to make many different kinds of things.",
 
 "plate": "Something hard and flat that people make. You can carry it and use it when you eat. You put food on this flat surface, and then you move food from this surface when you eat it.\nSomething long and wide and thin and flat and hard.\nThin, flat piece of metal.\nSomething thin and hard that covers a surface.\nColour picture inside a book.",
 
-"play": "( \n[You are playing.] = You are not working. You are doing something you want because you enjoy it and not because this is something you need to do.\n).\nWhen a group of people tells a story like this: Each person says and does things that sound and look like other people that are part of the story.",
+"play": "([You are playing.] = You are not working. You are doing something you want because you enjoy it and not because this is something you need to do.).\nWhen a group of people tells a story like this: Each person says and does things that sound and look like other people that are part of the story.",
 
 "pleasant": "You enjoy this.\nThis makes you happy.",
 
-"please": "( \n[I say to you: \"Please do X.\"] = I say to you: I want you to do X.\n).\nCause someone to feel happy.\nDo what someone wants or enjoys.\nIf you want to help and this feels good for you to do.",
+"please": "([I say to you: \"Please do X.\"] = I say to you: I want you to do X.).\nCause someone to feel happy.\nDo what someone wants or enjoys.\nIf you want to help and this feels good for you to do.",
 
 "pleased": "Enjoying something or feeling happy.\nYou feel happy because something happens that you wanted to happen.",
 
@@ -3102,7 +3103,7 @@
 
 "pole": "Something long and straight that is hard and narrow.\nSomething long and straight that something turns around.\nOne of two ends of something long.",
 
-"police": "( \n[X is the police.] = X is a group of people that the government chooses to do this kind of work: This group tries to prevent people doing what the government rules do not allow. This group tries to find and stop people if they do something that the government rules do not allow.\n).",
+"police": "([X is the police.] = X is a group of people that the government chooses to do this kind of work: This group tries to prevent people doing what the government rules do not allow. This group tries to find and stop people if they do something that the government rules do not allow.).",
 
 "polish": "Rub something to make it become very smooth. After this, when light moves down to this smooth surface, much of this light will move up from the surface.",
 
@@ -3182,7 +3183,7 @@
 
 "president": "The people inside a country choose this person to lead the government. After some time, the people can choose a different person to lead the government.\nThe person who leads a business or group of people.",
 
-"press": "( \n[J presses K.] = J causes K to change shape like this: One side of K is touching a hard surface that does not move. J is touching the other side of K. J moves towards the hard surface, and this causes the shape of K to change.\n).\nPush.\nMake something flat.\nTry very much to make someone choose to do something.\nMachine that marks words on the surface of paper.",
+"press": "([J presses K.] = J causes K to change shape like this: One side of K is touching a hard surface that does not move. J is touching the other side of K. J moves towards the hard surface, and this causes the shape of K to change.).\nPush.\nMake something flat.\nTry very much to make someone choose to do something.\nMachine that marks words on the surface of paper.",
 
 "pressure": "When something pushes or presses another thing. This can cause this other thing to move or change shape, and maybe it can damage this other thing.\nTry to make someone do something because of fear.",
 
@@ -3190,7 +3191,7 @@
 
 "pretty": "Something small that is beautiful to see or hear.\nSomething beautiful that looks like it is not likely to hurt you.",
 
-"prevent": "( \n[You prevent X.] = X is something that can or will happen if something does not cause it not to happen. But before it can happen, you do something to cause it not to happen. Because of what you do, X does not happen.\n).",
+"prevent": "([You prevent X.] = X is something that can or will happen if something does not cause it not to happen. But before it can happen, you do something to cause it not to happen. Because of what you do, X does not happen.).",
 
 "previous": "Happening or existing before this one.\nThe one that happened before now, but after all other things like this.\nBefore.",
 
@@ -3240,7 +3241,7 @@
 
 "progress": "When something moves more near to the place where you want it.\nWhen something becomes more like what you want.\nWhen something happens for some time and then happens more because it does not stop.",
 
-"promise": "( \n[You promise to do X.] = You tell some people you will do X at a time after now. You tell them you want them to think you are bad if you do not do X like you say you will.\n).",
+"promise": "([You promise to do X.] = You tell some people you will do X at a time after now. You tell them you want them to think you are bad if you do not do X like you say you will.).",
 
 "pronounce": "Use sounds to say a word or part of a word.\nWhen the government decides something is true and tells people what it decided.",
 
@@ -3274,7 +3275,7 @@
 
 "public": "All people.\nAll people who are not part of the government.\nSomething all people can use.\nSomething many people can see or know.\nSomething the government does or uses that is good for the people inside this country.",
 
-"pull": "( \n[You pull X.] = You make X move like this: You hold part of X and cause it to move towards you.\n).",
+"pull": "([You pull X.] = You make X move like this: You hold part of X and cause it to move towards you.).",
 
 "pump": "Machine that pushes liquid or gas and causes it to move from one place into another place.\nMoving up and down many times like part of a machine.",
 
@@ -3290,9 +3291,9 @@
 
 "purpose": "The thing you are trying to cause.",
 
-"push": "( \n[You push X.] = You are on one side of X. There is a place near the other side of X where X can move. Touching this one side of X, you move towards the place on the other side, and this causes X to move towards this place.\n).\nTry to make someone do something that maybe they do not want to do.",
+"push": "([You push X.] = You are on one side of X. There is a place near the other side of X where X can move. Touching this one side of X, you move towards the place on the other side, and this causes X to move towards this place.).\nTry to make someone do something that maybe they do not want to do.",
 
-"put": "( \n[J put K in this place.] = J caused K to be in this place. Before this, K was not in this place, but J caused K to move, and now K is in this place because of this.\n).\nCause.\nSay.",
+"put": "([J put K in this place.] = J caused K to be in this place. Before this, K was not in this place, but J caused K to move, and now K is in this place because of this.).\nCause.\nSay.",
 
 "quality": "Something you can say about this thing that is true at most times.\nSomething you can say about this thing to compare it with other things.\nSomething you know about this thing that is good more than other things.\nSomething you know about this thing that is like what you want more than other things.",
 
@@ -3304,9 +3305,9 @@
 
 "queen": "This one woman controls a government, and after she dies, one of her children will control the government.\nA woman who is married to the one man who controls a government, and after they die, one of their children will control the government.",
 
-"question": "( \n[X is a question.] = X is something you can say to someone because you want to know something and you want someone who knows this to tell you.\n).\nYou do not know if something is true, and you want to know this.\nYou want to know what is good to do.",
+"question": "([X is a question.] = X is something you can say to someone because you want to know something and you want someone who knows this to tell you.).\nYou do not know if something is true, and you want to know this.\nYou want to know what is good to do.",
 
-"quick, quickly": "( \n[J causes K to happen quickly.] = Often someone does something for a long time to cause something like K to happen. But J does something for a short time that causes K to happen.\n).",
+"quick, quickly": "([J causes K to happen quickly.] = Often someone does something for a long time to cause something like K to happen. But J does something for a short time that causes K to happen.).",
 
 "quiet": "You cannot hear sounds in this place, because the things here are not making sounds.\nYou cannot hear the sounds this thing is making if you are not very near to it.",
 
@@ -3316,7 +3317,7 @@
 
 "race": "Something moves very quickly.\nSeveral people move quickly towards a place, and each tries to move to this place before the other people can move to this place.\nGroup containing all people who have similar hair and body surface colour. These people all look like other people inside this group, because they look like their parents.",
 
-"radio": "( \n[X is a radio.] = When electricity moves in one place, it can cause something you cannot see or hear to move through the air and make electricity move in other places. People use this to control machines like this: X is a kind of machine that uses electricity to make sounds. In another place far from here, another machine uses sounds to control electricity. This can make electricity move inside X, and X uses this to control the sounds it makes. Because of this, you can use X to hear the same sounds as someone can hear in another place very far from here.\n).",
+"radio": "([X is a radio.] = When electricity moves in one place, it can cause something you cannot see or hear to move through the air and make electricity move in other places. People use this to control machines like this: X is a kind of machine that uses electricity to make sounds. In another place far from here, another machine uses sounds to control electricity. This can make electricity move inside X, and X uses this to control the sounds it makes. Because of this, you can use X to hear the same sounds as someone can hear in another place very far from here.).",
 
 "railway": "People make a kind of vehicle that moves on top of two very long narrow pieces of metal. A machine inside this vehicle makes it move. It can pull several vehicles behind it, like this: It is connected to one vehicle behind it, and each of these vehicles can be connected to another one behind it. Each of these vehicles has wheels that touch the two very long metal pieces when they move. People put these very long metal pieces in places where they want these vehicles to move.",
 
@@ -3348,7 +3349,7 @@
 
 "reaction": "What you do or feel because of something that happened to you.\nWhen things react because of something that happens.",
 
-"read": "( \n[You read X.] = X is a group of words that someone writes. When you see them, you know what these shapes mean and you know the words this person wants you to think about.\n).\nWhat you know because you see something and think about it.",
+"read": "([You read X.] = X is a group of words that someone writes. When you see them, you know what these shapes mean and you know the words this person wants you to think about.).\nWhat you know because you see something and think about it.",
 
 "ready": "You can do this now, because there are not other things you need to do before you can do this.",
 
@@ -3374,7 +3375,7 @@
 
 "record": "You write some things that happen now, because you want someone to read this some time after now and know about these things that happened.\nWhen a machine uses what you hear or see now to make something that people can use like this: A long time after now, another machine can use this thing to make people see or hear the things you could see or hear before.\nYou measure what something does, and you compare it with all other things someone measured doing the same thing before, and you know this one does something more than all these others.",
 
-"red": "( \n[X is red.] = If you cut part of your body, it can cause much liquid to move out of your body. The colour of X is like the colour of this liquid.\n).",
+"red": "([X is red.] = If you cut part of your body, it can cause much liquid to move out of your body. The colour of X is like the colour of this liquid.).",
 
 "reduce": "Cause something to become less.\nCause something to become more small than it was before.",
 
@@ -3460,7 +3461,7 @@
 
 "ride, rode, ridden": "You are on top of a moving animal that causes you to move the same place it moves.\nYou are on top of or inside a moving vehicle that causes you to move the same place it moves.",
 
-"right": "( \n[X is on the right side of your body.] = X is on this side of your body: Most people write using the hand they have on this side of their body.\n).\nTrue.\nGood.\nGood for you.\nDoes what you want.\nVery near to.\nNot more than a short time after this.\nSomething the government rules say you can do.\nTwo long straight marks are touching, and this looks the same as part of a square where two long straight marks are touching.",
+"right": "([X is on the right side of your body.] = X is on this side of your body: Most people write using the hand they have on this side of their body.).\nTrue.\nGood.\nGood for you.\nDoes what you want.\nVery near to.\nNot more than a short time after this.\nSomething the government rules say you can do.\nTwo long straight marks are touching, and this looks the same as part of a square where two long straight marks are touching.",
 
 "ring": "Small metal circle that people make. You put it around one of the five long narrow parts of your hand.\nSomething that is around another thing on all sides.\nSeveral things that are around a place on all sides.\nGroup of people who try to do things that the government rules do not allow.\nWhen something hits a piece of metal, you hear this sound for some time.",
 
@@ -3486,7 +3487,7 @@
 
 "roof": "The top part of a building that covers all the other parts of the building below it.",
 
-"room": "( \n[X is a room.] = X is one of several places inside a big building like this: People in one place inside the building cannot see into other places inside the building because there are solid parts of the building between these places.\n).\nPlace where someone can put something.",
+"room": "([X is a room.] = X is one of several places inside a big building like this: People in one place inside the building cannot see into other places inside the building because there are solid parts of the building between these places.).\nPlace where someone can put something.",
 
 "root": "The part of a plant that grows down below the ground. The other parts of a plant grow up above the ground from here.\nSomething that starts small, but more parts grow from this small thing, and it becomes big.",
 
@@ -3496,13 +3497,13 @@
 
 "rough": "Not smooth. Many small parts of the surface are high or low more than other parts.\nNot careful. Likely to hurt someone or damage something.\nSomeone was not careful when they made this thing.\nDifficult.",
 
-"round": "( \n[X is round.] = You think like this about the shape of X: The distance between the centre of X and each surface part of X is the same as the distance between the centre of X and each other surface part of X.\n).\nAround.\nNear.\nIn different parts of this place.\nNot much more than or less than.",
+"round": "([X is round.] = You think like this about the shape of X: The distance between the centre of X and each surface part of X is the same as the distance between the centre of X and each other surface part of X.).\nAround.\nNear.\nIn different parts of this place.\nNot much more than or less than.",
 
 "row": "Group of several similar things in a long straight narrow place. Each thing is near to two other things in this long place, one on one side and one on the other side.\nPeople inside a boat make it move like this: They move something long that has a flat end, and they make the flat end push the water to make the boat move.",
 
 "royal": "Inside a country where one family controls the government, these are the things that this family does or has or uses.",
 
-"rub": "( \n[J rubs K.] = For some time, part of J is touching and pressing K. At the same time, this part of J is moving, causing it to touch many different parts of the surface of K.\n).",
+"rub": "([J rubs K.] = For some time, part of J is touching and pressing K. At the same time, this part of J is moving, causing it to touch many different parts of the surface of K.).",
 
 "rubber": "Something people make using a liquid from inside a kind of tree. People make this liquid hot to make it become solid. People can pull this solid to make it change shape, but when they stop pulling, it becomes the same shape it was before. People use this solid to make many kinds of things, like things to cover your feet, or things to cover the parts of a wheel that touch the ground.",
 
@@ -3510,7 +3511,7 @@
 
 "ruin": "You had something that you could use before, but then something damaged it very much, and after this it cannot be used.\nYou wanted something to happen, but then another thing happened, and because of this, you now know that the thing you wanted cannot happen.\nYou had money and other things before, but then something happened, and because of this, you do not have money or other things now.",
 
-"rule": "( \n[X is a rule.] = X is something that someone says or writes to say what they want people to do and not to do. They can say what people need to do if something happens, and they can say what people are not allowed to do if another thing happens. People expect you to do what X says.\n).\nSomething that tells people what to expect if some kinds of things happen.\nWhen a person or government controls the people inside a country.\nSomething hard and straight that people use to help them measure and draw long straight marks.",
+"rule": "([X is a rule.] = X is something that someone says or writes to say what they want people to do and not to do. They can say what people need to do if something happens, and they can say what people are not allowed to do if another thing happens. People expect you to do what X says.).\nSomething that tells people what to expect if some kinds of things happen.\nWhen a person or government controls the people inside a country.\nSomething hard and straight that people use to help them measure and draw long straight marks.",
 
 "ruler": "The one person who controls the government and people inside a country.\nSomething hard and straight that people use to help them measure and draw long straight marks.",
 
@@ -3518,7 +3519,7 @@
 
 "rush": "Move to a place very quickly.\nTry to do something or cause something to happen very quickly.",
 
-"sad": "( \n[You feel sad.] = You feel something bad like this: You know something bad happened, and you do not want things like this to happen. You want things to be good like you thought they could be before this bad thing happened. But you know there is not something you can do now to change this. You feel something bad because of this.\n).",
+"sad": "([You feel sad.] = You feel something bad like this: You know something bad happened, and you do not want things like this to happen. You want things to be good like you thought they could be before this bad thing happened. But you know there is not something you can do now to change this. You feel something bad because of this.).",
 
 "safe": "In a place where things are not likely to hurt you.\nWhen something did not hurt you.",
 
@@ -3528,7 +3529,7 @@
 
 "sale": "When someone buys something from another person.\nWhen someone says for a short time the amount of money you need to buy this thing from them is less than the amount you need to buy it at most other times.",
 
-"salt": "( \n[X is some salt.] = X is a kind of chemical. When X is dry, it is solid and white. If you mix X into water, it becomes part of the liquid and you cannot see it. In many places, there is very much water containing X. People who want X can put this water inside a container and cause it to become hot. The water becomes gas and moves up out of the container, but X becomes dry and does not move out of the container. Then people can use X like this: People mix some X into their food, because most people enjoy some food more if it contains X.\n).",
+"salt": "([X is some salt.] = X is a kind of chemical. When X is dry, it is solid and white. If you mix X into water, it becomes part of the liquid and you cannot see it. In many places, there is very much water containing X. People who want X can put this water inside a container and cause it to become hot. The water becomes gas and moves up out of the container, but X becomes dry and does not move out of the container. Then people can use X like this: People mix some X into their food, because most people enjoy some food more if it contains X.).",
 
 "same": "(See 1-05).\nVery much like.",
 
@@ -3552,7 +3553,7 @@
 
 "scenery": "Very big places that you see where there are many plants and stones, but not many things that people make.\nInside a building where people do and say things to tell a story, people make things to cause part of the building to look like another place.",
 
-"school": "( \n[X is a school.] = X is a place where people help other people learn things.\n).\nGroup of animals that live inside water below its surface.",
+"school": "([X is a school.] = X is a place where people help other people learn things.).\nGroup of animals that live inside water below its surface.",
 
 "science": "People can do this to learn what things cause other things to happen: You cause one thing to change, and you see if this causes other things to change. You measure what happens and what you think caused it, and you write a rule that says what changes you expect if something similar happens. Other people try to cause this same thing to happen many times to know if there are times when this rule is not true.",
 
@@ -3584,7 +3585,7 @@
 
 "see, saw, seen": "(See 1-01).\nThink.\nKnow.",
 
-"seed": "( \n[X is a seed.] = X is a small solid part of a plant. X grows for some time and then becomes not connected to the plant. You can move X to another place far from this plant. After a long time, you can put X below the surface of the ground, and you can put some water on top of the ground here. This can cause another plant that is the same kind of plant to grow here.\n).",
+"seed": "([X is a seed.] = X is a small solid part of a plant. X grows for some time and then becomes not connected to the plant. You can move X to another place far from this plant. After a long time, you can put X below the surface of the ground, and you can put some water on top of the ground here. This can cause another plant that is the same kind of plant to grow here.).",
 
 "seem": "Because of what you see or hear, you think this is likely to be true, but you do not know.",
 
@@ -3604,7 +3605,7 @@
 
 "sensitive": "You think about what other people are feeling and try to know what they want.\nMany things can easily make this person feel bad.\nThis thing can easily become damaged.\nWhen small things you do can cause something to change very much.",
 
-"sentence": "( \n[X is a sentence.] = X is a small group of words that says one of these things: X can say something that is true or something that is not true. X can tell someone what you want them to do. X can say what you want someone to tell you.\n).\nThe government says what it decides to do to someone because this person did something that the government rules do not allow.",
+"sentence": "([X is a sentence.] = X is a small group of words that says one of these things: X can say something that is true or something that is not true. X can tell someone what you want them to do. X can say what you want someone to tell you.).\nThe government says what it decides to do to someone because this person did something that the government rules do not allow.",
 
 "separate": "When two things are in the same place, but then you move them, causing one to be in one place and the other to be in a different place.\nWhen two things are not in the same place and each is not touching the other.\nNot the same.",
 
@@ -3622,11 +3623,11 @@
 
 "settle": "Things moved and changed very much for some time, but after a time they move and change less.\nSomething moves down to a surface and then stops moving.\nFor some time, two people do not want the same thing. But then, after saying things for some time, these two people decide to do or allow the same thing.\nYou promised to give someone money because of something they did or gave you. Now you give them the amount of money you promised to give them.",
 
-"seven": "( \n[There are seven things here.] = There are six things here, and there is one more thing here.\n).",
+"seven": "([There are seven things here.] = There are six things here, and there is one more thing here.).",
 
 "seventh": "One more after six others.\nOne of seven parts of one thing. Each part is the same.",
 
-"several": "( \n[There are several things here.] = There are more than two things here, but not very many.\n).",
+"several": "([There are several things here.] = There are more than two things here, but not very many.).",
 
 "severe": "Very bad for someone.\nCausing someone to hurt very much.\nCausing much damage or fear.\nLikely to be difficult and feel bad for you.",
 
@@ -3634,7 +3635,7 @@
 
 "sex": "Something you can know about many kinds of living things. This tells you if the living thing is male or female.\nDoing something sexual.",
 
-"sexual": "( \n[X does something sexual.] = X does something like what a male and female do when they cause a child to exist.\n).",
+"sexual": "([X does something sexual.] = X does something like what a male and female do when they cause a child to exist.).",
 
 "shade": "When light moves to this place from another place, but something between these two places causes less light to move to this place.\nWhen you mix a colour and white or black to make another colour.",
 
@@ -3646,15 +3647,15 @@
 
 "shame": "You feel bad because you did something you know is bad.\nYou feel bad because other people think what you did is bad.\nYou feel sad because of this.",
 
-"shape": "( \n[J is the shape of K.] = Something you know about J is the same as something you know about K. This is something you can know about K if you see it. If you cannot see K, but you touch all the surface parts of K, you can know this same thing about it.\n).\nChange.\nHealthy.\nAble.",
+"shape": "([J is the shape of K.] = Something you know about J is the same as something you know about K. This is something you can know about K if you see it. If you cannot see K, but you touch all the surface parts of K, you can know this same thing about it.).\nChange.\nHealthy.\nAble.",
 
 "share": "This thing belongs to several people. Each has part of this same thing.\nSeveral people each can use this same thing at some times.\nWhen several people do something and each causes part of this to happen.",
 
-"sharp": "( \n[X is sharp.] = X has a thin side or narrow end that can easily cut things or make holes in things.\n).\nHappens or changes very quickly.\nYou can think very quickly.\nYou can easily see the parts that are different.\nThis sound is part of some music and it is more high than expected.",
+"sharp": "([X is sharp.] = X has a thin side or narrow end that can easily cut things or make holes in things.).\nHappens or changes very quickly.\nYou can think very quickly.\nYou can easily see the parts that are different.\nThis sound is part of some music and it is more high than expected.",
 
-"she": "( \n[She does something.] = This female person or animal does something.\n[Something happens to her.] = Something happens to this female person or animal.\n[This is her X.] = This X belongs to this female person or animal.\n).",
+"she": "([She does something.] = This female person or animal does something.\n[Something happens to her.] = Something happens to this female person or animal.\n[This is her X.] = This X belongs to this female person or animal.).",
 
-"sheep": "( \n[X is a sheep.] = X is a kind of animal that eats small green plants, wants to be near big groups of the same kind of animal, and has much long hair that people cut and use to make cloth.\n).",
+"sheep": "([X is a sheep.] = X is a kind of animal that eats small green plants, wants to be near big groups of the same kind of animal, and has much long hair that people cut and use to make cloth.).",
 
 "sheet": "Long and wide piece of cloth or paper.\nSomething long, wide, thin and flat. All part of this are the same kind of thing.",
 
@@ -3698,7 +3699,7 @@
 
 "shout": "When you say very loud words or sounds.",
 
-"show, shown": "( \n[J showed me K.] = J caused me to see K and to know something about K because of this.\n).\nSomething someone plans and causes to happen in a place where people can see and enjoy it.",
+"show, shown": "([J showed me K.] = J caused me to see K and to know something about K because of this.).\nSomething someone plans and causes to happen in a place where people can see and enjoy it.",
 
 "shut": "There is not a place you can move through to move into or out of this thing.\nStop allowing things to move into or out of this place.\nCause something to stop.",
 
@@ -3728,7 +3729,7 @@
 
 "silver": "Kind of metal that can look smooth and white. People use it to make metal pieces of money and small beautiful things that people put around parts of their body. People can use this metal to make some small things that people use when eating to contain food or lift it into their mouth. You need much money to buy this kind of metal.",
 
-"similar": "( \n[J and K are similar.] = J is like K, and K is like J.\n).",
+"similar": "([J and K are similar.] = J is like K, and K is like J.).",
 
 "similarity": "Something you think about one thing is like something you think about the other thing.",
 
@@ -3748,11 +3749,11 @@
 
 "sister": "Female who has the same parents as you.",
 
-"sit, sat": "( \n[You are sitting.] = You are in one place for some time, touching the surface below you like this: Parts of the back sides of your legs are touching the surface below you. These parts are near where your legs connect to the other parts of your body. Your head is above your legs and is not touching the surface below you.\n).\nTo be in one place for some time and not move.\nTo be in the same place as people inside a group who want to say things and hear what other people say.\nFor some time you look at what some young children are doing, and you are careful to prevent bad things that can happen to them.",
+"sit, sat": "([You are sitting.] = You are in one place for some time, touching the surface below you like this: Parts of the back sides of your legs are touching the surface below you. These parts are near where your legs connect to the other parts of your body. Your head is above your legs and is not touching the surface below you.).\nTo be in one place for some time and not move.\nTo be in the same place as people inside a group who want to say things and hear what other people say.\nFor some time you look at what some young children are doing, and you are careful to prevent bad things that can happen to them.",
 
 "situation": "What happens and exists in this place at this time and what you can know about this.",
 
-"six": "( \n[There are six things here.] = There are five things here, and there is one more thing here.\n).",
+"six": "([There are six things here.] = There are five things here, and there is one more thing here.).",
 
 "sixth": "One more after five others.\nOne of six parts of one thing. Each part is the same.",
 
@@ -3766,11 +3767,11 @@
 
 "skirt": "Kind of clothing women use to cover much of their legs and part of their body above their legs. This clothing does not cover the arms, it does not cover above the narrow part near the centre of the body, and it is not between the legs.",
 
-"sky, skies": "( \n[X is the sky.] = X is the very big place you can see that is far above where people live. If you are not inside a building and not below other things, you can look up through the air and see X.\n).",
+"sky, skies": "([X is the sky.] = X is the very big place you can see that is far above where people live. If you are not inside a building and not below other things, you can look up through the air and see X.).",
 
 "slave": "In some places, people can buy other people and make them do work. If someone buys you, you need to do the work they tell you to do. If you do not do what they tell you to do or if you try to move far from them, they can hurt you. If they do not want you after some time, they can give you to another person, or another person can buy you from them.",
 
-"sleep, slept": "( \n[You are sleeping.] = For a long time you do not move, and you do not use your eyes to see. You do not hear or feel or think about most things that are happening near you all this time. All people need to do this many times. Most people in a place do this at times when there is not much light.\n).",
+"sleep, slept": "([You are sleeping.] = For a long time you do not move, and you do not use your eyes to see. You do not hear or feel or think about most things that are happening near you all this time. All people need to do this many times. Most people in a place do this at times when there is not much light.).",
 
 "slide, slid": "This thing moves easily from one part of this surface to another part, and all this time, the same part of this thing is touching the surface.\nThis thing moves easily and does not make much sound.\nMove down.\nBecome less.",
 
@@ -3792,7 +3793,7 @@
 
 "smoke": "When some things burn, this causes many very small pieces to move up through the air, and this looks like black or white gas.\nSome people burn some kinds of plants because they want to breathe the gas this causes or make the gas touch other things.",
 
-"smooth": "( \n[X is smooth.] = The surface of X feels like this: When you rub this surface using your hand, all the parts of the surface feel the same, and you do not feel parts that are high or low more than others. Because of this, you can move your hand easily when you rub X.\n).\nAll the parts of this feel the same.\nYou do not feel this change quickly.\nAll the parts feel good for you.",
+"smooth": "([X is smooth.] = The surface of X feels like this: When you rub this surface using your hand, all the parts of the surface feel the same, and you do not feel parts that are high or low more than others. Because of this, you can move your hand easily when you rub X.).\nAll the parts of this feel the same.\nYou do not feel this change quickly.\nAll the parts feel good for you.",
 
 "snake": "Long narrow animal that does not have arms or legs. It can move on the surface of the ground. One end has two eyes and a big mouth. Inside the mouth there are hard narrow parts it uses to cut holes in other animals when it eats them.",
 
@@ -3812,11 +3813,11 @@
 
 "soil": "Many very small pieces of the ground, containing very small pieces of stone and dead plants.",
 
-"soldier": "( \n[X is a soldier.] = X is a person who is part of a group of people like this: The government tells this group what to do. The government helps this group learn to make people do what the government wants. The government gives this group things they can use to cause people to die. If people from another country do things that this government does not want, the government can tell this group to do things to them to try to make them stop. If the people inside this other country do not do what the government wants, this group can cause them to die.\n).",
+"soldier": "([X is a soldier.] = X is a person who is part of a group of people like this: The government tells this group what to do. The government helps this group learn to make people do what the government wants. The government gives this group things they can use to cause people to die. If people from another country do things that this government does not want, the government can tell this group to do things to them to try to make them stop. If the people inside this other country do not do what the government wants, this group can cause them to die.).",
 
 "solemn": "Very sad or important.",
 
-"solid": "( \n[X is a solid.] = X is not like gases or other things that change shape when you put them inside different containers. X is like this: Its shape can be the same for a long time. It does not need to be inside a container to have the same shape for a long time. Other things can move and touch X but not cause its shape to change.\n).\nHard.\nDifficult to damage.\nNot very thin.\nAll parts are the same kind of thing.",
+"solid": "([X is a solid.] = X is not like gases or other things that change shape when you put them inside different containers. X is like this: Its shape can be the same for a long time. It does not need to be inside a container to have the same shape for a long time. Other things can move and touch X but not cause its shape to change.).\nHard.\nDifficult to damage.\nNot very thin.\nAll parts are the same kind of thing.",
 
 "solution": "The things you do that solve something.\nWhen a solid or gas becomes part of a liquid because you mix it into the liquid.",
 
@@ -3848,17 +3849,17 @@
 
 "sorrow": "When you feel very sad because something bad happened and now something important that you wanted cannot happen.",
 
-"sorry": "( \n[You feel sorry that X happened.] = You feel sad because X happened and you know X is bad for someone. If X happened because of something you did, you feel bad because you caused it.\n).",
+"sorry": "([You feel sorry that X happened.] = You feel sad because X happened and you know X is bad for someone. If X happened because of something you did, you feel bad because you caused it.).",
 
 "sort": "Kind.\nSomething like.\nWhen you have several kinds of things and you put them into several groups, moving each into a group where it will be near to other similar things.",
 
 "soul": "The part of someone that thinks and feels. Many people think that this part of you can think after your body dies.\nThe part of something that is more important than all others parts.\nWhen thinking about something makes you feel much more.",
 
-"sound": "( \n[X is a sound.] = X is what someone can hear. X moves through air and you cannot see it.\n[J sounds like K.] = When you hear J, you think what you hear is like K.\n).\nCause something someone can hear.\nWater in a narrow place that connects to two places containing very much water.",
+"sound": "([X is a sound.] = X is what someone can hear. X moves through air and you cannot see it.\n[J sounds like K.] = When you hear J, you think what you hear is like K.).\nCause something someone can hear.\nWater in a narrow place that connects to two places containing very much water.",
 
 "soup": "Liquid food that people make. People put small pieces of plants or animals into a hot liquid to make this food.",
 
-"sour": "( \n[X tastes sour.] = X tastes like this: Many kinds of fruit taste like this before they become sweet and before most people want to eat them.\n).",
+"sour": "([X tastes sour.] = X tastes like this: Many kinds of fruit taste like this before they become sweet and before most people want to eat them.).",
 
 "south": "Towards the place that is on this side of your body if you are looking at the sun a short time after the time each day when you cannot see the sun: on the same side of your body as the hand most people use when they write.",
 
@@ -3910,7 +3911,7 @@
 
 "spring, sprang, sprung": "Three months that are after the cold part of a year and before the hot part of a year.\nPlace where water moves up from below the ground.\nQuickly move towards a place for a short time.\nPeople use metal to make something that can change shape when you push or pull it, but when you stop pushing or pulling, its shape changes quickly and it becomes the same shape as it was before.",
 
-"square": "( \n[X is a square.] = X is a shape. Someone can mark a flat surface to make this shape. This shape has four parts: Each part is a straight mark and each is the same length. Each end of each mark is touching the end of one of the other marks, and the distance between this end and the other two marks is the same as the length of each mark.\n).\nFlat place that is long and wide between several buildings.\nWhen a number is multiplied by the same number.\nNot doing something bad for another person.",
+"square": "([X is a square.] = X is a shape. Someone can mark a flat surface to make this shape. This shape has four parts: Each part is a straight mark and each is the same length. Each end of each mark is touching the end of one of the other marks, and the distance between this end and the other two marks is the same as the length of each mark.).\nFlat place that is long and wide between several buildings.\nWhen a number is multiplied by the same number.\nNot doing something bad for another person.",
 
 "stage": "Place where people make a high surface, because they want people to be on top of this surface where they can be seen and heard. Other people on low surfaces near this can look at the people on the high surface and hear what they say.\nYou expect something to change several times like this: You know each change you expect to happen, and you know each of the changes you expect to happen before and after it.\nVehicle that big animals can pull quickly. This vehicle carries people inside, and other things can be carried on top of this vehicle.",
 
@@ -3924,7 +3925,7 @@
 
 "star": "Something like the sun that is very big and contains very much burning gas. At times when you cannot see the sun, you can look towards the sky and see many of these, but they look like small lights because they are very far from here.\nSomeone many people know about, because this person does something very well that many people enjoy seeing or hearing.",
 
-"start": "( \n[J starts doing K.] = J was not doing K before now. But J is doing K now and will do K for some time after now.\n).\nMove quickly when not expected.",
+"start": "([J starts doing K.] = J was not doing K before now. But J is doing K now and will do K for some time after now.).\nMove quickly when not expected.",
 
 "state": "Say something.\nA country.\nOne of several big parts of a country where each has a government.\nThe government.\nWhat you can say about something that is true at a time.",
 
@@ -3962,17 +3963,17 @@
 
 "stomach": "When you eat, the food inside your mouth moves down into this part of your body, where it is contained more than an hour before it moves down into another part of your body.",
 
-"stone": "( \n[X is a piece of stone.] = X is something hard and heavy that people do not make and that is not alive. Very many of these are parts of the ground or are far below the surface of the ground. X can be very small or big like a building.\n).",
+"stone": "([X is a piece of stone.] = X is something hard and heavy that people do not make and that is not alive. Very many of these are parts of the ground or are far below the surface of the ground. X can be very small or big like a building.).",
 
-"stop": "( \n[J stops doing K.] = K is something that J was doing for some time before now. But now J is not doing K.\n[You stop X.] = X was moving or doing something for some time. But now you cause X not to do this.\n).\nPrevent.",
+"stop": "([J stops doing K.] = K is something that J was doing for some time before now. But now J is not doing K.\n[You stop X.] = X was moving or doing something for some time. But now you cause X not to do this.).\nPrevent.",
 
 "store": "You put things in a place because you are not using them now, but you expect to use them at some time after now. When you want to use them, you plan that they will be in this place.\nBuilding where someone has things that they want other people to buy. Other people move inside this building to buy these things.",
 
 "storm": "When much water falls from the sky, much air moves quickly through this place, or electricity moves through the sky. This can damage buildings and living things in this place.",
 
-"story": "( \n[You tell a story.] = For some time, you say things like this: You say something happened, and then someone did something, and then something happened because of this. These things can be true, or they can be some things you thought about that are not true but that you want to tell someone. People often enjoy hearing someone do this.\n).\nOne of several different surfaces inside a building like this: People can be on top of each of these surfaces, and each of these surfaces is above or below another that people can be on top of.",
+"story": "([You tell a story.] = For some time, you say things like this: You say something happened, and then someone did something, and then something happened because of this. These things can be true, or they can be some things you thought about that are not true but that you want to tell someone. People often enjoy hearing someone do this.).\nOne of several different surfaces inside a building like this: People can be on top of each of these surfaces, and each of these surfaces is above or below another that people can be on top of.",
 
-"straight": "( \n[X is straight.] = You think like this about the shape of X: Someone can hold one end of a string in a place, and you can pull the other end of the string far from this place. When you cannot move this end of the string to be more far from the other end, then the shape of the string is like the shape of X.\n).\nNot towards one side.\nIf something moves from one end to the other, it does not need to move towards a side.\nSaying what is true.\nDoing what is good.\nCareful to put things where you want them.\nThis happens a very short time after this other thing happens.",
+"straight": "([X is straight.] = You think like this about the shape of X: Someone can hold one end of a string in a place, and you can pull the other end of the string far from this place. When you cannot move this end of the string to be more far from the other end, then the shape of the string is like the shape of X.).\nNot towards one side.\nIf something moves from one end to the other, it does not need to move towards a side.\nSaying what is true.\nDoing what is good.\nCareful to put things where you want them.\nThis happens a very short time after this other thing happens.",
 
 "strange": "You expected something different to happen. You did not expect something like this to happen. You cannot easily tell someone what caused this.\nYou do not know much about this.",
 
@@ -3990,11 +3991,11 @@
 
 "strike, struck": "Move quickly and hit something or try to hit something.\nQuickly try to hurt someone or damage something.\nSomething happens quickly that makes you think or know or feel something.\nYou quickly rub the end of something, and this causes chemicals on the surface to start burning.\nSomeone gives you money to do some work, but you say you will not work if they do not give you something more.\nSomething was in this place, and then you do something that causes it not to be in this place.",
 
-"string": "( \n[X is a string.] = X is something long and thin and narrow that people make. People can make X using many animal hairs or other long thin things like animal hairs. To make X, people twist many hairs to connect them. When many hairs are connected like this, it can make X become something very long.\n).",
+"string": "([X is a string.] = X is something long and thin and narrow that people make. People can make X using many animal hairs or other long thin things like animal hairs. To make X, people twist many hairs to connect them. When many hairs are connected like this, it can make X become something very long.).",
 
 "stroke": "When you move something quickly, causing it to hit another thing.\nTouch something, like this: You move your hand for a short time. At the same time, it is touching a surface. This makes it touch different parts of the surface. You do this several times.\nWhen blood stops moving where it needs to move inside your head. This can damage the part of your body inside your head that controls when your body moves and what you think.",
 
-"strong": "( \n[X is a strong person.] = X is someone who can lift heavy things and move things that are difficult to control.\n[X is something strong.] = X is something that cannot easily be damaged or changed.\n).\nCan control things that are difficult to control.\nCan cause things that are difficult to cause.\nYou can taste or feel this more than most other things like it.",
+"strong": "([X is a strong person.] = X is someone who can lift heavy things and move things that are difficult to control.\n[X is something strong.] = X is something that cannot easily be damaged or changed.).\nCan control things that are difficult to control.\nCan cause things that are difficult to cause.\nYou can taste or feel this more than most other things like it.",
 
 "structure": "What you know about something when you know the different kinds of parts it has, you know what parts connect to other parts, and you know where some kinds of parts contain other kinds of parts.\nBuilding someone makes.",
 
@@ -4040,7 +4041,7 @@
 
 "summer": "Three months that are the hot part of a year.",
 
-"sun": "( \n[X is the sun.] = X is something very big that is very far from all people. At different times, people in different places can see X far above them. X contains very much gas that is burning at all times. When the people in a place can see X for some time, this causes there to be much light in this place. At other times, the people in this place cannot see X for some time, and most people in this place sleep at these times.\n).",
+"sun": "([X is the sun.] = X is something very big that is very far from all people. At different times, people in different places can see X far above them. X contains very much gas that is burning at all times. When the people in a place can see X for some time, this causes there to be much light in this place. At other times, the people in this place cannot see X for some time, and most people in this place sleep at these times.).",
 
 "supper": "The food you eat each day when you eat more than a small amount of food a short time before you sleep for a long time.",
 
@@ -4052,7 +4053,7 @@
 
 "sure": "When you think about this, you feel very much that you know this is true.",
 
-"surface": "( \n[You see the surface of X.] = You see part of X. This part is where other things can touch X.\n[J is on the surface of K.] = J is touching the surface of K.\n).",
+"surface": "([You see the surface of X.] = You see part of X. This part is where other things can touch X.\n[J is on the surface of K.] = J is touching the surface of K.).",
 
 "surprise": "You feel like this: In a moment, you know something happened that you did not expect to happen. You want to know more about what happened.",
 
@@ -4066,7 +4067,7 @@
 
 "sweep, swept": "When something moves like this: You hold something and make it move quickly towards one side of a surface. Some parts of it touch the surface and push small things on the surface towards this side. Because it moves quickly, it can make air move towards this side. You make it move one or more times towards this side of the surface from other parts of the surface. This can move all the small things from this surface and cause them not to be on this surface.",
 
-"sweet": "( \n[X is sweet.] = X is something people can taste, and most people think it tastes good. Light causes many kinds of green plants to make a chemical. When much of this chemical moves into the fruit, it makes the fruit have a taste that most people enjoy eating. X tastes like this chemical.\n).\nThings or people you enjoy because they are good and careful not to hurt things.",
+"sweet": "([X is sweet.] = X is something people can taste, and most people think it tastes good. Light causes many kinds of green plants to make a chemical. When much of this chemical moves into the fruit, it makes the fruit have a taste that most people enjoy eating. X tastes like this chemical.).\nThings or people you enjoy because they are good and careful not to hurt things.",
 
 "swell, swollen": "When something becomes more wide or more big.",
 
@@ -4086,13 +4087,13 @@
 
 "tail": "The narrow part of many animal bodies that is connected behind the back where the back legs are connected.\nThe part of many animal bodies that is behind all other parts of the animal when it moves.",
 
-"take, took, taken": "( \n[You take X someplace.] = X was in one place, but then you carry X and cause X to move to another place.\n).\nYou start to control something.\nDo something.\nDo something with.\nDo something to.\nNeed.\nAllow.\nEnjoy.\nBecome.",
+"take, took, taken": "([You take X someplace.] = X was in one place, but then you carry X and cause X to move to another place.).\nYou start to control something.\nDo something.\nDo something with.\nDo something to.\nNeed.\nAllow.\nEnjoy.\nBecome.",
 
 "talk": "Say something.\nSay things about something.",
 
-"tall": "( \n[X is tall.] = You think like this about the distance between the top and bottom of X: The top of X is far above the bottom of X, compared with most other things like this.\n).",
+"tall": "([X is tall.] = You think like this about the distance between the top and bottom of X: The top of X is far above the bottom of X, compared with most other things like this.).",
 
-"taste": "( \n[J tastes like K.] = There is a long part inside your mouth that moves when you say something. When this part touches food inside your mouth, you can know something about this food that you cannot know if you touch it using your hands. You know this kind of thing about J because J touches this part inside your mouth. What you know about J is like what you know about K when it touches this part inside your mouth.\n).\nThe kinds of things you enjoy.\nThe kinds of things you decide to do that other people can feel are good or bad.",
+"taste": "([J tastes like K.] = There is a long part inside your mouth that moves when you say something. When this part touches food inside your mouth, you can know something about this food that you cannot know if you touch it using your hands. You know this kind of thing about J because J touches this part inside your mouth. What you know about J is like what you know about K when it touches this part inside your mouth.).\nThe kinds of things you enjoy.\nThe kinds of things you decide to do that other people can feel are good or bad.",
 
 "tax": "The government rules say you need to give part of the money you have to the government.\nMake someone do something difficult.",
 
@@ -4112,7 +4113,7 @@
 
 "television": "This machine uses electricity to show pictures and make sounds, and another machine far from here uses electricity to control these pictures and sounds, and because of this, you can use this machine to see and hear the same things as someone can see and hear in another place far from here.",
 
-"tell, told": "( \n[J told me K.] = J said K to me. J said this because J wants me to do this or to think this is true.\n).\nSomething you see or hear or feel causes you to know something.",
+"tell, told": "([J told me K.] = J said K to me. J said this because J wants me to do this or to think this is true.).\nSomething you see or hear or feel causes you to know something.",
 
 "temper": "What you are likely to do when you are angry. Some people become angry quickly and are likely to do and say things that hurt people and damage things. When other people become angry, they are likely to control what they do and not hurt people or things.",
 
@@ -4122,7 +4123,7 @@
 
 "temporary": "Something that happens, is true or is used for a short time, but not more than a short time.",
 
-"ten": "( \n[There are ten things here.] = There are nine things here, and there is one more thing here.\n).",
+"ten": "([There are ten things here.] = There are nine things here, and there is one more thing here.).",
 
 "tend": "This is likely to happen.\nYou are careful to look at some people or things for some time. You do things that are good for them and try to prevent things that are bad for them.",
 
@@ -4144,23 +4145,23 @@
 
 "than": "(See more than 1-15).\n(See less than 4-20).\nYou are comparing two things and saying one is more and the other is less.\nThese others, but not this one.",
 
-"thank": "( \n[You thank someone.] = Someone did something good for you. Because of this, you want to say something like this to them: You tell them that you feel happy when you think about them because you know they did this thing that is good for you.\n).",
+"thank": "([You thank someone.] = Someone did something good for you. Because of this, you want to say something like this to them: You tell them that you feel happy when you think about them because you know they did this thing that is good for you.).",
 
-"that": "( \n[J happens to something that does K.] = J happens to something. This same something does K.\n).\nThis.\nThis other thing.\nThe one less near to you.\nBecause of this.",
+"that": "([J happens to something that does K.] = J happens to something. This same something does K.).\nThis.\nThis other thing.\nThe one less near to you.\nBecause of this.",
 
-"the": "( \n[Something happens to the X.] = Something happens to X. This is the same X that someone said something about a short time before, or there is not another thing that is the same kind as X.\n).\n(See the other 1-04).\n(See the same 1-05).\n(See the body of 2-27).\nThese kinds of things.",
+"the": "([Something happens to the X.] = Something happens to X. This is the same X that someone said something about a short time before, or there is not another thing that is the same kind as X.).\n(See the other 1-04).\n(See the same 1-05).\n(See the body of 2-27).\nThese kinds of things.",
 
 "theatre, (theater)": "Building or place where many people can sit to see and hear something they enjoy, like this: A group of people plays music or tells a story where each person says and does things that sound and look like other people that are part of the story.",
 
-"their": "( \n[This is its X.] = This X belongs to it.\n[These things are their things.] = These things belong to them.\n).",
+"their": "([This is its X.] = This X belongs to it.\n[These things are their things.] = These things belong to them.).",
 
 "theirs": "This thing belongs to them.",
 
-"them": "( \n[It does something.] = This thing does something.\n[They do something.] = These things or people do something.\n[Something happens to them.] = Something happens to these things or people.\n).",
+"them": "([It does something.] = This thing does something.\n[They do something.] = These things or people do something.\n[Something happens to them.] = Something happens to these things or people.).",
 
 "themselves": "These same people who do this and not others.\nThese same people or things.",
 
-"then": "( \n[J happened, and then K happened.] = J happened. After this, K happened.\n).\n(See if this then 1-21).\nAt this time.\nIf this is true.",
+"then": "([J happened, and then K happened.] = J happened. After this, K happened.).\n(See if this then 1-21).\nAt this time.\nIf this is true.",
 
 "there": "(See there is 1-14).\nIn this place.\nNot here but in this other place.\nIn the place someone said something about.\nIn this place where you can see it.",
 
@@ -4168,13 +4169,13 @@
 
 "these": "(See 1-03).\nThe things more near to you.",
 
-"they": "( \n[It does something.] = This thing does something.\n[They do something.] = These things or people do something.\n[Something happens to them.] = Something happens to these things or people.\n).",
+"they": "([It does something.] = This thing does something.\n[They do something.] = These things or people do something.\n[Something happens to them.] = Something happens to these things or people.).",
 
 "thick": "Not thin.\nThere is much of this in a place.\nMoving through this quickly is not easy.",
 
 "thief, thieves": "You want to have something another person has, and you decide to do something bad: You move this thing to a place where you can use it, but where they cannot use it after this. They do not stop you because they do not see you move it, or because they think you will hurt them. The government rules do not allow you to do this.",
 
-"thin": "( \n[X is thin.] = You think like this about the shape of X: All parts of the front surface of X are very near to the back surface of X.\n).\nThere is some but not much of this in a place.\nMoving through this quickly is easy.",
+"thin": "([X is thin.] = You think like this about the shape of X: All parts of the front surface of X are very near to the back surface of X.).\nThere is some but not much of this in a place.\nMoving through this quickly is easy.",
 
 "thing": "(See 1-02).",
 
@@ -4194,7 +4195,7 @@
 
 "though": "If you know this one thing is true, you are likely to think this other thing is not true, but this other thing is true.\nLike.",
 
-"thousand": "( \n[There are one thousand things here.] = You can think about the number of things here like this: There are ten groups of things here, and each group contains one hundred things.\n).",
+"thousand": "([There are one thousand things here.] = You can think about the number of things here like this: There are ten groups of things here, and each group contains one hundred things.).",
 
 "thousandth": "The one of a thousand that is after all the others.\nOne of a thousand parts of one thing. Each part is the same.",
 
@@ -4206,11 +4207,11 @@
 
 "threatening": "When you think someone wants to hurt you.\nWhen something bad is likely to happen.",
 
-"three": "( \n[There are three things here.] = There are two things here, and there is one more thing here.\n).",
+"three": "([There are three things here.] = There are two things here, and there is one more thing here.).",
 
 "throat": "The part of your body that food moves through when it moves from your mouth and down into another part of your body. When you breathe, air moves through this same part.",
 
-"through": "( \n[J moved through K.] = J was on one side of K. Then J moved into K and moved inside towards the other side of K. Then J moved out of K on the other side.\n).\nInside all parts of this.\nAt all the same times that this happens.\nAfter this happens.\nBecause of.",
+"through": "([J moved through K.] = J was on one side of K. Then J moved into K and moved inside towards the other side of K. Then J moved out of K on the other side.).\nInside all parts of this.\nAt all the same times that this happens.\nAfter this happens.\nBecause of.",
 
 "throw, threw, thrown": "You move your hand quickly to make something you are holding move quickly. Then you stop holding this thing, and it does not stop moving: It moves quickly through the air for a short time.\nYou put something in a place quickly and not carefully.",
 
@@ -4254,7 +4255,7 @@
 
 "together": "In the same place.\nAt the same time.\nNear.\nTouching.\nEach moves more near to the others.\nBecome part of the same thing.\nDoing the same thing.",
 
-"toilet": "( \n[X is a toilet.] = X is a kind of container that people make and use like this: After you eat, food moves through your body. Your body does not use some parts of the food you eat, and these parts need to move out of your body. You can sit on top of this container and move these solid and liquid parts out of your body into this container.\n).",
+"toilet": "([X is a toilet.] = X is a kind of container that people make and use like this: After you eat, food moves through your body. Your body does not use some parts of the food you eat, and these parts need to move out of your body. You can sit on top of this container and move these solid and liquid parts out of your body into this container.).",
 
 "tomorrow": "Not the day happening now, but the day that happens after this and before all other days.",
 
@@ -4264,11 +4265,11 @@
 
 "too": "Very.\nMore than what you want.\nMore than what is needed to prevent this.\nAnother one like this.\nSaying this cannot happen is not true.",
 
-"tool": "( \n[X is a tool.] = X is something people make and use like this: Your hands can hold it and you can use it to do something to another thing. People make many different kinds to do different kinds of things, like cut or hold or move or mark or measure or change the shape of other things.\n).\nSomething you use to cause something you want to happen to another thing.",
+"tool": "([X is a tool.] = X is something people make and use like this: Your hands can hold it and you can use it to do something to another thing. People make many different kinds to do different kinds of things, like cut or hold or move or mark or measure or change the shape of other things.).\nSomething you use to cause something you want to happen to another thing.",
 
 "tooth, teeth": "One of several parts of your body inside your mouth that are hard and white like bones and that you use to press and cut food when you eat.",
 
-"top": "( \n[J is the top of K.] = J is the part of K that is above all other parts of K.\n[J is on top of K.] = J is above K and is touching the top surface of K.\n).\nGood more than all others.\nSomething that covers this.\nSomething people make because children enjoy using it like this: One very small part of its centre touches the surface below it when all the other parts move quickly around its centre.",
+"top": "([J is the top of K.] = J is the part of K that is above all other parts of K.\n[J is on top of K.] = J is above K and is touching the top surface of K.).\nGood more than all others.\nSomething that covers this.\nSomething people make because children enjoy using it like this: One very small part of its centre touches the surface below it when all the other parts move quickly around its centre.",
 
 "total": "All parts of this.\nThe number of things inside all of these groups, counting each thing inside each group.",
 
@@ -4278,7 +4279,7 @@
 
 "tourist": "Because you want to see things in other places, you move for a short time to one or more places that are not near where you live at most times. You do this to enjoy seeing and doing things in these places.",
 
-"towards": "( \n[J moves towards K.] = J moves more near to K.\n).\nMore near to.\nThinking about.\nWill help cause.\nA short time before.",
+"towards": "([J moves towards K.] = J moves more near to K.).\nMore near to.\nThinking about.\nWill help cause.\nA short time before.",
 
 "tower": "Building or part of a building that is very tall. This is tall more than other things near it.",
 
@@ -4310,7 +4311,7 @@
 
 "treatment": "What you do when you treat someone or something.",
 
-"tree": "( \n[X is a tree.] = X is a kind of plant that can grow very big and live for a very long time. There are many kinds of plants like this. Parts of these plants grow down into the ground. One wide part grows up above the ground, and many long narrow parts grow up from this wide part. Many thin flat green parts grow out from these narrow parts. The tops of these plants can grow far above the ground and high above people.\n).",
+"tree": "([X is a tree.] = X is a kind of plant that can grow very big and live for a very long time. There are many kinds of plants like this. Parts of these plants grow down into the ground. One wide part grows up above the ground, and many long narrow parts grow up from this wide part. Many thin flat green parts grow out from these narrow parts. The tops of these plants can grow far above the ground and high above people.).",
 
 "tremble": "When something moves like this: It quickly moves up and then down, or it quickly moves towards one side and then towards the other. It moves like this many times, but it does not move far. Fear or cold can make parts of your body move like this.",
 
@@ -4334,17 +4335,17 @@
 
 "truth": "Things that are true.\nThis is true.",
 
-"try, tries, tried": "( \n[You try to do X.] = Because you want X to happen, you do things that you think can cause X to happen.\n).\nUse something for a short time to know more about it.\nDecide if someone did something the government rules do not allow.",
+"try, tries, tried": "([You try to do X.] = Because you want X to happen, you do things that you think can cause X to happen.).\nUse something for a short time to know more about it.\nDecide if someone did something the government rules do not allow.",
 
-"tube": "( \n[X is a tube.] = X is something long that can contain liquids or gas. There is a hole in one end of X where things can move into X. There is a hole in the other end of X where things can move out of X. Things that move into one end of X can move through X and out of the other end of X. There are not other holes in X.\n).\nLong container used to contain liquids.",
+"tube": "([X is a tube.] = X is something long that can contain liquids or gas. There is a hole in one end of X where things can move into X. There is a hole in the other end of X where things can move out of X. Things that move into one end of X can move through X and out of the other end of X. There are not other holes in X.).\nLong container used to contain liquids.",
 
 "tune": "Piece of music containing several sounds. You hear each of these sound, but do not hear more than one at the same time. For some time after you hear this, you can think about what sounds you heard before and after others. This is easy to enjoy.\nWhen you cause a sound to become more high or low to make it sound the same as another sound.",
 
-"turn": "( \n[X is turning.] = X is moving like this: The sides of X are moving around the centre of X.\n).\nMove towards one place and then change to move towards a different place.\nBecome different.\nPeople do this when several people want to do something, but not more than one person can do it at the same time: Each person does it for a short time and then allows another person to do it.",
+"turn": "([X is turning.] = X is moving like this: The sides of X are moving around the centre of X.).\nMove towards one place and then change to move towards a different place.\nBecome different.\nPeople do this when several people want to do something, but not more than one person can do it at the same time: Each person does it for a short time and then allows another person to do it.",
 
 "twice": "This happens two times: at one time and at another time.\nThis amount multiplied by two.",
 
-"twist": "( \n[You twist X.] = You hold one part of X and do not allow it to move. At the same time, you cause another part of X to turn. This can cause the shape of X to change.\n).\nNot straight.",
+"twist": "([You twist X.] = You hold one part of X and do not allow it to move. At the same time, you cause another part of X to turn. This can cause the shape of X to change.).\nNot straight.",
 
 "two": "(See 1-07).",
 
@@ -4390,7 +4391,7 @@
 
 "unusual": "This is not like what happens at most times.",
 
-"up": "( \n[X moved up.] = X moved from one place towards a place above it.\n).\nAbove.\nYour head is above the other parts of your body.\nMore.\nMoving towards a place.\nAll of this.\nThere is not more.\nDoing something.\nYou can do this.",
+"up": "([X moved up.] = X moved from one place towards a place above it.).\nAbove.\nYour head is above the other parts of your body.\nMore.\nMoving towards a place.\nAll of this.\nThere is not more.\nDoing something.\nYou can do this.",
 
 "upper": "Part of something that is above most other parts.\nMore than most other parts.",
 
@@ -4406,9 +4407,9 @@
 
 "urgent": "This is something important that you need to do now or a short time after now.",
 
-"us": "( \n[We do something.] = You and I do this, or some other people and I do this.\n[Something happens to us.] = Something happens to you and me, or something happens to me and one or more other people.\n).",
+"us": "([We do something.] = You and I do this, or some other people and I do this.\n[Something happens to us.] = Something happens to you and me, or something happens to me and one or more other people.).",
 
-"use, using": "( \n[You use this thing.] = You do something with this thing because you think this can cause something to happen that you want.\n).\nYou expect this because it happened before.\nThis was true before, but not now.",
+"use, using": "([You use this thing.] = You do something with this thing because you think this can cause something to happen that you want.).\nYou expect this because it happened before.\nThis was true before, but not now.",
 
 "useful": "People can use this to make or cause things that they want.",
 
@@ -4430,9 +4431,9 @@
 
 "vegetable": "Plant parts that people eat, but not parts like sweet tree fruit. People carefully cause these kinds of plants to grow in many places because people eat their parts.\nSomething that is a plant.",
 
-"vehicle": "( \n[X is a vehicle.] = X is something that people make because it can move from one place to another and carry people and other things. When X moves, people and things can be inside or on top of X, and this causes them to move to the same place where X moves.\n).",
+"vehicle": "([X is a vehicle.] = X is something that people make because it can move from one place to another and carry people and other things. When X moves, people and things can be inside or on top of X, and this causes them to move to the same place where X moves.).",
 
-"verb": "( \n[X is a verb.] = X is a kind of word that tells you what happens or what someone does or that something is true.\n).",
+"verb": "([X is a verb.] = X is a kind of word that tells you what happens or what someone does or that something is true.).",
 
 "very": "(See 1-19).",
 
@@ -4492,13 +4493,13 @@
 
 "watch": "For some time you look at this one place all this time, because you think something can happen here, and if it happens, you want to see it.\nFor some time you look at some people or things, because you want to prevent bad things that can happen to them.\nSmall machine a person carries that measures time.",
 
-"water": "( \n[X is water.] = X is a kind of liquid that many kinds of living things need to live. People and animals drink this liquid often. There are many places where there is very much of this liquid. This liquid can become gas and move far above places where people live. It can then become liquid and move down where people are.\n).\nCause this liquid to move to a place.",
+"water": "([X is water.] = X is a kind of liquid that many kinds of living things need to live. People and animals drink this liquid often. There are many places where there is very much of this liquid. This liquid can become gas and move far above places where people live. It can then become liquid and move down where people are.).\nCause this liquid to move to a place.",
 
 "wave": "Move your hand towards one side one or more times to try to cause someone to look or move.\nSomething that looks or moves like this: In a place where there is much water, when something causes part of the water surface to be high more than other parts, this high part moves quickly from one part of the surface to another.",
 
 "way": "Where you need to move if you want to move to this other place.\nThe things you can plan to do to cause something that you want to happen.\nYou know the kind of thing something does, but this is more you can say about what it looks like, sounds like, or moves like when it does this kind of thing.\nDistance.\nFar.",
 
-"we": "( \n[We do something.] = You and I do this, or some other people and I do this.\n[Something happens to us.] = Something happens to you and me, or something happens to me and one or more other people.\n).",
+"we": "([We do something.] = You and I do this, or some other people and I do this.\n[Something happens to us.] = Something happens to you and me, or something happens to me and one or more other people.).",
 
 "weak": "Cannot move heavy things.\nYour body cannot control or do some things that most people can do.\nNot able to do something difficult.\nLess than what is needed to cause something.\nCan easily be damaged or changed.",
 
@@ -4520,13 +4521,13 @@
 
 "weigh": "The weight of something.\nWhen you measure something to know its weight.\nWhen you think about two or more things for some time to compare them before you decide.",
 
-"weight": "( \n[The weight of J is the same as the weight of K.] = You know this about J and you know the same thing about K: You know J is not more heavy than K, and K is not more heavy than J.\n).\nSomething heavy.",
+"weight": "([The weight of J is the same as the weight of K.] = You know this about J and you know the same thing about K: You know J is not more heavy than K, and K is not more heavy than J.).\nSomething heavy.",
 
 "welcome": "When someone moves into a place, you say you are happy that they are here.\nYou say you are happy to help someone.\nYou say you are happy this happens.",
 
 "well": "(See 2-12).\nWhat you do is good.\nWhen you do this, you are careful to cause this to be the same as what someone wants.\nVery much.\nHealthy.\nHole someone makes down into the ground. The hole is narrow, but the bottom can be far below the surface. People use this hole to find liquids like water below the surface. Then people move the liquids up out of the hole where they can be used.",
 
-"went": "( \n[X goes to this place.] = X moves to this place from another place.\n).\nDo something.\nHappen.\nBecome.",
+"went": "([X goes to this place.] = X moves to this place from another place.).\nDo something.\nHappen.\nBecome.",
 
 "west": "Towards the place you can look at to see the sun each day, a short time before the time each day when you cannot see the sun.",
 
@@ -4540,7 +4541,7 @@
 
 "wheat": "Kind of grain that grows less tall than a person. People grow much of this, press its seeds to make very small dry pieces, and use this to make bread. Most bread that people eat each day is made using these seeds.",
 
-"wheel": "( \n[X is a wheel.] = X is something that people make to be part of a machine. The shape of X is the same as the shape of a circle. There is a hole in the centre of X. People put another part of the machine through this hole, and X turns around it. People use several of these things to make vehicles that can carry people and things. The bottom parts of these circles touch the ground, and when they turn, the vehicle moves.\n).",
+"wheel": "([X is a wheel.] = X is something that people make to be part of a machine. The shape of X is the same as the shape of a circle. There is a hole in the centre of X. People put another part of the machine through this hole, and X turns around it. People use several of these things to make vehicles that can carry people and things. The bottom parts of these circles touch the ground, and when they turn, the vehicle moves.).",
 
 "when": "(See 2-14).\nYou want someone to tell you the time this happens.\nAt the same time.",
 
@@ -4550,7 +4551,7 @@
 
 "whether": "If.\nIf this happens or not.\nYou do not know if this is true or if the other is true.",
 
-"which": "( \n[You decide which of these things you want.] = There are two or more things. From this group of things, you choose the things you want.\n).\nWhat one of these.\nThis one.\nThese.\nThat.",
+"which": "([You decide which of these things you want.] = There are two or more things. From this group of things, you choose the things you want.).\nWhat one of these.\nThis one.\nThese.\nThat.",
 
 "whichever": "One of these.\nYou can say the same about each of these.",
 
@@ -4562,7 +4563,7 @@
 
 "whistle": "You make air move quickly through a small hole, and this makes a high loud sound that you can use to make music. You can move air through a small hole in something you make, or you can make your mouth have the shape of a small hole and move air through it.",
 
-"white": "( \n[X is white.] = The colour of X is like the colour of milk.\n).",
+"white": "([X is white.] = The colour of X is like the colour of milk.).",
 
 "who": "(See 2-23).\nYou want someone to tell you the person that someone said something about.",
 
@@ -4574,11 +4575,11 @@
 
 "whose": "You want someone to tell you the person or thing that this belongs to.\nThis same person or thing has this.",
 
-"why": "( \n[You know why X happened.] = You know what caused X to happen.\n).\nYou want someone to tell you what causes this.",
+"why": "([You know why X happened.] = You know what caused X to happen.).\nYou want someone to tell you what causes this.",
 
 "wicked": "Very bad.",
 
-"wide": "( \n[X is wide.] = You think like this about the distance between two sides of X: X is not narrow. All parts of one side are far from the other side.\n).\nMuch more than many other things or other times.",
+"wide": "([X is wide.] = You think like this about the distance between two sides of X: X is not narrow. All parts of one side are far from the other side.).\nMuch more than many other things or other times.",
 
 "widespread": "This happens or is true in many places.",
 
@@ -4588,11 +4589,11 @@
 
 "wild": "Like the plants and animals in places far from people. People do not change or control these plants and animals.\nWhen someone or something is difficult to control, like a big animal that is moving quickly, hurting people and damaging things.\nWhen something causes you to feel very much, like when you are very angry, or when you enjoy or want something very much.\nNot careful.",
 
-"will": "( \n[J will do K.] = At a time after now, J does K or you expect J to do K.\n).\nWhat you expect if something like this happens.\nYou choose what you want and try to cause it to happen.\nSomething you write telling people what you want them to do with things that belong to you after you die.",
+"will": "([J will do K.] = At a time after now, J does K or you expect J to do K.).\nWhat you expect if something like this happens.\nYou choose what you want and try to cause it to happen.\nSomething you write telling people what you want them to do with things that belong to you after you die.",
 
 "willing": "You want to do this, and if you know you can, you will choose to do this.",
 
-"win, won": "( \n[X wins something.] = X is a person or group that wants something. There are other people or groups that want the same thing, but not all can have it. The one who does something more than or before the others can have it. Each person or group tries to do this. X does this more than or before the others.\n).",
+"win, won": "([X wins something.] = X is a person or group that wants something. There are other people or groups that want the same thing, but not all can have it. The one who does something more than or before the others can have it. Each person or group tries to do this. X does this more than or before the others.).",
 
 "wind, wound": "When you feel air moving.\nCause part of a machine to turn.\nYou put something like string around something solid, like this: You hold one end of the string in one place, and you move the other end many times around the solid thing.",
 
@@ -4620,11 +4621,11 @@
 
 "witness": "You were in the same place where something happened, and because of this, you can tell people after this what you saw and heard when it happened.",
 
-"woman, women": "( \n[X is a woman.] = X is an adult female person.\n).",
+"woman, women": "([X is a woman.] = X is an adult female person.).",
 
 "wonder": "You think about and want to know more.\nYou want to know if something is true.\nSomething happens that you did not expect, and you want to know what caused it.\nYou think about something and feel it is good very much more than you expected.",
 
-"wood": "( \n[X is wood.] = X is the hard part of a tree. People cut long pieces of the hard part of a tree and use these pieces to make things.\n).",
+"wood": "([X is wood.] = X is the hard part of a tree. People cut long pieces of the hard part of a tree and use these pieces to make things.).",
 
 "wooden": "This thing is made using the hard parts of trees.",
 
@@ -4634,7 +4635,7 @@
 
 "word": "(See 1-30).\nSomething someone says.\nSomeone says this is true.\nWhat someone promises.",
 
-"work": "( \n[You are working.] = You are doing something like this: Someone wants you to do something, and they say they will give you something you want if you do it. They say they want you to make something or cause something to happen. Maybe this is not easy. You say you will do this, and you do the things they want you to do for some time.\n).\nThis thing does what you want and expect it to do.",
+"work": "([You are working.] = You are doing something like this: Someone wants you to do something, and they say they will give you something you want if you do it. They say they want you to make something or cause something to happen. Maybe this is not easy. You say you will do this, and you do the things they want you to do for some time.).\nThis thing does what you want and expect it to do.",
 
 "world": "The one very big place where all people live.\nFor a long time, you are in a place and things happen to you in this place. You move to different parts of this place, but you do not often move far from this place.",
 
@@ -4662,7 +4663,7 @@
 
 "wrist": "The part of your body where your hand is connected to two long arm bones.",
 
-"write, wrote, written": "( \n[You write something.] = You mark a surface, because you want someone to see these marks after this and know what words you want them to think about. They can know these words, because the shapes of your marks are the same shapes that other people use when they want someone to think about these same words.\n).",
+"write, wrote, written": "([You write something.] = You mark a surface, because you want someone to see these marks after this and know what words you want them to think about. They can know these words, because the shapes of your marks are the same shapes that other people use when they want someone to think about these same words.).",
 
 "wrong": "Not true.\nSomething that is bad to do.\nSomeone can think about this and know it is bad to do.\nNot the same as what someone wants.\nThis does not cause what you wanted.",
 
@@ -4670,13 +4671,13 @@
 
 "yard": "Place near a building but not inside.\nPlace where people work that is not inside a building.\nInside some countries, people measure things using this length: One metre is more than one of this length and less than two of this length.",
 
-"year": "( \n[X is a year.] = X is a long time that contains four groups of three months.\n).",
+"year": "([X is a year.] = X is a long time that contains four groups of three months.).",
 
 "yearly": "Happening each year.",
 
-"yellow": "( \n[X is yellow.] = The colour of X is like the colour of the centre inside a bird egg a short time after it moves out of the body of a female bird.\n).",
+"yellow": "([X is yellow.] = The colour of X is like the colour of the centre inside a bird egg a short time after it moves out of the body of a female bird.).",
 
-"yes": "( \n[You say: \"Yes.\"] = You say something is true, or you say you want this.\n).\nYou say you will do this.",
+"yes": "([You say: \"Yes.\"] = You say something is true, or you say you want this.).\nYou say you will do this.",
 
 "yesterday": "Not the day happening now, but the day that happened before this and after all other days.",
 
@@ -4684,9 +4685,9 @@
 
 "you": "(See 2-20).\nPeople.",
 
-"young": "( \n[X is young.] = X lives or exists now, and X lived or existed a short time before now, but X did not live or exist a long time before now.\n).",
+"young": "([X is young.] = X lives or exists now, and X lived or existed a short time before now, but X did not live or exist a long time before now.).",
 
-"your": "( \n[This is your X.] = This X belongs to you.\n).",
+"your": "([This is your X.] = This X belongs to you.).",
 
 "yours": "This thing belongs to you.",
 
@@ -4694,4 +4695,6 @@
 
 "youth": "The time when someone is young.\nThe time after a person is a young child, but before the person is an adult.",
 
-"zero": "( \n[There are zero things here.] = You can think about the number of things here like this: There is not something here.\n)."}
+"zero": "([There are zero things here.] = You can think about the number of things here like this: There is not something here.)."
+
+}
