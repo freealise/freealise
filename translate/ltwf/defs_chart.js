@@ -1,4 +1,4 @@
-const data = [
+const data = [['phrase', 'size', 'value', 'link'],
 ["there a", 1, 1, ""],
 ["is a", 1, 1, ""],
 ["an a", 1, 1, ""],
