@@ -23,7 +23,7 @@ only instead is broke and confused - and only the truth will save him"
 but you were ˹so busy˺ making fun of them that it made you forget My remembrance. And you used to laugh at them. (23:110)  
 Today I have indeed rewarded them for their perseverance: they are certainly the triumphant.” (23:111)  
   
-troll the Orthodox Christians (+Catholics)  
+troll the doomed Orthodox Christians (+Catholics ?)  
   
   
 #### BT archive
