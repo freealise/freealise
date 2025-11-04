@@ -1,3 +1,6 @@
+programming education and documentation  
+https://en.wikipedia.org/wiki/Visual_programming_language  
+  
 modular code for neural networks ?  
 natural language: syllable / word / phrase / sentence / story structure ?  
   
