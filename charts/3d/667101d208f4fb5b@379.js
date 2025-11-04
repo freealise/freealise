@@ -1,10 +1,14 @@
 // https://observablehq.com/@nhogs/zdog-3d-force-directed-graph-on-a-sphere@379
-function _1(md){return(
-md`# Zdog 3D Force-Directed Graph on a sphere
+/*
+# Zdog 3D Force-Directed Graph on a sphere
 
 ## Using radius force code from https://observablehq.com/@fil/3d-graph-on-sphere
 
-This network of character co-occurence in _Les Misérables_ is positioned by simulated forces using [d3-force-3d](https://github.com/vasturiano/d3-force-3d) and displayed using [Zdog](https://zzz.dog).`
+This network of character co-occurence in _Les Misérables_ is positioned by simulated forces using [d3-force-3d](https://github.com/vasturiano/d3-force-3d) and displayed using [Zdog](https://zzz.dog).
+*/
+
+function _1(md){return(
+md``
 )}
 
 function _chart(data,d3d,forceRadius,DOM,width,height,d3,Zdog,color,invalidation)
