@@ -2,7 +2,7 @@
 vars
 */
 :root {
-    --tagcloud-transition-duration: 0ms;
+    --tagcloud-transition-duration: 10000ms;
     --tagcloud-transition-ease: ease-out;
     --tagcloud-bg-color-rgb: 0, 0, 0;
     --tagcloud-animation-duration: 300s;
