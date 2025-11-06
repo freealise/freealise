@@ -88,7 +88,7 @@ tagcloud
     --final-x: calc(var(--scaled-x) + var(--radius));
     --final-y: calc(var(--scaled-y) + var(--radius));
     --final-z: var(--scaled-z);
-    /*pointer-events: none;*/
+    pointer-events: none;
     width: var(--tag-diameter);
     height: var(--tag-diameter); 
     display: flex;
