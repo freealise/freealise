@@ -5,7 +5,7 @@ vars
     --tagcloud-bg-color-rgb: 0, 0, 0;
     --tagcloud-animation-duration: 300s;
     --tagcloud-animation-direction: normal;
-    --tagcloud-animation-play-state: paused;
+    --tagcloud-animation-play-state: running;
     --tagcloud-diameter: 80rem;
     --tag-diameter: 5.5rem;
     --tag-font-color-rgb: 255, 255, 255;
