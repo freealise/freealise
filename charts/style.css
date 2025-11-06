@@ -100,11 +100,11 @@ tagcloud
     pointer-events: initial;
     color: rgb(var(--tag-font-color-rgb));
     text-decoration: none;
-    text-shadow: 1px  1px 1px rgb(var(--tagcloud-bg-color-rgb)),
+    /*text-shadow: 1px  1px 1px rgb(var(--tagcloud-bg-color-rgb)),
 								 1px -1px 1px rgb(var(--tagcloud-bg-color-rgb)),
 								 -1px  1px 1px rgb(var(--tagcloud-bg-color-rgb)),
 								 -1px -1px 1px rgb(var(--tagcloud-bg-color-rgb)), 
 								 0 0 1rem rgb(var(--tagcloud-bg-color-rgb)), 
 								 0 0 2rem rgb(var(--tagcloud-bg-color-rgb)), 
-								 0 0 3rem rgb(var(--tagcloud-bg-color-rgb));
+								 0 0 3rem rgb(var(--tagcloud-bg-color-rgb));*/
 }
