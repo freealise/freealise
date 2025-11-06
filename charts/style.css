@@ -1,0 +1,119 @@
+/*
+vars
+*/
+:root {
+    --tagcloud-transition-duration: 0ms;
+    --tagcloud-transition-ease: ease-out;
+    --tagcloud-bg-color-rgb: 0, 0, 0;
+    --tagcloud-animation-duration: 300s;
+    --tagcloud-animation-direction: normal;
+    --tagcloud-animation-play-state: paused;
+    --tagcloud-diameter: 80rem;
+    --tag-diameter: 5.5rem;
+    --tag-font-color-rgb: 255, 255, 255;
+    --tag-font-family: sans-serif;
+    --tag-font-size: 1rem;
+}
+
+/*
+global
+*/
+/*@import url(//fonts.googleapis.com/css?family=Open+Sans);*/
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(var(--tagcloud-bg-color-rgb));
+    overflow: hidden;
+}
+
+/*
+tagcloud
+*/
+.tagcloud-wrapper {
+    perspective: calc(var(--tagcloud-diameter) * 2);
+    transform-style: preserve-3d;
+    background: radial-gradient(rgba(var(--tagcloud-bg-color-rgb), 0.75) 15% , rgba(var(--tagcloud-bg-color-rgb), 0) calc(75% - var(--tag-diameter)));
+    width: var(--tagcloud-diameter);
+    height: var(--tagcloud-diameter);
+    border-radius: 50%;
+    font-family: var(--tag-font-family);
+    font-size: var(--tag-font-size);
+}
+
+.tagcloud-wrapper:hover {
+    --tagcloud-animation-play-state: paused;
+}
+
+.tagcloud-wrapper .tagcloud {
+    list-style-type: none;
+    width: var(--tagcloud-diameter);
+    height: var(--tagcloud-diameter);
+    position: relative;
+    transform-style: inherit;
+    --radius: calc(calc(var(--tagcloud-diameter) / 2) - calc(var(--tag-diameter) / 2));
+    animation: tagcloud-rotation var(--tagcloud-animation-duration) var(--tagcloud-animation-direction) linear infinite var(--tagcloud-animation-play-state),
+               tagcloud-intro calc(var(--tagcloud-transition-duration) * 4) var(--tagcloud-transition-ease) 1;
+}
+
+@keyframes tagcloud-rotation {
+    from {transform: rotateY(0deg) rotateX(0deg);}
+    to {transform: rotateY(360deg) rotateX(360deg);}
+}
+
+@keyframes tagcloud-intro {
+    from {scale: 0;}
+    to {scale: 1;}
+}
+
+.tagcloud-wrapper .tagcloud:has(.tagcloud-tag > a:hover) .tagcloud-tag:not(:has(a:hover)) {
+    opacity: 0.25;
+}
+
+.tagcloud-wrapper .tagcloud-tag {
+    --phi: acos(calc(-1 + (2 * var(--index)) / var(--num-elements)));
+    --theta: calc(sqrt(calc(var(--num-elements) * 3.141592653589793)) * var(--phi));
+    --x: calc(cos(var(--theta)) * sin(var(--phi)));
+    --y: calc(sin(var(--theta)) * sin(var(--phi)));
+    --z: calc(cos(var(--phi)));
+    --vector-length: sqrt(var(--x) * var(--x) + var(--y) * var(--y) + var(--z) * var(--z));
+    --normalized-x: calc(var(--x) / var(--vector-length));
+    --normalized-y: calc(var(--y) / var(--vector-length));
+    --normalized-z: calc(var(--z) / var(--vector-length));
+    --scaled-x: calc(var(--normalized-x) * var(--radius));
+    --scaled-y: calc(var(--normalized-y) * var(--radius));
+    --scaled-z: calc(var(--normalized-z) * var(--radius));
+    --final-x: calc(var(--scaled-x) + var(--radius));
+    --final-y: calc(var(--scaled-y) + var(--radius));
+    --final-z: var(--scaled-z);
+    /*pointer-events: none;*/
+    width: var(--tag-diameter);
+    height: var(--tag-diameter); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    transition: opacity var(--tagcloud-transition-duration) var(--tagcloud-transition-ease);
+    transform: translate3d(var(--final-x), var(--final-y), var(--final-z));
+    animation: tagcloud-tag-rotation var(--tagcloud-animation-duration) var(--tagcloud-animation-direction) linear infinite var(--tagcloud-animation-play-state);
+}
+
+@keyframes tagcloud-tag-rotation {
+    from {transform: translate3d(var(--final-x), var(--final-y), var(--final-z)) rotateX(360deg) rotateY(360deg);}
+    to {transform: translate3d(var(--final-x), var(--final-y), var(--final-z)) rotateX(0deg) rotateY(0deg);}
+}
+
+.tagcloud-wrapper .tagcloud-tag > a {
+    pointer-events: initial;
+    color: rgb(var(--tag-font-color-rgb));
+    text-decoration: none;
+    text-shadow: 1px  1px 1px rgb(var(--tagcloud-bg-color-rgb)),
+								 1px -1px 1px rgb(var(--tagcloud-bg-color-rgb)),
+								 -1px  1px 1px rgb(var(--tagcloud-bg-color-rgb)),
+								 -1px -1px 1px rgb(var(--tagcloud-bg-color-rgb)), 
+								 0 0 1rem rgb(var(--tagcloud-bg-color-rgb)), 
+								 0 0 2rem rgb(var(--tagcloud-bg-color-rgb)), 
+								 0 0 3rem rgb(var(--tagcloud-bg-color-rgb));
+}
