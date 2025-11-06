@@ -2,8 +2,6 @@
 vars
 */
 :root {
-    --tagcloud-transition-duration: 10000ms;
-    --tagcloud-transition-ease: ease-out;
     --tagcloud-bg-color-rgb: 0, 0, 0;
     --tagcloud-animation-duration: 300s;
     --tagcloud-animation-direction: normal;
@@ -54,18 +52,12 @@ tagcloud
     position: relative;
     transform-style: inherit;
     --radius: calc(calc(var(--tagcloud-diameter) / 2) - calc(var(--tag-diameter) / 2));
-    animation: tagcloud-rotation var(--tagcloud-animation-duration) var(--tagcloud-animation-direction) linear infinite var(--tagcloud-animation-play-state),
-               tagcloud-intro calc(var(--tagcloud-transition-duration) * 4) var(--tagcloud-transition-ease) 1;
+    animation: tagcloud-rotation var(--tagcloud-animation-duration) var(--tagcloud-animation-direction) linear infinite var(--tagcloud-animation-play-state);
 }
 
 @keyframes tagcloud-rotation {
     from {transform: rotateY(0deg) rotateX(0deg);}
     to {transform: rotateY(360deg) rotateX(360deg);}
-}
-
-@keyframes tagcloud-intro {
-    from {scale: 0;}
-    to {scale: 1;}
 }
 
 .tagcloud-wrapper .tagcloud:has(.tagcloud-tag > a:hover) .tagcloud-tag:not(:has(a:hover)) {
@@ -95,7 +87,6 @@ tagcloud
     align-items: center;
     justify-content: center;
     position: absolute;
-    transition: opacity var(--tagcloud-transition-duration) var(--tagcloud-transition-ease);
     transform: translate3d(var(--final-x), var(--final-y), var(--final-z));
     animation: tagcloud-tag-rotation var(--tagcloud-animation-duration) var(--tagcloud-animation-direction) linear infinite var(--tagcloud-animation-play-state);
 }
