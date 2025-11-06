@@ -60,9 +60,9 @@ tagcloud
     to {transform: rotateY(360deg) rotateX(360deg);}
 }
 
-.tagcloud-wrapper .tagcloud:has(.tagcloud-tag > a:hover) .tagcloud-tag:not(:has(a:hover)) {
+/*.tagcloud-wrapper .tagcloud:has(.tagcloud-tag > a:hover) .tagcloud-tag:not(:has(a:hover)) {
     opacity: 0.25;
-}
+}*/
 
 .tagcloud-wrapper .tagcloud-tag {
     --phi: acos(calc(-1 + (2 * var(--index)) / var(--num-elements)));
