@@ -23,7 +23,7 @@ violin bow formants - 1:along string, 2:fabric on side of bow (speed), 3:pressur
 harmonic ruler from chinese mat to draw spectrograms on copy paper (or several carpenter's pencils or kernels); notation with dot patterns scrolled vertically (~piano roll)
 mat from thick fishing line for stereo screen (https://commons.wikimedia.org/wiki/File:Parallax_barrier_vs_lenticular_screen.svg), or blue and yellow glasses with plastic lenses (https://developers.google.com/cardboard/manufacturers)
 
-make proxy (cloudflare / firebase ?), install linux on mac, cryptography ? Konigsberg (https://en.wikipedia.org/wiki/Kaliningrad_Oblast) is the remote capital of mainland Prussia (https://en.wikipedia.org/wiki/Prussia#Religion) while Birobidzhan is capital of Siberia, president is AI Bernie Sanders; Nyen/Pietari is Swedish/Finnish Ingria; Crimean Tataria on historical land beyond Crimea (define natural border); railgun/acoustic; political podcast with Gemini ?
+make proxy (cloudflare / firebase ?), install linux on mac, cryptography ? Belarusian Krolevec(?) (https://en.wikipedia.org/wiki/Kaliningrad_Oblast) is the remote capital(??) of mainland Prussia (https://en.wikipedia.org/wiki/Prussia#Religion) while Birobidzhan is capital of Siberia, president is AI Bernie Sanders; Nyen/Pietari is Swedish/Finnish Ingria; Crimean Tataria on historical land beyond Crimea (define natural border); railgun/acoustic; political podcast with Gemini ?
 
   (test: Think in / Listen to / Speak / Read / Write in a foreign language
   read and write, hear and speak letters and phonemes, syllables and morphemes, words, phrases and sentences, story structure)
