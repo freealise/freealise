@@ -33,3 +33,4 @@ for denoising average several frames, use median filter
 combine animation with audioplays  
   
 script in json with javascript functions (most like coding, least awkward)  
+pseudocode is poetry  
