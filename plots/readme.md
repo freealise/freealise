@@ -1,5 +1,7 @@
   
-- Zohar sequel :)
+- story of Maschiach  
+  
+- Zohar sequel :)  
   
 - future Eurovision album (#russiaIsSiberia #BelarusIsEurope #SiberiaForSale #SiberiaRemoteControl #russiaIsAColony #PietariIsFinland; Greece not believing what Americans do after it, Holy Spirit goes _through_ the son (any human), location of head of church doesn't matter - protestant Orthodoxy ?); Georgia is 'affordable Israel'; Czechia, Sweden ? open source music contest & supergroup ('band anyone can join')  
   
