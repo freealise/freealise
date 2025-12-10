@@ -15,11 +15,13 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-I'm a person of non-traditional geospacial and temporal orientation.  
+A person of non-traditional geospacial and temporal orientation.  
 Speaking English since 1992 (IELTS >7.0), coding since ~2000.  
 Concerned with international relations and global issues.  
 Unofficially Jewish by faith, with complex ethnicity.  
-
+  
+Would do with an interface designer - half kingdom and new skates!  
+  
 <!--[![Quora Profile](https://img.shields.io/badge/⁉️-Quora-red?style=for-the-badge)](https://www.quora.com/profile/Marina-From-Freealise)-->
 [![Pinterest](https://img.shields.io/badge/📌-Pinterest-red.svg?style=for-the-badge)](https://www.pinterest.com/freealise_)
 [![Stack Overflow Reputation](https://img.shields.io/stackexchange/stackoverflow/r/9165398?color=orange&label=stackoverflow&logo=stackoverflow&style=for-the-badge)](https://stackoverflow.com/users/9165398) 
