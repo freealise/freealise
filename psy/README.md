@@ -40,6 +40,7 @@ Phosphene observation — paying relaxed attention to the colored blurbs before 
 Direct self-hypnosis - One may try to say again and again “_!” This will result in tiredness and some images may appear.  
 Mind-machine visual stimulation - projected white noise.  
 WearOS sleep tracking - may induce phases of sleep by audio or tactile feedback.  
+Low doses of melatonin are usually sufficient to produce a hypnotic effect in most people. Higher doses do not appear to result in a stronger effect but instead appear to cause drowsiness for a longer period of time.  
   
 Wort with the tea, not in the evening  
   
