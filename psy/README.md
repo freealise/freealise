@@ -50,3 +50,5 @@ candle and no electric light | electronics (darkness; sensory deprivation ?) -> 
 2. Introducing ambiguity (freedom of choice and thinking) - W
 3. Using metaphors and storytelling (everyman or indirect reference, story develops before it's interpreted) while matching the experience (presupposition, realistic you-character) - E
 4. Utilization (constructive trolling) - P
+  
+Motivation: Darwin - survival, Freud - pleasure, Adler - power, Jung - self-actualization; Frankl - the combination of them forms meaning  
