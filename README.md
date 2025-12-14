@@ -20,7 +20,8 @@ Speaking English since 1992 (IELTS >7.0), coding since ~2000.
 Concerned with international relations and global issues.  
 Unofficially Jewish by faith, with complex ethnicity.  
   
-Would do with an interface designer - half kingdom and new skates!  
+Would do with an interface designer - half the kingdom and new skates! ❄  
+<a href="mailto:" target="_blank"><img src='https://img.shields.io/badge/✉️-me⎀freealise.com-white' alt='Email'/></a>
   
 <!--[![Quora Profile](https://img.shields.io/badge/⁉️-Quora-red?style=for-the-badge)](https://www.quora.com/profile/Marina-From-Freealise)-->
 [![Pinterest](https://img.shields.io/badge/📌-Pinterest-red.svg?style=for-the-badge)](https://www.pinterest.com/freealise_)
