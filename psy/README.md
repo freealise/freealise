@@ -39,7 +39,7 @@ https://en.wikipedia.org/wiki/Neurofeedback
 Phosphene observation — paying relaxed attention to the colored blurbs before closed eyes may help to transform them into images.  
 Direct self-hypnosis - One may try to say again and again “_!” This will result in tiredness and some images may appear.  
 Mind-machine visual stimulation - projected white noise.  
-
+WearOS sleep tracking - may induce phases of sleep by audio or tactile feedback.  
   
 DMT is released in the body all the time and is required for normal brain functioning, only the amount is strongly affected by stress (mostly physical) through the change in breathing, and density of air related to height (~bike uphill).  
 DMT significantly decreases the power of alpha (8-12 Hz) oscillations throughout all scalp locations, while simultaneously increasing power of delta (1-4 Hz), theta (4-7 Hz) and gamma (30-40 Hz) oscillations, as well as brain connectivity - which explains the similarity of effects to those of sensory deprivation.  
