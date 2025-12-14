@@ -31,3 +31,5 @@
 
 - 'in soviet russia all is inverted'  
   
+- rewrite MK as a blessing of the Jews ?  
+  
