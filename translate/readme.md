@@ -12,7 +12,7 @@ group words and morphemes by root and sound instead of subject
 add stress pattern  
 
 arc interpolation for letters (svg)  
-calligraphy of word as the outline of idea it represents (mnemonic device)  
+word in pixel font as the outline of idea it represents (mnemonic device)  
   
 lyrics calligraphy | bead or thread bracelet with alphabet  
 https://www.calligraphr.com/en/webapp/app_home/?/templates  
