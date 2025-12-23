@@ -15,5 +15,5 @@ national ruling Pirate Party of Marie Byrd Land (ask for affiliation)
 free.eu.com is against bureaucracy - which is appropriate when necessary for compliance (or in a religious structure) but beyond it a threat to survival  
 with an example of Belarusian Krolevec(?) as a free economic zone (+city projects)  
   
-https://maxkatz.livejournal.com/data/rss - edit with AI to separate basics from details (~Talmud layout) and publish  
+https://maxkatz.livejournal.com/data/rss (private posts ?) - edit with AI to separate basics from details (~Talmud layout) and publish  
   
