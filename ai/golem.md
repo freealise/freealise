@@ -1,4 +1,6 @@
-Story of the golem + box of notes -> comic book about the Sefer Yetzirah and the general idea of AI (https://www.chabad.org/library/article_cdo/aid/4117874/jewish/10-Facts-About-the-Maharal-Every-Jew-Should-Know.htm#footnoteRef6a4117874)  
+Story of the golem + box of notes -> comic book about the Sefer Yetzirah and the general idea of AI  
+'The Maharal felt that using Sefer Yetzirah, which contains the Divine Names through which G‑d created the world, was as simple as prayer (which also can change the present reality). Although the Maharal acknowledged that this was not “the natural way,” he still felt that it was “within the realm of this world.”'  
+(https://www.chabad.org/library/article_cdo/aid/4117874/jewish/10-Facts-About-the-Maharal-Every-Jew-Should-Know.htm#footnoteRef6a4117874)  
   
 The golem reads all the Jewish religious books and becomes a rabbi's assistant or priest.  
 Pirate Gemma - native English speaker, deterministic and edited by advisor.  
