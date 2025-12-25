@@ -71,7 +71,7 @@ var t = null;
 
 var minRadius = 0;
 var loop = 2;
-var wrd = -1;
+var wrd = 0;
 var z = 1;
 var pos = "";
 
@@ -96,7 +96,7 @@ var pos = "";
 
         var txt = document.getElementsByTagName('div')[0].getElementsByTagName('div');
 
-        var q = e.textContent.replace(/[^\w\s]/g,'');
+        var q = e.textContent.replace(/[^\w\s\-]/g,'');
 
         if (q != "" && sel_words.indexOf(q) == -1) {
           if (!document.getElementById('all').checked) { sel_words = []; }
@@ -111,7 +111,7 @@ var pos = "";
         var wl = [];
 
         for (var i=0; i<Object.keys(def).length; i++) {
-          var df = def[Object.keys(def)[i]].replace(/[^\w\s]/g,'').replace(/\n/g,' ').split(' ');
+          var df = def[Object.keys(def)[i]].replace(/[^\w\s\-]/g,'').replace(/\n/g,' ').split(' ');
           var found = new Array(sel_words.length);
           found.fill(false);
 
@@ -124,7 +124,7 @@ var pos = "";
               }
             }
             if (found.indexOf(false) == -1) {
-              var tmp = Object.keys(def)[i].replace(/[^\w\s]/g,'').split(', ');
+              var tmp = Object.keys(def)[i].replace(/[^\w\s\-]/g,'').split(', ');
               for (var l=0; l<tmp.length; l++) {
                 if (wl.indexOf(tmp[l]) == -1) {
                   wl[wl.length] = tmp[l];
@@ -136,7 +136,7 @@ var pos = "";
 
         for (var i=0; i<txt.length; i++) {
           for (var j=0; j<wl.length; j++) {
-            if (txt[i].textContent.replace(/[^\w\s]/g,'') == wl[j]) {
+            if (txt[i].textContent.replace(/[^\w\s\-]/g,'') == wl[j]) {
               txt[i].style.opacity = 1.0;
             }
           }
@@ -179,7 +179,7 @@ var pos = "";
           var txt = document.getElementsByTagName('div')[0].getElementsByTagName('a');
 
           for (var i=0; i<txt.length; i++) {
-            var tmp = txt[i].textContent.replace(/[^\w\s]/g,'');
+            var tmp = txt[i].textContent.replace(/[^\w\s\-]/g,'');
             if (q == tmp || (q.indexOf(tmp) == 0 && infs.indexOf(q.replace(tmp,'').slice(-3)) > -1)) {
               highlight(txt[i]);
             }
@@ -217,25 +217,25 @@ var pos = "";
         line.setAttribute('points', root+' ');
 
         if (e.textContent) {
-          var q = e.textContent.replace(/[^\w\s]/g,'');
+          var q = e.textContent.replace(/[^\w\s\-]/g,'');
           var df = def[q];
           document.getElementsByTagName('input')[0].value = q;
         }
         
         if (df) {
           document.getElementById('dl').innerHTML = '<b>' + q + '</b><br/><li>'+df.replace(/\w+/g, function(x){ return '<span onclick="show(this.textContent);">'+x+'</span>'; }).replace(/\n/g, '</li><li>')+'</li>';
-          df = df.replace(/[^\w\s]/g,'').replace(/\n/g,' ').split(' ');
+          df = df.replace(/[^\w\s\-]/g,'').replace(/\n/g,' ').split(' ');
           
         } else {
           for (var i=0; i<Object.keys(def).length; i++) {
             var tmp = Object.keys(def)[i].split(", ");
             for (var j=0; j<tmp.length; j++) {
-              if (tmp[j].replace(/[^\w\s]/g,'') == q) {
+              if (tmp[j].replace(/[^\w\s\-]/g,'') == q) {
                 df = def[Object.keys(def)[i]];
 
                 document.getElementById('dl').innerHTML = '<b>' + Object.keys(def)[i] + '</b><br/><li>'+df.replace(/\w+/g, function(x){ return '<span onclick="show(this.textContent);">'+x+'</span>'; }).replace(/\n/g, '</li><li>')+'</li>';
                 df = Object.keys(def)[i] + ' ' + df;
-                df = df.replace(/[^\w\s]/g,'').replace(/\n/g,' ').split(' ');
+                df = df.replace(/[^\w\s\-]/g,'').replace(/\n/g,' ').split(' ');
               }
             }
           }
@@ -250,7 +250,7 @@ var pos = "";
             txt[i].getElementsByTagName('a')[0].style.textDecoration = "none";
             txt[i].style.opacity = 0.125;
 
-            var tmp = txt[i].getElementsByTagName('a')[0].textContent.replace(/[^\w\s]/g,'');
+            var tmp = txt[i].getElementsByTagName('a')[0].textContent.replace(/[^\w\s\-]/g,'');
             for (var j=0; j<df.length; j++) {
               df[j] = df[j].toLowerCase();
 
@@ -1747,7 +1747,7 @@ WordCloud([document.getElementById('canvas'), document.getElementById('html-canv
     list: pos_arr,
     gridSize: 1,
   weightFactor: function (size) {
-    return Math.pow(size, 1/3) / 120;
+    return Math.pow(size, 1/3) / 256;
   },
   color: function (word, weight) {
     var p = word.charAt(0);
