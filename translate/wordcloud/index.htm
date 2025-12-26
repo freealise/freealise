@@ -21,8 +21,8 @@
 <div style="border:1px solid lightgray;margin:0;padding:0;position:absolute;top:0;left:0;transform-origin:0% 0%;transform:scale(1);" draggable="true" id="html-canvas" onclick="highlight(event.target);"></div>
 <canvas id="canvas" style="margin:0;padding:0;display:none" width=1024 height=1024></canvas>
 
-
-<ul id="dl" style="position:fixed;top:0;left:0;color:black;width:256px;font-size:16px;"></ul><br/>
+<span id="ipa" style="position:fixed;top:16px;left:16px;height:16px;width:256px;"></span>
+<ul id="dl" style="position:fixed;top:32px;left:0;color:black;width:256px;font-size:16px;"></ul>
 <input type="text" list="words" id="sel" style="font-family:'Averia Sans Libre';font-size:32px;position:fixed;bottom:0;left:50%;margin:0;padding:0;margin-left:-96px;height:64px;width:128px;" onchange="show(this.value);"/><button style="position:fixed;bottom:0;left:50%;margin:0;padding:0;margin-left:32px;height:64px;width:64px;">/\</button>
 <datalist id="words"></datalist>
 
@@ -52,7 +52,7 @@
   <script>
 
 
-// TODO: add lesson link; add words from second lesson; find lemma, syllabify by SSP, add pronounciation; adjust POS(add more?), filter by idea(add symbols); check by grammar books; credits
+// TODO: add lesson link; add words from second lesson; adjust POS(add more?), filter by idea(add symbols); check by grammar books; credits
 
 // )4_ADJ_, @6_ADP_, }5_ADV_, &9_CONJ_, =1_DET_, ]2_NOUN_, %10_NUM_, #7_PRON_, *8_PRT_, >3_VERB_
 
@@ -74,6 +74,7 @@ var loop = 2;
 var wrd = 0;
 var z = 1;
 var pos = "";
+var ipa = [];
 
 
       function hideButtons(v) {
@@ -101,7 +102,7 @@ var pos = "";
         if (q != "" && sel_words.indexOf(q) == -1) {
           if (!document.getElementById('all').checked) { sel_words = []; }
 
-          sel_words[sel_words.length] = e.textContent;
+          sel_words[sel_words.length] = e.textContent.replace(/[^\w\s\-]/g,'');
           var btn = "<button onclick='sel_words.splice(sel_words.indexOf(this.textContent), 1);this.parentNode.removeChild(this);'>";
 
           document.getElementById('sel_words').innerHTML = btn + sel_words.join("</button>" + btn) + "</button><br/>";
@@ -180,7 +181,7 @@ var pos = "";
 
           for (var i=0; i<txt.length; i++) {
             var tmp = txt[i].textContent.replace(/[^\w\s\-]/g,'');
-            if (q == tmp || (q.indexOf(tmp) == 0 && infs.indexOf(q.replace(tmp,'').slice(-3)) > -1)) {
+            if (tmp == q || (tmp.indexOf(q) == 0 && infs.indexOf(tmp.replace(q,'').slice(-3)) > -1)) {
               highlight(txt[i]);
             }
           }
@@ -191,10 +192,10 @@ var pos = "";
       function highlight(e) {
         if (e && e.tagName.toLowerCase() == "a") { selected = e; } else { return; }
 
-        if (e.textContent != "" && sel_words.indexOf(e.textContent) == -1) {
+        if (e.textContent != "" && sel_words.indexOf(e.textContent.replace(/[^\w\s\-]/g,'')) == -1) {
           if (!document.getElementById('all').checked) { sel_words = []; }
 
-          sel_words[sel_words.length] = e.textContent;
+          sel_words[sel_words.length] = e.textContent.replace(/[^\w\s\-]/g,'');
           var btn = "<button onclick='sel_words.splice(sel_words.indexOf(this.textContent), 1);this.parentNode.removeChild(this);'>";
 
           document.getElementById('sel_words').innerHTML = btn + sel_words.join("</button>" + btn) + "</button><br/>";
@@ -254,7 +255,7 @@ var pos = "";
             for (var j=0; j<df.length; j++) {
               df[j] = df[j].toLowerCase();
 
-              if (df[j] == tmp || (df[j].indexOf(tmp) == 0 && infs.indexOf(df[j].replace(tmp,'').slice(-3)) > -1) || e.textContent == tmp || (e.textContent.indexOf(tmp) == 0 && infs.indexOf(e.textContent.replace(tmp,'').slice(-3)) > -1)) {
+              if (df[j] == tmp || (df[j].indexOf(tmp) == 0 && infs.indexOf(df[j].replace(tmp,'').slice(-3)) > -1) || q == tmp || (q.indexOf(tmp) == 0 && infs.indexOf(q.replace(tmp,'').slice(-3)) > -1)) {
 
                 txt[i].getElementsByTagName('a')[0].style.textShadow = "0px 0px "+parseInt(txt[i].style.fontSize)+"px "+txt[i].style.color;
 
@@ -273,6 +274,7 @@ var pos = "";
               e.style.opacity = 1.0;
 
               wrd = i-1;
+              document.getElementById('ipa').innerHTML = "|<b>" + ipa[i] + "</b>|";
               selectWord(true);
             }
           }
@@ -398,6 +400,13 @@ for (var i=0; i<pos_arr.length; i++) {
   var smb = '';
   if (tmp_a[tmp_a.length-2].search(/[\w\d]/) == -1) {
     smb = tmp_a[tmp_a.length-2];
+  }
+  ipa[i] = "_";
+  for (var j=0; j<tmp_a.length; j++) {
+    if (tmp_a[j].search(/[A-Z]/) == 0) {
+      ipa[i] = tmp_a[j].toLowerCase().replace(/0/g,"").replace(/1/g,"`").replace(/2/g,",");
+      break;
+    }
   }
   var p = tmp.substr(tmp.search(/[.:|]/)+2, tmp.lastIndexOf(' ')).split(', ')[0];
 
