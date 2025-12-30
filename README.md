@@ -14,7 +14,10 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-
+  
+*With tenure, Suzie'd have all the more leisure for yachting, but her publications are no good.*  
+wɪð ˈtɛnjə ˈsuːˌziːd hæv ɔːl ð mɔː ˈlɛʒə fə ˈjɒtɪŋ bət hɜː ˌpəblɪˈkɛɪʃənz ə nəʊ ɡʊd  
+  
 A person of non-traditional geospacial and temporal orientation.  
 Speaking English since 1992 (IELTS >7.0), coding since ~2000.  
 Concerned with international relations and global issues.  
