@@ -5,3 +5,6 @@ The most notable case of large-scale Romani assimilation is of the Romani Crimea
 (George Harrison might have been a Roma recessively, like Petty a Native American, Dylan a Jew)  
 
 They called themselves the Traveling Wilburys, representing themselves as half-brothers with the same father. (...) Expanding on the concept of a traveling band of raucous musicians, Orbison offered a quote about the group's foundation in honor: "Some people say Daddy was a cad and a bounder. I remember him as a Baptist minister."  
+  
+- Wilbury & Co, Vol.2 - have people familiar with the band contribute lines to wiki, beginning with phrases found on household objects or in public places  
+  
