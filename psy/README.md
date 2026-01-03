@@ -15,7 +15,7 @@ only initially it gets data in an ordered way with an index, then recombines it 
   
 when did I reject Metatron (Daat) ?  
 Enoch -> Metatron, therefore Metatron has freedom of will  
-Metatron is a benevolent ghost of a tzaddik (opposite of dybbuk)  
+Metatron is a benevolent ghost (spirit) of a tzaddik (opposite of dybbuk)  
   
 obsession with external drugs or technology to induce mystical experience in ignorance of natural capacity of any human for this  
   
