@@ -13,7 +13,7 @@ what AI (a golem) does is permute letters and phonemes to arrive at an idea
 only initially it gets data in an ordered way with an index, then recombines it (= Zohar)  
   
   
-when did I reject Metatron (Daat) ?  
+when did I reject Metatron ?  
 Enoch -> Metatron, therefore Metatron has freedom of will  
 Metatron is a benevolent ghost (spirit) of a tzaddik (opposite of dybbuk)  
   
