@@ -14,7 +14,9 @@
 
 var lemmatizer = new Lemmatizer();
 
-try{alert(lemmatizer.lemmas('leaves',  'noun'));}catch(e){alert(e);}
+try{
+    document.getElementById('test').innerHTML = lemmatizer.lemmas('leaves',  'noun');
+}catch(e){alert(e);}
 
 
   </script>
