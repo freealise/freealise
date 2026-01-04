@@ -1,4 +1,4 @@
-const dir = "Lewis1890"
+const dir = "longman"
 const upload = document.getElementById('upload'); // File upload
 const bookname = document.getElementById('bookname'); // Dictionary title
 const inputContainer = document.getElementById('inputContainer'); // Search container
