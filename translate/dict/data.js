@@ -1,22 +1,6 @@
 const languages = {
     English: {
-        name: "Oxford_Advanced_Learner_s_Dictionary",
+        name: "translate/dict/dictionary/Longman_Dictionary_of_Contemporary_English_5th_Ed",
         synonyms: false,
-    },
-    Greek: {
-        name: "LiddellScott1940",
-        synonyms: true,
-    },
-    Latin: {
-        name: "LewisShort1879",
-        synonyms: false,
-    },
-    Abbreviations: {
-        name: "Elliott1998",
-        synonyms: false,
-    },
-    French: {
-        name: "FrenchWiktionary",
-        synonyms: true,
     }
 };
