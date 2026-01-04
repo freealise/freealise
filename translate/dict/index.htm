@@ -20,17 +20,13 @@
   </head>
   <body>
     <div id="msg"></div>
-    <div id="loadIconDiv">
-      <img src="./loading.svg" id="loadIcon" />
-    </div>
+    <div id="loadIconDiv">•••</div>
     <input type="file" multiple="multiple" id="upload" />
     <h1 id="bookname">
     </h1>
     <div id="search" style="display: none">
       <div id="inputContainer">
-        <button id="searchButton" onclick="searchDict(searchBox.value)" title="Search">
-          <img src="./search.svg" id="loadIcon" />
-        </button>
+        <button id="searchButton" onclick="searchDict(searchBox.value)" title="Search">Search</button>
         <input type="text" id="searchBox" list="suggestions" />
       </div>
       <div id="suggestions">
