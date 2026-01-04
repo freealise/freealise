@@ -13,6 +13,7 @@ villain speech (Daniel Ek ~Joe) ending in a joke and actual solution
   
 💳 credit card with the name Miriam  
 💍 if he gave you a ring then you might be a king  
+song about control over own money (promoting crypto ?)  
 "a play that is worth producing, produces itself"  
 
 "Driven not by money but popularity (?), an unfortunate DJ goes against the corporate culture and ethic, 
