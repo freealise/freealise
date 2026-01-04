@@ -125,7 +125,7 @@
                     throw new Error("Not a proper rifo file");
                 lines.forEach(function (l) {
                     w = l.split("=");
-                    console.log("rifo: " + w[0] + "=" + w[1]);
+                    msg.innerHTML += "<br/>" + "rifo: " + w[0] + "=" + w[1];
                 });
             }
 
