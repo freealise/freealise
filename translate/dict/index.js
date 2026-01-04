@@ -1,4 +1,4 @@
-const dir = "longman"
+const dir = "Longman_Dictionary_of_Contemporary_English_5th_Ed"
 const upload = document.getElementById('upload'); // File upload
 const bookname = document.getElementById('bookname'); // Dictionary title
 const inputContainer = document.getElementById('inputContainer'); // Search container
