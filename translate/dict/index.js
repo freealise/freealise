@@ -92,10 +92,10 @@ document.addEventListener("DOMContentLoaded", () => {
             let db;
             let savePromise;
             request.onerror = function(event) {
-                msg.textContent += "<br/>" + "Database error: " + event.target.errorCode;
+                msg.innerHTML += "<br/>" + "Database error: " + event.target.errorCode;
             };
             request.onupgradeneeded = function(event) {
-                msg.textContent += "<br/>" + "Upgrade needed...";
+                msg.innerHTML += "<br/>" + "Upgrade needed...";
                 db = event.target.result;
                 // Create an object store to store files
                 let objectStore = db.createObjectStore("files", { autoIncrement: true });
@@ -155,7 +155,7 @@ backgroundOverlay.addEventListener("click", (e) => {
  * @param {db} db - indexedDB.open().result
  */
 function saveDB(fileList, db) {
-    msg.textContent += "<br/>" + "Saving files...";
+    msg.innerHTML += "<br/>" + "Saving files...";
     return new Promise((resolve, reject) => {
         let transaction = db.transaction(["files"], "readwrite");
         let objectStore = transaction.objectStore("files");
@@ -175,12 +175,12 @@ function saveDB(fileList, db) {
 
             let promise = new Promise((fileResolve, fileReject) => {
                 request.onsuccess = function(event) {
-                    msg.textContent += "<br/>" + fileName + " saved successfully";
+                    msg.innerHTML += "<br/>" + fileName + " saved successfully";
                     fileResolve();
                 };
 
                 request.onerror = function(event) {
-                    msg.textContent += "<br/>" + "Error saving file: " + event.target.errorCode;
+                    msg.innerHTML += "<br/>" + "Error saving file: " + event.target.errorCode;
                     fileReject();
                 };
             });
@@ -250,13 +250,13 @@ function loadDict(files) {
     for(var i = 0; i < file_list.length; i++) {
         file_array.push(file_list[i]); // Puts files into an array
     };
-    msg.textContent += "<br/>" + "Loading files...";
+    msg.innerHTML += "<br/>" + "Loading files...";
     dict.load(file_array).then(() => { // Load dictionary from files
         bookname.innerHTML = dict.keyword("bookname"); // Show dictionary name
         document.title = dict.keyword("bookname"); // Change title to dictionary name
         searchBox.placeholder = 'Search ' + dict.keyword("bookname");
     }).then(() => {
-        msg.textContent += "<br/>" + "Loading index...";
+        msg.innerHTML += "<br/>" + "Loading index...";
         return dict.index({ // Returns dictionary index
             "include_dictpos": true, // Include dictionary position
             "include_term": true, // Include term name
@@ -264,7 +264,7 @@ function loadDict(files) {
     }).then(async (rawIndex) => {
         index = rawIndex;
         if (await dict.synonyms() != false) {
-            msg.textContent += "<br/>" + "Loading synonyms...";
+            msg.innerHTML += "<br/>" + "Loading synonyms...";
             await dict.synonyms({"include_term": true, "include_wid": true}).then(synonyms => {
                 if (synonyms.length != 0) { // If there is a synonym file
                     synonyms.forEach((synonym) => {
@@ -278,7 +278,7 @@ function loadDict(files) {
         index.forEach((index) => {
             wordList.push(index["term"]); // Push term name to list
         });
-        msg.textContent += "<br/>" + await dict.keyword("bookname") + " successfully loaded.";
+        msg.innerHTML += "<br/>" + await dict.keyword("bookname") + " successfully loaded.";
     });
     upload.style.display = 'none'; // Hide file upload button
     search.style.display = 'block'; // Show search box
@@ -296,7 +296,7 @@ function searchDict(term) {
     // Relies on the index variable
     if (typeof index.find(index => index["term"].toLowerCase() == term.toLowerCase()) !== "undefined") { // Simple way of saying if meaning exists
         var dictpos = index.filter(index => index["term"].toLowerCase() == term.toLowerCase()); // Get position of term
-        msg.textContent += "<br/>" + 'Loading ' + term + '...'; // Log loading
+        msg.innerHTML += "<br/>" + 'Loading ' + term + '...'; // Log loading
         definition.innerHTML = ""; // Clear the definition
         dictpos.forEach((entry) => {
             dict.entry(entry["dictpos"]).then((entry) => { // Fetch entry
@@ -329,11 +329,11 @@ function searchDict(term) {
         })
         // Put search term to search box - when manually calling searchDict like links
         searchBox.value = term;
-        msg.textContent += "<br/>" + "Definition for " + term + " found"; // Show success in console
+        msg.innerHTML += "<br/>" + "Definition for " + term + " found"; // Show success in console
     } else {
         // No meaning
         var definitionHTML = "No definition for " + term + " was found";
         definition.innerHTML = definitionHTML; // Shows the meaning
-        msg.textContent += "<br/>" + definitionHTML; // Show error in console
+        msg.innerHTML += "<br/>" + definitionHTML; // Show error in console
     };
 };
