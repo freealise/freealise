@@ -230,7 +230,7 @@ async function fetchFiles(dir, syn = false) {
     for (var i = 0; i < ext.length; i++) { // Loop through all the files
         await fetch("./dictionary/" + dir + "/" + dir + ext[i]) // Fetch file and wait until loaded
         .then(response => {
-            msg.innerHTML += "<br/>." + ext[i] + " loaded";
+            msg.innerHTML += "<br/>" + ext[i] + " loaded";
             return response.blob(); // Turns it to blob
         }).then(blob => {
             fileList.push(new File([blob], dir + ext[i])); // Add file to array
