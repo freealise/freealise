@@ -17,7 +17,7 @@ word in pixel font as the outline of idea it represents (mnemonic device)
 lyrics calligraphy | bead or thread bracelet with alphabet  
 https://www.calligraphr.com/en/webapp/app_home/?/templates  
   
-🕯 learn Hebrew efficiently (clarify method for any language), make parser  
+learn Hebrew efficiently (clarify method for any language), make parser  
 https://theswissbay.ch/pdf/Books/Linguistics/  
 https://en.wikipedia.org/wiki/Aramaic_alphabet#Letters  
 'Maiden Zion' (representing language) is to write for you = as you think a certain better way in English, so in Hebrew  
