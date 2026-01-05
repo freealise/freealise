@@ -64,3 +64,6 @@ candle and no electric light | electronics (darkness; sensory deprivation ?) -> 
 4. Utilization (constructive trolling) - P
   
 Motivation: Darwin - survival, Freud - pleasure, Adler - power, Jung - self-actualization; Frankl - the combination of them forms meaning  
+  
+kak_vibirat_professiyu_test_p148  
+  
