@@ -20,7 +20,7 @@ Here are some ideas to get you started:
 A person of non-traditional geospacial and temporal orientation.  
 Speaking English since 1992 (IELTS >7.0), coding since ~2000.  
 Concerned with international relations and global issues.  
-Unofficially Jewish by faith, with complex ethnicity.  
+<a>꙳✡︎</a> Kabbalist (Jewish) by faith, with complex ethnicity.  
   
 Would do with an interface designer - half the kingdom and new skates!  
 <a href="mailto:" target="_blank"><img src='https://img.shields.io/badge/✉️-me⎀freealise.com-white' alt='Email'/></a>
