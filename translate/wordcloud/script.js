@@ -1248,7 +1248,7 @@ mul·ti·ply . verb, M AH1 L T AH0 P L AY2, G 10-25, 95940953
 al·co·hol . noun, AE1 L K AH0 HH AA2 L, G 10-26, 607462233
 fish . noun, verb, phrasal verb, F IH1 SH, G 10-27, 1158822511
 grain . noun, G R EY1 N, H 10-28, 760168011
-sALT . noun, verb, phrasal verb, adjective, S AO1 L T, H 10-29, 741346651
+salt . noun, verb, phrasal verb, adjective, S AO1 L T, H 10-29, 741346651
 fat . adjective, noun, F AE1 T, H 10-30, 567838061
 coal . noun, K OW1 L, H 10-31, 1286073211
 kil·o·gram . noun, K IH1 L AH0 G R AE2 M, A 11-01, 27466973
@@ -2969,12 +2969,12 @@ climb : verb, phrasal verb, noun, K L AY1 M, 155012521
 hu·mor : noun, verb, HH Y UW1 M ER0, 154709892
 bas·ket : noun, B AE1 S K AH0 T, 154615092
 birth·day : noun, B ER1 TH D EY2, 154212712
-honourable : adjective, adverb, AA1 N ER0 AH0 B AH0 L, 152367594
+ho·nour·a·ble : adjective, adverb, AA1 N ER0 AH0 B AH0 L, 152367594
 shoe : noun, verb, SH UW1, 152320331
 re·strict : verb, R IY0 S T R IH1 K T, 152227802
 spell : verb, phrasal verb, noun, S P EH1 L, 150827551
 bor·row : verb, B AA1 R OW2, 150742302
-bom·b : noun, verb, phrasal verb, B AA1 M, 150593261
+bomb : noun, verb, phrasal verb, B AA1 M, 150593261
 fun·ny : adjective, noun, F AH1 N IY0, 150408312
 cig·a·rette : noun, S IH2 G AH0 R EH1 T, 150217753
 fierce : adjective, adverb, noun, F IH1 R S, 149900151
@@ -3056,7 +3056,7 @@ choc·o·late : noun, CH AO1 K L AH0 T, 120105262
 float : verb, phrasal verb, noun, F L OW1 T, 119933891
 ex·plo·sive : adjective, adverb, noun, IH0 K S P L OW1 S IH0 V, 119308133
 ripe : adjective, noun, R AY1 P, 119208891
-nUT : noun, verb, N AH1 T, 118515021
+nut : noun, verb, N AH1 T, 118515021
 slid : verb, S L IH1 D, 118248231
 en·ter·tain : verb, EH2 N T ER0 T EY1 N, 117542933
 curse : verb, phrasal verb, noun, K ER1 S, 117142471
@@ -3070,7 +3070,7 @@ cage : noun, verb, K EY1 JH, 115422251
 swung : verb, phrasal verb, S W AH1 NG, 115033251
 knock : verb, phrasal verb, noun, N AA1 K, 115019271
 ditch : noun, verb, D IH1 CH, 114141341
-fishermen : noun, F IH1 SH ER0 M IH0 N, 113508983
+fish·er·men : noun, F IH1 SH ER0 M IH0 N, 113508983
 coun·try·side : noun, adjective, K AH1 N T R IY0 S AY2 D, 113440923
 gram : noun, G R AE1 M, 113347621
 cart : noun, verb, phrasal verb, K AA1 R T, 113208231
@@ -3388,7 +3388,7 @@ kneel : verb, N IY1 L, 24784191
 hun·dredth : adjective, HH AH1 N D R AH0 D TH, 24782032
 loaves : noun, L OW1 V Z, 24590101
 em·bar·rass : verb, IH0 M B EH1 R AH0 S, 24165903
-chairperson : noun, CH EH1 R P ER2 S AH0 N, 23861023
+chair·per·son : noun, CH EH1 R P ER2 S AH0 N, 23861023
 dec·o·rate : verb, noun, D EH1 K ER0 EY2 T, 23777943
 hard·en : verb, HH AA1 R D AH0 N, 23774232
 wrong·do·ing : noun, R AO1 NG D UW0 IH0 NG, 23770773
@@ -3424,6 +3424,8 @@ swum : verb, S W AH1 M, 3267231
 make in·to : phrasal verb, _, 2521900
 lain down : phrasal verb, _, 2258470
 un·does : verb, _, 2193830`;
+
+
 
 
 const def = {
@@ -3531,7 +3533,7 @@ const def = {
 
 "afraid": "Feeling fear.",
 
-"after": "(See 2-24).\nWhen you see someone move to another place, then you move to this same place.\nBecause.",
+"after": "(See 2-24).\n([J happens after K happens.] = K happens before J happens.).\nWhen you see someone move to another place, then you move to this same place.\nBecause.",
 
 "afternoon": "The part of each day that happens between these two times: the time several hours after most people stop sleeping and the time several hours before most people start sleeping.",
 
@@ -3849,7 +3851,7 @@ const def = {
 
 "belong": "(See 2-02).\nPeople need to allow you to use this thing, because you bought it or made it or someone gave it to you.\nThis is good for someone.\nPart of.",
 
-"below": "(See 2-30).\nLess than.",
+"below": "(See 2-30).\n([J is below K.] = K is above J.).\nLess than.",
 
 "belt": "Something long and narrow that someone puts around their body above their legs.\nSomething long and narrow that has one end connected to the other end and that moves around parts of a machine.",
 
@@ -3915,7 +3917,7 @@ const def = {
 
 "boat": "([X is a boat.] = X is something people make to carry people and things in places where there is much water. X can move for a long time, touching the top surface of the water all this time.).",
 
-"body": "(See 2-27).\nBig part of something.\nPiece of something.\nGroup.\nMuch.",
+"body": "(See 2-27).\n([X is the body of this person.] = Parts of this person can touch other things. Parts of this person can touch other parts inside this person. X is all of these parts of this person.).\nBig part of something.\nPiece of something.\nGroup.\nMuch.",
 
 "boil": "When a liquid becomes very hot and this causes the liquid to become gas.\nDisease inside the body near the surface that becomes big for some time and then moves out of the body.",
 
@@ -4573,7 +4575,7 @@ const def = {
 
 "dictionary": "Book that says what many words mean.",
 
-"die, dying": "(See 2-28).",
+"die, dying": "(See 2-28).\n([X dies.] = Something happens to X in a moment. X is alive before this moment. X is not alive after this moment.).",
 
 "difference": "The things you can say are different when you compare two things.",
 
@@ -5079,7 +5081,7 @@ const def = {
 
 "footstep": "When your foot is on a solid surface, and then you lift your foot and put it down on a different part of the surface.",
 
-"for": "(See bad for 2-11).\n(See good for 2-12).\n(See for a long time 2-16).\n(See for a short time 2-17).\n(See for some time 2-25).\nWho you want to have this.\nWho this happens to.\nWhat you want someone to do with this.\nYou want this to happen.\nWho this helps or changes.\nWhere you want this.\nBecause of.\nAt this time.\nAt all parts of this time.\nDistance between this place and another place.\nWhen you think about this.\nWhat you know about this.",
+"for": "(See bad for 2-11).\n(See good for 2-12).\n(See for a long time 2-16).\n(See for a short time 2-17).\n(See for some time 2-25).\n([X is true for some time.] = X is true at a time. Some parts of this one time happen before other parts. Some parts of this one time happen after other parts. X is true at all parts of this one time.).\nWho you want to have this.\nWho this happens to.\nWhat you want someone to do with this.\nYou want this to happen.\nWho this helps or changes.\nWhere you want this.\nBecause of.\nAt this time.\nAt all parts of this time.\nDistance between this place and another place.\nWhen you think about this.\nWhat you know about this.",
 
 "forbid, forbade, forbidden": "Tell someone they are not allowed to do something.",
 
@@ -5371,7 +5373,7 @@ const def = {
 
 "her": "([She does something.] = This female person or animal does something.\n[Something happens to her.] = Something happens to this female person or animal.\n[This is her X.] = This X belongs to this female person or animal.).",
 
-"here": "(See 2-21).\nAt this time.",
+"here": "(See 2-21).\n([Tony says: 'X happens here.'] = Tony is in a place. Tony says: X happens in this place.).\nAt this time.",
 
 "hers": "This thing belongs to her.",
 
@@ -5471,7 +5473,7 @@ const def = {
 
 "hut": "Small building that is easy to make.",
 
-"i": "(See 2-19).",
+"i": "(See 2-19).\n([Tony says: 'I did X.'] = Tony says something about Tony. Tony says: Tony did X.).",
 
 "ice": "Water that is solid because it is very cold.\nSweet food that contains or looks like cold solid water.",
 
@@ -5945,9 +5947,9 @@ const def = {
 
 "may": "Maybe.\nSomeone says they will allow this.",
 
-"maybe": "(See 2-29).",
+"maybe": "(See 2-29).\n([You think maybe X is true.] = You think something like X can be true. You do not know X is true. You do not know X is not true.).",
 
-"me": "(See 2-19).",
+"me": "(See 2-19).\n([Lisa says: 'X happened to me.'] = Lisa says something about Lisa. Lisa says: X happened to Lisa.).",
 
 "meal": "The food someone eats at one time when they eat more than a small amount of food.\nMany very small dry pieces of grain. People press grain to make it become these very small pieces.",
 
@@ -6039,7 +6041,7 @@ const def = {
 
 "modern": "The kinds of things people do or use now that people did not do or use many years before now.",
 
-"moment": "(See 2-26).",
+"moment": "(See 2-26).\n([X happens in a moment.] = X happens for one very short time. There are not parts of this very short time when one part happens before other parts.).",
 
 "money": "([X is some money.] = X is something that many people have and use like this: People will often give you some X if you do some work that they want you to do. People will often give you something you say you want if you give them some X. Governments make X using metal or paper. Governments do not allow other people to make X.).",
 
@@ -6071,7 +6073,7 @@ const def = {
 
 "mouth": "([X is your mouth.] = X is the part of your body that food moves through when it moves into your body. This part of your body moves when you say something.).\nHole that something can move through into or out of a container.",
 
-"move": "(See 2-18).\nCause something not to be in the same place as before.\nCause to happen.\nChange.",
+"move": "(See 2-18).\n([X moved to this place.] = X is in this place because X moved. Before X moved, X was not in this place.).\nCause something not to be in the same place as before.\nCause to happen.\nChange.",
 
 "movement": "When something moves.\nWhen many people try to cause something to happen.",
 
@@ -6207,7 +6209,7 @@ const def = {
 
 "noun": "([X is a noun.] = X is a kind of word. When people hear this kind of word, they know what person or place or kind of thing you are saying something about.).",
 
-"now": "(See 2-22).\nBecause.",
+"now": "(See 2-22).\n([Lisa says: 'X happens now.'] = Lisa says something at a time. Lisa says: X happens at this same time.).\nBecause.",
 
 "nowhere": "There is not a place where this is true.",
 
@@ -7263,7 +7265,7 @@ const def = {
 
 "somehow": "You think there is something you can do to cause this, and you think you will know what to do to cause this, but you do not know this now.\nSomething happens to cause this, but you do not know what.",
 
-"someone": "(See 2-23).",
+"someone": "(See 2-23).\n([Someone does X.] = Something does X. This something can think like people think. This something can be one person.).",
 
 "someplace": "(See 1-25).",
 
@@ -7999,13 +8001,13 @@ const def = {
 
 "white": "([X is white.] = The colour of X is like the colour of milk.).",
 
-"who": "(See 2-23).\nYou want someone to tell you the person that someone said something about.",
+"who": "(See 2-23).\n([J knows who did K.] = J thinks about someone. J knows this someone did K.).\nYou want someone to tell you the person that someone said something about.",
 
 "whoever": "Who.\nOne of these people or more.\nSomeone like this.\nEach person like this.",
 
 "whole": "All of this.\nAll parts of this one thing.\nAll parts of this are connected. There are not pieces of it that are not connected.",
 
-"whom": "(See 2-23).\nYou want someone to tell you the person that someone said something about.",
+"whom": "(See 2-23).\n([J knows to whom K happened.] = J thinks about someone. J knows K happened to this someone.).\nYou want someone to tell you the person that someone said something about.",
 
 "whose": "You want someone to tell you the person or thing that this belongs to.\nThis same person or thing has this.",
 
@@ -8117,7 +8119,7 @@ const def = {
 
 "yet": "Happening at this time or before.\nIf you know what happened before, maybe you will not expect this.\nBut.",
 
-"you": "(See 2-20).\nPeople.",
+"you": "(See 2-20).\n([Tony says to Lisa: 'I can see you.'] = Tony says something about Lisa. Tony says this to Lisa. Tony says: Tony can see Lisa.).\nPeople.",
 
 "young": "([X is young.] = X lives or exists now, and X lived or existed a short time before now, but X did not live or exist a long time before now.).",
 
