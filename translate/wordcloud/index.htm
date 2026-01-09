@@ -51,14 +51,17 @@
   <script src="script.js"></script>
   <script>
 
-
-// TODO: add lesson link; add words from second lesson; adjust POS(add more?), filter by idea(add symbols); check by grammar books; credits
+// TODO: add lesson link, merge wordtree; use lemmatizer and stardict parser; filter by idea(add symbols); check by grammar books; credits
+// next version: improve layout ('talmud' with https://packery.metafizzy.co/)
 
 // )4_ADJ_, @6_ADP_, }5_ADV_, &9_CONJ_, =1_DET_, ]2_NOUN_, %10_NUM_, #7_PRON_, *8_PRT_, >3_VERB_
 
 
 var arc = document.getElementsByTagNameNS('http://www.w3.org/2000/svg', 'path')[0];
-var infs = ("s 's d ed ing en er est es").split(' ');
+
+var lemmatizer = new Lemmatizer();
+//var infs = ("s 's ' d ed ing en er est es").split(' ');
+
 var line = null;
 var root = null;
 var selected = null;
@@ -120,7 +123,10 @@ var ipa = [];
             df[j] = df[j].toLowerCase();
 
             for (var l=0; l<sel_words.length; l++) {
-              if (df[j] == sel_words[l] || (df[j].indexOf(sel_words[l]) == 0 && infs.indexOf(df[j].replace(sel_words[l],'').slice(-3)) > -1)) {
+              if (df[j] == sel_words[l] || lemmatizer.only_lemmas(df[j]).indexOf(sel_words[l]) > -1) {
+
+//((df[j].indexOf(sel_words[l].replace(/e$/,'')) == 0 && infs.indexOf(df[j].replace(sel_words[l],'').slice(-3))
+
                 found[l] = true;
               }
             }
@@ -181,8 +187,19 @@ var ipa = [];
 
           for (var i=0; i<txt.length; i++) {
             var tmp = txt[i].textContent.replace(/[^\w\s\-]/g,'');
-            if (tmp == q || (tmp.indexOf(q) == 0 && infs.indexOf(tmp.replace(q,'').slice(-3)) > -1)) {
+            if (tmp == q) {
               highlight(txt[i]);
+              return;
+            }
+          }
+          for (var i=0; i<txt.length; i++) {
+            var tmp = txt[i].textContent.replace(/[^\w\s\-]/g,'');
+            if (lemmatizer.only_lemmas(q).indexOf(tmp) > -1) {
+
+//((q.indexOf(tmp.replace(/e$/,'')) == 0 && infs.indexOf(q.replace(tmp.replace(/e$/,''),'').slice(-3))
+
+              highlight(txt[i]);
+              return;
             }
           }
         }
@@ -255,7 +272,11 @@ var ipa = [];
             for (var j=0; j<df.length; j++) {
               df[j] = df[j].toLowerCase();
 
-              if (df[j] == tmp || (df[j].indexOf(tmp) == 0 && infs.indexOf(df[j].replace(tmp,'').slice(-3)) > -1) || q == tmp || (q.indexOf(tmp) == 0 && infs.indexOf(q.replace(tmp,'').slice(-3)) > -1)) {
+              if (df[j] == tmp || lemmatizer.only_lemmas(df[j]).indexOf(tmp) > -1 || q == tmp || lemmatizer.only_lemmas(tmp).indexOf(q) > -1 || lemmatizer.only_lemmas(q).indexOf(tmp) > -1) {
+
+//(df[j].indexOf(tmp.replace(/e$/,'')) == 0 && infs.indexOf(df[j].replace(tmp.replace(/e$/,''),'').slice(-3)) > -1)
+//(tmp.indexOf(q.replace(/e$/,'')) == 0 && infs.indexOf(tmp.replace(q.replace(/e$/,''),'').slice(-3)) > -1)
+//(q.indexOf(tmp.replace(/e$/,'')) == 0 && infs.indexOf(q.replace(tmp.replace(/e$/,''),'').slice(-3)) > -1)
 
                 txt[i].getElementsByTagName('a')[0].style.textShadow = "0px 0px "+parseInt(txt[i].style.fontSize)+"px "+txt[i].style.color;
 
@@ -429,7 +450,7 @@ for (var i=0; i<pos_arr.length; i++) {
     pos_arr[i][0] = '=' + smb + '|' + pos_arr[i][0] + '=';
 
   } else if (p == 'preposition') {
-    pos_arr[i][0] = '-' + smb + '|' + pos_arr[i][0] + '-';
+    pos_arr[i][0] = '–' + smb + '|' + pos_arr[i][0] + '–';
 
   } else if (p == 'conjunction') {
     pos_arr[i][0] = '+' + smb + '|' + pos_arr[i][0] + '+';
@@ -1778,7 +1799,7 @@ WordCloud([document.getElementById('canvas'), document.getElementById('html-canv
     } else if (p == '=') {
       return 'hsl('+(36*9)+', 50%, 50%)';
 
-    } else if (p == '-') {
+    } else if (p == '–') {
       return 'hsl('+(36*6)+', 50%, 50%)';
 
     } else if (p == '+') {
