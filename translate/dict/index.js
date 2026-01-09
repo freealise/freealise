@@ -280,6 +280,7 @@ function loadDict(files) {
             wordList.push(index["term"]); // Push term name to list
         });
         msg.innerHTML += "<br/>" + await dict.keyword("bookname") + " successfully loaded.";
+        msg.style.display = 'none';
     });
     upload.style.display = 'none'; // Hide file upload button
     search.style.display = 'block'; // Show search box
