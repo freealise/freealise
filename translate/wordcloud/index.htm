@@ -269,10 +269,13 @@ var ipa = [];
             txt[i].style.opacity = 0.125;
 
             var tmp = txt[i].getElementsByTagName('a')[0].textContent.replace(/[^\w\s\-]/g,'');
+            var tmp_q = lemmatizer.only_lemmas(tmp).indexOf(q);
+            var q_tmp = lemmatizer.only_lemmas(q).indexOf(tmp);
+
             for (var j=0; j<df.length; j++) {
               df[j] = df[j].toLowerCase();
 
-              if (df[j] == tmp || lemmatizer.only_lemmas(df[j]).indexOf(tmp) > -1 || q == tmp || lemmatizer.only_lemmas(tmp).indexOf(q) > -1 || lemmatizer.only_lemmas(q).indexOf(tmp) > -1) {
+              if (df[j] == tmp || lemmatizer.only_lemmas(df[j]).indexOf(tmp) > -1 || q == tmp || tmp_q > -1 || q_tmp > -1) {
 
 //(df[j].indexOf(tmp.replace(/e$/,'')) == 0 && infs.indexOf(df[j].replace(tmp.replace(/e$/,''),'').slice(-3)) > -1)
 //(tmp.indexOf(q.replace(/e$/,'')) == 0 && infs.indexOf(tmp.replace(q.replace(/e$/,''),'').slice(-3)) > -1)
