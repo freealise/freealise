@@ -3,8 +3,9 @@ business matchmaker (~Jewish), dating for social entrepreneurs where you swipe o
   
 How to switch the 'editor' mode on and off without alcohol ?  
 People can speak with improved fluency under hypnosis (that's what Jesus did when subjectively turning water to wine and making people act drunk)  
-(Do what Abulafia did)  
+Make an extract with alcohol for heated incense (https://en.wikipedia.org/wiki/Incense_offering_in_rabbinic_literature)  
   
+(Do what Abulafia did)  
 Abulafia deliberately confuses himself (his animal soul) by physical and linguistic means as exercise for natural confusion of any kind (spiritual or mundane) so it is useful for prayer and as a step to prophecy - Jewish 'shaman' like Miriam  
   
 ideograms -> formants -> phonemes -> syllables -> morphemes -> words -> phrases -> sentences -> story  
