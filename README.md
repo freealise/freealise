@@ -26,7 +26,7 @@ Would do with an interface designer - half the kingdom and new skates!
 <a href="mailto:me_freealise.com?subject=me_freealise.com&body=^" target="_blank"><img src='https://img.shields.io/badge/✉️-me⎀freealise.com-white' alt='Email'/></a>
   
 <!--[![Quora Profile](https://img.shields.io/badge/⁉️-Quora-red?style=for-the-badge)](https://www.quora.com/profile/Marina-From-Freealise)-->
-[![Pinterest](https://img.shields.io/badge/📌-Pinterest-red.svg?style=for-the-badge)](https://www.pinterest.com/freealise_)
+[![Kabbalah Online](https://img.shields.io/badge/א-Kabbalah_Online-red.svg?style=for-the-badge)](https://www.chabad.org/kabbalah/default_cdo/jewish/KabbalaOnlineorg.htm)
 [![Stack Overflow Reputation](https://img.shields.io/stackexchange/stackoverflow/r/9165398?color=orange&label=stackoverflow&logo=stackoverflow&style=for-the-badge)](https://stackoverflow.com/users/9165398) 
 [![Follow me on HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97-Hugging%20Face-yellow?style=for-the-badge)](https://huggingface.co/freealise)  
 [![Status](https://img.shields.io/badge/dynamic/xml?url=https://freeali.se/feed.xml&query=//*[local-name()='feed']/*[local-name()='entry'][1]/*[local-name()='title']/text()&label=🪧&color=green&style=for-the-badge)](https://freeali.se)
