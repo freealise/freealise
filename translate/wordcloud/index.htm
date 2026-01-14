@@ -107,6 +107,7 @@ var line = null;
 var root = null;
 var selected = null;
 var sel_words = [];
+var txt;
 
 
 var date = Date.now();
@@ -143,7 +144,7 @@ var ipa = [];
 
         if (!e || e.tagName.toLowerCase() != "a") { return; }
 
-        var txt = document.getElementsByTagName('div')[0].getElementsByTagName('div');
+        txt = document.getElementsByTagName('div')[0].getElementsByTagName('div');
 
         var q = e.textContent.replace(/[^\w\s\-]/g,'');
 
@@ -200,7 +201,7 @@ var ipa = [];
 
 
       function filter() {
-        var txt = document.getElementsByTagName('div')[0].getElementsByTagName('div');
+        txt = document.getElementsByTagName('div')[0].getElementsByTagName('div');
 
         for (var i=0; i<txt.length; i++) {
           if ((pos == "" || (txt[i].textContent && txt[i].textContent.indexOf(pos) > -1)) && (syl == 0 || txt[i].getElementsByTagName('a')[0].title.charAt(1) == syl) && (cons == -1 || txt[i].getElementsByTagName('a')[0].title.charAt(0) == cons) && (ln == 0 || txt[i].getElementsByTagName('a')[0].id.length == ln) && (st == -1 || txt[i].getElementsByTagName('a')[0].title.charAt(2) == st)) {
@@ -228,7 +229,7 @@ var ipa = [];
       function show(q) {
         if (q != '') {
           q = q.toLowerCase();
-          var txt = document.getElementsByTagName('div')[0].getElementsByTagName('a');
+          txt = document.getElementsByTagName('div')[0].getElementsByTagName('a');
 
           for (var i=0; i<txt.length; i++) {
             var tmp = txt[i].textContent.replace(/[^\w\s\-]/g,'');
@@ -304,7 +305,7 @@ var ipa = [];
           }
         }
 
-        var txt = document.getElementsByTagName('div')[0].getElementsByTagName('div');
+        txt = document.getElementsByTagName('div')[0].getElementsByTagName('div');
 
         for (var i=0; i<txt.length; i++) {
           if (df && e.textContent && txt[i].textContent) {
