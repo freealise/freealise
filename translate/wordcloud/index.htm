@@ -100,7 +100,7 @@ const idea = ("noun \u2B1A, noun \u25CC, noun \u22D4, pron, det, adv, conj, num,
 const ldoce = document.getElementById('ldoce');
 const arc = document.getElementsByTagNameNS('http://www.w3.org/2000/svg', 'path')[0];
 
-const lemmatizer = new Lemmatizer();
+//const lemmatizer = new Lemmatizer();
 //const infs = ("s 's ' d ed ing en er est es").split(' ');
 
 var line = null;
@@ -1119,16 +1119,17 @@ if (!window.clearImmediate) {
 
       fctx.font = fontWeight + ' ' +
         (fontSize * mu).toString(10) + 'px ' + settings.fontFamily
+      var wrd = word.replace(/\d/g, "");
 
       // Estimate the dimension of the text with measureText().
-      var fw = fctx.measureText(word).width / mu
+      var fw = fctx.measureText(wrd).width / mu
       var fh = Math.max(fontSize * mu,
         fctx.measureText('m').width,
         fctx.measureText('\uFF37').width
       ) / mu
 
       // Create a boundary box that is larger than our estimates,
-      // so text don't get cut of (it sill might)
+      // so text don't get cut of (it still might)
       var boxWidth = fw * 2
       var boxHeight = fh * 2
       var fgw = Math.ceil(boxWidth / g)
@@ -1182,14 +1183,14 @@ if (!window.clearImmediate) {
       // 0.5 * fontSize lower.
       fctx.fillStyle = '#000'
       fctx.strokeStyle = '#000'
-      fctx.lineWidth = 8
+      fctx.lineWidth = 12
       fctx.textBaseline = 'middle'
       fctx.fillText(
-        word, fillTextOffsetX * mu,
+        wrd, fillTextOffsetX * mu,
         (fillTextOffsetY + fontSize * 0.5) * mu
       )
       fctx.strokeText(
-        word, fillTextOffsetX * mu,
+        wrd, fillTextOffsetX * mu,
         (fillTextOffsetY + fontSize * 0.5) * mu
       )
 
