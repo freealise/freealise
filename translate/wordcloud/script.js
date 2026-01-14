@@ -833,7 +833,7 @@ var u = [ ['phrase', 'size', 'value', 'link'],
           ];
 
 
-var pos_data = `x | preposition, _, 2193831
+var pos_data = `x | prefix, _, 2193831
 see | verb, phrasal verb, noun, S IY1, A 1-01, \u237F \u239A, 11569653921
 saw | verb, phrasal verb, noun, S AO1, A 1-01, \u237F \u239A, 2562604941
 seen | verb, phrasal verb, S IY1 N, A 1-01, \u237F \u239A, 3895936621
@@ -1413,7 +1413,7 @@ na·tion·al : adjective, noun, N AE1 SH AH0 N AH0 L, 4345220093
 re·port : noun, verb, phrasal verb, R IY0 P AO1 R T, 4343556232
 so·cial : adjective, adverb, noun, S OW1 SH AH0 L, 4334799802
 in·clud·ing : preposition, IH2 N K L UW1 D IH0 NG, 4311520363
-ra·ther : predeterminer, adverb, R AE1 DH ER0, 4296532172
+ra·ther : adverb, predeterminer, R AE1 DH ER0, 4296532172
 least : determiner, pronoun, adverb, L IY1 S T, 4296498351
 mat·ter : noun, verb, M AE1 T ER0, 4279982502
 home : noun, adverb, adjective, verb, phrasal verb, HH OW1 M, 4250842541
@@ -1440,9 +1440,9 @@ com·mon : adjective, noun, K AA1 M AH0 N, 3914098472
 po·si·tion : noun, verb, P AH0 Z IH1 SH AH0 N, 3907574863
 ear·ly : adjective, adverb, ER1 L IY0, 3900487472
 cent : noun, S EH1 N T, 3891901051
-half : predeterminer, pronoun, adjective, noun, adverb, HH AE1 F, 3887000901
+half : pronoun, predeterminer, adjective, noun, adverb, HH AE1 F, 3887000901
 pro·vide : verb, phrasal verb, P R AH0 V AY1 D, 3855642532
-per·cent : adjective, adverb, noun, P ER0 S EH1 N T, 3811068812
+per·cent : noun, adjective, adverb, P ER0 S EH1 N T, 3811068812
 cit·y : noun, adjective, S IH1 T IY0, 3786017022
 hu·man : adjective, noun, HH Y UW1 M AH0 N, 3771206842
 pro·duc·tion : noun, P R AH0 D AH1 K SH AH0 N, 3764573143
@@ -1452,7 +1452,7 @@ free : adjective, verb, adverb, noun, F R IY1, 3705903921
 to·geth·er : adverb, adjective, T AH0 G EH1 DH ER0, 3671251033
 al·most : adverb, AO1 L M OW2 S T, 3610939872
 war : noun, W AO1 R, 3609706801
-per cent : adjective, adverb, noun, _, 3608707440
+per cent : noun, adjective, adverb, P ER0 S EH1 N T, 3608707440
 once : adverb, conjunction, W AH1 N S, 3593710371
 na·ture : noun, N EY1 CH ER0, 3593232312
 field : noun, verb, F IY1 L D, 3575263981
@@ -1505,7 +1505,7 @@ sin·gle : adjective, noun, verb, phrasal verb, S IH1 NG G AH0 L, 3028408532
 march : verb, noun, M AA1 R CH, 2988716521
 fu·ture : adjective, noun, F Y UW1 CH ER0, 2972493652
 cur·rent : adjective, noun, K ER1 AH0 N T, 2965499542
-quite : predeterminer, adverb, K W AY1 T, 2946106521
+quite : adverb, predeterminer, K W AY1 T, 2946106521
 trade : noun, verb, phrasal verb, T R EY1 D, 2914267261
 es·pe·cial·ly : adverb, AH0 S P EH1 SH L IY0, 2900938023
 low·er : adjective, verb, L OW1 ER0, 2898627182
@@ -1575,7 +1575,7 @@ west : noun, adjective, adverb, W EH1 S T, 2475947901
 pres·sure : noun, verb, P R EH1 SH ER0, 2473870372
 meet·ing : noun, M IY1 T IH0 NG, 2471764092
 soon : adverb, S UW1 N, 2468554071
-ac·cord·ing to : preposition, _, 2461026600
+ac·cord·ing to : preposition, AH0 K AO1 R D IH0 NG T UW2, 2461026600
 be·gan : verb, B IH0 G AE1 N, 2453884232
 moth·er : noun, verb, M AH1 DH ER0, 2439188002
 man·ner : noun, M AE1 N ER0, 2428299342
@@ -1601,7 +1601,7 @@ let·ter : noun, verb, L EH1 T ER0, 2311201082
 ac·tiv·i·ty : noun, AE0 K T IH1 V IH0 T IY0, 2304742064
 o·rig·i·nal : adjective, noun, ER0 IH1 JH AH0 N AH0 L, 2304217794
 train·ing : noun, T R EY1 N IH0 NG, 2303314922
-non- : prefix, _, 2279700360
+non- : prefix, N AH0 N, 2279700360
 a·cross : adverb, preposition, AH0 K R AO1 S, 2276004962
 de·sign : noun, verb, D IH0 Z AY1 N, 2275033382
 ad·di·tion·al : adjective, AH0 D IH1 SH AH0 N AH0 L, 2261645434
@@ -1983,7 +1983,7 @@ fresh : adjective, noun, adverb, F R EH1 SH, 941507401
 fourth : adjective, adverb, pronoun, noun, F AO1 R TH, 939997391
 edge : noun, verb, phrasal verb, EH1 JH, 939783251
 ex·act·ly : adverb, IH0 G Z AE1 K T L IY0, 936322123
-in- : prefix, _, 932392480
+in- : prefix, IH0 N, 932392480
 net·work : noun, verb, N EH1 T W ER2 K, 931034342
 af·fect : verb, AH0 F EH1 K T, 929243022
 plate : noun, verb, P L EY1 T, 929187661
@@ -2015,7 +2015,7 @@ load : noun, verb, phrasal verb, L OW1 D, 884823071
 safe : adjective, noun, interjection, S EY1 F, 883675381
 de·fense : noun, D IH0 F EH1 N S, 882899202
 break : verb, phrasal verb, noun, B R EY1 K, 882563921
-re- : prefix, _, 880371070
+re- : prefix, R IH0, 880371070
 build : verb, phrasal verb, noun, B IH1 L D, 880107061
 de·pend·ent : noun, adjective, D IH0 P EH1 N D AH0 N T, 876826303
 min·ute : noun, adjective, adverb, verb, M IH1 N AH0 T, 876670362
@@ -2093,7 +2093,7 @@ thick : adjective, adverb, noun, TH IH1 K, 771327531
 be·lief : noun, B IH0 L IY1 F, 769697112
 crop : noun, verb, phrasal verb, K R AA1 P, 768214021
 slow : adjective, noun, verb, phrasal verb, adverb, S L OW1, 766244931
-no one : pronoun, _, 764298230
+no one : pronoun, N OW1 W AH0 N, 764298230
 fa·mil·i·ar : adjective, noun, F AH0 M IH1 L Y ER0, 763248523
 pret·ty : adverb, adjective, noun, P R IH1 T IY0, 762079542
 ad·vice : noun, AE0 D V AY1 S, 760940052
@@ -2199,7 +2199,7 @@ driv·en : adjective, D R IH1 V AH0 N, 654356992
 grand : noun, adjective, adverb, G R AE1 N D, 653815831
 de·lay : noun, verb, adjective, D IH0 L EY1, 653282942
 watch : verb, phrasal verb, noun, W AA1 CH, 652762971
-deal with : phrasal verb, _, 651392840
+deal with : phrasal verb, D IH1 L W IH0 DH, 651392840
 chair : noun, verb, CH EH1 R, 651297831
 drop : verb, phrasal verb, noun, D R AA1 P, 651111791
 la·dy : noun, L EY1 D IY0, 649857062
@@ -2359,7 +2359,7 @@ teach : verb, T IY1 CH, 487001211
 min·er·al : noun, M IH1 N ER0 AH0 L, 486577653
 roll : verb, phrasal verb, noun, R OW1 L, 486477431
 ow·ing : adjective, OW1 IH0 NG, 484745502
-o clock : adverb, _, 484181110
+o clock : adverb, AH0 K L AA1 K, 484181110
 dress : noun, verb, phrasal verb, D R EH1 S, 481785341
 wet : adjective, adverb, noun, verb, W EH1 T, 481182991
 cof·fee : noun, K AA1 F IY0, 478284692
@@ -2426,7 +2426,7 @@ nice : adjective, noun, N AY1 S, 426109001
 tea : noun, T IY1, 424916461
 fa·vor·a·ble : adjective, adverb, F EY1 V ER0 AH0 B AH0 L, 424902004
 de·liv·er : verb, noun, phrasal verb, D IH0 L IH1 V ER0, 424563793
-ow·ing to : preposition, _, 421219820
+ow·ing to : preposition, OW1 IH0 NG T UW0, 421219820
 wing : noun, verb, W IH1 NG, 420616071
 phrase : noun, verb, F R EY1 Z, 420428361
 vic·to·ry : noun, V IH1 K T AH0 R IY0, 418973413
@@ -2463,7 +2463,7 @@ friend·ly : adjective, noun, F R EH1 N D L IY0, 404063292
 shook : verb, phrasal verb, SH UH1 K, 403689261
 re·fuse : verb, noun, R AH0 F Y UW1 Z, 403529822
 meal : noun, M IY1 L, 403493621
-made up : phrasal verb, _, 402506030
+made up : phrasal verb, M EY1 D AH0 P, 402506030
 pas·sen·ger : noun, P AE1 S AH0 N JH ER0, 402308733
 vi·o·lent : adjective, V AY1 AH0 L AH0 N T, 400976603
 de·stroy : verb, D IH0 S T R OY1, 400585952
@@ -2526,7 +2526,7 @@ warn·ing : noun, adjective, W AO1 R N IH0 NG, 363506562
 a·chieve·ment : noun, AH0 CH IY1 V M AH0 N T, 362999683
 beat : verb, phrasal verb, noun, adjective, B IY1 T, 362936851
 wood·en : adjective, adverb, noun, W UH1 D AH0 N, 360884272
-in spite of : preposition, _, 359853790
+in spite of : preposition, IH0 N S P AY1 T AH0 V, 359853790
 mag·a·zine : noun, M AE1 G AH0 Z IY2 N, 359113563
 solve : verb, adjective, S AA1 L V, 357791261
 tem·ple : noun, T EH1 M P AH0 L, 357398622
@@ -2552,13 +2552,13 @@ nurse : noun, verb, N ER1 S, 346055891
 some·where : adverb, S AH1 M W EH2 R, 345922122
 an·ger : noun, verb, AE1 NG G ER0, 344487082
 desk : noun, D EH1 S K, 343269541
-dealt with : phrasal verb, _, 342471500
+dealt with : phrasal verb, D EH1 L T W IH0 DH, 342471500
 borne : adjective, B AO1 R N, 342241241
 sixth : adjective, pronoun, noun, S IH1 K S TH, 340176521
 tight : adjective, adverb, noun, T AY1 T, 340103671
 hat : noun, HH AE1 T, 339787161
 an·y·where : adverb, EH1 N IY0 W EH2 R, 338944103
-con·sist of : phrasal verb, _, 337464130
+con·sist of : phrasal verb, K AH0 N S IH1 S T AH0 V, 337464130
 ar·rive : verb, ER0 AY1 V, 337338312
 na·val : adjective, N EY1 V AH0 L, 336813352
 il·le·gal : adjective, adverb, noun, IH2 L IY1 G AH0 L, 334285643
@@ -2582,7 +2582,7 @@ belt : noun, verb, phrasal verb, B EH1 L T, 324640441
 ride : verb, phrasal verb, noun, R AY1 D, 324464661
 log : noun, verb, phrasal verb, L AO1 G, 323908411
 cap : noun, verb, K AE1 P, 322814101
-find out : phrasal verb, _, 322730280
+find out : phrasal verb, F AY1 N D AW0 T, 322730280
 faith·ful : adjective, noun, F EY1 TH F AH0 L, 322598812
 hung : verb, phrasal verb, adjective, HH AH1 NG, 322399271
 drove : noun, D R OW1 V, 321794551
@@ -2658,7 +2658,7 @@ bath : noun, verb, B AE1 TH, 274714391
 break·fast : noun, verb, B R EH1 K F AH0 S T, 273973232
 knife : noun, verb, N AY1 F, 273232311
 lamp : noun, L AE1 M P, 272823321
-of·fence : noun, _, 272573100
+of·fence : noun, AH0 F EH1 N S, 272573100
 com·mu·ni·cate : verb, K AH0 M Y UW1 N AH0 K EY2 T, 271427574
 pu·pil : noun, P Y UW1 P AH0 L, 270928392
 gen·er·ous : adjective, adverb, JH EH1 N ER0 AH0 S, 270518423
@@ -2711,7 +2711,7 @@ an·y·bod·y : pronoun, EH1 N IY0 B AH0 D IY0, 249317304
 ceil·ing : noun, S IY1 L IH0 NG, 249227212
 shel·ter : noun, verb, SH EH1 L T ER0, 247964162
 shade : noun, verb, phrasal verb, SH EY1 D, 247539301
-make up : phrasal verb, _, 246973520
+make up : phrasal verb, M EY1 K AH0 P, 246973520
 cas·tle : noun, K AE1 S AH0 L, 246693822
 mag·ic : noun, adjective, verb, phrasal verb, M AE1 JH IH0 K, 246591492
 splen·did : adjective, adverb, S P L EH1 N D IH0 D, 246521502
@@ -2773,7 +2773,7 @@ ap·prove : verb, AH0 P R UW1 V, 221566032
 pot : noun, verb, P AA1 T, 221372011
 pile : noun, verb, phrasal verb, P AY1 L, 221055941
 bush : noun, B UH1 SH, 220124491
-fa·vour·a·ble : adjective, adverb, _, 219888030
+fa·vour·a·ble : adjective, adverb, F EY1 V ER0 AH0 B AH0 L, 219888030
 fur : noun, verb, adjective, F ER1, 219193191
 cal·cu·late : verb, phrasal verb, K AE1 L K Y AH0 L EY2 T, 218819393
 wake : verb, phrasal verb, noun, W EY1 K, 218582151
@@ -2782,7 +2782,7 @@ at·tract : verb, AH0 T R AE1 K T, 218082782
 rope : noun, verb, phrasal verb, R OW1 P, 217876351
 con·fi·dent : adjective, adverb, noun, K AA1 N F AH0 D AH0 N T, 217683263
 knee : noun, verb, N IY1, 217378071
-look for : phrasal verb, _, 217327440
+look for : phrasal verb, L UW1 K F AO0 R, 217327440
 blade : noun, B L EY1 D, 216905111
 wed·ding : noun, W EH1 D IH0 NG, 216643122
 em·pha·size : verb, EH1 M F AH0 S AY2 Z, 216331593
@@ -2938,7 +2938,7 @@ loy·al : adjective, adverb, L OY1 AH0 L, 164957432
 de·lib·er·ate : adjective, noun, verb, D IH0 L IH1 B ER0 AH0 T, 163603464
 ink : noun, verb, phrasal verb, IH1 NG K, 163593781
 foot·ball : noun, F UH1 T B AO2 L, 163354592
-rid of : phrasal verb, _, 163318470
+rid of : phrasal verb, R IH1 D AH0 V, 163318470
 lend : verb, L EH1 N D, 163302501
 com·plain : verb, phrasal verb, K AH0 M P L EY1 N, 161685892
 bur·i·al : noun, B EH1 R IY0 AH0 L, 161341013
@@ -2949,11 +2949,11 @@ in·vite : verb, phrasal verb, noun, IH2 N V AY1 T, 159839602
 jaw : noun, verb, JH AO1, 159616721
 breed : verb, noun, B R IY1 D, 159582741
 beat·en : adjective, B IY1 T AH0 N, 159440232
-as op·posed to : preposition, _, 159432300
+as op·posed to : preposition, AE0 Z AH0 P OW1 Z D T UW0, 159432300
 ha·tred : noun, HH EY1 T R AH0 D, 159150132
 met·ric : adjective, M EH1 T R IH0 K, 158708042
 up·right : adjective, adverb, noun, AH0 P R AY1 T, 158205302
-pick up : phrasal verb, _, 157753540
+pick up : phrasal verb, P IH1 K AH0 P, 157753540
 neigh·bor : noun, N EY1 B ER0, 157679182
 swing : verb, phrasal verb, noun, S W IH1 NG, 157107891
 warmth : noun, W AO1 R M TH, 157009971
@@ -3064,7 +3064,7 @@ ham·mer : noun, verb, phrasal verb, HH AE1 M ER0, 116641852
 pack·et : noun, P AE1 K AH0 T, 116593312
 seize : verb, phrasal verb, S IY1 Z, 116503751
 pun·ish : verb, P AH1 N IH0 SH, 116314842
-found out : phrasal verb, _, 116167370
+found out : phrasal verb, F AW1 N D AW0 T, 116167370
 lump : noun, verb, L AH1 M P, 115978311
 cage : noun, verb, K EY1 JH, 115422251
 swung : verb, phrasal verb, S W AH1 NG, 115033251
@@ -3142,7 +3142,7 @@ care·less : adjective, adverb, noun, K EH1 R L EH0 S, 98322682
 whis·per : verb, noun, W IH1 S P ER0, 98117452
 cough : verb, phrasal verb, noun, K AA1 F, 97318141
 kick : verb, phrasal verb, noun, K IH1 K, 97180141
-ful·fil : verb, _, 97129780
+ful·fil : verb, F UH0 L F IH1 L, 97129780
 ad·mire : verb, AE0 D M AY1 R, 97124722
 nail : noun, verb, phrasal verb, N EY1 L, 96798271
 dig : verb, phrasal verb, noun, D IH1 G, 96622061
@@ -3180,7 +3180,7 @@ shout : verb, phrasal verb, noun, SH AW1 T, 87737331
 shy : adjective, adverb, noun, verb, phrasal verb, SH AY1, 87279101
 goat : noun, G OW1 T, 86299161
 bored : adjective, B AO1 R D, 86041381
-lay down : phrasal verb, _, 85921080
+lay down : phrasal verb, L EY1 D AW0 N, 85921080
 boot : noun, verb, phrasal verb, B UW1 T, 85915861
 con·fus·ing : adjective, adverb, K AH0 N F Y UW1 Z IH0 NG, 85770153
 chim·ney : noun, CH IH1 M N IY0, 85172672
@@ -3200,7 +3200,7 @@ mat : noun, adjective, M AE1 T, 81053971
 swal·low : verb, phrasal verb, noun, S W AA1 L OW0, 81038902
 mon·key : noun, verb, phrasal verb, M AH1 NG K IY0, 80812192
 on·ion : noun, AH1 N Y AH0 N, 80564412
-look af·ter : phrasal verb, _, 79999530
+look af·ter : phrasal verb, L UW1 K AE2 F T ER0, 79999530
 dis·cour·age : verb, D IH0 S K ER1 IH0 JH, 78836683
 ex·cite : verb, IH0 K S AY1 T, 78740732
 poi·son·ous : adjective, adverb, P OY1 Z AH0 N AH0 S, 78203153
@@ -3259,10 +3259,10 @@ bur·y : verb, B EH1 R IY0, 62497592
 greet : verb, G R IY1 T, 62058591
 hu·mor·ous : adjective, adverb, noun, HH Y UW1 M ER0 AH0 S, 61428533
 hand·ker·chief : noun, HH AE1 NG K ER0 CH IH0 F, 60837893
-look up : phrasal verb, _, 60040870
+look up : phrasal verb, L UW1 K AH0 P, 60040870
 ac·tress : noun, AE1 K T R AH0 S, 59833332
 an·noy·ance : noun, AH0 N OY1 AH0 N S, 58799083
-un- : prefix, _, 58473650
+un- : prefix, AH0 N, 58473650
 ar·mour : noun, AA1 R M ER0, 57890802
 em·bar·rass·ing : adjective, adverb, IH0 M B EH1 R AH0 S IH0 NG, 57866404
 en·close : verb, IH0 N K L OW1 Z, 57630022
@@ -3282,11 +3282,11 @@ hanged : verb, phrasal verb, HH AE1 NG D, 54947361
 halves : noun, HH AE1 V Z, 54914471
 ad·ver·tise : verb, AE1 D V ER0 T AY2 Z, 54680273
 bow·els : noun, B AW1 AH0 L Z, 54514722
-made in·to : phrasal verb, _, 54339660
+made in·to : phrasal verb, M EY1 D IH2 N T UH0, 54339660
 for·eign·er : noun, F AO1 R AH0 N ER0, 54048213
 stick·y : adjective, noun, S T IH1 K IY0, 54021262
 nas·ty : adjective, adverb, noun, N AE1 S T IY0, 53693562
-skil·ful : adjective, adverb, _, 53621570
+skil·ful : adjective, adverb, S K IH1 L F AH0 L, 53621570
 lied : verb, L AY1 D, 53131871
 card·board : noun, adjective, K AA1 R D B AO2 R D, 52649992
 i·cy : adjective, noun, AY1 S IY0, 52501872
@@ -3319,9 +3319,9 @@ stitch : noun, verb, phrasal verb, S T IH1 CH, 42736161
 slip·per·y : adjective, noun, S L IH1 P ER0 IY0, 42642573
 ny·lon : noun, N AY1 L AA2 N, 42574202
 an·noy·ing : adjective, adverb, AH0 N OY1 IH0 NG, 42549553
-on·ly just : adverb, _, 42362520
+on·ly just : adverb, OW1 N L IY0 JH AH0 S T, 42362520
 skill·ful : adjective, adverb, S K IH1 L F AH0 L, 42136602
-dis- : prefix, _, 42104900
+dis- : prefix, D IH0 Z, 42104900
 good·bye : interjection, noun, G UH2 D B AY1, 42001462
 beak : noun, B IY1 K, 41910811
 out·doors : adverb, noun, AW1 T D AO1 R Z, 41795012
@@ -3340,15 +3340,15 @@ suck : verb, phrasal verb, noun, S AH1 K, 37550311
 wool·len : adjective, W UH1 L AH0 N, 37506022
 thirst·y : adjective, adverb, TH ER1 S T IY0, 37407492
 un·done : adjective, AH0 N D AH1 N, 37238772
-lie down : phrasal verb, noun, _, 37120950
+lie down : phrasal verb, noun, L AY1 D AW0 N, 37120950
 bleed : verb, B L IY1 D, 36968071
 cheat : verb, phrasal verb, noun, CH IY1 T, 36742901
-up·side down : adverb, adjective, _, 36087930
-li·tre : noun, _, 35698510
+up·side down : adverb, adjective, AH1 P S AY1 D D AW0 N, 36087930
+li·tre : noun, L IY1 T ER0, 35698510
 curl : verb, phrasal verb, noun, K ER1 L, 35693831
 cup·board : noun, K AH1 B ER0 D, 35657072
 swam : verb, S W AE1 M, 35565331
-or·gan·ise : verb, _, 35544730
+or·gan·ise : verb, AO1 R G AH0 N AY2 Z, 35544730
 un·der·wear : noun, AH1 N D ER0 W EH2 R, 35302103
 a·muse : verb, AH0 M Y UW1 Z, 35289452
 in·doors : adverb, IH1 N D AO2 R Z, 34931342
@@ -3365,7 +3365,7 @@ mend : verb, noun, M EH1 N D, 30928931
 ab·bre·vi·a·tion : noun, AH0 B R IY2 V IY0 EY1 SH AH0 N, 30231015
 cen·ti·me·ter : noun, S EH1 N T AH0 M IY2 T ER0, 30230384
 sub·tract : verb, S AH0 B T R AE1 K T, 29822752
-let go of : phrasal verb, _, 29573850
+let go of : phrasal verb, L EH2 T G OW1 AH0 V, 29573850
 pas·try : noun, P EY1 S T R IY0, 29503752
 time·ta·ble : noun, verb, T AY1 M T EY2 B AH0 L, 28787513
 tidy : adjective, adverb, noun, verb, phrasal verb, T AY1 D IY0, 28769682
@@ -3376,7 +3376,7 @@ spade : noun, S P EY1 D, 28205011
 ad·mit·tance : noun, AH0 D M IH1 T AH0 N S, 28159563
 grieve : verb, G R IY1 V, 28101871
 tyre : noun, T AY1 ER0, 27073332
-jew·el·ler·y : noun, _, 26830140
+jew·el·ler·y : noun, JH UW1 AH0 L R IY0, 26830140
 cow·ard·ly : adjective, adverb, K AW1 ER0 D L IY0, 26811803
 stung : verb, S T AH1 NG, 26706101
 ma·gi·cian : noun, M AH0 JH IH1 SH AH0 N, 26698433
@@ -3393,7 +3393,7 @@ dec·o·rate : verb, noun, D EH1 K ER0 EY2 T, 23777943
 hard·en : verb, HH AA1 R D AH0 N, 23774232
 wrong·do·ing : noun, R AO1 NG D UW0 IH0 NG, 23770773
 sewn : verb, phrasal verb, S OW1 N, 23155031
-im- : prefix, _, 22284580
+im- : prefix, IH0 M, 22284580
 dis·cour·age·ment : noun, D IH0 S K ER1 IH0 JH M AH0 N T, 22197144
 dreamt : verb, phrasal verb, D R EH1 M T, 21471341
 ad·verb : noun, AE1 D V ER0 B, 21267692
@@ -3402,7 +3402,7 @@ dis·ap·point : verb, D IH2 S AH0 P OY1 N T, 19756243
 eye·lid : noun, AY1 L IH2 D, 19623352
 kil·o·me·ter : noun, K AH0 L AA1 M AH0 T ER0, 18622604
 prick·ly : adjective, noun, P R IH1 K L IY0, 18051472
-ly·ing down : phrasal verb, _, 17929240
+ly·ing down : phrasal verb, L AY1 IH0 NG D AW0 N, 17929240
 ki·lo : noun, K IH1 L OW2, 16268702
 tir·ing : adjective, T AY1 R IH0 NG, 16258222
 wove : verb, W OW1 V, 14917091
@@ -3419,11 +3419,11 @@ clock·work : noun, K L AA1 K W ER2 K, 8782712
 un·did : verb, AH2 N D IH1 D, 7995712
 foot·step : noun, F UH1 T S T EH2 P, 6916542
 mil·lionth : adjective, M IH1 L Y AH0 N TH, 6728502
-ir- : prefix, _, 5912020
+ir- : prefix, IH0 R, 5912020
 swum : verb, S W AH1 M, 3267231
-make in·to : phrasal verb, _, 2521900
-lain down : phrasal verb, _, 2258470
-un·does : verb, _, 2193830`;
+make in·to : phrasal verb, M EY1 K IH2 N T UH0, 2521900
+lain down : phrasal verb, L EY1 N D AW0 N, 2258470
+un·does : verb, AH0 N D AH1 Z, 2193830`;
 
 
 
