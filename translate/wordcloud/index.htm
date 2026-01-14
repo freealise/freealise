@@ -97,11 +97,11 @@ const idea = ("noun \u2B1A, noun \u25CC, noun \u22D4, pron, det, adv, conj, num,
 //+ adv
 
 
-var ldoce = document.getElementById('ldoce');
-var arc = document.getElementsByTagNameNS('http://www.w3.org/2000/svg', 'path')[0];
+const ldoce = document.getElementById('ldoce');
+const arc = document.getElementsByTagNameNS('http://www.w3.org/2000/svg', 'path')[0];
 
 const lemmatizer = new Lemmatizer();
-//var infs = ("s 's ' d ed ing en er est es").split(' ');
+//const infs = ("s 's ' d ed ing en er est es").split(' ');
 
 var line = null;
 var root = null;
@@ -419,6 +419,8 @@ function selectWord(fwd) {
 
 
 var pos_arr = pos_data.split('\n');
+pos_data = null;
+
 var words = "";
 
 
@@ -456,11 +458,6 @@ document.getElementsByTagName("textarea")[0].value = pos_arr.join('\n');
 */
 
 
-var pos_list = [];
-var pos_num = new Array(16);
-pos_num.fill(0);
-var pos_e = [];
-
 for (var i=0; i<pos_arr.length; i++) {
 
   var tmp = pos_arr[i];
@@ -495,9 +492,6 @@ for (var i=0; i<pos_arr.length; i++) {
   }
 
   var p = tmp.substr(tmp.search(/[.:|]/)+2, tmp.lastIndexOf(' ')).split(', ')[0];
-  if (pos_list.indexOf(p) == -1) { pos_list[pos_list.length] = p; }
-  pos_num[pos_list.indexOf(p)]++;
-
   smb += "" + cons_n + vowl_n + st_;
 
   //var l = pos_arr[i][0].replace(/·/g, "").length;
