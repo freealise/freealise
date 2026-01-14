@@ -1446,11 +1446,11 @@ if (!window.clearImmediate) {
           if (classes) {
             span.className += classes
           }
-          el.appendChild(span)
 
           if ((st != -1 && span.getElementsByTagName('a')[0].title.charAt(2) != st) || (ln != 0 && span.getElementsByTagName('a')[0].id.length != ln) || (cons != -1 && span.getElementsByTagName("a")[0].title.charAt(0) != cons) || (syl != 0 && span.getElementsByTagName("a")[0].title.charAt(1) != syl) || span.textContent.indexOf(pos) == -1) {
             span.style.opacity = 0.125;
           }
+          el.appendChild(span);
         }
       })
     }
