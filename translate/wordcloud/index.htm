@@ -28,12 +28,44 @@
 
 <button style="position:fixed;bottom:0;right:0;width:128px;height:64px" onclick="selectWord(true);">-></button>
 <button style="position:fixed;bottom:0;left:0;width:128px;height:64px" onclick="selectWord(false);"><-</button>
-<input style="position:fixed;top:0;right:0;width:128px;height:64px" type="range" min="0.0625" max="16" value="1" step="0.001" id="zoom" oninput="zoom(this.value);">
+<input style="position:fixed;top:0;left:50%;margin-left:-64px;width:128px;height:64px" type="range" min="0.0625" max="16" value="1" step="0.001" id="zoom" oninput="zoom(this.value);">
 
-<select style="position:fixed;top:64px;right:0;width:128px;height:48px" id="pos" onchange="pos=this.value;filter();">
+<label for="letters" style="font-size:16px;position:fixed;top:8px;right:36px;height:16px">length</label><input style="position:fixed;top:0;right:0;width:128px;height:64px" type="range" min="0" max="14" value="0" step="1" id="letters" oninput="ln=this.value;filter();">
+
+<label for="stress" style="font-size:16px;position:fixed;top:72px;right:36px;height:16px">stress</label><input style="position:fixed;top:64px;right:0;width:128px;height:64px" type="range" min="-1" max="5" value="-1" step="1" id="stress" onchange="if(syl!=0 && this.value>syl){this.value=syl;}st=this.value;filter();">
+
+<select style="position:fixed;top:128px;right:64px;width:64px;height:48px" id="syl_num" onchange="if(this.value!=0 && st>this.value){st=this.value;document.getElementById('stress').value=st;}syl=this.value;filter();">
+  <option value="0">vowels</option>
+  <option value="1">•</option>
+  <option value="2">••</option>
+  <option value="3">•••</option>
+  <option value="4">••••</option>
+  <option value="5">•••••</option>
+</select>
+
+<select style="position:fixed;top:128px;right:0;width:64px;height:48px" id="cons_num" onchange="cons=this.value;filter();">
+  <option value="-1">consonants</option>
+  <option value="0"></option>
+  <option value="1">•</option>
+  <option value="2">••</option>
+  <option value="3">•••</option>
+  <option value="4">••••</option>
+  <option value="5">•••••</option>
+  <option value="6">••••••</option>
+  <option value="7">•••••••</option>
+  <option value="8">••••••••</option>
+  <option value="9">•••••••••</option>
+</select>
+
+<select style="position:fixed;top:192px;right:0;width:128px;height:48px" id="pos" onchange="pos=this.value;filter();">
   <option value="">part of speech</option>
   <option value="[">[noun]</option>
-  <option value="<">&lt;verb&gt;</option>
+  <optgroup> <!-- label="verbs" -->
+    <option value="<">&lt;verb&gt;</option>
+    <option value="‹">‹auxiliary verb›</option>
+    <option value="﹤">﹤modal verb﹥</option>
+    <option value="⟨">⟨phrasal verb⟩</option>
+  </optgroup>
   <option value="(">(adjective)</option>
   <option value="{">{adverb}</option>
   <option value="#">#pronoun#</option>
@@ -44,9 +76,9 @@
   <option value="*">*particle*</option>
 </select>
 
-<div style="position:fixed;right:0;top:128px;width:128px;">
+<div style="position:fixed;right:0;top:256px;width:128px;">
 <button style="font-size:24px;margin:0;padding:0;height:48px;width:64px;vertical-align:middle;" id="search" title="search" onclick="hideButtons(true);setTimeout(function(){highlight(selected);lookup(selected);},1);">⌕</button> <label for="all">all</label><input type="checkbox" style="margin:0;padding:0;height:48px;width:36px;vertical-align:middle;" id="all"/></div>
-<div id="sel_words" style="position:fixed;right:0;top:192px;width:128px;"></div>
+<div id="sel_words" style="position:fixed;right:0;top:320px;width:128px;"></div>
 
 <span id="ldoce_toggle" style="position:fixed;top:0;left:16px;font-size:24px;" onclick="if(ldoce.style.display!='none'){ldoce.style.display='none';}else{ldoce.style.display='block';}">𝕚⃝</span>
 <iframe id="ldoce" style="display:none;position:fixed;top:32px;left:0;background-color:white" src="https://freeali.se/freealise/translate/dict/index.htm?lang=English" width=320 height=480></iframe>
@@ -54,16 +86,21 @@
   <script src="script.js"></script>
   <script>
 
-// TODO: add lesson link, merge wordtree; use stardict parser; filter by idea(add symbols); check by grammar books; credits
+// TODO: add lesson link, merge wordtree; check by grammar books; credits
 // next version: improve layout ('talmud' with https://packery.metafizzy.co/)
 
 // )4_ADJ_, @6_ADP_, }5_ADV_, &9_CONJ_, =1_DET_, ]2_NOUN_, %10_NUM_, #7_PRON_, *8_PRT_, >3_VERB_
+
+const idea = ("noun \u2B1A, noun \u25CC, noun \u22D4, pron, det, adv, conj, num, adj \u2300, adj \u233F, adp, verb \u221E, verb \u263C, verb \u23CE, verb \u23E7, verb \u237F").split(", ");
+
+//- conj ~, adj \u238E, (adp \u26B2, adp \u23FC) -> adp, prt
+//+ adv
 
 
 var ldoce = document.getElementById('ldoce');
 var arc = document.getElementsByTagNameNS('http://www.w3.org/2000/svg', 'path')[0];
 
-var lemmatizer = new Lemmatizer();
+const lemmatizer = new Lemmatizer();
 //var infs = ("s 's ' d ed ing en er est es").split(' ');
 
 var line = null;
@@ -81,6 +118,10 @@ var loop = 2;
 var wrd = 0;
 var z = 1;
 var pos = "";
+var syl = 0;
+var cons = -1;
+var ln = 0;
+var st = -1;
 var ipa = [];
 
 
@@ -162,7 +203,7 @@ var ipa = [];
         var txt = document.getElementsByTagName('div')[0].getElementsByTagName('div');
 
         for (var i=0; i<txt.length; i++) {
-          if (pos == "" || (txt[i].textContent && txt[i].textContent.indexOf(pos) > -1)) {
+          if ((pos == "" || (txt[i].textContent && txt[i].textContent.indexOf(pos) > -1)) && (syl == 0 || txt[i].getElementsByTagName('a')[0].title.charAt(1) == syl) && (cons == -1 || txt[i].getElementsByTagName('a')[0].title.charAt(0) == cons) && (ln == 0 || txt[i].getElementsByTagName('a')[0].id.length == ln) && (st == -1 || txt[i].getElementsByTagName('a')[0].title.charAt(2) == st)) {
             txt[i].style.opacity = 1.0;
           } else {
             txt[i].style.opacity = 0.125;
@@ -414,6 +455,11 @@ document.getElementsByTagName("textarea")[0].value = pos_arr.join('\n');
 */
 
 
+var pos_list = [];
+var pos_num = new Array(16);
+pos_num.fill(0);
+var pos_e = [];
+
 for (var i=0; i<pos_arr.length; i++) {
 
   var tmp = pos_arr[i];
@@ -430,13 +476,30 @@ for (var i=0; i<pos_arr.length; i++) {
     smb = tmp_a[tmp_a.length-2];
   }
   ipa[i] = "_";
+  var vowl_n = 0;
+  var cons_n = 0;
+  var st_p = "";
+  var st_ = 0;
+
   for (var j=0; j<tmp_a.length; j++) {
     if (tmp_a[j].search(/[A-Z]/) == 0) {
-      ipa[i] = tmp_a[j].toLowerCase().replace(/0/g,"").replace(/1/g,"`").replace(/2/g,",");
+      ipa[i] = tmp_a[j].toLowerCase().replace(/0/g,"·").replace(/1/g,"`").replace(/2/g,",");
+      st_p = tmp_a[j].replace(/\D/g, "");
+      st_ = st_p.indexOf("1") + 1;
+      vowl_n = st_p.length;
+      cons_n = tmp_a[j].replace(/\w\w\d/g, "").replace(/\s+/g, " ").trim();
+      if (cons_n != "") { cons_n = cons_n.split(" ").length; } else { cons_n = 0; }
       break;
     }
   }
+
   var p = tmp.substr(tmp.search(/[.:|]/)+2, tmp.lastIndexOf(' ')).split(', ')[0];
+  if (pos_list.indexOf(p) == -1) { pos_list[pos_list.length] = p; }
+  pos_num[pos_list.indexOf(p)]++;
+
+  smb += "" + cons_n + vowl_n + st_;
+
+  //var l = pos_arr[i][0].replace(/·/g, "").length;
 
   if (p == 'adverb') {
     pos_arr[i][0] = '{' + smb + '|' + pos_arr[i][0] + '}';
@@ -445,7 +508,15 @@ for (var i=0; i<pos_arr.length; i++) {
     pos_arr[i][0] = '[' + smb + '|' + pos_arr[i][0] + ']';
 
   } else if (p.indexOf('verb') != -1) {
-    pos_arr[i][0] = '<' + smb + '|' + pos_arr[i][0] + '>';
+    if (p == 'phrasal verb') {
+      pos_arr[i][0] = '⟨' + smb + '|' + pos_arr[i][0] + '⟩';
+    } else if (p == 'modal verb') {
+      pos_arr[i][0] = '﹤' + smb + '|' + pos_arr[i][0] + '﹥';
+    } else if (p == 'auxiliary verb') {
+      pos_arr[i][0] = '‹' + smb + '|' + pos_arr[i][0] + '›';
+    } else {
+      pos_arr[i][0] = '<' + smb + '|' + pos_arr[i][0] + '>';
+    }
 
   } else if (p == 'adjective') {
     pos_arr[i][0] = '(' + smb + '|' + pos_arr[i][0] + ')';
@@ -694,7 +765,7 @@ if (!window.clearImmediate) {
       maskColor: 'rgba(255,0,0,0.3)',
       maskGapWidth: 0.0,
 
-      wait: 0,
+      wait: 40,
       abortThreshold: 0, // disabled
       abort: function noop () {},
 
@@ -1358,7 +1429,8 @@ if (!window.clearImmediate) {
             word = word.slice(0,-1);
           }
 
-          span.innerHTML = "<small style='font-size:0.5em'><sup>" + word.substr(1, word.indexOf('|')-1) + "</sup>" + word.slice(0,1) + "</small><a draggable='true'>" + word.slice(word.indexOf('|')+1, -1) + "</a><small style='font-size:0.5em'>" + word.slice(-1) + "</small>";
+          var w = word.slice(word.indexOf('|')+1, -1);
+          span.innerHTML = "<small style='font-size:0.5em'><sup>" + word.substr(1, word.indexOf('|')-4) + "</sup>" + word.slice(0,1) + "</small><a id='" + w.replace(/·/g, "") + "' title='" + word.substr(word.indexOf('|')-3, 3) + "' draggable='true'>" + w + "</a><small style='font-size:0.5em'>" + word.slice(-1) + "</small>";
 //console.log(word);
 
           if (lvl == '\u200B') {
@@ -1381,7 +1453,7 @@ if (!window.clearImmediate) {
           }
           el.appendChild(span)
 
-          if (span.textContent.indexOf(pos) == -1) {
+          if ((st != -1 && span.getElementsByTagName('a')[0].title.charAt(2) != st) || (ln != 0 && span.getElementsByTagName('a')[0].id.length != ln) || (cons != -1 && span.getElementsByTagName("a")[0].title.charAt(0) != cons) || (syl != 0 && span.getElementsByTagName("a")[0].title.charAt(1) != syl) || span.textContent.indexOf(pos) == -1) {
             span.style.opacity = 0.125;
           }
         }
@@ -1794,7 +1866,7 @@ WordCloud([document.getElementById('canvas'), document.getElementById('html-canv
     } else if (p == '[') {
       return 'hsl('+(36*1)+', 50%, 50%)';
 
-    } else if (p == '<') {
+    } else if (('‹﹤<⟨').indexOf(p) != -1) {
       return 'hsl('+(36*5)+', 50%, 50%)';
 
     } else if (p == '(') {
