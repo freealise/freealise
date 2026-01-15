@@ -152,11 +152,29 @@
 
 
 // )4_ADJ_, @6_ADP_, }5_ADV_, &9_CONJ_, =1_DET_, ]2_NOUN_, %10_NUM_, #7_PRON_, *8_PRT_, >3_VERB_
+// new: {adv [noun <verb (adj #pron =det -adp +conj %num *prt
 
 const idea = ("noun \u2B1A, noun \u25CC, noun \u22D4, pron, det, adv, conj, num, adj \u2300, adj \u233F, adp, verb \u221E, verb \u263C, verb \u23CE, verb \u23E7, verb \u237F").split(", ");
 
 //- conj ~, adj \u238E, (adp \u26B2, adp \u23FC) -> adp, prt
 //+ adv
+
+const _pos = {
+  "_NOUN": ["﹞", "noun"],
+  "_VERB": ["﹥", "verb"],
+  "_ADJ": ["﹚", "adjective"],
+  "_ADV": ["﹜", "adverb"],
+  "_NUM": ["﹪", "numeral"],
+  "_ADP": ["﹣", "adposition"],
+  "_PRON": ["﹟", "pronoun"],
+  "_CONJ": ["﹢", "conjunction"],
+  "_DET": ["﹦", "determiner"],
+  "_PRT": ["﹡", "particle"]
+};
+const imp = "﹥﹞﹚﹜﹦﹡﹟﹪﹣﹢_";
+const pos_ = new RegExp("("+Object.keys(_pos).join("|")+")", "g");
+const pos_all = new RegExp("["+imp+"]", "g");
+const pos_not = new RegExp("[^"+imp+"]", "g");
 
 
 const exec = "https://script.google.com/macros/s/AKfycbyYo_zODFB1fWxUPO3hg-3CFh5NNLUVd7E8rtUfDpOuIKDftakLiiNEdIsFeliw_69e/exec";
@@ -167,7 +185,7 @@ var ltwf_ = ltwf.contentWindow || (ltwf.contentDocument.document || ltwf.content
 
 const arc = document.getElementsByTagNameNS('http://www.w3.org/2000/svg', 'path')[0];
 
-const lemmatizer = new Lemmatizer();
+//const lemmatizer = new Lemmatizer();
 //const infs = ("s 's ' d ed ing en er est es").split(' ');
 
 var line = null;
@@ -198,6 +216,172 @@ var level = [];
 var phrases = [];
 var ltr = 'ABCDEFGH';
 var lvl_old = -1;
+
+var et = null;
+
+
+      function loadSyntax(q) {
+        var found = false;
+        for (var k=0; k<phrases.length; k++) {
+          if (q.indexOf(phrases[k].replace(/"/g, "'")) >= 0) {
+            found = true;
+            break;
+          }
+        }
+        if (found === false) { return; }
+
+        var b = parseInt(q.length);
+        var d = parseInt(q.length);
+        if (b == d) {
+          var n = q.substr(0, b).replace(/[^\w\s]/g, "").trim().split(" ").length;
+        } else {
+          var n = q.replace(/[^\w\s]/g, "").trim().split(" ").length;
+        }
+        var q = q.replace(/[^\w\s]/g, "").trim().split(" ");
+        for (var i=0; i<q.length; i++) {
+          q[i] += "_*";
+          if (q[i+1]) {
+            q[i] = q[i] + " " + q[i+1];
+          }
+        }
+        var q = q.join(",");
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            //alert(this.responseText);
+            var json = JSON.parse("["+this.responseText.split(">[")[1].split("]<")[0]+"]");
+            var r = "";
+            for (var i=0; i<json.length; i++) {
+              if (json[i].ngram.indexOf("_*") > -1) {
+                var j = i+2;
+                while (json[j] && json[j].ngram.split(" ")[0].split("_")[0] == json[i].ngram.split(" ")[0].split("_")[0]) {
+                  json[j].ngram = "";
+                  j++;
+                }
+                json[i].ngram = "";
+              }
+              if (json[i].ngram.length > 0) {
+                r += json[i].ngram.split(" ")[0] + " ";
+              }
+            }
+            r = r.trim().replace(pos_, function(x) { return _pos[x][0]; });
+            //phrase.value = r.substr(0, b+n) + " " + r.substr(b+n);
+            //phrase.setSelectionRange(b+n, d+n);
+            //phrase.focus();
+      
+            var tmp = r.substr(0, b+n) + " " + r.substr(b+n);
+            var o = phrases[k].replace(/[\s\u00A0]+/g,' ').replace(/[^\w\s]/g,'').trim().split(' ');
+            var len_r = tmp.split(' ').length;
+            if (o.length > len_r) {
+              for (var i=len_r; i<=o.length; i++) {
+                tmp += ' ' + o[i-1] + imp[imp.length-1];
+              }
+            }
+            phrases[k] = tmp;
+
+            var ps = ltwf_.document.getElementsByTagName('sub');
+            var phrase = phrases[k].replace(pos_all,'').replace(/\s+/g,' ').trim();
+            var ws = phrase.split(' ');
+            var sb = phrases[k].replace(pos_not,'');
+
+            var next = "";
+            var present = "";
+            for (var i=0; i<sb.length; i++) {
+              for (var j=0; j<ps.length; j++) {
+                var ph = ps[j].parentElement.innerText.replace(/[\s\u00A0]+/g,' ').replace(/[^\w\s]/g,'').trim();
+
+                var found = false;
+                if (ph == ws[i]) {
+                  found = true;
+                } else {
+                  var a = ph.split(' ');
+                  for (var n=0; n<a.length; n++) {
+                    if (a[n] == ws[i]) {
+                      found = true;
+                      break;
+                    }
+                  }
+                }
+
+                if (ps[j].title.indexOf(phrase) >= 0 && ps[j].innerText == '' && found === true) {
+                  ps[j].innerText = sb.charAt(i);
+                  ps[j].parentElement.style.opacity = 1.0-(imp.indexOf(sb.charAt(i))+1)/12.5;
+                  ps[j].parentElement.style.filter = 'hue-rotate(' + imp.indexOf(sb.charAt(i))*36 + 'deg)';
+                  present = ps[j].title;
+                  if (ps[j+1]) { next = ps[j+1].title; }
+                  break;
+                }
+              }
+            }
+            if (et) {
+              var popup = ltwf_.document.getElementById('popup');
+              popup.style.top = ltwf_.scrollY + et.getBoundingClientRect().y + 'px';
+              popup.style.left = ltwf_.scrollX + et.getBoundingClientRect().x + 'px';
+            }
+            k++;
+            if (phrases[k]) {
+              var phrase = phrases[k].replace(/\s+/g,' ').trim();
+              console.log(phrase +' | '+next);
+              if (next == present && next.indexOf(phrase) >= 0) {
+          
+                loadSyntax(phrases[k].replace(/\"/g,"'"));
+              }
+            }
+          }
+        };
+        xhttp.open("GET", exec + "?a=parse&q=" + encodeURIComponent(q), true);
+        xhttp.send();
+      }
+
+
+      function loadMorph(e) {
+        var q = e.target.innerText;
+        if (q != "") {
+          q = q.replace(/[^\w\s]/g, "").trim() + "_INF";
+          var xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+              //console.log(this.responseText);
+              var json = JSON.parse("["+this.responseText.split(">[")[1].split("]<")[0]+"]");
+              var r = "";
+              for (var i=1; i<json.length; i++) {
+                if (json[i].ngram.length > 0) {
+                  r += "<li><ruby><span onclick='window.parent.loadSpeech(`" + json[i].ngram + ");' class='notranslate'>" + json[i].ngram + "</span><rp>`</rp><rt>" + json[i].ngram + "</rt><rp>`</rp></ruby></li>";
+                }
+              }
+              et = e.target;
+              var popup = ltwf_.document.getElementById('popup');
+
+              popup.innerHTML = '<div id="nav" class="notranslate"><button onclick="this.parentElement.parentElement.style.visibility=\'hidden\';">x</button><audio src=""></audio><select id="accent" title="Accent"><option value="US">US</option><option value="UK">UK</option><option value="AU">AU</option></select><button title="Say" id="say" onclick="window.parent.loadSpeech(\'' + q.slice(0,q.indexOf('_')) + '\');">&#x25B7;</button></div><hr/><ul>'+r+'</ul>';
+
+              popup.style.top = ltwf_.scrollY + et.getBoundingClientRect().y + 'px';
+              popup.style.left = ltwf_.scrollX + et.getBoundingClientRect().x + 'px';
+
+              popup.style.visibility = 'visible';
+        
+              e.target.focus();
+              window.parent.loadSpeech( q.slice(0,q.indexOf('_')) );
+            }
+          };
+          xhttp.open("GET", exec + "?a=parse&q=" + encodeURIComponent(q), true);
+          xhttp.send();
+        }
+      }
+
+
+      function loadSpeech(q) {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+
+            ltwf_.document.getElementsByTagName('audio')[0].src = "data:audio/mp3;base64," + this.responseText;
+            ltwf_.document.getElementsByTagName('audio')[0].load();
+            ltwf_.document.getElementsByTagName('audio')[0].play();
+          }
+        };
+        xhttp.open("GET", exec + "?a=tts&accent=" + ltwf_.document.getElementById("accent").value + "&q=" + encodeURIComponent(q), true);
+        xhttp.send();
+      }
 
 
       function highlightWords(q) {
@@ -267,7 +451,7 @@ var lvl_old = -1;
 
 
       function loadBasicWords(q) {
-        hideButtons(true);
+        //hideButtons(true);
 
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
@@ -294,8 +478,8 @@ var lvl_old = -1;
 
                 //ltwf_.onscroll = function(e){tl_.scrollTo(0, ltwf_.scrollY);}
 
-                hideButtons(false);
-              }, 40);
+                //hideButtons(false);
+              }, 1000);
             };
 
             //ltwf.style.display = 'block';
