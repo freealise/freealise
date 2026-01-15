@@ -167,7 +167,7 @@ var ltwf_ = ltwf.contentWindow || (ltwf.contentDocument.document || ltwf.content
 
 const arc = document.getElementsByTagNameNS('http://www.w3.org/2000/svg', 'path')[0];
 
-try { const lemmatizer = new Lemmatizer(); } catch(e) {}
+try { const lemmatizer = new Lemmatizer(); } catch(e) { alert(e); }
 //const infs = ("s 's ' d ed ing en er est es").split(' ');
 
 var line = null;
