@@ -83,7 +83,7 @@
 <span id="ldoce_toggle" style="position:fixed;top:0;left:16px;font-size:24px;" onclick="if(ldoce.style.display!='none'){ldoce.style.display='none';}else{ldoce.style.display='block';}">𝕚⃝</span>
 <iframe id="ldoce" style="display:none;position:fixed;top:32px;left:0;background-color:white" src="https://freeali.se/freealise/translate/dict/index.htm?lang=English" width=320 height=480></iframe>
 
-<a title="" id="lesson_toggle" style="position:fixed;top:-8px;left:64px;font-size:36px;text-decoration:none;" onclick="if(ltwf.style.display!='none'){ltwf.style.display='none';}else if(this.title!=''){loadWord(this.title);ltwf.style.display='block';}">⎙</a>
+<a title="" id="lesson_toggle" style="position:fixed;top:-8px;left:64px;font-size:36px;text-decoration:none;" onclick="if(ltwf.style.display!='none'){ltwf.style.display='none';}else{ltwf.style.display='block';}">⎙</a>
 <iframe id="ltwf" style="display:none; top:32px; left:0px; width:320px; height:480px; position:fixed;" src="about:blank"></iframe>
 
 
@@ -252,8 +252,6 @@ var lvl_old = -1;
 
 
       function loadWord(indx) {
-        hideButtons(true);
-
         if (parseInt(level[indx]) != lvl_old) {
           loadBasicWords(lesson[indx]);
           lvl_old = parseInt(level[indx]);
@@ -263,12 +261,8 @@ var lvl_old = -1;
           if (ltwf_.document.getElementById(lesson[indx].split(" ")[1])) {
             ltwf_.document.getElementById(lesson[indx].split(" ")[1]).scrollIntoView();
           }
-
-          setTimeout(function() {
-            hideButtons(false);
-          }, 1000);
         }
-        ltwf.style.display = 'block';
+        //ltwf.style.display = 'block';
       }
 
 
@@ -304,8 +298,8 @@ var lvl_old = -1;
               }, 40);
             };
 
-            ltwf.style.display = 'block';
-            ltwf.blur();
+            //ltwf.style.display = 'block';
+            //ltwf.blur();
           }
         };
         xhttp.open("GET", exec + "?a=nsm&q=" + q.replace(" ", "_"), true);
@@ -538,6 +532,7 @@ try {
               document.getElementById('ipa_show').innerHTML = "|<b>" + ipa[i] + "</b>|";
               document.getElementById('lesson_toggle').title = i;
               selectWord(true);
+              loadWord(i);
             }
           }
         }
