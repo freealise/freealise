@@ -10,7 +10,7 @@ https://enrollment.lfx.linuxfoundation.org/?project=lfeurope&code=Wr-IQTyNAyEB9g
 https://linuxfoundation.eu/en/join  
   
 https://en.wikipedia.org/wiki/List_of_Pirate_Parties  
-national ruling Pirate Party of Marie Byrd Land (ask for affiliation)  
+national ruling Pirate Party of Pranke Island (after joining)  
   
 free.eu.com is against bureaucracy - which is appropriate when necessary for compliance (or in a religious structure) but beyond it a threat to survival  
 with an example of Belarusian Krolevec(?) as a free economic zone (+city projects)  
