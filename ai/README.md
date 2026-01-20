@@ -1,5 +1,6 @@
 
 audio (?) interview with _deterministic_ AI  
+let deterministic Gemini interview itself as a politician  
   
 (slow and crashing on mobile, here for the sake of models list)  
 https://huggingface.co/docs/transformers.js/index  
