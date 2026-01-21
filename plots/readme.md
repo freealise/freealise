@@ -3,7 +3,7 @@
   
 - future Eurovision album (#russiaIsSiberia #BelarusIsEurope #SiberiaForSale #SiberiaRemoteControl #russiaIsAColony #PietariIsFinland; Greece not believing what Americans do after it, Holy Spirit goes _through_ the son (any human), location of head of church doesn't matter - protestant Orthodoxy ?); Georgia is 'affordable Israel'; Czechia, Sweden ? open source music contest & supergroup ('band anyone can join')  
   
-- social sci-fi HP sequel with Sirius Black (~Enoch) and spiritual explanation of black, gray and white magic  
+- social sci-fi HP sequel with Sirius Black (~Enoch) and spiritual explanation of black, gray and white magic ('SB and the Great Commandment')  
  (https://scifi.stackexchange.com/questions/295283/what-was-j-k-rowlings-original-plan-for-the-death-of-sirius-black, 
   https://en.wikipedia.org/wiki/Sirius_Black, https://www.google.com/search?q=eliezer+yudkowsky&hl=en)  
   begins with Harry demanding explanation of what happened to Sirius (5th book), 4 houses = monotheistic faiths  
