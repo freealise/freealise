@@ -186,7 +186,7 @@
   <script src="script.js"></script>
   <script>
 
-// TODO: fix dashes; merge wordtree; phrase lookup with parser (ngrams, separate button); check by grammar books; credits
+// TODO: merge wordtree; phrase lookup with parser (ngrams, separate button); check by grammar books; credits
 // loadSyntax to verify dictionary pos (parse from dictionary); -> vocalise (diff)
 // v2: parse lessons on server and return html with #anchor instead of text; improve layout ('talmud' with https://packery.metafizzy.co/), TF use ?
 // if reloading by itself has run out of canvas :)
@@ -229,7 +229,7 @@ const gtframe = document.getElementsByClassName("google-translate-place")[0];
 
 const arc = document.getElementsByTagNameNS('http://www.w3.org/2000/svg', 'path')[0];
 
-//const lemmatizer = new Lemmatizer();
+const lemmatizer = new Lemmatizer();
 //const infs = ("s 's ' d ed ing en er est es").split(' ');
 
 var line = null;
@@ -376,7 +376,7 @@ var et = null;
               p_ = "";
             }
             return "><ruby><span class='notranslate'><u onclick='window.parent.loadMorph(event);'>"+x.slice(1,-1).replace(/\u00A0/g, p_+"</u>\u00A0<u onclick='window.parent.loadMorph(event);'>")+p_+"</u></span><rp>`</rp><rt>"+x.slice(1,-1)+"</rt><rp>`</rp></ruby><";
-          }) + '<p><button class="notranslate" title="Say" id="say" onclick="window.parent.loadSpeech(`' + o.replace(/\"/g,"'").replace(/<br\/>/g, "") + '`);">&#x25B7;</button><small>' + s + '</small></p></p>';
+          }) + '<p><button class="notranslate" title="Say" id="say" onclick="window.parent.loadSpeech(`' + o.replace(/\"/g,"'").replace(/(<br\/>|\( See <a.+\d+-\d+<\/a> \))/g, "") + '`);">&#x25B7;</button><small>' + s + '</small></p></p>';
         }).replace(/>who</g,'>who`<');
       }
 
@@ -415,7 +415,7 @@ var et = null;
             if (q.charAt(1) == " ") {
               arr[1] = highlightWords(arr[1]);
             } else {
-              arr[1] = highlightWords(arr[1]).replace(/\s+/g, " ").replace(/<\/div>\s+<div/g, "</div>\n<hr/>\n<div").replace(/=<\/p>/g, "=").replace(/<\/ul>/g, "</p>").replace(/(<ul>|<\/li>)/g, '').replace(/<li\sclass='Sense'>/g, '<br/><br/>— ').replace(/\(/g, "( ").replace(/\)/g, " )");
+              arr[1] = highlightWords(arr[1]).replace(/\s+/g, " ").replace(/<\/div>\s+<div/g, "</div>\n<hr/>\n<div").replace(/=<\/p>/g, "=").replace(/<\/ul>/g, "</p>").replace(/<ul>/g, '').replace(/(<\/li>|<li\sclass='Sense'>)/g, '<br/>').replace(/\(/g, "( ").replace(/\)/g, " )");
             }
             var res = arr[0] + '<body>' + arr[1].replace(/<span><span>/g, "<span>").replace(/<\/span><\/span>/g, "</span>").replace(/<a /g, "<a target='_blank' style='text-decoration:none' ");
 
