@@ -186,9 +186,9 @@
   <script src="script.js"></script>
   <script>
 
-// TODO: improve loading from server with anchor; merge wordtree; phrase lookup with parser (ngrams, separate button); check by grammar books; credits
+// TODO: fix dashes; merge wordtree; phrase lookup with parser (ngrams, separate button); check by grammar books; credits
 // loadSyntax to verify dictionary pos (parse from dictionary); -> vocalise (diff)
-// v2: improve layout ('talmud' with https://packery.metafizzy.co/), TF use ?
+// v2: parse lessons on server and return html with #anchor instead of text; improve layout ('talmud' with https://packery.metafizzy.co/), TF use ?
 // if reloading by itself has run out of canvas :)
 
 
@@ -229,7 +229,7 @@ const gtframe = document.getElementsByClassName("google-translate-place")[0];
 
 const arc = document.getElementsByTagNameNS('http://www.w3.org/2000/svg', 'path')[0];
 
-const lemmatizer = new Lemmatizer();
+//const lemmatizer = new Lemmatizer();
 //const infs = ("s 's ' d ed ing en er est es").split(' ');
 
 var line = null;
@@ -389,14 +389,13 @@ var et = null;
           if (lesson[indx].charAt(1) == ' ') {
             ltwf.src = "#" + lesson[indx].split(" ")[1];
           } else {
-            var w = pos_arr[indx][0].replace(/·/g, "");
-            ltwf.src = "#" + w;
+            ltwf.src = "#" + lesson[indx].split("-")[1];
           }
 
           if (ltwf_.document.getElementById(lesson[indx].split(" ")[1])) {
             ltwf_.document.getElementById(lesson[indx].split(" ")[1]).scrollIntoView();
-          } else if (ltwf_.document.getElementById(w)) {
-            ltwf_.document.getElementById(w).scrollIntoView();
+          } else if (ltwf_.document.getElementById(lesson[indx].split("-")[1])) {
+            ltwf_.document.getElementById(lesson[indx].split("-")[1]).scrollIntoView();
           }
         }
         //ltwf.style.display = 'block';
@@ -416,7 +415,7 @@ var et = null;
             if (q.charAt(1) == " ") {
               arr[1] = highlightWords(arr[1]);
             } else {
-              arr[1] = highlightWords(arr[1]).replace(/\s+/g, " ").replace(/<\/div>\s+<div/g, "</div>\n<hr/>\n<div").replace(/=<\/p>/g, "=").replace(/<\/ul>/g, "</p>").replace(/(<ul>|<\/li>)/g, '').replace(/<li\sclass='Sense'>/g, '<br/>— ').replace(/\(/g, "( ").replace(/\)/g, " )");
+              arr[1] = highlightWords(arr[1]).replace(/\s+/g, " ").replace(/<\/div>\s+<div/g, "</div>\n<hr/>\n<div").replace(/=<\/p>/g, "=").replace(/<\/ul>/g, "</p>").replace(/(<ul>|<\/li>)/g, '').replace(/<li\sclass='Sense'>/g, '<br/><br/>— ').replace(/\(/g, "( ").replace(/\)/g, " )");
             }
             var res = arr[0] + '<body>' + arr[1].replace(/<span><span>/g, "<span>").replace(/<\/span><\/span>/g, "</span>").replace(/<a /g, "<a target='_blank' style='text-decoration:none' ");
 
@@ -428,10 +427,16 @@ var et = null;
 
             ltwf.onload = function() {
               setTimeout(function() {
-                ltwf.src = "#" + q.split(" ")[1];
+                if (q.charAt(1) == " ") {
+                  ltwf.src = "#" + q.split(" ")[1];
+                } else {
+                  ltwf.src = "#" + q.split("-")[1];
+                }
 
                 if (ltwf_.document.getElementById(q.split(" ")[1])) {
                   ltwf_.document.getElementById(q.split(" ")[1]).scrollIntoView();
+                } else if (ltwf_.document.getElementById(q.split("-")[1])) {
+                  ltwf_.document.getElementById(q.split("-")[1]).scrollIntoView();
                 }
                 //ltwf_.onscroll = function(e){tl_.scrollTo(0, ltwf_.scrollY);}
 
@@ -839,7 +844,7 @@ for (var i=0; i<pos_arr.length; i++) {
         lesson[i] = tmp_a[j+1];
         level[i] = (parseInt(lesson[i].charAt(2))-1) * 8 + ltr.indexOf(lesson[i].charAt(0)) + parseInt(lesson[i].slice(4))/32;
       } else {
-        lesson[i] = az[pos_arr[i][0].charAt(0)];
+        lesson[i] = az[pos_arr[i][0].charAt(0)] + "-" + pos_arr[i][0].replace(/·/g, "");
         level[i] = level[i-1];
         if (lesson[i] != lesson[i-1]) {
           level[i]++;
