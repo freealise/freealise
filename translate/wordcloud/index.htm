@@ -6,6 +6,34 @@
   <title>wordcloud</title>
   <link href='https://fonts.googleapis.com/css2?family=Averia+Sans+Libre&display=swap' rel='stylesheet'/>
   <link rel="stylesheet" href="style.css" />
+  <style>
+#dl span {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+.google-translate-place {
+    width: 480px;
+    height: 180px;
+    position:fixed;
+    left:0px;
+    top:32px;
+    display:none;
+}
+.google-translate-crop {
+    width: 480px;
+    height: 180px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+}
+.google-translate {
+    transform: scale(0.75);
+    transform-origin: 160px 160px;
+    position: relative;
+    left: -160px; top: -160px;
+    width: 2560px; height: 5120px;
+}
+  </style>
 </head>
 <body style="font-family:'Averia Sans Libre';margin:0;padding:0;">
 
@@ -23,7 +51,7 @@
 
 <span id="ipa_show" style="position:fixed;top:32px;left:16px;height:16px;width:256px;"></span>
 <ul id="dl" style="position:fixed;top:48px;left:0;color:black;width:256px;font-size:16px;"></ul>
-<input type="text" list="words" id="sel" style="font-family:'Averia Sans Libre';font-size:32px;position:fixed;bottom:0;left:50%;margin:0;padding:0;margin-left:-96px;height:64px;width:128px;" onchange="show(this.value);"/><button style="position:fixed;bottom:0;left:50%;margin:0;padding:0;margin-left:32px;height:64px;width:64px;">/\</button>
+<input type="text" list="words" id="sel" style="font-family:'Averia Sans Libre';font-size:32px;position:fixed;bottom:0;left:50%;margin:0;padding:0;margin-left:-100px;height:64px;width:128px;" onchange="show(this.value);"/><button style="position:fixed;bottom:0;left:50%;margin:0;padding:0;margin-left:32px;height:64px;width:64px;">/\</button>
 <datalist id="words"></datalist>
 
 <button style="position:fixed;bottom:0;right:0;width:128px;height:64px" onclick="selectWord(true);">-&gt;</button>
@@ -80,10 +108,19 @@
 <button style="font-size:24px;margin:0;padding:0;height:48px;width:64px;vertical-align:middle;" id="search" title="search" onclick="hideButtons(true);setTimeout(function(){highlight(selected);lookup(selected);},1);">⌕</button> <label for="all">all</label><input type="checkbox" style="margin:0;padding:0;height:48px;width:36px;vertical-align:middle;" id="all"/></div>
 <div id="sel_words" style="position:fixed;right:0;top:320px;width:128px;"></div>
 
-<span id="ldoce_toggle" style="position:fixed;top:0;left:16px;font-size:24px;" onclick="if(ldoce.style.display!='none'){ldoce.style.display='none';}else{ldoce.style.display='block';}">𝕚⃝</span>
+
+<a title="" id="gt_toggle" style="position:fixed;top:-8px;left:16px;font-size:36px;text-decoration:none;" onclick="if(gtframe.style.display!='block'){gtframe.style.display='block';}else{gtframe.style.display='none';}">⎘</a>
+<!--⎗-->
+<div class="google-translate-place">
+  <div class="google-translate-crop">
+    <iframe class="google-translate" src="https://www.google.com/search?igu=1&q=א+in+English+google+translate&authuser=0&hl=en-US"></iframe>
+  </div>
+</div>
+
+<span id="ldoce_toggle" style="position:fixed;top:0;left:64px;font-size:24px;" onclick="if(ldoce.style.display!='none'){ldoce.style.display='none';}else{ldoce.style.display='block';}">𝕚⃝</span>
 <iframe id="ldoce" style="display:none;position:fixed;top:32px;left:0;background-color:white" src="https://freeali.se/freealise/translate/dict/index.htm?lang=English" width=320 height=480></iframe>
 
-<a title="" id="lesson_toggle" style="position:fixed;top:-8px;left:64px;font-size:36px;text-decoration:none;" onclick="if(ltwf.style.display!='none'){ltwf.style.display='none';}else{ltwf.style.display='block';}">⎙</a>
+<a title="" id="lesson_toggle" style="position:fixed;top:-8px;left:112px;font-size:36px;text-decoration:none;" onclick="if(ltwf.style.display!='none'){ltwf.style.display='none';}else{ltwf.style.display='block';}">⎙</a>
 <iframe id="ltwf" style="display:none; top:32px; left:0px; width:320px; height:480px; position:fixed;" src="about:blank"></iframe>
 
 
@@ -149,7 +186,7 @@
   <script src="script.js"></script>
   <script>
 
-// TODO: ipa; gtranslate; fix wordlist; merge wordtree; check by grammar books; credits
+// TODO: improve loading from server with anchor; merge wordtree; phrase lookup with parser (ngrams, separate button); check by grammar books; credits
 // loadSyntax to verify dictionary pos (parse from dictionary); -> vocalise (diff)
 // v2: improve layout ('talmud' with https://packery.metafizzy.co/), TF use ?
 // if reloading by itself has run out of canvas :)
@@ -181,16 +218,18 @@ const pos_ = new RegExp("("+Object.keys(_pos).join("|")+")", "g");
 const pos_all = new RegExp("["+imp+"]", "g");
 const pos_not = new RegExp("[^"+imp+"]", "g");
 
+const key = new RegExp("("+Object.keys(keys).join("|")+")", "g");
 
 const exec = "https://script.google.com/macros/s/AKfycbyYo_zODFB1fWxUPO3hg-3CFh5NNLUVd7E8rtUfDpOuIKDftakLiiNEdIsFeliw_69e/exec";
 
 const ldoce = document.getElementById('ldoce');
 const ltwf = document.getElementById('ltwf');
 var ltwf_ = ltwf.contentWindow || (ltwf.contentDocument.document || ltwf.contentDocument);
+const gtframe = document.getElementsByClassName("google-translate-place")[0];
 
 const arc = document.getElementsByTagNameNS('http://www.w3.org/2000/svg', 'path')[0];
 
-const lemmatizer = new Lemmatizer();
+//const lemmatizer = new Lemmatizer();
 //const infs = ("s 's ' d ed ing en er est es").split(' ');
 
 var line = null;
@@ -222,7 +261,25 @@ var phrases = [];
 var ltr = 'ABCDEFGH';
 var lvl_old = -1;
 
+var lt_id = 'A,B,C,D,E,F,GH,IJK,LM,NO,P,QR,S,T,UVWXYZ';
+var ltrs = lt_id.replace(/\,/g, '').split('');
+var lt_id = lt_id.split(',');
+var az = {};
+for (var i=0; i<ltrs.length; i++) {
+  for (var j=0; j<lt_id.length; j++) {
+    if (lt_id[j].indexOf(ltrs[i]) > -1) {
+      az[ltrs[i]] = lt_id[j];
+      az[ltrs[i].toLowerCase()] = lt_id[j];
+    }
+  }
+}
+
 var et = null;
+
+
+      function loadFrame(word) {
+          document.getElementsByTagName('iframe')[1].src = 'https://www.google.com/search?igu=1&q='+word+'+in+English+google+translate&oq=google+translate&authuser=0&hl=en&lr=lang_en';
+      }
 
 
       function loadMorph(e) {
@@ -319,7 +376,7 @@ var et = null;
               p_ = "";
             }
             return "><ruby><span class='notranslate'><u onclick='window.parent.loadMorph(event);'>"+x.slice(1,-1).replace(/\u00A0/g, p_+"</u>\u00A0<u onclick='window.parent.loadMorph(event);'>")+p_+"</u></span><rp>`</rp><rt>"+x.slice(1,-1)+"</rt><rp>`</rp></ruby><";
-          }) + '<p><button class="notranslate" title="Say" id="say" onclick="window.parent.loadSpeech(`' + o.replace(/\"/g,"'") + '`);">&#x25B7;</button><small>' + s + '</small></p></p>';
+          }) + '<p><button class="notranslate" title="Say" id="say" onclick="window.parent.loadSpeech(`' + o.replace(/\"/g,"'").replace(/<br\/>/g, "") + '`);">&#x25B7;</button><small>' + s + '</small></p></p>';
         }).replace(/>who</g,'>who`<');
       }
 
@@ -329,10 +386,17 @@ var et = null;
           loadBasicWords(lesson[indx]);
           lvl_old = parseInt(level[indx]);
         } else {
-          ltwf.src = "#" + lesson[indx].split(" ")[1];
+          if (lesson[indx].charAt(1) == ' ') {
+            ltwf.src = "#" + lesson[indx].split(" ")[1];
+          } else {
+            var w = pos_arr[indx][0].replace(/·/g, "");
+            ltwf.src = "#" + w;
+          }
 
           if (ltwf_.document.getElementById(lesson[indx].split(" ")[1])) {
             ltwf_.document.getElementById(lesson[indx].split(" ")[1]).scrollIntoView();
+          } else if (ltwf_.document.getElementById(w)) {
+            ltwf_.document.getElementById(w).scrollIntoView();
           }
         }
         //ltwf.style.display = 'block';
@@ -340,7 +404,7 @@ var et = null;
 
 
       function loadBasicWords(q) {
-        //hideButtons(true);
+        hideButtons(true);
 
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
@@ -348,7 +412,13 @@ var et = null;
             var arr = this.responseText.split('<body>');
 
             arr[1] = highlightWords(arr[1]);
-            var res = arr[0] + '<body>' + highlightWords(arr[1]).replace(/<a /g, "<a target='_blank' style='text-decoration:none' ");
+
+            if (q.charAt(1) == " ") {
+              arr[1] = highlightWords(arr[1]);
+            } else {
+              arr[1] = highlightWords(arr[1]).replace(/\s+/g, " ").replace(/<\/div>\s+<div/g, "</div>\n<hr/>\n<div").replace(/=<\/p>/g, "=").replace(/<\/ul>/g, "</p>").replace(/(<ul>|<\/li>)/g, '').replace(/<li\sclass='Sense'>/g, '<br/>— ').replace(/\(/g, "( ").replace(/\)/g, " )");
+            }
+            var res = arr[0] + '<body>' + arr[1].replace(/<span><span>/g, "<span>").replace(/<\/span><\/span>/g, "</span>").replace(/<a /g, "<a target='_blank' style='text-decoration:none' ");
 
             res = splitWords(res);
             
@@ -363,12 +433,10 @@ var et = null;
                 if (ltwf_.document.getElementById(q.split(" ")[1])) {
                   ltwf_.document.getElementById(q.split(" ")[1]).scrollIntoView();
                 }
-                document.getElementById('root').scrollIntoView();
-
                 //ltwf_.onscroll = function(e){tl_.scrollTo(0, ltwf_.scrollY);}
 
-                //hideButtons(false);
-              }, 1000);
+                hideButtons(false);
+              }, 40);
             };
 
             //ltwf.style.display = 'block';
@@ -381,6 +449,11 @@ var et = null;
 
 
       function hideButtons(v) {
+        if (v === true) {
+          document.body.style.filter = "grayscale(1)";
+        } else {
+          document.body.style.filter = "none";
+        }
         document.getElementById('search').disabled = v;
         for (var i=0; i<document.getElementsByTagName('button').length; i++) {
           document.getElementsByTagName('button')[i].disabled = v;
@@ -541,7 +614,13 @@ var et = null;
         }
         
         if (df) {
-          document.getElementById('dl').innerHTML = '<b>' + q + '</b><br/><li>'+df.replace(/\w+/g, function(x){ return '<span onclick="show(this.textContent);">'+x+'</span>'; }).replace(/\n/g, '</li><li>')+'</li>';
+          document.getElementById('dl').innerHTML = '<b>' + q + '</b><br/><li>'+df.replace(/[a-zA-Z]+/g, function(x){ return '<span onclick="show(this.textContent);">'+x+'</span>'; }).replace(/\n/g, '</li><li>').replace(/ \d+\-\d+\)/g, function(x){
+            for (var k=0; k<lesson.length; k++) {
+              if (lesson[k].slice(2) == x.slice(1,-1)) {
+                return " <a onclick='loadWord(" + k + ");'><u>⎙</u></a>)";
+              } 
+            } 
+          })+'</li>';
           df = df.replace(/[^\w\s\-]/g,'').replace(/\n/g,' ').split(' ');
           
         } else {
@@ -551,7 +630,13 @@ var et = null;
               if (tmp[j].replace(/[^\w\s\-]/g,'') == q) {
                 df = def[Object.keys(def)[i]];
 
-                document.getElementById('dl').innerHTML = '<b>' + Object.keys(def)[i] + '</b><br/><li>'+df.replace(/\w+/g, function(x){ return '<span onclick="show(this.textContent);">'+x+'</span>'; }).replace(/\n/g, '</li><li>')+'</li>';
+                document.getElementById('dl').innerHTML = '<b>' + Object.keys(def)[i] + '</b><br/><li>'+df.replace(/[a-zA-Z]+/g, function(x){ return '<span onclick="show(this.textContent);">'+x+'</span>'; }).replace(/\n/g, '</li><li>').replace(/ \d+\-\d+\)/g, function(x){
+            for (var k=0; k<lesson.length; k++) {
+              if (lesson[k].slice(2) == x.slice(1,-1)) {
+                return " <a onclick='loadWord(" + k + ");'><u>⎙</u></a>)";
+              } 
+            } 
+          })+'</li>';
                 df = Object.keys(def)[i] + ' ' + df;
                 df = df.replace(/[^\w\s\-]/g,'').replace(/\n/g,' ').split(' ');
               }
@@ -743,7 +828,8 @@ for (var i=0; i<pos_arr.length; i++) {
 
   for (var j=0; j<tmp_a.length; j++) {
     if (tmp_a[j].search(/[A-Z]/) == 0) {
-      ipa[i] = tmp_a[j].toLowerCase().replace(/0/g,"·").replace(/1/g,"`").replace(/2/g,",");
+      ipa[i] = tmp_a[j].replace(key, function(x){ return keys[x]; }).replace(/0/g,"·").replace(/1/g,"`").replace(/2/g,",");
+      //ipa[i] = tmp_a[j].toLowerCase().replace(/0/g,"·").replace(/1/g,"`").replace(/2/g,",");
       st_p = tmp_a[j].replace(/\D/g, "");
       st_ = st_p.indexOf("1") + 1;
       vowl_n = st_p.length;
@@ -752,6 +838,12 @@ for (var i=0; i<pos_arr.length; i++) {
       if (tmp_a[j+1].search(/\D/) > -1) {
         lesson[i] = tmp_a[j+1];
         level[i] = (parseInt(lesson[i].charAt(2))-1) * 8 + ltr.indexOf(lesson[i].charAt(0)) + parseInt(lesson[i].slice(4))/32;
+      } else {
+        lesson[i] = az[pos_arr[i][0].charAt(0)];
+        level[i] = level[i-1];
+        if (lesson[i] != lesson[i-1]) {
+          level[i]++;
+        }
       }
       break;
     }
