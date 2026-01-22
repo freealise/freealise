@@ -109,18 +109,22 @@
 <div id="sel_words" style="position:fixed;right:0;top:320px;width:128px;"></div>
 
 
-<a title="" id="gt_toggle" style="position:fixed;top:-8px;left:16px;font-size:36px;text-decoration:none;" onclick="if(gtframe.style.display!='block'){gtframe.style.display='block';}else{gtframe.style.display='none';}">⎘</a>
+<a title="" id="ngram_toggle" style="position:fixed;top:-8px;left:16px;font-size:36px;text-decoration:none;" onclick="if(ngram.style.display!='none'){ngram.style.display='none';}else{ngram.style.display='block';}">⎂&#x330;</a>
+<div id="ngram" style="display:none; top:32px; left:0px; width:360px; height:210px; overflow-x: scroll; overflow-y: hidden; position:fixed;"><input style='width:320px' type='text' onchange='document.getElementById("ngram_chart").src=document.getElementById("ngram_chart").src.split("&content=")[0]+"&content="+this.value;'/><br/>
+<iframe id="ngram_chart" src="https://books.google.com/ngrams/interactive_chart?year_start=1500&year_end=2022&corpus=en&smoothing=50&content=*" width=450 height=256 marginwidth=0 marginheight=0 hspace=0 vspace=0 frameborder=0 scrolling=no></iframe></div>
+
+<a title="" id="gt_toggle" style="position:fixed;top:-8px;left:64px;font-size:36px;text-decoration:none;" onclick="if(gtframe.style.display!='block'){gtframe.style.display='block';}else{gtframe.style.display='none';}">⎘</a>
 <!--⎗-->
 <div class="google-translate-place">
   <div class="google-translate-crop">
-    <iframe class="google-translate" src="https://www.google.com/search?igu=1&q=א+in+English+google+translate&authuser=0&hl=en-US"></iframe>
+    <iframe class="google-translate" src="https://www.google.com/search?igu=1&q=the+in+Hebrew+google+translate&authuser=0&hl=en-US"></iframe>
   </div>
 </div>
 
-<span id="ldoce_toggle" style="position:fixed;top:0;left:64px;font-size:24px;" onclick="if(ldoce.style.display!='none'){ldoce.style.display='none';}else{ldoce.style.display='block';}">𝕚⃝</span>
+<span id="ldoce_toggle" style="position:fixed;top:0;left:112px;font-size:24px;" onclick="if(ldoce.style.display!='none'){ldoce.style.display='none';}else{ldoce.style.display='block';}">𝕚⃝</span>
 <iframe id="ldoce" style="display:none;position:fixed;top:32px;left:0;background-color:white" src="https://freeali.se/freealise/translate/dict/index.htm?lang=English" width=320 height=480></iframe>
 
-<a title="" id="lesson_toggle" style="position:fixed;top:-8px;left:112px;font-size:36px;text-decoration:none;" onclick="if(ltwf.style.display!='none'){ltwf.style.display='none';}else{ltwf.style.display='block';}">⎙</a>
+<a title="" id="lesson_toggle" style="position:fixed;top:-8px;left:160px;font-size:36px;text-decoration:none;" onclick="if(ltwf.style.display!='none'){ltwf.style.display='none';}else{ltwf.style.display='block';}">⎙</a>
 <iframe id="ltwf" style="display:none; top:32px; left:0px; width:320px; height:480px; position:fixed;" src="about:blank"></iframe>
 
 
@@ -186,8 +190,9 @@
   <script src="script.js"></script>
   <script>
 
-// TODO: merge wordtree; phrase lookup with parser (ngrams, separate button); check by grammar books; credits
-// loadSyntax to verify dictionary pos (parse from dictionary); -> vocalise (diff)
+// TODO: merge wordtree; check by grammar books; credits
+// loadSyntax to verify dictionary pos (parse from dictionary)
+
 // v2: divide long definitions for pronouncer; parse lessons on server and return html with #anchor instead of text; improve layout ('talmud' with https://packery.metafizzy.co/), TF use ?
 // if reloading by itself has run out of canvas :)
 
@@ -226,6 +231,7 @@ const ldoce = document.getElementById('ldoce');
 const ltwf = document.getElementById('ltwf');
 var ltwf_ = ltwf.contentWindow || (ltwf.contentDocument.document || ltwf.contentDocument);
 const gtframe = document.getElementsByClassName("google-translate-place")[0];
+const ngram_chart = document.getElementById('ngram_chart');
 
 const arc = document.getElementsByTagNameNS('http://www.w3.org/2000/svg', 'path')[0];
 
