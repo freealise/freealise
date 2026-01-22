@@ -188,7 +188,7 @@
 
 // TODO: merge wordtree; phrase lookup with parser (ngrams, separate button); check by grammar books; credits
 // loadSyntax to verify dictionary pos (parse from dictionary); -> vocalise (diff)
-// v2: parse lessons on server and return html with #anchor instead of text; improve layout ('talmud' with https://packery.metafizzy.co/), TF use ?
+// v2: divide long definitions for pronouncer; parse lessons on server and return html with #anchor instead of text; improve layout ('talmud' with https://packery.metafizzy.co/), TF use ?
 // if reloading by itself has run out of canvas :)
 
 
@@ -415,7 +415,7 @@ var et = null;
             if (q.charAt(1) == " ") {
               arr[1] = highlightWords(arr[1]);
             } else {
-              arr[1] = highlightWords(arr[1]).replace(/\s+/g, " ").replace(/<\/div>\s+<div/g, "</div>\n<hr/>\n<div").replace(/=<\/p>/g, "=").replace(/<\/ul>/g, "</p>").replace(/<ul>/g, '').replace(/(<\/li>|<li\sclass='Sense'>)/g, '<br/>').replace(/\(/g, "( ").replace(/\)/g, " )");
+              arr[1] = highlightWords(arr[1]).replace(/\s+/g, " ").replace(/<\/div>\s+<div/g, "</div>\n<hr/>\n<div").replace(/<\/ul>/g, "").replace(/<ul>/g, '\n').replace(/<\/li>/g, "</p>\n").replace(/<li\sclass='Sense'>/g, "<p class='Definition'>").replace(/\(/g, "( ").replace(/\)/g, " )");
             }
             var res = arr[0] + '<body>' + arr[1].replace(/<span><span>/g, "<span>").replace(/<\/span><\/span>/g, "</span>").replace(/<a /g, "<a target='_blank' style='text-decoration:none' ");
 
