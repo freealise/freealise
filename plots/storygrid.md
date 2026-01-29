@@ -12,5 +12,6 @@ character represents theme metaphorically and is rationally the best entity to r
 clarify the subject (as keywords) but never attempt to know the theme from the start (killjoy and spoiler)  
   
 Every villain is either stupid, a loser, or insane.  
+Internal genres derive from the holy books.  
   
 https://trends.google.com/  
