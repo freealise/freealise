@@ -7,6 +7,9 @@
   <link href='https://fonts.googleapis.com/css2?family=Averia+Sans+Libre&display=swap' rel='stylesheet'/>
   <link rel="stylesheet" href="style.css" />
   <style>
+#credits a {
+  color: gray;
+}
 #dl span {
   text-decoration: underline;
   text-decoration-style: dotted;
@@ -86,7 +89,7 @@
 </select>
 
 <select style="position:fixed;top:192px;right:0;width:128px;height:48px" id="pos" onchange="pos=this.value;filter();">
-  <option value="">part of speech</option>
+  <option value="">⎂ part of speech</option>
   <option value="[">[noun]</option>
   <optgroup> <!-- label="verbs" -->
     <option value="<">&lt;verb&gt;</option>
@@ -109,9 +112,9 @@
 <div id="sel_words" style="position:fixed;right:0;top:320px;width:128px;"></div>
 
 
-<a title="" id="ngram_toggle" style="position:fixed;top:-8px;left:16px;font-size:36px;text-decoration:none;" onclick="if(ngram.style.display!='none'){ngram.style.display='none';}else{ngram.style.display='block';}">⎂&#x330;</a>
-<div id="ngram" style="display:none; top:32px; left:0px; width:360px; height:210px; overflow-x: scroll; overflow-y: hidden; position:fixed;"><input style='width:320px' type='text' onchange='document.getElementById("ngram_chart").src=document.getElementById("ngram_chart").src.split("&content=")[0]+"&content="+this.value;'/><br/>
-<iframe id="ngram_chart" src="https://books.google.com/ngrams/interactive_chart?year_start=1500&year_end=2022&corpus=en&smoothing=50&content=*" width=450 height=256 marginwidth=0 marginheight=0 hspace=0 vspace=0 frameborder=0 scrolling=no></iframe></div>
+<a title="" id="ngram_toggle" style="position:fixed;top:-8px;left:16px;font-size:36px;text-decoration:none;" onclick="if(ngram.style.display!='none'){ngram.style.display='none';}else{ngram.style.display='block';}">&#x237C;</a>
+<div id="ngram" style="display:none; top:32px; left:0px; width:360px; height:210px; overflow-x: scroll; overflow-y: hidden; position:fixed;"><input style='width:300px' type='text' placeholder="phrase finder" onchange='document.getElementById("ngram_chart").src=document.getElementById("ngram_chart").src.split("&content=")[0]+"&content="+this.value;'/><button>v</button><br/>
+<iframe id="ngram_chart" src="https://books.google.com/ngrams/interactive_chart?year_start=1500&year_end=2022&corpus=en&smoothing=50&content=" width=450 height=256 marginwidth=0 marginheight=0 hspace=0 vspace=0 frameborder=0 scrolling=no style="width:450px;height:256px"></iframe></div>
 
 <a title="" id="gt_toggle" style="position:fixed;top:-8px;left:64px;font-size:36px;text-decoration:none;" onclick="if(gtframe.style.display!='block'){gtframe.style.display='block';}else{gtframe.style.display='none';}">⎘</a>
 <!--⎗-->
@@ -121,10 +124,13 @@
   </div>
 </div>
 
-<span id="ldoce_toggle" style="position:fixed;top:0;left:112px;font-size:24px;" onclick="if(ldoce.style.display!='none'){ldoce.style.display='none';}else{ldoce.style.display='block';}">𝕚⃝</span>
+<a title="" id="ldoce_toggle" style="position:fixed;top:0;left:112px;font-size:24px;" onclick="if(ldoce.style.display!='none'){ldoce.style.display='none';}else{ldoce.style.display='block';}">𝕚⃝</a>
 <iframe id="ldoce" style="display:none;position:fixed;top:32px;left:0;background-color:white" src="https://freeali.se/freealise/translate/dict/index.htm?lang=English" width=320 height=480></iframe>
 
-<a title="" id="lesson_toggle" style="position:fixed;top:-8px;left:160px;font-size:36px;text-decoration:none;" onclick="if(ltwf.style.display!='none'){ltwf.style.display='none';}else{ltwf.style.display='block';}">⎙</a>
+<a title="" id="grammar_toggle" style="position:fixed;top:0px;left:160px;font-size:24px;" onclick="if(grammar.style.display!='none'){grammar.style.display='none';}else{grammar.style.display='block';}">𝐖</a>
+<iframe id="grammar" style="display:none; top:32px; left:0px; width:320px; height:480px; position:fixed;" src="https://simple.wikipedia.org/wiki/English_grammar"></iframe><!-- https://simple.wiktionary.org/ -->
+
+<a title="" id="lesson_toggle" style="position:fixed;top:-8px;left:208px;font-size:36px;text-decoration:none;" onclick="if(ltwf.style.display!='none'){ltwf.style.display='none';}else{ltwf.style.display='block';}">⎙</a>
 <iframe id="ltwf" style="display:none; top:32px; left:0px; width:320px; height:480px; position:fixed;" src="about:blank"></iframe>
 
 
@@ -187,13 +193,23 @@
     </textarea>
 
 
+<a title="" id="credits_toggle" style="position:fixed;top:0px;right:160px;font-size:36px;text-decoration:none;" onclick="if(credits.style.display!='none'){credits.style.display='none';}else{credits.style.display='block';}">&nbsp;...&nbsp;</a>
+
+<div id="credits" style="display:none;border:1px dashed lightgray;padding:8px;text-align:justify;background-color:white;position:fixed;left:50%;top:50%;margin-left:-128px;margin-top:-240px;width:256px;height:480px">
+<b>Phonetics</b>: IPA from <a href="http://www.speech.cs.cmu.edu/cgi-bin/cmudict" target="_blank">CMU Pronouncing Dictionary</a>, text-to-speech from Google.<br/>
+<b>Morphology</b>: <a href="https://github.com/takafumir/javascript-lemmatizer" target="_blank">lemmatizer</a> by Takafumi Yamano, inflection from <a href="https://books.google.com/ngrams" target="_blank">Google Books Ngrams</a>.<br/>
+<b>Vocabulary</b>: theory of semantic primitives by Polish professor Andrzej Bogusławski, formally developed by Anna Wierzbicka and Cliff Goddard, implemented as <a href="https://learnthesewordsfirst.com/" target="_blank">Learn These Words First</a> by David Bullock according to Longman Dictionary of Contemporary English, <a href="https://github.com/jaydenlo08/dictionary" target="_blank">parsed</a> out of StarDict.<br/>
+<b>Grammar</b>: syntax decoding method by Vera F. Birkenbihl (thanks to <a href="https://swedishmadeeasy.com/" target="_blank">Anneli Haake</a> for reference) automated with Google Translate, and <a href="https://simple.wikipedia.org/" target="_blank">Simple English Wikipedia</a>.<br/>
+<a href="http://timdream.org/wordcloud2.js/" target="_blank">Wordcloud</a> by Tim Guan-tin Chien.
+</div>
+
+
   <script src="script.js"></script>
   <script>
 
-// TODO: merge wordtree; check by grammar books; credits
-// loadSyntax to verify dictionary pos (parse from dictionary)
+// TODO: documentation
 
-// v2: divide long definitions for pronouncer; parse lessons on server and return html with #anchor instead of text; improve layout ('talmud' with https://packery.metafizzy.co/), TF use ?
+// v2: divide long definitions for pronouncer; parse lessons on server and return html with #anchor instead of text; Packery with four triangles >< ?; TF use ?
 // if reloading by itself has run out of canvas :)
 
 
@@ -228,6 +244,7 @@ const key = new RegExp("("+Object.keys(keys).join("|")+")", "g");
 const exec = "https://script.google.com/macros/s/AKfycbyYo_zODFB1fWxUPO3hg-3CFh5NNLUVd7E8rtUfDpOuIKDftakLiiNEdIsFeliw_69e/exec";
 
 const ldoce = document.getElementById('ldoce');
+const grammar = document.getElementById('grammar');
 const ltwf = document.getElementById('ltwf');
 var ltwf_ = ltwf.contentWindow || (ltwf.contentDocument.document || ltwf.contentDocument);
 const gtframe = document.getElementsByClassName("google-translate-place")[0];
