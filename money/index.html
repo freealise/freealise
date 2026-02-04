@@ -1,0 +1,11 @@
+var arc = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+                arc.setAttribute('cx', txt[i].getAttribute('x')-6);
+                arc.setAttribute('cy', txt[i].getAttribute('y')-2);
+                arc.setAttribute('stroke', 'darkgray');
+                arc.setAttribute('stroke-width', '2');
+                arc.setAttribute('fill', 'none');
+                arc.setAttribute('r', '1');
+                arc.setAttribute('pathLength', '360');
+                arc.setAttribute('stroke-dasharray', ''+(22.5*pb)+' '+(360-22.5*pb));
+                arc.setAttribute('transform', 'rotate(-90 '+arc.getAttribute('cx')+' '+arc.getAttribute('cy')+')');
+                g.appendChild(arc);
