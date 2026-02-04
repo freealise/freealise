@@ -1,3 +1,13 @@
+multilingual phonetic keyboard (with swipe input):  
+   > f2, numeric row for base pitch and sonority  
+ v  
+f1   2 keys at once for sibilance  
+  
+map pictograms to pronounciation (Antarctic language)  
+(direction, not position, aligns to phoneme ?)  
+__________________
+
+
 polyphonic theremin with camera and opencv (latency ?):  
 use as feedback for spectrogram drawing on paper, or voice with formant filters  
 AM and comb filters of synchronized frequency (delays) or convolver for spectrum  
