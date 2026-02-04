@@ -43,6 +43,15 @@
         
         var view = new google.visualization.DataView(data);
         view.setColumns([0,1,2,3]);
+        view.setRows(view.getFilteredRows([{column: 0, test: (value, rowId, columnId, datatable) => { 
+          var found = false;
+          var w = new RegExp(filter, "g");
+          if (value.search(filter) >= 0) {
+            console.log(filter +' '+value);
+            found = true;
+          }
+          return found;
+        }}]));
         chart_lines.draw(view, options_lines);
         */
 
