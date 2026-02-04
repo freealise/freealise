@@ -5,6 +5,8 @@ f1   2 keys at once for sibilance
   
 map pictograms to pronounciation (Antarctic language)  
 (direction, not position, aligns to phoneme ?)  
+
+phonemes ordered according to SSP
 __________________
 
 
