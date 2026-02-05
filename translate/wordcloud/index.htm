@@ -7,8 +7,12 @@
   <link href='https://fonts.googleapis.com/css2?family=Averia+Sans+Libre&display=swap' rel='stylesheet'/>
   <link rel="stylesheet" href="style.css" />
   <style>
+a {
+  text-decoration:none;
+}
 #credits a {
   color: gray;
+  text-decoration: underline;
 }
 #dl span {
   text-decoration: underline;
@@ -54,11 +58,11 @@
 
 <span id="ipa_show" style="position:fixed;top:32px;left:16px;height:16px;width:256px;"></span>
 <ul id="dl" style="position:fixed;top:48px;left:0;color:black;width:256px;font-size:16px;"></ul>
-<input type="text" list="words" id="sel" style="font-family:'Averia Sans Libre';font-size:32px;position:fixed;bottom:0;left:50%;margin:0;padding:0;margin-left:-100px;height:64px;width:128px;" onchange="show(this.value);"/><button style="position:fixed;bottom:0;left:50%;margin:0;padding:0;margin-left:32px;height:64px;width:64px;">/\</button>
+<input type="text" list="words" id="sel" style="font-family:'Averia Sans Libre';font-size:32px;position:fixed;bottom:0;left:50%;margin:0;padding:0;margin-left:-100px;height:64px;width:128px;" onchange="show(this.value);"/><button style="position:fixed;bottom:0;left:50%;margin:0;padding:0;margin-left:32px;height:64px;width:64px;">▵</button>
 <datalist id="words"></datalist>
 
-<button style="position:fixed;bottom:0;right:0;width:128px;height:64px" onclick="selectWord(true);">-&gt;</button>
-<button style="position:fixed;bottom:0;left:0;width:128px;height:64px" onclick="selectWord(false);">&lt;-</button>
+<button style="position:fixed;bottom:0;right:0;width:128px;height:64px;font-size:48px;" onclick="selectWord(true);">▸</button>
+<button style="position:fixed;bottom:0;left:0;width:128px;height:64px;font-size:16px;letter-spacing:-0.25em" onclick="selectWord(false);">◃◃</button>
 <input style="position:fixed;top:0;left:50%;margin-left:-64px;width:128px;height:64px" type="range" min="0.0625" max="16" value="1" step="0.001" id="zoom" oninput="zoom(this.value);">
 
 <label for="letters" style="font-size:16px;position:fixed;top:8px;right:36px;height:16px">length</label><input style="position:fixed;top:0;right:0;width:128px;height:64px" type="range" min="0" max="14" value="0" step="1" id="letters" oninput="ln=this.value;filter();">
@@ -112,11 +116,14 @@
 <div id="sel_words" style="position:fixed;right:0;top:320px;width:128px;"></div>
 
 
-<a title="" id="ngram_toggle" style="position:fixed;top:-8px;left:16px;font-size:36px;text-decoration:none;" onclick="if(ngram.style.display!='none'){ngram.style.display='none';}else{ngram.style.display='block';}">&#x237C;</a>
-<div id="ngram" style="display:none; top:32px; left:0px; width:360px; height:210px; overflow-x: scroll; overflow-y: hidden; position:fixed;"><input style='width:300px' type='text' placeholder="phrase finder" onchange='document.getElementById("ngram_chart").src=document.getElementById("ngram_chart").src.split("&content=")[0]+"&content="+this.value;'/><button>v</button><br/>
+<a title="" id="grammar_toggle" style="position:fixed;top:0px;left:16px;font-size:24px;" onclick="if(grammar.style.display!='none'){grammar.style.display='none';}else{grammar.style.display='block';}">𝐖</a>
+<iframe id="grammar" style="display:none; top:32px; left:0px; width:320px; height:480px; position:fixed;" src="https://simple.wikipedia.org/wiki/English_grammar"></iframe><!-- https://simple.wiktionary.org/ -->
+
+<a title="" id="ngram_toggle" style="position:fixed;top:-8px;left:64px;font-size:36px;" onclick="if(ngram.style.display!='none'){ngram.style.display='none';}else{ngram.style.display='block';}">&#x237C;</a>
+<div id="ngram" style="display:none; top:32px; left:0px; width:360px; height:210px; overflow-x: scroll; overflow-y: hidden; position:fixed;"><input style='width:300px' type='text' placeholder="phrase finder" onchange='document.getElementById("ngram_chart").src=document.getElementById("ngram_chart").src.split("&content=")[0]+"&content="+this.value;'/><button>▿</button><br/>
 <iframe id="ngram_chart" src="https://books.google.com/ngrams/interactive_chart?year_start=1500&year_end=2022&corpus=en&smoothing=50&content=" width=450 height=256 marginwidth=0 marginheight=0 hspace=0 vspace=0 frameborder=0 scrolling=no style="width:450px;height:256px"></iframe></div>
 
-<a title="" id="gt_toggle" style="position:fixed;top:-8px;left:64px;font-size:36px;text-decoration:none;" onclick="if(gtframe.style.display!='block'){gtframe.style.display='block';}else{gtframe.style.display='none';}">⎘</a>
+<a title="" id="gt_toggle" style="position:fixed;top:-8px;left:112px;font-size:36px;" onclick="if(gtframe.style.display!='block'){gtframe.style.display='block';}else{gtframe.style.display='none';}">⎘</a>
 <!--⎗-->
 <div class="google-translate-place">
   <div class="google-translate-crop">
@@ -124,13 +131,10 @@
   </div>
 </div>
 
-<a title="" id="ldoce_toggle" style="position:fixed;top:0;left:112px;font-size:24px;" onclick="if(ldoce.style.display!='none'){ldoce.style.display='none';}else{ldoce.style.display='block';}">𝕚⃝</a>
+<a title="" id="ldoce_toggle" style="position:fixed;top:0;left:160px;font-size:24px;" onclick="if(ldoce.style.display!='none'){ldoce.style.display='none';}else{ldoce.style.display='block';}">𝕚⃝</a>
 <iframe id="ldoce" style="display:none;position:fixed;top:32px;left:0;background-color:white" src="https://freeali.se/freealise/translate/dict/index.htm?lang=English" width=320 height=480></iframe>
 
-<a title="" id="grammar_toggle" style="position:fixed;top:0px;left:160px;font-size:24px;" onclick="if(grammar.style.display!='none'){grammar.style.display='none';}else{grammar.style.display='block';}">𝐖</a>
-<iframe id="grammar" style="display:none; top:32px; left:0px; width:320px; height:480px; position:fixed;" src="https://simple.wikipedia.org/wiki/English_grammar"></iframe><!-- https://simple.wiktionary.org/ -->
-
-<a title="" id="lesson_toggle" style="position:fixed;top:-8px;left:208px;font-size:36px;text-decoration:none;" onclick="if(ltwf.style.display!='none'){ltwf.style.display='none';}else{ltwf.style.display='block';}">⎙</a>
+<a title="" id="lesson_toggle" style="position:fixed;top:-18px;left:208px;font-size:48px;" onclick="if(ltwf.style.display!='none'){ltwf.style.display='none';}else{ltwf.style.display='block';}">⎙</a>
 <iframe id="ltwf" style="display:none; top:32px; left:0px; width:320px; height:480px; position:fixed;" src="about:blank"></iframe>
 
 
@@ -207,9 +211,7 @@
   <script src="script.js"></script>
   <script>
 
-// TODO: documentation
-
-// v2: divide long definitions for pronouncer; parse lessons on server and return html with #anchor instead of text; Packery with four triangles >< ?; TF use ?
+// v2: divide long definitions for pronouncer; parse lessons on server and return html with #anchor instead of text; Packery with four triangles >< ?; TF USE ?; screencast instead of tour
 // if reloading by itself has run out of canvas :)
 
 
@@ -464,11 +466,10 @@ var et = null;
                 //ltwf_.onscroll = function(e){tl_.scrollTo(0, ltwf_.scrollY);}
 
                 hideButtons(false);
+                ltwf.style.display='block';
+                ltwf.blur();
               }, 40);
             };
-
-            //ltwf.style.display = 'block';
-            //ltwf.blur();
           }
         };
         xhttp.open("GET", exec + "?a=nsm&q=" + q.replace(" ", "_"), true);
