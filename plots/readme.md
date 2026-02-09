@@ -1,4 +1,4 @@
-- Freealise is a band :) 'Thou Shalt Not Swear' (political program in lyrics)  
+- Freealise is a band :) (Bernie Sanders' follower political program in lyrics)  
   
 - story of Moschiach as a Dark Lord ("...and with your evil inclination")  
   
