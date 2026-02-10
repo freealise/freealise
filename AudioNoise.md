@@ -6,4 +6,4 @@ https://github.com/AppGeo/web-audio-examples
   
 math equation input keyboard for tune and spectrum (not waveform)  
   
-polyphonic whistle  
+polyphonic whistle with am and notch filter  
