@@ -5,3 +5,5 @@ https://github.com/AppGeo/web-audio-examples
 & piezoelement for 4th dimension; control sound location for movies  
   
 math equation input keyboard for tune and spectrum (not waveform)  
+  
+polyphonic whistle  
