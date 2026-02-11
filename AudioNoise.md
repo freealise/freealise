@@ -3,3 +3,5 @@ Would suggest to use a large foot-operated trackball mouse along with the pedal 
   
 https://github.com/AppGeo/web-audio-examples  
 & piezoelement for 4th dimension; control sound location for movies  
+  
+keyboard interface for tune, math equation for spectrum (not directly waveform)
