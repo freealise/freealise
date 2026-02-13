@@ -15,3 +15,5 @@ Every villain is either stupid, a loser, or insane.
 Internal genres derive from the holy books.  
   
 https://trends.google.com/  
+  
+genres align to the sefirot through the hierarchy of needs  
