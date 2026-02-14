@@ -5,4 +5,5 @@ https://github.com/AppGeo/web-audio-examples
 & piezoelement for 4th dimension; control sound location for movies  
   
 waveshaper transfer function  
+convolver impulse response  
 test pitch shifter  
