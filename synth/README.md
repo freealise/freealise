@@ -1,5 +1,6 @@
 FFT-based vocoder  
 FFT sliders for tune, vowels and spectrum  
+ASCII spectrogram sequencer  
   
 multilingual phonetic keyboard (with swipe input):  
    > f2, numeric row for base pitch and sonority  
