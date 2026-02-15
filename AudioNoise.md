@@ -14,3 +14,5 @@ It is usually easier to analyze systems using transfer functions as opposed to i
 To determine an output directly in the time domain requires the convolution of the input with the impulse response. When the transfer function and the Laplace transform of the input are known, this convolution may be more complicated than the alternative of multiplying two functions in the frequency domain.
 
 https://en.wikipedia.org/wiki/Impulse_response#Mathematical_considerations  
+https://en.wikipedia.org/wiki/Transfer_function  
+https://en.wikipedia.org/wiki/Laplace_transform  
