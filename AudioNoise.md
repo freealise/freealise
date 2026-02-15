@@ -6,4 +6,5 @@ https://github.com/AppGeo/web-audio-examples
   
 waveshaper transfer function (x|y of trackball)  
 convolver impulse response (y)  
+upwards compressor-sustainer  
 test pitch shifter  
