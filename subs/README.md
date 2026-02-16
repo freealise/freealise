@@ -32,5 +32,4 @@ to separate recording into tracks: mute any part (not just the center) by propor
 for denoising average several frames, use median filter  
 combine animation with audioplays  
   
-script in json with javascript functions (most like coding, least awkward)  
-pseudocode is poetry; OOP ?  
+script in ascii (most like coding, least awkward)  
