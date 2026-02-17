@@ -7,6 +7,3 @@ y: volume, x: pitch, z: am
   
 https://github.com/AppGeo/web-audio-examples  
 & piezoelement for 4th dimension; control sound location for movies  
-  
-upwards compressor-sustainer  
-test pitch shifter for arp  
