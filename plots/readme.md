@@ -1,3 +1,5 @@
+- Gospel of Mary as a song  
+  
 - Bernie Sanders' follower political program in lyrics  
   
 - story of Moschiach as a Dark Lord ("...and with your evil inclination")  
