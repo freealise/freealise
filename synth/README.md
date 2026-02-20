@@ -2,6 +2,8 @@ FFT-based vocoder
 ASCII spectrogram sequencer  
 http://www.falstad.com/dfilter/  
   
+deliberately produce a random sequence by pitch, length, volume and spectrum, where the probabilities are also recursively random and not even (fail)  
+  
 multilingual phonetic keyboard (with swipe input):  
    > f2, numeric row for base pitch and sonority  
  v  
