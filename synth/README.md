@@ -1,5 +1,4 @@
 FFT-based vocoder  
-FFT sliders for tune, note length, rhythm, vowels and spectrum (the result is when an idea emerges)  
 ASCII spectrogram sequencer  
 http://www.falstad.com/dfilter/  
   
