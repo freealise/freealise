@@ -60,6 +60,7 @@
        myAudio.srcObject = dest.stream;
        myAudio.playbackRate = 1.0;        //not possible to set playback rate of a stream
        //myAudio.preservesPitch = true;   //default, experimental
+       //can be a pitch shufter if used twice with and without this
        
        mediaRecorder = new MediaRecorder(dest.stream);
 
