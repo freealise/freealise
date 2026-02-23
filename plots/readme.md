@@ -1,6 +1,6 @@
 - Gospel of Mary as a song  
   
-- Bernie Sanders' follower political program in lyrics  
+- Pirate Party political program as prompt for lyrics  
   
 - story of Moschiach as a Dark Lord ("...and with your evil inclination")  
   
