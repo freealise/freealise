@@ -1,0 +1,1 @@
+abs the wave, take the average, multiply every sample by the ratio between the average and initial average volume
