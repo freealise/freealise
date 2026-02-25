@@ -1,1 +1,1 @@
-change pitch in realtime with delay time varying by sawtooth wave (Doppler effect) and delay lines crossfading
+change pitch in realtime with delay time varying by sawtooth wave (Doppler effect) and delay lines crossfading (or use wavelets for continuity)
