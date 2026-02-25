@@ -1,4 +1,6 @@
   
+https://github.com/torvalds/AudioNoise/issues/71  
+
 Would suggest to use a large foot-operated trackball mouse along with the pedal - this would let you control the sound in up to 3 dimensions, almost like a violin bow or voice.  
 y: volume, x: pitch, z: am (or spectrum with convolver or waveshaper)  
   
