@@ -4,6 +4,8 @@ https://github.com/torvalds/AudioNoise/issues/71
 Would suggest to use a large foot-operated trackball mouse along with the pedal - this would let you control the sound in up to 3 dimensions, almost like a violin bow or voice.  
 y: volume, x: pitch, z: am (or spectrum with convolver or waveshaper modified from distortion)  
   
+apply tremolo to pitch shifter to compensate, DISCONT_SHIFT = 13 (log2 of window size)  
+  
 (I'd make a formant filter, even with consonants - just to learn C.  
  y: f2, x: f1, z: sibilance or sonority)  
   
