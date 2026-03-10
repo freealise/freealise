@@ -6,7 +6,7 @@ y: volume, x: pitch, z: am (or spectrum with the waveshaper modified from distor
   
 sustainer: read and average samples in a loop (like the delay) for volume, then multiply by the ratio of its latest peak to its module  
   
-(I'd make a formant filter, even with consonants - just to learn C.  
+(I'd make a formant filter, even with consonants  
  y: f2, x: f1, z: sibilance or sonority)  
   
 https://github.com/AppGeo/web-audio-examples  
