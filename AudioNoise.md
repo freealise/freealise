@@ -1,4 +1,5 @@
   
+// What should we do about silence? (c)
 https://github.com/torvalds/AudioNoise/issues/71  
   
 (I'd make a formant filter, even with consonants  
