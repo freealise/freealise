@@ -2,6 +2,7 @@
 // What should we do about silence? (c)
 https://github.com/torvalds/AudioNoise/issues?q=is%3Aissue%20state%3Aopen%20author%3Afreealise  
   
+```
 // convolver
  #include <stdio.h>
 
@@ -52,6 +53,7 @@ int main() {
     }
     return 0;
 }
+```
   
   
 (I'd make a formant filter, even with consonants  
