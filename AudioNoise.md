@@ -3,6 +3,7 @@
 https://github.com/torvalds/AudioNoise/issues?q=is%3Aissue%20state%3Aopen%20author%3Afreealise  
   
 make normal sample read function in util.h for the sustainer & convolver  
+distortion.h -> waveshaper  
   
 ```
 // convolver
