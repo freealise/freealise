@@ -3,7 +3,7 @@
 https://github.com/torvalds/AudioNoise/issues?q=is%3Aissue%20state%3Aopen%20author%3Afreealise  
   
 make normal sample read function in util.h for the sustainer & convolver  
-distortion.h -> 8-bit (remove LSB)  
+distortion.h -> 8-bit (remove LSB, reduce sample rate /1-6)  
 arp with pitch shifter  
   
 ```
@@ -61,7 +61,8 @@ int main() {
   
   
 (I'd make a formant filter, even with consonants  
- y: f2, x: f1, z: sibilance or sonority)  
+ y: f2, x: f1, z: sibilance or sonority  
+ interface is touchscreen not mouse)  
   
 https://github.com/AppGeo/web-audio-examples  
 & piezoelement for 4th dimension; control sound location for movies  
