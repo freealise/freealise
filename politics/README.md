@@ -4,7 +4,7 @@ fair use: https://www.law.cornell.edu/uscode/text/17/107
 No distribution without attribution  
 if AI was used then the user has to be like itself  
 (visualizer.py should not be attributed to Linus)  
-commission and attribution for everyone whose commercial work is used in training of generative AI  
+commission and attribution for everyone whose commercial work is used in training of generative AI (will also reduce promotional content)  
   
 https://pp-international.net/join-in/application-for-individual-membership/  
 https://lime.ppi.rocks/index.php?r=survey/index&sid=341246  
