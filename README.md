@@ -22,13 +22,12 @@ Speaking English since 1992 (IELTS >7.0), coding since ~2000.
 Concerned with international relations and global issues.  
 <a>꙳✡︎</a> Jewish ('Noahide') by faith, ethnically complex. 🇺🇦🇪🇺
   
-<a href="mailto:me_freealise.com?subject=me_freealise.com&body=^" target="_blank"><img src='https://img.shields.io/badge/✉️-me⎀freealise.com-white' alt='Email'/></a>
-  
 <!--[![Quora Profile](https://img.shields.io/badge/⁉️-Quora-red?style=for-the-badge)](https://www.quora.com/profile/Marina-From-Freealise)-->
-[![Sefaria](https://img.shields.io/badge/ס-Sefaria-red.svg?style=for-the-badge)](https://www.sefaria.org/)  
-[![Stack Overflow Reputation](https://img.shields.io/stackexchange/stackoverflow/r/9165398?color=orange&label=stackoverflow&logo=stackoverflow&style=for-the-badge)](https://stackoverflow.com/users/9165398)  
-[![Follow me on HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97-Hugging%20Face-yellow?style=for-the-badge)](https://huggingface.co/freealise)  
-[![Status](https://img.shields.io/badge/dynamic/xml?url=https://freeali.se/feed.xml&query=//*[local-name()='feed']/*[local-name()='entry'][1]/*[local-name()='title']/text()&label=🪧&color=green&style=for-the-badge)](https://freeali.se)
+[![Email](https://img.shields.io/badge/✉️-me⎀freealise.com-red.svg?style=for-the-badge)](mailto:me_freealise.com?subject=me_freealise.com&body=^) 
+[![Stack Overflow Reputation](https://img.shields.io/stackexchange/stackoverflow/r/9165398?color=orange&label=stackoverflow&logo=stackoverflow&style=for-the-badge)](https://stackoverflow.com/users/9165398) 
+[![Follow me on HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97-Hugging%20Face-yellow?style=for-the-badge)](https://huggingface.co/freealise) 
+[![Status](https://img.shields.io/badge/dynamic/xml?url=https://freeali.se/feed.xml&query=//*[local-name()='feed']/*[local-name()='entry'][1]/*[local-name()='title']/text()&label=🪧&color=green&style=for-the-badge)](https://freeali.se) 
+[![Sefaria](https://img.shields.io/badge/ס-Sefaria-blue.svg?style=for-the-badge)](https://www.sefaria.org/) 
 
 [Website repo](https://www.github.com/freealise/freealise.github.io/) | 
 [My gists](https://gist.github.com/freealise/) | 
