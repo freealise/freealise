@@ -1,3 +1,6 @@
+B"H  
+if it is part of LF then it's legal,  
+otherwise Islamic in a bad way  
   
 // What should we do about silence? (c)
 https://github.com/torvalds/AudioNoise/issues?q=is%3Aissue%20state%3Aopen%20author%3Afreealise  
