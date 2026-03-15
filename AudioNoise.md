@@ -11,7 +11,7 @@ https://github.com/torvalds/AudioNoise/issues?q=is%3Aissue%20state%3Aopen%20auth
   
 sustainer & convolver  
 distortion.h -> 8-bit (remove LSB, reduce sample rate /1-6)  
-arp with pitch shifter; am chorus; gray noise with filter  
+polyphonic arp with pitch shifter (~pll); am chorus; gray noise with filter  
   
 frequency, phase and impulse response in visualizer  
   
