@@ -13,7 +13,7 @@ sustainer & convolver
 distortion.h -> 8-bit (remove LSB, reduce sample rate /1-6)  
 arp with pitch shifter; am chorus  
   
-frequency and impulse response in visualizer  
+frequency, phase and impulse response in visualizer  
   
 ```
 // convolver
