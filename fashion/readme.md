@@ -14,7 +14,7 @@ cross-stitch ~ weaving -> cross-hatch, as faster variation (use quadtree compres
   
 https://www.saintjavelin.com/pages/contact-us  
 monetize own clothes - how ?  
-second hand shop of household items with custom pricing & KYC (~freemarket)  
+second hand shop of household items with custom pricing with cost price as default & KYC (~freemarket)  
 merch with ideograms out of beads or thread or cross stitch for promotion  
 word in pixel font as the outline of idea it represents (mnemonic device)  
   
