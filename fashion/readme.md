@@ -18,3 +18,4 @@ second hand shop of household items with custom pricing & KYC (~freemarket)
 merch with ideograms out of beads or thread or cross stitch for promotion  
 word in pixel font as the outline of idea it represents (mnemonic device)  
   
+star of David wireframe badge  
