@@ -1,5 +1,5 @@
-#### Applied linguistics and semiotics, comparative religion, stock investing
-##### Have to be better at UI/UX
+#### Applied linguistics and semiotics, comparative religion, stock investing  
+(Have to be better at UI/UX)
 
 <!--
 **freealise/freealise** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
