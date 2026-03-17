@@ -1,4 +1,4 @@
-- Gospel of Mary as a song (the great commandment is theoretically true but practically brings trouble by oversimplification)  
+- Gospel of Mary as a song (the great commandment is theoretically true but practically unapplicable and brings trouble by oversimplification)  
   
 - story of Moschiach as a Dark Lord ("...and with your evil inclination")  
   
