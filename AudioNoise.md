@@ -14,6 +14,7 @@ threshold for sustainer
 distortion.h -> 8-bit (remove LSB, reduce sample rate /1-6)  
 polyphonic arp with pitch shifter (~pll); am chorus; gray noise with filter  
 (reverb is natural so it's easier to imagine than to calculate in realtime)  
+can be algorithmic with allpass and comb filters  
   
 frequency, phase and impulse response in visualizer  
   
