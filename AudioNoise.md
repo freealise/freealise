@@ -24,3 +24,6 @@ frequency, phase and impulse response in visualizer
   
 https://github.com/AppGeo/web-audio-examples  
 & piezoelement for 4th dimension; control sound location for movies  
+  
+interface for drawing and semi-realtime playback by pointerup  
+https://arss.sourceforge.net/code.shtml  
