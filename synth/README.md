@@ -5,6 +5,8 @@ http://www.falstad.com/dfilter/
 deliberately produce a random sequence or FFT of tune by pitch interval, length, volume and spectrum, where the probability is a normal distribution and not uniform (meditation or example of genre if programmatic)  
 https://www.random.org/gaussian-distributions/?mode=advanced  
   
+Meditation app as demo of Sefer Yetzirah++ method (with IPA and formants)  
+  
 multilingual phonetic keyboard (with swipe input):  
    > f2, numeric row for base pitch and sonority  
  v  
