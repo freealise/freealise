@@ -2,6 +2,8 @@ _dream_: global positive nationalist movement like Zionism which is sincere but 
 
 _ad script_: reporter on location is contacted by news announcer among apocalyptic current events, responding that nothing is happening except the normal which looks like a miracle.  
   
+_program_: LF -> PPI (l+r ^freedom)  
+  
 _OST_: report by journalist in lyrics  
   
 text-based language learning game with IRL simulation (Maslow pyramid)  
