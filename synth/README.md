@@ -1,6 +1,5 @@
 FFT-based vocoder  
 ASCII spectrogram sequencer  
-http://www.falstad.com/dfilter/  
   
 Meditation app as demo of Sefer Yetzirah++ method (with IPA and formants)  
   
