@@ -17,6 +17,8 @@ polyphonic arp with pitch shifter (~pll); am chorus; gray noise with filter
 can be algorithmic with allpass and comb filters  
 convolver for custom filtering  
   
+whistle through a set of delays controlled by base frequency to lower octave and add harmonics  
+  
 frequency, phase and impulse response in visualizer  
   
 (I'd make a formant filter, even with consonants  
