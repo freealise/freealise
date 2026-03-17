@@ -4,7 +4,7 @@ _ad script_: reporter on location is contacted by news announcer among apocalypt
   
 _program_: LF -} PPI {- libertarians (l+r ^freedom)  
   
-_OST_: report by journalist in lyrics  
+_OST_: AQ Eurovision entry  
   
 text-based language learning game with IRL simulation (Maslow pyramid)  
 = interactive phrasebook | dictionary | 'mad libs' with AI  
