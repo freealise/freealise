@@ -1,7 +1,5 @@
 - Gospel of Mary as a song  
   
-- Pirate Party political program as prompt for lyrics  
-  
 - story of Moschiach as a Dark Lord ("...and with your evil inclination")  
   
 - future Eurovision album (#russiaIsSiberia #BelarusIsEurope #SiberiaForSale #SiberiaRemoteControl #russiaIsAColony #PietariIsFinland; Greece not believing what Americans do after it, Holy Spirit goes _through_ the son (any angel), location of head of church doesn't matter - protestant Orthodoxy ?); Georgia is 'affordable Israel'; Czechia, Sweden ? open source music contest  
