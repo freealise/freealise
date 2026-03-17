@@ -20,6 +20,7 @@ convolver for custom filtering
 whistle through a set of delays controlled by base frequency to lower octave and add harmonics  
   
 frequency, phase and impulse response in visualizer  
+http://www.falstad.com/dfilter/  
   
 (I'd make a formant filter, even with consonants  
  y: f2, x: f1, z: sibilance or sonority  
