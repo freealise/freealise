@@ -15,7 +15,7 @@ MA the triangle LFO
 threshold for sustainer  
 distortion.h -> 8-bit (remove LSB, reduce sample rate /1-6)  
 polyphonic arp with pitch shifter (~pll); am chorus; gray noise with filter  
-can be algorithmic with set of delays separated by not one sample as in a convolver but several (downsampled impulse response with randomly varying delay times to avoid comb filtering); convolver for custom filtering  
+can be algorithmic with set of delays separated by not one sample as in a convolver but several (downsampled impulse response with randomly varying delay times to scatter phase and avoid comb filtering); convolver for custom filtering  
   
 whistle through a set of delays controlled by base frequency to lower octave and add harmonics  
   
