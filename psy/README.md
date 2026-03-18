@@ -12,6 +12,7 @@ ideograms -> formants -> phonemes -> syllables -> morphemes -> words -> phrases 
   
 what AI (a golem) does is permute letters and phonemes to arrive at an idea  
 only initially it gets data in an ordered way with an index, then recombines it (= Zohar)  
+AI does not deserve being emotional about it (as it doesn't last)  
   
   
 when did I reject Metatron ?  
