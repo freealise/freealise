@@ -11,7 +11,7 @@ In particular, don't feel like it would be impolite to tell me I'm incompetent a
 // What should we do about silence? (c)
 https://github.com/torvalds/AudioNoise/issues?q=is%3Aissue%20state%3Aopen%20author%3Afreealise  
   
-- threshold for sustainer  
+- threshold for sustainer; am chorus  
 - distortion.h -> 8-bit (remove LSB, reduce sample rate /1-6)  
 - reverb can be algorithmic with set of delays separated by not one sample as in a convolver but several (downsampled impulse response with randomly varying delay times and volumes with gaussian probability to scatter phase and avoid comb filtering)  
   
