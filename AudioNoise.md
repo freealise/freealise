@@ -13,10 +13,11 @@ https://github.com/torvalds/AudioNoise/issues?q=is%3Aissue%20state%3Aopen%20auth
   
 threshold for sustainer  
 distortion.h -> 8-bit (remove LSB, reduce sample rate /1-6)  
-polyphonic arp with pitch shifter (~pll); am chorus; gray noise with filter  
-can be algorithmic with set of delays separated by not one sample as in a convolver but several (downsampled impulse response with randomly varying delay times and volumes with gaussian probability to scatter phase and avoid comb filtering)  
+am chorus; gray noise with filter  
+reverb can be algorithmic with set of delays separated by not one sample as in a convolver but several (downsampled impulse response with randomly varying delay times and volumes with gaussian probability to scatter phase and avoid comb filtering)  
   
-whistle through a set of delays controlled by base frequency to lower octave and add harmonics  
+whistle through peaking+notch filter controlled by pitch detector (~pll) to lower octave (for bass)  
+comb filtered noise controlled by waveshaper (intuitive as sawtooth waveform is originally linear)  
   
 frequency, phase and impulse response in visualizer  
 http://www.falstad.com/dfilter/  
