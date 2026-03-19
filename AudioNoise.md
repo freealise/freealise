@@ -11,7 +11,7 @@ In particular, don't feel like it would be impolite to tell me I'm incompetent a
 // What should we do about silence? (c)
 https://github.com/torvalds/AudioNoise/issues?q=is%3Aissue%20state%3Aopen%20author%3Afreealise  
   
-add another 2 delays with negative phase to pitch shifter to remove comb filtering, smooth the LFO with circular MA in lfo.h  
+add another 2 delays with negative phase to pitch shifter to remove comb filtering, use square LFO  
 threshold for sustainer  
 distortion.h -> 8-bit (remove LSB, reduce sample rate /1-6)  
 polyphonic arp with pitch shifter (~pll); am chorus; gray noise with filter  
