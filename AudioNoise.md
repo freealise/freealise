@@ -15,7 +15,7 @@ https://github.com/torvalds/AudioNoise/issues?q=is%3Aissue%20state%3Aopen%20auth
 - distortion.h -> 8-bit (remove LSB, reduce sample rate /1-6)  
 - reverb can be algorithmic with set of delays separated by not one sample as in a convolver but several (downsampled impulse response with randomly varying delay times and volumes with gaussian probability to scatter phase and avoid comb filtering)  
   
-! whistle through peaking+notch filter controlled by pitch detector (~pll) to lower octave (for bass) or 10 comb filters with touchscreen  
+! whistle through peaking+notch filter controlled by pitch detector (~pll) to lower octave (for bass) or 10 comb filters with touchscreen (more can be set in advance)  
   
 frequency, phase and impulse response in visualizer  
 http://www.falstad.com/dfilter/  
