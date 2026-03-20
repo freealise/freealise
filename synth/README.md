@@ -8,6 +8,7 @@ multilingual phonetic keyboard (with swipe input):
  v  
 f1   2 keys at once for sibilance  
 order in a circle by f2, f1 as radius  
+connect each to each in sequence  
   
 map pictograms to pronounciation (Antarctic language)  
 (direction, not position, aligns to phoneme ?)  
