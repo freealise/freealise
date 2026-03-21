@@ -1,6 +1,7 @@
 B"H  
-if it is part of LF then it's legal,  
-otherwise Islamic in a bad way  
+it is part of LF for events  
+  
+code commentary in ASCII pics  
   
 "I have an idea, I just don't know what it is!"  
   
