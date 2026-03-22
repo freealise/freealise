@@ -1,7 +1,7 @@
 B"H  
 it is part of LF for events  
   
-code commentary in ASCII pics  
+code documentation as ASCII pics  
   
 "I have an idea, I just don't know what it is!"  
   
