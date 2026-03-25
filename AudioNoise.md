@@ -16,7 +16,7 @@ https://github.com/torvalds/AudioNoise/issues?q=is%3Aissue%20state%3Aopen%20auth
 - reverb can be algorithmic with set of delays separated by not one sample as in a convolver but several (downsampled impulse response with randomly varying delay times and volumes with gaussian probability to scatter phase and avoid comb filtering)  
   
 ! whistle through peaking+notch filter controlled by pitch detector (~pll) to lower octave (for bass) or 10 comb filters with touchscreen (more can be set in advance); multiply by filtered noise (for drums and percussion)  
-https://g.co/gemini/share/a48a9744f231 (MA vs Gaussian)  
+https://g.co/gemini/share/878e3b5773c8 (MA vs Gaussian)  
   
 frequency, phase and impulse response in visualizer  
 http://www.falstad.com/dfilter/  
