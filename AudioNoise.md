@@ -12,7 +12,7 @@ In particular, don't feel like it would be impolite to tell me I'm incompetent a
 // What should we do about silence? (c)
 https://github.com/torvalds/AudioNoise/issues?q=is%3Aissue%20state%3Aopen%20author%3Afreealise  
   
-- threshold for sustainer; realtime pot control for everything; waveshaper out of distortion; general noise gate  
+- threshold for sustainer; realtime pot control for everything; waveshaper out of distortion; MA order for bitcrusher  
 - reverb can be algorithmic with set of delays separated by not one sample as in a convolver but several (downsampled impulse response with randomly varying delay times and volumes with gaussian probability to scatter phase and avoid comb filtering)  
   
 ! whistle through peaking+notch filter controlled by pitch detector (~pll) to lower octave (for bass) or 10 comb filters with touchscreen (more can be set in advance); multiply by filtered noise (for drums and percussion)  
