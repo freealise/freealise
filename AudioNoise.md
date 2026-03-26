@@ -12,7 +12,7 @@ In particular, don't feel like it would be impolite to tell me I'm incompetent a
 // What should we do about silence? (c)
 https://github.com/torvalds/AudioNoise/issues?q=is%3Aissue%20state%3Aopen%20author%3Afreealise  
   
-- threshold and limiter for sustainer; realtime pot control for everything; formant filter with initial waveshaper out of distortion; eq out of tube (3 parameters + switch); filter order for bitcrusher (or biquad filter)  
+- threshold and limiter for sustainer; realtime pot control for everything; formant filter out of distortion; eq out of tube (3 parameters + switch); filter order for bitcrusher (or biquad filter)  
 - reverb can be algorithmic with set of delays separated by not one sample as in a convolver but several (downsampled impulse response with randomly varying delay times and volumes with gaussian probability to scatter phase and avoid comb filtering)  
   
 ! whistle through peaking+notch filter (phaser) controlled by pitch detector (~pll) to lower octave (for bass)  
