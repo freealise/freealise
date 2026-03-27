@@ -34,7 +34,8 @@ Concerned with international relations and global issues.
 [My gists](https://gist.github.com/freealise/) | 
 [Common sense](https://gemini.google.com/)  
   
-*Suzie quit Github and concentrated on the publications. There's not even any **moral** reward to this anymore.*
+*Suzie quit Github and concentrated on the publications. There's not even **moral** reward to this any longer.  
+"No hate, no fight, just exploitation. Across the night, there's expropriation. Give me one vision!" (c)*
 
 <!--[Download folder] (https://downgit.evecalm.com/#/home?url=https://github.com/freealise/freealise/tree/master/wiki/)-->
 
