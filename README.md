@@ -32,7 +32,10 @@ Concerned with international relations and global issues.
 
 [Website repo](https://www.github.com/freealise/freealise.github.io/) | 
 [My gists](https://gist.github.com/freealise/) | 
-[Common sense](https://gemini.google.com/) 
+[Common sense](https://gemini.google.com/)  
+  
+*Suzie quit Github and concentrated on the publications. There's not even any **moral** reward to this anymore.*
+
 <!--[Download folder] (https://downgit.evecalm.com/#/home?url=https://github.com/freealise/freealise/tree/master/wiki/)-->
 
 
