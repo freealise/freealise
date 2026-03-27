@@ -1,5 +1,5 @@
 B"H  
-it is part of LF for events  
+it is part of LF for events | https://github.com/codebar  
   
 code documentation as ASCII pics (everyman you-character)  
   
