@@ -32,4 +32,3 @@ to separate recording into tracks: mute any part (not just the center) by propor
 for denoising average several frames, use median filter  
 combine animation with audioplays  
   
-script in ascii (most like coding, least awkward)  
