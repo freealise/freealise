@@ -25,16 +25,16 @@ Concerned with international relations and global issues.
   
 <!--[![Quora Profile](https://img.shields.io/badge/⁉️-Quora-red?style=for-the-badge)](https://www.quora.com/profile/Marina-From-Freealise)-->
 [![Email](https://img.shields.io/badge/✉️-me⎀freealise.com-red.svg?style=for-the-badge)](mailto:me_freealise.com?subject=me_freealise.com&body=^) 
-[![Stack Overflow Reputation](https://img.shields.io/stackexchange/stackoverflow/r/9165398?color=orange&label=stackoverflow&logo=stackoverflow&style=for-the-badge)](https://stackoverflow.com/users/9165398) 
-[![Follow me on HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97-Hugging%20Face-yellow?style=for-the-badge)](https://huggingface.co/freealise) 
+[![Stack Overflow](https://img.shields.io/stackexchange/stackoverflow/r/9165398?color=orange&label=stackoverflow&logo=stackoverflow&style=for-the-badge)](https://stackoverflow.com/users/9165398) 
+[![HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97-Hugging%20Face-yellow?style=for-the-badge)](https://huggingface.co/freealise) 
 [![Status](https://img.shields.io/badge/dynamic/xml?url=https://freeali.se/feed.xml&query=//*[local-name()='feed']/*[local-name()='entry'][1]/*[local-name()='title']/text()&label=🪧&color=green&style=for-the-badge)](https://freeali.se) 
-[![Google Gemini](https://img.shields.io/badge/❄️-I_don't_vibecode-009900.svg?style=for-the-badge)](https://gemini.google.com/) 
+[![Google Gemini](https://img.shields.io/badge/❄️-I_don't_vibecode-0080FF.svg?style=for-the-badge)](https://gemini.google.com/) 
 [![Sefaria](https://img.shields.io/badge/ס-Sefaria-blue.svg?style=for-the-badge)](https://www.sefaria.org/) 
 
 [Website repo](https://www.github.com/freealise/freealise.github.io/) | 
 [My gists](https://gist.github.com/freealise/)  
   
-*Suzie quit Github and concentrated on the publications. There's not even **moral** reward to this any longer. "No hate, no fight, just exploitation. Across the night, there's expropriation. Give me one vision!" (c)*
+*Suzie quit Github and concentrated on the publications.*
 
 <!--[Download folder] (https://downgit.evecalm.com/#/home?url=https://github.com/freealise/freealise/tree/master/wiki/)-->
 
