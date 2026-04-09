@@ -32,6 +32,7 @@ https://en.wikipedia.org/wiki/Sonority_Sequencing_Principle
 
 formants <-> chord by octave transposition (are similar by sound, not only visually on different scales)  
 
+harmonic ruler from chinese mat to draw spectrograms on copy paper (or several carpenter's pencils or kernels); notation with dot patterns scrolled vertically (~piano roll)  
 harmonic ruler as stencil - count on calculator and draw  
 marks on ruler from highest, collapse to one octave only  
 (72 or 144mm - wallpaper in coat package), lower highlighted as bolder  
