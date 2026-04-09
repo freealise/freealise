@@ -28,7 +28,7 @@ Concerned with international relations and global issues.
 [![Stack Overflow](https://img.shields.io/stackexchange/stackoverflow/r/9165398?color=orange&label=stackoverflow&logo=stackoverflow&style=for-the-badge)](https://stackoverflow.com/users/9165398) 
 [![HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97-Hugging%20Face-yellow?style=for-the-badge)](https://huggingface.co/freealise) 
 [![Status](https://img.shields.io/badge/dynamic/xml?url=https://freeali.se/feed.xml&query=//*[local-name()='feed']/*[local-name()='entry'][1]/*[local-name()='title']/text()&label=🪧&color=green&style=for-the-badge)](https://freeali.se) 
-[![Google Gemini](https://img.shields.io/badge/❄️-I_don't_vibecode-00C0C0.svg?style=for-the-badge)](https://gemini.google.com/app) 
+[![Google Gemini](https://img.shields.io/badge/❄️-I_don't_vibecode_(temp=0)-00C0C0.svg?style=for-the-badge)](https://aistudio.google.com/) 
 [![Sefaria](https://img.shields.io/badge/ס-Sefaria-blue.svg?style=for-the-badge)](https://www.sefaria.org/) 
 
 [Website repo](https://www.github.com/freealise/freealise.github.io/) | 
