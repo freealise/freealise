@@ -37,3 +37,15 @@
   
 - rewrite MK as a blessing of the Jews ?  
   
+- anarchist getting elected but becoming opinionated (ultimate anarchist is an objectivist / populist as they have to negate themselves once at power)  
+  
+- peaceful kingdom in the desert fleeing surrounding barbarians on a spaceship (~Israel) and has to reform to get back home  
+  
+- lord Landbert tale is about Beatlemania and causes of celebrity worship (not a detective) - album ? woman knows how his friend killed himself, LL suspects her of murder  
+  
+- 'final circle of escapism' - ABS sequel (reality)  
+  
+- contextually sensitive drugstore that sells medicines to decent people and bad drugs to villains  
+  
+- 🕷️ https://en.wikipedia.org/wiki/International_Jewish_conspiracy 
+  
