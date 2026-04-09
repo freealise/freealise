@@ -21,7 +21,7 @@ Here are some ideas to get you started:
 A person of not so traditional geospacial and temporal orientation.  
 Speaking English since 1992 (IELTS >7.0), coding since ~2000.  
 Concerned with international relations and global issues.  
-꙳✡ Jewish ('Noahide') by faith, ethnically complex. 🇺🇦🇪🇺
+<a>꙳✡︎</a> Jewish ('Noahide') by faith, ethnically complex. 🇺🇦🇪🇺
   
 <!--[![Quora Profile](https://img.shields.io/badge/⁉️-Quora-red?style=for-the-badge)](https://www.quora.com/profile/Marina-From-Freealise)-->
 [![Email](https://img.shields.io/badge/✉️-me⎀freealise.com-red.svg?style=for-the-badge)](mailto:me_freealise.com?subject=me_freealise.com&body=^) 
