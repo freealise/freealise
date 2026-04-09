@@ -1,8 +1,22 @@
 - Gospel of Mary as a song ("Hello Vatican!" the great commandment is theoretically true but practically unapplicable and brings trouble by oversimplification)  
   
+- songs based on legislation (which is based on precedent which is a story appropriate for a song)  
+  
+- sociological data summarized as lyrics (everyman you-character; personified nations ?)  
+  
+- average chart of weather (or prices) as melody; historical data for temperature / pressure / wind, find derivatives; speech or music is inspired by terrain and climate (https://www.smithsonianmag.com/smart-news/languages-consonants-and-vowels-could-depend-climate-180957210/)  
+  
+- can be like a definition of a term (word or phrase) with examples in IRL context; monolingual dictionary word clarification / example that reveals meaning (not 'personal associations'), also for a neologism  
+  
 - story of Moschiach as a Dark Lord ("...and with your evil inclination")  
   
-- future Eurovision album (#russiaIsSiberia #BelarusIsEurope #SiberiaForSale #SiberiaRemoteControl #russiaIsAColony #PietariIsFinland; Greece not believing what Americans do after it, Holy Spirit goes _through_ the son (any angel), location of head of church doesn't matter - protestant Orthodoxy ?); Georgia is 'affordable Israel'; Czechia, Sweden ? open source music contest  
+- future Eurovision album (#russiaIsSiberia #BelarusIsEurope #SiberiaForSale #SiberiaRemoteControl #russiaIsAColony #PietariIsFinland; Greece not believing what Americans do after it, Holy Spirit goes _through_ the son (any angel), location of head of church doesn't matter - protestant Orthodoxy ?); Georgia is 'affordable Israel'; Czechia, Sweden ?  
+  
+- TW = international folk music = oldest there is (timeless and universal) = 'shamanic' = (progressive) folk with synth  
+  
+- enact the Wilburys in Antarctica (researcher hubs, collective songwriting)  
+  
+- https://en.wikipedia.org/wiki/Comedy_music, https://www.wikiwand.com/en/Comedy_rock (parody rock, mock'n'troll)  
   
 - social sci-fi HP sequel with Sirius Black (~Enoch) and spiritual explanation of black, gray and white magic ('SB and the Great Commandment')  
  (https://scifi.stackexchange.com/questions/295283/what-was-j-k-rowlings-original-plan-for-the-death-of-sirius-black, 
