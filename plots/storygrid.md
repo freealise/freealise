@@ -17,3 +17,7 @@ Internal genres derive from the holy books.
 https://trends.google.com/  
   
 genres align to the sefirot through the hierarchy of needs  
+  
+(https://www.wikiwand.com/en/Trickster, https://www.google.com/search?q=trickster+storygrid)  
+https://www.wikiwand.com/en/Nasreddin, https://www.wikiwand.com/en/Hershele_Ostropoler  
+https://archive.org/search?query=Ukrainian+Folk+Tales  
