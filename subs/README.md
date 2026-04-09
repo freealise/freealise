@@ -32,3 +32,4 @@ to separate recording into tracks: mute any part (not just the center) by propor
 for denoising average several frames, use median filter  
 combine animation with audioplays  
   
+mat from thick fishing line for stereo screen (https://commons.wikimedia.org/wiki/File:Parallax_barrier_vs_lenticular_screen.svg), or blue and yellow glasses with plastic lenses (https://developers.google.com/cardboard/manufacturers)  
