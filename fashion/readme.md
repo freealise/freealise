@@ -19,3 +19,7 @@ merch with ideograms out of beads or thread or cross stitch for promotion
 word in pixel font as the outline of idea it represents (mnemonic device)  
   
 star of David wireframe or embossed foil badge  
+  
+ukrainian embroidery corner https://www.google.com/search?q=glory+to+ukraine+corner+ribbon&newwindow=1&sxsrf=ALiCzsZAi4d_TcKaTgxoNS1MK-fLzdJ_cA:1671644839491&source=lnms&tbm=isch&sa=X&ved=2ahUKEwioweSmoov8AhXKiIsKHYgRA2UQ_AUoAXoECAEQAw&biw=1280&bih=697&dpr=1#imgrc=9N6yHaGz8rIUwM ?  
+  
+merch (spectrogram bead or thread bracelets, cross stitch, canvas bags with print, wax candles) / wort  
