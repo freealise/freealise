@@ -21,6 +21,7 @@ transparent velcro (hook-and-loop fastener, https://www.hookandloop.com/) hooks 
 kneaded eraser for stretchable face  
 // carve beeswax models with heated pointed knife ?  
 // 3d pen: thin natural candle as kernel in metal pen with changeable output diameter, wrapped in isolation for holding and heated electrically by small current with variable intensity  
+- automatic pencil with wire coil instead of kernel (straightens wire and measures length, can be pulled on)  
 // 3d scanner: magenta dot pattern on flashlight, optical flow or size of visible dots for depth  
   
 crossfade tracks in audacity among 5.1 channel speakers according to distance of source from them  
