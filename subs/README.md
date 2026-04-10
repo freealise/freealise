@@ -33,3 +33,28 @@ for denoising average several frames, use median filter
 combine animation with audioplays  
   
 mat from thick fishing line for stereo screen (https://commons.wikimedia.org/wiki/File:Parallax_barrier_vs_lenticular_screen.svg), or blue and yellow glasses with plastic lenses (https://developers.google.com/cardboard/manufacturers)  
+  
+the only comics that the majority of adults tolerate are satirical  
+Inoffensive caricature: photorealistic and providing a solution to exposed problem, about ideas and not people, parody as compliment  
+  
+depth = blur (focus) or color fade to fog - how is done in photography ?  
+opposite of tilt shift = forced perspective / focus stacking  
+  
+sync rhythm track and video in gif with =frame rate (https://stackoverflow.com/questions/11285065/limiting-framerate-in-three-js-to-increase-performance-requestanimationframe) - is variable in anime (min 8fps)  
+  
+- videos with geometrizer / median blur and self / TA acting (like plays in language classes);  
+              drone spirals around prior to filming by same path to estimate depth -> depth of subject  
+              semantic segmentation for subject highlighting   (https://github.com/freealise/tfjs-models/tree/master/deeplab); subtitles, export to video; postprocessing (fxaa / dof)  
+  
+- notes as cartoons from photos of wireframe (crosscontour with skeleton at one side) + filed foil wrapper (paper, plastic wrapper, wire fabric) + fax paper / wire landscape  
+              and painted with oil / +soap (skybox color on model); dimensions.com prototypes (svg pictograms)  
+              wire skeleton or rotatable outline (+face) / foil origami (+head / hair / face) or wrapper  
+              depth map for focus and bokeh: video frames with different focus from almost the same point and interpolate to estimate by motion (opencv dense optical flow)  
+              interpolate timepoints and motion blur moving subjects  
+              shadows only on lit background (subtract overcast pano)  
+  
+- antarctic interface as InF with multidimensional navigation (vector outlines with text from dimensions.com with original pano background)  
+              semantic segmentation -> image map for clickable areas  
+              google ar panorama timepoints (google api) + ai frame-interpolation (https://replicate.com/google-research/frame-interpolation, https://huggingface.co/spaces/freealise/video_frame_interpolation); skybox out of google (overcast pano to remove shadows, select timepoints for time of day / weather), use mono depth map for custom weather skyline (https://spite.github.io/PanomNom.js/examples/basic/sv-depth.html) and opencv depth map for focus; animation from google earth; draw over the panorama then displace vertices by depth map and show parallax  
+    model from dimensions.com / google streets (earth) / flickr (map) / 3d warehouse (sketchup) / rental property  
+      static image api (https://developers.google.com/maps/documentation/streetview/request-streetview)  
