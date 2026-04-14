@@ -2,6 +2,10 @@
   
 progressive jpeg story outline: pick a word to be in the title then subdivide and find a word for each part, recursively  
   
+- use keywords (most stressed and rhyming words of a line) as initial sg/bs (what each line is about)  
+- highlight the contextual importance levels of words with tone markers  
+    level goes with the word and syllable stress pattern / sentiment (tune is its derivative)  
+  
 Empty book = fill in the blanks within genre conventions (sci-fi | factualism !)  
   
 know character's actions along with them from characterization (but not ahead, keep to the present moment like IRL or in meditation)  
