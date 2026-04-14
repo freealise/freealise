@@ -1,4 +1,7 @@
-
+https://github.com/tensorflow/tfjs-models  
+https://github.com/tensorflow/tfjs-examples  
+  
+  
 audio (?) interview with _deterministic_ AI  
 let deterministic Gemini interview itself as a politician  
   
