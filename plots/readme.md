@@ -6,8 +6,6 @@
   
 - sociological data summarized as lyrics (everyman you-character; personified nations ?)  
   
-- average chart of weather (or prices) as melody; historical data for temperature / pressure / wind, find derivatives; speech or music is inspired by terrain and climate (https://www.smithsonianmag.com/smart-news/languages-consonants-and-vowels-could-depend-climate-180957210/)  
-  
 - can be like a definition of a term (word or phrase) with examples in IRL context; monolingual dictionary word clarification / example that reveals meaning (not 'personal associations'), also for a neologism  
   
 - story of Moschiach as a Dark Lord ("...and with your evil inclination")  
