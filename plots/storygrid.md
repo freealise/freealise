@@ -1,6 +1,7 @@
 "Don't waste your words - tell a story that works !"
-
-
+  
+progressive jpeg story outline: pick a word to be in the title then subdivide and find a word for each part, recursively  
+  
 Empty book = fill in the blanks within genre conventions (sci-fi | factualism !)  
   
 know character's actions along with them from characterization (but not ahead, keep to the present moment like IRL or in meditation)  
