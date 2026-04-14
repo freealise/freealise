@@ -12,8 +12,11 @@ connect each to each in sequence
   
 map pictograms to pronounciation (Antarctic language)  
 (direction, not position, aligns to phoneme ?)  
-
-phonemes ordered according to SSP
+  
+phonemes ordered according to SSP  
+  
+- simplified latin + ipa shorthand (dots, swype is faster ? +keyboard layout)  
+    (https://keep.google.com/u/0/#NOTE/1KnJ9BeTL7bB5LPJYZt90bKJ7GNibldPFFwtO_vj2M1CeHfOy7TVxFszA0mg8L9k)  
 __________________
 
 
