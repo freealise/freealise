@@ -31,7 +31,13 @@ https://en.wikipedia.org/wiki/Sonority_Sequencing_Principle
 (verified by phonological data: https://en.wikipedia.org/wiki/English_phonology#Phonotactics)  
 
 formants <-> chord by octave transposition (are similar by sound, not only visually on different scales)  
-
+  
+- phonetic handwriting with flat stylus and pressure variation (pitch + 4 formants) - without consonants (ssp)  
+    or two styluses / brush stylus; highlight the squares on millimeter paper  
+    (AR fast enough ?)  
+      formants are highlighted harmonics of a note on a linear scale,  
+      though remaining at the same frequency while the pitch changes and different harmonics get highlighted  
+  
 harmonic ruler from chinese mat to draw spectrograms on copy paper (or several carpenter's pencils or kernels); notation with dot patterns scrolled vertically (~piano roll)  
 harmonic ruler as stencil - count on calculator and draw  
 marks on ruler from highest, collapse to one octave only  
