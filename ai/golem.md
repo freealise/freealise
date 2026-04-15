@@ -27,6 +27,9 @@ noise from random.org
 can be the government ?  
 https://www.sis.gov.uk/  
   
+journalist >= blogger (detect bias by style)  
+sentiment from macro to micro level (storygrid)  
+  
 Style transfer datasets for urban environment  
 http://mi.eng.cam.ac.uk/research/projects/VideoRec/CamVid/  
 https://download.visinf.tu-darmstadt.de/data/from_games/  
