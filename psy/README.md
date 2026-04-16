@@ -71,3 +71,5 @@ Motivation: Darwin - survival, Freud - pleasure, Adler - power, Jung - self-actu
   
 kak_vibirat_professiyu_test_p148  
   
+carry phone on cross shoulder belt attached to jeans to film covertly for transparency  
+social experiments ? (https://en.wikipedia.org/wiki/Trollstation)  
