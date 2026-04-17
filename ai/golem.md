@@ -19,7 +19,6 @@ matchmaker
 IF educational game parser / character  
   
 initial guest, interviewer, DJ  
-higher level language for screenwriting (data from flickr kml / georss)  
 can find data on its own by googling and spidering ?  
 can filter general stupidity linguistically ?  
 train multiple times on same data and use average to reduce stochasticity (also moving average ?)  
@@ -35,6 +34,7 @@ http://mi.eng.cam.ac.uk/research/projects/VideoRec/CamVid/
 https://download.visinf.tu-darmstadt.de/data/from_games/  
 https://www.cityscapes-dataset.com/  
 https://pastvu.com?g=54.709564,20.494307&z=12&s=osm&t=mapnik&type=1  
+(data from flickr kml / georss)  
 have to keep parts of image unchanged with layers  
   
 aid for the blind with annotated google streets from pedestrian pov and earbud / tactile display if also deaf  
