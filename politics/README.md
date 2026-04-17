@@ -8,6 +8,8 @@ commission and attribution for everyone whose commercial work is used in trainin
 credits inline as links to sources  
 fair use applies to AI !  
   
+law against paid religious books and cults  
+  
 https://pp-international.net/join-in/application-for-individual-membership/  
 https://lime.ppi.rocks/index.php?r=survey/index&sid=341246  
   
