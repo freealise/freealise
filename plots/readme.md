@@ -4,6 +4,8 @@
   
 - songs based on legislation (which is based on precedent which is a story appropriate for a song - FOSS licenses ?)  
   
+- script about the invisible hand of the market (welfare/free market/inequality/nonprofits) (https://en.wikipedia.org/wiki/Great_Depression#Literature, https://en.wikipedia.org/wiki/Sharing_economy#Examples)  
+  
 - sociological data summarized as lyrics (everyman you-character; personified nations ?)  
   
 - can be like a definition of a term (word or phrase) with examples in IRL context; monolingual dictionary word clarification / example that reveals meaning (not 'personal associations'), also for a neologism  
