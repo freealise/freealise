@@ -1,5 +1,7 @@
 B"H  
   
+common basis of faith as Easter egg in OS ?  
+  
 "I have an idea, I just don't know what it is!"  
   
 /*
