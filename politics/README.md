@@ -2,6 +2,7 @@ fair use: https://www.law.cornell.edu/uscode/text/17/107
 (politics generally allowed if not against the nature of work)
   
 No distribution without attribution  
+use AI only if necessary (all else has failed)  
 if AI was used then the user has to be like itself  
 (work of AI should not be attributed to a person, only the other way around)  
 commission and attribution for everyone whose commercial work is used in training of generative AI (will also reduce promotional content)  
