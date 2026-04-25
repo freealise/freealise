@@ -1,7 +1,7 @@
 FFT-based vocoder  
 ASCII spectrogram sequencer  
   
-Meditation app as demo of Sefer Yetzirah++ method (with IPA and formants)  
+Meditation app as demo of Sefer Yetzirah++ method (several circles ? with IPA and formants)  
 SY versions (also in Kaplan's book): https://hermetics.net/media-library/kabbalah/  
 prophecy: Guide for the Perplexed Pt.2 32-48 (end)  
   
