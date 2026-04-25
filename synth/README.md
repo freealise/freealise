@@ -2,6 +2,7 @@ FFT-based vocoder
 ASCII spectrogram sequencer  
   
 Meditation app as demo of Sefer Yetzirah++ method (with IPA and formants)  
+SY versions (also in Kaplan's book): https://hermetics.net/media-library/kabbalah/  
   
 multilingual phonetic keyboard (with swipe input):  
    > f2, numeric row for base pitch and sonority  
