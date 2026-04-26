@@ -38,7 +38,7 @@ combine animation with audioplays
   
 mat from thick fishing line for stereo screen (https://commons.wikimedia.org/wiki/File:Parallax_barrier_vs_lenticular_screen.svg), or blue and yellow glasses with plastic lenses (https://developers.google.com/cardboard/manufacturers)  
   
-the only comics that the majority of adults tolerate are satirical  
+the only comics that the majority of adults tolerate are satirical (abstract comics - gets into social issues right away)  
 Inoffensive caricature: photorealistic and providing a solution to exposed problem, about ideas and not people, parody as compliment  
   
 depth = blur (focus) or color fade to fog - how is done in photography ?  
