@@ -1,3 +1,4 @@
+how to (~instructables) in photos and screenshots  
   
 fisheye lenses on phone cameras for 360 view (https://en.wikipedia.org/wiki/Secondary_lens), to equi with ffmpeg  
   
