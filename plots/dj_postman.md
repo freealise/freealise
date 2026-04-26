@@ -11,8 +11,6 @@ happening around Europe (as too far to the left for America, like Sanders) - DJ 
   
 villain speech (Daniel Ek ~Joe) ending in a joke and actual solution  
   
-💳 credit card with the name Miriam  
-💍 if he gave you a ring then you might be a king  
 song about control over own money (promoting crypto ?)  
 "a play that is worth producing, produces itself"  
 
