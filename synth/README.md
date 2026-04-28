@@ -4,6 +4,7 @@ ASCII spectrogram sequencer (multilayer raster)
 Meditation app as demo of Sefer Yetzirah++ method (several circles ? with IPA and formants)  
 SY versions (also in Kaplan's book): https://hermetics.net/media-library/kabbalah/  
 prophecy: Guide for the Perplexed Pt.2 32-48 (end)  
+docs: "Sefer Beriyah" ?  
   
 multilingual phonetic keyboard (with swipe input):  
    > f2, numeric row for base pitch and sonority  
