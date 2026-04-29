@@ -10,7 +10,7 @@ text-based language learning game with IRL simulation (Maslow pyramid)
 = interactive phrasebook | dictionary | 'mad libs' with AI  
 has a structure of antipropaganda wiki for general political education and legislation (+map)  
   
-equirectangular image maps with links to nearby places (~geocities 2.0)  
+equirectangular image maps with links to nearby places (~geocities 2.0), overall map linked to locations  
 interactive website in 3d like the actual place of business or virtual  
   
 use gsv custom tiles for svg / css antarctic InF  
