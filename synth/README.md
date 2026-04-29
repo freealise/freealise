@@ -1,5 +1,6 @@
 FFT-based vocoder  
 ASCII spectrogram sequencer (multilayer raster)  
+or ipa symbols for notes  
   
 Meditation app as demo of Sefer Yetzirah++ method (several circles ? with IPA and formants)  
 SY versions (also in Kaplan's book): https://hermetics.net/media-library/kabbalah/  
