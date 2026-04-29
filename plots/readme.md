@@ -14,7 +14,7 @@
   
 - Belarusian Krolevec(?) (https://en.wikipedia.org/wiki/Kaliningrad_Oblast) is the remote capital(??) of mainland Prussia (https://en.wikipedia.org/wiki/Prussia#Religion) while Birobidzhan is capital of Siberia; Nyen/Pietari is Swedish/Finnish Ingria; Crimean Tataria on historical land beyond Crimea (define natural border)  
   
-- future Eurovision album (#russiaIsSiberia #BelarusIsEurope #SiberiaForSale #SiberiaRemoteControl #russiaIsAColony #PietariIsFinland; Greece not believing what Americans do after it, Holy Spirit goes _through_ the son (any angel), location of head of church doesn't matter - protestant Orthodoxy ?); Georgia is 'affordable Israel'; Czechia, Sweden ?  
+- future Eurovision album (#russiaIsSiberia #BelarusIsEurope #SiberiaForSale #SiberiaRemoteControl #russiaIsAColony #PietariIsFinland; Greece not believing what Americans do after it, Holy Spirit goes _through_ the son (any angel), location of head of church doesn't matter - protestant Orthodoxy ?); Georgia is also a holy land; Czechia, Sweden ? make a point and find evidence for/against on map/travel  
   
 - TW = international folk music = oldest there is (timeless and universal) = 'shamanic' = (progressive) folk with synth  
   
