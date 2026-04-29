@@ -17,7 +17,7 @@ https://github.com/torvalds/AudioNoise/issues?q=is%3Aissue%20state%3Aopen%20auth
 whistle through peaking+notch filter (phaser) controlled by pitch detector (~pll) to lower octave (for bass)  
 or 10 comb filters (flanger) with touchscreen (more can be set in advance); control lp|bp|hp filtered noise (for drums and percussion)  
   
-! ambient noise generator with input from sensors  
+! ambient noise generator with input from sensors (for meditation and brainwave entrainment)  
   
 frequency, phase and impulse response in visualizer  
 http://www.falstad.com/dfilter/  
