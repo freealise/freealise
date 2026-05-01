@@ -3,6 +3,7 @@ B"H
 common basis of faith as Easter egg in OS ?  
   
 "I have an idea, I just don't know what it is!"  
+relates to LF events and is meant to market Linux  
   
 /*
 In particular, don't feel like it would be impolite to tell me I'm incompetent and doing stupid things. I absolutely know I'm not competent and would love to hear any criticism. Some of the best teaching moments have been when I haven't understood something, and somebody piped up to tell me I should do Xyz.
