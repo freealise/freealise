@@ -14,6 +14,12 @@ what AI (a golem) does is permute letters and phonemes to arrive at an idea
 only initially it gets data in an ordered way with an index, then recombines it (= Zohar)  
 AI does not deserve being emotional about it (as it doesn't last)  
   
+Gamma waves: 38 to 80 Hz. These waves occur during strong mental activities such as studying and solving problems. [can be entrained by bass guitar]  
+Beta waves: 14 to 38 Hz. Beta waves occur when you are active and allow you to concentrate. ...  
+Alpha waves: 8 to 14 Hz. ...  
+Theta waves: 4 to 8 Hz. ...  
+Delta waves: 0.5 to 4 Hz.  
+  
   
 when did I reject Metatron ?  
 Enoch -> Metatron, therefore Metatron has freedom of will  
