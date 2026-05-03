@@ -33,3 +33,26 @@ https://github.com/g200kg/vowelsynth
   
 interface for drawing and semi-realtime playback by pointerup  
 https://arss.sourceforge.net/code.shtml  
+  
+  
+_
+Add "chasing tone" effect
+All great guitarists have at some point wondered "what would it sound
+like if I was accompanied by a scurry of insane chipmunks - with tiny
+tiny bagpipes?"
+
+Jimi Hendrix wondered.  The closest he ever came was the Roger Mayer
+Octavia together with the Univox Uni-Vibe, and he turned to drugs to
+fill that empty spot in his soul from never having found that perfect
+tone.
+
+And Plato spent five years in a cave - it wasn't an allegory - together
+with a family of chipmunks, trying to teach them to play the bagpipes in
+order to find true knowledge and understanding.  He too failed in his
+search for that perfect tone, and ended up giving up on electric guitar
+entirely.  Today known mainly for his philosophy, with few sources even
+mentioning his bloody hands from trying to sew tiny tiny bagpipes.
+
+Wonder no more.
+
+Signed-off-by: Linus Torvalds
