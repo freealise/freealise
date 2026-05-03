@@ -23,7 +23,14 @@ Speaking English since 1992 (IELTS >7.0), coding since ~2000.
 Concerned with international relations and global issues.  
 <a>꙳✡︎</a> Jewish ('Noahide') by faith, ethnically complex. 🇺🇦🇪🇺
   
-<!--[![Quora Profile](https://img.shields.io/badge/⁉️-Quora-red?style=for-the-badge)](https://www.quora.com/profile/Marina-From-Freealise)-->
+<!--[![Quora Profile](https://img.shields.io/badge/⁉️-Quora-red?style=for-the-badge)](https://www.quora.com/profile/Marina-From-Freealise)
+
+<img src="https://img.shields.io/badge/-Linux-FCC624?style=flat&logo=linux&logoColor=white"/>
+<img src="https://img.shields.io/badge/-Linux Foundation-003366?style=flat&logo=linuxfoundation&logoColor=white"/>
+<img src="https://img.shields.io/badge/-Linux Mint-87CF3E?style=flat&logo=linuxmint&logoColor=white"/>
+<img src="https://img.shields.io/badge/-Debian-A81D33?style=flat&logo=debian&logoColor=white"/>
+<img src="https://img.shields.io/badge/-Raspberry Pi-A22846?style=flat&logo=raspberrypi&logoColor=white"/>-->
+
 [![Email](https://img.shields.io/badge/✉️-me⎀freealise.com-red.svg?style=for-the-badge)](mailto:me_freealise.com?subject=me_freealise.com&body=^) 
 [![Stack Overflow](https://img.shields.io/stackexchange/stackoverflow/r/9165398?color=orange&label=stackoverflow&logo=stackoverflow&style=for-the-badge)](https://stackoverflow.com/users/9165398) 
 [![HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97-Hugging%20Face-yellow?style=for-the-badge)](https://huggingface.co/freealise) 
