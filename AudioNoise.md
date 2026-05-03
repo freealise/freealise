@@ -20,8 +20,7 @@ or 10 comb filters (flanger) with touchscreen (more can be set in advance); cont
   
 ! ambient noise generator with input from sensors (for meditation and brainwave entrainment)  
   
-frequency, phase and impulse response in visualizer  
-http://www.falstad.com/dfilter/  
+redo visualizer with sdk in C; oscilloscope, frequency, phase and impulse response (http://www.falstad.com/dfilter/)  
   
 (I'd make a formant filter, even with consonants  
  y: f2, x: f1, z: sibilance or sonority  
