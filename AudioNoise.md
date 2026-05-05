@@ -1,6 +1,6 @@
 B"H  
   
-common basis of faith as system messages in OS ?  
+common basis of faith as system messages  
   
 "I have an idea, I just don't know what it is!"  
 relates to LF events and is meant to market Linux  
