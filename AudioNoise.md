@@ -20,7 +20,7 @@ or 10 comb filters (flanger) with touchscreen (more can be set in advance); cont
   
 ! ambient noise generator with input from sensors (for meditation and brainwave entrainment)  
   
-interface with sdk in C; remove visualizer (https://support.audacityteam.org/audio-editing/using-realtime-effects)  
+interface with sdk in C (with visualizer) (https://support.audacityteam.org/audio-editing/using-realtime-effects)  
   
 (I'd make a formant filter, even with consonants  
  y: f2, x: f1, z: sibilance or sonority  
