@@ -15,7 +15,7 @@ In particular, don't feel like it would be impolite to tell me I'm incompetent a
 // What should we do about silence? (c)
 https://github.com/torvalds/AudioNoise/issues?q=is%3Aissue%20state%3Aopen%20author%3Afreealise  
   
-- threshold and limiter for sustainer; realtime pot control for everything; parametric eq out of boost (3 parameters + filter switch); test MA filter for bitcrusher; fix pitch tremolo with compressor (optionally multiply by volume of original)  
+- threshold and up/down option for compressor (to remove finger noise and keep the dynamics of notes); realtime pot control for everything; parametric eq out of boost (3 parameters + filter switch); test MA filter for bitcrusher; fix pitch tremolo with compressor (optionally multiply by volume of original)  
 - reverb (echo) can be algorithmic with set of delays separated by not one sample as in a convolver but several (downsampled impulse response with randomly varying delay times and volumes with gaussian probability to scatter phase and avoid comb filtering)  
   
 play through negative + positive comb filter (flanger) or allpass filter (phaser) controlled by pitch detector to lower or raise octave (for bass or solo)  
