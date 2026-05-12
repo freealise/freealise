@@ -15,15 +15,15 @@ In particular, don't feel like it would be impolite to tell me I'm incompetent a
 // What should we do about silence? (c)
 https://github.com/torvalds/AudioNoise/issues?q=is%3Aissue%20state%3Aopen%20author%3Afreealise  
   
-- threshold and limiter for sustainer; realtime pot control for everything; harmonic waveshaper with interpolation out of distortion; eq out of tube (3 parameters + switch); test MA filter for bitcrusher and sustainer  
-- reverb can be algorithmic with set of delays separated by not one sample as in a convolver but several (downsampled impulse response with randomly varying delay times and volumes with gaussian probability to scatter phase and avoid comb filtering)  
+- threshold and limiter for sustainer; realtime pot control for everything; parametric eq out of boost (3 parameters + filter switch); test MA filter for bitcrusher  
+- reverb (flanger) can be algorithmic with set of delays separated by not one sample as in a convolver but several (downsampled impulse response with randomly varying delay times and volumes with gaussian probability to scatter phase and avoid comb filtering)  
   
 whistle through peaking+notch filter (phaser) controlled by pitch detector (~pll) to lower octave (for bass)  
-or 10 comb filters (flanger) with touchscreen (more can be set in advance); control lp|bp|hp filtered noise (for drums and percussion)  
+control lp|bp|hp filtered noise (for drums and percussion)  
   
 ! ambient noise generator with input from sensors (for meditation and brainwave entrainment)  
   
-interface with sdk in C (with visualizer) (https://support.audacityteam.org/audio-editing/using-realtime-effects)  
+mouse and touchscreen interface with visualizer (https://support.audacityteam.org/audio-editing/using-realtime-effects)  
   
 (I'd make a formant filter, even with consonants  
  y: f2, x: f1, z: sibilance or sonority  
