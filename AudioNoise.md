@@ -15,7 +15,7 @@ In particular, don't feel like it would be impolite to tell me I'm incompetent a
 // What should we do about silence? (c)
 https://github.com/torvalds/AudioNoise/issues?q=is%3Aissue%20state%3Aopen%20author%3Afreealise  
   
-- threshold, volume tracking and up/down option for compressor (to remove finger noise and keep the dynamics of notes); realtime pot control for everything; parametric eq out of boost (3 parameters + filter switch); test MA filter for bitcrusher; separate chorus from pitch (flanger)  
+- threshold, volume tracking and up/down option for compressor (to remove finger noise and keep the dynamics of notes), expander; realtime pot control for everything; parametric eq out of boost (3 parameters + filter switch); test MA filter for bitcrusher; separate chorus from pitch (flanger)  
 - reverb (phaser) can be algorithmic with set of delays separated by not one sample as in a convolver but several (downsampled impulse response with randomly varying delay times and volumes with gaussian probability to scatter phase and avoid comb filtering)  
 - control lp|bp|hp filtered noise (for drums and percussion)  
   
