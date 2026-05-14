@@ -25,4 +25,18 @@ genres align to the sefirot through the hierarchy of needs
   
 (https://www.wikiwand.com/en/Trickster, https://www.google.com/search?q=trickster+storygrid)  
 https://www.wikiwand.com/en/Nasreddin, https://www.wikiwand.com/en/Hershele_Ostropoler  
-https://archive.org/search?query=Ukrainian+Folk+Tales  
+https://archive.org/search?query=Ukrainian+Folk+Tales
+
+/* For want of a nail,
+ *  the shoe was lost.
+ * For want of a shoe,
+ *  the horse was lost.
+ * For want of a horse,
+ *  the knight was lost.
+ * For want of a knight,
+ *  the battle was lost.
+ * So it was a kingdom was lost,
+ *  all for the want of a nail.
+ *      -- George Herbert, Jacula Prudentum
+ *         (Colloqual Adaptation)
+ */ [McGuffin illustration]
