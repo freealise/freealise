@@ -41,3 +41,5 @@ find more words by those in definition (on screen in small print) ?
 combine pictograms for basic words for the complex ?  
 query interface from https://books.google.com/ngrams/info as keyboard (link to source)  
 translate the siddur poetically, add natural tune; read the books, news and wiki  
+  
+merge with vocalise, open source all gscripts  
