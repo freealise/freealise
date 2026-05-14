@@ -40,3 +40,5 @@ https://archive.org/search?query=Ukrainian+Folk+Tales
  *      -- George Herbert, Jacula Prudentum
  *         (Colloqual Adaptation)
  */ [McGuffin illustration]
+
+Irony is sophisticated benevolent trolling (sarcasm is malevolent), when the troll has a point of view but chooses to conceal it and pretend to be agreeable.
