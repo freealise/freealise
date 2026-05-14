@@ -43,3 +43,6 @@ query interface from https://books.google.com/ngrams/info as keyboard (link to s
 translate the siddur poetically, add natural tune; read the books, news and wiki  
   
 merge with vocalise, open source all gscripts  
+  
+Add syntax decoder to Sefaria with biblical Hebrew frequency dictionary as source  
+  
