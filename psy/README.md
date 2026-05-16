@@ -43,7 +43,7 @@ Jews don't habitually (only affectively) prostrate in prayer because it may indu
 Controlled breathing can induce sleep or increased wakefulness as a change in the brainwave patterns, for which a conscious change in breathing amplitude, frequency and phase is required, possibly along with synchronized musical or physical activity  
 https://en.wikipedia.org/wiki/Brainwave_entrainment  
 https://en.wikipedia.org/wiki/Transcranial_magnetic_stimulation#Obsessive%E2%80%93compulsive_disorder_(OCD)  
-and sensory deprivation (~mikveh or hammock or mattress, tallit or paper bag on the head, eye mask or kippah on the face, ear blockers, darkness - or the Dead Sea at night of new moon).  
+and sensory deprivation (~mikveh or hammock or mattress, dark tallit or paper bag on the head, eye mask or kippah on the face, ear blockers, darkness - or the Dead Sea at night of new moon).  
 https://en.wikipedia.org/wiki/Ganzfeld_effect (same with noise)  
 https://en.wikipedia.org/wiki/Neurofeedback  
   
