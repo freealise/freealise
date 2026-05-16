@@ -47,6 +47,8 @@ and sensory deprivation (~mikveh or hammock or mattress, dark tallit or paper ba
 https://en.wikipedia.org/wiki/Ganzfeld_effect (same with noise)  
 https://en.wikipedia.org/wiki/Neurofeedback  
   
+! Rain and thunder, crackling fire of the bush -> voice heard by Moses  
+  
 Phosphene observation — paying relaxed attention to the colored blurbs before closed eyes may help to transform them into images.  
 Direct self-hypnosis - One may try to say again and again “_!” This will result in tiredness and some images may appear.  
 Mind-machine visual stimulation - projected white noise.  
