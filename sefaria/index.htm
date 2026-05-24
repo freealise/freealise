@@ -8,7 +8,8 @@
 </head>
 <body>
 
-<div id="torah">Genesis 1:1</div>
+<div id="torah">Genesis</div>
+<button onclick='alert(document.getElementById("sefaria-linker-text").innerHTML);'>text</button>
 
 <script type="text/javascript" charset="utf-8" src="https://www.sefaria.org/linker.v3.js"></script>
 	  <script>
@@ -20,8 +21,6 @@
         }
       }
       sefaria.link({mode: "popup-click", dynamic: true, whitelistSelector: "#torah"});
-
-alert(document.body.innerHTML);
 
       /*
       const options = {method: 'GET', headers: {accept: 'application/json'}};
