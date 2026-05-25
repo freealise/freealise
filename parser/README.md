@@ -1,4 +1,5 @@
 ### TODO:  
+formatAsPoetry  
 merge defining vocabularies, sort by frequency and POS  
 https://learnthesewordsfirst.com/about/other-learners-dictionaries.html  
 
