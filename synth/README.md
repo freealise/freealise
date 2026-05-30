@@ -2,7 +2,7 @@ FFT-based vocoder
 ASCII spectrogram sequencer (multilayer raster)  
 or ipa symbols for notes  
   
-Meditation app as demo of Sefer Yetzirah++ method (several circles ? with IPA and formants, letter combination can be automated, ~ Urim & Thummim ?)  
+Meditation app as demo of Sefer Yetzirah++ method (several rotating circles or wheels with Hebrew letters ? with IPA and formant combinations, ~ Urim & Thummim ?)  
 SY versions (also in Kaplan's book): https://hermetics.net/media-library/kabbalah/  
 prophecy: Guide for the Perplexed Pt.2 32-48 (end)  
 levels of prophecy align to worlds and soul levels  
