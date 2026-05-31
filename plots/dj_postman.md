@@ -1,15 +1,7 @@
-### The Lost DJ (Kabbalah)
+### The Lost DJ
   
-is the story of Abulafia who thought himself the Moshiach,  
-and the Arizal who interpreted the idea behind the Zohar  
-transferred to the present moment for all the gentiles  
-  
-The Last DJ and Postman are the same story set in foreseeable future (TP as main character - both DJ and mayor, villain is the next Pope as a comedy dictator = personality cult,  
-https://en.wikisource.org/wiki/Works_of_Martin_Luther,_with_introductions_and_notes/Volume_1/Disputation_on_Indulgences#Ninety-five_Theses, https://en.wikipedia.org/wiki/Itinerant_preacher)  
-happening around Europe (as too far to the left for America, like Sanders) - DJ laid off in Britain gets a station in Georgia  
-'new wave' (not a genre but direct revelation), post-cyberpunk (retrofuturism, disappointment with tech - 'nowpunk')  
-  
-villain speech (Daniel Ek ~Joe) ending in a joke and actual solution  
+https://en.wikisource.org/wiki/Works_of_Martin_Luther,_with_introductions_and_notes/Volume_1/Disputation_on_Indulgences#Ninety-five_Theses, https://en.wikipedia.org/wiki/Itinerant_preacher  
+post-cyberpunk (retrofuturism, disappointment with tech - 'nowpunk')  
   
 song about control over own money (promoting crypto ?)  
 "a play that is worth producing, produces itself"  
