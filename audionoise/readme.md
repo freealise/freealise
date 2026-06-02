@@ -17,7 +17,7 @@ In particular, don't feel like it would be impolite to tell me I'm incompetent a
 // What should we do about silence? (c)
 https://github.com/torvalds/AudioNoise/issues?q=is%3Aissue%20state%3Aopen%20author%3Afreealise  
   
-- threshold (values below are multiplied by ratio of 1 to threshold level and squared then divided back), volume tracking (as final multiplier) and up/down option for compressor (to remove finger noise and keep the dynamics of notes), expander; realtime pot control for everything; parametric eq out of boost (3 parameters + filter switch; replace biquad formulae with calculator); test MA filter for bitcrusher; keep chorus with pitch  
+- threshold (values below are multiplied by ratio of 1 to threshold level and squared then divided back), volume tracking (as final multiplier) and up/down option for compressor (to remove finger noise and keep the dynamics of notes), expander; realtime pot control for everything; parametric eq out of boost (3 parameters + filter switch; replace biquad formulae with calculator); test MA filter for bitcrusher; keep chorus with pitch (corrector ?)  
 - reverb (echo) can be algorithmic with set of delays separated by not one sample as in a convolver but several (impulse response with loudest subset of values, find average base frequency to scatter delays and avoid comb filtering)  
 - classic vocoder ~EQ (flanger), formant filter for backing vocals with XY_ control by touchscreen (phaser)  
   
