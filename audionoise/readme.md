@@ -26,8 +26,8 @@ https://github.com/torvalds/AudioNoise/issues?q=is%3Aissue%20state%3Aopen%20auth
 mouse and touchscreen interface with visualizer (https://support.audacityteam.org/audio-editing/using-realtime-effects)  
   
 (I'd make a formant filter, even with consonants  
- y: f2, x: f1, z: sibilance or sonority  
- interface is touchscreen not mouse)  
+ y: f1, x: f2, z: f3, buttons: sibilance or sonority  
+ interface is touchscreen or hand trackball)  
   
 https://github.com/AppGeo/web-audio-examples  
 https://github.com/g200kg/vowelsynth  
