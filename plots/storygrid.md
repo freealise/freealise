@@ -41,4 +41,4 @@ https://archive.org/search?query=Ukrainian+Folk+Tales
  *         (Colloqual Adaptation)
  */ [McGuffin illustration]
 
-Irony is sophisticated benevolent trolling (sarcasm is malevolent), when the troll has a point of view but chooses to conceal it and pretend to be agreeable.
+Irony is sophisticated benevolent trolling (sarcasm is malevolent), when the troll has a point of view but chooses to conceal it and pretend to be agreeable. https://en.wikipedia.org/wiki/Irony_(disambiguation)  
