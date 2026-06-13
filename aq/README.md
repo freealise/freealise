@@ -2,9 +2,9 @@ _dream_: global positive nationalist movement like Zionism which is sincere but 
 
 _ad script_: reporter on location is contacted by news announcer among apocalyptic current events, responding that nothing is happening except the normal which looks like a miracle.  
   
-_program_: LF -} PPI {- libertarians (l+r ^freedom)  
+_program_: LF -} PPI {- Jews (l+r ^freedom)  
   
-_OST_: AQ Eurovision entry = Freealise theme song about sponsor economy (The Last DJ / Postman remake)  
+_OST_: AQ Eurovision entry = Freealise theme song about sponsor economy  
   
 text-based language learning game with IRL simulation (Maslow pyramid)  
 = interactive phrasebook | dictionary | 'mad libs' with AI  
