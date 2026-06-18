@@ -19,7 +19,8 @@ https://github.com/torvalds/AudioNoise/issues?q=is%3Aissue%20state%3Aopen%20auth
   
 - threshold (values below are multiplied by ratio of 1 to threshold level and squared then divided back), volume tracking (as final multiplier) and up/down option for compressor (to remove finger noise and keep the dynamics of notes), expander; parametric eq out of boost (3 parameters + filter switch; test LP filter for bitcrusher  
 - reverb (echo) can be algorithmic with set of delays separated by not one sample as in a convolver but several (impulse response with loudest subset of values, find average base frequency to scatter delays and avoid comb filtering)  
-- formant filter for backing vocals with XYZ control by touchscreen or manual trackball (phaser|flanger)  
+- formant filter for backing vocals with XYZ control by touchscreen or manual trackball (phaser)  
+- pitch detector and comb filter with LP for bass (flanger)  
   
 ! ambient noise generator with input from sensors (for meditation and brainwave entrainment)  
   
