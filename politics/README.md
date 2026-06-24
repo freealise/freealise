@@ -8,6 +8,7 @@ if AI was used then the user has to be like itself
 commission and attribution for everyone whose commercial work is used in training of generative AI (will also reduce promotional content)  
 credits inline as links to sources  
 fair use applies to AI !  
+temperature parameter has to be exposed to user (like control over a gamble)  
   
 law against paid religious books and cults  
   
