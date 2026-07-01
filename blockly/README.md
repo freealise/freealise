@@ -1,8 +1,5 @@
-programming education and documentation  
+programming education  
 https://en.wikipedia.org/wiki/Visual_programming_language  
-  
-modular code for neural networks ?  
-natural language: syllable / word / phrase / sentence / story structure ?  
   
 https://developers.google.com/blockly/guides/overview  
 https://github.com/google/blockly-samples/tree/master/examples/getting-started-codelab  
