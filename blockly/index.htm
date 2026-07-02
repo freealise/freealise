@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- INJECTED HEADER -->
+    <meta name="viewport" content="width=device-width,maximum-scale=2" />
+    <link rel="icon" type="image/x-icon" href="/blockly-samples/favicon.ico" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://blocklycodelabs.dev/styles/main.css" />
+    <link rel="stylesheet" href="/blockly-samples/css/custom.css" />
+    <!-- END INJECTED HEADER -->
+    <meta charset="utf-8" />
+    <title>
+      Headless
+    </title>
+    <script src="blockly_compressed.js">
+    </script>
+    <script src="blocks_compressed.js">
+    </script>
+    <script src="python_compressed.js">
+    </script>
+    <script src="msg/en.js">
+    </script>
+    <style>
+      body {
+        background-color: #fff;
+        font-family: sans-serif;
+      }
+      h1 {
+        font-weight: normal;
+        font-size: 140%;
+      }
+      td {
+        vertical-align: top;
+      }
+      textarea {
+        width: 100%;
+        height: 20em;
+      }
+    </style>
+  </head>
+  <body class="root">
+    <!-- NAV BAR -->
+    <nav id="toolbar">
+      <a href="/blockly-samples" id="arrow-back">      <i class="material-icons">      close
+</i>
+      <img src="https://blocklycodelabs.dev/images/logo_knockout.png" class="logo-devs" alt="Blockly sample" />
+</a>
+      <div class="title-grow">
+        <div class="title">
+          Headless
+        </div>
+        <div class="subtitle">
+          Generate code from JSON without graphics.
+        </div>
+      </div>
+      <a href="https://github.com/raspberrypifoundation/blockly-samples/blob/main/examples/headless-demo" class="button" target="_blank">      View code
+</a>
+    </nav>
+    <!-- END NAV BAR -->
+    <main id="main" class="has-tabs">
+      <div class="drop-shadow">
+      </div>
+      <p>
+        This is a simple demo of generating Python code from JSON with no
+      graphics. This might be useful for server-side code generation.
+      </p>
+      <table style="width: 100%">
+        <tbody>
+          <tr>
+            <td style="width: 50%">
+              <textarea id="json_input">
+                {
+            &#34;blocks&#34;: {
+              &#34;languageVersion&#34;: 0,
+              &#34;blocks&#34;: [
+                {
+                  &#34;type&#34;: &#34;controls_if&#34;,
+                  &#34;x&#34;: 20,
+                  &#34;y&#34;: 20,
+                  &#34;inline&#34;: false,
+                  &#34;extraState&#34;: {
+                    &#34;hasElse&#34;: true
+                  },
+                  &#34;inputs&#34;: {
+                    &#34;IF0&#34;: {
+                      &#34;block&#34;: {
+                        &#34;type&#34;: &#34;logic_compare&#34;,
+                        &#34;fields&#34;: {
+                          &#34;OP&#34;: &#34;EQ&#34;
+                        },
+                        &#34;inputs&#34;: {
+                          &#34;A&#34;: {
+                            &#34;block&#34;: {
+                              &#34;type&#34;: &#34;math_arithmetic&#34;,
+                              &#34;fields&#34;: {
+                                &#34;OP&#34;: &#34;MULTIPLY&#34;
+                              },
+                              &#34;inputs&#34;: {
+                                &#34;A&#34;: {
+                                  &#34;block&#34;: {
+                                    &#34;type&#34;: &#34;math_number&#34;,
+                                    &#34;fields&#34;: {
+                                      &#34;NUM&#34;: 6
+                                    }
+                                  }
+                                },
+                                &#34;B&#34;: {
+                                  &#34;block&#34;: {
+                                    &#34;type&#34;: &#34;math_number&#34;,
+                                    &#34;fields&#34;: {
+                                      &#34;NUM&#34;: 7
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          &#34;B&#34;: {
+                            &#34;block&#34;: {
+                              &#34;type&#34;: &#34;math_number&#34;,
+                              &#34;fields&#34;: {
+                                &#34;NUM&#34;: 42
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    &#34;DO0&#34;: {
+                      &#34;block&#34;: {
+                        &#34;type&#34;: &#34;text_print&#34;,
+                        &#34;inline&#34;: false,
+                        &#34;inputs&#34;: {
+                          &#34;TEXT&#34;: {
+                            &#34;block&#34;: {
+                              &#34;type&#34;: &#34;text&#34;,
+                              &#34;fields&#34;: {
+                                &#34;TEXT&#34;: &#34;Don&#39;t panic&#34;
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    &#34;ELSE&#34;: {
+                      &#34;block&#34;: {
+                        &#34;type&#34;: &#34;text_print&#34;,
+                        &#34;inline&#34;: false,
+                        &#34;inputs&#34;: {
+                          &#34;TEXT&#34;: {
+                            &#34;block&#34;: {
+                              &#34;type&#34;: &#34;text&#34;,
+                              &#34;fields&#34;: {
+                                &#34;TEXT&#34;: &#34;Panic&#34;
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          }
+              </textarea>
+            </td>
+            <td>
+            </td>
+            <td style="width: 50%">
+              <textarea id="code_output" readonly="">
+              </textarea>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div style="text-align: center">
+        <button onclick="generate()">
+          Generate Python ⤴
+        </button>
+      </div>
+      <script>
+        function generate() {
+        // Parse the JSON into a tree.
+        var jsonText = document.getElementById(&#39;json_input&#39;).value;
+        var code;
+        try {
+          var json = JSON.parse(jsonText);
+        } catch (e) {
+          alert(e);
+          return;
+        }
+        var demoWorkspace = new Blockly.Workspace();
+        Blockly.serialization.workspaces.load(json, demoWorkspace);
+        var code = python.pythonGenerator.workspaceToCode(demoWorkspace);
+        // Create a headless workspace.
+        document.getElementById(&#39;code_output&#39;).value = code;
+      }
+      </script>
+    </main>
+    <!-- FOOTER  -->
+    <footer id="footer">
+      <div class="footer-wrapper site-width">
+        <div class="link-list">
+          <label>
+            Developer Resources
+          </label>
+          <ul>
+            <li>
+              <a target="_blank" href="https://developers.google.com/blockly/guides/overview/">              Developer Docs
+</a>
+            </li>
+            <li>
+              <a target="_blank" href="https://blocklycodelabs.dev/">              Codelabs
+</a>
+            </li>
+            <li>
+              <a target="_blank" href="https://raspberrypifoundation.github.io/blockly-samples/developer-tools/index.html">              Developer
+              Tools
+</a>
+            </li>
+          </ul>
+        </div>
+        <div class="link-list">
+          <label>
+            Github
+          </label>
+          <ul>
+            <li>
+              <a target="_blank" href="https://github.com/raspberrypifoundation/blockly/">              Blockly Sources
+</a>
+            </li>
+            <li>
+              <a target="_blank" href="https://github.com/raspberrypifoundation/blockly-samples/">              Blockly Samples
+</a>
+            </li>
+          </ul>
+        </div>
+        <div class="link-list">
+          <label>
+            Support
+          </label>
+          <ul>
+            <li>
+              <a target="_blank" href="https://groups.google.com/forum/#!forum/blockly/">              Support
+</a>
+            </li>
+          </ul>
+          <div>
+            Published with
+            <a href="https://pages.github.com">            GitHub Pages
+</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- END FOOTER -->
+  </body>
+</html>
