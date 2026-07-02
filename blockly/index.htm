@@ -6,6 +6,7 @@
     <script src="https://raspberrypifoundation.github.io/blockly-samples/examples/lib/blockly/blockly_compressed.js"></script>
     <script src="https://raspberrypifoundation.github.io/blockly-samples/examples/lib/blockly/blocks_compressed.js"></script>
     <script src="https://raspberrypifoundation.github.io/blockly-samples/examples/lib/blockly/python_compressed.js"></script>
+    <script src="https://raspberrypifoundation.github.io/blockly-samples/examples/lib/blockly/javascript_compressed.js"></script>
     <script src="https://raspberrypifoundation.github.io/blockly-samples/examples/lib/blockly/msg/en.js"></script>
     <style>
       body {
@@ -140,11 +141,12 @@
     </table>
 
     <div style="text-align: center">
-      <button onclick="generate()">Generate Python &#10548;</button>
+      <button onclick="generate('py')">Generate Python</button>
+      <button onclick="generate('js')">Generate Javascript</button>
     </div>
 
     <script>
-      function generate() {
+      function generate(l) {
         // Parse the JSON into a tree.
         var jsonText = document.getElementById('json_input').value;
         var code;
@@ -156,7 +158,13 @@
         }
         var demoWorkspace = new Blockly.Workspace();
         Blockly.serialization.workspaces.load(json, demoWorkspace);
-        var code = python.pythonGenerator.workspaceToCode(demoWorkspace);
+        var code = "";
+        if (l == 'py') {
+          code = python.pythonGenerator.workspaceToCode(demoWorkspace);
+        } else if (l == 'js') {
+          code = javascript.javascriptGenerator.workspaceToCode(demoWorkspace);
+        } else {
+        }
         // Create a headless workspace.
         document.getElementById('code_output').value = code;
       }
