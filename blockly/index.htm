@@ -183,7 +183,7 @@
       <script>
         function generate() {
         // Parse the JSON into a tree.
-        var jsonText = document.getElementById(&#39;json_input&#39;).value;
+        var jsonText = document.getElementById('json_input').value;
         var code;
         try {
           var json = JSON.parse(jsonText);
@@ -195,7 +195,7 @@
         Blockly.serialization.workspaces.load(json, demoWorkspace);
         var code = python.pythonGenerator.workspaceToCode(demoWorkspace);
         // Create a headless workspace.
-        document.getElementById(&#39;code_output&#39;).value = code;
+        document.getElementById('code_output').value = code;
       }
       </script>
     </main>
