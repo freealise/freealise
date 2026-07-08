@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width" />
+  <title>Sefaria Linker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="torah">Genesis 1-50</div>
+<button onclick='alert(document.getElementById("sefaria-linker-text").innerHTML);'>text</button>
+
+<script type="text/javascript" charset="utf-8" src="https://www.sefaria.org/linker.v3.js"></script>
+	  <script>
+      function linker(ref) {
+        if (typeof ref[10].ref) {
+          document.getElementById('torah').innerText = ref[10].ref;
+        } else {
+          document.getElementById('torah').innerText = ref[11].ref;
+        }
+      }
+      sefaria.link({mode: "popup-click", dynamic: true, whitelistSelector: "#torah"});
+
+      /*
+      const options = {method: 'GET', headers: {accept: 'application/json'}};
+      fetch('https://www.sefaria.org/api/calendars?diaspora=1', options)
+        .then(response => response.json())
+        .then(response => linker(response.calendar_items))
+        .then(response => sefaria.link({mode: "popup-click", dynamic: true, whitelistSelector: "#torah"}))
+        .catch(err => console.log(err));
+      */
+    </script>
+    
+</body>
+</html>
