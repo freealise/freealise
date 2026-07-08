@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width" />
+  <title>Learn Hebrew with the weekly Torah</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .footnote-marker {
+      color:gray;
+      text-decoration:underline;
+    }
+    .footnote {
+      display:none;
+      font-size:80%;
+      margin-left:0.5em;
+    }
+    body {
+      margin: 0;
+    }
+    iframe {
+      position: relative;
+      top: 0px;
+      margin: 0;
+      border: 1px solid lightgray;
+    }
+    div {
+      margin: 0 1em;
+    }
+    #txt {
+      height: 256px;
+      overflow: scroll;
+    }
+  </style>
+</head>
+<body>
+
+  <!--<textarea id="test" style="width:95%;height:512px;font-size:1px"></textarea>
+
+  <script src="script.js"></script>-->
+
+<!--<iframe
+  src="https://quran.com/embed/v1?verses=62%3A11&translations=131&theme=light&mushaf=kfgqpc_v2"
+  width="100%"
+  data-quran-embed="true"
+  allow="clipboard-write"
+  frameborder="0">
+</iframe>
+<script defer src="https://quran.com/widget/embed-widget.v1.js"></script>
+-->
+
+<iframe name="iframe" id="iframe" width="100%" height="320" src="about:blank" sandbox="allow-same-origin allow-forms allow-scripts allow-modals allow-popups"></iframe>
+<div id="dict"></div>
+
+<h1 id="torah"></h1>
+<div id="l"></div>
+<div id="txt"></div>
+<textarea cols=100 rows=50 id="src"></textarea>
+
+<script type="text/javascript" charset="utf-8" src="https://www.sefaria.org/linker.v3.js"></script>
+<!--
+
+https://www.ancient-hebrew.org/ahlb/aleph.html#OR (same with old symbols and kjv)
+https://www.ancient-hebrew.org/dictionary/modern-aleph.html (top 1000)
+
+https://www.ancient-hebrew.org/learn/learn-biblical-hebrew-introduction.htm
+https://www.excavatingthebible.com/how-to-do-a-hebrew-word-study-without-knowing-hebrew?coupon=HWS-50-2930
+
+https://www.chabad.org/parshah/otherparshas_cdo/aid/9175/jewish/Complete-Parshah-List.htm
+modern hebrew adaptation for teens ?
+-->
+	  <script>
+
+      var books = ("Genesis Exodus Leviticus Numbers Deuteronomy Psalms").split(" ");
+      var abbr = ("G E L N D P").split(" ");
+
+      var book = "";
+      var bn = 0;
+      var ln = 0;
+      var ln_ = 0;
+      var ch = 0;
+      var ch_ = 0;
+      var footnotes;
+      var e_n = -1;
+
+      function linker(ref) {
+        document.getElementById('torah').innerText = ref[0].ref;
+        book = ref[0].ref.slice(0, ref[0].ref.search(/\d/)-1).replace(" ", "");
+        bn = books.indexOf(book);
+        ln = ref[0].ref.split("-")[0].split(":")[1];
+        ch = ref[0].ref.split("-")[0].split(":")[0].split(" ")[1];
+        ln_ = ref[0].ref.split("-")[1].split(":")[1];
+        ch_ = ref[0].ref.split("-")[1].split(":")[0];
+
+        sefaria.link({mode: "popup-click", dynamic: true, whitelistSelector: "#torah"});
+        return ref[0].ref;
+      }
+
+      function show(ref, heb) {
+        var txt = "";
+        
+        document.getElementById('l').innerHTML = '<a href="#" onclick="loadIframe('+bn+', '+ch+', '+ln+')" target="iframe">'+ch+'</a> ';
+
+        for (var j=1; j<ref.length-1; j++) {
+          var c = parseInt(ch)+j;
+          document.getElementById('l').innerHTML += '<a href="#" onclick="loadIframe('+bn+', '+c+', 1)" target="iframe">'+c+'</a> ';
+        }
+
+        document.getElementById('l').innerHTML += '<a href="#" onclick="loadIframe('+bn+', '+ch_+', 1)" target="iframe">'+ch_+'</a> ';
+
+        loadIframe(bn, ch, ln);
+
+//alert(document.getElementById('iframe').contentWindow.document.getElementsByTagName("div")[0]);
+
+
+        for (var j=0; j<ref.length; j++) {
+
+          txt += "<center>" + ch + "</center>";
+          var l = 0;
+          var n = ref[j].length;
+          if (j==0) {l=ln-1; txt += "<ol start='"+ln+"'>";} else {txt += "<ol>";}
+          if (j==ref.length-1) {n=ln_;}
+          for (var i=l; i<n; i++) {
+            txt += "<li><p style='text-align:right'>" + heb[j][i] + "</p><p>" + ref[j][i] + "</p></li>";
+          }
+          txt += "</ol><hr/>";
+          ch++;
+        }
+        document.getElementById('txt').innerHTML = txt;
+
+        var markers = document.getElementById('txt').getElementsByClassName("footnote-marker");
+        footnotes = document.getElementById('txt').getElementsByClassName("footnote");
+        for (var i=0; i<markers.length; i++) {
+          markers[i].setAttribute("onclick", "if(footnotes["+i+"].style.display!='inline'){footnotes["+i+"].style.display='inline';}else{footnotes["+i+"].style.display='none';}");
+        }
+      }
+
+      function getWord(def, w) {
+
+        if (!typeof(def) || !def || def.indexOf('<strong>') == -1) {
+          fetchData(w, true);
+        } else {
+
+          //def = def.replace(/em\>/g, 'strong>');
+          def = def.split('<strong>');
+          def[0] = "";
+          for (var i=1; i<def.length; i++) {
+            def[i] = def[i].slice(0, def[i].indexOf('</strong>'));
+            
+            if (def[i].toLowerCase() != def[i] || def[i].length == 1 || (def[i].length == 2 && def[i].indexOf('.') >= 0)) { def[i] = ''; }
+          }
+          
+          var def = def.join('\n').trim();
+          def = def.replace(/[\.]/g, ' ');
+          def = def.replace(/[\d\:\(\)]/g, '');
+          //alert(def);
+        }
+      }
+
+
+const url = "https://script.google.com/macros/s/AKfycbyYo_zODFB1fWxUPO3hg-3CFh5NNLUVd7E8rtUfDpOuIKDftakLiiNEdIsFeliw_69e/exec?a=proxy&q=http://www.mechanical-translation.org/mtt/";
+
+function loadIframe(b, c, l) {
+  document.getElementById("dict").innerHTML = "Loading " + books[b] + " " + c + ":" + l;
+  var iframe = document.getElementById('iframe').contentWindow;
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      e_n = -1;
+      iframe.src = "about:blank";
+      iframe.document.open();
+      iframe.document.write(this.responseText.replace("<head>", "<head><base href='https://www.mechanical-translation.org/mtt/'/>").replace(/<P><B>\d+<\/B>/g, function(x){return "<P><B ID='l"+x.replace(/\D/g, "")+"'>"+x.replace(/\D/g, "")+"</B><div style='height:6em;float:right;text-align:center;display:inline-block;line-height:1.25em;font-size:24px;'>&nbsp;";}).replace(/~<\/Font><\/A><a href=dictionary-fixes\.html#~/g, function(x){return "~</Font></A><a href=dictionary-A.html#A ></a><a href=dictionary-fixes.html#~";}).replace(/( href=dictionary-[A-Z]\.html#\S+ | href=dictionary-names\.html#\S+ )/g, function(x){e_n++;return " class='root' onclick='parent.document.getElementById(\"dict\").innerHTML="+e_n+"+\" \"+this.title;' ";}).replace(/( href=dictionary-fixes\.html#\S+ | href=dictionary-conj\.html#\S+ )/g, function(x){return " onclick='parent.document.getElementById(\"dict\").innerHTML=this.title;' ";}).replace(/ face=david/g, " class='word' face=david").replace(/<\/I>\)<\/P>/g, "</i></div></P>").replace(/<\/I>\)/g, "</I></div><div style='height:6em;float:right;text-align:center;display:inline-block;line-height:1.25em;font-size:24px;'>&nbsp;").replace(/<\/A> \(/g, "</A>&nbsp;<br/>").replace(/> \/ </g, "><br/><").replace(/<sup>/g, "<sup style='vertical-align:top;'>").replace(/margin-left: 40px/g, "clear:both;margin-left: 40px").replace(/ HREF="[A-Z]\d+\.html"/g, function(x){return " onclick='parent.loadIframe("+abbr.indexOf(x.slice(7,8))+", "+x.slice(8,-6)+", 1);'";}));
+      iframe.document.close();
+      iframe.src = "#l" + l;
+      iframe.document.getElementById("l"+l).scrollIntoView();
+      for (var i=0; i<iframe.document.getElementsByClassName("word").length; i++) {
+        var r = iframe.document.getElementsByClassName("root")[i].title.replace(/[^\u0590-\u05ff ]/g, "").trim();
+        iframe.document.getElementsByClassName("word")[i].innerHTML += "<br/><tt>"+r+"</tt>";
+      }
+      document.getElementById("src").value = iframe.document.body.innerHTML;
+      document.getElementById("dict").innerHTML = "";
+    }
+  };
+  xhttp.open("GET", url + abbr[b]+c+".html", true);
+  xhttp.send();
+}
+
+      function fetchData(w, n) {
+        if (n === false) {
+          var q = encodeURIComponent(w);
+        } else {
+          var q = encodeURIComponent(w) + '%C2%B2.1';
+        }
+        fetch('https://www.sefaria.org/api/texts/BDB%2C_'+q, options)
+          .then(response => response.json())
+          .then(response => getWord(JSON.stringify(response.text), w))
+          .catch(err => console.log(err));
+      }
+
+      const options = {method: 'GET', headers: {accept: 'application/json'}};
+      fetch('https://www.sefaria.org/api/calendars?diaspora=1', options)
+        .then(response => response.json())
+        .then(response => linker(response.calendar_items))
+        .then(response => fetch('https://www.sefaria.org/api/texts/'+response, options))
+        .then(response => response.json())
+        .then(response => show(response.text, response.he))
+        .catch(err => console.log(err));
+
+      fetchData('סָרָה', false);
+
+        
+    </script>
+
+</body>
+</html>
