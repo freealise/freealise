@@ -42,3 +42,5 @@ https://archive.org/search?query=Ukrainian+Folk+Tales
  */ [McGuffin illustration]
 
 Irony is sophisticated benevolent trolling (sarcasm is malevolent), when the troll has a point of view but chooses to conceal it and pretend to be agreeable. https://en.wikipedia.org/wiki/Irony_(disambiguation)  
+  
+Philosopher (or coder) describes a static system, while a storyteller has it evolve in time (even if nonlinear).  
