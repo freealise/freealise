@@ -1,12 +1,14 @@
+- backlog in verse  
+  
 - research or law presented not as a paper or book but in interactive user-friendly media  
   
 - Gospel of Mary as a song ("Hello Vatican!" the great commandment is theoretically true but practically unapplicable and brings trouble by oversimplification); RV 'Taxi' cover  
   
-- songs based on legislation (which is based on precedent which is a story appropriate for a song - FOSS licenses ?)  
+- songs or wiki based on legislation (which is based on precedent which is a story appropriate for a song - FOSS licenses ? PP program ?)  
   
 - script about the invisible hand of the market (welfare/free market/inequality/nonprofits) (https://en.wikipedia.org/wiki/Great_Depression#Literature, https://en.wikipedia.org/wiki/Sharing_economy#Examples)  
   
-- sociological data summarized as lyrics (everyman you-character; personified nations ?)  
+- sociological data summarized as lyrics (everyman you-character, I as B-story; personified nations ?)  
   
 - can be like a definition of a term (word or phrase) with examples in IRL context; monolingual dictionary word clarification / example that reveals meaning (not 'personal associations'), also for a neologism  
   
