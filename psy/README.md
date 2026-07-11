@@ -46,6 +46,7 @@ Controlled breathing can induce sleep or increased wakefulness as a change in th
 https://en.wikipedia.org/wiki/Brainwave_entrainment  
 https://en.wikipedia.org/wiki/Transcranial_magnetic_stimulation#Obsessive%E2%80%93compulsive_disorder_(OCD)  
 and sensory deprivation (~mikveh or hammock or mattress, dark tallit or paper bag on the head, eye mask or kippah on the face, ear blockers, darkness with candle - or the Dead Sea at night of new moon).  
+upright ironing board to lean upon ?  
 https://en.wikipedia.org/wiki/Ganzfeld_effect (same with noise)  
 https://en.wikipedia.org/wiki/Neurofeedback  
   
