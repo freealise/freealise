@@ -8,6 +8,8 @@ Make an extract with alcohol for heated incense (https://en.wikipedia.org/wiki/I
 (Do what Abulafia did)  
 Abulafia deliberately confuses himself (his animal soul) by physical and linguistic means as exercise for natural confusion of any kind (spiritual or mundane) so it is useful for prayer and as a step to prophecy - Jewish 'shaman' like Miriam  
   
+Visualise letters (or formants / IPA, along with associated ideas) with closed eyes and record them on paper without looking at it, pronouncing at the same time.  
+  
 ideograms -> formants -> phonemes -> syllables -> morphemes -> words -> phrases -> sentences -> story  
   
 what AI (a golem) does is permute letters and phonemes to arrive at an idea  
