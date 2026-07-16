@@ -3,6 +3,15 @@ B"H
 "I have an idea, I just don't know what it is!"  
 relates to LF events and is meant to market Linux  
   
+  
+to detect notes for readability and visual feedback
+_
+do fft
+until spectrum is empty
+  find lowest frequency above threshold
+  remove it and its harmonics
+  
+  
 Linux is evolution, not intelligent design!  
 — Linus Torvalds, 2005  
   
