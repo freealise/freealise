@@ -6,7 +6,8 @@ relates to LF events and is meant to market Linux
   
 to detect notes for readability and visual feedback
 display piano keys, fingering, notes and chord name
-(move away from the feet and backlight the screen)
+also do so for the downloaded part in midi or audio
+(move away from the feet, and backlight the screen)
 _
 do fft
 until spectrum is empty
