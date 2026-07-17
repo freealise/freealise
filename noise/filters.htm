@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width" />
+  <title>simple_filters</title>
+</head>
+<body>
+  <h1>simple_filters</h1>
+  <div id="test">click</div>
+
+  <script src="script.js"></script>
+  <!--
+       case "one-pole lp":
+			b1 = Math.exp(-2.0 * Math.PI * (Fc / Fs));
+          a0 = 1.0 - b1;
+          b1 = -b1;
+			a1 = 0;
+			break;
+            
+		case "one-pole hp":
+			b1 = -Math.exp(-2.0 * Math.PI * (0.5 - Fc / Fs));
+          a0 = 1.0 + b1;
+          b1 = -b1;
+			a1 = 0;
+			break;
+
+
+       case "lowpass 1p1z":
+			norm = 1 / (1 / K + 1);
+			a0 = a1 = norm;
+			b1 = (1 - 1 / K) * norm;
+			break;
+
+		case "highpass 1p1z":
+			norm = 1 / (K + 1);
+			a0 = norm;
+			a1 = -norm;
+			b1 = (K - 1) * norm;
+			break;
+
+
+		case "lowShelf 1st":
+			if (peakGain >= 0) {
+				norm = 1 / (K + 1);
+				a0 = (K * V + 1) * norm;
+				a1 = (K * V - 1) * norm;
+				b1 = (K - 1) * norm;
+			}
+			else {	
+				norm = 1 / (K * V + 1);
+				a0 = (K + 1) * norm;
+				a1 = (K - 1) * norm;
+				b1 = (K * V - 1) * norm;
+			}
+			break;
+			
+		case "highShelf 1st":
+            if (peakGain >= 0) {
+				norm = 1 / (K + 1);
+				a0 = (K + V) * norm;
+				a1 = (K - V) * norm;
+				b1 = (K - 1) * norm;
+			}
+			else {	
+				norm = 1 / (K + V);
+				a0 = (K + 1) * norm;
+				a1 = (K - 1) * norm;
+				b1 = (K - V) * norm;
+			}
+			break;
+
+
+		case "allpass 1st":
+			a0 = (1 - K) / (1 + K);
+			a1 = -1;
+			b1 = -a0;
+			break;
+  -->
+</body>
+</html>
