@@ -5,7 +5,7 @@ relates to LF events and is meant to market Linux
   
   
 Learn to play guitar easily and without distraction  
-  
+(or you are a keyboardist)  
 to detect notes for readability and visual feedback  
 display piano keys, fingering, notes and chord name  
 also do so for the downloaded part in midi or audio  
