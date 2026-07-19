@@ -50,7 +50,7 @@ upright ironing board to lean upon ?
 https://en.wikipedia.org/wiki/Ganzfeld_effect (same with noise)  
 https://en.wikipedia.org/wiki/Neurofeedback  
   
-! Rain and thunder, crackling fire of the bush -> voice heard by Moses  
+🐚 Rain and thunder, crackling fire of the bush -> voice heard by Moses  
 (Act 2 of the apostles: 1 And in the day of the Pentecost being fulfilled, they were all with one accord at the same place, 2 and there came suddenly out of the sky a sound as of a violent rushing wind, and it filled all the house where they were sitting, 3 and there appeared to them divided tongues, as it were of fire; it also sat on each one of them, 4 and they were all filled with the Holy Spirit, and began to speak with other tongues, according as the Spirit was giving them to declare.)
   
 Phosphene observation — paying relaxed attention to the colored blurbs before closed eyes may help to transform them into images.  
