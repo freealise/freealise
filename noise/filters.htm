@@ -3,13 +3,202 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width" />
-  <title>simple_filters</title>
+  <title>noise</title>
+  <style>
+  html, body {
+    touch-action: none;
+  }
+  </style>
 </head>
 <body>
-  <h1>simple_filters</h1>
-  <div id="test">click</div>
+  <button id="test">on</button><br/>
+  amp <input id="amp" type="range" min="0" max="1" step="0.000001" value="1"/><br/> cutoff <input id="cutoff" type="range" min="0.999" max="1" step="0.000001" value="0.9999"/>
 
   <script src="script.js"></script>
+  <script id="proc" type="x-audioworklet/javascript">
+
+class Noise extends AudioWorkletProcessor {
+
+  static get parameterDescriptors () {
+        return [{
+            name: 'amp',
+            defaultValue: 1,
+            minValue: 0,
+            maxValue: 1,
+            automationRate: "a-rate"
+        },
+        {
+            name: 'cutoff',
+            defaultValue: 0.9999,
+            minValue: 0.999,
+            maxValue: 1,
+            automationRate: "a-rate"
+        }];
+  }
+
+  process(inputs, outputs, parameters) {
+
+    // https://www.embeddedrelated.com/showarticle/779.php
+    // y += alpha * (x-y);
+
+    // https://beammyselfintothefuture.wordpress.com/2015/02/16/simple-c-code-for-resonant-lpf-hpf-filters-and-high-low-shelving-eqs/
+
+    // https://www.earlevel.com/scripts/widgets/20210825/biquads3.js
+    // https://www.earlevel.com/main/2012/11/26/biquad-c-source-code/
+    // out = in * a0 + z1;
+    // z1 = in * a1 - b1 * out;
+
+    let amp = parameters.amp[0];
+    let cutoff = parameters.cutoff[0];
+
+    var _input = 0.0;
+    var old = 0.0;
+    var old_ = 0.0;
+
+    // 1z highpass
+    //var withoutTreble = 0.0;
+    //var _a0 = 1 / (0.999 + 1);
+
+    // 1z lowpass
+    //var a = 1 / (1 / 0.001 + 1);
+
+
+    // 1p highpass
+    var b1 = -cutoff;//0.9999;
+    var a0 = 1.0 + b1;
+    b1 = -b1;
+    var a1 = 0;
+
+    // 1p lowpass
+    var b1_ = cutoff;//0.9999;
+    var a0_ = 1.0 - b1_;
+    b1_ = -b1_;
+    var a1_ = 0;
+
+
+    const output = outputs[0];
+    output.forEach((channel) => {
+
+      for (let i = 0; i < channel.length; i++) {
+        _input = Math.random() * 2 - 1;
+
+        // one-zero lowpass
+        /*var input_ = _input * a + old;
+        old = _input * a;
+
+        // one-zero highpass
+        var out = input_ * _a0 + old_;
+        old_ = -_a0 * input_;
+
+        channel[i] = out;*/
+
+
+        // one-pole highpass
+        var input_ = _input * a0 + old;
+        old = _input * a1 - b1 * input_;
+
+        // one-pole lowpass
+        var out = _input * a0_ + old_;
+        old_ = _input * a1_ - b1_ * out;
+
+        channel[i] = (input_ + out) * amp;
+
+
+        // one-zero highpass
+        //withoutTreble += (input_ - withoutTreble) * 0.99; // Num controls freq
+        //channel[i] = input_ - withoutTreble;
+
+      }
+    });
+    return true;
+  }
+}
+registerProcessor("noise", Noise);
+
+  </script>
+  <script>
+
+var f = 'data:text/javascript,' + encodeURIComponent(document.getElementById('proc').innerText);
+var pAmp = null;
+var pCutoff = null;
+
+document.getElementById("amp").addEventListener("input", (ev) => {
+  if (pAmp) { pAmp.value = ev.target.value; }
+});
+document.getElementById("cutoff").addEventListener("input", (ev) => {
+  if (pCutoff) { pCutoff.value = ev.target.value; }
+});
+
+
+document.getElementById('test').addEventListener('click', function(e) {
+
+  const audioCtx = new AudioContext();
+  console.log(audioCtx.sampleRate);
+
+  const analyserNode = audioCtx.createAnalyser();
+  analyserNode.fftSize = 32;
+  const bufferLength = analyserNode.frequencyBinCount;
+  const dataArray = new Float32Array(bufferLength);
+
+  const gain = audioCtx.createGain();
+  gain.gain.setValueAtTime(1.0, audioCtx.currentTime);
+  gain.connect(analyserNode);
+  gain.connect(audioCtx.destination);
+
+  const canvas = document.createElement("canvas");
+  canvas.style.position = "absolute";
+  canvas.style.bottom = "0";
+  canvas.style.left = "0";
+  canvas.width = window.innerWidth;
+  canvas.height = 256;
+  document.body.appendChild(canvas);
+  const canvasCtx = canvas.getContext("2d");
+  canvasCtx.clearRect(0, 0, canvas.width, canvas.height);
+
+  function draw() {
+    requestAnimationFrame(draw);
+
+    analyserNode.getFloatFrequencyData(dataArray);
+
+    canvasCtx.fillStyle = "rgb(0 0 0)";
+    canvasCtx.fillRect(0, 0, canvas.width, canvas.height);
+
+    const barWidth = (canvas.width / bufferLength);
+    let posX = 0;
+    for (let i = 0; i < bufferLength; i++) {
+      const barHeight = Math.log2(dataArray[i] + 128) * 16;
+      canvasCtx.fillStyle = `rgb(${Math.floor(barHeight + 100)} 50 50)`;
+      canvasCtx.fillRect(
+        posX,
+        canvas.height - barHeight,
+        barWidth,
+        barHeight,
+      );
+      posX += barWidth;
+    }
+  }
+
+  audioCtx.audioWorklet.addModule(f);
+  var randomNoiseNode;
+
+  function startNoise() {
+    randomNoiseNode = new AudioWorkletNode(audioCtx, "noise");
+    pAmp = randomNoiseNode.parameters.get('amp');
+    pCutoff = randomNoiseNode.parameters.get('cutoff');
+    randomNoiseNode.connect(gain);
+    draw();
+  }
+  setTimeout(function(x) {
+    try {
+      startNoise();
+    } catch(e) {
+      setTimeout(startNoise, 40);
+    }
+  }, 40);
+
+});
+
+  </script>
   <!--
        var V = Math.pow(10, Math.abs(peakGain) / 20);
        var K = Math.tan(Math.PI * Fc / Fs);
