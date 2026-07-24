@@ -3,25 +3,6 @@ B"H
 "I have an idea, I just don't know what it is!"  
 relates to LF events and is meant to market Linux  
   
-  
-Learn to play guitar easily and without distraction  
-  
-to detect notes for readability and visual feedback  
-display piano keys, fingering, notes and chord name  
-also do so for the downloaded part in midi or audio  
-or tab or plain text converted to chords, or lyrics  
-(move away from the feet, and backlight the screen)  
-_  
-do fft  
-until spectrum is empty  
-  find lowest frequency above threshold  
-  remove it and its harmonics  
-  
-  
-(or you are a keyboardist)  
-With noise input instead of guitar, becomes a synth  
-  
-  
 Linux is evolution, not intelligent design!  
 — Linus Torvalds, 2005  
   
