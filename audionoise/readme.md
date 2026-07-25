@@ -3,6 +3,8 @@ B"H
 "I have an idea, I just don't know what it is!"  
 relates to LF events and is meant to market Linux  
   
+(can be for journalists)  
+  
 Linux is evolution, not intelligent design!  
 — Linus Torvalds, 2005  
   
