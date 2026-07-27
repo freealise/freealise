@@ -3,7 +3,7 @@ B"H
 "I have an idea, I just don't know what it is!"  
 relates to LF events and is meant to market Linux  
   
-(can be a mobile studio for journalists)  
+(is a sound card with external controllers, to use in a mobile studio for musicians or journalists)  
   
 Linux is evolution, not intelligent design!  
 — Linus Torvalds, 2005  
