@@ -9,6 +9,8 @@ commission and attribution for everyone whose commercial work is used in trainin
 credits inline as links to sources  
 fair use applies to AI !  
 temperature parameter has to be exposed to user (like control over a gamble)  
+specialized models, with better user control over performance (at the very least the temperature parameter) are a better fit for a task (as opposed to humans who usually need a more general education)  
+AI is ok for internal brainstorming and prototyping, the results of which are supervised by competent humans and don't end up in the final product  
   
 law against paid religious books and cults  
   
