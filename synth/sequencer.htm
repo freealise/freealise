@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width" />
+  <title>seq</title>
+  <style>
+html, body {
+  height: 100%;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  touch-action: none;
+}
+
+#select_div {
+  border: 1px dashed #3366cc;
+  position: absolute;
+  z-index: 1000;
+}
+
+#exampleChart{
+  height: 50%;
+  width: 320px;
+}
+
+
+.exampleChart{
+  height: 100%;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+  </style>
+</head>
+<body>
+  <h1>seq</h1>
+  <pre id="test"></pre>
+
+  <div>
+    <div id="exampleChart" style="width: 900px; height: 500px;"></div>
+  </div>
+
+  <script src="https://www.gstatic.com/charts/loader.js"></script>
+  <div id="output"></div><button onclick='getData();'>get</button><br/>
+  <textarea id="txt" rows=20 cols=50></textarea>
+
+  <script>
+
+addEventListener('load', function(e) {
+
+  var txt = `use chart for animation sound engine, is a 3d microtonal sequencer
+shows the notes with harmonics as points, morphing spectrum in time
+draw curves by multitouch and simplify allowing only harmonic ratios`;
+
+  document.querySelector('#test').innerHTML = txt;
+});
+
+
+// Source - https://stackoverflow.com/a/74868454
+// Posted by G. Putnam
+// Retrieved 2026-07-22, License - CC BY-SA 4.0
+
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback( initChart );
+        
+        var myLineChart;
+        var selectedPoint = null;
+        
+        var data;
+        var arr = null;
+        var curve = new Array(4);
+        for (var i=0; i<4; i++) {
+          curve[i] = new Array(441);
+          curve[i].fill(0);
+        }
+        var w = 441;
+        var h = 300;
+        var m = 20;
+        
+        var options = {
+            title: 'Age vs. Weight comparison',
+            hAxis: {title: 'Age', minValue: 0, maxValue: 4},
+            vAxis: {title: 'Weight', minValue: 0, maxValue: h*m},
+            legend: 'none',
+            curveType: 'function',
+            intervals: { 'style':'area' },
+            lineWidth: 1,
+            chartArea: {
+              width: w, // percents should be strings
+              height: h // pixel dimensions should be numbers
+            }
+        };
+        
+        function initChart(){
+
+            data = new google.visualization.DataTable();
+            data.addColumn('number', 'x');
+            data.addColumn('number', 'values');
+            data.addColumn('number', 'values');
+            data.addColumn('number', 'values');
+            data.addColumn('number', 'values');
+  
+            data.addRows([
+            [0, 274, 1704, 2719, 3404],
+            [1, 469, 2150, 2836, 3311],
+            [2, 599, 1001, 2045, 2933],
+            [3, 411, 784, 2176, 2987],
+            [4, 288, 685, 2190, 3154]]);
+
+            //data = google.visualization.arrayToDataTable( arrData );
+            
+            myLineChart = new google.visualization.ChartWrapper({
+                chartType:   'LineChart',
+                containerId: 'exampleChart',
+                dataTable:   data,
+                options:     options
+            });
+            
+            document.getElementById("exampleChart").addEventListener( "pointermove", mouseMoveScript );
+            document.getElementById("exampleChart").addEventListener( "pointerdown", mouseDownScript );
+            document.getElementById("exampleChart").addEventListener( "pointerup", mouseUpScript );
+            
+            drawChart();
+        }
+
+        function drawChart() {
+            myLineChart.draw();
+        }
+        
+        function selectPoints( mx, my ) {
+            var chartLayout    = myLineChart.getChart().getChartLayoutInterface();
+            var chartContainer = document.getElementById( myLineChart.getContainerId() );
+            var chartBounds    = chartContainer.getBoundingClientRect();
+            if ( ( ( (chartBounds.left + window.pageXOffset) <= mx ) && ( (chartBounds.left + chartBounds.width  + window.pageXOffset) >= mx ) ) &&
+                 ( ( (chartBounds.top  + window.pageYOffset) <= my ) && ( (chartBounds.top  + chartBounds.height + window.pageYOffset) >= my ) ) ){
+                var selection = [];
+                var dataTable = myLineChart.getDataTable();
+                for (var row = 0; row < dataTable.getNumberOfRows(); row++) {
+                    for (var col = 1; col < dataTable.getNumberOfColumns(); col++) {
+                        var point = chartLayout.getBoundingBox('point#' + (col - 1) + '#' + row);
+                        if( point != null ){
+                            if ((((chartBounds.left + point.left) >= (mx - point.width)) &&
+                                 ((chartBounds.left + point.left + point.width) <= (mx + point.width))) &&
+                                (((chartBounds.top + point.top) >= (my - point.height)) &&
+                                 ((chartBounds.top + point.top + point.height) <= (my + point.height)))) {
+                              selection.push({row: row, column: col});
+                            }
+                        }
+                    }
+                }
+            
+                if( selection.length > 0 ){
+                    var item = selection[0];
+                    selectedPoint = selection[0];
+                } else {
+                    selectedPoint = null;
+                }
+                
+                myLineChart.getChart().setSelection( selection );
+            }
+        }
+        
+        function mouseMoveScript( e ){
+            var x = e.clientX;
+            var y = e.clientY;
+            var coor = "Coordinates: (" + x + "," + y + ")";
+            document.getElementById("output").innerHTML = coor;
+            if( selectedPoint != null ){
+                var chartContainer  = document.getElementById( myLineChart.getContainerId() );
+                var chartBounds    = chartContainer.getBoundingClientRect();
+                var chartLayout     = myLineChart.getChart().getChartLayoutInterface()
+                var chartAreaBounds = chartLayout.getChartAreaBoundingBox();
+                var chartMinX       = chartLayout.getHAxisValue( chartAreaBounds.left );
+                var chartMaxX       = chartLayout.getHAxisValue( chartAreaBounds.left + chartAreaBounds.width );
+                var chartMinY       = chartLayout.getVAxisValue( chartAreaBounds.top + chartAreaBounds.height );
+                var chartMaxY       = chartLayout.getVAxisValue( chartAreaBounds.top );
+                
+                var dataTable = myLineChart.getDataTable();
+                var spX = ( x - chartBounds.left - chartAreaBounds.left ) / chartAreaBounds.width  * ( chartMaxX - chartMinX );
+                var spY = ( chartAreaBounds.height - ( y - chartBounds.top  - chartAreaBounds.top ) ) / chartAreaBounds.height * ( chartMaxY - chartMinY );
+                dataTable.setValue( selectedPoint.row, 0, spX );
+                dataTable.setValue( selectedPoint.row, selectedPoint.column, spY );
+                var d = "[";
+                for (var i=0; i<dataTable.getNumberOfRows(); i++) {
+                  d += "[";
+                  for (var j=0; j<dataTable.getNumberOfColumns(); j++) {
+                    d += dataTable.getValue( i, j ) + ", ";
+                  }
+                  d = d.slice(0,-2) + "],\n";
+                }
+                d = d.slice(0,-2) + "]";
+                arr = JSON.parse(d);
+
+                drawChart();
+            }
+        }
+        
+        function mouseDownScript( e ){
+            var mx = e.clientX;
+            var my = e.clientY;
+            
+            if( e.target ){
+                targ = e.target;
+                selectPoints( mx, my );
+            } else if (e.srcElement) {
+                targ = e.srcElement;
+            }
+            var tname;
+            tname = targ.tagName;
+        }
+        
+        function mouseUpScript( e ){
+            if( selectedPoint != null ){
+                selectedPoint = null;
+            }
+        }
+
+        function getData() {
+                
+                var offsetY = Math.round(document.getElementById("exampleChart").getElementsByTagName("svg")[0].getBoundingClientRect().y) + h;
+                var p;
+
+                for (var j=0; j<4; j++) {
+                  p = document.getElementById("exampleChart").getElementsByTagName("path")[j];
+                  document.getElementById("txt").value = p.outerHTML;
+                  var xold = Math.round(p.getPointAtLength(0).x) - 1;
+                  var offsetX = xold;
+
+                  for (var i=0; i<=p.getTotalLength()+1; i++) {
+                    var x = Math.round(p.getPointAtLength(i).x);
+                    var y = Math.round(p.getPointAtLength(i).y);
+                    if (x - xold == 1) {
+                      curve[j][x-offsetX-1] = (offsetY-y) * m;
+                      console.log((x-offsetX-1)+' '+curve[j][x-offsetX-1]);
+                      xold = x;
+                    }
+                  }
+                  xold = Math.round(p.getPointAtLength(0).x) - 1;
+                  console.log(' - ');
+                }
+                console.log(' ____ ');
+        }
+
+
+  </script>
+</body>
+</html>
