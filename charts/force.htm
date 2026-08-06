@@ -144,6 +144,8 @@
           "signal": "force",
           "forces": [
             {"force": "center", "x": {"signal": "cx"}, "y": {"signal": "cy"}},
+            {"force": "x", "x": {"signal": "cx"}, "strength": {"signal": "gravityX"}},
+            {"force": "y", "y": {"signal": "cy"}, "strength": {"signal": "gravityY"}},
             {"force": "collide", "radius": {"signal": "nodeRadius"}},
             {"force": "nbody", "strength": {"signal": "nodeCharge"}},
             {"force": "link", "links": "link-data", "distance": {"signal": "linkDistance"}}
