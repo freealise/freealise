@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width" />
+  <title>formants</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>formants</h1>
+  <div id="test">click</div>
+  <textarea id="txt" rows="25" onkeyup="makeChart(event.shiftKey, event.code);" style="width: 6em; font-size: 16px; font-weight: bold; line-height: 1em; letter-spacing: -0.2em;"></textarea>
+
+<pre id='keymap' style='font-size: 20px;'>
+`  1  2  3  4  5  6  7  8  9  0  -  =  
+    q  w  e  r  t  y  u  i  o  p  [  ]  \
+     a‐‵s´‐d  f‐‵g´‐h  j‐‵k´‐l  ;  '
+•     z´‵x  c  v´‵b  n  m´‵,  .  /
+</pre>
+<pre id='_keymap' style='display:none; font-size: 20px;'>
+~  !  @  #  $  %  ^  &  *  (  )  _  +  
+    Q  W  E  R  T  Y  U  I  O  P  {  }  |
+     A‐‵S´‐D  F‐‵G´‐H  J‐‵K´‐L  :  "
+•     Z´‵X  C  V´‵B  N  M´‵&lt;  >  ?
+</pre>
+  
+  <script src="script.js"></script>
+  <script>
+
+    // control formants from linear scale keyboard, playback by enter or 4 keys
+    // sibilance: shift, sonorance: leftmost symbol, length: row; bg = spectrogram
+
+
+var txt = document.getElementById('txt');
+
+var keymap = document.getElementById('keymap');
+keymap.innerHTML = replaceKeys(keymap);
+var _keymap = document.getElementById('_keymap');
+_keymap.innerHTML = replaceKeys(_keymap);
+
+
+var kbrd = new Array(4);
+kbrd[0] = "1234567890-=";
+kbrd[1] = "!@#$%^&*()_+";
+kbrd[2] = "qwertyuiop[]";
+kbrd[3] = "QWERTYUIOP{}";
+var kb = kbrd.join("");
+
+var levels = ("⡇⡆⡄⡀⣿⣶⣤⣀").split("");
+
+
+
+function replaceKeys(q) {
+  return q.innerText.replace(/[a-zA-Z0-9\[\]\{\}\-\=!@#$%^&*\(\)\_\+]/g, function(x) {
+    return "<a style='text-decoration: underline; font-weight: bold;' onclick='typeKey(this.innerText);'>"+x+"</a>";
+  }).replace(/[•]/, function(x) {
+    return "<a style='font-weight: bold;' onclick='switchMap();'>"+x+"</a>";
+  });
+}
+
+
+
+function switchMap() {
+  if (document.getElementById('keymap').style.display != 'none') {
+    document.getElementById('keymap').style.display = 'none';
+    document.getElementById('_keymap').style.display = 'block';
+  } else {
+    document.getElementById('keymap').style.display = 'block';
+    document.getElementById('_keymap').style.display = 'none';
+  }
+}
+
+
+function typeKey(v) {
+  var b = txt.selectionStart;
+  var d = txt.selectionEnd;
+  var w = txt.value;
+  w = w.substr(0,b) + v + w.substr(d);
+  txt.value = w;
+  txt.setSelectionRange(b+1, d+1);
+  txt.focus();
+}
+
+
+function makeChart(sh, c) {
+  var tmp = txt.value.split("\n");
+  if (c === 'Enter') {
+    var s = new Array(12);
+    s.fill("⠀");
+    for (var i=0; i<tmp.length; i++) {
+      if (tmp[i].search(/[\u0080-\uFFFF]/) < 0) {
+        var n = 0;
+        tmp[i] = tmp[i].split("").sort(function(a,b){return kb.indexOf(a) > kb.indexOf(b);}).join("");
+        for (var j=0; j<tmp[i].length; j++) {
+          for (var l=0; l<kbrd.length; l++) {
+            for (var k=0; k<kbrd[l].length; k++) {
+              if (kbrd[l].charAt(k) == tmp[i].charAt(j)) {
+                if (n < 4) {
+                  if (l == 3) {
+                    s[k] = levels[n+4];
+                  } else if (l == 2) {
+                    s[k] = levels[n];
+                  }
+                  n++;
+                }
+              }
+            }
+          }
+        }
+        if (tmp[i] != "") { tmp[i] = s.join(""); }
+        s.fill("⠀");
+      }
+    }
+    txt.value = tmp.join("\n");
+  }
+}
+
+// https://en.wikipedia.org/wiki/Linear_predictive_coding
+
+document.getElementById('test').addEventListener('click', function(e) {
+
+const audioCtx = new AudioContext();
+console.log(audioCtx.sampleRate);
+
+
+const myArrayBuffer = audioCtx.createBuffer(
+  2,
+  audioCtx.sampleRate * 1,
+  audioCtx.sampleRate,
+);
+
+var voice = true; // for voiced and unvoiced phonemes
+
+var base = 440; // base frequency in Hz
+base = Math.round(audioCtx.sampleRate / base);
+
+var Fc = new Array(4);
+var res = new Array(4);
+
+Fc.fill(0.0); // formant freqs (keep harmonic ratios), 500Hz apart for sibilants
+Fc[0] = 0;
+Fc[1] = 500;
+Fc[2] = 1000;
+Fc[3] = 1500;
+
+//6000 - s, 4500-6000 - sh, 1500-3000 - th, 0-1500 - f
+
+res.fill(0); // resonance (~0.025 for sibilants, < for glides & vowels)
+res[0] = 0.0001;
+res[1] = 0.002;
+res[2] = 0.04;
+res[3] = 0.8;
+
+var nowBuffering;
+var momentum = new Array(4);
+momentum.fill(0.0);
+var formants = new Array(4);
+formants.fill(0.0);
+var formants_old = Array.from(formants);
+
+var input = 0.0;
+var lastOut = 0.0;
+var lastIn = 0.0;
+var orig = new Array(myArrayBuffer.length);
+
+
+for (let channel = 0; channel < myArrayBuffer.numberOfChannels; channel++) {
+  nowBuffering = myArrayBuffer.getChannelData(channel);
+
+  for (let i = 0; i < myArrayBuffer.length; i++) {
+    
+    input = Math.random() * 2 - 1;
+
+    if (voice === true) {
+      orig[i] = input;
+
+      for (var j=0; j<16; j++) {
+        if (orig[i+base*j]) {
+          orig[i] += orig[i+base*j]*16;
+        }
+      }
+      input = orig[i]/16;
+    } else {
+      input *= 2.0;
+    }
+
+    // https://noisehack.com/generate-noise-web-audio-api/
+    //input = (lastOut + (0.000005 * input)) / 1.000005;
+    //lastOut = input;
+    // same result (one pole lp)
+
+    var distanceToGo = input - lastOut;
+    lastOut += distanceToGo * 0.00002; // slope
+    input = lastOut;
+
+    for (var j=0; j<formants.length; j++) {
+      formants_old[j] = formants[j];
+    }
+    formants.fill(input); 
+ 
+    // https://beammyselfintothefuture.wordpress.com/2015/02/16/simple-c-code-for-resonant-lpf-hpf-filters-and-high-low-shelving-eqs/
+    if (i>0) {
+      for (var j=0; j<formants.length; j++) {
+        var distanceToGo = formants[j] - formants_old[j];
+        momentum[j] += distanceToGo * Fc[j] / audioCtx.sampleRate * Math.PI / 2.0;
+        formants[j] = formants_old[j] + distanceToGo * res[j] + momentum[j];
+        nowBuffering[i] += formants[j];
+      }
+      nowBuffering[i] /= formants.length;
+
+    } else {
+      nowBuffering[i] = input;
+    }
+  }
+}
+
+
+const source = audioCtx.createBufferSource();
+source.buffer = myArrayBuffer;
+source.loop = false;
+
+
+const analyserNode = audioCtx.createAnalyser();
+analyserNode.fftSize = 512;
+const bufferLength = analyserNode.frequencyBinCount;
+const dataArray = new Float32Array(bufferLength);
+
+
+const gain = audioCtx.createGain();
+gain.gain.linearRampToValueAtTime(10.0, audioCtx.currentTime+1/32);
+gain.gain.linearRampToValueAtTime(10.0, audioCtx.currentTime+31/32);
+gain.gain.linearRampToValueAtTime(0.00, audioCtx.currentTime+1.00);
+source.connect(gain);
+gain.connect(analyserNode);
+gain.connect(audioCtx.destination);
+
+
+const oscillator = audioCtx.createOscillator();
+const osc_gain = audioCtx.createGain();
+oscillator.type = "sine";
+oscillator.frequency.setValueAtTime(Fc[3], audioCtx.currentTime); // value in hertz
+osc_gain.gain.setValueAtTime(0.0, audioCtx.currentTime);
+oscillator.connect(osc_gain);
+osc_gain.connect(analyserNode);
+osc_gain.connect(audioCtx.destination);
+
+
+const canvas = document.createElement("canvas");
+canvas.style.position = "fixed";
+canvas.style.bottom = "0";
+canvas.style.left = "0";
+canvas.width = window.innerWidth;
+canvas.height = 255;
+document.body.appendChild(canvas);
+const canvasCtx = canvas.getContext("2d");
+canvasCtx.clearRect(0, 0, canvas.width, canvas.height);
+
+function draw() {
+  requestAnimationFrame(draw);
+
+  analyserNode.getFloatFrequencyData(dataArray);
+
+  canvasCtx.fillStyle = "rgb(0 0 0)";
+  canvasCtx.fillRect(0, 0, canvas.width, canvas.height);
+
+  const barWidth = (canvas.width / bufferLength);
+  let posX = 0;
+  for (let i = 0; i < bufferLength; i++) {
+    const barHeight = Math.log2(dataArray[i] + 128) * 16;
+    canvasCtx.fillStyle = `rgb(${Math.floor(barHeight + 100)} 50 50)`;
+    canvasCtx.fillRect(
+      posX,
+      canvas.height - barHeight,
+      barWidth,
+      barHeight,
+    );
+    posX += barWidth;
+  }
+}
+
+oscillator.start();
+source.start();
+draw();
+
+});
+
+  </script>
+</body>
+</html>
