@@ -10,6 +10,8 @@ Abulafia deliberately confuses himself (his animal soul) by physical and linguis
   
 Visualise letters (or formants / IPA, along with associated ideas) with closed eyes and record them on paper without looking at it, pronouncing at the same time.  
   
+Sefirot correspond to brainwave frequencies (~musical notes)  
+  
 ideograms -> formants -> phonemes -> syllables -> morphemes -> words -> phrases -> sentences -> story  
   
 what AI (a golem) does is permute letters and phonemes to arrive at an idea  
