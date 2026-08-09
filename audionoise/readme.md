@@ -3,7 +3,8 @@ B"H
 "I have an idea, I just don't know what it is!"  
 relates to LF events and is meant to market Linux  
   
-(is a sound recorder with external controllers, to use in a mobile studio for musicians (you are the audience not the distributor); keep only required effects, download from library)  
+is a audio recorder with external controllers, to use in a mobile studio for musicians (you are the audience not the distributor); keep only required effects, download from library  
+pitchshifter -> arp (+ MIDI for Audacity ?)  
   
 Linux is evolution, not intelligent design!  
 — Linus Torvalds, 2005  
