@@ -224,11 +224,11 @@ A = P(1 + r/n)   + ---------------
         
         if (P<0) { P=0; document.getElementById("P").value = P; }
         
-        if (PMT<0) { PMT=0; document.getElementById("PMT").value = PMT; }
+        if (PMT<-P/12) { PMT=0; document.getElementById("PMT").value = PMT; }
         
         if (r<0) { r=0; document.getElementById("r").value = r; }
 
-        if (inf>0) { inf=0; document.getElementById("inf").value = inf; }
+        if (inf<0) { inf=0; document.getElementById("inf").value = inf; }
         
         if (n<1) { n=1; document.getElementById("n").value = n; }
         
