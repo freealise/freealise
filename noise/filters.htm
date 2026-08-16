@@ -11,6 +11,14 @@
   </style>
 </head>
 <body>
+    
+<!-- 
+(several passes or Blackman window to improve frequency response)
+https://www.sigma-l.net/p/moving-average-band-pass-filter
+https://www.pinecoders.com/techniques/dsp/#fir-band-pass-filters-design
+- MA as lowpass filter has indefinite cutoff frequency 
+-->
+    
   <button id="test">on</button><br/>
   amp <input id="amp" type="range" min="0" max="1" step="0.000001" value="1"/><br/> cutoff <input id="cutoff" type="range" min="0.999" max="1" step="0.000001" value="0.9999"/>
 
