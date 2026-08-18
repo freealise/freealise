@@ -18,6 +18,8 @@
   
 - future Eurovision album (#russiaIsSiberia #BelarusIsEurope #SiberiaForSale #SiberiaRemoteControl #russiaIsAColony #PietariIsFinland; Greece not believing what Americans do after it, Holy Spirit goes _through_ the son (any angel), location of head of church doesn't matter - protestant Orthodoxy ?); Georgia is also a holy land; Czechia, Sweden ? make a point and find evidence for/against on map/travel  
   
+- songs: free & clear (price changes of a gift don't matter); overprotected 2.0 (what spoils women)  
+  
 - TW = international folk music = oldest there is (timeless and universal) = 'shamanic' = (progressive) folk with synth  
   
 - enact the Wilburys in Antarctica (researcher hubs, collective songwriting)  
