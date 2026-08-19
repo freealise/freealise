@@ -40,7 +40,7 @@ Concerned with international relations and global issues.
 
 [Website repo](https://www.github.com/freealise/freealise.github.io/) | 
 [My gists](https://gist.github.com/freealise/)  
-**I'm not a sellout so am going away from Github to an standalone Git server (because it's supposed to be decentralized, no?)**  
+*I'm not a sellout so am going away from Github to a standalone Git server (because it's supposed to be decentralized, no?)*  
   
 *Add **-ai** to Google search queries to remove the summary.*
 
