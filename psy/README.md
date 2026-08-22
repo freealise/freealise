@@ -44,7 +44,7 @@ stand on one foot for exercise; use the left and right side of brain and body at
 Jews don't habitually (only affectively) prostrate in prayer because it may induce sleepiness, although it is allowed  
   
   
-Controlled breathing can induce sleep or increased wakefulness as a change in the brainwave patterns, for which a conscious change in breathing amplitude, frequency and phase is required, possibly along with synchronized musical or physical activity  
+Controlled breathing can induce sleep or increased wakefulness as a change in the brainwave patterns, for which a conscious change in breathing amplitude, frequency and phase is required, possibly along with synchronized musical or physical activity (like climbing a mountain)  
 https://en.wikipedia.org/wiki/Brainwave_entrainment  
 https://en.wikipedia.org/wiki/Transcranial_magnetic_stimulation#Obsessive%E2%80%93compulsive_disorder_(OCD)  
 and sensory deprivation (~mikveh or hammock or mattress, dark tallit or paper bag on the head, eye mask or kippah on the face, ear blockers, darkness with candle - or the Dead Sea at night of new moon).  
