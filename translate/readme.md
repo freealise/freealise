@@ -49,3 +49,11 @@ merge with vocalise, open source all gscripts
   
 Add syntax decoder to Sefaria with biblical Hebrew frequency dictionary as source  
   
+  
+Streaks: A visual counter for consecutive days of practice that encourages daily engagement.  
+  
+Progress chart: Competition against yourself yesterday.  
+  
+Stipend: Fraction of crypto awarded for completing lessons and activities, which determine your rank on the chart.  
+  
+Testing: Simulation of international standard tests.  
