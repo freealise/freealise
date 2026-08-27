@@ -1,4 +1,4 @@
-#### Applied linguistics and semiotics, comparative religion, stock investing  
+#### Applied linguistics and semiotics, comparative religion, sci-fi, stock investing  
 (Have to be better at UI/UX and documentation)
 
 <!--
