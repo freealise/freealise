@@ -11,9 +11,7 @@ Linux is evolution, not intelligent design!
   
 /*
 In particular, don't feel like it would be impolite to tell me I'm incompetent and doing stupid things. I absolutely know I'm not competent and would love to hear any criticism. Some of the best teaching moments have been when I haven't understood something, and somebody piped up to tell me I should do Xyz.
-*/
-
-Linus is a sellout  
+*/  
   
 // What should we do about silence? (c)
 https://github.com/torvalds/AudioNoise/issues?q=is%3Aissue%20state%3Aopen%20author%3Afreealise  
