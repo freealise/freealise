@@ -48,7 +48,7 @@ translate the siddur poetically, add natural tune; read the books, news and wiki
 merge with vocalise, open source all gscripts  
   
 Add syntax decoder to the Torah with biblical Hebrew frequency dictionary as source  
-(bookmarklet for any page)  
+(bookmarklet for any page ~ highlighter)  
   
   
 Streaks: A visual counter for consecutive days of practice that encourages daily engagement.  
