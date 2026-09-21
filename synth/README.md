@@ -1,4 +1,4 @@
-FFT-based vocoder  
+simple filter based vocoder  
 ASCII spectrogram sequencer (multilayer raster)  
 or ipa symbols for notes  
   
