@@ -2,7 +2,7 @@
   
 - research or law presented not as a paper or book but in interactive user-friendly media  
   
-- Gospel of Mary as a song ("Hello Vatican!"; the great commandment is to give and receive freely); RV 'Taxi' cover  
+- Gospel of Mary + Toldot Yeshu/Talmud as a play ("Hello Vatican!"; the great commandment is to give and receive freely); RV 'Taxi' cover  
   
 - songs or wiki based on legislation (which is based on precedent which is a story appropriate for a song - FOSS licenses ? PP program ?)  
   
