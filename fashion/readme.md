@@ -24,5 +24,7 @@ ukrainian embroidery corner https://www.google.com/search?q=glory+to+ukraine+cor
   
 merch (spectrogram bead or thread bracelets, cross stitch, canvas bags with print, wax candles) / wort  
   
+🧕 long scarf on face, over ears and around neck  
+  
 railgun/acoustic  
 meditating Tux  
