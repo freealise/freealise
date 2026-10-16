@@ -8,10 +8,13 @@ prophecy: Guide for the Perplexed Pt.2 32-48 (end)
 levels of prophecy align to worlds and soul levels  
 docs: "Sefer Beriyah" ?  
   
+set formants on log scale natural for human  
+music gets meaning (use millimeter paper)  
+  
 multilingual phonetic keyboard (with swipe input):  
    > f2, numeric row for base pitch and sonority  
  v  
-f1   2 keys at once for sibilance  
+f1   2 keys at once for sibilance; pressure or wheel for 3rd formant  
 order in a circle by f2, f1 as radius  
 connect each to each in sequence  
   
