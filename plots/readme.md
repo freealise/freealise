@@ -6,6 +6,8 @@
   
 - songs or wiki based on legislation (which is based on precedent which is a story appropriate for a song - FOSS licenses ? PP program ?)  
   
+- script (or songs) containing frequent words and sentence constructions  
+  
 - script about the invisible hand of the market (welfare/free market/inequality/nonprofits) (https://en.wikipedia.org/wiki/Great_Depression#Literature, https://en.wikipedia.org/wiki/Sharing_economy#Examples)  
   
 - sociological data summarized as lyrics (everyman you-character, I as B-story; personified nations ?)  
