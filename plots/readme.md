@@ -4,7 +4,7 @@
   
 - Gospel of Mary + Toldot Yeshu/Talmud as a play ("Hello Vatican!"; the great commandment is to give and receive freely); RV 'Taxi' cover  
   
-- songs or wiki based on legislation (which is based on precedent which is a story appropriate for a song - FOSS licenses ? PP program ?)  
+- songs or wiki based on legislation (which is based on precedent which is a story appropriate for a song - Shulchan Aruch, FOSS licenses, PP program)  
   
 - script (or songs) containing frequent words and sentence constructions  
   
