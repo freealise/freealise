@@ -140,7 +140,7 @@ a {
 
 <textarea id='tw' style='display:none'>
 <div id="popup"><div id="nav" class="notranslate"><button onclick="this.parentElement.parentElement.style.visibility=\'hidden\';">x</button><audio src=""></audio><select id="accent" title="Accent"><option value="US">US</option><option value="UK">UK</option><option value="AU">AU</option></select></div><hr/></div>
-<style>
+<!--<style>
     iframe {
       display: none !important;
     }
@@ -183,7 +183,7 @@ a {
     #popup rt {
       font-size: 80%;
     }
-</style>
+</style>-->
 <div style="position:fixed;bottom:-20px;right:0;" id="google_translate_element"></div>
 <script>
     function googleTranslateElementInit() {
@@ -447,10 +447,7 @@ var et = null;
             res = splitWords(res);
             
             ltwf_.document.open();
-ltwf_.document.write(res);
-            /*
 ltwf_.document.write(res.replace('</body>', document.getElementById('tw').value+'</body>'));
-*/
             ltwf_.document.close();
 
             ltwf.onload = function() {
