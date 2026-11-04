@@ -376,10 +376,10 @@ var et = null;
         phrases = [];
 
         return q.replace(/(\[|\]|<i>|<\/i>)/g,'').replace(/ id='Quiz'/g, " id='Quiz' class='notranslate'").replace(/<p class='(Caption|Definition)'>.+<\/p>/g, function(y){
-          var s = y.slice(y.indexOf("'>")+2,-4).replace(/(<span>|<\/span>|<strong>|<\/strong>)/g,'').replace(/\sclass='Headword'/g,'');
+          var s = y.slice(y.indexOf("'>")+2,-4).replace(/(<span>|<\/span>|<\/b>|<b class='Headword'>)/g,'');
           var p = "";
           var b = "";
-          var o = s.replace(/\d+-\d+\./g,'').replace(/(<b>|<\/b>)/g,'').replace(/\s+/g, ' ');
+          var o = s.replace(/\d+-\d+\./g,'').replace(/\s+/g, ' ');
           if (s.search(/\d/) == -1) {
             p = '<sub title="' + o.replace(/[^\w\s]/g,'').replace(/\s+/g,' ') + '"></sub>';
             if (y.indexOf("class='")+7 == y.indexOf("Caption")) {
