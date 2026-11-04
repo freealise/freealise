@@ -445,7 +445,7 @@ var et = null;
             var res = arr[0] + '<body>' + arr[1].replace(/<span><span>/g, "<span>").replace(/<\/span><\/span>/g, "</span>").replace(/<a /g, "<a target='_blank' style='text-decoration:none' ");
 
             res = splitWords(res);
-            alert(res);
+            document.write(res);
             
             ltwf_.document.open();
             ltwf_.document.write(res.replace('</body>', document.getElementById('tw').value+'</body>'));
