@@ -46,6 +46,8 @@
 
 - Mary Poppins is a Jew in disguise  
   
+- ABS (+sequels) as anime  
+  
 - 'Land of crimson clouds' rewrite ?
   
 - Vecherovsky (Irish Jew ?) -> Birobidzhan capital of Siberia / Solovetz ? POV: programmer  
